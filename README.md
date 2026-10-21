@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/Intel-Alder_Lake_H-0071c5?style=for-the-badge&logo=intel&logoColor=white" alt="Intel Alder Lake H">
 <img src="https://img.shields.io/badge/USB4-PCIe_tunneling-408d9d?style=for-the-badge&logo=usb&logoColor=white" alt="USB4 PCIe tunneling">
 </p>
-<p align="center"><a href="docs/technical-summary.en.md">English technical summary</a> · <a href="#risultati-che-contano">Risultati</a> · <a href="firmware/README.md">BIOS sperimentali</a> · <a href="docs/indice.md">Archivio</a> · <a href="docs/reddit-help.en.md">Reddit draft</a></p>
+<p align="center"><a href="docs/technical-summary.en.md">English technical summary</a> · <a href="#risultati-che-contano">Risultati</a> · <a href="firmware/README.md">BIOS sperimentali</a> · <a href="docs/indice.md">Archivio</a></p>
 
 ![Topologia e risultato direzionale](docs/assets/topology.svg)
 
@@ -95,7 +95,7 @@ Non è possibile scambiare le due schede o collegarle allo stesso switch PCIe. U
 |---|---|
 | `archive/` | Rapporti, sorgenti, patch, risultati e verifiche storiche anonimizzati |
 | `firmware/` | Immagini OEM modificate, regioni FSP e manifest delle varianti |
-| `docs/` | Sintesi italiana/inglese, indice, riproducibilità e bozza Reddit |
+| `docs/` | Sintesi italiana/inglese, indice e riproducibilità |
 | `provenance/` | Hash degli originali e delle copie pubblicate, esclusioni e controlli |
 | `tools/` | Controlli locali di integrità e ricostruzione offline del BIOS |
 

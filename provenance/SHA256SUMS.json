@@ -18,8 +18,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 9828,
-      "sha256": "fc1359a2d5eb378c4b54772ec908c52a1e13d5a230c669905a60224aca7c8ed2"
+      "bytes": 9761,
+      "sha256": "4cd38e1f986867b3b8ae600e75e287acbe203c6a269eb36a59863a0f6fbbaabf"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3696,10 +3696,6 @@
     "docs/indice.md": {
       "bytes": 2121,
       "sha256": "71ec08323af4ab04e03680eabd0109cda5b94ffa89303fa296a2bcc37df977a6"
-    },
-    "docs/reddit-help.en.md": {
-      "bytes": 3859,
-      "sha256": "635dbc0e1d139851b0f2c6f810c2bcd97f462b4f353cf7fdf52b6a74de6abc23"
     },
     "docs/riproducibilita.md": {
       "bytes": 3065,
