@@ -1,0 +1,37 @@
+{
+  "parent_probe_sha256": "bf6d968b09e07c0bcbd4fd1ca4698154c9026272eb092c1929355accc8b35f37",
+  "derived_source_sha256": "3843fadc08668ca89a849d29bcf6f443193238204cf68e94a8f7513649c87425",
+  "protocol": "same-allocation-bracket-v1",
+  "allocations": 2,
+  "allocation_bytes_each": 8388608,
+  "comparisons": 36,
+  "groups": 12,
+  "steps": [
+    "PUSH_BEFORE",
+    "PULL",
+    "PUSH_AFTER"
+  ],
+  "executor_order": [
+    1,
+    0
+  ],
+  "engine_order": [
+    "CE_REQUEST",
+    "SM"
+  ],
+  "fresh_seed_per_case": true,
+  "unchanged": [
+    "GPU transfer kernel",
+    "CE API",
+    "owner initialization and synchronization",
+    "driver binaries",
+    "firmware registers"
+  ],
+  "different_from_previous": [
+    "both devices have RW access to both buffers",
+    "two persistent allocations instead of eight",
+    "interleaved bracket order",
+    "fresh seed per case",
+    "36 complete payload captures"
+  ]
+}

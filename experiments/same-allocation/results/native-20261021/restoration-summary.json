@@ -1,0 +1,24 @@
+{
+  "status": "RESTORATION_VERIFIED",
+  "vm_running": true,
+  "standard_driver_version": "595.99.02",
+  "both_gpus_visible": true,
+  "training_inactive": true,
+  "no_gpu_compute_processes": true,
+  "container_inventory_total": 65,
+  "previous_running_or_restarting_containers_present": 52,
+  "missing_previously_running_containers": 0,
+  "preexisting_container_issue": "ai-comfy-auth was restarting before and after the experiment; no claim that all containers are healthy.",
+  "native_probe_mounted_vm_data_disks": false,
+  "original_boot_files_unchanged": true,
+  "boot_order": "0000,0001",
+  "temporary_efi_entry_removed": true,
+  "temporary_esp_directory_removed": true,
+  "complete_verified_backup_retained": true,
+  "ccfg_unchanged": {
+    "D1": "04008077",
+    "D7F0": "0e009077",
+    "D7F2": "0e009077"
+  },
+  "p2p_fix_verified": false
+}

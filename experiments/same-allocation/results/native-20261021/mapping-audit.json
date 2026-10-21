@@ -1,0 +1,2325 @@
+{
+  "status": "PASS_SAME_ALLOCATION_SOFTWARE_MAPPING_AUDIT_NOT_P2P_SOLUTION",
+  "scope": "Offline audit of supplied native logs only; no SSH or hardware access. CUPTI per-case recorded classifications cross-checked; raw correlation reconstruction is a separate audit.",
+  "source_hashes": {
+    "result.log": "79b4dac70f3369c7b1ec22269670a6c4435b55655fa27a64e9638cd41846da85",
+    "kernel-driver-excerpt.log": "79b4c3c7dfeecdf184b07605370892e403f5425890564abe5c39fe1e49db363b",
+    "audit_parser": "26a5d10774d127141c07944ca7fdd0142be6897c4e1b9c9ca345b1b0c03832ee",
+    "historical_arithmetic_parser": "0863f5ac77f7ab1580fc10e75dbb8c720e18bdf74ca8e66e0fd26cbf2ac3d828"
+  },
+  "checks": {
+    "peer_chains": 2,
+    "peer_chain_arithmetic_checks": 34,
+    "total_arithmetic_checks": 102,
+    "mapping_mutation_events_during_cases": 0,
+    "allocation_count": 2,
+    "nonce_markers": 4,
+    "access_checks": 292,
+    "initialization_checks": 72,
+    "comparisons": 36,
+    "passing_comparisons": 12,
+    "failing_comparisons": 24,
+    "ce_observed": 18,
+    "sm_observed": 18,
+    "dropped": 0,
+    "trace_errors": 0,
+    "pci_snapshots": 438,
+    "unique_active_source_pattern_sets": 36,
+    "source_pattern_value_sets_pairwise_disjoint": true
+  },
+  "chains": [
+    {
+      "owner": 0,
+      "requester": 1,
+      "allocation": {
+        "line": 795,
+        "nonce": "906e3ac5-3ff9-464d-94f8-e48ed0104d92",
+        "owner": "0",
+        "mode": "SHARED",
+        "role": "shared",
+        "va": "710c32e00000",
+        "handle": "644d45f7d0a0",
+        "allocation_bytes": "8388608",
+        "granularity": "2097152"
+      },
+      "nonce_begin_line": 352,
+      "nonce_end_line": 366,
+      "window": {
+        "index": 354,
+        "line": 359,
+        "event": "WINDOW_CREATE",
+        "kernel_time": 13.56573,
+        "fields": {
+          "id": "1",
+          "mem": "caf00142",
+          "subdev": "caf00037",
+          "src": "1",
+          "dst": "0",
+          "src_gpu_id": "600",
+          "dst_gpu_id": "100",
+          "desc": "FFFF8F13AF2FBC08",
+          "iovas": "600",
+          "size": "800000",
+          "bar1": "4000000000",
+          "bar1_size": "400000000",
+          "bar1_off": "400000",
+          "window_phys": "4000400000",
+          "dma": "4000400000",
+          "ranges": "1"
+        },
+        "raw": "[   13.565730] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=1 mem=caf00142 subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8F13AF2FBC08 iovas=600 size=800000 bar1=4000000000 bar1_size=400000000 bar1_off=400000 window_phys=4000400000 dma=4000400000 ranges=1",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "dma_map": {
+        "index": 353,
+        "line": 358,
+        "event": "DMA_MAP",
+        "kernel_time": 13.565726,
+        "fields": {
+          "src": "0000:06:00.0",
+          "dst": "0000:01:00.0",
+          "input": "4000400000",
+          "output": "4000400000",
+          "pages": "800",
+          "os_page": "4096",
+          "bar_index": "1",
+          "resource_start": "4000000000",
+          "resource_end": "43ffffffff",
+          "bus_base": "4000000000",
+          "iommu_resource": "0",
+          "status": "0"
+        },
+        "raw": "[   13.565726] P2PTRC DMA_MAP src=0000:06:00.0 dst=0000:01:00.0 input=4000400000 output=4000400000 pages=800 os_page=4096 bar_index=1 resource_start=4000000000 resource_end=43ffffffff bus_base=4000000000 iommu_resource=0 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_request": {
+        "index": 355,
+        "line": 360,
+        "event": "RM_REQUEST",
+        "kernel_time": 13.565731,
+        "fields": {
+          "client": "c1d00001",
+          "mem": "caf00142",
+          "src": "1",
+          "dst": "0",
+          "desc": "FFFF8F13AF2FBC08",
+          "offset": "0",
+          "size": "800000",
+          "dynamic": "1",
+          "dma": "4000400000"
+        },
+        "raw": "[   13.565731] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf00142 src=1 dst=0 desc=FFFF8F13AF2FBC08 offset=0 size=800000 dynamic=1 dma=4000400000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_pte": {
+        "index": 356,
+        "line": 361,
+        "event": "RM_PTE",
+        "kernel_time": 13.565733,
+        "fields": {
+          "client": "c1d00001",
+          "src": "1",
+          "dst": "0",
+          "desc": "FFFF8F13AF2FBC08",
+          "offset": "0",
+          "page": "200000",
+          "pte_count": "4",
+          "entry": "16",
+          "fmt": "2",
+          "aperture": "3",
+          "valid": "1",
+          "readonly": "0",
+          "atomic": "1",
+          "volatile": "1",
+          "dynamic": "1",
+          "dma_base": "4000400000",
+          "phys_input": "4000400000",
+          "decoded": "4000400000",
+          "addr_shift": "12",
+          "raw0": "060000040004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565733] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=1 dst=0 desc=FFFF8F13AF2FBC08 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4000400000 phys_input=4000400000 decoded=4000400000 addr_shift=12 raw0=060000040004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_peer_pte": {
+        "index": 358,
+        "line": 363,
+        "event": "UVM_PTE",
+        "kernel_time": 13.565736,
+        "fields": {
+          "gpu": "ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002",
+          "mem": "caf00142",
+          "gpu_va": "710c32e00000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "3237970",
+          "last": "1",
+          "raw0": "060000040004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565736] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002 mem=caf00142 gpu_va=710c32e00000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=3237970 last=1 raw0=060000040004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_owner_pte": {
+        "index": 349,
+        "line": 354,
+        "event": "UVM_PTE",
+        "kernel_time": 13.565668,
+        "fields": {
+          "gpu": "ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001",
+          "mem": "caf00141",
+          "gpu_va": "710c32e00000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "423b970",
+          "last": "1",
+          "raw0": "0600000000ac0001",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565668] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001 mem=caf00141 gpu_va=710c32e00000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=423b970 last=1 raw0=0600000000ac0001 raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_submit": {
+        "index": 359,
+        "line": 364,
+        "event": "UVM_SUBMIT",
+        "kernel_time": 13.565738,
+        "fields": {
+          "gpu": "ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002",
+          "mem": "caf00142",
+          "gpu_va": "710c32e00000",
+          "status": "0"
+        },
+        "raw": "[   13.565738] nvidia-uvm: P2PTRC UVM_SUBMIT gpu=ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002 mem=caf00142 gpu_va=710c32e00000 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_complete": {
+        "index": 360,
+        "line": 365,
+        "event": "UVM_MAP_COMPLETE",
+        "kernel_time": 13.565747,
+        "fields": {
+          "gpu_va": "710c32e00000",
+          "length": "800000",
+          "status": "0"
+        },
+        "raw": "[   13.565747] nvidia-uvm: P2PTRC UVM_MAP_COMPLETE gpu_va=710c32e00000 length=800000 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_return": {
+        "index": 357,
+        "line": 362,
+        "event": "RM_RETURN",
+        "kernel_time": 13.565734,
+        "fields": {
+          "client": "c1d00001",
+          "mem": "caf00142",
+          "src": "1",
+          "status": "0"
+        },
+        "raw": "[   13.565734] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf00142 src=1 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "window_destroy": [
+        {
+          "index": 374,
+          "line": 529,
+          "event": "WINDOW_DESTROY_BEGIN",
+          "kernel_time": 14.211416,
+          "fields": {
+            "id": "1",
+            "mem": "caf00142",
+            "src": "1",
+            "iovas": "600",
+            "dma": "4000400000",
+            "size": "800000"
+          },
+          "raw": "[   14.211416] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=1 mem=caf00142 src=1 iovas=600 dma=4000400000 size=800000",
+          "monotonic_estimate": null,
+          "phase_estimate": null
+        },
+        {
+          "index": 375,
+          "line": 530,
+          "event": "WINDOW_DESTROY_DONE",
+          "kernel_time": 14.211442,
+          "fields": {
+            "id": "1",
+            "mem": "caf00142"
+          },
+          "raw": "[   14.211442] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=1 mem=caf00142",
+          "monotonic_estimate": null,
+          "phase_estimate": null
+        }
+      ],
+      "dma_translation_delta": 0
+    },
+    {
+      "owner": 1,
+      "requester": 0,
+      "allocation": {
+        "line": 800,
+        "nonce": "61dd323a-e969-4f74-8113-b808f532928e",
+        "owner": "1",
+        "mode": "SHARED",
+        "role": "shared",
+        "va": "710c33600000",
+        "handle": "644d45f7f4d0",
+        "allocation_bytes": "8388608",
+        "granularity": "2097152"
+      },
+      "nonce_begin_line": 367,
+      "nonce_end_line": 381,
+      "window": {
+        "index": 363,
+        "line": 370,
+        "event": "WINDOW_CREATE",
+        "kernel_time": 13.565821,
+        "fields": {
+          "id": "2",
+          "mem": "caf00143",
+          "subdev": "caf00001",
+          "src": "0",
+          "dst": "1",
+          "src_gpu_id": "100",
+          "dst_gpu_id": "600",
+          "desc": "FFFF8F13AF2FBE08",
+          "iovas": "100",
+          "size": "800000",
+          "bar1": "4600000000",
+          "bar1_size": "10000000",
+          "bar1_off": "400000",
+          "window_phys": "4600400000",
+          "dma": "4600400000",
+          "ranges": "1"
+        },
+        "raw": "[   13.565821] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=2 mem=caf00143 subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8F13AF2FBE08 iovas=100 size=800000 bar1=4600000000 bar1_size=10000000 bar1_off=400000 window_phys=4600400000 dma=4600400000 ranges=1",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "dma_map": {
+        "index": 362,
+        "line": 369,
+        "event": "DMA_MAP",
+        "kernel_time": 13.565819,
+        "fields": {
+          "src": "0000:01:00.0",
+          "dst": "0000:06:00.0",
+          "input": "4600400000",
+          "output": "4600400000",
+          "pages": "800",
+          "os_page": "4096",
+          "bar_index": "1",
+          "resource_start": "4600000000",
+          "resource_end": "460fffffff",
+          "bus_base": "4600000000",
+          "iommu_resource": "0",
+          "status": "0"
+        },
+        "raw": "[   13.565819] P2PTRC DMA_MAP src=0000:01:00.0 dst=0000:06:00.0 input=4600400000 output=4600400000 pages=800 os_page=4096 bar_index=1 resource_start=4600000000 resource_end=460fffffff bus_base=4600000000 iommu_resource=0 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_request": {
+        "index": 364,
+        "line": 371,
+        "event": "RM_REQUEST",
+        "kernel_time": 13.565822,
+        "fields": {
+          "client": "c1d00001",
+          "mem": "caf00143",
+          "src": "0",
+          "dst": "1",
+          "desc": "FFFF8F13AF2FBE08",
+          "offset": "0",
+          "size": "800000",
+          "dynamic": "1",
+          "dma": "4600400000"
+        },
+        "raw": "[   13.565822] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf00143 src=0 dst=1 desc=FFFF8F13AF2FBE08 offset=0 size=800000 dynamic=1 dma=4600400000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_pte": {
+        "index": 365,
+        "line": 372,
+        "event": "RM_PTE",
+        "kernel_time": 13.565824,
+        "fields": {
+          "client": "c1d00001",
+          "src": "0",
+          "dst": "1",
+          "desc": "FFFF8F13AF2FBE08",
+          "offset": "0",
+          "page": "200000",
+          "pte_count": "4",
+          "entry": "16",
+          "fmt": "2",
+          "aperture": "3",
+          "valid": "1",
+          "readonly": "0",
+          "atomic": "1",
+          "volatile": "1",
+          "dynamic": "1",
+          "dma_base": "4600400000",
+          "phys_input": "4600400000",
+          "decoded": "4600400000",
+          "addr_shift": "12",
+          "raw0": "060000046004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565824] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=0 dst=1 desc=FFFF8F13AF2FBE08 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4600400000 phys_input=4600400000 decoded=4600400000 addr_shift=12 raw0=060000046004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_peer_pte": {
+        "index": 367,
+        "line": 374,
+        "event": "UVM_PTE",
+        "kernel_time": 13.565826,
+        "fields": {
+          "gpu": "ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001",
+          "mem": "caf00143",
+          "gpu_va": "710c33600000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "423b9b0",
+          "last": "1",
+          "raw0": "060000046004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565826] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001 mem=caf00143 gpu_va=710c33600000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=423b9b0 last=1 raw0=060000046004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_owner_pte": {
+        "index": 371,
+        "line": 378,
+        "event": "UVM_PTE",
+        "kernel_time": 13.565843,
+        "fields": {
+          "gpu": "ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002",
+          "mem": "caf00144",
+          "gpu_va": "710c33600000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "32379b0",
+          "last": "1",
+          "raw0": "0600000000a80001",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   13.565843] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002 mem=caf00144 gpu_va=710c33600000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=32379b0 last=1 raw0=0600000000a80001 raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_submit": {
+        "index": 368,
+        "line": 375,
+        "event": "UVM_SUBMIT",
+        "kernel_time": 13.565828,
+        "fields": {
+          "gpu": "ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001",
+          "mem": "caf00143",
+          "gpu_va": "710c33600000",
+          "status": "0"
+        },
+        "raw": "[   13.565828] nvidia-uvm: P2PTRC UVM_SUBMIT gpu=ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001 mem=caf00143 gpu_va=710c33600000 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_complete": {
+        "index": 369,
+        "line": 376,
+        "event": "UVM_MAP_COMPLETE",
+        "kernel_time": 13.565832,
+        "fields": {
+          "gpu_va": "710c33600000",
+          "length": "800000",
+          "status": "0"
+        },
+        "raw": "[   13.565832] nvidia-uvm: P2PTRC UVM_MAP_COMPLETE gpu_va=710c33600000 length=800000 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_return": {
+        "index": 366,
+        "line": 373,
+        "event": "RM_RETURN",
+        "kernel_time": 13.565825,
+        "fields": {
+          "client": "c1d00001",
+          "mem": "caf00143",
+          "src": "0",
+          "status": "0"
+        },
+        "raw": "[   13.565825] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf00143 src=0 status=0",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "window_destroy": [
+        {
+          "index": 376,
+          "line": 533,
+          "event": "WINDOW_DESTROY_BEGIN",
+          "kernel_time": 14.211676,
+          "fields": {
+            "id": "2",
+            "mem": "caf00143",
+            "src": "0",
+            "iovas": "100",
+            "dma": "4600400000",
+            "size": "800000"
+          },
+          "raw": "[   14.211676] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=2 mem=caf00143 src=0 iovas=100 dma=4600400000 size=800000",
+          "monotonic_estimate": null,
+          "phase_estimate": null
+        },
+        {
+          "index": 377,
+          "line": 534,
+          "event": "WINDOW_DESTROY_DONE",
+          "kernel_time": 14.211694,
+          "fields": {
+            "id": "2",
+            "mem": "caf00143"
+          },
+          "raw": "[   14.211694] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=2 mem=caf00143",
+          "monotonic_estimate": null,
+          "phase_estimate": null
+        }
+      ],
+      "dma_translation_delta": 0
+    }
+  ],
+  "software_arithmetic_checks": [
+    {
+      "check": "RM_dynamic_path",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361
+      ]
+    },
+    {
+      "check": "RM_valid_PTE",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361
+      ]
+    },
+    {
+      "check": "RM_writable_PTE",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361
+      ]
+    },
+    {
+      "check": "RM_decoded_equals_encoded_input",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361
+      ]
+    },
+    {
+      "check": "RM_input_equals_dma_plus_offset",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361
+      ]
+    },
+    {
+      "check": "window_phys_equals_BAR1_plus_offset",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        359
+      ]
+    },
+    {
+      "check": "RM_dma_equals_window_dma",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        359,
+        361
+      ]
+    },
+    {
+      "check": "DMA_mapping_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        358
+      ]
+    },
+    {
+      "check": "DMA_input_range_within_live_BAR",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        358
+      ]
+    },
+    {
+      "check": "window_alive_at_PTE_build",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        359,
+        361
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw0",
+      "actual": 432345581407698959,
+      "expected": 432345581407698959,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361,
+        363
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw1",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361,
+        363
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_entry",
+      "actual": 16,
+      "expected": 16,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361,
+        363
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_page_size",
+      "actual": 2097152,
+      "expected": 2097152,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        361,
+        363
+      ]
+    },
+    {
+      "check": "UVM_submission_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        364
+      ]
+    },
+    {
+      "check": "UVM_mapping_wait_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        365
+      ]
+    },
+    {
+      "check": "RM_matching_return_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        362
+      ]
+    },
+    {
+      "check": "RM_dynamic_path",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372
+      ]
+    },
+    {
+      "check": "RM_valid_PTE",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372
+      ]
+    },
+    {
+      "check": "RM_writable_PTE",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372
+      ]
+    },
+    {
+      "check": "RM_decoded_equals_encoded_input",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372
+      ]
+    },
+    {
+      "check": "RM_input_equals_dma_plus_offset",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372
+      ]
+    },
+    {
+      "check": "window_phys_equals_BAR1_plus_offset",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        370
+      ]
+    },
+    {
+      "check": "RM_dma_equals_window_dma",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        370,
+        372
+      ]
+    },
+    {
+      "check": "DMA_mapping_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        369
+      ]
+    },
+    {
+      "check": "DMA_input_range_within_live_BAR",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        369
+      ]
+    },
+    {
+      "check": "window_alive_at_PTE_build",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        370,
+        372
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw0",
+      "actual": 432345583018311695,
+      "expected": 432345583018311695,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372,
+        374
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw1",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372,
+        374
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_entry",
+      "actual": 16,
+      "expected": 16,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372,
+        374
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_page_size",
+      "actual": 2097152,
+      "expected": 2097152,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        372,
+        374
+      ]
+    },
+    {
+      "check": "UVM_submission_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        375
+      ]
+    },
+    {
+      "check": "UVM_mapping_wait_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        376
+      ]
+    },
+    {
+      "check": "RM_matching_return_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        373
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        6
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        10
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        14
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        18
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        22
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        72
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        76
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        80
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        84
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        88
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        92
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        96
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        100
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        104
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        108
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        112
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        116
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        120
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        124
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        128
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        136
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        140
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        144
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        148
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        152
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        156
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        160
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        164
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        168
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        172
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        176
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        180
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        230
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        234
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        238
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        242
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        246
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        250
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        254
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        258
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        262
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        266
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        270
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        274
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        278
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        282
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        286
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        294
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        298
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        302
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        306
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        310
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        314
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        318
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        322
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        326
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        330
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        334
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        338
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        342
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        346
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        350
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        356
+      ]
+    },
+    {
+      "check": "RM_request_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        362
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        365
+      ]
+    },
+    {
+      "check": "RM_request_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        373
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        376
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        380
+      ]
+    }
+  ],
+  "page_alignment": [
+    {
+      "line": 361,
+      "event_index": 356,
+      "field": "phys_input",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 361,
+      "event_index": 356,
+      "field": "decoded",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 361,
+      "event_index": 356,
+      "field": "dma_base",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 372,
+      "event_index": 365,
+      "field": "phys_input",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 372,
+      "event_index": 365,
+      "field": "decoded",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 372,
+      "event_index": 365,
+      "field": "dma_base",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    }
+  ],
+  "case_data": [
+    {
+      "line": 836,
+      "id": "1",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 872,
+      "id": "2",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 908,
+      "id": "3",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 946,
+      "id": "4",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 982,
+      "id": "5",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1018,
+      "id": "6",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1056,
+      "id": "7",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1092,
+      "id": "8",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1128,
+      "id": "9",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1166,
+      "id": "10",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1202,
+      "id": "11",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1238,
+      "id": "12",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1276,
+      "id": "13",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1312,
+      "id": "14",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1348,
+      "id": "15",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1386,
+      "id": "16",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1422,
+      "id": "17",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "1",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1458,
+      "id": "18",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "1",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1496,
+      "id": "19",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1532,
+      "id": "20",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1568,
+      "id": "21",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1606,
+      "id": "22",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1642,
+      "id": "23",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1678,
+      "id": "24",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1716,
+      "id": "25",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1752,
+      "id": "26",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1788,
+      "id": "27",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1826,
+      "id": "28",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1862,
+      "id": "29",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1898,
+      "id": "30",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1936,
+      "id": "31",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1972,
+      "id": "32",
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 2008,
+      "id": "33",
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 2046,
+      "id": "34",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 2082,
+      "id": "35",
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": "0",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 2118,
+      "id": "36",
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": "0",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    }
+  ],
+  "PCI_changes": [
+    {
+      "bdf": "0000:00:07.0",
+      "before_phase": "ce_case_2_before",
+      "after_phase": "ce_case_2_after",
+      "before_line": 855,
+      "after_line": 865,
+      "delta": {
+        "PCI_STATUS": [
+          "0010",
+          "2010"
+        ]
+      }
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "before_phase": "ce_case_2_before",
+      "after_phase": "ce_case_2_after",
+      "before_line": 859,
+      "after_line": 869,
+      "delta": {
+        "PCI_STATUS": [
+          "0010",
+          "2010"
+        ]
+      }
+    },
+    {
+      "bdf": "0000:00:01.0",
+      "before_phase": "ce_case_20_before",
+      "after_phase": "ce_case_20_after",
+      "before_line": 1514,
+      "after_line": 1524,
+      "delta": {
+        "PCI_STATUS": [
+          "0010",
+          "2010"
+        ]
+      }
+    },
+    {
+      "bdf": "0000:01:00.0",
+      "before_phase": "ce_case_20_before",
+      "after_phase": "ce_case_20_after",
+      "before_line": 1518,
+      "after_line": 1528,
+      "delta": {
+        "PCI_STATUS": [
+          "0010",
+          "2010"
+        ]
+      }
+    }
+  ],
+  "CCFG_readbacks": {
+    "00:01.0": [
+      "04008077",
+      "04008077",
+      "04008077"
+    ],
+    "00:07.0": [
+      "0e009077",
+      "0e009077",
+      "0e009077"
+    ],
+    "00:07.2": [
+      "0e009077",
+      "0e009077",
+      "0e009077"
+    ]
+  },
+  "lifetime": {
+    "allocations_done": {
+      "line": 382,
+      "kernel_time": 13.565866,
+      "phase": "allocations_done",
+      "monotonic": "13.559506375",
+      "s": "-1",
+      "d": "-1"
+    },
+    "data_done": {
+      "line": 527,
+      "kernel_time": 14.208726,
+      "phase": "data_done",
+      "monotonic": "14.202366726",
+      "s": "-1",
+      "d": "-1"
+    },
+    "free_begin": [
+      {
+        "line": 528,
+        "kernel_time": 14.211382,
+        "phase": "allocation_free_begin",
+        "monotonic": "14.205022482",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 532,
+        "kernel_time": 14.211507,
+        "phase": "allocation_free_begin",
+        "monotonic": "14.205147577",
+        "s": "1",
+        "d": "-1"
+      }
+    ],
+    "free_done": [
+      {
+        "line": 531,
+        "kernel_time": 14.211505,
+        "phase": "allocation_free_done",
+        "monotonic": "14.205145716",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 535,
+        "kernel_time": 14.211721,
+        "phase": "allocation_free_done",
+        "monotonic": "14.205362327",
+        "s": "1",
+        "d": "-1"
+      }
+    ],
+    "context_exit_begin": {
+      "line": 537,
+      "kernel_time": 14.211732,
+      "phase": "context_exit_begin",
+      "monotonic": "14.205372645",
+      "s": "-1",
+      "d": "-1"
+    },
+    "kernel_errors": [
+      {
+        "line": 538,
+        "kernel_time": 14.58675,
+        "raw": "[   14.586750] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x600",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 539,
+        "kernel_time": 14.601571,
+        "raw": "[   14.601571] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 540,
+        "kernel_time": 14.601575,
+        "raw": "[   14.601575] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 541,
+        "kernel_time": 14.601619,
+        "raw": "[   14.601619] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 542,
+        "kernel_time": 14.601621,
+        "raw": "[   14.601621] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 543,
+        "kernel_time": 14.602816,
+        "raw": "[   14.602816] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 544,
+        "kernel_time": 14.602818,
+        "raw": "[   14.602818] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 545,
+        "kernel_time": 14.602832,
+        "raw": "[   14.602832] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 546,
+        "kernel_time": 14.602833,
+        "raw": "[   14.602833] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      }
+    ],
+    "first_teardown_error_after_context_exit_seconds": 0.375018,
+    "Xid_count": 0
+  },
+  "limits": [
+    "Same persistent software allocations and peer-window/PTE chains are established for these cases; this is not a hardware MMU or BAR1 mapping readback.",
+    "Only the first PTE is printed per allocation; maximum tested payload is 1 MiB and fits the observed first 2 MiB page.",
+    "CUPTI activity and callback metadata do not prove the complete physical TLP path or exclude every internal staging route.",
+    "PCI_STATUS is sticky; absence of later transitions does not exclude repeated Unsupported Requests.",
+    "The unchanged-direction result excludes the previous separate-allocation/window explanation for this run; it does not localize requester, fabric, bridge or mapping implementation.",
+    "Kernel teardown defects persist but are observed after all completed data comparisons and window destruction.",
+    "Raw payload word classification is validated by the separate payload audit; this audit cross-checks full-comparison counters."
+  ]
+}

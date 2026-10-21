@@ -23,6 +23,22 @@ The earlier word tests lacked some owner synchronization. Corrected tests includ
 
 The [full-payload native follow-up](../experiments/payload-diagnostics/results/native-20261021/README.md) repeats the same 24 cases with complete destination dumps. All six failed PUSH destinations match the initial sentinel at every word; all six successful PUSH destinations are fully correct; all twelve PULL destinations consist entirely of `ffffffff`. This rules out partially correct payloads in this run. Pattern-based offset matches are intrinsic source/sentinel coincidences, not evidence of aliasing. The data distinguish writes from reads with A2000 held as executor, while separate PUSH/PULL allocations and mappings remain an experimental confound. No component has been identified as the cause.
 
+## Same-allocation control
+
+A later control strengthens the operation/direction
+finding: the [same-allocation native run](../experiments/same-allocation/results/native-20261021/README.md)
+uses two persistent RW allocations and peer windows for 12 PUSH/PULL/PUSH brackets.
+All 12 A2000 PUSH cases pass before and after unsuccessful reads; all 12 Ada PUSH
+cases retain their entire sentinel, and all 12 PULL cases return only `ffffffff`.
+Fresh source patterns distinguish all 36 cases. Raw CUPTI reconstruction qualifies
+18 CE and 18 SM operations; software BAR1/DMA/RM/UVM mapping records stay unchanged.
+The separate-allocation difference in the earlier run therefore does not explain
+the observed asymmetry. The same Ada window accepts writes from A2000 and fails
+reads from that same executor. Hardware routing, actual hardware PTE use and the
+responsible component remain unproven. First CE PULLs (cases 2 and 20) set Received
+Master Abort at the respective GPU and root port; sticky status prevents counting
+subsequent errors. No firmware or driver implementation was changed for this run.
+
 ## Firmware and physical CE experiments
 
 The reconstructed chain is `SaSetup[0x3E3] → EnablePeerMemoryWrite → SiInitFsp → D1:F0 CCFG`. FSP variants actually changed/read back D1 CCFG `04008077→00008077` and D7:F0/F2 `0e009077→00009077`. They did not fix forward delivery. The tested FSP span was later restored byte-for-byte; this does not mean every NVRAM setting returned to factory state.

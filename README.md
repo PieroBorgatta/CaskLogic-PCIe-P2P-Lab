@@ -52,7 +52,13 @@ The native PUSH/PULL experiment with validated initialization and synchronizatio
 
 A [new native rerun with complete payload capture](experiments/payload-diagnostics/results/native-20261021/README.md) confirms the same 6 passes and 18 failures. **Every failed PUSH Ada→A2000 word matches its initial sentinel; every successful PUSH A2000→Ada word is correct; every PULL word in either direction is `ffffffff`.** No partially correct payload was observed. The repository now includes all 24 raw captures (8.5 MiB), metadata, diagnostic source and offline validators.
 
-This establishes the complete value distribution, extending the earlier first-mismatch logs. It does not locate the failing component: PUSH/PULL still use separate mappings, and source-pattern/sentinel coincidences are not proof of addressing aliases. [Diagnostic method and reproducibility](experiments/payload-diagnostics/README.md).
+This establishes the complete value distribution, extending the earlier first-mismatch logs. That rerun used separate PUSH/PULL mappings; the follow-up below controls this difference. Source-pattern/sentinel coincidences are not proof of addressing aliases. [Diagnostic method and reproducibility](experiments/payload-diagnostics/README.md).
+
+### Same-allocation follow-up
+
+The [latest native experiment](experiments/same-allocation/results/native-20261021/README.md) retains **two persistent allocations and peer windows**, both RW on both GPUs, for 12 **PUSH → PULL → PUSH** brackets. All 12 A2000→Ada PUSH cases succeed, including the writes immediately after failed reads. All 12 Ada→A2000 PUSH cases retain their complete sentinel; all 12 PULL cases return only `ffffffff`. Fresh source patterns distinguish each case from previous contents.
+
+**12 passes and 24 failures in 36 comparisons**, with 18 CE and 18 SM operations independently qualified by CUPTI. CUDA identities and instrumented BAR1/DMA/RM/UVM mappings remain stable. Thus the different PUSH/PULL allocations in the earlier experiment do not explain this asymmetry: the same Ada window accepts correct A2000 writes and fails A2000 reads. Software logs still do not identify the failing component or replace a hardware transaction trace. [Protocol, source and offline checks](experiments/same-allocation/README.md).
 
 ### What has been tested
 
