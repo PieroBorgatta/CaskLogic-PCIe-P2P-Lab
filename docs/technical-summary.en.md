@@ -21,6 +21,8 @@ PUSH executes on the source; PULL executes on the destination. CUPTI observes 12
 
 The earlier word tests lacked some owner synchronization. Corrected tests include owner synchronization and local initialization checks; the failure persists. Older unqualified observations are not treated as equivalent to the corrected experiments.
 
+The [full-payload native follow-up](../experiments/payload-diagnostics/results/native-20261021/README.md) repeats the same 24 cases with complete destination dumps. All six failed PUSH destinations match the initial sentinel at every word; all six successful PUSH destinations are fully correct; all twelve PULL destinations consist entirely of `ffffffff`. This rules out partially correct payloads in this run. Pattern-based offset matches are intrinsic source/sentinel coincidences, not evidence of aliasing. The data distinguish writes from reads with A2000 held as executor, while separate PUSH/PULL allocations and mappings remain an experimental confound. No component has been identified as the cause.
+
 ## Firmware and physical CE experiments
 
 The reconstructed chain is `SaSetup[0x3E3] → EnablePeerMemoryWrite → SiInitFsp → D1:F0 CCFG`. FSP variants actually changed/read back D1 CCFG `04008077→00008077` and D7:F0/F2 `0e009077→00009077`. They did not fix forward delivery. The tested FSP span was later restored byte-for-byte; this does not mean every NVRAM setting returned to factory state.

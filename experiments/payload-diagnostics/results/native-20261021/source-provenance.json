@@ -1,0 +1,17 @@
+{
+  "historical_source_sha256": "47583f96e9f54f4fe06b8729ff6ebb3f6d0866f3b123146d36b07dcdab4bfe61",
+  "derived_public_source_sha256": "bf6d968b09e07c0bcbd4fd1ca4698154c9026272eb092c1929355accc8b35f37",
+  "unchanged": [
+    "kernel",
+    "allocation size and lifetime",
+    "seed and sentinel",
+    "case order",
+    "CUPTI implementation",
+    "PCI read-only snapshots"
+  ],
+  "added": [
+    "host capture of active destination bytes",
+    "per-case metadata and classification",
+    "runtime explicit expected UUIDs"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "cleanup_verified",
+  "original_boot_files_unchanged": true,
+  "original_boot_order_restored": "0000,0001",
+  "one_shot_entry_removed": true,
+  "temporary_esp_directory_removed": true,
+  "full_private_backup_preserved": true,
+  "ccfg_final": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "vm_returned_running": true,
+  "containers_present_after": 52,
+  "training_inactive_before_and_after": true,
+  "standard_driver_after": "595.99.02",
+  "gpu_count_after": 2,
+  "data_disks_mounted_by_native_probe": false,
+  "containers_listed_before": 52
+}

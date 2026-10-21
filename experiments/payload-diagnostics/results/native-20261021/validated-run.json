@@ -1,0 +1,3877 @@
+{
+  "schema_version": 1,
+  "validator": "payload-protocol-validator-v1",
+  "status": "COMPLETE_DIAGNOSTIC_EVIDENCE",
+  "diagnostic_run_qualified": true,
+  "qualification_scope": "Protocol, initialization, recorded CUPTI coverage, and captured payload consistency; not a physical-path certification.",
+  "comparisons": 24,
+  "passing_cases": 6,
+  "failing_cases": 18,
+  "initialization_checks": 48,
+  "ce_observed": 12,
+  "sm_observed": 12,
+  "trace_complete": true,
+  "dropped": 0,
+  "trace_errors": 0,
+  "program_rc": 5,
+  "all_payloads_match": false,
+  "direct_route_proven": false,
+  "p2p_fix_established": false,
+  "payload_bytes": 8912928,
+  "payload_mib": 8.500030517578125,
+  "evidence": {
+    "path_note": "Logical relative labels only: result.log is the supplied log; payloads/ is the supplied payload directory.",
+    "result_log": "result.log",
+    "payloads": [
+      {
+        "case_id": 1,
+        "raw": "payloads/case-001.observed.u32le",
+        "raw_sha256": "dbdcfdb8c004303c7638e767b2c3feaa0fb8a35bc8e9eda1e8cf8121b589ffa4",
+        "metadata": "payloads/case-001.json",
+        "metadata_sha256": "6b1df125ba8a4ba3ea715201ece80e5cb79ee1578115acd42367919ca5b37437",
+        "bytes": 4
+      },
+      {
+        "case_id": 2,
+        "raw": "payloads/case-002.observed.u32le",
+        "raw_sha256": "dbdcfdb8c004303c7638e767b2c3feaa0fb8a35bc8e9eda1e8cf8121b589ffa4",
+        "metadata": "payloads/case-002.json",
+        "metadata_sha256": "3b791b7a19a5168f65d6c06fc747372fd75bd8ff75551812828ac40046fb0fca",
+        "bytes": 4
+      },
+      {
+        "case_id": 3,
+        "raw": "payloads/case-003.observed.u32le",
+        "raw_sha256": "a02b7e06da1b44832568dba5afa6ead791c5424bedd2875311fdcc5654546237",
+        "metadata": "payloads/case-003.json",
+        "metadata_sha256": "b9cf9483effc83c817520250fed5b2dd7c2467896847d0ef9c53bec85068b3f7",
+        "bytes": 65536
+      },
+      {
+        "case_id": 4,
+        "raw": "payloads/case-004.observed.u32le",
+        "raw_sha256": "a02b7e06da1b44832568dba5afa6ead791c5424bedd2875311fdcc5654546237",
+        "metadata": "payloads/case-004.json",
+        "metadata_sha256": "9eb02abf1d54c474e9c9b7e3f747c85dc765f7e85d2b9d8136769b4804472870",
+        "bytes": 65536
+      },
+      {
+        "case_id": 5,
+        "raw": "payloads/case-005.observed.u32le",
+        "raw_sha256": "eb8ef7d9d782011288354369f0dbea62feae4d71dc350905084150a61b353b15",
+        "metadata": "payloads/case-005.json",
+        "metadata_sha256": "08c097e2e2fc2158d6a8b2a1c0d612b8c5b5b9e7a26ad8ec70a7c0b1a693f595",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 6,
+        "raw": "payloads/case-006.observed.u32le",
+        "raw_sha256": "eb8ef7d9d782011288354369f0dbea62feae4d71dc350905084150a61b353b15",
+        "metadata": "payloads/case-006.json",
+        "metadata_sha256": "bc4b062eec4dd7706a2bee3c2573f12473e1aaf420c81a61d539b5b152c09967",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 7,
+        "raw": "payloads/case-007.observed.u32le",
+        "raw_sha256": "aa955235b6bd01c4ab0f0e02266736d061ffa3f631df70ed04de4d1e733544f1",
+        "metadata": "payloads/case-007.json",
+        "metadata_sha256": "42f4c56841aec5b326e391ad099dbdd464ae32f212a9a3081790fe95ecec7934",
+        "bytes": 4
+      },
+      {
+        "case_id": 8,
+        "raw": "payloads/case-008.observed.u32le",
+        "raw_sha256": "aa955235b6bd01c4ab0f0e02266736d061ffa3f631df70ed04de4d1e733544f1",
+        "metadata": "payloads/case-008.json",
+        "metadata_sha256": "6d74201e59dec74baf4b519346cebe14a28c937581cf6c68223abd52a8a90d95",
+        "bytes": 4
+      },
+      {
+        "case_id": 9,
+        "raw": "payloads/case-009.observed.u32le",
+        "raw_sha256": "03fb32f505773bb11e7f151f399b517d588231290b9500c4a741ff4ac9e0cd0b",
+        "metadata": "payloads/case-009.json",
+        "metadata_sha256": "bc8998c319e16b649543d96a433627e0f7c0331b8c5851941a05f8396fc23802",
+        "bytes": 65536
+      },
+      {
+        "case_id": 10,
+        "raw": "payloads/case-010.observed.u32le",
+        "raw_sha256": "03fb32f505773bb11e7f151f399b517d588231290b9500c4a741ff4ac9e0cd0b",
+        "metadata": "payloads/case-010.json",
+        "metadata_sha256": "e0a8c4b234e032986c038605ce2e03ef6bbccb8f2448bbec8ae48510d062468b",
+        "bytes": 65536
+      },
+      {
+        "case_id": 11,
+        "raw": "payloads/case-011.observed.u32le",
+        "raw_sha256": "2b8e48fe8b4645c2295e85309f2554ad07d20ccb43678cdeb28b0ce6f350ac81",
+        "metadata": "payloads/case-011.json",
+        "metadata_sha256": "4560985a4da2b683b53d2c89acae2d071ae2672a005d64e8b1d07305103a0050",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 12,
+        "raw": "payloads/case-012.observed.u32le",
+        "raw_sha256": "2b8e48fe8b4645c2295e85309f2554ad07d20ccb43678cdeb28b0ce6f350ac81",
+        "metadata": "payloads/case-012.json",
+        "metadata_sha256": "f9566a9e39e761952e492227335ce41055c54ca53ea6d49040aa85d7407ede63",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 13,
+        "raw": "payloads/case-013.observed.u32le",
+        "raw_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+        "metadata": "payloads/case-013.json",
+        "metadata_sha256": "29472049f7b2cd6f734fa20f6ba2e03ec8c1a66a5e31477330c66c0a29fafac4",
+        "bytes": 4
+      },
+      {
+        "case_id": 14,
+        "raw": "payloads/case-014.observed.u32le",
+        "raw_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+        "metadata": "payloads/case-014.json",
+        "metadata_sha256": "be81ac9c9c53cfc9743782c0fa1d42b4fbba24292318e5808827bc9df0f188bd",
+        "bytes": 4
+      },
+      {
+        "case_id": 15,
+        "raw": "payloads/case-015.observed.u32le",
+        "raw_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+        "metadata": "payloads/case-015.json",
+        "metadata_sha256": "e864809f9d6bb331102bec1add5cb01c8592a35567d942a8d4bdf0c6a24b4902",
+        "bytes": 65536
+      },
+      {
+        "case_id": 16,
+        "raw": "payloads/case-016.observed.u32le",
+        "raw_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+        "metadata": "payloads/case-016.json",
+        "metadata_sha256": "31e33dda2e58f93fafcc528af896a3e14a394e8a0d1e751e5f85c63d7d02a234",
+        "bytes": 65536
+      },
+      {
+        "case_id": 17,
+        "raw": "payloads/case-017.observed.u32le",
+        "raw_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+        "metadata": "payloads/case-017.json",
+        "metadata_sha256": "7adb8977e46c975b2bdaecaa5f6f78e02cd7d9e340fc762472736c21905f6f11",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 18,
+        "raw": "payloads/case-018.observed.u32le",
+        "raw_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+        "metadata": "payloads/case-018.json",
+        "metadata_sha256": "d9d735ed11ecdcdde2527f5e1c060a0abf2ddb143d4a87d320b556f3a620e4c8",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 19,
+        "raw": "payloads/case-019.observed.u32le",
+        "raw_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+        "metadata": "payloads/case-019.json",
+        "metadata_sha256": "536cd165a507c66fbb925589257dfdcb0dc21f8d6a6aa4d258db9fe0ff925148",
+        "bytes": 4
+      },
+      {
+        "case_id": 20,
+        "raw": "payloads/case-020.observed.u32le",
+        "raw_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+        "metadata": "payloads/case-020.json",
+        "metadata_sha256": "31e3ef459051f3fda262cf0e3811ce96eb6d9d4747bf3d3aa521a270c0f5f6b0",
+        "bytes": 4
+      },
+      {
+        "case_id": 21,
+        "raw": "payloads/case-021.observed.u32le",
+        "raw_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+        "metadata": "payloads/case-021.json",
+        "metadata_sha256": "29fa154df704384dd764cc9c1d6d0ac58e6d44dd612d76e946cd14594f1bbac9",
+        "bytes": 65536
+      },
+      {
+        "case_id": 22,
+        "raw": "payloads/case-022.observed.u32le",
+        "raw_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+        "metadata": "payloads/case-022.json",
+        "metadata_sha256": "620a2b8089f08c6a05e3c166e9fb4332cd6347587ea2f9940d2e621ec1fc9e56",
+        "bytes": 65536
+      },
+      {
+        "case_id": 23,
+        "raw": "payloads/case-023.observed.u32le",
+        "raw_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+        "metadata": "payloads/case-023.json",
+        "metadata_sha256": "63b3f36278b255ab719501de9ebbfd0eecc23be5e304e0c745ce86da1e75d548",
+        "bytes": 1048576
+      },
+      {
+        "case_id": 24,
+        "raw": "payloads/case-024.observed.u32le",
+        "raw_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+        "metadata": "payloads/case-024.json",
+        "metadata_sha256": "c1687090957d5cc5e50b121cf6437c18cbca8b4be513fa59df86a139f13084bb",
+        "bytes": 1048576
+      }
+    ]
+  },
+  "limitations": [
+    "A same-index sentinel match does not prove absence of writes; the same value could have been written.",
+    "The source hash is bijective over uint32; an in-range inverse is only an equality hypothesis about the source index.",
+    "Source and sentinel matches at other indices are independent and may overlap.",
+    "Repeated blocks, especially uniform blocks, do not prove addressing aliasing.",
+    "SHA256 records the bytes analyzed; it does not authenticate their origin.",
+    "Word patterns alone cannot locate a fault in a requester, mapping, bridge, or host fabric.",
+    "Recorded CUPTI per-case coverage is cross-checked here; callback/correlation reconstruction is a separate audit.",
+    "CUPTI does not expose final hardware transfer descriptors or exclude every possible internal staging path.",
+    "PUSH and PULL still use separate allocations and virtual mappings; this is not a same-allocation A/B test.",
+    "A complete diagnostic run, including 24 passing payloads if observed, is not by itself a certified P2P fix."
+  ],
+  "cases": [
+    {
+      "bytes": 4,
+      "case_id": 1,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 1
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "a56887da",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "a56887da",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-001.json",
+      "metadata_sha256": "6b1df125ba8a4ba3ea715201ece80e5cb79ee1578115acd42367919ca5b37437",
+      "mode": "PUSH",
+      "observed_file": "case-001.observed.u32le",
+      "observed_sha256": "dbdcfdb8c004303c7638e767b2c3feaa0fb8a35bc8e9eda1e8cf8121b589ffa4",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "78dcdebc",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 4,
+      "case_id": 2,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 1
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "a56887da",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "a56887da",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-002.json",
+      "metadata_sha256": "3b791b7a19a5168f65d6c06fc747372fd75bd8ff75551812828ac40046fb0fca",
+      "mode": "PUSH",
+      "observed_file": "case-002.observed.u32le",
+      "observed_sha256": "dbdcfdb8c004303c7638e767b2c3feaa0fb8a35bc8e9eda1e8cf8121b589ffa4",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "78dcdebc",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 65536,
+      "case_id": 3,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 16384
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "4dfb91f0",
+        "observed": "b2046e0f",
+        "sentinel": "b2046e0f",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "3f9cf219",
+        "observed": "c0630de6",
+        "sentinel": "c0630de6",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-003.json",
+      "metadata_sha256": "b9cf9483effc83c817520250fed5b2dd7c2467896847d0ef9c53bec85068b3f7",
+      "mode": "PUSH",
+      "observed_file": "case-003.observed.u32le",
+      "observed_sha256": "a02b7e06da1b44832568dba5afa6ead791c5424bedd2875311fdcc5654546237",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 1024
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16
+        }
+      ],
+      "seed": "78dddeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 65536,
+      "case_id": 4,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 16384
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "4dfb91f0",
+        "observed": "b2046e0f",
+        "sentinel": "b2046e0f",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "3f9cf219",
+        "observed": "c0630de6",
+        "sentinel": "c0630de6",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-004.json",
+      "metadata_sha256": "9eb02abf1d54c474e9c9b7e3f747c85dc765f7e85d2b9d8136769b4804472870",
+      "mode": "PUSH",
+      "observed_file": "case-004.observed.u32le",
+      "observed_sha256": "a02b7e06da1b44832568dba5afa6ead791c5424bedd2875311fdcc5654546237",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 1024
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16
+        }
+      ],
+      "seed": "78dddeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 5,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 262144
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "e2a4af02",
+        "observed": "1d5b50fd",
+        "sentinel": "1d5b50fd",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "18bde958",
+        "observed": "e74216a7",
+        "sentinel": "e74216a7",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-005.json",
+      "metadata_sha256": "08c097e2e2fc2158d6a8b2a1c0d612b8c5b5b9e7a26ad8ec70a7c0b1a693f595",
+      "mode": "PUSH",
+      "observed_file": "case-005.observed.u32le",
+      "observed_sha256": "eb8ef7d9d782011288354369f0dbea62feae4d71dc350905084150a61b353b15",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 8,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16384
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 256
+        }
+      ],
+      "seed": "78ccdeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 8,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [
+          {
+            "delta_bytes": -698204,
+            "delta_words": -174551,
+            "words": 1
+          },
+          {
+            "delta_bytes": -384628,
+            "delta_words": -96157,
+            "words": 1
+          },
+          {
+            "delta_bytes": -270560,
+            "delta_words": -67640,
+            "words": 1
+          },
+          {
+            "delta_bytes": -53356,
+            "delta_words": -13339,
+            "words": 1
+          },
+          {
+            "delta_bytes": 53356,
+            "delta_words": 13339,
+            "words": 1
+          },
+          {
+            "delta_bytes": 270560,
+            "delta_words": 67640,
+            "words": 1
+          },
+          {
+            "delta_bytes": 384628,
+            "delta_words": 96157,
+            "words": 1
+          },
+          {
+            "delta_bytes": 698204,
+            "delta_words": 174551,
+            "words": 1
+          }
+        ],
+        "total_matches": 8
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 6,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "sentinel_match",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 0,
+          "sentinel_match": 1
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 0,
+        "sentinel_match_words": 262144
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "e2a4af02",
+        "observed": "1d5b50fd",
+        "sentinel": "1d5b50fd",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "18bde958",
+        "observed": "e74216a7",
+        "sentinel": "e74216a7",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-006.json",
+      "metadata_sha256": "bc4b062eec4dd7706a2bee3c2573f12473e1aaf420c81a61d539b5b152c09967",
+      "mode": "PUSH",
+      "observed_file": "case-006.observed.u32le",
+      "observed_sha256": "eb8ef7d9d782011288354369f0dbea62feae4d71dc350905084150a61b353b15",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 8,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16384
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 256
+        }
+      ],
+      "seed": "78ccdeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 8,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [
+          {
+            "delta_bytes": -698204,
+            "delta_words": -174551,
+            "words": 1
+          },
+          {
+            "delta_bytes": -384628,
+            "delta_words": -96157,
+            "words": 1
+          },
+          {
+            "delta_bytes": -270560,
+            "delta_words": -67640,
+            "words": 1
+          },
+          {
+            "delta_bytes": -53356,
+            "delta_words": -13339,
+            "words": 1
+          },
+          {
+            "delta_bytes": 53356,
+            "delta_words": 13339,
+            "words": 1
+          },
+          {
+            "delta_bytes": 270560,
+            "delta_words": 67640,
+            "words": 1
+          },
+          {
+            "delta_bytes": 384628,
+            "delta_words": 96157,
+            "words": 1
+          },
+          {
+            "delta_bytes": 698204,
+            "delta_words": 174551,
+            "words": 1
+          }
+        ],
+        "total_matches": 8
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 4,
+      "case_id": 7,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 1,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-007.json",
+      "metadata_sha256": "42f4c56841aec5b326e391ad099dbdd464ae32f212a9a3081790fe95ecec7934",
+      "mode": "PUSH",
+      "observed_file": "case-007.observed.u32le",
+      "observed_sha256": "aa955235b6bd01c4ab0f0e02266736d061ffa3f631df70ed04de4d1e733544f1",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "4d2472dd",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 4,
+      "case_id": 8,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 1,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-008.json",
+      "metadata_sha256": "6d74201e59dec74baf4b519346cebe14a28c937581cf6c68223abd52a8a90d95",
+      "mode": "PUSH",
+      "observed_file": "case-008.observed.u32le",
+      "observed_sha256": "aa955235b6bd01c4ab0f0e02266736d061ffa3f631df70ed04de4d1e733544f1",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "4d2472dd",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 65536,
+      "case_id": 9,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 16384,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-009.json",
+      "metadata_sha256": "bc8998c319e16b649543d96a433627e0f7c0331b8c5851941a05f8396fc23802",
+      "mode": "PUSH",
+      "observed_file": "case-009.observed.u32le",
+      "observed_sha256": "03fb32f505773bb11e7f151f399b517d588231290b9500c4a741ff4ac9e0cd0b",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 1024
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16
+        }
+      ],
+      "seed": "4d2572d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 65536,
+      "case_id": 10,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 16384,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-010.json",
+      "metadata_sha256": "e0a8c4b234e032986c038605ce2e03ef6bbccb8f2448bbec8ae48510d062468b",
+      "mode": "PUSH",
+      "observed_file": "case-010.observed.u32le",
+      "observed_sha256": "03fb32f505773bb11e7f151f399b517d588231290b9500c4a741ff4ac9e0cd0b",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 1024
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16
+        }
+      ],
+      "seed": "4d2572d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 11,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 262144,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-011.json",
+      "metadata_sha256": "4560985a4da2b683b53d2c89acae2d071ae2672a005d64e8b1d07305103a0050",
+      "mode": "PUSH",
+      "observed_file": "case-011.observed.u32le",
+      "observed_sha256": "2b8e48fe8b4645c2295e85309f2554ad07d20ccb43678cdeb28b0ce6f350ac81",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 14,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16384
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 256
+        }
+      ],
+      "seed": "4d3472d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 12,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "correct",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 1,
+          "other": 0,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 262144,
+        "other_words": 0,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": null,
+      "hardware_qualification": "unknown",
+      "last_mismatch": null,
+      "metadata_counts_verified": true,
+      "metadata_file": "case-012.json",
+      "metadata_sha256": "f9566a9e39e761952e492227335ce41055c54ca53ea6d49040aa85d7407ede63",
+      "mode": "PUSH",
+      "observed_file": "case-012.observed.u32le",
+      "observed_sha256": "2b8e48fe8b4645c2295e85309f2554ad07d20ccb43678cdeb28b0ce6f350ac81",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 14,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 0,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 16384
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 256
+        }
+      ],
+      "seed": "4d3472d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 4,
+      "case_id": 13,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 1,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "ffffffff",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "ffffffff",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-013.json",
+      "metadata_sha256": "29472049f7b2cd6f734fa20f6ba2e03ec8c1a66a5e31477330c66c0a29fafac4",
+      "mode": "PULL",
+      "observed_file": "case-013.observed.u32le",
+      "observed_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 1,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "78dcdebc",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 4,
+      "case_id": 14,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 1,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "ffffffff",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "5a977825",
+        "observed": "ffffffff",
+        "sentinel": "a56887da",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-014.json",
+      "metadata_sha256": "be81ac9c9c53cfc9743782c0fa1d42b4fbba24292318e5808827bc9df0f188bd",
+      "mode": "PULL",
+      "observed_file": "case-014.observed.u32le",
+      "observed_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 1,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "78dcdebc",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 65536,
+      "case_id": 15,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 16384,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "4dfb91f0",
+        "observed": "ffffffff",
+        "sentinel": "b2046e0f",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "3f9cf219",
+        "observed": "ffffffff",
+        "sentinel": "c0630de6",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-015.json",
+      "metadata_sha256": "e864809f9d6bb331102bec1add5cb01c8592a35567d942a8d4bdf0c6a24b4902",
+      "mode": "PULL",
+      "observed_file": "case-015.observed.u32le",
+      "observed_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 16384,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 1015,
+          "repeated_blocks": 1023,
+          "uniform_repeated_blocks": 1023,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 7,
+          "repeated_blocks": 15,
+          "uniform_repeated_blocks": 15,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "78dddeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 65536,
+      "case_id": 16,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 16384,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "4dfb91f0",
+        "observed": "ffffffff",
+        "sentinel": "b2046e0f",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "3f9cf219",
+        "observed": "ffffffff",
+        "sentinel": "c0630de6",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-016.json",
+      "metadata_sha256": "31e33dda2e58f93fafcc528af896a3e14a394e8a0d1e751e5f85c63d7d02a234",
+      "mode": "PULL",
+      "observed_file": "case-016.observed.u32le",
+      "observed_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 16384,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 1015,
+          "repeated_blocks": 1023,
+          "uniform_repeated_blocks": 1023,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 7,
+          "repeated_blocks": 15,
+          "uniform_repeated_blocks": 15,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "78dddeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 17,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 262144,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "CE_REQUEST",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "e2a4af02",
+        "observed": "ffffffff",
+        "sentinel": "1d5b50fd",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "18bde958",
+        "observed": "ffffffff",
+        "sentinel": "e74216a7",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-017.json",
+      "metadata_sha256": "7adb8977e46c975b2bdaecaa5f6f78e02cd7d9e340fc762472736c21905f6f11",
+      "mode": "PULL",
+      "observed_file": "case-017.observed.u32le",
+      "observed_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 262144,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 16375,
+          "repeated_blocks": 16383,
+          "uniform_repeated_blocks": 16383,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 247,
+          "repeated_blocks": 255,
+          "uniform_repeated_blocks": 255,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "78ccdeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 18,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 262144,
+        "sentinel_match_words": 0
+      },
+      "destination": 1,
+      "engine": "SM",
+      "executor": 1,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "e2a4af02",
+        "observed": "ffffffff",
+        "sentinel": "1d5b50fd",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "18bde958",
+        "observed": "ffffffff",
+        "sentinel": "e74216a7",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-018.json",
+      "metadata_sha256": "d9d735ed11ecdcdde2527f5e1c060a0abf2ddb143d4a87d320b556f3a620e4c8",
+      "mode": "PULL",
+      "observed_file": "case-018.observed.u32le",
+      "observed_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 262144,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 16375,
+          "repeated_blocks": 16383,
+          "uniform_repeated_blocks": 16383,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 247,
+          "repeated_blocks": 255,
+          "uniform_repeated_blocks": 255,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "78ccdeb8",
+      "sentinel": "bitwise-not-expected",
+      "source": 0,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 4,
+      "case_id": 19,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 1,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "9af92ef5",
+        "observed": "ffffffff",
+        "sentinel": "6506d10a",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "9af92ef5",
+        "observed": "ffffffff",
+        "sentinel": "6506d10a",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-019.json",
+      "metadata_sha256": "536cd165a507c66fbb925589257dfdcb0dc21f8d6a6aa4d258db9fe0ff925148",
+      "mode": "PULL",
+      "observed_file": "case-019.observed.u32le",
+      "observed_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 1,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "4d2472dd",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 4,
+      "case_id": 20,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 4,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 0,
+            "words": 1
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 1,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "9af92ef5",
+        "observed": "ffffffff",
+        "sentinel": "6506d10a",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 0,
+        "expected": "9af92ef5",
+        "observed": "ffffffff",
+        "sentinel": "6506d10a",
+        "word_index": 0
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-020.json",
+      "metadata_sha256": "31e3ef459051f3fda262cf0e3811ce96eb6d9d4747bf3d3aa521a270c0f5f6b0",
+      "mode": "PULL",
+      "observed_file": "case-020.observed.u32le",
+      "observed_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 1,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 0,
+          "distinct_repeated_patterns": 0,
+          "examples": [],
+          "ignored_tail_bytes": 4,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 0,
+          "repeated_blocks": 0,
+          "uniform_repeated_blocks": 0,
+          "unique_blocks": 0
+        }
+      ],
+      "seed": "4d2472dd",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 1
+    },
+    {
+      "bytes": 65536,
+      "case_id": 21,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 16384,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "1c390adf",
+        "observed": "ffffffff",
+        "sentinel": "e3c6f520",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "f6b6e4a0",
+        "observed": "ffffffff",
+        "sentinel": "09491b5f",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-021.json",
+      "metadata_sha256": "29fa154df704384dd764cc9c1d6d0ac58e6d44dd612d76e946cd14594f1bbac9",
+      "mode": "PULL",
+      "observed_file": "case-021.observed.u32le",
+      "observed_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 16384,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 1015,
+          "repeated_blocks": 1023,
+          "uniform_repeated_blocks": 1023,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 7,
+          "repeated_blocks": 15,
+          "uniform_repeated_blocks": 15,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "4d2572d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 65536,
+      "case_id": 22,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 65536,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 16383,
+            "words": 16384
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 16384,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "1c390adf",
+        "observed": "ffffffff",
+        "sentinel": "e3c6f520",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 65532,
+        "expected": "f6b6e4a0",
+        "observed": "ffffffff",
+        "sentinel": "09491b5f",
+        "word_index": 16383
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-022.json",
+      "metadata_sha256": "620a2b8089f08c6a05e3c166e9fb4332cd6347587ea2f9940d2e621ec1fc9e56",
+      "mode": "PULL",
+      "observed_file": "case-022.observed.u32le",
+      "observed_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 16384,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 1024,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 1015,
+          "repeated_blocks": 1023,
+          "uniform_repeated_blocks": 1023,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 16,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 7,
+          "repeated_blocks": 15,
+          "uniform_repeated_blocks": 15,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "4d2572d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 16384
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 23,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 262144,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "CE_REQUEST",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "245b8824",
+        "observed": "ffffffff",
+        "sentinel": "dba477db",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "7545c69c",
+        "observed": "ffffffff",
+        "sentinel": "8aba3963",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-023.json",
+      "metadata_sha256": "63b3f36278b255ab719501de9ebbfd0eecc23be5e304e0c745ce86da1e75d548",
+      "mode": "PULL",
+      "observed_file": "case-023.observed.u32le",
+      "observed_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 262144,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 16375,
+          "repeated_blocks": 16383,
+          "uniform_repeated_blocks": 16383,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 247,
+          "repeated_blocks": 255,
+          "uniform_repeated_blocks": 255,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "4d3472d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    },
+    {
+      "bytes": 1048576,
+      "case_id": 24,
+      "class_runs": {
+        "max_emitted_runs": 128,
+        "omitted_runs": 0,
+        "runs": [
+          {
+            "class": "other",
+            "end_byte_offset_exclusive": 1048576,
+            "first_byte_offset": 0,
+            "first_word": 0,
+            "last_word": 262143,
+            "words": 262144
+          }
+        ],
+        "runs_by_class": {
+          "correct": 0,
+          "other": 1,
+          "sentinel_match": 0
+        },
+        "total_runs": 1
+      },
+      "counts": {
+        "correct_words": 0,
+        "other_words": 262144,
+        "sentinel_match_words": 0
+      },
+      "destination": 0,
+      "engine": "SM",
+      "executor": 0,
+      "first_mismatch": {
+        "byte_offset": 0,
+        "expected": "245b8824",
+        "observed": "ffffffff",
+        "sentinel": "dba477db",
+        "word_index": 0
+      },
+      "hardware_qualification": "unknown",
+      "last_mismatch": {
+        "byte_offset": 1048572,
+        "expected": "7545c69c",
+        "observed": "ffffffff",
+        "sentinel": "8aba3963",
+        "word_index": 262143
+      },
+      "metadata_counts_verified": true,
+      "metadata_file": "case-024.json",
+      "metadata_sha256": "c1687090957d5cc5e50b121cf6437c18cbca8b4be513fa59df86a139f13084bb",
+      "mode": "PULL",
+      "observed_file": "case-024.observed.u32le",
+      "observed_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "other_index_matches": {
+        "equal_sentinel_other_index_words": 0,
+        "equal_source_other_index_words": 0,
+        "note": "Independent equality counts; they may overlap with each other and with any word class. They are not transaction addresses."
+      },
+      "overlapping_value_counts": {
+        "all_ones_words": 262144,
+        "all_zero_words": 0,
+        "note": "These counts overlap with the three mutually exclusive word classes."
+      },
+      "pattern": "mix32-index-xor-seed-v1",
+      "repeated_blocks": [
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 64,
+          "complete_blocks": 16384,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 64,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 128,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 256,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 320,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 448,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 512,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 16375,
+          "repeated_blocks": 16383,
+          "uniform_repeated_blocks": 16383,
+          "unique_blocks": 1
+        },
+        {
+          "alignment_origin_byte": 0,
+          "block_bytes": 4096,
+          "complete_blocks": 256,
+          "distinct_repeated_patterns": 1,
+          "examples": [
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 1,
+              "repeated_byte_offset": 4096,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 2,
+              "repeated_byte_offset": 8192,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 3,
+              "repeated_byte_offset": 12288,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 4,
+              "repeated_byte_offset": 16384,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 5,
+              "repeated_byte_offset": 20480,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 6,
+              "repeated_byte_offset": 24576,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 7,
+              "repeated_byte_offset": 28672,
+              "uniform_u32": "ffffffff"
+            },
+            {
+              "block_sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+              "first_block_index": 0,
+              "first_byte_offset": 0,
+              "repeated_block_index": 8,
+              "repeated_byte_offset": 32768,
+              "uniform_u32": "ffffffff"
+            }
+          ],
+          "ignored_tail_bytes": 0,
+          "interpretation": "Exact repetition is not proof of addressing aliasing; uniform repeats are especially nonspecific.",
+          "max_examples": 8,
+          "nonuniform_repeated_blocks": 0,
+          "omitted_examples": 247,
+          "repeated_blocks": 255,
+          "uniform_repeated_blocks": 255,
+          "unique_blocks": 1
+        }
+      ],
+      "seed": "4d3472d9",
+      "sentinel": "bitwise-not-expected",
+      "source": 1,
+      "source_index_delta_histogram": {
+        "definition": "matched_source_index - observed_word_index; same-index matches excluded",
+        "distinct_deltas": 0,
+        "max_entries": 16,
+        "omitted_distinct_deltas": 0,
+        "top": [],
+        "total_matches": 0
+      },
+      "words": 262144
+    }
+  ],
+  "result_log_sha256": "1cdae7cd04611154a3be7033e993794d184f2ae57d39256e81acf57aa8e55aad"
+}

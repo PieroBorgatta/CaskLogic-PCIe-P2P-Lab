@@ -1,0 +1,168 @@
+[    7.813790] NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (root@gpu-vm)  Tue Oct 20 23:26:55 UTC 2026
+<12>[   10.115491] CaskLogicCE phase=program_start monotonic=10.109105778 s=-1 d=-1
+<12>[   13.577705] CaskLogicCE phase=allocations_begin monotonic=13.571331603 s=-1 d=-1
+<12>[   13.577750] CaskLogicCEAllocation nonce=a01b238e-3cd5-4764-b705-96e4be91c029 stage=begin owner=0 mode=PUSH role=send va=76e18ce00000 bytes=8388608
+<12>[   13.577781] CaskLogicCEAllocation nonce=a01b238e-3cd5-4764-b705-96e4be91c029 stage=end owner=0 mode=PUSH role=send va=76e18ce00000 bytes=8388608
+<12>[   13.577799] CaskLogicCEAllocation nonce=320f210c-58fb-4514-bebc-99e8e4e286cc stage=begin owner=0 mode=PUSH role=receive va=76e18d600000 bytes=8388608
+[   13.577875] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=1 mem=caf00143 subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8A9A2DB0E808 iovas=600 size=800000 bar1=4000000000 bar1_size=400000000 bar1_off=400000 window_phys=4000400000 dma=4000400000 ranges=1
+[   13.577876] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf00143 src=1 dst=0 desc=FFFF8A9A2DB0E808 offset=0 size=800000 dynamic=1 dma=4000400000
+[   13.577879] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=1 dst=0 desc=FFFF8A9A2DB0E808 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4000400000 phys_input=4000400000 decoded=4000400000 addr_shift=12 raw0=060000040004000f raw1=0000000000000000
+[   13.577880] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf00143 src=1 status=0
+<12>[   13.577896] CaskLogicCEAllocation nonce=320f210c-58fb-4514-bebc-99e8e4e286cc stage=end owner=0 mode=PUSH role=receive va=76e18d600000 bytes=8388608
+<12>[   13.577926] CaskLogicCEAllocation nonce=bb86b9f2-fa2b-4914-9049-a4426ffb287f stage=begin owner=1 mode=PUSH role=send va=402000000 bytes=8388608
+<12>[   13.577978] CaskLogicCEAllocation nonce=bb86b9f2-fa2b-4914-9049-a4426ffb287f stage=end owner=1 mode=PUSH role=send va=402000000 bytes=8388608
+<12>[   13.577992] CaskLogicCEAllocation nonce=04b1bf8f-e001-4aa5-9e49-b7e9b1100d9f stage=begin owner=1 mode=PUSH role=receive va=402800000 bytes=8388608
+[   13.578050] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=2 mem=caf00145 subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8A9A2DB0F608 iovas=100 size=800000 bar1=4600000000 bar1_size=10000000 bar1_off=400000 window_phys=4600400000 dma=4600400000 ranges=1
+[   13.578051] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf00145 src=0 dst=1 desc=FFFF8A9A2DB0F608 offset=0 size=800000 dynamic=1 dma=4600400000
+[   13.578053] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=0 dst=1 desc=FFFF8A9A2DB0F608 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4600400000 phys_input=4600400000 decoded=4600400000 addr_shift=12 raw0=060000046004000f raw1=0000000000000000
+[   13.578054] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf00145 src=0 status=0
+<12>[   13.578087] CaskLogicCEAllocation nonce=04b1bf8f-e001-4aa5-9e49-b7e9b1100d9f stage=end owner=1 mode=PUSH role=receive va=402800000 bytes=8388608
+<12>[   13.578103] CaskLogicCEAllocation nonce=6b1d442f-186f-43db-a435-c5985d48c9bb stage=begin owner=0 mode=PULL role=send va=403000000 bytes=8388608
+[   13.578147] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=3 mem=caf00148 subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8A9A2DB0F008 iovas=600 size=800000 bar1=4000000000 bar1_size=400000000 bar1_off=c00000 window_phys=4000c00000 dma=4000c00000 ranges=1
+[   13.578148] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf00148 src=1 dst=0 desc=FFFF8A9A2DB0F008 offset=0 size=800000 dynamic=1 dma=4000c00000
+[   13.578150] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=1 dst=0 desc=FFFF8A9A2DB0F008 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4000c00000 phys_input=4000c00000 decoded=4000c00000 addr_shift=12 raw0=06000004000c000f raw1=0000000000000000
+[   13.578150] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf00148 src=1 status=0
+<12>[   13.578164] CaskLogicCEAllocation nonce=6b1d442f-186f-43db-a435-c5985d48c9bb stage=end owner=0 mode=PULL role=send va=403000000 bytes=8388608
+<12>[   13.578179] CaskLogicCEAllocation nonce=0ccfb5c1-f536-4a72-9697-a727e3d73e60 stage=begin owner=0 mode=PULL role=receive va=403800000 bytes=8388608
+<12>[   13.578200] CaskLogicCEAllocation nonce=0ccfb5c1-f536-4a72-9697-a727e3d73e60 stage=end owner=0 mode=PULL role=receive va=403800000 bytes=8388608
+<12>[   13.578220] CaskLogicCEAllocation nonce=7a09b6b1-c97f-418d-acaf-5c919f3a7765 stage=begin owner=1 mode=PULL role=send va=404000000 bytes=8388608
+[   13.578264] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=4 mem=caf0014a subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8A9A2DB27808 iovas=100 size=800000 bar1=4600000000 bar1_size=10000000 bar1_off=c00000 window_phys=4600c00000 dma=4600c00000 ranges=1
+[   13.578265] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_REQUEST client=c1d00001 mem=caf0014a src=0 dst=1 desc=FFFF8A9A2DB27808 offset=0 size=800000 dynamic=1 dma=4600c00000
+[   13.578266] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=0 dst=1 desc=FFFF8A9A2DB27808 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4600c00000 phys_input=4600c00000 decoded=4600c00000 addr_shift=12 raw0=06000004600c000f raw1=0000000000000000
+[   13.578267] NVRM: nvGpuOpsGetExternalAllocPtesOrPhysAddrs: P2PTRC RM_RETURN client=c1d00001 mem=caf0014a src=0 status=0
+<12>[   13.578298] CaskLogicCEAllocation nonce=7a09b6b1-c97f-418d-acaf-5c919f3a7765 stage=end owner=1 mode=PULL role=send va=404000000 bytes=8388608
+<12>[   13.578312] CaskLogicCEAllocation nonce=964fc01c-83fb-4b30-8116-ae1ed57e35b0 stage=begin owner=1 mode=PULL role=receive va=404800000 bytes=8388608
+<12>[   13.578336] CaskLogicCEAllocation nonce=964fc01c-83fb-4b30-8116-ae1ed57e35b0 stage=end owner=1 mode=PULL role=receive va=404800000 bytes=8388608
+<12>[   13.578345] CaskLogicCE phase=allocations_done monotonic=13.571972602 s=-1 d=-1
+<12>[   13.586350] CaskLogicCE phase=owners_ready monotonic=13.579977462 s=0 d=1
+<12>[   13.591363] CaskLogicCE phase=transfer_begin monotonic=13.584991066 s=0 d=1
+<12>[   13.592431] CaskLogicCE phase=transfer_complete monotonic=13.586058796 s=0 d=1
+<12>[   13.601078] CaskLogicCE phase=comparison_done monotonic=13.594704908 s=0 d=1
+<12>[   13.603374] CaskLogicCE phase=owners_ready monotonic=13.597001669 s=0 d=1
+<12>[   13.608394] CaskLogicCE phase=transfer_begin monotonic=13.602022476 s=0 d=1
+<12>[   13.608841] CaskLogicCE phase=transfer_complete monotonic=13.602467958 s=0 d=1
+<12>[   13.617274] CaskLogicCE phase=comparison_done monotonic=13.610900631 s=0 d=1
+<12>[   13.619666] CaskLogicCE phase=owners_ready monotonic=13.613293589 s=0 d=1
+<12>[   13.624678] CaskLogicCE phase=transfer_begin monotonic=13.618306326 s=0 d=1
+<12>[   13.625112] CaskLogicCE phase=transfer_complete monotonic=13.618738754 s=0 d=1
+<12>[   13.633785] CaskLogicCE phase=comparison_done monotonic=13.627411701 s=0 d=1
+<12>[   13.636144] CaskLogicCE phase=owners_ready monotonic=13.629772116 s=0 d=1
+<12>[   13.641158] CaskLogicCE phase=transfer_begin monotonic=13.634785537 s=0 d=1
+<12>[   13.641591] CaskLogicCE phase=transfer_complete monotonic=13.635217624 s=0 d=1
+<12>[   13.649820] CaskLogicCE phase=comparison_done monotonic=13.643447056 s=0 d=1
+<12>[   13.653437] CaskLogicCE phase=owners_ready monotonic=13.647064707 s=0 d=1
+<12>[   13.658452] CaskLogicCE phase=transfer_begin monotonic=13.652079703 s=0 d=1
+<12>[   13.659984] CaskLogicCE phase=transfer_complete monotonic=13.653610451 s=0 d=1
+<12>[   13.670861] CaskLogicCE phase=comparison_done monotonic=13.664487301 s=0 d=1
+<12>[   13.674362] CaskLogicCE phase=owners_ready monotonic=13.667989719 s=0 d=1
+<12>[   13.679378] CaskLogicCE phase=transfer_begin monotonic=13.673006317 s=0 d=1
+<12>[   13.680941] CaskLogicCE phase=transfer_complete monotonic=13.674567994 s=0 d=1
+<12>[   13.692063] CaskLogicCE phase=comparison_done monotonic=13.685689410 s=0 d=1
+<12>[   13.694381] CaskLogicCE phase=owners_ready monotonic=13.688008364 s=1 d=0
+<12>[   13.699392] CaskLogicCE phase=transfer_begin monotonic=13.693019576 s=1 d=0
+<12>[   13.699866] CaskLogicCE phase=transfer_complete monotonic=13.693492755 s=1 d=0
+<12>[   13.708672] CaskLogicCE phase=comparison_done monotonic=13.702298121 s=1 d=0
+<12>[   13.710974] CaskLogicCE phase=owners_ready monotonic=13.704602102 s=1 d=0
+<12>[   13.715987] CaskLogicCE phase=transfer_begin monotonic=13.709615102 s=1 d=0
+<12>[   13.716419] CaskLogicCE phase=transfer_complete monotonic=13.710045482 s=1 d=0
+<12>[   13.725292] CaskLogicCE phase=comparison_done monotonic=13.718918804 s=1 d=0
+<12>[   13.727678] CaskLogicCE phase=owners_ready monotonic=13.721306221 s=1 d=0
+<12>[   13.732691] CaskLogicCE phase=transfer_begin monotonic=13.726319281 s=1 d=0
+<12>[   13.733072] CaskLogicCE phase=transfer_complete monotonic=13.726698334 s=1 d=0
+<12>[   13.742006] CaskLogicCE phase=comparison_done monotonic=13.735629410 s=1 d=0
+<12>[   13.744401] CaskLogicCE phase=owners_ready monotonic=13.738028574 s=1 d=0
+<12>[   13.749439] CaskLogicCE phase=transfer_begin monotonic=13.743067135 s=1 d=0
+<12>[   13.749909] CaskLogicCE phase=transfer_complete monotonic=13.743535464 s=1 d=0
+<12>[   13.758877] CaskLogicCE phase=comparison_done monotonic=13.752503986 s=1 d=0
+<12>[   13.762515] CaskLogicCE phase=owners_ready monotonic=13.756142041 s=1 d=0
+<12>[   13.767528] CaskLogicCE phase=transfer_begin monotonic=13.761155700 s=1 d=0
+<12>[   13.768264] CaskLogicCE phase=transfer_complete monotonic=13.761890628 s=1 d=0
+<12>[   13.779747] CaskLogicCE phase=comparison_done monotonic=13.773372856 s=1 d=0
+<12>[   13.783514] CaskLogicCE phase=owners_ready monotonic=13.777140902 s=1 d=0
+<12>[   13.788541] CaskLogicCE phase=transfer_begin monotonic=13.782169495 s=1 d=0
+<12>[   13.789170] CaskLogicCE phase=transfer_complete monotonic=13.782797602 s=1 d=0
+<12>[   13.800881] CaskLogicCE phase=comparison_done monotonic=13.794507683 s=1 d=0
+<12>[   13.803029] CaskLogicCE phase=owners_ready monotonic=13.796656320 s=0 d=1
+<12>[   13.808048] CaskLogicCE phase=transfer_begin monotonic=13.801675991 s=0 d=1
+<12>[   13.808304] CaskLogicCE phase=transfer_complete monotonic=13.801931883 s=0 d=1
+<12>[   13.817097] CaskLogicCE phase=comparison_done monotonic=13.810724023 s=0 d=1
+<12>[   13.819374] CaskLogicCE phase=owners_ready monotonic=13.813001279 s=0 d=1
+<12>[   13.824381] CaskLogicCE phase=transfer_begin monotonic=13.818009481 s=0 d=1
+<12>[   13.824823] CaskLogicCE phase=transfer_complete monotonic=13.818449641 s=0 d=1
+<12>[   13.833593] CaskLogicCE phase=comparison_done monotonic=13.827220263 s=0 d=1
+<12>[   13.835592] CaskLogicCE phase=owners_ready monotonic=13.829220111 s=0 d=1
+<12>[   13.840609] CaskLogicCE phase=transfer_begin monotonic=13.834237157 s=0 d=1
+<12>[   13.841037] CaskLogicCE phase=transfer_complete monotonic=13.834663807 s=0 d=1
+<12>[   13.849925] CaskLogicCE phase=comparison_done monotonic=13.843548924 s=0 d=1
+<12>[   13.852351] CaskLogicCE phase=owners_ready monotonic=13.845978815 s=0 d=1
+<12>[   13.857385] CaskLogicCE phase=transfer_begin monotonic=13.851013527 s=0 d=1
+<12>[   13.857882] CaskLogicCE phase=transfer_complete monotonic=13.851508147 s=0 d=1
+<12>[   13.866873] CaskLogicCE phase=comparison_done monotonic=13.860496954 s=0 d=1
+<12>[   13.870540] CaskLogicCE phase=owners_ready monotonic=13.864167305 s=0 d=1
+<12>[   13.875578] CaskLogicCE phase=transfer_begin monotonic=13.869206263 s=0 d=1
+<12>[   13.876282] CaskLogicCE phase=transfer_complete monotonic=13.869907915 s=0 d=1
+<12>[   13.888122] CaskLogicCE phase=comparison_done monotonic=13.881746105 s=0 d=1
+<12>[   13.891595] CaskLogicCE phase=owners_ready monotonic=13.885222394 s=0 d=1
+<12>[   13.896632] CaskLogicCE phase=transfer_begin monotonic=13.890259835 s=0 d=1
+<12>[   13.897306] CaskLogicCE phase=transfer_complete monotonic=13.890932387 s=0 d=1
+<12>[   13.909812] CaskLogicCE phase=comparison_done monotonic=13.903436212 s=0 d=1
+<12>[   13.912296] CaskLogicCE phase=owners_ready monotonic=13.905923136 s=1 d=0
+<12>[   13.917322] CaskLogicCE phase=transfer_begin monotonic=13.910950278 s=1 d=0
+<12>[   13.917815] CaskLogicCE phase=transfer_complete monotonic=13.911441307 s=1 d=0
+<12>[   13.926031] CaskLogicCE phase=comparison_done monotonic=13.919657527 s=1 d=0
+<12>[   13.928235] CaskLogicCE phase=owners_ready monotonic=13.921863296 s=1 d=0
+<12>[   13.933248] CaskLogicCE phase=transfer_begin monotonic=13.926876354 s=1 d=0
+<12>[   13.933722] CaskLogicCE phase=transfer_complete monotonic=13.927348502 s=1 d=0
+<12>[   13.942339] CaskLogicCE phase=comparison_done monotonic=13.935965986 s=1 d=0
+<12>[   13.944361] CaskLogicCE phase=owners_ready monotonic=13.937988344 s=1 d=0
+<12>[   13.949374] CaskLogicCE phase=transfer_begin monotonic=13.943001738 s=1 d=0
+<12>[   13.949800] CaskLogicCE phase=transfer_complete monotonic=13.943426275 s=1 d=0
+<12>[   13.958557] CaskLogicCE phase=comparison_done monotonic=13.952183760 s=1 d=0
+<12>[   13.961003] CaskLogicCE phase=owners_ready monotonic=13.954630248 s=1 d=0
+<12>[   13.966017] CaskLogicCE phase=transfer_begin monotonic=13.959645469 s=1 d=0
+<12>[   13.966469] CaskLogicCE phase=transfer_complete monotonic=13.960095012 s=1 d=0
+<12>[   13.975188] CaskLogicCE phase=comparison_done monotonic=13.968812756 s=1 d=0
+<12>[   13.978995] CaskLogicCE phase=owners_ready monotonic=13.972622373 s=1 d=0
+<12>[   13.984037] CaskLogicCE phase=transfer_begin monotonic=13.977665033 s=1 d=0
+<12>[   13.984484] CaskLogicCE phase=transfer_complete monotonic=13.978110365 s=1 d=0
+<12>[   13.995117] CaskLogicCE phase=comparison_done monotonic=13.988741553 s=1 d=0
+<12>[   13.998837] CaskLogicCE phase=owners_ready monotonic=13.992463842 s=1 d=0
+<12>[   14.003872] CaskLogicCE phase=transfer_begin monotonic=13.997500062 s=1 d=0
+<12>[   14.004287] CaskLogicCE phase=transfer_complete monotonic=13.997914381 s=1 d=0
+<12>[   14.014665] CaskLogicCE phase=comparison_done monotonic=14.008291450 s=1 d=0
+<12>[   14.014674] CaskLogicCE phase=data_done monotonic=14.008302111 s=-1 d=-1
+<12>[   14.016821] CaskLogicCE phase=allocation_free_begin monotonic=14.010448601 s=0 d=-1
+<12>[   14.016903] CaskLogicCE phase=allocation_free_done monotonic=14.010530549 s=0 d=-1
+<12>[   14.016904] CaskLogicCE phase=allocation_free_begin monotonic=14.010532306 s=0 d=-1
+[   14.016922] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=1 mem=caf00143 src=1 iovas=600 dma=4000400000 size=800000
+[   14.016942] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=1 mem=caf00143
+<12>[   14.017083] CaskLogicCE phase=allocation_free_done monotonic=14.010710858 s=0 d=-1
+<12>[   14.017084] CaskLogicCE phase=allocation_free_begin monotonic=14.010712184 s=1 d=-1
+<12>[   14.017117] CaskLogicCE phase=allocation_free_done monotonic=14.010745359 s=1 d=-1
+<12>[   14.017118] CaskLogicCE phase=allocation_free_begin monotonic=14.010746539 s=1 d=-1
+[   14.017432] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=2 mem=caf00145 src=0 iovas=100 dma=4600400000 size=800000
+[   14.017449] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=2 mem=caf00145
+<12>[   14.017466] CaskLogicCE phase=allocation_free_done monotonic=14.011093806 s=1 d=-1
+<12>[   14.017467] CaskLogicCE phase=allocation_free_begin monotonic=14.011094996 s=0 d=-1
+[   14.017769] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=3 mem=caf00148 src=1 iovas=600 dma=4000c00000 size=800000
+[   14.017777] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=3 mem=caf00148
+<12>[   14.017804] CaskLogicCE phase=allocation_free_done monotonic=14.011431570 s=0 d=-1
+<12>[   14.017805] CaskLogicCE phase=allocation_free_begin monotonic=14.011432770 s=0 d=-1
+<12>[   14.017994] CaskLogicCE phase=allocation_free_done monotonic=14.011621855 s=0 d=-1
+<12>[   14.017995] CaskLogicCE phase=allocation_free_begin monotonic=14.011623077 s=1 d=-1
+[   14.018157] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=4 mem=caf0014a src=0 iovas=100 dma=4600c00000 size=800000
+[   14.018171] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=4 mem=caf0014a
+<12>[   14.018193] CaskLogicCE phase=allocation_free_done monotonic=14.011821422 s=1 d=-1
+<12>[   14.018194] CaskLogicCE phase=allocation_free_begin monotonic=14.011822652 s=1 d=-1
+<12>[   14.018526] CaskLogicCE phase=allocation_free_done monotonic=14.012151017 s=1 d=-1
+<12>[   14.018535] CaskLogicCE phase=cleanup_done monotonic=14.012162688 s=-1 d=-1
+<12>[   14.018537] CaskLogicCE phase=context_exit_begin monotonic=14.012164786 s=-1 d=-1
+[   14.385648] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x600
+[   14.400449] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598
+[   14.400453] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607
+[   14.400498] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598
+[   14.400500] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607
+[   14.401698] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598
+[   14.401700] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607
+[   14.401713] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598
+[   14.401715] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607

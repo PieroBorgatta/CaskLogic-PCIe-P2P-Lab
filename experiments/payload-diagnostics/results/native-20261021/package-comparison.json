@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "compared_members": 2295,
+  "changed_members": [
+    "opt/probe/peer_word",
+    "init"
+  ],
+  "baseline_initrd_sha256": "738dc3782611ddf8a7103640f3dc91cc9f0bd264cf83c985e3b0a791c45786fd",
+  "candidate_initrd_sha256": "8baaf6b700d9ea0853b7605ad50c7160dd072f4445639109fd79093116959add",
+  "method": "Every CPIO member name/mode/owner/rdev/size/content hash; only init and program differ; unchanged metadata for both changed members",
+  "unchanged_driver_and_libraries": true,
+  "hardware_executed": false
+}

@@ -48,6 +48,12 @@ The native PUSH/PULL experiment with validated initialization and synchronizatio
 
 [Full PUSH/PULL analysis — Italian](archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI.md) · [Sanitized public log](archive/p2p-next-investigation-20261021/native-pushpull-results/result.log)
 
+### Full-buffer follow-up
+
+A [new native rerun with complete payload capture](experiments/payload-diagnostics/results/native-20261021/README.md) confirms the same 6 passes and 18 failures. **Every failed PUSH Ada→A2000 word matches its initial sentinel; every successful PUSH A2000→Ada word is correct; every PULL word in either direction is `ffffffff`.** No partially correct payload was observed. The repository now includes all 24 raw captures (8.5 MiB), metadata, diagnostic source and offline validators.
+
+This establishes the complete value distribution, extending the earlier first-mismatch logs. It does not locate the failing component: PUSH/PULL still use separate mappings, and source-pattern/sentinel coincidences are not proof of addressing aliases. [Diagnostic method and reproducibility](experiments/payload-diagnostics/README.md).
+
 ### What has been tested
 
 | Experiment family | Outcome and limitation |
@@ -95,6 +101,7 @@ Swapping the cards or placing them behind the same PCIe switch is not possible i
 | Path | Contents |
 |---|---|
 | `archive/` | Sanitized historical reports, sources, patches, results and checks |
+| `experiments/` | New diagnostic sources, offline tests and complete captured payloads |
 | `firmware/` | Modified OEM images, FSP regions and variant manifest |
 | `docs/` | Technical summaries, archive index and reproducibility notes |
 | `provenance/` | Original and published file hashes, exclusions and validation records |
