@@ -1,0 +1,6 @@
+{
+  "state": "FAILED",
+  "phase": "dual_stress_fixed_fan",
+  "error": "RuntimeError('requested stop')",
+  "reason": "requested stop"
+}

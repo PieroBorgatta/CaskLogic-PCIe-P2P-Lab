@@ -1,0 +1,27 @@
+{
+  "epoch": 1792547041.7936804,
+  "scope": "read-only NVML on gpu-vm before native boot; no GPU payload",
+  "Ada": {
+    "uuid": "GPU-00000000-0000-0000-0000-000000000001",
+    "TX": {
+      "rc": 0,
+      "KB_s": 634
+    },
+    "RX": {
+      "rc": 0,
+      "KB_s": 439
+    }
+  },
+  "A2000": {
+    "uuid": "GPU-00000000-0000-0000-0000-000000000002",
+    "TX": {
+      "rc": 0,
+      "KB_s": 537
+    },
+    "RX": {
+      "rc": 0,
+      "KB_s": 390
+    }
+  },
+  "limitation": "Instantaneous aggregate counters in VM; not native traffic-test evidence or proof of P2P routing."
+}

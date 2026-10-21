@@ -1,0 +1,90 @@
+{
+  "status": "built_not_installed",
+  "started_epoch": 1792550559.6860256,
+  "contract_sha256": "f15c9a712538e36873ed7ce2c50d173d919bd748f98afc07512feba38b3b0ac1",
+  "builder_sha256": "432135a9009cbf41c3c1ccaa4eca22767891ccd9131b3208743fe1176bcc60e6",
+  "baseline_manifest_sha256": "0b02b91fe9ac9e01be8d159695e856351057b9978d01fdf8f1ac7178150a37f4",
+  "source_root": "/mnt/llm/riscrivo/runtime/reports/p2p-next-investigation-20261021/driver-physical-ce-build-02/source",
+  "overlay": {
+    "kernel-open/nvidia-uvm/cask_phys_ce.inc": {
+      "source": "overlay/kernel-open/nvidia-uvm/cask_phys_ce.inc",
+      "before": null,
+      "after": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f"
+    },
+    "kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h",
+      "before": null,
+      "after": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_gpu.c",
+      "before": "66881c4ae46461314d41342b2a27df9119d68d68f90d181e3a32670dcc19f590",
+      "after": "79aaff0bef44c0e25b8261c8eb4784ed2168326d408dd4e6d5767196c19da431"
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_gpu.h",
+      "before": "76c578d204b32499e0004d1f1f43f9a1ce6718be13faa1394a5a63d0d1c7f9b5",
+      "after": "1fc50d101efd9b938cb071ad4e758876ac702f7f59e3fd7e23ea13d4c079782f"
+    },
+    "kernel-open/nvidia-uvm/uvm_map_external.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_map_external.c",
+      "before": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5",
+      "after": "bf54b71ab6106e2f6e4e3272b4db4a692901be008a08c963b8e92cb93f8fa10c"
+    },
+    "kernel-open/nvidia-uvm/uvm_test.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test.c",
+      "before": "2134c7be438b6d1d03f4435e714311021cf9e7bdc48cc4beeb0045d559eb60a8",
+      "after": "9806e1adeca228759759a52a712fbcf80e6caa11c5a1b58a0351d7a818333ece"
+    },
+    "kernel-open/nvidia-uvm/uvm_test.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test.h",
+      "before": "dddfb2d084a4ce665917e316c0cc7df74cd609cdaaa32d4d4e6aa093871ea2b7",
+      "after": "205d26435629a4e4ab40a2fe82bcfa206b0062c8bc47f369f58f9eb9fd27cd3e"
+    },
+    "kernel-open/nvidia-uvm/uvm_test_ioctl.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test_ioctl.h",
+      "before": "54e692ed15b1e9f7eb686252029816feff96d40e3e9e01da944ba095e81de161",
+      "after": "40cb22c970dca418031f7555e0bc58c9207ecbad0d8f2c1b75739f0ed67b2fc7"
+    },
+    "kernel-open/nvidia-uvm/uvm_va_range.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_va_range.h",
+      "before": "7ab4adff5c15cfeef4851e4ecbf9c57357452348718ec7f116a9b3bc336c10c2",
+      "after": "1b12095a5d8f27039e7a3cb34a866e8a9131af1bc3aa8dd07ebb6b05d2b6f722"
+    }
+  },
+  "hardware_operations": false,
+  "installed": false,
+  "baseline_rm_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+  "baseline_uvm_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "make",
+    "-C",
+    "/mnt/llm/riscrivo/runtime/reports/p2p-next-investigation-20261021/driver-physical-ce-build-02/source/kernel-open",
+    "-j2",
+    "NV_VERBOSE=1",
+    "KERNEL_UNAME=7.0.0-38-generic",
+    "NV_KERNEL_MODULES=nvidia-uvm",
+    "KBUILD_EXTRA_SYMBOLS=/mnt/llm/riscrivo/runtime/reports/p2p-next-investigation-20261021/driver-physical-ce-build-02/nvidia-only.symvers",
+    "modules"
+  ],
+  "rm_exports_sha256": "1afbdc5d864d0d8f7ae7c57b6def32b82a0d99da73772fafc85f5da07baaa918",
+  "rm_export_count": 96,
+  "build_returncode": 0,
+  "build_log_sha256": "b6b65f2cf10a95d617005fb59eb2ce1232d66a2954ad793c74322634f3978b64",
+  "modules": {
+    "nvidia.ko": {
+      "sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+      "size": 36774960,
+      "modinfo": "filename:       /mnt/llm/riscrivo/runtime/reports/p2p-next-investigation-20261021/driver-physical-ce-build-02/modules/nvidia.ko\nimport_ns:      DMA_BUF\nalias:          char-major-195-*\ndescription:    NVIDIA core GPU kernel module\nversion:        595.99.02\nsupported:      external\nlicense:        Dual MIT/GPL\nfirmware:       nvidia/595.99.02/gsp_tu10x.bin\nfirmware:       nvidia/595.99.02/gsp_ga10x.bin\nsoftdep:        pre: ecdh_generic,ecdsa_generic\nsrcversion:     2730098EFE2103A2A66F912\nalias:          pci:v000010DEd*sv*sd*bc06sc80i00*\nalias:          pci:v000010DEd*sv*sd*bc03sc02i00*\nalias:          pci:v000010DEd*sv*sd*bc03sc00i00*\nalias:          of:N*T*Cnvidia,tegra264-displayC*\nalias:          of:N*T*Cnvidia,tegra264-display\nalias:          of:N*T*Cnvidia,tegra234-displayC*\nalias:          of:N*T*Cnvidia,tegra234-display\ndepends:        \nname:           nvidia\nretpoline:      Y\nvermagic:       7.0.0-38-generic SMP preempt mod_unload modversions \nparm:           NvSwitchRegDwords:NvSwitch regkey (charp)\nparm:           NvSwitchBlacklist:NvSwitchBlacklist=uuid[,uuid...] (charp)\nparm:           NVreg_ResmanDebugLevel:int\nparm:           NVreg_RmLogonRC:int\nparm:           NVreg_ModifyDeviceFiles:int\nparm:           NVreg_DeviceFileUID:int\nparm:           NVreg_DeviceFileGID:int\nparm:           NVreg_DeviceFileMode:int\nparm:           NVreg_InitializeSystemMemoryAllocations:int\nparm:           NVreg_UsePageAttributeTable:int\nparm:           NVreg_EnablePCIeGen3:int\nparm:           NVreg_EnableMSI:int\nparm:           NVreg_EnableStreamMemOPs:int\nparm:           NVreg_RestrictProfilingToAdminUsers:int\nparm:           NVreg_PreserveVideoMemoryAllocations:int\nparm:           NVreg_EnableS0ixPowerManagement:int\nparm:           NVreg_S0ixPowerManagementVideoMemoryThreshold:int\nparm:           NVreg_DynamicPowerManagement:int\nparm:           NVreg_DynamicPowerManagementVideoMemoryThreshold:int\nparm:           NVreg_EnableGpuFirmware:int\nparm:           NVreg_EnableGpuFirmwareLogs:int\nparm:           NVreg_OpenRmEnableUnsupportedGpus:int\nparm:           NVreg_EnableUserNUMAManagement:int\nparm:           NVreg_MemoryPoolSize:int\nparm:           NVreg_KMallocHeapMaxSize:int\nparm:           NVreg_VMallocHeapMaxSize:int\nparm:           NVreg_IgnoreMMIOCheck:int\nparm:           NVreg_NvLinkDisable:int\nparm:           NVreg_EnablePCIERelaxedOrderingMode:int\nparm:           NVreg_RegisterPCIDriver:int\nparm:           NVreg_RegisterPlatformDeviceDriver:int\nparm:           NVreg_EnableResizableBar:int\nparm:           NVreg_EnableDbgBreakpoint:int\nparm:           NVreg_TegraGpuPgMask:int\nparm:           NVreg_EnableNonblockingOpen:int\nparm:           NVreg_ExcludeAllGpus:int\nparm:           NVreg_GpuInitOnProbe:int\nparm:           NVreg_CoherentGPUMemoryMode:charp\nparm:           NVreg_RegistryDwords:charp\nparm:           NVreg_RegistryDwordsPerDevice:charp\nparm:           NVreg_RmMsg:charp\nparm:           NVreg_GpuBlacklist:charp\nparm:           NVreg_TemporaryFilePath:charp\nparm:           NVreg_ExcludedGpus:charp\nparm:           NVreg_DmaRemapPeerMmio:int\nparm:           NVreg_RmNvlinkBandwidth:charp\nparm:           NVreg_RmNvlinkBandwidthLinkCount:int\nparm:           NVreg_ImexChannelCount:int\nparm:           NVreg_CreateImexChannel0:int\nparm:           NVreg_EnableSystemMemoryPools:int\nparm:           NVreg_UseKernelSuspendNotifiers:int\nparm:           rm_firmware_active:charp\n"
+    },
+    "nvidia-uvm.ko": {
+      "sha256": "9f40cd58362566aae90d5bcd10b3cdda3a2a2a7ac6457fa3228a7049c32a8247",
+      "size": 57249768,
+      "modinfo": "filename:       /mnt/llm/riscrivo/runtime/reports/p2p-next-investigation-20261021/driver-physical-ce-build-02/modules/nvidia-uvm.ko\ndescription:    NVIDIA Unified Virtual Memory kernel module\nversion:        595.99.02\nsupported:      external\nlicense:        Dual MIT/GPL\nsrcversion:     DFDC3660C291937FE50B89E\ndepends:        nvidia\nname:           nvidia_uvm\nretpoline:      Y\nvermagic:       7.0.0-38-generic SMP preempt mod_unload modversions \nparm:           uvm_conf_computing_channel_iv_rotation_limit:ulong\nparm:           uvm_ats_mode:Set to 0 to disable ATS (Address Translation Services). Any other value is ignored. Has no effect unless the platform supports ATS. (int)\nparm:           uvm_perf_prefetch_enable:uint\nparm:           uvm_perf_prefetch_threshold:uint\nparm:           uvm_perf_prefetch_min_faults:uint\nparm:           uvm_perf_thrashing_enable:uint\nparm:           uvm_perf_thrashing_threshold:uint\nparm:           uvm_perf_thrashing_pin_threshold:uint\nparm:           uvm_perf_thrashing_lapse_usec:uint\nparm:           uvm_perf_lapse_vote_threshold:uint\nparm:           uvm_perf_thrashing_nap:uint\nparm:           uvm_perf_thrashing_epoch:uint\nparm:           uvm_perf_thrashing_pin:uint\nparm:           uvm_perf_thrashing_max_resets:uint\nparm:           uvm_perf_map_remote_on_native_atomics_fault:uint\nparm:           uvm_disable_hmm:Force-disable HMM functionality in the UVM driver. Default: false (HMM is enabled if possible). However, even with uvm_disable_hmm=false, HMM will not be enabled if is not supported in this driver build configuration, or if ATS settings conflict with HMM. (bool)\nparm:           uvm_cask_physical_ce:Native CaskLogic4-byte privileged physical CE diagnostic; default off (bool)\nparm:           uvm_perf_migrate_cpu_preunmap_enable:int\nparm:           uvm_perf_migrate_cpu_preunmap_block_order:uint\nparm:           uvm_global_oversubscription:Enable (1) or disable (0) global oversubscription support. (int)\nparm:           uvm_perf_pma_batch_nonpinned_order:uint\nparm:           uvm_cpu_chunk_allocation_sizes:OR'ed value of all CPU chunk allocation sizes. (uint)\nparm:           uvm_leak_checker:Enable uvm memory leak checking. 0 = disabled, 1 = count total bytes allocated and freed, 2 = per-allocation origin tracking. (int)\nparm:           uvm_debug_enable_push_desc:Enable push description tracking (uint)\nparm:           uvm_debug_enable_push_acquire_info:Enable push acquire information tracking (uint)\nparm:           uvm_page_table_location:Set the location for UVM-allocated page tables. Choices are: vid, sys. (charp)\nparm:           uvm_perf_access_counter_migration_enable:Whether access counters will trigger migrations.Valid values: <= -1 (default policy), 0 (off), >= 1 (on) (int)\nparm:           uvm_perf_access_counter_batch_count:uint\nparm:           uvm_perf_access_counter_threshold:Number of remote accesses on a region required to trigger a notification.Valid values: [1, 65535] (uint)\nparm:           uvm_perf_reenable_prefetch_faults_lapse_msec:uint\nparm:           uvm_perf_fault_batch_count:uint\nparm:           uvm_perf_fault_replay_policy:uint\nparm:           uvm_perf_fault_replay_update_put_ratio:uint\nparm:           uvm_perf_fault_max_batches_per_service:uint\nparm:           uvm_perf_fault_max_throttle_per_service:uint\nparm:           uvm_perf_fault_coalesce:uint\nparm:           uvm_fault_force_sysmem:Force (1) using sysmem storage for pages that faulted. Default: 0. (int)\nparm:           uvm_perf_map_remote_on_eviction:int\nparm:           uvm_block_cpu_to_cpu_copy_with_ce:Use GPU CEs for CPU-to-CPU migrations. (int)\nparm:           uvm_exp_gpu_cache_peermem:Force caching for mappings to peer memory. This is an experimental parameter that may cause correctness issues if used. (uint)\nparm:           uvm_exp_gpu_cache_sysmem:Force caching for mappings to system memory. This is an experimental parameter that may cause correctness issues if used. (uint)\nparm:           uvm_downgrade_force_membar_sys:Force all TLB invalidation downgrades to use MEMBAR_SYS (uint)\nparm:           uvm_channel_num_gpfifo_entries:uint\nparm:           uvm_channel_gpfifo_loc:charp\nparm:           uvm_channel_gpput_loc:charp\nparm:           uvm_channel_pushbuffer_loc:charp\nparm:           uvm_enable_va_space_mm:Set to 0 to disable UVM from using mmu_notifiers to create an association between a UVM VA space and a process. This will also disable pageable memory access via either ATS or HMM. (int)\nparm:           uvm_enable_debug_procfs:Enable debug procfs entries in /proc/driver/nvidia-uvm (int)\nparm:           uvm_peer_copy:Choose the addressing mode for peer copying, options: phys [default] or virt. Valid for Ampere+ GPUs. (charp)\nparm:           uvm_debug_prints:Enable uvm debug prints. (int)\nparm:           uvm_enable_builtin_tests:Enable the UVM built-in tests. (This is a security risk) (int)\nparm:           uvm_release_asserts:Enable uvm asserts included in release builds. (int)\nparm:           uvm_release_asserts_dump_stack:dump_stack() on failed UVM release asserts. (int)\nparm:           uvm_release_asserts_set_global_error:Set UVM global fatal error on failed release asserts. (int)\n"
+    }
+  },
+  "finished_epoch": 1792550591.8737392
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "local static independent review of candidate preparation, gate v3 and generated startup",
+  "startup_sha256": "5d6b8e48b50b7a231dc3a05403dbf8cfbf98abf9374629e75fe70a2daa2c201b",
+  "gate_source_sha256": "3899971657667fa2be3e9c7c93294c70c3d273d30e2c53cd68b9738743a730af",
+  "gate_modes": {
+    "PRE": "CURRENT.bin",
+    "POST": "CANDIDATE.bin",
+    "RESTORE": "ORIGINAL.bin"
+  },
+  "gate_full_byte_comparison": true,
+  "gate_expanded_region_bytes": 122880,
+  "packaged_blocks_exact": true,
+  "all_fpt_ranges_match_profile": true,
+  "unverified_postwrite_state_routes_rollback_or_fatal": true,
+  "no_blocking_static_issue_found": true,
+  "not_a_boot_or_hardware_semantics_guarantee": true
+}

@@ -1,0 +1,24 @@
+{
+  "gate_version": 2,
+  "checks": {
+    "POST_CHECK": {
+      "returncode": 0,
+      "scenarios": 11,
+      "all_pass": true
+    },
+    "RESTORE_CHECK": {
+      "returncode": 0,
+      "scenarios": 11,
+      "all_pass": true
+    }
+  },
+  "scope": "Host file-logic tests only; no hardware I/O; PRE native MSR path compile-checked only",
+  "files": {
+    "TcssRegionGate.c": "16a095c6dc06ac2de484a40e9b32f76aed87302d27ae766d578ecc52256645d4",
+    "TcssRegionGate.host-test.c": "08cffff04e6042282dfd327d9949eb57deb456a70ec031cc4dab6e4fcc8c20f3",
+    "BootGuardRead.c": "2342a37c69d7fd012271038ee491710e7e3a260a5c5a871c17ee494acb64d61a",
+    "TcssRegionGate.PRE.local-check.o": "b21705c918d503711ad34d44be86c6d45ab116781d7347b22e652cb57c6d50c9",
+    "TcssRegionGate.POST_CHECK.local-check.o": "b181d6f9748dba16a86b02bdaf5a759298a50fe253d11a643b553653d7024da1",
+    "TcssRegionGate.RESTORE_CHECK.local-check.o": "d147a1470c94ac4a253edc2a7ae1998ae3c2f8dafc11c6b7afebce32fe0c1125"
+  }
+}

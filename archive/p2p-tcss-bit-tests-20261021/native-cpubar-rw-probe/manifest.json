@@ -1,0 +1,27 @@
+{
+  "state": "prepared_local_not_nvcc_built_not_executed",
+  "files": {
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "peer_vmm_word_cpubar_rw.cu": "26c18b1be40b5f17008c2c4ad7e6e13c2c320462c68c902d22916c8af3a146b0",
+    "baseline.diff": "9eed21a4d97063c7df9dab80c8f68acc431adbb34cb309cd527e23a6f010dd9c",
+    "README.md": "4f025e93912c4e741cc341a6c4d9074c3122fe4a05ae99f4bc0023c71051ae04",
+    "local-validation.json": "0b5d21298a7c371bde04f42fdd58d11ca3275fb9d9bc520c0ceaabff6c10931f",
+    "cpubar_rw_control.inc": "c7a46ed69da33b24db2f38af7ec04205f70b53beb2f7bb3c006953ae8711881d",
+    "build_native_repeat.py": "400b22d18a66d24491e643b583b86fee0349a418ebecf8be72a5e9d0d1c95692",
+    "init-tcss-native.sh": "1b77b7f8394510428d7e970aed2febe725a071bc3f75f264022ee244e9d78584",
+    "independent-review-nvidia.json": "a56a627fd066acf512f6b622a40cf39ba4931365e79dea45e749984b3de17630",
+    "test_rw_word.cpp": "ac81167ed1564d7bb3cf48daaa67007b668327d54a9c7131278c72c9702d6efa",
+    "cpubar_rw.h": "65756bf89a585842f751220c1eec632e645de6f5dcba03a4833a785a15116043",
+    "rw_syntax.cpp": "544c5881880449e8dfadfc6464f2d6ca275742f004f096c710032bfddb9f7ee3"
+  },
+  "baseline": "native-cpubar-postwrite-probe",
+  "baseline_unchanged": true,
+  "gpu_bytes_per_target": 4,
+  "targets": 2,
+  "cpu_patterns_per_target": 2,
+  "additional_gpu_allocations": 0,
+  "CPU_write_phase": "after_all_four_P2P_comparisons_before_any_free",
+  "return_code": "original_P2P_unchanged",
+  "remote_operations": false
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "Static review only; no compilation or hardware operations",
+  "source_sha256": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+  "result": "No concrete blocker identified after two hardening changes",
+  "checks": [
+    "A failed preflight reservation release retains the module without touching PCI commands.",
+    "The resource tree is verified after replacement of the target guard and before old-range release/command restoration.",
+    "Target resource reservation checks overlaps before command gating.",
+    "Rollback restores leaves-to-root detach, root-to-leaves original resource tree, original BAR/bridge configuration, then saved command values.",
+    "Native CPU identity, PCI device identities, topology, BAR sizes and identity host/bus translations are checked.",
+    "Runtime-PM usage references acquired without resume before device locks; gate requires active PM state; references released with put_noidle on unpinned exit, retained for committed/fatal pinned module."
+  ],
+  "external_contracts": [
+    "Load before NVIDIA and endpoint drivers, in isolated native RAM boot.",
+    "CCFG registers and firmware identity remain the external init gate.",
+    "FATAL_REBOOT_REQUIRED must never be followed by GPU-driver load.",
+    "Successful relocation intentionally pins the helper; restore occurs by reboot."
+  ]
+}

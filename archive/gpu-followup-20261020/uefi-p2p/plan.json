@@ -1,0 +1,14 @@
+{
+  "operation": "read_only_probe",
+  "boot_method": "temporary_UEFI_boot_entry_on_existing_ESP",
+  "boot_order": "preserve",
+  "auto_execution": "read_and_backup_then_reset",
+  "variable": "SaSetup",
+  "guid": "72c5e28c-7783-43a1-8767-fad73fccafa4",
+  "offset": 995,
+  "read_command": "setup_var.efi SaSetup:0x3E3",
+  "write_command_included": false,
+  "training": "must_remain_disabled",
+  "server_installation": "pending_server_boot",
+  "bios_setting_writes": false
+}

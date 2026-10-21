@@ -1,0 +1,36 @@
+[
+  {
+    "file": "nvidia-dynamic.ko",
+    "sha256": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+    "size": 36764544,
+    "diagnostic_string_count": 0,
+    "nv_dma_map_peer_disassembly": "nvidia-dynamic.ko.nv_dma_map_peer.txt",
+    "hardcoded_patch_immediates_in_function": [],
+    "version": [
+      "595.99.02"
+    ],
+    "srcversion": [
+      "919309EF6954372EFADD77E"
+    ],
+    "vermagic": [
+      "7.0.0-38-generic SMP preempt mod_unload modversions "
+    ]
+  },
+  {
+    "file": "nvidia-diagnostic.ko",
+    "sha256": "ead7510347e8d7dcea3cc7e82a2d0a6f7d6a06c141a4a7034871c533d6ff9dbc",
+    "size": 36768560,
+    "diagnostic_string_count": 4,
+    "nv_dma_map_peer_disassembly": "nvidia-diagnostic.ko.nv_dma_map_peer.txt",
+    "hardcoded_patch_immediates_in_function": [],
+    "version": [
+      "595.99.02"
+    ],
+    "srcversion": [
+      "51349C8BC93FA492145D6BC"
+    ],
+    "vermagic": [
+      "7.0.0-38-generic SMP preempt mod_unload modversions "
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "synthetic_fixture_cases": 23,
+  "parser_sha256": "5f4e81fff2a1661e23cac455e93bcb41e4664fec13c33136beafa385633e324d",
+  "nvml_analysis_core_sha256": "4d37a30bb26301355f4fbff92ca297ab217ca9e7d8c59ad1434b518836fb93d4",
+  "fixture_source_sha256": "2d42db298b74f8b06ee827c38136aff129a4af0213cc3ac18c35ea0390138245",
+  "command": "python3 -m unittest discover -s native-physical-ce-probe -p test_analyze_physical.py",
+  "scope": "offline synthetic records, no devices or CUDA",
+  "checks": [
+    "4P2P/2physical completions and exact methods",
+    "CPU/GPU/UUID identities and owner-only mappings",
+    "NVML starts after P2P",
+    "4CPUcalibrations outside P2P count",
+    "2second quiet baselines, recalculated samples/statistics",
+    "lifetime after allP2P/calibrations",
+    "reject retained/partial/alteredfields"
+  ]
+}

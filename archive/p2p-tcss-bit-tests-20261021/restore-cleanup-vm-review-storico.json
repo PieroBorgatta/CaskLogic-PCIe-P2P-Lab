@@ -1,0 +1,55 @@
+{
+  "status": "STATIC_REVIEW_COMPATIBLE_WITH_DECLARED_VM_STATE",
+  "sha256": {
+    "install_sync_firmware.py": "7dd44b63b88040dac4296b17d9c0a1dd0ff912060f8530cbffc2b5165824535f",
+    "cleanup_sync_trial_verified.py": "47ef60bdff9802c70864369a61fcdded8cb925ef0020002c9569337b882236f5",
+    "startup-restore.nsh": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309"
+  },
+  "state_basis": "Root operator reports Docker halted and 03-Windows_11 suspended; reviewer has not queried remote state",
+  "docker_uuid": "d6338ea9-6820-b365-bd0f-7d3790ba2ea7",
+  "windows_uuid": "c1343d2f-8b8a-c957-a51c-c397f4ac0034",
+  "VM_checks": {
+    "Docker_explicit_halted_required": true,
+    "all_noncontrol_running_VMs_must_be_absent": true,
+    "Windows_suspended_is_allowed": true,
+    "Windows_suspend_VDI_or_powerstate_never_mutated_by_scripts": true,
+    "cleanup_has_no_xe_calls": true
+  },
+  "restore_sequence": [
+    "Existing state armed, exact source and installed package hashes; recorded candidate readback identical to collected",
+    "Copy exact startup-restore, verify hash, select existing firmware EFI entry for one boot and save restore_armed",
+    "Native UEFI deletes stale region-after and dumps fresh exact30sector candidate; RegionPost CRC/fullbyte check plus exitstatus and freshflag required",
+    "Write ORIGINAL only same30sector span; even FPTwriteerror proceeds to real readback",
+    "Delete stale restoredreadback/flag, dump originalspan, RegionRestore fullbyte match and freshflag/exitstatus; reset only after verified restoration or abort before write",
+    "Final Python cleanup requires restore_armed, matching originalspan in package+ESP+collection, UEFIresult/flag/log, baselineCCFG and original bootfiles",
+    "Backup both whole temporary ESP directories with fsync/hash/os.sync before any EFIentry/file deletion"
+  ],
+  "package_hashes_verified": {
+    "CANDIDATE.bin": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+    "CURRENT.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "Fpt.efi": "d3747b061cf185f9883562a0b2ee890079872541af4f43f2caa074c2fb256a05",
+    "ORIGINAL.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "RegionPost.efi": "d4614153c855c038a7a39eda8f7fcea26168a0d54bdcc5e4afcdb0a1c5ef2ca4",
+    "RegionPre.efi": "e796d7f90e10c55f0b916d4372369b5d670f8c3ede77219421ea58ad78b634d5",
+    "RegionRestore.efi": "9976cf225cac6ba9312504d62e0313244c6578052b2a6aaf1907719b0f5564dd",
+    "Shell.efi": "24dcc034bf6a5158f43b23b71a16acbfdcf1597de55aa309f7f6ac5af90666e6",
+    "startup-restore.nsh": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309",
+    "startup.nsh": "31a58663e33e8f2cd5180bbcbb981b5f800e3bcd3976127bada1d23361fa5439"
+  },
+  "UEFI_IO_commands": [
+    "%homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt.efi -d %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\region-after.bin -a 0x01B0B000 -l 0x0001E000 > %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt-restore-candidate-before.txt",
+    "%homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\RegionPost.efi",
+    "%homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt.efi -f %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\ORIGINAL.bin -a 0x01B0B000 -l 0x0001E000 > %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt-original-write.txt",
+    "%homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt.efi -d %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\region-restored.bin -a 0x01B0B000 -l 0x0001E000 > %homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\Fpt-original-readback.txt",
+    "%homefilesystem%\\EFI\\CaskLogicTcssSyncTest\\RegionRestore.efi"
+  ],
+  "concrete_limits": [
+    "Restore is not restartable automatically after interruption between startup-restore copy and completed state/BootNext save: next invocation expects original startup.nsh digest and will stop; inspect state instead of retrying blindly.",
+    "The running-VM filter does not reject a hypothetical paused domain. Declared Windows state is suspended, not paused.",
+    "Both installers rely on Python assert guards and must not run with optimization(-O or PYTHONOPTIMIZE), which strips asserts.",
+    "Suspended Windows preservation is a consequence of no VM/storage mutations; these files do not verify the saved-state VDI itself.",
+    "Cleanup needs fresh collected restore artifacts; its checks must run after actual restoration, not merely after arming."
+  ],
+  "hardware_operations": false,
+  "frozen_files_modified": false
+}

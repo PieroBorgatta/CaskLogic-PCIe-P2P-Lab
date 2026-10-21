@@ -1,0 +1,160 @@
+{
+  "module": "ARCHIVE_ROOT/p2p-thunderbolt-firmware-20261020/modules/SiInitFsp.pe",
+  "sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+  "firmware_guid": "80a845ac-210f-43b0-995b-477be41ab4e8",
+  "installed_equivalence": {
+    "source_ffs": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+    "ffs_sha256": "fcde1a912de75df1a95fdd9553d141712dd49e7bcc89dbb603839535d4a64abf",
+    "ffs_size": 154845,
+    "spi_source": "ARCHIVE_ROOT/gpu-followup-20261020/uefi-p2p/spi-backup-a.bin",
+    "identical_ffs_at": "0x1b02b60"
+  },
+  "itbt_task_table": [
+    {
+      "table_rva": "0x3ab20",
+      "function_rva": "0x20907",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtSetForcePower"
+    },
+    {
+      "table_rva": "0x3ab2c",
+      "function_rva": "0x20ebd",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtPcieTunnelingForUsb4"
+    },
+    {
+      "table_rva": "0x3ab38",
+      "function_rva": "0x20bdb",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtDmaUuidUpdate"
+    },
+    {
+      "table_rva": "0x3ab44",
+      "function_rva": "0x20d75",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtDmaSsidSvidUpdate"
+    },
+    {
+      "table_rva": "0x3ab50",
+      "function_rva": "0x20af3",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtClearVgaRegisters"
+    },
+    {
+      "table_rva": "0x3ab5c",
+      "function_rva": "0x20b65",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtSetDmaLtr"
+    },
+    {
+      "table_rva": "0x3ab68",
+      "function_rva": "0x20a42",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtSetCmMode"
+    },
+    {
+      "table_rva": "0x3ab74",
+      "function_rva": "0x20f58",
+      "bootmode_mask": "0xffffffff",
+      "name": "ITbtUnsetForcePower"
+    },
+    {
+      "table_rva": "0x3ab80",
+      "function_rva": "0x20de7",
+      "bootmode_mask": "0x5",
+      "name": "Pass_ITbt_Policy_To_Hob"
+    }
+  ],
+  "rp_map_table": {
+    "rva": "0x3a6c0",
+    "entry_fields": [
+      "segment",
+      "bus",
+      "device",
+      "function",
+      "enabled"
+    ],
+    "entries": [
+      [
+        0,
+        0,
+        7,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        7,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        7,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        7,
+        3,
+        0
+      ]
+    ]
+  },
+  "sideband_map": {
+    "rva": "0x3bb24",
+    "pids": [
+      "0xc6",
+      "0xc7",
+      "0xce",
+      "0xcf"
+    ],
+    "formula": "0xFB000000 | ((UINT8)PortId << 16) | (UINT16)Offset",
+    "D0_addresses": [
+      "0xfbc600d0",
+      "0xfbc700d0",
+      "0xfbce00d0",
+      "0xfbcf00d0"
+    ]
+  },
+  "callchain": [
+    "0x1370 -> 0x23f2",
+    "0x25b3 -> 0x20692",
+    "0x20728 -> 0x203f5 (sideband root configuration)",
+    "0x207e8 -> 0x1ffdd (ECAM root configuration)"
+  ],
+  "ccfg_operations": [
+    {
+      "at": "0x2043d..0x20447",
+      "route": "CPU REGBAR",
+      "operation": "old | 0x00008000",
+      "effect_bits_25_26_27": "preserve",
+      "policy_branch": false
+    },
+    {
+      "at": "0x202f1..0x20305",
+      "route": "D7 ECAM",
+      "operation": "(old & 0xFEFFCF88) | 0x00001077",
+      "effect_bits_25_26_27": "preserve",
+      "policy_branch": false
+    }
+  ],
+  "access_helpers": {
+    "0x67bc": "MMIO read32; no status handling",
+    "0x68a7": "MMIO write32; no readback; no unlock",
+    "0x690d": "MMIO read32 + OR + write32",
+    "0x6983": "MMIO read32 + AND + OR + write32",
+    "0x168e5": "PCI config read32 + AND + OR + write32"
+  },
+  "conclusion": {
+    "real_d7_firmware_path_found": true,
+    "peer_policy_for_d7_found": false,
+    "d7_bits_25_26_27_semantics_proven": false,
+    "sideband_peer_writeability_proven": false,
+    "firmware_patch_prepared": false
+  }
+}

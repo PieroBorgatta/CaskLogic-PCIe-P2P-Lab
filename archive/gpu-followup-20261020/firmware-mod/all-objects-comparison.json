@@ -1,0 +1,17 @@
+{
+  "original_file_count": 2583,
+  "candidate_file_count": 2583,
+  "missing": [],
+  "added": [],
+  "changed": [
+    "flash.fd",
+    "regions/region-bios.fd",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/file.obj",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0.guid",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1.fv",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf.fv",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-899407d7-99fe-43d8-9a21-79ec328cac21/file.obj",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-899407d7-99fe-43d8-9a21-79ec328cac21/section1.pe",
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/filesystem.ffs"
+  ]
+}

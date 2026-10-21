@@ -1,0 +1,58 @@
+--- original/cask_low_mmio.c
++++ diagnostic/cask_low_mmio.c
+@@ -126,6 +126,47 @@
+     return 0;
+ }
+ 
++/* Diagnostic clone: observations only, after get_noresume/device_lock.
++ * usage_count includes this module's own reference. No resume, PCI read/write,
++ * PM-state update or altered acceptance criterion is added here.
++ */
++static void log_preflight_state(void)
++{
++    unsigned int i;
++    pr_info(PFX "DIAG cpu_signature=%08x hypervisor=%u execute=%u base=%#llx pm_refs=%u\n",
++            cpuid_eax(1), !!boot_cpu_has(X86_FEATURE_HYPERVISOR),
++            (unsigned int)execute, base, pm_refs);
++    for (i = 0; i < ND; i++) {
++        struct pci_dev *d = devs[i];
++        struct dev_pm_info *power;
++        if (!d) {
++            pr_info(PFX "DIAG index=%u device_missing expected=%04x:%04x\n",
++                    i, identity[i].vendor, identity[i].device);
++            continue;
++        }
++        power = &d->dev.power;
++        pr_info(PFX "DIAG index=%u bdf=%s id=%04x:%04x expected=%04x:%04x "
++                "current_state=%d required_state=%d runtime_status=%d "
++                "rpm_active_enum=%d rpm_suspended_enum=%d rpm_suspending_enum=%d rpm_resuming_enum=%d "
++                "runtime_error=%d disable_depth=%u usage_count=%d pm_active=%u "
++                "is_virtfn=%u driver=%s\n",
++                i, pci_name(d), d->vendor, d->device,
++                identity[i].vendor, identity[i].device,
++                (int)READ_ONCE(d->current_state), (int)PCI_D0,
++                (int)READ_ONCE(power->runtime_status),
++                (int)RPM_ACTIVE, (int)RPM_SUSPENDED, (int)RPM_SUSPENDING, (int)RPM_RESUMING,
++                READ_ONCE(power->runtime_error), (unsigned int)power->disable_depth,
++                atomic_read(&power->usage_count), (unsigned int)pm_runtime_active(&d->dev),
++                (unsigned int)d->is_virtfn, d->driver ? d->driver->name : "unbound");
++        pr_info(PFX "DIAG index=%u identity_ok=%u d0_ok=%u non_vf_ok=%u pm_active_ok=%u "
++                "driver_guard_ok=%u\n", i,
++                (unsigned int)(d->vendor == identity[i].vendor && d->device == identity[i].device),
++                (unsigned int)(d->current_state == PCI_D0), (unsigned int)!d->is_virtfn,
++                (unsigned int)pm_runtime_active(&d->dev),
++                (unsigned int)(i < NB || !d->driver));
++    }
++}
++
+ static int validate(void)
+ {
+     unsigned int i, j;
+@@ -135,6 +176,7 @@
+     u32 lo, hi;
+     resource_size_t start, end;
+ 
++    log_preflight_state();
+     if (boot_cpu_has(X86_FEATURE_HYPERVISOR) || cpuid_eax(1) != 0x000906a3)
+         return -EPERM;
+     if ((base & (B1_SIZE - 1)) || base < 0x50400000ULL ||

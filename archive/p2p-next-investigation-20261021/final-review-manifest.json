@@ -1,0 +1,24 @@
+{
+  "status": "INVESTIGATION_STOPPED_WITHOUT_P2P_SOLUTION",
+  "created_utc": "2026-10-21T03:28:19.208412+00:00",
+  "solution_proven": false,
+  "publication_condition_satisfied": false,
+  "collection_statuses": {
+    "native-pushpull-collection.json": "cleanup_verified",
+    "native-traffic-collection.json": "cleanup_verified",
+    "native-traffic2-collection.json": "cleanup_verified",
+    "native-physical-ce-collection.json": "cleanup_verified",
+    "native-physical2-ce-collection.json": "cleanup_verified",
+    "native-physical3-ce-collection.json": "cleanup_verified"
+  },
+  "files": {
+    "ESITO.md": "43c9f5c0e42b368cd5d9252808bba980a4e9939a709af329cc7c442c9ef714ca",
+    "final-system-health.json": "436294afb97227be5ad8114bb2ab1533e19f801ab2edbb83033080e4844cb4c1",
+    "WORKSTATE.md": "a0fd56dfe7e1a1b9e469a88c332ea814f6012ef0d5ec8e960088f35b127b1833",
+    "native-physical3-ce-results/ANALISI.md": "40c87af51c9374c24b1e00d359fc4b4dd0a5fa97ce5418e28b3ed0da2bd04bc5",
+    "native-physical3-ce-results/verified-result.json": "cea06541a3c69596d3afbe78d2e2ec5adf1c9113b0b35d62c753f8beacff2955",
+    "native-physical3-ce-results/verified-protocol-root.json": "f110ce47456cfd18b1ac78f11543d3618680d584bd898335678613821959f351",
+    "native-physical3-ce-results/verified-kernel-root.json": "e1ac7c79e63932198752333fc36affb9504dc4ca9b73bd4dfdf2b7b8041e7e83",
+    "verify_physical3_results.py": "1b6bec3dcce0e9c1a66c42b898fa36a29e45c613bcc8890b5e04d965e91bbf90"
+  }
+}

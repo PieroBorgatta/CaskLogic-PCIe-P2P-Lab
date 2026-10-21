@@ -1,0 +1,57 @@
+{
+  "status": "PASS_PACKAGE_SOURCE_INIT_ALIGNMENT",
+  "files_sha256_verified": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "8fcb41d6cd91ee7bb8b302a17fa018ea6d9f399e78f5e921d4e3ffe7ff787e85",
+    "IDENTITY.txt": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+  },
+  "archive_members": 2289,
+  "archive_targets_verified": {
+    "opt/probe/nvidia-instrumented-uvm.ko": {
+      "sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+      "bytes": 57133360,
+      "mode": "0o100644"
+    },
+    "opt/probe/peer_word": {
+      "sha256": "f5918b04fd9416d8378f962f0f772968dd877ac1a21153b82a9f4abe0ce1ad5b",
+      "bytes": 1255528,
+      "mode": "0o100755"
+    },
+    "opt/probe/nvidia-dynamic.ko": {
+      "sha256": "c89df9beff8ee414e020a46d8860ec8b198b896d262bd49d89811d03e052e7eb",
+      "bytes": 36769904,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libcuda.so.1": {
+      "sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+      "bytes": 91505672,
+      "mode": "0o100644"
+    },
+    "init": {
+      "sha256": "5dcfca502b6ff17cf4d61cb852d322abb509319234fd794ab55cbc6edc253945",
+      "bytes": 6567,
+      "mode": "0o100755"
+    }
+  },
+  "source_header_init_verified": {
+    "peer_vmm_word_cpubar_postwrite.cu": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+    "cpubar_trace.h": "b5a4627e692b929eda5689622b884b12f41e8e44259ca36585179915fe6c1170",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "init-tcss-native.sh": "5dcfca502b6ff17cf4d61cb852d322abb509319234fd794ab55cbc6edc253945"
+  },
+  "native_program_sha256": "f5918b04fd9416d8378f962f0f772968dd877ac1a21153b82a9f4abe0ce1ad5b",
+  "driver_build_manifest_sha256": "f82d090046efba477ac4d41610ba100f8251db79d428aaea6d7e9dfb3e3dc605",
+  "RM_export_ABI_unchanged": true,
+  "RM_export_count": 96,
+  "CUDA_source_identical_to_postwrite_baseline": true,
+  "diagnostic_parser_only_change": "software enum4 to HW2, enum3 to HW3; reject peer enum2",
+  "effective_registry": "RM64KBBAR1Mappings=0;RMCaskPeerCoherent=1",
+  "UVM_baseline_2MiB_unchanged": true,
+  "no_lowBAR_or_NoSnoop_helper_in_init": true,
+  "probe_timeout_seconds": 25,
+  "hardware_operations": false,
+  "limits": [
+    "Reviewed local package contents and source identities; no boot or GPU execution.",
+    "PTE logs must still confirm actual coherent aperture4 and raw hardware encoding2 after native execution."
+  ]
+}

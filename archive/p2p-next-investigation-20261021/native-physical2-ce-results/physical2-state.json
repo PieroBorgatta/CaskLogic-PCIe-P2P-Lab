@@ -1,0 +1,38 @@
+{
+  "stage": "armed",
+  "epoch": 1792551833.017638,
+  "entry": "0002",
+  "files": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "cad7a46cdc266a20ef7062fdf7b79c4b3615e4e3cc22a81236c748031e45d677",
+    "IDENTITY.txt": "1439195ef22a51ed7f11daf5d766a19764a6602095bf2a002355750d6a006abf"
+  },
+  "metadata_sha256": {
+    "files.json": "73e0e8294eab945ea3fcb9bfc0615f9145fc3e311c1bf120d7fd17fdd9811a65",
+    "build-manifest.json": "ecc0841cece826fa6f8b0e548650f99021c27fe42fa6d42fe4cc3d8af97768e4"
+  },
+  "baseline_sha256": "b1bc62f40972c8535a9161061d98f5f3bbc97379191546640fa6cdcf57b64367",
+  "original_entries": {
+    "0000": "Boot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)",
+    "0001": "Boot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO"
+  },
+  "kernel_args": "initrd=\\EFI\\CaskLogicTcssPhysical2\\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0",
+  "label": "CaskLogic TCSS physical2 probe",
+  "loader": "\\EFI\\CaskLogicTcssPhysical2\\probe-kernel.efi",
+  "boot_before": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\n",
+  "backup": "/root/riscrivo-p2p-next-investigation-20261021/physical2-stage-metadata",
+  "automatic_return_seconds": 182,
+  "program_timeout_seconds": 60,
+  "ccfg_before": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "disk": "/dev/nvme2n1",
+  "part": "4",
+  "epoch_staged": 1792551833.6332264,
+  "boot_staged": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS physical2 probe\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssPhysical2\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.P.h.y.s.i.c.a.l.2.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n",
+  "epoch_arm_pending": 1792551862.9358084,
+  "epoch_armed": 1792551862.9838362,
+  "boot_armed": "BootNext: 0002\nBootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS physical2 probe\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssPhysical2\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.P.h.y.s.i.c.a.l.2.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n"
+}

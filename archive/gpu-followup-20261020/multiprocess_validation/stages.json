@@ -1,0 +1,42 @@
+[
+  {
+    "name": "shm",
+    "env": {
+      "NCCL_DEBUG": "INFO",
+      "NCCL_DEBUG_SUBSYS": "INIT,GRAPH,P2P,SHM",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "command": [
+      "python",
+      "-u",
+      "/audit/nccl_process_probe.py"
+    ],
+    "timeout": 45,
+    "started_epoch": 1792525578.1739728,
+    "seconds": 4.001148700714111,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_send",
+    "env": {
+      "NCCL_DEBUG": "INFO",
+      "NCCL_DEBUG_SUBSYS": "INIT,GRAPH,P2P,SHM",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0",
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1"
+    },
+    "command": [
+      "python",
+      "-u",
+      "/audit/nccl_process_probe.py"
+    ],
+    "timeout": 45,
+    "started_epoch": 1792525582.175281,
+    "seconds": 4.001775503158569,
+    "returncode": 0,
+    "timed_out": false
+  }
+]

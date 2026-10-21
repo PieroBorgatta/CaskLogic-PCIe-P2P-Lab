@@ -1,0 +1,170 @@
+--- a/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
++++ b/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
+@@ -3664,7 +3664,10 @@
+     NvU64               size;
+     NvU32               iovaspaceId;       // source GPU IOVA space the window is mapped into
+     RmPhysAddr          windowDmaBase;     // source-visible IOVA of window byte 0
++    NvU64               caskTraceId;      // diagnostic lifetime identifier only
+ } gpuDynBar1P2PMapping;
++
++static PORT_ATOMIC NvU64 caskP2pTraceSequence = 0;
+ 
+ // Caller must hold rmSubDevice->pDynBar1Mutex.
+ static gpuDynBar1P2PMapping *
+@@ -3838,6 +3841,15 @@
+     pMap->size               = mapSize;
+     pMap->iovaspaceId        = pMappingGpu->busInfo.iovaspaceId;
+     pMap->windowDmaBase      = dmaBase;
++    pMap->caskTraceId        = portAtomicExIncrementU64(&caskP2pTraceSequence);
++    NV_PRINTF(LEVEL_ERROR,
++              "P2PTRC WINDOW_CREATE id=%llu mem=%x subdev=%x src=%u dst=%u src_gpu_id=%x dst_gpu_id=%x desc=%p iovas=%x size=%llx bar1=%llx bar1_size=%llx bar1_off=%llx window_phys=%llx dma=%llx ranges=%llu\n",
++              pMap->caskTraceId, hDupMemory, rmSubDevice->subDeviceHandle,
++              gpuGetInstance(pMappingGpu), gpuGetInstance(pRemoteGpu),
++              pMappingGpu->gpuId, pRemoteGpu->gpuId, pAllocMemDesc,
++              pMappingGpu->busInfo.iovaspaceId, mapSize,
++              gpumgrGetGpuPhysFbAddr(pRemoteGpu), bar1Size,
++              memArea.pRanges[0].start, windowPhys, dmaBase, memArea.numRanges);
+ 
+     pMap->pNext = rmSubDevice->pDynBar1List;
+     rmSubDevice->pDynBar1List = pMap;
+@@ -3883,7 +3895,11 @@
+     portSyncMutexAcquire(rmSubDevice->pDynBar1Mutex);
+     pMap = _nvGpuOpsDynBar1Find(rmSubDevice, hDupMemory);
+     if (pMap != NULL)
++    {
+         *pWindowDmaBase = pMap->windowDmaBase;
++        NV_PRINTF(LEVEL_ERROR, "P2PTRC WINDOW_REUSE id=%llu mem=%x src=%u dma=%llx\n",
++                  pMap->caskTraceId, hDupMemory, pMap->mappingGpuInstance, pMap->windowDmaBase);
++    }
+     else
+         status = _nvGpuOpsDynBar1Create(rmSubDevice, pMappingGpu, pRemoteGpu,
+                                         pAllocMemDesc, hDupMemory, pWindowDmaBase);
+@@ -3921,6 +3937,9 @@
+     if (pMap == NULL)
+         return;
+ 
++    NV_PRINTF(LEVEL_ERROR, "P2PTRC WINDOW_DESTROY_BEGIN id=%llu mem=%x src=%u iovas=%x dma=%llx size=%llx\n",
++              pMap->caskTraceId, hDupMemory, pMap->mappingGpuInstance,
++              pMap->iovaspaceId, pMap->windowDmaBase, pMap->size);
+     NV_PRINTF(LEVEL_INFO,
+               "METHOD3: dynamic BAR1 P2P unmap GPU%u hMem 0x%x size 0x%llx\n",
+               gpuGetInstance(pMap->pRemoteGpu), hDupMemory, pMap->size);
+@@ -3938,6 +3957,7 @@
+     if (!bTaken)
+         rmDeviceGpuLocksRelease(pMap->pRemoteGpu, GPUS_LOCK_FLAGS_NONE, NULL);
+ 
++    NV_PRINTF(LEVEL_ERROR, "P2PTRC WINDOW_DESTROY_DONE id=%llu mem=%x\n", pMap->caskTraceId, hDupMemory);
+     portMemFree(pMap);
+ }
+ 
+@@ -4733,6 +4753,20 @@
+ 
+         portMemCopy(&pGpuExternalMappingInfo->pteBuffer[iter * skipPteCount], pLevelFmt->entrySize, pte.v8, pLevelFmt->entrySize);
+ 
++        if (isBar1P2PSupported && iter == 0)
++        {
++            GMMU_APERTURE traceAperture = gmmuFieldGetAperture(&pPteFmt->fldAperture, pte.v8);
++            const GMMU_FIELD_ADDRESS *traceField = gmmuFmtPtePhysAddrFld(pPteFmt, traceAperture, peerType);
++            NvU64 traceDecoded = traceField ? gmmuFieldGetAddress(traceField, pte.v8) : NV_U64_MAX;
++            NV_PRINTF(LEVEL_ERROR,
++                      "P2PTRC RM_PTE client=%x src=%u dst=%u desc=%p offset=%llx page=%llx pte_count=%llu entry=%u fmt=%u aperture=%u valid=%u readonly=%u atomic=%u volatile=%u dynamic=%u dma_base=%llx phys_input=%llx decoded=%llx addr_shift=%u raw0=%016llx raw1=%016llx\n",
++                      session->handle, gpuGetInstance(pMappingGpu), gpuGetInstance(pMemDesc->pGpu), pMemDesc,
++                      offset, mappingPageSize, pteCount, pLevelFmt->entrySize, pFmt->version,
++                      traceAperture, nvFieldGetBool(&pPteFmt->fldValid, pte.v8),
++                      readOnly, atomic, vol, bDynBar1Mapped, dynBar1DmaBase, physAddr, traceDecoded,
++                      traceField ? traceField->shift : 0, pte.v64[0],
++                      pLevelFmt->entrySize >= 16 ? pte.v64[1] : 0ULL);
++        }
+         offset += mappingPageSize;
+     }
+ 
+@@ -5264,6 +5298,12 @@
+ 
+     if (pGpuExternalMappingInfo != NULL)
+     {
++        if (isBar1P2PSupported)
++            NV_PRINTF(LEVEL_ERROR,
++                      "P2PTRC RM_REQUEST client=%x mem=%x src=%u dst=%u desc=%p offset=%llx size=%llx dynamic=%u dma=%llx\n",
++                      vaSpace->device->session->handle, hMemory, gpuGetInstance(pMappingGpu),
++                      gpuGetInstance(pAdjustedMemDesc->pGpu), pAdjustedMemDesc, offset, size,
++                      dynBar1Mapped, dynBar1DmaBase);
+         status = nvGpuOpsBuildExternalAllocPtes(pVAS,
+                                                 vaSpace->device->session,
+                                                 pMappingGpu,
+@@ -5279,6 +5319,9 @@
+                                                 bar1BusAddr,
+                                                 dynBar1DmaBase,
+                                                 dynBar1Mapped);
++        if (isBar1P2PSupported)
++            NV_PRINTF(LEVEL_ERROR, "P2PTRC RM_RETURN client=%x mem=%x src=%u status=%x\n",
++                      vaSpace->device->session->handle, hMemory, gpuGetInstance(pMappingGpu), status);
+     }
+ 
+     if (pGpuExternalPhysAddrInfo != NULL)
+--- a/kernel-open/nvidia/nv-dma.c
++++ b/kernel-open/nvidia/nv-dma.c
+@@ -769,6 +769,7 @@
+     struct resource *res;
+     NvU8 bar_index;
+     NV_STATUS status;
++    NvU64 caskInputAddress = *va;
+ 
+     if (peer_pci_dev == NULL)
+     {
+@@ -811,6 +812,12 @@
+         status = NV_OK;
+     }
+ 
++    pr_info("P2PTRC DMA_MAP src=%s dst=%s input=%llx output=%llx pages=%llx os_page=%lu bar_index=%u resource_start=%llx resource_end=%llx bus_base=%llx iommu_resource=%u status=%x\n",
++            dev_name(dma_dev->dev), dev_name(peer_dma_dev->dev),
++            caskInputAddress, *va, page_count, PAGE_SIZE, bar_index,
++            (unsigned long long)res->start, (unsigned long long)res->end,
++            (unsigned long long)pci_bus_address(peer_pci_dev, bar_index),
++            nv_dma_use_map_resource(dma_dev), status);
+     return status;
+ }
+ 
+--- a/kernel-open/nvidia-uvm/uvm_map_external.c
++++ b/kernel-open/nvidia-uvm/uvm_map_external.c
+@@ -327,6 +327,13 @@
+ 
+         last_mapping = (addr + map_size - 1 == range_node->end);
+ 
++        if (pte_buffer->va_range->type == UVM_VA_RANGE_TYPE_EXTERNAL && num_ptes != 0)
++            pr_info("P2PTRC UVM_PTE gpu=%s mem=%x gpu_va=%llx map_offset=%llx map_size=%llx page=%llx entry=%u count=%zu table_ap=%s table_pa=%llx last=%u raw0=%016llx raw1=%016llx\n",
++                    uvm_gpu_name(tree->gpu), mem_handle, addr, map_offset, map_size,
++                    page_size, pte_size, num_ptes, uvm_aperture_string(pte_addr.aperture),
++                    pte_addr.address, last_mapping, pte_bits[0],
++                    pte_size >= 16 ? pte_bits[1] : 0ULL);
++
+         // These copies are technically independent, except for the last one
+         // which issues the TLB invalidate and thus must wait for all others.
+         // However, since each copy will saturate the bus anyway we force them
+@@ -339,6 +346,9 @@
+                            last_mapping,
+                            range_node,
+                            tracker);
++        if (pte_buffer->va_range->type == UVM_VA_RANGE_TYPE_EXTERNAL)
++            pr_info("P2PTRC UVM_SUBMIT gpu=%s mem=%x gpu_va=%llx status=%x\n",
++                    uvm_gpu_name(tree->gpu), mem_handle, addr, status);
+         if (status != NV_OK)
+             return status;
+ 
+@@ -917,6 +927,9 @@
+         goto error;
+     }
+ 
++    pr_info("P2PTRC UVM_ALLOCATION gpu=%s user_client=%x user_mem=%x rm_mem=%x gpu_va=%llx length=%llx allocation_size=%llx map_offset=%llx\n",
++            uvm_gpu_name(mapping_gpu), user_rm_mem->user_client, user_rm_mem->user_object,
++            ext_gpu_map->mem_handle->rm_handle, base, length, mem_info.size, map_rm_params->map_offset);
+     status = set_ext_gpu_map_location(ext_gpu_map, va_space, mapping_gpu, &mem_info);
+     if (status != NV_OK)
+         goto error;
+@@ -1047,6 +1060,7 @@
+     // just need to hold the VA space lock to prevent the GPUs on which we're
+     // waiting from getting unregistered underneath us.
+     status = uvm_tracker_wait_deinit(&tracker);
++    pr_info("P2PTRC UVM_MAP_COMPLETE gpu_va=%llx length=%llx status=%x\n", params->base, params->length, status);
+ 
+     uvm_va_space_up_read_rm(va_space);
+     uvm_processor_mask_cache_free(mapped_gpus);

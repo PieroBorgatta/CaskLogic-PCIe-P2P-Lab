@@ -1,0 +1,11 @@
+{
+  "strict_preimage_and_patch": "PASS",
+  "python_syntax": "PASS",
+  "build_performed": false,
+  "parameter": "uvm_cask_peer_small_pages",
+  "default": false,
+  "gating": "only external cross-GPU vidmem, owning GPU non-null, HAL4K supported",
+  "baseline_rm_unchanged": true,
+  "builder_sha256": "1effce6a72f7e02ec11f15aeb03153103a2c7df097f3ce757e33f8c00290931b",
+  "patch_sha256": "3fe976ddeec6a90a258d6cd97df521c442f60b3a60eb85b9a81f41511fe284a5"
+}

@@ -1,0 +1,18 @@
+--- a/kernel-open/nvidia/nv-dma.c
++++ b/kernel-open/nvidia/nv-dma.c
+@@ -769,6 +769,7 @@
+     struct resource *res;
+     NvU8 bar_index;
+     NV_STATUS status;
++    NvU64 original_va = *va;
+ 
+     if (peer_pci_dev == NULL)
+     {
+@@ -811,6 +812,7 @@
+         status = NV_OK;
+     }
+ 
++    pr_err("RISCRIVO_DIAG dma peer %s -> %s input=0x%llx output=0x%llx pages=0x%llx resource=%d status=%x\n",dev_name(dma_dev->dev),dev_name(peer_dma_dev->dev),original_va,*va,page_count,nv_dma_use_map_resource(dma_dev),status);
+     return status;
+ }
+ 

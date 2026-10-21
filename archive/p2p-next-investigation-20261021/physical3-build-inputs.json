@@ -1,0 +1,23 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "init-physical3.sh": "3405d4a1e199e0504d2517505da0e8508675b6172dd04273a9c9d873859a3d0d",
+    "build_physical3_package.py": "1b6e3e5951fdc11f821acc9192a37b01ecb7af19f9bd746f5f0244dd85dfbae2",
+    "verify_physical3_package.py": "0d4177b1a276ef10e55ae00de689da73e2141df62b896418bf863607a0aa005a",
+    "driver-physical-ce-build-04/build-manifest.json": "20b3b8a71d7f68d98526ce09c279afb09d50e71967109505c995739696d9191e",
+    "driver-physical-ce-build-04/modules/nvidia-uvm.ko": "06f64631e9c725eff49301ecd2a1a051c504bfa3145dbacb4247484d36d375e9",
+    "driver-physical-ce-v4/manifest.json": "f2a5dd2aae605ebb46e202802eaf0d40c87a52461a07cf81b46dde9e6ccc76f4",
+    "driver-physical-ce-v4/build-contract.json": "56394e43344b3e6add04cbc938ff858a08c97c07478c1903bf23a7d717111a2d",
+    "driver-physical-ce-v4/root-source-review.json": "819088cb0ca97e397c23f992a8c11d04fa36436179099c6f0eb037813b47ed98",
+    "native-physical3-ce-probe/peer_physical_ce_native": "b5f9b159f1b061e476cb1419c1dd07b2bcb56a0daa83cfd304f55e744cf2a1b5",
+    "native-physical3-ce-probe/peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "native-physical3-ce-probe/phys_ce_client.h": "4131933670fab1d4e6e0e9cbcb34c651558061e56933e5182bb24cc668dbf2d5",
+    "native-physical3-ce-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-physical3-ce-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-physical3-ce-probe/include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "native-physical3-ce-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-physical3-ce-probe/source-provenance.json": "2ad55845ca3be080cf6746a1b0e36f802928e02b6082c13f52045b659ffe1cfc",
+    "native-physical3-ce-probe/offline-client-validation.json": "55121ad8094b483823172a81a37d32c55a94cf2585dfe15764c0c8fd79a57c76",
+    "native-physical3-ce-probe/root-client-review.json": "be1c697657d145c2d6a27781d2d893e64ed429d8ffa0d2ce54b10fc2f865ac17"
+  }
+}

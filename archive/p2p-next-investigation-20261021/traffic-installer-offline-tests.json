@@ -1,0 +1,10 @@
+{
+  "status": "PASS_LOCAL_CPU_FIXTURES",
+  "test_count": 9,
+  "hardware_commands_executed": false,
+  "all_command_effects_mocked": true,
+  "installer_sha256": "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321",
+  "test_sha256": "7183cdc7c45753d10149d0ce950d7a9c78e1bc0f810e86ea7738ebf33ed9026b",
+  "source_baseline_sha256": "8d86cfac50fc14ba07b0afa93c72351873088dfe8258a2952faf9c784d7fca30",
+  "delta": "New paths/identity/label; 4 comparisons PUSH only size1048576 engines SM/CUDA_COPY_REQUEST; CE-observed false. Transaction code unchanged. Added seventh pinned payload libnvidia-ml.so.1 as explicitly requested; streamed hash check inherited."
+}

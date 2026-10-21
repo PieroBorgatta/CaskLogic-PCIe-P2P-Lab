@@ -1,0 +1,10 @@
+{
+  "region_start": 28356608,
+  "region_bytes": 122880,
+  "original_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "original_crc32": 1242875829,
+  "current_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "current_crc32": 1242875829,
+  "candidate_sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+  "candidate_crc32": 1419608870
+}

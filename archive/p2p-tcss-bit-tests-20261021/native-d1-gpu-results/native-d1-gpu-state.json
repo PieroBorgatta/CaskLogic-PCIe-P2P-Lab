@@ -1,0 +1,16 @@
+{
+  "stage": "armed",
+  "epoch": 1792536958.0027704,
+  "boot_armed": "BootNext: 0003\nBootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS lettura\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssTest\\Shell.efi)\nBoot0003* CaskLogic TCSS GPU nativo\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssNative\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.N.a.t.i.v.e.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\nBoot0004* CaskLogic TCSS PEG prova\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssD1Test\\Shell.efi)\n",
+  "ccfg_before": {
+    "0000:00:01.0": 32887,
+    "0000:00:07.0": 36983,
+    "0000:00:07.2": 36983
+  },
+  "probe_files": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "22a6535bb5bbb081bcedf7219f117d7c7177f75086393c842ad7432036f684a5",
+    "IDENTITY.txt": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+  },
+  "probe_change": "All GPU frees deferred until four data comparisons; monotonic markers"
+}

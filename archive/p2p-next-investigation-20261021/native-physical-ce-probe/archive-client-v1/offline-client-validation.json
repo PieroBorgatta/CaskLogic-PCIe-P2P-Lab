@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "fixture_checks": 122,
+  "compiler": "clang++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined",
+  "fixture_source_sha256": "d572e430061b75d97d003e8851e12d4e55f767cc1b7f53b8d661b6211841a037",
+  "client_sha256": "baefbc74e2d3792dc382adaca057b9344ac09657e0cb8e3d04c650e6d1a29380",
+  "hardware_calls": 0,
+  "coverage": [
+    "ABI size144/input boundary72",
+    "all72 input bytes rejected after mutation",
+    "success flags/class/aperture/PA alignment/offset/handles checked",
+    "validation output/return code checked",
+    "real parked child remains alive after SIGTERM, killed by parent SIGKILL after check"
+  ],
+  "limits": [
+    "CPU fixture compiles the real client header with a CPUID-only shim; native_identity is never called.",
+    "FD selection/ioctl execution and CUDA main await independent source review and parent CPU compilation.",
+    "No kernel/hardware validation is claimed."
+  ]
+}

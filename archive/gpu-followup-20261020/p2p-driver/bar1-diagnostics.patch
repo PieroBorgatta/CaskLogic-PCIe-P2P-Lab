@@ -1,0 +1,40 @@
+--- a/src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c
++++ b/src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c
+@@ -1456,6 +1456,8 @@
+     NvU32      gpuInst1   = gpuGetInstance(pGpu1);
+     KernelBif *pKernelBif = GPU_GET_KERNEL_BIF(pGpu0);
+ 
++    NV_PRINTF(LEVEL_ERROR, "RISCRIVO_DIAG BAR1 candidate gpu%u->gpu%u type=%u static=%u/%u\n", gpuInst0, gpuInst1, pKernelBif->pcieP2PType, kbusIsStaticBar1Enabled(pGpu0,pKernelBus0), kbusIsStaticBar1Enabled(pGpu1,pKernelBus1));
++
+     // Only support if available by default, or if forced by regkey.
+     if ((pKernelBif->pcieP2PType != NV_REG_STR_RM_PCIEP2P_TYPE_BAR1) &&
+         !pKernelBus0->getProperty(pKernelBus0, PDB_PROP_KBUS_SUPPORT_BAR1_P2P_BY_DEFAULT))
+--- a/src/nvidia/src/kernel/platform/p2p/p2p_caps.c
++++ b/src/nvidia/src/kernel/platform/p2p/p2p_caps.c
+@@ -916,6 +916,7 @@
+                 *pP2PReadCapStatus = bar1P2PReadCapStatus;
+                 *pP2PAtomicsCapStatus = bar1P2PAtomicsCapStatus;
+                 *pConnectivity = P2P_CONNECTIVITY_PCIE_BAR1;
++                NV_PRINTF(LEVEL_ERROR,"RISCRIVO_DIAG selected BAR1 mask=%x\n",gpuMask);
+             }
+ 
+             return NV_OK;
+--- a/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
++++ b/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
+@@ -3843,7 +3843,7 @@
+     rmSubDevice->pDynBar1List = pMap;
+     rmSubDevice->dynBar1MappedBytes += mapSize;
+ 
+-    NV_PRINTF(LEVEL_INFO,
++    NV_PRINTF(LEVEL_ERROR,
+               "METHOD3: dynamic BAR1 P2P map GPU%u->GPU%u hMem 0x%x size 0x%llx "
+               "bar1Off 0x%llx dmaBase 0x%llx (total 0x%llx)\n",
+               gpuGetInstance(pMappingGpu), gpuGetInstance(pRemoteGpu), hDupMemory,
+@@ -5160,6 +5160,7 @@
+                 goto freeGpaMemdesc;
+ 
+             bar1BusAddr = gpumgrGetGpuPhysFbAddr(pAdjustedMemDesc->pGpu);
++            NV_PRINTF(LEVEL_ERROR,"RISCRIVO_DIAG external alloc src=%u remote=%u peer=%u bar1=%u\n",gpuGetInstance(pMappingGpu),gpuGetInstance(pAdjustedMemDesc->pGpu),isPeerSupported,isBar1P2PSupported);
+ 
+             //
+             // METHOD3: when BAR1 P2P is used but the remote GPU's static BAR1 is

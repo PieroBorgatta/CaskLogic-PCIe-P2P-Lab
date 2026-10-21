@@ -1,0 +1,84 @@
+{
+  "status": "source_candidate_not_compiled_not_loaded",
+  "baseline_source_root": "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/driver-instrumented/validated-complete-tree/source/NVIDIA-open-gpu-kernel-modules-19f3b34",
+  "baseline_nvidia_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+  "baseline_uvm_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+  "kernel": "7.0.0-38-generic",
+  "driver": "595.99.02",
+  "only_module_to_rebuild": "nvidia-uvm",
+  "parameter": "uvm_cask_physical_ce",
+  "parameter_default": false,
+  "parameter_mode": "0400",
+  "required_builtin_tests_parameter": "uvm_enable_builtin_tests=1",
+  "abi": 1,
+  "ioctl": 315,
+  "bytes": 4,
+  "abi_size": 144,
+  "files": {
+    "kernel-open/nvidia-uvm/cask_phys_ce.inc": {
+      "preimage_sha256": null,
+      "postimage_sha256": "d8fdae24312cf1cb8097fc71c42e53e21620d6b7048332f1ff5fd7328f1b7db1",
+      "size": 14624,
+      "new_file": true
+    },
+    "kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h": {
+      "preimage_sha256": null,
+      "postimage_sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+      "size": 2245,
+      "new_file": true
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.c": {
+      "preimage_sha256": "66881c4ae46461314d41342b2a27df9119d68d68f90d181e3a32670dcc19f590",
+      "postimage_sha256": "79aaff0bef44c0e25b8261c8eb4784ed2168326d408dd4e6d5767196c19da431",
+      "size": 163825,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.h": {
+      "preimage_sha256": "76c578d204b32499e0004d1f1f43f9a1ce6718be13faa1394a5a63d0d1c7f9b5",
+      "postimage_sha256": "1fc50d101efd9b938cb071ad4e758876ac702f7f59e3fd7e23ea13d4c079782f",
+      "size": 72794,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_map_external.c": {
+      "preimage_sha256": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5",
+      "postimage_sha256": "bf54b71ab6106e2f6e4e3272b4db4a692901be008a08c963b8e92cb93f8fa10c",
+      "size": 56965,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_test.c": {
+      "preimage_sha256": "2134c7be438b6d1d03f4435e714311021cf9e7bdc48cc4beeb0045d559eb60a8",
+      "postimage_sha256": "9806e1adeca228759759a52a712fbcf80e6caa11c5a1b58a0351d7a818333ece",
+      "size": 20729,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_test.h": {
+      "preimage_sha256": "dddfb2d084a4ce665917e316c0cc7df74cd609cdaaa32d4d4e6aa093871ea2b7",
+      "postimage_sha256": "205d26435629a4e4ab40a2fe82bcfa206b0062c8bc47f369f58f9eb9fd27cd3e",
+      "size": 13142,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_test_ioctl.h": {
+      "preimage_sha256": "54e692ed15b1e9f7eb686252029816feff96d40e3e9e01da944ba095e81de161",
+      "postimage_sha256": "40cb22c970dca418031f7555e0bc58c9207ecbad0d8f2c1b75739f0ed67b2fc7",
+      "size": 68471,
+      "new_file": false
+    },
+    "kernel-open/nvidia-uvm/uvm_va_range.h": {
+      "preimage_sha256": "7ab4adff5c15cfeef4851e4ecbf9c57357452348718ec7f116a9b3bc336c10c2",
+      "postimage_sha256": "1b12095a5d8f27039e7a3cb34a866e8a9131af1bc3aa8dd07ebb6b05d2b6f722",
+      "size": 49079,
+      "new_file": false
+    }
+  },
+  "patch_sha256": "40af6b62076705c7633b0898e0074eb38c9928377a48f741f981047f6ba300f0",
+  "generator_sha256": "3943ac33b0da002cbf8b2b90a050daf803e67ff35ed1eef3dad0c73d170580ff",
+  "hardware_operations": false,
+  "rm_changes": false,
+  "baseline_mapping_or_cleanup_changes": false,
+  "limitations": [
+    "Physical destination explicitly uses NONCOHERENT_SYSMEM; stock UVM SYS CE helper uses COHERENT_SYSMEM.",
+    "Expected completion is CE tracker completion, not proof that remote data arrived.",
+    "Unconfirmed completion deliberately retains peer pair, GPU objects and duplicate handles until reboot.",
+    "Only unsplit original external VMM mappings and exact native CPU/two GPU identities are accepted."
+  ]
+}

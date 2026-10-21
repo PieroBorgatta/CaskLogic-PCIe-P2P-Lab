@@ -1,0 +1,43 @@
+{
+  "scope": "Local static only; no remote operations",
+  "installer_firmware_sha256": "7dd44b63b88040dac4296b17d9c0a1dd0ff912060f8530cbffc2b5165824535f",
+  "installer_gpu_sha256": "d8ef13cdd3af306dc7d90a70e5c7a65eb62110f1cf000a6f931737d4f3586f0b",
+  "firmware_package_manifest_sha256": "046eb56e742d28d233d0c6ef77a5096d3cf4706267137b8105921c1b7dd79c94",
+  "startup_sha256": "31a58663e33e8f2cd5180bbcbb981b5f800e3bcd3976127bada1d23361fa5439",
+  "startup_restore_sha256": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309",
+  "cuda_source_sha256": "0b8dfdbfa3a1235a563f987d8c64093cff92e506e72ec1e5738e064629462972",
+  "installers": {
+    "stable_esp_partuuid_guard": true,
+    "original_boot_files_guard": true,
+    "no_default_bootorder_change": true,
+    "vm_halted_before_arm": true,
+    "firmware_arm_requires_original_CCFG": true,
+    "gpu_arm_requires_combined_CCFG": true,
+    "all_noncontrol_VMs_halted_before_arm": true
+  },
+  "firmware_package": {
+    "CURRENT_equals_ORIGINAL": true,
+    "all_blocks_exact_to_verified_profile": true,
+    "shell_flows_exact_to_reviewed_previous_after_path_substitution": true,
+    "range": "0x01B0B000+0x1E000"
+  },
+  "cuda_order": {
+    "owner_H2D_then_device_sync_then_owner_readback_before_peer": true,
+    "owner_memset_then_device_sync_then_owner_readback_before_peer": true,
+    "executing_gpu_device_sync_after_each_kernel": true,
+    "all_frees_deferred_until_all_data_results": true
+  },
+  "pcie_header_status": "STATIC_REVIEW_PASSED",
+  "blocking_static_issues": [],
+  "pcie_header_sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+  "pcie_diagnostics": {
+    "PCI_config_open_readonly": true,
+    "only_pread_close_to_config": true,
+    "no_AER_clear_reset_or_config_write": true,
+    "bounded_standard_and_extended_capability_walk": true,
+    "cycles_truncation_and_unavailable_devices_reported": true,
+    "root_AER_fields_only_on_type4": true,
+    "timestamps_before_and_after_operations": true,
+    "sticky_status_not_cleared": true
+  }
+}

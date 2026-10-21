@@ -1,0 +1,375 @@
+[
+  {
+    "epoch": 1792528125.8984087,
+    "command": [
+      "systemctl",
+      "is-active",
+      "riscrivo-training.service"
+    ],
+    "rc": 3,
+    "out": "inactive\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792528126.3232896,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528126.3387768,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528126.3431973,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528126.348093,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528126.7080162,
+    "command": [
+      "systemctl",
+      "mask",
+      "--runtime",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": "Created symlink '/run/systemd/system/nvidia-cdi-refresh.service' \u2192 '/dev/null'.\n"
+  },
+  {
+    "epoch": 1792528126.767083,
+    "command": [
+      "fuser",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidiactl",
+      "/dev/nvidia-uvm"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.258811,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.371485,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.372954,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.4426818,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.5244203,
+    "command": [
+      "insmod",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-coherent/nvidia.ko",
+      "NVreg_RegistryDwords=ForceP2P=0x11;RMForceP2PType=1;RMPcieP2PType=1;RMForceStaticBar1=0"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.5659728,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528127.5678773,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528132.3305082,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.0920448,
+    "command": [
+      "nvidia-smi",
+      "-q",
+      "-d",
+      "MEMORY"
+    ],
+    "rc": 6,
+    "out": "No devices were found\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.1096728,
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "riscrivo-compiled-p2p"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.11505,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.1421049,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.1469936,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.1507354,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.3937006,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.4553702,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.4567804,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.5268679,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.6043053,
+    "command": [
+      "modprobe",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.645304,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528137.6472943,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528142.413821,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528142.7632294,
+    "command": [
+      "systemctl",
+      "unmask",
+      "--runtime",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": "Removed '/run/systemd/system/nvidia-cdi-refresh.service'.\n"
+  },
+  {
+    "epoch": 1792528142.770289,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528142.774093,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528142.7788281,
+    "command": [
+      "systemctl",
+      "start",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792528149.8265073,
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=uuid,name,memory.total,power.limit",
+      "--format=csv"
+    ],
+    "rc": 6,
+    "out": "No devices were found\n",
+    "err": ""
+  }
+]

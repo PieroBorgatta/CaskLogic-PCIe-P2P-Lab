@@ -1,0 +1,11 @@
+{
+  "fork": "xiaoyanzi191/open-gpu-kernel-modules-p2p",
+  "commit": "025090f64d7f79b3b6de118c3e9c50bc32988235",
+  "base": "NVIDIA/595.71.05",
+  "target": "NVIDIA/595.99.02",
+  "files": [
+    "src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c",
+    "src/nvidia/src/kernel/gpu/bus/p2p_api.c",
+    "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c"
+  ]
+}

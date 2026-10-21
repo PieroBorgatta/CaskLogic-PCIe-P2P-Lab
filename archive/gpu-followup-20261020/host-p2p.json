@@ -1,0 +1,18 @@
+{
+  "epoch": 1792525137.6014497,
+  "driver_init": 0,
+  "host_cuda_peer_access": [
+    {
+      "source": 0,
+      "destination": 1,
+      "returncode": 0,
+      "access": 0
+    },
+    {
+      "source": 1,
+      "destination": 0,
+      "returncode": 0,
+      "access": 0
+    }
+  ]
+}

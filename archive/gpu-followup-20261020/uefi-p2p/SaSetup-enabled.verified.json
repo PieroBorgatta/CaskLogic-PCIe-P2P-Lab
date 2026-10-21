@@ -1,0 +1,16 @@
+{
+  "name": "SaSetup",
+  "guid": "72c5e28c-7783-43a1-8767-fad73fccafa4",
+  "attributes": 3,
+  "bytes": 1400,
+  "backup_sha256": "c2bb7c4dcae35e92c761e913c97d2231b9ab7fa7d926fd4561a3ce1fbbe3703f",
+  "data_sha256": "49d6fe2ae8539027849e0d9f8dd4946b4491c1f42617b82950198a9df1cd4975",
+  "p2p_gpu_slot_offset": "0x3E3",
+  "p2p_gpu_slot_value": 0,
+  "gpu_slot_enabled": 1,
+  "other_cpu_port_p2p": [
+    0,
+    0
+  ],
+  "crc_verified": true
+}

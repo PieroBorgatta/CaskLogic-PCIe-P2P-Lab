@@ -1,0 +1,532 @@
+{
+  "esito": "PROVA_COMPLETA_TRASPORTO_BIDIREZIONALE_FALLITO",
+  "sintesi": "30 copie tramite kernel che legge VRAM locale e scrive VRAM peer:15/15 A2000→Ada corrette;15/15 Ada→A2000 fallite, incluso il primo trasferimento4byte senza letture peer precedenti.",
+  "verifiche_offline_tutte_superate": true,
+  "identita": {
+    "GPU0": "RTX2000Ada/01:00.0/00000000000000000000000000000001",
+    "GPU1": "RTXA2000/06:00.0/00000000000000000000000000000002",
+    "kernel": "7.0.0-38-generic",
+    "IOMMU": "disabilitato nella riga avvio e nel log DMAR",
+    "firmware_CCFG": {
+      "00:01.0": [
+        "00008077",
+        "00008077",
+        "00008077"
+      ],
+      "00:07.0": [
+        "00009077",
+        "00009077",
+        "00009077"
+      ],
+      "00:07.2": [
+        "00009077",
+        "00009077",
+        "00009077"
+      ]
+    },
+    "registry": "RM64KBBAR1Mappings=0"
+  },
+  "origine": {
+    "hash_file_raccolti_verificati": 17,
+    "sorgente_locale_corrisponde_manifest": true,
+    "sorgente_sha256": "f5b8f8505fd0a17fb4bf11855704de74fba0298139760349b5000c59a83b987e",
+    "binario_sha256_da_manifest_non_ricalcolato_localmente": "ad33df3956edcd9f7aa4cf9700d8629b779c8fd1ce8336ebdf281be29f473734",
+    "nvidia_sha256_da_manifest": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "uvm_sha256_da_manifest": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+    "log_sha256": "860ea94c0530749bed325d9d753400717f8180a1a31985ee27e95b07c4f97f46",
+    "kernel_log_sha256": "e0d9dbe63bc096162b0a93512dbb500134b841c60835c248ba6f31faa37a4f6c"
+  },
+  "controlli_owner": {
+    "completati": 60,
+    "corretti": 60,
+    "intero_payload_prima_del_peer": true,
+    "sync_owner_nel_sorgente_verificato": true
+  },
+  "casi": [
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4,
+      "ripetizione": 0,
+      "valido": false,
+      "parole_confrontate": 1,
+      "parole_diverse": 1,
+      "riga": 799,
+      "prima_parola_osservata": "96727573",
+      "prima_parola_attesa": "698d8a8c",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4,
+      "ripetizione": 0,
+      "valido": true,
+      "parole_confrontate": 1,
+      "parole_diverse": 0,
+      "riga": 809
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4,
+      "ripetizione": 1,
+      "valido": false,
+      "parole_confrontate": 1,
+      "parole_diverse": 1,
+      "riga": 819,
+      "prima_parola_osservata": "df7b902d",
+      "prima_parola_attesa": "20846fd2",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4,
+      "ripetizione": 1,
+      "valido": true,
+      "parole_confrontate": 1,
+      "parole_diverse": 0,
+      "riga": 829
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4,
+      "ripetizione": 2,
+      "valido": false,
+      "parole_confrontate": 1,
+      "parole_diverse": 1,
+      "riga": 839,
+      "prima_parola_osservata": "4e4a91b5",
+      "prima_parola_attesa": "b1b56e4a",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4,
+      "ripetizione": 2,
+      "valido": true,
+      "parole_confrontate": 1,
+      "parole_diverse": 0,
+      "riga": 849
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4096,
+      "ripetizione": 0,
+      "valido": false,
+      "parole_confrontate": 1024,
+      "parole_diverse": 1024,
+      "riga": 859,
+      "prima_parola_osservata": "ed0714c6",
+      "prima_parola_attesa": "12f8eb39",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4096,
+      "ripetizione": 0,
+      "valido": true,
+      "parole_confrontate": 1024,
+      "parole_diverse": 0,
+      "riga": 869
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4096,
+      "ripetizione": 1,
+      "valido": false,
+      "parole_confrontate": 1024,
+      "parole_diverse": 1024,
+      "riga": 879,
+      "prima_parola_osservata": "11c74f11",
+      "prima_parola_attesa": "ee38b0ee",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4096,
+      "ripetizione": 1,
+      "valido": true,
+      "parole_confrontate": 1024,
+      "parole_diverse": 0,
+      "riga": 889
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 4096,
+      "ripetizione": 2,
+      "valido": false,
+      "parole_confrontate": 1024,
+      "parole_diverse": 1024,
+      "riga": 899,
+      "prima_parola_osservata": "9c1f8c9f",
+      "prima_parola_attesa": "63e07360",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 4096,
+      "ripetizione": 2,
+      "valido": true,
+      "parole_confrontate": 1024,
+      "parole_diverse": 0,
+      "riga": 909
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 65536,
+      "ripetizione": 0,
+      "valido": false,
+      "parole_confrontate": 16384,
+      "parole_diverse": 16384,
+      "riga": 919,
+      "prima_parola_osservata": "329b8ba6",
+      "prima_parola_attesa": "cd647459",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 65536,
+      "ripetizione": 0,
+      "valido": true,
+      "parole_confrontate": 16384,
+      "parole_diverse": 0,
+      "riga": 929
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 65536,
+      "ripetizione": 1,
+      "valido": false,
+      "parole_confrontate": 16384,
+      "parole_diverse": 16384,
+      "riga": 939,
+      "prima_parola_osservata": "05715891",
+      "prima_parola_attesa": "fa8ea76e",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 65536,
+      "ripetizione": 1,
+      "valido": true,
+      "parole_confrontate": 16384,
+      "parole_diverse": 0,
+      "riga": 949
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 65536,
+      "ripetizione": 2,
+      "valido": false,
+      "parole_confrontate": 16384,
+      "parole_diverse": 16384,
+      "riga": 959,
+      "prima_parola_osservata": "ad4b78f9",
+      "prima_parola_attesa": "52b48706",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 65536,
+      "ripetizione": 2,
+      "valido": true,
+      "parole_confrontate": 16384,
+      "parole_diverse": 0,
+      "riga": 969
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 1048576,
+      "ripetizione": 0,
+      "valido": false,
+      "parole_confrontate": 262144,
+      "parole_diverse": 262144,
+      "riga": 979,
+      "prima_parola_osservata": "c5d6dea6",
+      "prima_parola_attesa": "3a292159",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 1048576,
+      "ripetizione": 0,
+      "valido": true,
+      "parole_confrontate": 262144,
+      "parole_diverse": 0,
+      "riga": 989
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 1048576,
+      "ripetizione": 1,
+      "valido": false,
+      "parole_confrontate": 262144,
+      "parole_diverse": 262144,
+      "riga": 999,
+      "prima_parola_osservata": "b0bb0e59",
+      "prima_parola_attesa": "4f44f1a6",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 1048576,
+      "ripetizione": 1,
+      "valido": true,
+      "parole_confrontate": 262144,
+      "parole_diverse": 0,
+      "riga": 1009
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 1048576,
+      "ripetizione": 2,
+      "valido": false,
+      "parole_confrontate": 262144,
+      "parole_diverse": 262144,
+      "riga": 1019,
+      "prima_parola_osservata": "252c52a0",
+      "prima_parola_attesa": "dad3ad5f",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 1048576,
+      "ripetizione": 2,
+      "valido": true,
+      "parole_confrontate": 262144,
+      "parole_diverse": 0,
+      "riga": 1029
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 8388608,
+      "ripetizione": 0,
+      "valido": false,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 2097152,
+      "riga": 1039,
+      "prima_parola_osservata": "b432b85e",
+      "prima_parola_attesa": "4bcd47a1",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 8388608,
+      "ripetizione": 0,
+      "valido": true,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 0,
+      "riga": 1049
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 8388608,
+      "ripetizione": 1,
+      "valido": false,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 2097152,
+      "riga": 1059,
+      "prima_parola_osservata": "a1223c79",
+      "prima_parola_attesa": "5eddc386",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 8388608,
+      "ripetizione": 1,
+      "valido": true,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 0,
+      "riga": 1069
+    },
+    {
+      "s": 0,
+      "d": 1,
+      "byte": 8388608,
+      "ripetizione": 2,
+      "valido": false,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 2097152,
+      "riga": 1079,
+      "prima_parola_osservata": "dcb45784",
+      "prima_parola_attesa": "234ba87b",
+      "prima_parola_uguale_poison": true
+    },
+    {
+      "s": 1,
+      "d": 0,
+      "byte": 8388608,
+      "ripetizione": 2,
+      "valido": true,
+      "parole_confrontate": 2097152,
+      "parole_diverse": 0,
+      "riga": 1089
+    }
+  ],
+  "PCIe_prima_dopo": [
+    {
+      "bdf": "0000:00:01.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0010",
+      "UES": "00000000",
+      "CES": "00000000"
+    },
+    {
+      "bdf": "0000:00:07.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0010",
+      "UES": "00000000",
+      "CES": "00000000"
+    },
+    {
+      "bdf": "0000:01:00.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0000",
+      "UES": "00000000",
+      "CES": "00000000"
+    },
+    {
+      "bdf": "0000:04:00.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0009",
+      "UES": "00000000",
+      "CES": "00002000"
+    },
+    {
+      "bdf": "0000:05:00.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0000",
+      "UES": "00000000",
+      "CES": "00002040"
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "cambiamenti": {},
+      "PCI_STATUS": "0010",
+      "DEVSTA": "0000",
+      "UES": "00000000",
+      "CES": "00000000"
+    }
+  ],
+  "PTE_finestre": [
+    {
+      "id": 1,
+      "owner": 0,
+      "ruolo": "send",
+      "gpu_va": "0x74ca1b400000",
+      "bar1": "4000000000",
+      "offset_bar1": "400000",
+      "dma": "4000400000",
+      "pagina": "200000",
+      "allineamento_valido": true,
+      "readonly": 0,
+      "catena_raw_RM_UVM_identica": true,
+      "prima_PTE_raw0": "060000040004000f",
+      "PTE_dichiarate": 4,
+      "rilascio_completato": true,
+      "riga_kernel": 1226
+    },
+    {
+      "id": 2,
+      "owner": 0,
+      "ruolo": "receive",
+      "gpu_va": "0x74ca1cc00000",
+      "bar1": "4000000000",
+      "offset_bar1": "c00000",
+      "dma": "4000c00000",
+      "pagina": "200000",
+      "allineamento_valido": true,
+      "readonly": 0,
+      "catena_raw_RM_UVM_identica": true,
+      "prima_PTE_raw0": "06000004000c000f",
+      "PTE_dichiarate": 4,
+      "rilascio_completato": true,
+      "riga_kernel": 1239
+    },
+    {
+      "id": 3,
+      "owner": 1,
+      "ruolo": "send",
+      "gpu_va": "0x74ca0f600000",
+      "bar1": "4600000000",
+      "offset_bar1": "400000",
+      "dma": "4600400000",
+      "pagina": "200000",
+      "allineamento_valido": true,
+      "readonly": 0,
+      "catena_raw_RM_UVM_identica": true,
+      "prima_PTE_raw0": "060000046004000f",
+      "PTE_dichiarate": 4,
+      "rilascio_completato": true,
+      "riga_kernel": 1426
+    },
+    {
+      "id": 4,
+      "owner": 1,
+      "ruolo": "receive",
+      "gpu_va": "0x402000000",
+      "bar1": "4600000000",
+      "offset_bar1": "c00000",
+      "dma": "4600c00000",
+      "pagina": "200000",
+      "allineamento_valido": true,
+      "readonly": 0,
+      "catena_raw_RM_UVM_identica": true,
+      "prima_PTE_raw0": "06000004600c000f",
+      "PTE_dichiarate": 4,
+      "rilascio_completato": true,
+      "riga_kernel": 1439
+    }
+  ],
+  "limite_PTE": "Il logging espone soltanto la prima PTE di ogni gruppo da4PTE: confronto software RM/UVM, non readback della page table hardware.",
+  "cleanup": {
+    "finestre_create": 4,
+    "finestre_done": 4,
+    "dopo_data_done": true,
+    "clock_kernel_meno_monotonic_mediana": 0.006357557000001179,
+    "campioni_clock": 133,
+    "dispersione_secondi": 1.6701999999924055e-05,
+    "primo_residuo_dopo_context_exit_secondi": 0.3858792729999987,
+    "IOVAS_residua": "0x600",
+    "residui": 4,
+    "assert_successivi": 8,
+    "Xid": 0
+  },
+  "limiti": [
+    "PCIe/AER senza variazioni non dimostra consegna delle scritture postate.",
+    "Tutte le parole dei15payload falliti differiscono dall’atteso; solo la prima parola di ogni payload è stampata e coincide con il poison iniziale. Non è disponibile un dump completo per affermare che ogni parola sia rimasta identica al poison.",
+    "Il test esclude una precedente lettura peer fallita come causa necessaria delle scritture fallite; non localizza da solo il blocco fra GMMU, percorso PCIe e visibilità/cache destinazione.",
+    "Nessun benchmark prestazionale certificato: le durate dei trasferimenti falliti non sono banda utile."
+  ]
+}

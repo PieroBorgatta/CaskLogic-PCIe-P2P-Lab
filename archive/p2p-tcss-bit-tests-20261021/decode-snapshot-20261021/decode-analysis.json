@@ -1,0 +1,575 @@
+{
+  "source_sha256": "a184f77b75b9ddfb53f0cce5afad4ca278a84c5e78555e5a3589875b5a337191",
+  "context": "Xen dom0 read-only; native allocation must revalidate before any relocation",
+  "boot_id": "fb866151-a008-4cce-833c-cad77e73b5a1",
+  "hardware_writes": false,
+  "registers": {
+    "0000:00:01.0": {
+      "raw": {
+        "0x4": "0x00100407",
+        "0x18": "0x00010100",
+        "0x20": "0x6e006d00",
+        "0x24": "0x01f10001",
+        "0x28": "0x00000040",
+        "0x2c": "0x00000044",
+        "0xd0": "0x00008077",
+        "0xd4": "0x40005842",
+        "0xd8": "0x093f0048",
+        "0xf0": "0x00000770",
+        "0xba0": "0x00000000",
+        "0xba4": "0x00000000",
+        "0xba8": "0x00000000",
+        "0xbac": "0x00000000",
+        "0xbb0": "0x00000000",
+        "0xbb4": "0x00000000",
+        "0xbb8": "0x00000000",
+        "0xbbc": "0x00000000",
+        "0xbc0": "0x00000000"
+      },
+      "memory_space_enabled": true,
+      "pref_base": 274877906944,
+      "pref_limit": 292091330559,
+      "pref_64bit_base": true,
+      "pref_64bit_limit": true,
+      "mem_base": 1828716544,
+      "mem_limit": 1846542335
+    },
+    "0000:00:07.0": {
+      "raw": {
+        "0x4": "0x00100407",
+        "0x18": "0x002d0400",
+        "0x20": "0x6c106000",
+        "0x24": "0x01f10001",
+        "0x28": "0x00000046",
+        "0x2c": "0x00000048",
+        "0xd0": "0x00009077",
+        "0xd4": "0x00001842",
+        "0xd8": "0x09320048",
+        "0xf0": "0x00000770",
+        "0xba0": "0x00000015",
+        "0xba4": "0x00010207",
+        "0xba8": "0x00000000",
+        "0xbac": "0x00000000",
+        "0xbb0": "0x00000000",
+        "0xbb4": "0x00000000",
+        "0xbb8": "0x00000000",
+        "0xbbc": "0x00000000",
+        "0xbc0": "0x00000000"
+      },
+      "memory_space_enabled": true,
+      "pref_base": 300647710720,
+      "pref_limit": 309271199743,
+      "pref_64bit_base": true,
+      "pref_64bit_limit": true,
+      "mem_base": 1610612736,
+      "mem_limit": 1814036479,
+      "fpb": {
+        "capability_id": 21,
+        "rid_supported": true,
+        "low_supported": true,
+        "high_supported": true,
+        "rid_enabled": false,
+        "low_enabled": false,
+        "high_enabled": false,
+        "high_granularity_code": 0,
+        "high_vector_base": 0,
+        "vector_access_selector_raw": 0,
+        "vector_access_data_raw": 0,
+        "vector_note": "BC0 reads only the currently selected DWORD; no vector-select writes performed."
+      }
+    },
+    "0000:00:07.2": {
+      "raw": {
+        "0x4": "0x00100407",
+        "0x18": "0x00572e00",
+        "0x20": "0x5e105200",
+        "0x24": "0x2bf11001",
+        "0x28": "0x00000048",
+        "0x2c": "0x00000048",
+        "0xd0": "0x00009077",
+        "0xd4": "0x00001842",
+        "0xd8": "0x09320048",
+        "0xf0": "0x00000770",
+        "0xba0": "0x00000015",
+        "0xba4": "0x00010207",
+        "0xba8": "0x00000000",
+        "0xbac": "0x00000000",
+        "0xbb0": "0x00000000",
+        "0xbb4": "0x00000000",
+        "0xbb8": "0x00000000",
+        "0xbbc": "0x00000000",
+        "0xbc0": "0x00000000"
+      },
+      "memory_space_enabled": true,
+      "pref_base": 309506080768,
+      "pref_limit": 309975842815,
+      "pref_64bit_base": true,
+      "pref_64bit_limit": true,
+      "mem_base": 1375731712,
+      "mem_limit": 1579155455,
+      "fpb": {
+        "capability_id": 21,
+        "rid_supported": true,
+        "low_supported": true,
+        "high_supported": true,
+        "rid_enabled": false,
+        "low_enabled": false,
+        "high_enabled": false,
+        "high_granularity_code": 0,
+        "high_vector_base": 0,
+        "vector_access_selector_raw": 0,
+        "vector_access_data_raw": 0,
+        "vector_note": "BC0 reads only the currently selected DWORD; no vector-select writes performed."
+      }
+    },
+    "0000:04:00.0": {
+      "raw": {
+        "0x4": "0x00100007",
+        "0x18": "0x002d0504",
+        "0x20": "0x6c106000",
+        "0x24": "0x01f10001",
+        "0x28": "0x00000046",
+        "0x2c": "0x00000048",
+        "0xd0": "0x00000000",
+        "0xd4": "0x00000000",
+        "0xd8": "0x00000000",
+        "0xf0": "0x00000000",
+        "0xba0": "0x00000000",
+        "0xba4": "0x00000000",
+        "0xba8": "0x00000000",
+        "0xbac": "0x00000000",
+        "0xbb0": "0x00000000",
+        "0xbb4": "0x00000000",
+        "0xbb8": "0x00000000",
+        "0xbbc": "0x00000000",
+        "0xbc0": "0x00000000"
+      },
+      "memory_space_enabled": true,
+      "pref_base": 300647710720,
+      "pref_limit": 309271199743,
+      "pref_64bit_base": true,
+      "pref_64bit_limit": true,
+      "mem_base": 1610612736,
+      "mem_limit": 1814036479
+    },
+    "0000:05:00.0": {
+      "raw": {
+        "0x4": "0x00100407",
+        "0x18": "0x002d0605",
+        "0x20": "0x6c106000",
+        "0x24": "0x01f10001",
+        "0x28": "0x00000046",
+        "0x2c": "0x00000048",
+        "0xd0": "0x00000015",
+        "0xd4": "0x00000006",
+        "0xd8": "0x00000000",
+        "0xf0": "0x00000000",
+        "0xba0": "0x00000000",
+        "0xba4": "0x00000000",
+        "0xba8": "0x00000000",
+        "0xbac": "0x00000000",
+        "0xbb0": "0x00000000",
+        "0xbb4": "0x00000000",
+        "0xbb8": "0x00000000",
+        "0xbbc": "0x00000000",
+        "0xbc0": "0x00000000"
+      },
+      "memory_space_enabled": true,
+      "pref_base": 300647710720,
+      "pref_limit": 309271199743,
+      "pref_64bit_base": true,
+      "pref_64bit_limit": true,
+      "mem_base": 1610612736,
+      "mem_limit": 1814036479
+    }
+  },
+  "root_low_window": [
+    1346371584,
+    3221225471
+  ],
+  "occupied": [
+    {
+      "start": 1828716544,
+      "end": 1846542335,
+      "source": "0000:00:01.0 resource 14"
+    },
+    {
+      "start": 1855979520,
+      "end": 1857028095,
+      "source": "0000:00:06.0 resource 14"
+    },
+    {
+      "start": 1854930944,
+      "end": 1855979519,
+      "source": "0000:00:06.2 resource 14"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "0000:00:07.0 resource 14"
+    },
+    {
+      "start": 1375731712,
+      "end": 1579155455,
+      "source": "0000:00:07.2 resource 14"
+    },
+    {
+      "start": 1857028096,
+      "end": 1857032191,
+      "source": "0000:00:16.3 resource 1"
+    },
+    {
+      "start": 1846542336,
+      "end": 1849688063,
+      "source": "0000:00:1c.0 resource 14"
+    },
+    {
+      "start": 1853882368,
+      "end": 1854930943,
+      "source": "0000:00:1c.4 resource 14"
+    },
+    {
+      "start": 1852833792,
+      "end": 1853882367,
+      "source": "0000:00:1d.0 resource 14"
+    },
+    {
+      "start": 1849688064,
+      "end": 1851785215,
+      "source": "0000:00:1d.2 resource 14"
+    },
+    {
+      "start": 1851785216,
+      "end": 1852833791,
+      "source": "0000:00:1d.3 resource 14"
+    },
+    {
+      "start": 1346371584,
+      "end": 1346375679,
+      "source": "0000:00:1f.5 resource 0"
+    },
+    {
+      "start": 1828716544,
+      "end": 1845493759,
+      "source": "0000:01:00.0 resource 0"
+    },
+    {
+      "start": 1845493760,
+      "end": 1846018047,
+      "source": "0000:01:00.0 resource 6"
+    },
+    {
+      "start": 1846018048,
+      "end": 1846034431,
+      "source": "0000:01:00.1 resource 0"
+    },
+    {
+      "start": 1855979520,
+      "end": 1855995903,
+      "source": "0000:02:00.0 resource 0"
+    },
+    {
+      "start": 1855455232,
+      "end": 1855979519,
+      "source": "0000:03:00.0 resource 6"
+    },
+    {
+      "start": 1854930944,
+      "end": 1855455231,
+      "source": "0000:03:00.1 resource 6"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "0000:04:00.0 resource 14"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "0000:05:00.0 resource 14"
+    },
+    {
+      "start": 1610612736,
+      "end": 1627389951,
+      "source": "0000:06:00.0 resource 0"
+    },
+    {
+      "start": 1627389952,
+      "end": 1627914239,
+      "source": "0000:06:00.0 resource 6"
+    },
+    {
+      "start": 1627914240,
+      "end": 1627930623,
+      "source": "0000:06:00.1 resource 0"
+    },
+    {
+      "start": 1847590912,
+      "end": 1848639487,
+      "source": "0000:58:00.0 resource 0"
+    },
+    {
+      "start": 1848639488,
+      "end": 1848655871,
+      "source": "0000:58:00.0 resource 3"
+    },
+    {
+      "start": 1846542336,
+      "end": 1847590911,
+      "source": "0000:58:00.0 resource 6"
+    },
+    {
+      "start": 1853882368,
+      "end": 1853898751,
+      "source": "0000:59:00.0 resource 0"
+    },
+    {
+      "start": 1852833792,
+      "end": 1852850175,
+      "source": "0000:5a:00.0 resource 0"
+    },
+    {
+      "start": 1849688064,
+      "end": 1850736639,
+      "source": "0000:5b:00.0 resource 0"
+    },
+    {
+      "start": 1850736640,
+      "end": 1850753023,
+      "source": "0000:5b:00.0 resource 3"
+    },
+    {
+      "start": 1851785216,
+      "end": 1851817983,
+      "source": "0000:5c:00.0 resource 2"
+    },
+    {
+      "start": 1346371584,
+      "end": 1346375679,
+      "source": "iomem: 0000:00:1f.5"
+    },
+    {
+      "start": 1375731712,
+      "end": 1579155455,
+      "source": "iomem: PCI Bus 0000:2e"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "iomem: PCI Bus 0000:04"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "iomem: PCI Bus 0000:05"
+    },
+    {
+      "start": 1610612736,
+      "end": 1814036479,
+      "source": "iomem: PCI Bus 0000:06"
+    },
+    {
+      "start": 1610612736,
+      "end": 1627389951,
+      "source": "iomem: 0000:06:00.0"
+    },
+    {
+      "start": 1627389952,
+      "end": 1627914239,
+      "source": "iomem: 0000:06:00.0"
+    },
+    {
+      "start": 1627914240,
+      "end": 1627930623,
+      "source": "iomem: 0000:06:00.1"
+    },
+    {
+      "start": 1828716544,
+      "end": 1846542335,
+      "source": "iomem: PCI Bus 0000:01"
+    },
+    {
+      "start": 1828716544,
+      "end": 1845493759,
+      "source": "iomem: 0000:01:00.0"
+    },
+    {
+      "start": 1845493760,
+      "end": 1846018047,
+      "source": "iomem: 0000:01:00.0"
+    },
+    {
+      "start": 1846018048,
+      "end": 1846034431,
+      "source": "iomem: 0000:01:00.1"
+    },
+    {
+      "start": 1846542336,
+      "end": 1849688063,
+      "source": "iomem: PCI Bus 0000:58"
+    },
+    {
+      "start": 1846542336,
+      "end": 1847590911,
+      "source": "iomem: 0000:58:00.0"
+    },
+    {
+      "start": 1847590912,
+      "end": 1848639487,
+      "source": "iomem: 0000:58:00.0"
+    },
+    {
+      "start": 1847590912,
+      "end": 1848639487,
+      "source": "iomem: igc"
+    },
+    {
+      "start": 1848639488,
+      "end": 1848655871,
+      "source": "iomem: 0000:58:00.0"
+    },
+    {
+      "start": 1848639488,
+      "end": 1848655871,
+      "source": "iomem: igc"
+    },
+    {
+      "start": 1849688064,
+      "end": 1851785215,
+      "source": "iomem: PCI Bus 0000:5b"
+    },
+    {
+      "start": 1849688064,
+      "end": 1850736639,
+      "source": "iomem: 0000:5b:00.0"
+    },
+    {
+      "start": 1849688064,
+      "end": 1850736639,
+      "source": "iomem: igc"
+    },
+    {
+      "start": 1850736640,
+      "end": 1850753023,
+      "source": "iomem: 0000:5b:00.0"
+    },
+    {
+      "start": 1850736640,
+      "end": 1850753023,
+      "source": "iomem: igc"
+    },
+    {
+      "start": 1851785216,
+      "end": 1852833791,
+      "source": "iomem: PCI Bus 0000:5c"
+    },
+    {
+      "start": 1851785216,
+      "end": 1851817983,
+      "source": "iomem: 0000:5c:00.0"
+    },
+    {
+      "start": 1852833792,
+      "end": 1853882367,
+      "source": "iomem: PCI Bus 0000:5a"
+    },
+    {
+      "start": 1852833792,
+      "end": 1852850175,
+      "source": "iomem: 0000:5a:00.0"
+    },
+    {
+      "start": 1852833792,
+      "end": 1852850175,
+      "source": "iomem: nvme"
+    },
+    {
+      "start": 1853882368,
+      "end": 1854930943,
+      "source": "iomem: PCI Bus 0000:59"
+    },
+    {
+      "start": 1853882368,
+      "end": 1853898751,
+      "source": "iomem: 0000:59:00.0"
+    },
+    {
+      "start": 1853882368,
+      "end": 1853898751,
+      "source": "iomem: nvme"
+    },
+    {
+      "start": 1854930944,
+      "end": 1855979519,
+      "source": "iomem: PCI Bus 0000:03"
+    },
+    {
+      "start": 1854930944,
+      "end": 1855455231,
+      "source": "iomem: 0000:03:00.1"
+    },
+    {
+      "start": 1855455232,
+      "end": 1855979519,
+      "source": "iomem: 0000:03:00.0"
+    },
+    {
+      "start": 1855979520,
+      "end": 1857028095,
+      "source": "iomem: PCI Bus 0000:02"
+    },
+    {
+      "start": 1855979520,
+      "end": 1855995903,
+      "source": "iomem: 0000:02:00.0"
+    },
+    {
+      "start": 1855979520,
+      "end": 1855995903,
+      "source": "iomem: nvme"
+    },
+    {
+      "start": 1857028096,
+      "end": 1857032191,
+      "source": "iomem: 0000:00:16.3"
+    }
+  ],
+  "free_intervals_dom0_only": [
+    [
+      1346375680,
+      1375731711
+    ],
+    [
+      1579155456,
+      1610612735
+    ],
+    [
+      1814036480,
+      1828716543
+    ],
+    [
+      1857032192,
+      3221225471
+    ]
+  ],
+  "hypothetical_256M_plus_32M_geometry": [
+    {
+      "bar1_base": 1879048192,
+      "bar1_end": 2147483647,
+      "bar3_base": 2147483648,
+      "bar3_end": 2181038079,
+      "window_base": 1879048192,
+      "window_limit": 2181038079,
+      "bytes": 301989888,
+      "selection": "First 256MiB-aligned base in each free interval, followed by 32MiB-aligned BAR3."
+    }
+  ],
+  "ready_for_relocation": false,
+  "limitations": [
+    "Snapshot is Xen dom0, not the native test boot.",
+    "A2000 currently has 8GiB BAR1; 256MiB size is observed only after native tunnel recreation.",
+    "No proof of a peer-only 32bit routing limit has been established.",
+    "Native resource map, actual BAR sizes, command bits, bridge windows, Linux resource model, and PTE addresses must be checked before a relocation trial.",
+    "No FPB vector is enabled in the observed D7 registers; support alone is not P2P permission."
+  ]
+}

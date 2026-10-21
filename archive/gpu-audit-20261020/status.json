@@ -1,0 +1,8 @@
+{
+  "state": "COMPLETED",
+  "phase": "completed",
+  "phase_started": 1792524704.1185334,
+  "updated_epoch": 1792524704.1185355,
+  "completed_stages": 33,
+  "abort_reason": null
+}

@@ -1,0 +1,168 @@
+{
+  "scope": "Independent local file audit; no SSH, hardware writes or flash",
+  "two_native_dumps_identical": true,
+  "fresh_spi_sha256": "cfe6c07a4f2113928e13198ab2b8adc52924893aa0c239982c2213feb53c5124",
+  "candidate_sha256": "1ddc33f1e8164e1e0ee888886ebc6b709ba2c266daf69685d27b3e5a3219bdf2",
+  "target_ffs_identical_to_reviewed_original": true,
+  "target_19_sectors_identical_to_reviewed_original": true,
+  "outside_19_sectors_exact_to_fresh_spi": true,
+  "fresh_nv_ME_descriptor_and_other_regions_preserved": true,
+  "extracted_objects_each": 2999,
+  "extracted_missing_or_added": [],
+  "changed_objects": [
+    {
+      "path": "flash.fd",
+      "bytes": 33554432,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios.fd",
+      "bytes": 16777216,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file.obj",
+      "bytes": 368680,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1.fv",
+      "bytes": 368640,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d.fv",
+      "bytes": 368640,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+      "bytes": 154845,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1.compressed",
+      "bytes": 154741,
+      "differing_bytes": 72228
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+      "bytes": 254848,
+      "differing_bytes": 1
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/filesystem.ffs",
+      "bytes": 368568,
+      "differing_bytes": 72228
+    }
+  ],
+  "only_changed_leaf": "SiInitFsp.pe, offset 0x20304, FE -> F0",
+  "fit_pointer": "0xffe90980",
+  "fit_entries": [
+    {
+      "index": 0,
+      "physical_address": "0x2020205f5449465f",
+      "type": 0,
+      "bytes": "5f4649545f2020200800000000010000"
+    },
+    {
+      "index": 1,
+      "physical_address": "0xffe91000",
+      "type": 1,
+      "bytes": "0010e9ff000000000000000000010100"
+    },
+    {
+      "index": 2,
+      "physical_address": "0xffecb000",
+      "type": 1,
+      "bytes": "00b0ecff000000000000000000010100"
+    },
+    {
+      "index": 3,
+      "physical_address": "0xfff05000",
+      "type": 1,
+      "bytes": "0050f0ff000000000000000000010100"
+    },
+    {
+      "index": 4,
+      "physical_address": "0xfff40000",
+      "type": 2,
+      "bytes": "0000f4ff000000000000000000010200"
+    },
+    {
+      "index": 5,
+      "physical_address": "0x7d040100710070",
+      "type": 10,
+      "bytes": "7000710001047d000000000000000a00"
+    },
+    {
+      "index": 6,
+      "physical_address": "0xfff3fb00",
+      "type": 11,
+      "bytes": "00fbf3ff000000000000000000010b00"
+    },
+    {
+      "index": 7,
+      "physical_address": "0xfff3f080",
+      "type": 12,
+      "bytes": "80f0f3ff000000000000000000010c00"
+    }
+  ],
+  "manifest_placeholder_files": [
+    {
+      "name": "Boot Policy Manifest",
+      "ffs_guid": "c30fff4a-10c6-4c0f-a454-fd319baf6ce6",
+      "ffs_offset": "0x1f3f068",
+      "ffs_bytes": 2584,
+      "body_offset": "0x1f3f080",
+      "body_bytes": 2560,
+      "body_all_ff": true,
+      "body_sha256": "2b6e99ee899e1515e0cc44b220424cd9da6906b39490504bdcca2236755db51c"
+    },
+    {
+      "name": "Key Manifest",
+      "ffs_guid": "7c9a98f8-2b2b-4027-8f16-f7d277d58025",
+      "ffs_offset": "0x1f3fae8",
+      "ffs_bytes": 1048,
+      "body_offset": "0x1f3fb00",
+      "body_bytes": 1024,
+      "body_all_ff": true,
+      "body_sha256": "5f4ecdb7b71c3e403983fe405cddcdc2f2576b655fdb3e80d94a6f7c32e58bc2"
+    }
+  ],
+  "manifest_signatures_absent_in_entire_spi": [
+    "__KEYM__",
+    "__ACBP__",
+    "__IBBS__"
+  ],
+  "ami_protected_ranges_files": [
+    {
+      "ffs_offset": "0x1f92c60",
+      "range_and_hash_data_bytes": 80,
+      "range_and_hash_data_all_ff": true
+    },
+    {
+      "ffs_offset": "0x1fd2c60",
+      "range_and_hash_data_bytes": 80,
+      "range_and_hash_data_all_ff": true
+    }
+  ],
+  "native_observations": {
+    "cpuid_signature": "0x906a3",
+    "cpuid_1_ecx": "0x77fafbff",
+    "msr_13a_raw": "0x1000000000",
+    "txt_didvid_fed30110": "0x1b00c8086",
+    "acm_policy_status_fed30378": "0x0",
+    "txt_bootstatus_fed300a0": "0x0",
+    "acm_status_fed30328": "0x0"
+  },
+  "native_msr_only_set_bit": 36,
+  "native_msr_bit32": 0,
+  "native_msr_bit6": 0,
+  "interpretation": "FIT points to all-FF KM/BPM placeholder bodies, not populated manifest headers; native verified-boot indication is zero. These are evidence about this boot and image, not proof the modified firmware will boot.",
+  "unresolved": [
+    "Meaning of MSR13A bit36 and absent capability bit32 on this ADL-P platform is being independently reviewed.",
+    "P2P bit semantics and patch effect remain unverified.",
+    "Independent recovery capability not confirmed."
+  ]
+}

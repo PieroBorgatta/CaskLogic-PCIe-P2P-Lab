@@ -1,0 +1,28 @@
+{
+  "status": "PASS_STATIC_REVIEW",
+  "reviewer": "ricerca_p2p_nvidia",
+  "scope": "Sola analisi locale di sorgenti e differenze; nessuna compilazione NVCC, accesso remoto, mmap hardware o esecuzione CUDA.",
+  "hashes": {
+    "peer_vmm_word_cpubar_rw.cu": "26c18b1be40b5f17008c2c4ad7e6e13c2c320462c68c902d22916c8af3a146b0",
+    "cpubar_rw.h": "65756bf89a585842f751220c1eec632e645de6f5dcba03a4833a785a15116043",
+    "cpubar_rw_control.inc": "c7a46ed69da33b24db2f38af7ec04205f70b53beb2f7bb3c006953ae8711881d",
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "checks": [
+    "Diff rispetto alla baseline postwrite limitato a due include, raccolta dei due src e controlli aggiunti dopo TOTAL_FAILURES/data_done e prima cleanup.",
+    "Nessuna modifica ai quattro kernel/confronti P2P, alle inizializzazioni sincronizzate, al parser di provenienza o al read-only PCIe header.",
+    "Ogni store scrive esattamente uint32_t naturalmente allineato, alla parola utile della finestra BAR1 ricavata dalla catena corrente; pagina mmap e limiti BAR validati, niente indirizzo hardcoded.",
+    "O_RDWR/PROT_READ|PROT_WRITE solo su resource1 del target con UUID/BDF/vendor/class e geometria nuovamente verificati; nessuna scrittura configurazione PCI.",
+    "Prima del primo store: owner sincronizzato, valore precedente letto dalla CPU e via D2H e uguaglianza obbligatoria.",
+    "Due pattern distinti dal precedente e dal valore P2P atteso, lettura CPU dopo store con barriera e D2H dell'owner; nessun payload trasferito fra GPU attraverso RAM.",
+    "Restore della parola precedente tentato dopo ogni store tentato anche se fault; nessun ulteriore store se identità/catena perduta. Restore verificato da CPU e owner, nessun fallback H2D.",
+    "Errore, mismatch e SKIP distinti; failure counter P2P non modificato; fault dopo store/identità persa/restore non confermato fermano successivi controlli RW."
+  ],
+  "limits": [
+    "Review statica non prova mapping/PTE runtime o funzionamento hardware.",
+    "Il controllo CPU aggiunge scritture e letture PCIe, con possibili effetti sul completamento delle scritture postate; un PASS dimostra il percorso CPU-BAR1 selezionato, non P2P.",
+    "Il mapping CPU copre una pagina per vincolo mmap, ma il codice usa solo i quattro byte autorizzati.",
+    "Un fault nella lettura iniziale precedente a qualsiasi store provoca SKIP senza impostare cpu_rw_halt; il dato non è stato scritto in quel ramo. Comunicata questa distinzione all'autore."
+  ]
+}

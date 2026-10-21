@@ -1,0 +1,13 @@
+[
+  {
+    "name": "direct_sm_peer_verify",
+    "command": [
+      "/audit/p2p-driver/peer_verify"
+    ],
+    "env": {
+      "LD_LIBRARY_PATH": "/audit/p2p-driver/libcuda-experiment:/tools/nccl-sdk/lib:/usr/local/cuda/lib64:/usr/local/nvidia/lib64"
+    },
+    "timeout": 40,
+    "required": true
+  }
+]

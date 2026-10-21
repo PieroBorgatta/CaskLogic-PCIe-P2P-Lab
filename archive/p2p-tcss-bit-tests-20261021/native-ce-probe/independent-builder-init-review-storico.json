@@ -1,0 +1,39 @@
+{
+  "status": "PASS_STATIC_BUILDER_INIT_AFTER_PROVENANCE_FIX",
+  "reviewer": "storico_prove",
+  "files_sha256": {
+    "build_native_ce.py": "2b7cc408c2875fc3dbeb1682e1c52a98580d0f113e4855475eba5c54c32eba82",
+    "init-tcss-native.sh": "0c6097f60e242d2cc7c95ba200607a46aa8df0036063b2d9278e5180ce2ab3b9"
+  },
+  "hardware_operations": false,
+  "source_modified_by_reviewer": false,
+  "checks": {
+    "build_only_linux_root_gpu-vm_training_inactive": true,
+    "new_unpacked_and_package_directories_required": true,
+    "contract_input_hashes_checked_and_preserved_in_final_manifest": true,
+    "RM_baseline_ab41_UVM_baseline_9b99": true,
+    "kernel_and_patched_libcuda_hash_pinned": true,
+    "CUPTI_and_its_ldd_dependencies_copied_before_final_libcuda": true,
+    "patched_libcuda_copied_last_and_final_hash_asserted": true,
+    "dynamic_loader_dependency_check_in_chroot": true,
+    "shell_syntax_checked_in_RAM_root": true,
+    "init_no_PCI_config_writes_no_SYSCOH_no_4K_no_lowBAR": true,
+    "CCFG_expected_before_driver_after_driver_after_program": true,
+    "program_timeout_60_seconds_outer_reboot_180_seconds": true,
+    "direct_route_proven_false_in_manifest": true,
+    "comparison_expected_count_12_and_sizes_4_65536_1048576": true,
+    "payload_hashes_written_including_CUPTI_libcuda_program_modules_init": true
+  },
+  "verification_done_here": [
+    "PythonAST",
+    "POSIXshell_syntax",
+    "Staticorderofdependencycopiesandfinalhashguard"
+  ],
+  "limits": [
+    "The source/CUPTI correlation contract is reviewed separately; this report does not certify actual engine selection or direct traffic.",
+    "PROBE_COMPLETED only means wrapper reached its end. Timeout, partial program or missing CUPTI records must be rejected using program-specific completion,12comparison records and loss/correlation checks.",
+    "The loader --list check proves immediate dependencies resolve. Runtime dynamically loaded profiling components still require the actual CUPTI initialization/result logs.",
+    "CLOCK_MONOTONIC phase timing and CUPTI timestamps are different clocks; compare durations or explicit calibrated correlation, never subtract unaligned clocks.",
+    "No CPU kernel build, NVCC build, chroot operation, hardware or remote command executed by this reviewer."
+  ]
+}

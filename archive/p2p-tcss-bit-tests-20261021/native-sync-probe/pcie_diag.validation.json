@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "compiler": "local c++ C++17 Wall Wextra Werror + ASAN + UBSAN",
+  "fixtures_checked": 11,
+  "all_short_buffer_lengths_checked": 4097,
+  "hardware_or_sysfs_reads": false,
+  "header_sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+  "limitations": "Local parser/compilation checks; NVCC/Linux build and live config access not exercised here."
+}

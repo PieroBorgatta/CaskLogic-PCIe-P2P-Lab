@@ -1,0 +1,284 @@
+{
+  "status": "analisi_prelettura_hardware",
+  "native_kernel_logs": [
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/kernel.log",
+      "sha256": "dbccf312d37906f5f71ba63be30aafbcc3a37ee4ff79b40b817e142fc5a6a63b",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019500] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052629] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105141] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105146] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106560] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/kernel.log",
+      "sha256": "4d4edaa53080bfce1c64c0fe89b40b69773233d05eaf646a8a93f2d7930fc281",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019577] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052673] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105231] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105237] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106661] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-d1-gpu-results/kernel.log",
+      "sha256": "64bb1d6b45be2fc2169029a833d5c2ae3d40d21d7ec8c62a0cde45956146a18b",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019858] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052927] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105535] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105542] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106952] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-gpu-results/kernel.log",
+      "sha256": "b0ce932cd62edb28882140a2dbceef889a934d2f7125427fa6e4654807dd3fb7",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.020188] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.053275] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105829] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105834] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.107250] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/kernel.log",
+      "sha256": "8dc05ad989c1a0cdd7e82e1b4bf7cd15139af8d185942ec6b4edc3fe34ce9e98",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019941] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.053003] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105623] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105630] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.107044] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/kernel.log",
+      "sha256": "6b3a6dde7fc7c8781ed80c616b4b5665f2ad578f06ae8f0a07231d319fd63a80",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019226] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052278] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.104853] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.104860] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106274] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/kernel.log",
+      "sha256": "2576604a98c1ff1c9f8e66f5b7f027141085b90725d1a387eb6e6c0bf4852025",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.020301] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.053403] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.106036] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.106042] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.107456] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-push-gpu-results/kernel.log",
+      "sha256": "e0d9dbe63bc096162b0a93512dbb500134b841c60835c248ba6f31faa37a4f6c",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019286] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052396] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.104946] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.104952] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106369] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/kernel.log",
+      "sha256": "564d40d8f3bcdefb06d6efdefa6d019569d23e508c8298fff2dc80a850fc4164",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019581] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052670] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105238] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105246] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.106661] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    },
+    {
+      "path": "runtime/reports/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/kernel.log",
+      "sha256": "63d91cd4bd351ef4955faf246581216a4a9ca95c6052216acea97ecf2bf2dc70",
+      "evidence": [
+        {
+          "line": 102,
+          "text": "[    0.019936] ACPI: DMAR 0x0000000042B32000 000050 (v02 INTEL  EDK2     00000002      01000013)"
+        },
+        {
+          "line": 221,
+          "text": "[    0.052984] DMAR: IOMMU disabled"
+        },
+        {
+          "line": 253,
+          "text": "[    0.105580] DMAR: DRHD base: 0x000000fed91000 flags: 0x1"
+        },
+        {
+          "line": 254,
+          "text": "[    0.105587] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da"
+        },
+        {
+          "line": 258,
+          "text": "[    0.107000] DMAR-IR: Enabled IRQ remapping in x2apic mode"
+        }
+      ]
+    }
+  ],
+  "direct_register_snapshot_found": false,
+  "absence_limit": "Ricerca nei report locali testuali e nei nomi artefatti; non prova che una lettura mai salvata non sia avvenuta. Il kernel legge GSTS internamente ma non ne stampa il valore nei log esaminati.",
+  "upstream_linux_tag": "v7.0",
+  "running_kernel": "7.0.0-38-generic",
+  "target_binary_path_proven": false,
+  "stock_kernel_expected_disables_TES_for_enumerated_DRHD": true,
+  "expected_disables_PMR_when_off": false,
+  "TCSS_MCHBAR_offsets": [
+    "0x7888",
+    "0x7890",
+    "0x7898",
+    "0x78a0"
+  ],
+  "observed_host_MCHBAR": "0xfedc0001",
+  "main_drhd": "0xfed91000",
+  "cap": "0xd2008c40660462",
+  "ecap": "0xf050da",
+  "cap_PLMR": 1,
+  "cap_PHMR": 1
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_static_source_review",
+  "files": {
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/init-tcss-native.sh": "ffabc91aaeaf3e7008e448509bac5083a2fa7c8f5ce33b96b9c16031fa32b427",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/build_native_repeat.py": "fc173198118c82f7b55a2255f05750d2ca40932eee79c28a618cbfc5441655bf",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/install_native_cpubar_postwrite_gpu.py": "7b826238606de3dd54a73bc74bbb3949c09a778adfd5fc80f409c9a9ec29c16d"
+  },
+  "checks": [
+    "PREVIOUS low-MMIO exact file hashes and results verified before staging",
+    "Recursive copy and byte hash verification of all existing ESP files precede removal of four old result subdirectories",
+    "No low-MMIO helper invoked in init",
+    "NVIDIA/RM/UVM baseline instrumentation and RM64KBBAR1Mappings=0 unchanged",
+    "Pinned CUDA source and CPU header hashes checked by builder",
+    "Native and IOMMU-off guards plus D1/D7 CCFG before and after driver and test",
+    "Fresh before-driver directory and current diagnostics required; absence fails",
+    "VM halted and no other running guest required before BootNext",
+    "One-shot BootNext and unchanged BootOrder 0000,0001 verified",
+    "Python AST and POSIX sh syntax pass"
+  ],
+  "package_archive_verified": false,
+  "remote_operations": false,
+  "limitations": [
+    "Source review does not certify contents of later generated initramfs.",
+    "Watchdog executes reboot -f after 180 seconds; this is not proof against all possible kernel deadlocks.",
+    "Builder records PCI header/binary hashes; provenance of the NVCC compilation is a separate parent check."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "0000:00:06.0": [
+    {
+      "offset": "0x60",
+      "id": 1,
+      "next": "0x68",
+      "bytes8": "0168030008000000",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0x68",
+      "id": 5,
+      "next": "0x78",
+      "bytes8": "057881000060ebfe",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0x78",
+      "id": 16,
+      "next": "0xb4",
+      "bytes8": "10b41200e18d0000",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0xb4",
+      "id": 9,
+      "next": "0x0",
+      "bytes8": "0900140100000000",
+      "gpudirect_signature": false
+    }
+  ],
+  "0000:00:09.0": [
+    {
+      "offset": "0x60",
+      "id": 1,
+      "next": "0x68",
+      "bytes8": "0168030008000000",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0x68",
+      "id": 5,
+      "next": "0x78",
+      "bytes8": "057881000050ebfe",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0x78",
+      "id": 16,
+      "next": "0xb4",
+      "bytes8": "10b41200e18d2c01",
+      "gpudirect_signature": false
+    },
+    {
+      "offset": "0xb4",
+      "id": 9,
+      "next": "0x0",
+      "bytes8": "0900140100000000",
+      "gpudirect_signature": false
+    }
+  ]
+}

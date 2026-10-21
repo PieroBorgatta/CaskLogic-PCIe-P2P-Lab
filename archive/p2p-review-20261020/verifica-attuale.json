@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-20T23:49:58.919125+02:00",
+  "host": "MS-01 AHWSA",
+  "cpu": "Intel Core i9-12900H",
+  "bios": "1.26",
+  "driver": "595.99.02",
+  "current_stock_driver_query": {
+    "method": "cuInit, cuDeviceGetName, cuDeviceGetPCIBusId, cuDeviceCanAccessPeer; no kernels or transfers",
+    "Ada_to_A2000": false,
+    "A2000_to_Ada": false,
+    "nvidia_smi_topo_p2p_read_write": "OK both directions"
+  },
+  "current_CCFG_read_only": {
+    "00:01.0": "04008077",
+    "00:07.0": "0e009077",
+    "00:07.2": "0e009077"
+  },
+  "training": "inactive and disabled",
+  "fan_service": "active",
+  "host_modifications_this_review": false,
+  "downloaded_logs_sha256": {
+    "bios-slot-enabled-word-events.json": "444a76878ad3491b231e58eb2888343ed24767ff52064a86cdf40c905b830dd3",
+    "bios-slot-enabled-acs-off-word-events.json": "c8503340a8662dc09f3372a683b1e24bc073ea94897be82734d36e4f32838d9f",
+    "bios-slot-enabled-coherent-nosnoop-off-events.json": "b624c9e11c63986ade14a430be06a887a9ad03b7582450a952af9a4e377453b3"
+  }
+}

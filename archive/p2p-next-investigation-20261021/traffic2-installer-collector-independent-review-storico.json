@@ -1,0 +1,17 @@
+{
+  "status": "PASS_STATIC_DELTA_REVIEW",
+  "files_sha256": {
+    "install_native_traffic2.py": "f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b",
+    "collect_cleanup_traffic2.py": "0b016c6b11fed086e3723e3b6e4fb0c273e10e6549ce38ebf7d05881e45e94d8"
+  },
+  "scope": "Diff against separately reviewed Traffic1 installer and collector only",
+  "observed_changes": [
+    "All package/ESP/state/backup/label/identity/loader/args paths consistently changed from Traffic to Traffic2.",
+    "Collector imports and pins exact new installer SHA.",
+    "No changes to transaction order, validation, firmware/PCI guards, entry removal or full-tree backup rules.",
+    "Pinned seven payloads,182/60 timing contract and four PUSH phase contract unchanged."
+  ],
+  "blocking_findings": [],
+  "hardware_operations": false,
+  "tests_not_repeated": "Independent fixtures were executed by author; this review examined source diff."
+}

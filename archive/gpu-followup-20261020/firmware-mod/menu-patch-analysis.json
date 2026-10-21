@@ -1,0 +1,23 @@
+{
+  "base": "official MS-01 AHWSA BIOS1.26",
+  "module_guid": "899407D7-99FE-43D8-9A21-79EC328CAC21",
+  "original_module_sha256": "c2b8aed473d227060f8004a05b2d10b5b9cb648e3a513c89b100b17017341e51",
+  "patched_module_sha256": "927ac1af748473c9643aca6ebcba18189f487262962876dcf257aaf60a693e35",
+  "reference_opcode_offset": "0x454cc",
+  "question_id": "0x625",
+  "old_form": "0x2AE2",
+  "new_form": "0x27C4",
+  "module_byte_differences": [
+    [
+      "0x454d9",
+      226,
+      196
+    ],
+    [
+      "0x454da",
+      42,
+      39
+    ]
+  ],
+  "flash_performed": false
+}

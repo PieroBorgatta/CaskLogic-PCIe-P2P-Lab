@@ -1,0 +1,5 @@
+{
+  "reason": "Target CPU build fortify warning: memset beginning at a struct member and extending over subsequent fields. Not loaded.",
+  "rejected_module_sha256": "8d3a9d42407f46bf66d498e09cb4fd9422ab950b75afd314912f4ff055078780",
+  "status": "superseded_before_hardware"
+}

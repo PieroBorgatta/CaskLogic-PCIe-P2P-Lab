@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "ESITO.md",
+      "size": 9255,
+      "sha256": "915e341b11fcb5775e7258dd6de3d391b9384c825c50f0b90ba1f822dbbe70cf"
+    },
+    {
+      "path": "aoostar-download-check.json",
+      "size": 737,
+      "sha256": "f3bfca67aea1ca646a396acf4e486998439846afbcf796e90b7cf8fdc76819a0"
+    },
+    {
+      "path": "gpu-vm-inventory.json",
+      "size": 1254,
+      "sha256": "ec23b8ca5af1cb9bb2ea8733b2805253fa2c5e68f969efd3b31937dba2053ffe"
+    },
+    {
+      "path": "hypervisor-host-inventory.json",
+      "size": 630,
+      "sha256": "9aa4bb7acc3e5ac66d406728d3f405c5e2a654f8b3179452895d23fefd3a6b66"
+    }
+  ],
+  "local_links_verified": true
+}

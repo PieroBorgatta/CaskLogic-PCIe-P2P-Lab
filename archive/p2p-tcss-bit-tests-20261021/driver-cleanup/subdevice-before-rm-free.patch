@@ -1,0 +1,28 @@
+--- a/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
++++ b/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
+@@ -2388,18 +2388,21 @@
+ 
+         portSyncRwLockAcquireWrite(rmDevice->btreeLock);
+         rmDevice->subDeviceCount--;
++
++        // Dynamic windows still reference allocation memdescs and GPU state.
++        // Drain them while the RM subdevice and its children are still alive.
++        if (rmSubDevice->pDynBar1Mutex != NULL)
++            _nvGpuOpsDynBar1DestroyAll(rmSubDevice);
++
+         deleteDescriptor(&rmDevice->subDevices, device->subdeviceInstance, (void**)&rmSubDevice);
+         pRmApi->Free(pRmApi, device->session->handle, rmSubDevice->subDeviceHandle);
+ 
+         NV_ASSERT(rmSubDevice->hP2pObject == 0);
+         NV_ASSERT(rmSubDevice->p2pObjectRef == 0);
+ 
+-        // METHOD3: drain any leftover dynamic BAR1 P2P mappings, then destroy mutex.
++        // The dynamic window list was drained before the RM subdevice free.
+         if (rmSubDevice->pDynBar1Mutex != NULL)
+-        {
+-            _nvGpuOpsDynBar1DestroyAll(rmSubDevice);
+             portSyncMutexDestroy(rmSubDevice->pDynBar1Mutex);
+-        }
+ 
+         portMemFree(rmSubDevice);
+         portSyncRwLockReleaseWrite(rmDevice->btreeLock);

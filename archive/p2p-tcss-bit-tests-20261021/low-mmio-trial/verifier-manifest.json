@@ -1,0 +1,13 @@
+{
+  "status": "READY_FOR_LINUX_STATIC_CPU_BUILD_NOT_EXECUTED_ON_HARDWARE",
+  "files": {
+    "verify_low_mmio.c": "d2143a49731bb30d10bc5bea3ffef1147b44eca04667eec9a2af1c31b08f8a96",
+    "test_verify_low_mmio.py": "e11f27466ecfe5c7789b8af3bb541cbd65fd78cb184595d10dc371b676d6da18",
+    "verifier-offline-tests.json": "549f3c684c37edf18e06c916d402a16bc2755321d09f2228c9a81a6233dd88d9",
+    "VERIFICATORE.md": "41a2be665026764a8fe603a60b39af3e303c3245a5826435a1cc6a717913725b"
+  },
+  "local_validation": "clang macOS arm64 -std=c11 -O2 -Wall -Wextra -Werror; 75/75 offline fixtures",
+  "native_success_token": "LOW_MMIO_NATIVE_PASS",
+  "fixture_success_token": "LOW_MMIO_FIXTURE_PASS",
+  "hardware_experiment": "suspended_for_driver_alignment_investigation"
+}

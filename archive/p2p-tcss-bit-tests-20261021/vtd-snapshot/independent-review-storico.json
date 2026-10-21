@@ -1,0 +1,27 @@
+{
+  "status": "PASS_statico",
+  "reviewer": "storico_prove",
+  "files_sha256": {
+    "cask_vtd_snapshot.c": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+    "dmar_parse.inc": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552"
+  },
+  "checks": [
+    "CPUID 906a3 e assenza hypervisor verificati prima delle letture hardware",
+    "Tabella DMAR: signature, lunghezza limitata, checksum, limiti unità e scope, allineamento base; nessuna aritmetica oltre i limiti osservata",
+    "DRHD principale letto soltanto se base FED91000 dichiarata nel segmento 0",
+    "TCSS richiede 8086:4641 e MCHBAR fedc0001; offsets 7888..78a0 verificati in coreboot Alder Lake",
+    "BAR TCSS disabilitati mai dereferenziati; base abilitata, maschera, bit riservati e intervallo verificati",
+    "Solo readl/readq/ioremap/unmap e letture PCI; nessuna API di scrittura hardware individuata",
+    "Estremi PMR letti solo quando CAP bit 5/6 dichiarano supporto; validità PMEN distinta dal valore grezzo",
+    "GSTS prima e dopo con stabilità richiesta; TES bit 31 distinto da IRES 25 e QIES 26",
+    "Rilascio kmemdup, riferimento ACPI, pci_dev e mapping MMIO bilanciato nei rami esaminati"
+  ],
+  "limits": [
+    "Revisione statica indipendente; nessuna compilazione kernel o esecuzione hardware da questo agente",
+    "Il controllo di intervallo FED non è una whitelist di indirizzi TCSS; la provenienza della base è il BAR documentato sul profilo nativo esatto",
+    "BAR TCSS, RTADDR e PMEN non formano uno snapshot atomico; non sono previste scritture concorrenti durante il collaudo",
+    "IRTA, IQH, IQT e IQA non acquisiti in questa versione; GSTS permette di distinguere TES, IRQ e QI",
+    "Eventuali altri DRHD fuori FED91000 sono elencati ma non automaticamente campionati; non dichiarare tutte le unità disattivate se il log contiene unità non campionate"
+  ],
+  "provenance_note": "Ricostruzione della mia valutazione già inviata al parent sullo stesso SHA, con nome distinto per preservare la revisione dell’altro agente."
+}

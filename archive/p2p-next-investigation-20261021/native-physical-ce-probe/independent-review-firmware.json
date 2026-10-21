@@ -1,0 +1,23 @@
+{
+  "status": "PASS_STATIC_REVIEW",
+  "hardware_operations": false,
+  "source_sha256": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+  "client_sha256": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab",
+  "abi_sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+  "author_fixture_report_sha256": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7",
+  "author_fixture_checks": 154,
+  "checks": [
+    "Quattro allocazioni8MiB fisse, fonti owner-only, target RW su dueGPU",
+    "Quattro casiSM/PHYS su stessi indirizzi, init e sync owner prima, compare owner dopo",
+    "UnicoFD CUDA-owned validato e duplicato; ABI e inputimmobili controllati",
+    "SIGTERM ignorato prima EXECUTE, syscallerror o incompleted/retained parcheggia senza stackunwind/FDclose/CUDAcleanup",
+    "Successflags0x77, classiC6B5/C7B5, LAUNCHintero eBAR1attuale ricontrollati",
+    "Nessuna NVML duranteioctl:4controlliH2D/D2H esplicitamente distinti dopo2completamenti fisici",
+    "Fullcompare e free soltanto a termineoperazioni; qualifica campioni e dati distinti"
+  ],
+  "limitations": [
+    "FixtureautoreASan/UBSan154casi consultate; questo audit non le ripete",
+    "Nessun claim no-staging dalla sola telemetria; physicalmethods sono evidenza di percorso richiesto, ownercompare di esito dati",
+    "La calibrazione H2D misurera sensibilitaA2000RX separatamente; il codice non la dichiara dimostrata prima dei risultati"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS_LOCAL_RESTORE_BACKUP_AND_RECORDED_HEALTH_AUDIT",
+  "reviewer_hardware_operations": false,
+  "restore_collected_files_verified": 28,
+  "restore_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "candidate_before_restore_sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+  "region_start": 28356608,
+  "region_bytes": 122880,
+  "byte_mismatches": 0,
+  "restore_gate_checked": true,
+  "backup": "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/final-sync-esp-artifacts-verified-20261021T031941-acf86b3c",
+  "backup_trees_recomputed": {
+    "CaskLogicTcssSyncTest": {
+      "files": 28,
+      "directories": [],
+      "bytes": 3869752
+    },
+    "CaskLogicTcssNative": {
+      "files": 19,
+      "directories": [
+        "before-driver"
+      ],
+      "bytes": 297192523
+    }
+  },
+  "backup_file_count": 47,
+  "backup_journal_matches_cleanup_report": true,
+  "cleanup_time_CEST": "2026-10-21T03:19:41.192896+02:00",
+  "restore_collection_time_CEST": "2026-10-21T03:19:24.058867+02:00",
+  "CCFG_restored": {
+    "0000:00:01.0": "04008077",
+    "0000:00:07.0": "0e009077",
+    "0000:00:07.2": "0e009077"
+  },
+  "boot_entries": [
+    "0000",
+    "0001"
+  ],
+  "BootNext_present": false,
+  "original_boot_files_unchanged_recorded": true,
+  "temporary_entries_and_directories_removed_recorded": true,
+  "host_health_time_CEST": "2026-10-21T03:20:10.415280+02:00",
+  "guest_health_time_CEST": "2026-10-21T03:21:18.430706+02:00",
+  "guest_services_active": [
+    "fan",
+    "persistence",
+    "docker"
+  ],
+  "training": "inactive and disabled",
+  "GPU_count": 2,
+  "GPU_driver_version": "595.99.02",
+  "compute_apps": [],
+  "Xid_lines_in_health_snapshot": [],
+  "module_path": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia.ko.zst",
+  "loaded_disk_srcversion": "919309EF6954372EFADD77E",
+  "disk_module_sha256": "0b3110fde7eb34d578ea50b7da21d2539b1ff228fd017efc03e71a6aeace008d",
+  "Windows_state": "suspended",
+  "Windows_suspend_VDI": "39affde2-d364-4e72-9d0e-cb422542db75",
+  "Windows_memory_bytes": 8589934592,
+  "Docker_state": "running",
+  "Docker_memory_bytes": 27917287424,
+  "source_files_sha256": {
+    "cleanup-sync-verified.json": "7edda3b83e6793de359ec2d48a1729eae642f76b97e26923c1ecfda874158e5e",
+    "final-sync-system-health.json": "f08db8ec6c6c80f2593ea81a69f40d83d9239c42e2cb494d0aa917cc1549984c",
+    "native-sync-restore-results/restore-verification.json": "ac91cb4b1f51cff44abff83751f3d1bca0217ba678ce22b0d730ac97c1451fc3"
+  },
+  "limits": [
+    "This audit rehashes local copies and checks recorded observations; it is not a new live interrogation.",
+    "The restored span is the FSP region only. SaSetup is outside it and was not independently reread.",
+    "srcversion919309EF6954372EFADD77E is also present in the experimental dynamic module; source version equality alone does not prove full stock RM identity.",
+    "No preexisting authoritative stock reference for compressed module hash0b3110fde7eb34d578ea50b7da21d2539b1ff228fd017efc03e71a6aeace008d was found in this local audit.",
+    "The health snapshot is not a complete data-integrity audit and does not imply Windows has resumed."
+  ]
+}

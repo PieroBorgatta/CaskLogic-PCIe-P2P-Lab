@@ -1,0 +1,52 @@
+{
+  "version": "D1 v3",
+  "region_bytes": 122880,
+  "region_start": "0x01B0B000",
+  "checks": {
+    "PRE": {
+      "returncode": 0,
+      "scenarios": 15,
+      "all_pass": true
+    },
+    "POST_CHECK": {
+      "returncode": 0,
+      "scenarios": 14,
+      "all_pass": true
+    },
+    "RESTORE_CHECK": {
+      "returncode": 0,
+      "scenarios": 14,
+      "all_pass": true
+    }
+  },
+  "scope": "Host file-logic tests only. PRE calls real check_region_files directly without hardware guard; native PRE only compile-checked.",
+  "files": {
+    "TcssRegionGate.c": {
+      "sha256": "3899971657667fa2be3e9c7c93294c70c3d273d30e2c53cd68b9738743a730af",
+      "bytes": 13222
+    },
+    "TcssRegionProfile.h": {
+      "sha256": "6683455c94f6f96c63871d9474a8a8509c38ebc856ca130ebdd758613a0a3e6c",
+      "bytes": 261
+    },
+    "TcssRegionGate.host-test.c": {
+      "sha256": "33b9fad7ab1c6ad7d1a00cf556a5eaa4bdc6d4c667e13d1aa48cf8b3910aa2fe",
+      "bytes": 9720
+    },
+    "ORIGINAL.bin": {
+      "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+      "bytes": 122880,
+      "crc32": "4A14C7B5"
+    },
+    "CURRENT.bin": {
+      "sha256": "9ed07429f558302804219c07af3c357afbc46f20127abf65a4cdc24284a9b3f2",
+      "bytes": 122880,
+      "crc32": "C98D61F9"
+    },
+    "CANDIDATE.bin": {
+      "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+      "bytes": 122880,
+      "crc32": "549D8326"
+    }
+  }
+}

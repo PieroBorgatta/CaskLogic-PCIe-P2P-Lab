@@ -1,0 +1,64 @@
+{
+  "status": "READY_FOR_COORDINATED_NATIVE_TRIAL_NOT_HARDWARE_VALIDATED",
+  "location": "low-mmio-trial/active-pm",
+  "source_sha256": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+  "audio_pm_sha256": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+  "diagnostic_baseline_sha256": "017dc64e2de0b3b11782cbc686e6c4db708022e1d19a88fb20cecaccaed18003",
+  "original_baseline_sha256": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+  "files": {
+    "cask_low_mmio.c": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+    "audio_pm.inc": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+    "Makefile": "307d2384936758e2429f42144fa4d296550bb2a0d1e244bc6694f9a1da043192",
+    "test_audio_pm.c": "b14be1f182e3eda3cd213b44f86f3ca3d13824c7d76f5cb84e2dedc42a944034",
+    "run_offline_checks.py": "cd151c9258444cc3e62b927d65f8d042b4fcd365ffcb8ca6cc0b36dd773a143a",
+    "offline-validation.json": "39ec47f0fb7c2fb41db40c4ffbc8b695dab8eab9eb89f9b5cc7f3ca062c9787f",
+    "active-pm.patch": "06ea4c882f28463ae1d02dedeba0026a8408654d1da9c7a7baf1b22d766f6c2c",
+    "LEGGIMI.md": "a92315f3d755a34d64f6b128f24c33395b1ebc53bf53014a2255f1c320ab448d",
+    "independent-pm-review.json": "74f58a30728f663d5415090edc3996814d145470638dec3d42dc1fc27d628e5a"
+  },
+  "offline": {
+    "status": "PASS",
+    "mock_cases": 163,
+    "integration_checks": 17,
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "hardware_access": false
+  },
+  "kernel_build_reported_by_root": {
+    "status": "PASS",
+    "kernel": "7.0.0-38-generic",
+    "flags": [
+      "W=1",
+      "KCFLAGS=-Werror"
+    ],
+    "module_sha256": "2f643a3bffc6f8fe8a7a8c07da4d6ac66145d59eb99b8260f8f87951a0ee4b8d",
+    "loaded": false
+  },
+  "new_api": {
+    "api": "pm_runtime_resume_and_get",
+    "inline_calls": "__pm_runtime_resume",
+    "target_export": "EXPORT_SYMBOL_GPL",
+    "evidence": "../../low-mmio-kernel-headers/Module.symvers:9489"
+  },
+  "observed_problem": {
+    "audio_bdfs": [
+      "0000:06:00.1",
+      "0000:01:00.1"
+    ],
+    "pci_state": "D0",
+    "PMCSR": "0x0008",
+    "runtime_status": "RPM_SUSPENDED",
+    "runtime_error": 0,
+    "disable_depth": 0
+  },
+  "scope": "Opt-in standard runtime resume only for the two exact verified unbound audio functions; no generic bypass; existing relocation and rollback algorithms unchanged.",
+  "hardware_executed_by_this_agent": false,
+  "notes": [
+    "Runtime PM callbacks may write PCI configuration even in execute=0 with activate_audio=1.",
+    "Pinned module retains all seven PM references after commit/fatal until reboot.",
+    "A runtime PM callback failure or changed header/resources aborts before relocation.",
+    "All GPU testing and server operations remain exclusively coordinated by root."
+  ]
+}

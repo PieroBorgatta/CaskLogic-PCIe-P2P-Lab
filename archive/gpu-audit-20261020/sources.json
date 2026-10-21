@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "NVIDIA/nvbandwidth",
+    "commit": "82fc4e8c6afa0babb8687793678f615b3b8d793e",
+    "commit_date": "2026-07-21T18:40:28Z",
+    "archive_sha256": "eecc72cb42e32d6fec14401752389711d6d9ffa7060efb9d6b3d5626b62731fc"
+  },
+  {
+    "repo": "NVIDIA/nccl-tests",
+    "commit": "afd59abab774a6a4b492eb344bd0c845a0b7bb4d",
+    "commit_date": "2026-10-05T19:40:17Z",
+    "archive_sha256": "7e27a332980b09bc12976626d291d574327a0f1041ee47d5835b6070425158c5"
+  },
+  {
+    "repo": "wilicc/gpu-burn",
+    "commit": "0d19c94dcb2e9b6858b7586a4c327674cd67113b",
+    "commit_date": "2026-10-02T07:22:01Z",
+    "archive_sha256": "58a6f4673af294cf98ada99bc0860632182afde862718b05b0e0b7ba3b2bdad7"
+  }
+]

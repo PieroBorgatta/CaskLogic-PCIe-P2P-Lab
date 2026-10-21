@@ -1,0 +1,38 @@
+[
+  {
+    "name": "smoke_ddp32_shm",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/smoke_ddp32_shm.json",
+      "--recompute",
+      "--global-sequences",
+      "4",
+      "--warmup",
+      "1",
+      "--samples",
+      "1"
+    ],
+    "env": {
+      "NCCL_DEBUG": "INFO",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 120,
+    "required": false,
+    "started_epoch": 1792525730.0866427,
+    "seconds": 16.002844095230103,
+    "returncode": 0,
+    "timed_out": false
+  }
+]

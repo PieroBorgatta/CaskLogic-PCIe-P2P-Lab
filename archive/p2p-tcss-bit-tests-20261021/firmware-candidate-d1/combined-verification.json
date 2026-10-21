@@ -1,0 +1,211 @@
+{
+  "status": "LOCAL_COMBINED_REPACK_VALIDATED_NOT_BOOT_TESTED",
+  "hardware_or_remote_operations": false,
+  "full_images": {
+    "fresh_original_sha256": "cfe6c07a4f2113928e13198ab2b8adc52924893aa0c239982c2213feb53c5124",
+    "current_D7_sha256": "1ddc33f1e8164e1e0ee888886ebc6b709ba2c266daf69685d27b3e5a3219bdf2",
+    "combined_sha256": "a627f6472d3c664635145e09fae020f12515c973c3ab711a846a4805bf07ce91"
+  },
+  "pe_sha256": {
+    "original": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+    "current": "a5f000b4cda7cfa11167545a33c18783754623012170bab73a419f4128fa05a4",
+    "combined": "9ba6fbb44615983060c405fdb3b800906549c4705ab3cba3449c404025090b3b"
+  },
+  "semantic_changes_vs_original": [
+    {
+      "offset": "0xF634",
+      "before": "04",
+      "after": "00"
+    },
+    {
+      "offset": "0x20304",
+      "before": "FE",
+      "after": "F0"
+    }
+  ],
+  "semantic_changes_vs_current": [
+    {
+      "offset": "0xF634",
+      "before": "04",
+      "after": "00"
+    }
+  ],
+  "ffs": {
+    "guid": "80a845ac-210f-43b0-995b-477be41ab4e8",
+    "offset": "0x1b02b60",
+    "length": 154845,
+    "header_exact": true,
+    "offset_and_length_unchanged": true
+  },
+  "all_other_modules_exact": true,
+  "all_bytes_outside_target_ffs_exact": true,
+  "objects_checked_each": 2999,
+  "comparisons": {
+    "original_to_combined": [
+      {
+        "path": "flash.fd",
+        "bytes": 33554432,
+        "differing_bytes": 115708,
+        "before_sha256": "cfe6c07a4f2113928e13198ab2b8adc52924893aa0c239982c2213feb53c5124",
+        "after_sha256": "a627f6472d3c664635145e09fae020f12515c973c3ab711a846a4805bf07ce91"
+      },
+      {
+        "path": "regions/region-bios.fd",
+        "bytes": 16777216,
+        "differing_bytes": 115708,
+        "before_sha256": "f4f1e1a96e39aedbc8b2278a3702fea85e63980085a0020567fbe4e0f00176bf",
+        "after_sha256": "716fd1e1220efa7b2fc06c5254f0d88a22e1096903c1075cf0fe453eefd05e2c"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file.obj",
+        "bytes": 368680,
+        "differing_bytes": 115708,
+        "before_sha256": "d4bd998875a3f4693a3177ebafef68f107e2219ec4214ecd7be2c171b0eb3104",
+        "after_sha256": "0bdcb0cdbac4f9880b8c3f2fa4a0feab6ac713222eaa4bf86469db80747c6662"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1.fv",
+        "bytes": 368640,
+        "differing_bytes": 115708,
+        "before_sha256": "05560efaf3e5e77297b4c47d9ea5bc45eb6510b1cb07d42349dc92a1b76f1e90",
+        "after_sha256": "6c62a6552deb42285a4d4a972e0ffcc0612fd152660720a9814f8ca45af579da"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d.fv",
+        "bytes": 368640,
+        "differing_bytes": 115708,
+        "before_sha256": "05560efaf3e5e77297b4c47d9ea5bc45eb6510b1cb07d42349dc92a1b76f1e90",
+        "after_sha256": "6c62a6552deb42285a4d4a972e0ffcc0612fd152660720a9814f8ca45af579da"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+        "bytes": 154845,
+        "differing_bytes": 115708,
+        "before_sha256": "fcde1a912de75df1a95fdd9553d141712dd49e7bcc89dbb603839535d4a64abf",
+        "after_sha256": "5717b9f36bd758c6fed7496941d8c6b5100889dc93ef898a97e94bda6189abb4"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1.compressed",
+        "bytes": 154741,
+        "differing_bytes": 115708,
+        "before_sha256": "61c9f6df74abd1e40f78674ebd75c14f2d391f1f90104c78a55cf8eaf19ef6be",
+        "after_sha256": "0c83ac32a35929f68636f260c64154be141df83f50b9519914c30f0733ad910f"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+        "bytes": 254848,
+        "differing_bytes": 2,
+        "before_sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+        "after_sha256": "9ba6fbb44615983060c405fdb3b800906549c4705ab3cba3449c404025090b3b"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/filesystem.ffs",
+        "bytes": 368568,
+        "differing_bytes": 115708,
+        "before_sha256": "e83a2cf3ff2c4890b10532557b1fbe768daabfa199d9fedda9f42f0f8f8d0e9e",
+        "after_sha256": "4fad97b65ea143680e5b66482fbe881f2de823225768cbd27740899cfa180fc4"
+      }
+    ],
+    "current_D7_to_combined": [
+      {
+        "path": "flash.fd",
+        "bytes": 33554432,
+        "differing_bytes": 114894,
+        "before_sha256": "1ddc33f1e8164e1e0ee888886ebc6b709ba2c266daf69685d27b3e5a3219bdf2",
+        "after_sha256": "a627f6472d3c664635145e09fae020f12515c973c3ab711a846a4805bf07ce91"
+      },
+      {
+        "path": "regions/region-bios.fd",
+        "bytes": 16777216,
+        "differing_bytes": 114894,
+        "before_sha256": "f3e92511d2467da814994efefb75b560ec037768c97c132233ca00ff19370314",
+        "after_sha256": "716fd1e1220efa7b2fc06c5254f0d88a22e1096903c1075cf0fe453eefd05e2c"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file.obj",
+        "bytes": 368680,
+        "differing_bytes": 114894,
+        "before_sha256": "c0cb603a2c86f91e8f024da90253280a32aed55291ed6de45dbda0c686357f5b",
+        "after_sha256": "0bdcb0cdbac4f9880b8c3f2fa4a0feab6ac713222eaa4bf86469db80747c6662"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1.fv",
+        "bytes": 368640,
+        "differing_bytes": 114894,
+        "before_sha256": "26122d5d27f3a3ec584098022787cc22c9b5d13676aeb41ac94974dc68de95e6",
+        "after_sha256": "6c62a6552deb42285a4d4a972e0ffcc0612fd152660720a9814f8ca45af579da"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d.fv",
+        "bytes": 368640,
+        "differing_bytes": 114894,
+        "before_sha256": "26122d5d27f3a3ec584098022787cc22c9b5d13676aeb41ac94974dc68de95e6",
+        "after_sha256": "6c62a6552deb42285a4d4a972e0ffcc0612fd152660720a9814f8ca45af579da"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+        "bytes": 154845,
+        "differing_bytes": 114894,
+        "before_sha256": "f22e1ab439f16b7ea2a36d04d293cbef85e66a345e6f16705b02a55d2ca212df",
+        "after_sha256": "5717b9f36bd758c6fed7496941d8c6b5100889dc93ef898a97e94bda6189abb4"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1.compressed",
+        "bytes": 154741,
+        "differing_bytes": 114894,
+        "before_sha256": "8fb06b2a738d1cd711c7c7d3a61661c64c834ef58aec555dc6a3416eb5af5c9a",
+        "after_sha256": "0c83ac32a35929f68636f260c64154be141df83f50b9519914c30f0733ad910f"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+        "bytes": 254848,
+        "differing_bytes": 1,
+        "before_sha256": "a5f000b4cda7cfa11167545a33c18783754623012170bab73a419f4128fa05a4",
+        "after_sha256": "9ba6fbb44615983060c405fdb3b800906549c4705ab3cba3449c404025090b3b"
+      },
+      {
+        "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/filesystem.ffs",
+        "bytes": 368568,
+        "differing_bytes": 114894,
+        "before_sha256": "77ec57481af721f0c6f1856921894f8ed48cf2a3924b1e6fddfe6feed2da568a",
+        "after_sha256": "4fad97b65ea143680e5b66482fbe881f2de823225768cbd27740899cfa180fc4"
+      }
+    ]
+  },
+  "physical_changes": {
+    "original_to_combined": {
+      "count": 115708,
+      "first": "0x1b0bd24",
+      "last": "0x1b28833"
+    },
+    "current_to_combined": {
+      "count": 114894,
+      "first": "0x1b0bd24",
+      "last": "0x1b2883b"
+    }
+  },
+  "range_includes_previous_19_sectors": true,
+  "range_sectors": 30,
+  "flash_profile": {
+    "region_start": 28356608,
+    "region_bytes": 122880,
+    "original_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "original_crc32": 1242875829,
+    "current_sha256": "9ed07429f558302804219c07af3c357afbc46f20127abf65a4cdc24284a9b3f2",
+    "current_crc32": 3381486073,
+    "candidate_sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+    "candidate_crc32": 1419608870
+  },
+  "current_block_provenance": "Fresh native original cfe6... plus prior D7-only candidate 1ddc..., with original target FFS and prior patch independently verified. Operator must compare the entire expanded range to CURRENT.bin before writing; no new native read is claimed by this script.",
+  "original_block_restores": "Unmodified SiInitFsp only; retains existing SaSetup P2P NV setting outside this range.",
+  "limitations": [
+    "Boot and D1 hardware acceptance not yet tested.",
+    "D1 bit26 silicon semantics not proved by public D6 specification.",
+    "The conditional D1 family branch can also affect D1:F1 on applicable SKUs."
+  ],
+  "UEFIExtract_A75": {
+    "original_and_combined_logs_exact": true,
+    "log_sha256": "a17f6bbba5584ca013701b4a540ba18f45d354c74c5b11bf678d3956830e2a1f",
+    "errors_added": 0
+  }
+}

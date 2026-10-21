@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "tests": 23,
+  "analyzer_sha256": "bfdc1a5a6e61838b537f80680a99e907f5f464d394670c7b1e5643b6dda70af7",
+  "fixture_sha256": "f34a8bc1b1b834d372e20422829c113e8008e721442496c19c60c5b04db9e0d5",
+  "hardware_calls": 0,
+  "strict_mode": 1
+}

@@ -1,0 +1,25 @@
+{
+  "observed_date": "2026-10-21",
+  "official_source": "https://aoostar.com/pages/drives-systems",
+  "label": "NVIDIA EGPU has error 43",
+  "public_link": "https://mega.nz/file/n8VnzDiL#jQARgCFL4cjnnd8gU7wn3_Ha95BPzsOAJWWesn-ASiw",
+  "metadata_request": {
+    "endpoint": "https://g.api.mega.co.nz/cs?id=0",
+    "json_body": [
+      {
+        "a": "g",
+        "p": "n8VnzDiL"
+      }
+    ]
+  },
+  "api_response": [
+    -9
+  ],
+  "official_error_name": "API_ENOENT",
+  "official_error_meaning": "Resource does not exist",
+  "error_definition": "https://github.com/meganz/sdk/blob/master/include/mega/types.h",
+  "filename": null,
+  "payload_downloaded": false,
+  "payload_executed": false,
+  "firmware_classification": "not_verified"
+}

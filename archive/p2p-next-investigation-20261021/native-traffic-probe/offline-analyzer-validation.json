@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "tests": 22,
+  "command": "python3 test_analyze_traffic.py",
+  "fixture_is_synthetic": true,
+  "hardware_calls": false,
+  "files": {
+    "analyze_traffic.py": "57587877640994ffe93a403444154aaffb45ab6077b6f828738909cf2078fa97",
+    "test_analyze_traffic.py": "9a16aa65db453d4cb7c240b06c3f817317df884df8aecac76716da7a9e551131",
+    "fixture-complete.log": "04860def38bbf0a8b01eb10d9ebb3cdc4fd8267673865fa768162115b2c6f943"
+  }
+}

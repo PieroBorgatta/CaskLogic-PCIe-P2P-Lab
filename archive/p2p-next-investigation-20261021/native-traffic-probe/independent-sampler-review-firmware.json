@@ -1,0 +1,73 @@
+{
+  "status": "PASS_STATIC_AND_OFFICIAL_C_ABI_REVIEW",
+  "files": {
+    "peer_traffic.cu": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+    "nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9"
+  },
+  "scope": "Revisione indipendente locale; nessuna esecuzione CUDA, GPU o remota. Fixture autore lette, non ripetute.",
+  "blocking_before_hardware": [],
+  "checks_passed": [
+    "Funzioni NVML esclusivamente init/shutdown, identificazione e lettura throughput; nessun setter.",
+    "Prototipi dlsym via decltype verificati sul nvml.h C ufficiale12.6.37; nvmlDevice_t puntatore opaco, get_handle riceve nvmlDevice_t*, throughput riceve unsigned int*, enumTX0/RX1.",
+    "UUID e BDF sono entrambi verificati per le due GPU prima del campionamento.",
+    "Errori NVML conservano returncode e sentinella UINT_MAX; Stats esclude gli errori e mantiene invalid_count, fase non qualificata.",
+    "Stage attivo selezionato soltanto con begin>=active_begin+40ms, end<=active_end e timestamp monotoni; almeno5 campioni validi per ciascuna coppia GPU/counter.",
+    "Thread campionatore scrive vector/flag esclusivamente prima del join; report legge dopo join.",
+    "Owner init/readback e sync entrambe GPU precedono campionamento; nessuna H2D/D2H o diagnostica PCI dentro finestra attiva.",
+    "Quattro buffer preallocati; send owner-only, receive sharedRW. Esecutore sorgente e contesto stream verificati; kernel usa solo lettura locale e scrittura peer.",
+    "Una batch64MiB alla volta, evento atteso prima del successivo; budget1,2s, limite5s,4096batch. Mancato tempo minimo o NVML invalido dà rc6.",
+    "Fine evento e join campionatore precedono D2H destinatario; free successivi a tutti i confronti.",
+    "CUDA COPY_REQUEST non etichettato CE osservato; output mantiene ce_observed0 e direct_route_proven0.",
+    "Delta baseline quieta verificato: started catturato prima thread; begin>=started+40ms,end<=active_begin; almeno5 campioni per ogni GPU/counter anche al baseline. Nessuna inclusione di campioni che attraversino il limite."
+  ],
+  "author_fixtures": {
+    "status": "PASS",
+    "real_sampler_header_sha256": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "nvml_header_sha256": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "cases": [
+      {
+        "scenario": "success",
+        "expected_rc": 0,
+        "rc": 0,
+        "pass": true
+      },
+      {
+        "scenario": "invalid_identity",
+        "expected_rc": 27,
+        "rc": 27,
+        "pass": true
+      },
+      {
+        "scenario": "preflight_unavailable",
+        "expected_rc": 27,
+        "rc": 27,
+        "pass": true
+      },
+      {
+        "scenario": "sampling_unavailable",
+        "expected_rc": 6,
+        "rc": 6,
+        "pass": true
+      }
+    ],
+    "boundary_and_stats_assertions": 16,
+    "asan_ubsan": true,
+    "hardware_calls": false,
+    "scope": "Real sampler/client code against local fake NVML shared library. No CUDA or GPU."
+  },
+  "limitations": [
+    "Contatori aggregano tutto il traffico PCIe della GPU e non distinguono payload specifico, TLP o instradamento interno.",
+    "Chiamate delle quattro coppie device/counter seriali: non sono una fotografia atomica.",
+    "La finestra comprende submission e attesa eventi; submitted_payload_bytes non dimostra byte effettivamente consegnati né banda utile.",
+    "NVML può restare bloccato in una chiamata esterna; il deadline nel loop non sostituisce il watchdog del wrapper.",
+    "La stessa parola viene riscritta molte volte: il confronto finale verifica il contenuto finale, non ogni singola copia ripetuta."
+  ],
+  "resolved_finding": "Sostituito header adattato Go con nvml.h C canonico estratto dal pacchetto NVIDIA CUDA12.6.37; typedef nvmlDevice_t puntatore e firme dei5 simboli verificate. Fixture autore ricompilate ePASS con taleheader.",
+  "native_header_provenance": {
+    "url": "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-nvml-dev-12-6_12.6.37-1_amd64.deb",
+    "package_sha256": "6af50904eed7c5130faf4955df768e5b826ada59681110f8497e66fbfdb94d2c",
+    "header_archive_path": "./usr/local/cuda-12.6/targets/x86_64-linux/include/nvml.h",
+    "header_sha256": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9"
+  }
+}

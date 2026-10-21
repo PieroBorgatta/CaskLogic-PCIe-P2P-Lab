@@ -1,0 +1,140 @@
+{
+  "started_utc": "2026-10-21T00:41:53Z",
+  "profile": {
+    "status": "prepared_local_not_compiled",
+    "source_path": "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c",
+    "preimage_sha256": "6b264b23b02fccd94a5c21fda80a66897d043202a695a4c269e89f71137cf141",
+    "candidate_sha256": "0f9dedebdf54afbfe6d758448a7a8480d5c47ce8febd4db1b05e3029ee23b4c0",
+    "patch_sha256": "06fae9f1e946e4d3a79d236d85ae1fd7bb31de114503a2d4a208888964565cc8",
+    "parameter": "NVreg_RegistryDwords",
+    "registry_key": "RMCaskPeerCoherent",
+    "enable_value": 1,
+    "default": "absent,0,other or registry read failure preserve existing noncoherent branch",
+    "baseline_nvidia_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "baseline_uvm_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+    "archive_sha256": "1174b28565fe8c0dff534a2588f4becd5e12c03465a70f347650a0d0fc9f23bc",
+    "baseline_builder_sha256": "7a109b51c4a4699ca5c29498d1ae8b08b4f236220d812887e4518710b083d6d3",
+    "baseline_source_manifest_sha256": "196b59dec149196dc197221b664b8ad3e3b155da1f14c6e8cf58751d275491a4",
+    "strict_patch_sha256": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948",
+    "hardware_operations": false,
+    "changes": "Only return GMMU_APERTURE_SYS_COH instead of SYS_NONCOH in pre-Blackwell external BAR1 branch when opt-in registry is1; same addresses/atomic/volatile/cache/lifetime"
+  },
+  "builder_sha256": "fc0e3f9743465df2c8614baf30b0ce5385a1f584864d91d6ad9b8a73f8cacbdf",
+  "baseline_build": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-instrumented-build-01",
+  "baseline_manifest_sha256": "0b02b91fe9ac9e01be8d159695e856351057b9978d01fdf8f1ac7178150a37f4",
+  "baseline_symvers_sha256": "f9cd6c82b26a380f965c3a1baae73417648629dddb13ceaa9607807b181082c0",
+  "rm_export_count": 96,
+  "build_requested": true,
+  "hardware_operations": false,
+  "baseline_tree_reused": false,
+  "prepare_command": [
+    "/usr/bin/python3",
+    "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-instrumented/prepare_and_build.py",
+    "--archive",
+    "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/nvidia-595.99.02-original.tar.gz",
+    "--output",
+    "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-peer-coherent-build-01/clean-baseline"
+  ],
+  "prepare_returncode": 0,
+  "prepare_log_sha256": "33fd722eec3fc82f9dd798073d17bf591219b0ad6f6d6ebd564589257cb4d9e3",
+  "source_root": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-peer-coherent-build-01/clean-baseline/source/NVIDIA-open-gpu-kernel-modules-19f3b34",
+  "clean_manifest_sha256": "17882622bccd34bdfe3b232f4d52d0938edaf5a4b9ed8e3dd517f4d30d1182ef",
+  "source_sha256": "0f9dedebdf54afbfe6d758448a7a8480d5c47ce8febd4db1b05e3029ee23b4c0",
+  "instrumented_baseline_verified": {
+    "src/nvidia/generated/g_kern_bus_nvoc.c": "457ee64033a8e85c36911293ea03b16051250a0562dc31e73d7a0e5b1abb0918",
+    "src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c": "5ae2f1d25a0a583227a26da74660948727f33640b3644ec580d590cb27b24a8a",
+    "src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c": "fc3919c27e1e34418a46e6792eb62b313ae2e0142018fc71277a8a70c98f456d",
+    "src/nvidia/src/kernel/gpu/bus/p2p_api.c": "a5012095fd4acb995dac10a590ad62e32874f361f3013e7fc048d4e3417325a3",
+    "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c": "6b264b23b02fccd94a5c21fda80a66897d043202a695a4c269e89f71137cf141",
+    "kernel-open/nvidia/nv-dma.c": "b72adf8d7460f00eac4b670db45818ef39d1534e58ace865e6043030f84f3e17",
+    "kernel-open/nvidia-uvm/uvm_map_external.c": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5"
+  },
+  "status": "built_not_installed",
+  "toolchain": [
+    {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "returncode": 0,
+      "output": "Linux gpu-vm 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux\n"
+    },
+    {
+      "command": [
+        "cc",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    },
+    {
+      "command": [
+        "ld",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "GNU ld (GNU Binutils for Ubuntu) 2.46\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) a later version.\nThis program has absolutely no warranty.\n"
+    },
+    {
+      "command": [
+        "make",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "GNU Make 4.4.1\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2023 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n"
+    }
+  ],
+  "build_environment": {},
+  "build_command": [
+    "make",
+    "-j4",
+    "NV_VERBOSE=1",
+    "KERNEL_UNAME=7.0.0-38-generic",
+    "NV_KERNEL_MODULES=nvidia",
+    "modules"
+  ],
+  "build_returncode": 0,
+  "build_log_sha256": "0413e2055d4ec82cf70e10f2bd8f5b0f08ee9762c72df0ed4ddb93b05da11c8b",
+  "rm_export_abi_unchanged": true,
+  "modules": {
+    "nvidia.ko": {
+      "sha256": "c89df9beff8ee414e020a46d8860ec8b198b896d262bd49d89811d03e052e7eb",
+      "size": 36769904,
+      "modinfo": {
+        "filename": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-peer-coherent-build-01/modules/nvidia.ko",
+        "import_ns": "DMA_BUF",
+        "alias": "of:N*T*Cnvidia,tegra234-display",
+        "description": "NVIDIA core GPU kernel module",
+        "version": "595.99.02",
+        "supported": "external",
+        "license": "Dual MIT/GPL",
+        "firmware": "nvidia/595.99.02/gsp_ga10x.bin",
+        "softdep": "pre: ecdh_generic,ecdsa_generic",
+        "srcversion": "2730098EFE2103A2A66F912",
+        "depends": "",
+        "name": "nvidia",
+        "retpoline": "Y",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "parm": "rm_firmware_active:charp"
+      }
+    },
+    "nvidia-uvm.ko": {
+      "sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+      "size": 57133360,
+      "modinfo": {
+        "filename": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-peer-coherent-build-01/modules/nvidia-uvm.ko",
+        "description": "NVIDIA Unified Virtual Memory kernel module",
+        "version": "595.99.02",
+        "supported": "external",
+        "license": "Dual MIT/GPL",
+        "srcversion": "F3146F6C8F3E4E78A72FBC6",
+        "depends": "nvidia",
+        "name": "nvidia_uvm",
+        "retpoline": "Y",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "parm": "uvm_release_asserts_set_global_error:Set UVM global fatal error on failed release asserts. (int)"
+      }
+    }
+  },
+  "finished_utc": "2026-10-21T00:43:05Z"
+}

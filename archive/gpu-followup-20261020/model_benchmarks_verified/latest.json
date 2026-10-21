@@ -1,0 +1,30 @@
+{
+  "epoch": 1792527584.4098616,
+  "phase": "dual16_default",
+  "gpus": [
+    {
+      "uuid": "GPU-00000000-0000-0000-0000-000000000002",
+      "name": "NVIDIA RTX A2000 12GB",
+      "temperature.gpu": "51",
+      "fan.speed": "30",
+      "utilization.gpu": "100",
+      "memory.used": "11267",
+      "power.draw": "67.34",
+      "power.limit": "70.00",
+      "clocks.current.sm": "1657",
+      "clocks_event_reasons.active": "0x0000000000000004"
+    },
+    {
+      "uuid": "GPU-00000000-0000-0000-0000-000000000001",
+      "name": "NVIDIA RTX 2000 Ada Generation",
+      "temperature.gpu": "61",
+      "fan.speed": "70",
+      "utilization.gpu": "100",
+      "memory.used": "11252",
+      "power.draw": "44.31",
+      "power.limit": "70.00",
+      "clocks.current.sm": "2400",
+      "clocks_event_reasons.active": "0x0000000000000000"
+    }
+  ]
+}

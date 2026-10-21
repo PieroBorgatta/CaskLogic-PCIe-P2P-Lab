@@ -1,0 +1,20 @@
+{
+  "status": "PASS_revisione_statica_non_eseguito_su_hardware",
+  "source_sha256": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+  "audio_pm_sha256": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+  "checks": {
+    "all_noresume_before_resume": true,
+    "native_cpu_gate_before_resume": true,
+    "extra_active_ref_balanced_on_success": true,
+    "audio_scope_explicit": true,
+    "live_verification_before_command_enable": true,
+    "baseline_tree_and_config_algorithm_unchanged": true
+  },
+  "notes": [
+    "pm_runtime_resume_and_get può eseguire callback e ripristino config: activate_audio=1 è opt-in e execute=false non promette assenza di scritture PM.",
+    "Solo audio unbound attesi, identità live e PCI_D0, runtime suspended enabled con unica reference propria; errore resume non crea reference extra da rilasciare.",
+    "Dopo resume e dopo tutti device_lock confronta header/risorse con baseline; verifica PM/D0 ancora prima di ogni COMMAND enable, incluso rollback.",
+    "Confronto esatto secondary-status live può rifiutare conservativamente un evento; non apre percorso permissivo.",
+    "Revisione delta rispetto alla variante diagnostic; nessuna compilazione o prova remota effettuata da questo revisore."
+  ]
+}

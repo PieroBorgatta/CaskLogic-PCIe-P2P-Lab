@@ -1,0 +1,24 @@
+{
+  "esito": "PASS_revisione_statica_indipendente",
+  "sorgente_sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+  "cpubar_header_sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+  "pcie_header_sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+  "baseline_sorgente_sha256": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30",
+  "delta_esatto": "Solo nuova funzione osservativa, chiamata dopo sincronizzazione writer/prima ownerD2H, riepilogo postwrite; rimozione dei tre interventi ricostruisce la baseline byte per byte.",
+  "controlli": [
+    "La parola letta è src, proprietario s e writer d: coincide con la destinazione peer_write. Atteso esatto98765 XOR0xA5A5A5A5 per indice0.",
+    "Identificazione tramite nonce fresco e singola catena allocation→handle→WINDOW_CREATE→DMA→RM_PTE→UVM_PTE→completion; rileva WINDOW_DESTROY successivo e duplicati.",
+    "Dopo mmap verifica di nuovo catena corrente, finestra identica e UUID/BDF/BAR del proprietario.",
+    "Header identici alla baseline già verificata: sysfs resource1 apertoO_RDONLY, mmap PROT_READ, bounds alla parola4B, nessuna scrittura MMIO/config.",
+    "Nuova funzione senza API CUDA, inizializzazione, memset o copie; preserva il dato osservato prima del successivo D2H.",
+    "Rilascio di tutte le allocazioni ancora differito; nessuna modifica dei kernel o del percorso dati.",
+    "Errore diagnostico distinto come SKIP; mismatch dati distinto come FAIL; riepilogo separato, return code originale del probe peer conservato."
+  ],
+  "limiti": [
+    "Revisione statica locale: nessuna compilazione NVCC o esecuzione GPU effettuata da questo revisore.",
+    "La lettura MMIO e il parsing introducono ritardo e una transazione CPU; possono influenzare la visibilità temporale delle scritture postate. Un cambio di esito D2H richiede interpretazione, non certifica da solo una invalidazione cache specifica.",
+    "La catena dei log è software, non readback delle PTE hardware."
+  ],
+  "hardware_modificato": false,
+  "baseline_modificata": false
+}

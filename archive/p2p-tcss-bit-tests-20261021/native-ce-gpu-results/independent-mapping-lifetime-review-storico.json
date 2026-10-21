@@ -1,0 +1,347 @@
+{
+  "status": "PASS_INDEPENDENT_PROVENANCE_MAPPING_PCI_LIFETIME_AUDIT",
+  "collected_sha256_verified": {
+    "files.json": "3b856684e299f8ad5d9445aab2ee317ef8b320263b30d088fce32179d1eac6b8",
+    "native-ce-gpu-state.json": "073c6b415e261b1524bbb14e7bb4c146f1a42d98e13350874a1957eb6fbbbc2f",
+    "build-manifest.json": "f2d53de4de4825b4b4ec5e317d22038608b0ac897d19a0e6c9f1686edd55bbf7",
+    "result.log": "b903e87590f3fd769a978838d4e8b2705a1d53893444027b2e84de6f5714f4c4",
+    "kernel.log": "5e71c958311705404135094682b2d8eec708b95edeacabb8c3ea385337b06357",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_00_01.0.config": "934a3c23ab6b8bebf6170023ef969f6cc7fe06ef77663233049d1fd25a47f8bf",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/0000_00_07.2.config": "4b0dbbd70c6ad1de50413e84e446a5dc9fdea41f273e52f071ba407d219feee1",
+    "before-driver/iomem.txt": "9544eaa2fb1c597d6c9f5883b1a86fd94444cc02246886c97bd817a10c70fb5e",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7",
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_07.0.config": "cbdacaeb111f4ccba8eff5a0b89194514f478f78eaf12f2bf967b1d696e71876",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25"
+  },
+  "package_review": "../native-ce-probe/independent-package-review-storico.json",
+  "package_files": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "2f912fcfca5f69616b4f18159e777b28b60023ebe4e24d3e53a9d4ff7193fd72",
+    "IDENTITY.txt": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+  },
+  "payload_files": {
+    "opt/probe/peer_word": "7184d44dc039f662b21c86b1f20e644b21a3188bb7c028a8a0b12084bcdcfa4d",
+    "opt/probe/nvidia-dynamic.ko": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "opt/probe/nvidia-instrumented-uvm.ko": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+    "usr/lib/x86_64-linux-gnu/libcupti.so.12": "76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d",
+    "usr/lib/x86_64-linux-gnu/libcuda.so.1": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+    "init": "0c6097f60e242d2cc7c95ba200607a46aa8df0036063b2d9278e5180ce2ab3b9"
+  },
+  "GPU_identities": {
+    "0": [
+      "0000:01:00.0",
+      "00000000000000000000000000000001",
+      682627294
+    ],
+    "1": [
+      "0000:06:00.0",
+      "00000000000000000000000000000002",
+      628166878
+    ]
+  },
+  "CCFG_before_after_driver_after_test": {
+    "0000:00:01.0": [
+      "00008077",
+      "00008077",
+      "00008077"
+    ],
+    "0000:00:07.0": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ],
+    "0000:00:07.2": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ]
+  },
+  "allocation_count": 4,
+  "allocation_bytes_each": 8388608,
+  "receive_only_peer_windows": [
+    {
+      "role": "receive_only_peer_window",
+      "owner": 0,
+      "requester": 1,
+      "nonce": "9855c1d7-b646-4797-a830-fe49b73420f8",
+      "gpu_va": "796e05600000",
+      "bytes": 8388608,
+      "window_id": "1",
+      "bar1_base": "4000000000",
+      "bar1_offset": "400000",
+      "physical_dma_decoded": "0x4000400000",
+      "page_bytes": 2097152,
+      "pte_count": 4,
+      "entry_bytes": 16,
+      "software_aperture": 3,
+      "hardware_aperture": 3,
+      "readonly": 0,
+      "valid": 1,
+      "volatile": 1,
+      "atomic_permission": 1,
+      "raw0": "060000040004000f",
+      "raw1": "0000000000000000",
+      "nonce_begin_line": 1426,
+      "nonce_end_line": 1440,
+      "rm_line": 1435,
+      "uvm_line": 1437
+    },
+    {
+      "role": "receive_only_peer_window",
+      "owner": 1,
+      "requester": 0,
+      "nonce": "06da3776-589b-4540-871e-0940abe8c97b",
+      "gpu_va": "402800000",
+      "bytes": 8388608,
+      "window_id": "2",
+      "bar1_base": "4600000000",
+      "bar1_offset": "400000",
+      "physical_dma_decoded": "0x4600400000",
+      "page_bytes": 2097152,
+      "pte_count": 4,
+      "entry_bytes": 16,
+      "software_aperture": 3,
+      "hardware_aperture": 3,
+      "readonly": 0,
+      "valid": 1,
+      "volatile": 1,
+      "atomic_permission": 1,
+      "raw0": "060000046004000f",
+      "raw1": "0000000000000000",
+      "nonce_begin_line": 1447,
+      "nonce_end_line": 1461,
+      "rm_line": 1452,
+      "uvm_line": 1454
+    }
+  ],
+  "software_mapping_failed_checks": 0,
+  "software_mapping_missing_checks": 0,
+  "all_send_buffers_inaccessible_to_other_gpu": true,
+  "access_checks": 104,
+  "local_owner_checks": 24,
+  "local_owner_checks_pass": 24,
+  "data_results": [
+    {
+      "line": 842,
+      "id": "1",
+      "engine": "SM",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 876,
+      "id": "2",
+      "engine": "CE_REQUEST",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "1",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 910,
+      "id": "3",
+      "engine": "SM",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 944,
+      "id": "4",
+      "engine": "CE_REQUEST",
+      "s": "0",
+      "d": "1",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "16384",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 978,
+      "id": "5",
+      "engine": "SM",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1012,
+      "id": "6",
+      "engine": "CE_REQUEST",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1046,
+      "id": "7",
+      "engine": "SM",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1080,
+      "id": "8",
+      "engine": "CE_REQUEST",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "checked_words": "1",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1114,
+      "id": "9",
+      "engine": "SM",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1148,
+      "id": "10",
+      "engine": "CE_REQUEST",
+      "s": "1",
+      "d": "0",
+      "bytes": "65536",
+      "checked_words": "16384",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1182,
+      "id": "11",
+      "engine": "SM",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1216,
+      "id": "12",
+      "engine": "CE_REQUEST",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "direct_route_proven": "0"
+    }
+  ],
+  "all_test_sizes_within_first_logged_PTE": true,
+  "pcie_snapshots": 150,
+  "all_pcie_config_reads_valid": true,
+  "all_sequential_pcie_deltas": [],
+  "data_done_monotonic": "13.837442182",
+  "context_exit_begin_monotonic": "13.839653378",
+  "all_frees_deferred_until_after_data": true,
+  "window_destroy_done_ids": [
+    "1",
+    "2"
+  ],
+  "kernel_clock_alignment_samples": 62,
+  "kernel_minus_monotonic_median": 0.006355843999999777,
+  "kernel_minus_monotonic_spread_seconds": 2.2833999999249954e-05,
+  "cleanup_errors": [
+    {
+      "line": 1526,
+      "raw": "[   14.215020] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x600",
+      "after_context_exit_ms": 369.0110000000004
+    },
+    {
+      "line": 1527,
+      "raw": "[   14.230616] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "after_context_exit_ms": 384.60699999999906
+    },
+    {
+      "line": 1528,
+      "raw": "[   14.230622] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "after_context_exit_ms": 384.6129999999999
+    },
+    {
+      "line": 1529,
+      "raw": "[   14.230687] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "after_context_exit_ms": 384.6779999999992
+    },
+    {
+      "line": 1530,
+      "raw": "[   14.230689] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "after_context_exit_ms": 384.6799999999995
+    },
+    {
+      "line": 1531,
+      "raw": "[   14.231931] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "after_context_exit_ms": 385.921999999999
+    },
+    {
+      "line": 1532,
+      "raw": "[   14.231933] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "after_context_exit_ms": 385.9239999999993
+    },
+    {
+      "line": 1533,
+      "raw": "[   14.231949] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "after_context_exit_ms": 385.9399999999997
+    },
+    {
+      "line": 1534,
+      "raw": "[   14.231951] NVRM: GPU0 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "after_context_exit_ms": 385.942
+    }
+  ],
+  "Xid_count": 0,
+  "program_and_wrapper_rc": 5,
+  "PROBE_COMPLETED": true,
+  "hardware_operations": false,
+  "limits": [
+    "RM/UVM equality is software trace, not hardware page-table readback or TLP capture.",
+    "Each 8 MiB mapping logs only its first PTE; all tested payloads are at most 1 MiB and therefore fall within that first 2 MiB page.",
+    "CUPTI route and activity interpretation is independently documented by cupti-independent-log-audit.json; no direct PCIe route is proven by this report.",
+    "No PCI status change does not prove absence of undetected transaction rejection or loss.",
+    "Four residual IOVAS mappings and eight asserts remain a separate cleanup defect after all twelve comparisons."
+  ]
+}

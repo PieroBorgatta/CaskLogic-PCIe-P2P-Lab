@@ -1,0 +1,22 @@
+{
+  "p2p_fixed": false,
+  "firmware_candidates_written_and_readback_verified": 2,
+  "runtime_bit_write_attempts": 4,
+  "runtime_bit_writes_effective": false,
+  "firmware_bit_writes_effective": true,
+  "combined_native_test_failures": 3,
+  "combined_native_test_operations": 4,
+  "original_code_restored_and_readback_verified": true,
+  "prior_SaSetup_P2P_setting_preserved": true,
+  "temporary_boot_entries_removed": true,
+  "original_boot_files_unchanged": true,
+  "guest_running_with_both_gpus": true,
+  "training_left_inactive": true,
+  "firmware_original_region_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "evidence": {
+    "final-registers.json": "5a9ab2bd7bcd88352d55c6844e0e0da8b390fb22f20641f3e336c310eedff82d",
+    "cleanup-verified.json": "89785bc2e02cf2f354041da3a436969feb185eee33da6b22a0e70d674eaa5e71",
+    "final-system-health.json": "e0f37e03408e644410ede6cf4128b208e7788dbeba0de6c6d7a5bcaec819c178",
+    "native-d1-gpu-results/verified-result.json": "1a2700c7cff0987211abf4a14b40b7282b44acbceba78f0fd7be9aec9cb85d4e"
+  }
+}

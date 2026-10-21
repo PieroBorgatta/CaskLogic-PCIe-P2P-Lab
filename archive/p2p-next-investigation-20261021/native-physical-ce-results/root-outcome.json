@@ -1,0 +1,18 @@
+{
+  "status": "ABORT_BEFORE_P2P_COMPARISONS",
+  "program_rc": 27,
+  "physical_submissions": 0,
+  "p2p_comparisons": 0,
+  "calibrations": 0,
+  "fd_statuses": {
+    "10": "NV_ERR_INVALID_STATE 0x40",
+    "11": "NV_ERR_ILLEGAL_ACTION 0x16"
+  },
+  "hardware_fix_proven": false,
+  "logs_sha256": {
+    "result.log": "9850efcefda7311096954ba9660edf4ca1045506e5a9bd5eebdb50545ba37e5d",
+    "kernel.log": "91522b10f7422dbc8a0902a257a24d82cfde1527102281b40386c6b9203b4564"
+  },
+  "collection_status": "cleanup_verified",
+  "note": "No CE or traffic result can be inferred from this preliminary validation abort. KIND6 versus strict KIND0 guard identified from PTE evidence; source review continues."
+}

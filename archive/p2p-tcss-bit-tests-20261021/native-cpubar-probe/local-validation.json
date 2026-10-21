@@ -1,0 +1,42 @@
+{
+  "status": "local_parser_tests_pass_candidate_not_nvcc_built",
+  "base_source_sha256": "ee49e48897817534281741bcf8131a5b0123812636834ae60d5ca8f437826cb3",
+  "original_base_sha256": "ee49e48897817534281741bcf8131a5b0123812636834ae60d5ca8f437826cb3",
+  "base_unchanged": true,
+  "files": {
+    "README.md": "f58400abdf20cfc6c33bc41d393ad164d6e4994fc765911283e11a50de0c94aa",
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "fixtures/live-window1.log": "c5c8b08814f7a660dacc587d1fb5fa45e0344736fa4f50a2d0a366af76cc0bf7",
+    "fixtures/live-window2.log": "ca5f8560ee3b266357f7678ca78db9312b208453d1aea323ea66f37db5bc87b5",
+    "fixtures/live-window3.log": "f983002b730a2dfb958efc3df8c3f1e749258033c30067081c4bca21a197d7b9",
+    "fixtures/live-window4.log": "e642715805c82afae6bcf1dfdfd538598df26999950212fb06ae13c3261e6541",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "peer_vmm_word_cpubar.cu": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30",
+    "test_cpubar_trace.cpp": "27651af60e9f7eba0d559368db698fd46b1b85692b3b955a63c0eb4093aede8a",
+    "validation-shim/sys/klog.h": "8644639bc0e045b5576190d867bff78eb7319cc71585a1e0791fdb2f490cceef"
+  },
+  "fixture_source_kernel_log_sha256": "6b3a6dde7fc7c8781ed80c616b4b5665f2ad578f06ae8f0a07231d319fd63a80",
+  "fixture_markers": "synthetic_offline_only",
+  "compile_command": [
+    "clang++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-probe/test_cpubar_trace.cpp",
+    "-o",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-probe/test_cpubar_trace"
+  ],
+  "compile_returncode": 0,
+  "fixture_stdout": "CPUBAR_PARSER_TESTS_PASS cases=425 hardware_access=0 real_fragments=4\n",
+  "fixture_returncode": 0,
+  "linux_branch_syntax": "macOS with declaration-only klogctl shim; not Linux NVCC build",
+  "linux_branch_syntax_returncode": 0,
+  "hardware_operations": false,
+  "remote_operations": false,
+  "cpu_mmio_access_mode": "read_only_4_bytes",
+  "nvcc_built": false,
+  "runtime_tested": false
+}

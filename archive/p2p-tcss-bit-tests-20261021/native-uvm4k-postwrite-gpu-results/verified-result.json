@@ -1,0 +1,180 @@
+{
+  "status": "VERIFIED_negative_P2P_trial",
+  "hashes_checked": 21,
+  "hash_failures": [],
+  "collection_sha256": {
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_01.0.config": "bdfc7736db82bc62570adf662b84e6ce2ca108b4487f6f2bd93b9f5a9de4148b",
+    "before-driver/0000_00_07.0.config": "4a6561965b6fac8b4c445a9dfbd83f21081310d6fd8768a1cf1daa14033507dd",
+    "before-driver/0000_00_07.2.config": "4b0dbbd70c6ad1de50413e84e446a5dc9fdea41f273e52f071ba407d219feee1",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/iomem.txt": "92cc7f2e03c2521518acd9dc4368affc250f29c4e17c7940a2a7cdf97dc86557",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7",
+    "build-manifest.json": "1035e8a8ffc1052101c3ffcffee7a98aba427641708d162c5475f17cae8f29c2",
+    "dmar-after-test.bin": "8b6c1518c87f0b67c4f2c24ae5d0d08c7dffaea21a6945caf666a9e0c49590d1",
+    "dmar-before-driver.bin": "8b6c1518c87f0b67c4f2c24ae5d0d08c7dffaea21a6945caf666a9e0c49590d1",
+    "files.json": "2f386f786f6034e6539fd7fa67bd52bbf350bd5bb48fe17430f8b51b4ef56897",
+    "kernel.log": "ab90ac19d26344b767d6bb35137ac7573288bcb413e9856907c42aaae3c7f3ed",
+    "result.log": "509fff18c54b129ee32ec480e3b055f0254ff2c6b7c31e92fd1631d59ee8ddb1",
+    "state.json": "d6e140852adcea1857ea70fa5394202d965b7dc2cdfb785d288b63ea774bf58b",
+    "vtd-after-test.log": "ab90ac19d26344b767d6bb35137ac7573288bcb413e9856907c42aaae3c7f3ed",
+    "vtd-before-driver.log": "1500913c2b1b264e5660f33a8fefa432b6f4e3a1d9ccb6c07285c3a34d69b830"
+  },
+  "vtd_artifact_provenance": {
+    "cask_vtd_snapshot.c": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+    "dmar_parse.inc": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552",
+    "cask_vtd_snapshot.ko": "1e37c601f8b103a44c5125149c30474e4bafb89565e97857e1556a338fbf88c6"
+  },
+  "vtd_format_discrepancy": "None: finalized source and .ko both contain PMEN_EPM_raw/PMEN_PRS_raw/PMR_status_valid; hashes exactly match build manifest",
+  "dmar": {
+    "bytes": 80,
+    "checksum_mod256": 0,
+    "before_after_identical": true,
+    "sha256": "8b6c1518c87f0b67c4f2c24ae5d0d08c7dffaea21a6945caf666a9e0c49590d1",
+    "drhd_count": 1,
+    "base": "fed91000",
+    "include_all": true,
+    "segment": 0,
+    "scope_count": 2
+  },
+  "vtd": {
+    "snapshots_before_driver_after_test_identical": true,
+    "raw": {
+      "origin": "ACPI_DRHD",
+      "base": "00000000fed91000",
+      "VER": "00000050",
+      "CAP": "00d2008c40660462",
+      "ECAP": "0000000000f050da",
+      "GSTS_before": "47000000",
+      "GSTS_after": "47000000",
+      "RTADDR": "000000003a7ac000",
+      "FSTS": "00000000",
+      "PMEN": "00000000",
+      "stable": "1"
+    },
+    "TES": 0,
+    "RTPS": 1,
+    "QIES": 1,
+    "IRES": 1,
+    "IRTPS": 1,
+    "PLMR_supported": 1,
+    "PHMR_supported": 1,
+    "PMEN_EPM": 0,
+    "PMEN_PRS": 0,
+    "PMR_status_valid": 1,
+    "four_documented_TCSS_BARs_all_zero_both_snapshots": true,
+    "TCSS_units_dereferenced": 0
+  },
+  "ccfg": {
+    "00:01.0": "00008077",
+    "00:07.0": "00009077",
+    "00:07.2": "00009077"
+  },
+  "peer_4K_chains": [
+    {
+      "dma": "4000400000",
+      "gpu_va": "76095f400000",
+      "rm_raw0": "060000040004000f",
+      "uvm_raw0": "060000040004000f",
+      "page_bytes": 4096,
+      "pte_count": 512,
+      "entry_bytes": 8,
+      "mapping_complete_count": 2
+    },
+    {
+      "dma": "4600400000",
+      "gpu_va": "76095f600000",
+      "rm_raw0": "060000046004000f",
+      "uvm_raw0": "060000046004000f",
+      "page_bytes": 4096,
+      "pte_count": 512,
+      "entry_bytes": 8,
+      "mapping_complete_count": 2
+    },
+    {
+      "dma": "4600600000",
+      "gpu_va": "76095f800000",
+      "rm_raw0": "060000046006000f",
+      "uvm_raw0": "060000046006000f",
+      "page_bytes": 4096,
+      "pte_count": 512,
+      "entry_bytes": 8,
+      "mapping_complete_count": 2
+    },
+    {
+      "dma": "4000600000",
+      "gpu_va": "76095fa00000",
+      "rm_raw0": "060000040006000f",
+      "uvm_raw0": "060000040006000f",
+      "page_bytes": 4096,
+      "pte_count": 512,
+      "entry_bytes": 8,
+      "mapping_complete_count": 2
+    }
+  ],
+  "owner_checks": {
+    "pass": 10,
+    "fail": 0
+  },
+  "p2p": {
+    "A2000_reads_Ada": false,
+    "Ada_reads_A2000": false,
+    "A2000_writes_Ada": true,
+    "Ada_writes_A2000": false,
+    "total_failures": 3,
+    "program_exit": 5
+  },
+  "cpu_bar_control": {
+    "both_two_pattern_owner_checks_pass": true,
+    "postwrite_Ada": {
+      "observed": "a5a42468",
+      "expected": "a5a42468",
+      "pass": true
+    },
+    "postwrite_A2000": {
+      "observed": "00000000",
+      "expected": "a5a42468",
+      "pass": false
+    }
+  },
+  "PCI_STATUS_deltas": [
+    [
+      "read_0_to_1",
+      "0000:00:07.0",
+      "0010",
+      "2010"
+    ],
+    [
+      "read_0_to_1",
+      "0000:06:00.0",
+      "0010",
+      "2010"
+    ],
+    [
+      "read_1_to_0",
+      "0000:00:01.0",
+      "0010",
+      "2010"
+    ],
+    [
+      "read_1_to_0",
+      "0000:01:00.0",
+      "0010",
+      "2010"
+    ]
+  ],
+  "AER_deltas": [],
+  "limits": [
+    "Two sequential VT-d snapshots, not a continuous trace or proof about any undocumented hidden remapper",
+    "Queue and interrupt remapping active flags do not imply DMA translation active",
+    "4K PTE and submission traces are software evidence, not direct hardware MMU readback",
+    "The result does not locate the failed posted write inside Intel fabric, GPU or Thunderbolt path",
+    "build-manifest hardware_boot_started=false is staging metadata, superseded by actual result/kernel logs"
+  ],
+  "remote_operations": false
+}

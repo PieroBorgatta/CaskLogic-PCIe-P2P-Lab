@@ -1,0 +1,19 @@
+--- a/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
++++ b/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
+@@ -4006,6 +4006,16 @@
+             }
+             else
+             {
++                // Experimental opt-in for this external BAR1 aperture only.
++                // Keep addresses, cache/atomic flags and lifetime paths unchanged.
++                NvU32 caskPeerCoherent = 0;
++                if ((osReadRegistryDword(pMemDesc->pGpu, "RMCaskPeerCoherent",
++                                        &caskPeerCoherent) == NV_OK) &&
++                    (caskPeerCoherent == 1))
++                {
++                    return GMMU_APERTURE_SYS_COH;
++                }
++
+                 //
+                 // Pre-Blackwell devices do not support coherent peer mapping due to
+                 // the lack of inbound atomics support. See bug 3264814.

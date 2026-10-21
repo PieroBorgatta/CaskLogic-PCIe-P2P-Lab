@@ -1,0 +1,18 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "native-pushpull-probe/peer_pushpull_cupti.cu": "47583f96e9f54f4fe06b8729ff6ebb3f6d0866f3b123146d36b07dcdab4bfe61",
+    "native-pushpull-probe/cupti_trace.h": "a59d3f1a132f2ae43b073ffc16cf86cbaf740c9bfae6c0d93c047fbb7c3adca8",
+    "native-pushpull-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-pushpull-probe/peer_pushpull_native": "4f8be7b3544ea1c00178404b16251da081905e768835560a2fffeda7ed9a193e",
+    "native-pushpull-probe/classifier-fixtures.cpp": "9f46e3fff5a64faa32493095da5656488cf4a25c403d3978c9b008380a246d7c",
+    "native-pushpull-probe/classifier.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-pushpull-probe/classifier.stderr": "35461a822aed5da4570365b00a7dca7184ff3078752470c2d34897c9682f466b",
+    "native-pushpull-probe/independent-review-firmware.json": "6b4fe01bd17cb03b9a87a00fb2b4c312312d00d7dc602b9b9e9fcf9ba2727c17",
+    "init-pushpull.sh": "ee0ad9268187e7ca7cda617186fd994116da574d818a9128a66dd6318fcc8f94",
+    "build_package.py": "b12d6203564a1678de57f4f3570938a0815a16cf0f0c46dc3b8a6b6fa5514a75"
+  },
+  "compiler": "nvcc12.6.85 staticcudart sm86/sm89 CPU-only Docker runtime=runc network=none cpus2 memory2g",
+  "classifier_validation": "40/40 ASan+UBSan, mocked CUPTI, actual classifier finish()",
+  "hardware_test_executed": false
+}

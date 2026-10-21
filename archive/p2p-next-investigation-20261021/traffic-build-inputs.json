@@ -1,0 +1,22 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "native-traffic-probe/peer_traffic.cu": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+    "native-traffic-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-traffic-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-traffic-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-traffic-probe/peer_traffic_native": "d094a0ba7cc226c591314a39a7d1604315e7021973f5bfb934d8db84f0d346fb",
+    "native-traffic-probe/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic-probe/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic-probe/source-provenance.json": "5854a9f165f47aab5e3b91c8553c926a780eb9d23ddae5ab016bfef752b44c78",
+    "native-traffic-probe/sampler-fixtures.cpp": "5aee4b1b8127dad1c66a377df6f600b669ffc1685c0ff0ab628d89e191ff8be8",
+    "native-traffic-probe/run_sampler_fixtures.py": "ed58130eae952fe22efbed6669a3dbeab60d525d860a6038a7cc1b252f9df532",
+    "native-traffic-probe/independent-sampler-review-firmware.json": "44e8ed52b959caf08670da9697392790bc91a8e793404a3a45ea609481441113",
+    "native-traffic-probe/independent-flow-review-storico.json": "bf4d47fcb8ff047e45968785ad7427847f7d983c352235650f2984968955f222",
+    "init-traffic.sh": "f7ed628c7f12c1154d48c1db748aed9209a56203696974ca704a0e025fa0d306",
+    "build_traffic_package.py": "f564497f8103478c92ad1a7e963443c3406ca355514869f8b992cfa9e2a9ca9e"
+  },
+  "runtime_tested": false,
+  "CPU_compile": "nvcc12.6.85 runc no GPU network none 2CPU 2GiB",
+  "flags": "-O2 -std=c++17 --cudart=static -gencode arch=compute_86,code=sm_86 -gencode arch=compute_89,code=sm_89 -I include -L /usr/local/cuda/lib64/stubs -lcuda -ldl -Xcompiler -pthread"
+}

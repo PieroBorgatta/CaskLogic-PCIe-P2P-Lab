@@ -1,0 +1,13 @@
+{
+  "status": "PASS_offline_delivery_and_ABI_only",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "patch_sha256": "40af6b62076705c7633b0898e0074eb38c9928377a48f741f981047f6ba300f0",
+  "roundtrip_files": 9,
+  "all_preimages_verified": true,
+  "all_postimages_verified": true,
+  "abi_c11": "PASS",
+  "abi_cpp17": "ABI v1: size144 align8, all23 offsets PASS, ioctl315, flags0x77",
+  "kernel_compiled": false,
+  "hardware_executed": false,
+  "abi_header_sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+}

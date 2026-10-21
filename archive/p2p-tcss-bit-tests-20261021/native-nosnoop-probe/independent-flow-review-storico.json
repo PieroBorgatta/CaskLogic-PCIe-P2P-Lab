@@ -1,0 +1,32 @@
+{
+  "status": "STATIC_FLOW_REVIEW_PASS",
+  "reviewer": "storico_prove",
+  "files_sha256": {
+    "peer_vmm_word_nosnoop.cu": "d7e8cf9af7964ec93206638014586f028346058c045b8a043751a9c35025427b",
+    "trial_main.inc": "c330936901293714a696f0aae5a4feadbba982a08ab4093fd50456a3332b8876",
+    "pci_attrs.h": "6780c0ceb37cbfd1585406e9e9334697e90145412456216a5eec37bd32520d31",
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "scope": "Independent source review of synchronization, allocation lifetime, all exits and restoration; no hardware or NVCC execution",
+  "checks": {
+    "four_allocations_before_phases_and_alive_until_final_restore": true,
+    "owner_H2D_and_zero_sync_before_remote_operation": true,
+    "destination_initialization_sync_before_read_kernel": true,
+    "writer_sync_before_CPU_postread_and_owner_D2H": true,
+    "owner_D2H_compare_precedes_next_initialization": true,
+    "CPU_postread_does_not_write_MMIO": true,
+    "five_phases_twenty_comparisons": true,
+    "all_exceptions_after_capture_reach_main_restore_attempt": true,
+    "partial_capture_also_detected_by_captured": true,
+    "free_only_after_restore_verified": true,
+    "SIGTERM_SIGINT_flag_observed_at_boundaries": true,
+    "no_dependency_on_destructor_restoration": true
+  },
+  "limitations": [
+    "If CUDA synchronization fails, main records the failure and still attempts bounded guarded restoration; DevSta Transactions Pending covers nonposted requests, not proof of complete GPU idleness. Such a run is aborted and cannot be a valid comparison.",
+    "SIGKILL or a fatal process/kernel failure cannot run userspace restoration; the native wrapper/reboot is the outer recovery path.",
+    "The mutable attributes are NoSnoop and RelaxedOrdering together (mask0x0810), so a changed outcome cannot isolate the two bits individually.",
+    "CPU BAR diagnostics can SKIP on missing trace/identity; their status remains separate from numerical P2P outcomes."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "Analisi statica, nessuna modifica firmware o server",
+  "physical_constraint": "Configurazione GPU e connessione USB4 invariate",
+  "binary": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+  "sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+  "finding": "Il callsite SiInitFsp 0x2a4ac non identifica un percorso TCSS; il percorso analizzato inizializza porte PCH",
+  "trace": [
+    {
+      "offset": "0x29f5a",
+      "meaning": "Funzione chiamante del callsite; indice porta in CL"
+    },
+    {
+      "offset": "0x29fa7 / 0x29fc7",
+      "meaning": "Inizializza struttura tramite 0x2b43c"
+    },
+    {
+      "offset": "0x2b44b",
+      "meaning": "Scrive tipo-controller 0x0e nella prima word della struttura"
+    },
+    {
+      "offset": "0x2b47b",
+      "meaning": "Base PCI ottenuta tramite 0xb1ab"
+    },
+    {
+      "offset": "0xb1ab",
+      "meaning": "Compone indirizzo PCI da device 0xb10a e funzione 0xb192"
+    },
+    {
+      "offset": "0xb10a",
+      "meaning": "Tabella indice 0..27 restituisce device 0x1c, 0x1d, 0x1b; non 0x07"
+    },
+    {
+      "offset": "0x2a4ac",
+      "meaning": "Unico callsite diretto trovato della routine 0x26ecd"
+    },
+    {
+      "offset": "0x26ecd",
+      "meaning": "Confronta tipo con 0x10; se minore ritorna senza scrivere"
+    },
+    {
+      "offset": "0x26ed8..0x26ee8",
+      "meaning": "Solo ramo tipo>=0x10: callback AND-OR registro 0xD0, maschere 0xf9ffffff/0x06000000"
+    }
+  ],
+  "conclusion": "Non provata alcuna patch TCSS/Thunderbolt mirata; patchare questa routine non è giustificato dal callsite esaminato",
+  "remaining": "Individuare il codice di inizializzazione TCSS/ITBT e la semantica del registro per 12900H mobile; la ricerca di costanti identiche da sola non è sufficiente",
+  "public_policy": "Header ADL-P include CpuPcieRpPeerToPeerMode[4] e CpuPcieEnablePeerMemoryWrite, senza policy ITBT peer dedicata rinvenuta"
+}

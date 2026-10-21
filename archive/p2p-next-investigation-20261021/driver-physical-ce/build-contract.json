@@ -1,0 +1,59 @@
+{
+  "status": "reviewed_for_build",
+  "builder_sha256": "432135a9009cbf41c3c1ccaa4eca22767891ccd9131b3208743fe1176bcc60e6",
+  "overlay": {
+    "kernel-open/nvidia-uvm/cask_phys_ce.inc": {
+      "source": "overlay/kernel-open/nvidia-uvm/cask_phys_ce.inc",
+      "before": null,
+      "after": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f"
+    },
+    "kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h",
+      "before": null,
+      "after": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_gpu.c",
+      "before": "66881c4ae46461314d41342b2a27df9119d68d68f90d181e3a32670dcc19f590",
+      "after": "79aaff0bef44c0e25b8261c8eb4784ed2168326d408dd4e6d5767196c19da431"
+    },
+    "kernel-open/nvidia-uvm/uvm_gpu.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_gpu.h",
+      "before": "76c578d204b32499e0004d1f1f43f9a1ce6718be13faa1394a5a63d0d1c7f9b5",
+      "after": "1fc50d101efd9b938cb071ad4e758876ac702f7f59e3fd7e23ea13d4c079782f"
+    },
+    "kernel-open/nvidia-uvm/uvm_map_external.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_map_external.c",
+      "before": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5",
+      "after": "bf54b71ab6106e2f6e4e3272b4db4a692901be008a08c963b8e92cb93f8fa10c"
+    },
+    "kernel-open/nvidia-uvm/uvm_test.c": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test.c",
+      "before": "2134c7be438b6d1d03f4435e714311021cf9e7bdc48cc4beeb0045d559eb60a8",
+      "after": "9806e1adeca228759759a52a712fbcf80e6caa11c5a1b58a0351d7a818333ece"
+    },
+    "kernel-open/nvidia-uvm/uvm_test.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test.h",
+      "before": "dddfb2d084a4ce665917e316c0cc7df74cd609cdaaa32d4d4e6aa093871ea2b7",
+      "after": "205d26435629a4e4ab40a2fe82bcfa206b0062c8bc47f369f58f9eb9fd27cd3e"
+    },
+    "kernel-open/nvidia-uvm/uvm_test_ioctl.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_test_ioctl.h",
+      "before": "54e692ed15b1e9f7eb686252029816feff96d40e3e9e01da944ba095e81de161",
+      "after": "40cb22c970dca418031f7555e0bc58c9207ecbad0d8f2c1b75739f0ed67b2fc7"
+    },
+    "kernel-open/nvidia-uvm/uvm_va_range.h": {
+      "source": "overlay/kernel-open/nvidia-uvm/uvm_va_range.h",
+      "before": "7ab4adff5c15cfeef4851e4ecbf9c57357452348718ec7f116a9b3bc336c10c2",
+      "after": "1b12095a5d8f27039e7a3cb34a866e8a9131af1bc3aa8dd07ebb6b05d2b6f722"
+    }
+  },
+  "evidence": {
+    "manifest.json": "d74748439932ec6d2a4f4f17d7ac1b3900396533ff7e948fec2f5e4ba9cf7dcb",
+    "physical-ce.patch": "9dfb9c6af93c2e08b10b0d80b0efd08b0ed8daec581cee2f3a32efce9645908e",
+    "offline-validation.json": "470df9a0f500f5dbdf84160511e173eab2e529d8a4ab55e0af71014baaaeea15",
+    "root-fortify-fix-review.json": "6ffebbe7785831e0e5823785f939a1d189dcbbc81b848a5e7309995358d6e71a",
+    "cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "cask_phys_ce.inc": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f"
+  }
+}

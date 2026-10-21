@@ -1,0 +1,15 @@
+{
+  "epoch": 1792530068.6573818,
+  "source": "OpenP2PForm.c",
+  "sha256": "a4fc7f293f2617d54e84f513c0b4227defa99a934d1cb38126d7f27fbf8e6c13",
+  "target_formset": "7B59104A-C00D-4158-87FF-F04D6396A915",
+  "target_form_id": "0x27C4",
+  "target_question_id": "0xAD0",
+  "variable": "SaSetup",
+  "offset": "0x3E3",
+  "automatic_variable_writes": false,
+  "uses_native_browser": true,
+  "flash_modifications": false,
+  "validation": "Matched form and single-byte question in official BIOS1.26; x86_64 EFI application with no imports; compiler -Wall -Wextra -Werror",
+  "uefi_spec": "https://uefi.org/specs/UEFI/2.10/35_HII_Configuration_Processing_and_Browser_Protocol.html"
+}

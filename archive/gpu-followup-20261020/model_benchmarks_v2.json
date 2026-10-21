@@ -1,0 +1,228 @@
+[
+  {
+    "name": "smoke_ddp32",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/smoke_ddp32.json",
+      "--recompute",
+      "--global-sequences",
+      "4",
+      "--warmup",
+      "1",
+      "--samples",
+      "1"
+    ],
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "single16",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "1",
+      "--depth",
+      "16",
+      "--microbatch",
+      "2",
+      "--output",
+      "/audit/single16.json"
+    ],
+    "env": {
+      "NCCL_DEBUG": "WARN"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "dual16_default",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "16",
+      "--microbatch",
+      "2",
+      "--output",
+      "/audit/dual16_default.json"
+    ],
+    "env": {
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "dual16_tuned_balanced",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "16",
+      "--microbatch",
+      "2",
+      "--output",
+      "/audit/dual16_tuned_balanced.json",
+      "--balanced"
+    ],
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "single32",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "1",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/single32.json"
+    ],
+    "env": {
+      "NCCL_DEBUG": "WARN"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "single32_recompute",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "1",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/single32_recompute.json",
+      "--recompute"
+    ],
+    "env": {
+      "NCCL_DEBUG": "WARN"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "dual32_default_recompute",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/dual32_default_recompute.json",
+      "--recompute"
+    ],
+    "env": {
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "dual32_tuned_balanced_recompute",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/dual32_tuned_balanced_recompute.json",
+      "--recompute",
+      "--balanced"
+    ],
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true
+  },
+  {
+    "name": "inference_single_vs_split",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "infer",
+      "--output",
+      "/audit/inference_single_vs_split.json"
+    ],
+    "timeout": 180,
+    "required": true
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "ESITO.md": {
+    "sha256": "ec8e0a1aa4d95680ad31da9c9b8c7d73fd29bac50d734953bebce08057b7145c",
+    "bytes": 11289
+  },
+  "ESITO-fase-precedente.md": {
+    "sha256": "5c81c1319455bcf7d803814d8aeec0395fcdd1f30ba0b30c0e0bedfb972bdcb2",
+    "bytes": 25955
+  },
+  "SITUAZIONE-ATTUALE.md": {
+    "sha256": "273aa3c8afd1672e04f70b03739469e17f5e82a9e4ad116ad27b552e04a1b469",
+    "bytes": 956
+  },
+  "WORKSTATE.md": {
+    "sha256": "b5d9036c70d07fdb851562b750d76a99f91cb84a7f96db79758304d93836297e",
+    "bytes": 23830
+  },
+  "STORICO-PROVE.md": {
+    "sha256": "df99654b6b4d71d59f7842b416b7e0f4d2ffc2a60fd9ec069a3b041934c9fe4d",
+    "bytes": 49493
+  },
+  "final-sync-system-health.json": {
+    "sha256": "f08db8ec6c6c80f2593ea81a69f40d83d9239c42e2cb494d0aa917cc1549984c",
+    "bytes": 16139
+  },
+  "final-sync-independent-review-storico.json": {
+    "sha256": "21cb257a48edb1fe92bd60417e3a84237968d62660719316171badc44c26cb3d",
+    "bytes": 3229
+  },
+  "system-driver-readonly-inspection.json": {
+    "sha256": "750c8027e14246a045a173d08dfbe5a4ccbbf29b14a3d8d6c6a93bafc8ec0d7d",
+    "bytes": 1010
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "status": "STATIC_CHAIN_PROVEN_D1_BIT26_HARDWARE_SEMANTICS_NOT_PROVEN",
+  "modules": {
+    "SiInitFsp_sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+    "SiliconPolicyPeiPostMem_sha256": "f2b08d79335536519b84af1edeed90cd910fec3ae902c6ff418b9b02aec37187"
+  },
+  "fresh_spi_extracted_matches_both_modules": true,
+  "existing_d7_candidate_leaves_d1_routine_identical": true,
+  "policy_guid": "9749a5fb-9130-44f0-8f61-dbff8ef2cac7",
+  "policy_source": {
+    "variable": "SaSetup",
+    "offset": "0x3E2 + port_index",
+    "port_index_D1F0": 1
+  },
+  "policy_destination": {
+    "base": "GetConfigBlock(9749a5fb-9130-44f0-8f61-dbff8ef2cac7)",
+    "field": "0x2C + port_index * 0x1F0",
+    "bit": 4
+  },
+  "code": {
+    "policy_function": "SiliconPolicyPeiPostMem TE RVA 0x6466",
+    "policy_copy_rva": "0x6C8B..0x6C9D",
+    "fsp_init": "0x10371",
+    "per_port_call": "0x10C9F -> 0xF438",
+    "port_bdf_helper": "0x6AC0",
+    "controller_helper": "0x6B54",
+    "ccfg_write_call": "0xF658 -> 0x168E5",
+    "register": "D1:F0 + 0xD0"
+  },
+  "ccfg_masks": {
+    "P2P_disabled_AND": "0xFE7FEF88",
+    "P2P_disabled_OR": "0x0E000077",
+    "P2P_enabled_D1_AND": "0xF47FEF88",
+    "P2P_enabled_D6_AND": "0xF07FEF88",
+    "P2P_enabled_OR": "0x00000077"
+  },
+  "evaluated": {
+    "input": "0xe008077",
+    "enabled_D1": "0x4008077",
+    "enabled_D6": "0x8077"
+  },
+  "hypothetical_change_NOT_APPLIED": {
+    "rva_file_offset": "0xF634",
+    "old": "04",
+    "new": "00",
+    "instruction": "AND ECX,0x04000000 -> AND ECX,0",
+    "effect": "clear bit26 at the existing CCFG init write when peer policy is enabled and helper6B54 returns1",
+    "scope": "D1:F0 and also D1:F1 on SKUs where index2 maps to that port",
+    "hardware_effect_and_fix_not_proven": true
+  },
+  "checks_pe": [
+    {
+      "offset": "0x6ae3",
+      "bytes": "83ee017426"
+    },
+    {
+      "offset": "0x6b0e",
+      "bytes": "c70701000000"
+    },
+    {
+      "offset": "0x6b73",
+      "bytes": "b00159c3"
+    },
+    {
+      "offset": "0xf479",
+      "bytes": "a180ce0300"
+    },
+    {
+      "offset": "0xf47f",
+      "bytes": "69cdf001000083c01c03c1"
+    },
+    {
+      "offset": "0xf61b",
+      "bytes": "f6401010741c"
+    },
+    {
+      "offset": "0xf62f",
+      "bytes": "81e10000000481c188ef7ff0"
+    },
+    {
+      "offset": "0xf63d",
+      "bytes": "c74424187700000e"
+    },
+    {
+      "offset": "0xf64b",
+      "bytes": "81c6d0000000"
+    },
+    {
+      "offset": "0xf658",
+      "bytes": "e888720000"
+    },
+    {
+      "offset": "0x10385",
+      "bytes": "6880ce0300baa06e0300"
+    },
+    {
+      "offset": "0x10c9f",
+      "bytes": "e894e7ffff"
+    }
+  ],
+  "checks_te_file_offsets": [
+    {
+      "offset": "0x6392",
+      "bytes": "8d442454ba4c3bd4ff"
+    },
+    {
+      "offset": "0x645d",
+      "bytes": "8d8424a8000000"
+    },
+    {
+      "offset": "0x6473",
+      "bytes": "681c3ed4ff68b848d4ff"
+    },
+    {
+      "offset": "0x69dc",
+      "bytes": "8b742454"
+    },
+    {
+      "offset": "0x6a3e",
+      "bytes": "69d7f0010000"
+    },
+    {
+      "offset": "0x6af3",
+      "bytes": "0fb6843c72040000c1e0043344322c83e0103144322c"
+    }
+  ],
+  "no_remote_access": true,
+  "no_firmware_mutation": true
+}

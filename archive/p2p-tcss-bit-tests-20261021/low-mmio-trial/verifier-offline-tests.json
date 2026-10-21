@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "cases": 75,
+  "passed": 75,
+  "binary_sha256": "d6f17b5e2cc01e64530c021735685c078acce8b0c4653805cacfb7f53bc828f9",
+  "source_sha256": "d2143a49731bb30d10bc5bea3ffef1147b44eca04667eec9a2af1c31b08f8a96",
+  "scope": "synthetic offline fixtures, no hardware access or static Linux build certification",
+  "results": [
+    {
+      "case": "valid",
+      "passed": true,
+      "returncode": 0,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_wrong_signature",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_hypervisor",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_missing",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_extra_token",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_extra_line",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_overflow",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "cpu_negative",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:00:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:00:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:00:01.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:00:01.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:00:07.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:00:07.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:04:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:04:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:05:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:05:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:06:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:06:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:06:00.1",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:06:00.1",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:01:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:01:00.0",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "wrong_identity_0000:01:00.1",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_config_0000:01:00.1",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:00:07.0_24",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:00:07.0_28",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:00:07.0_2c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:00:07.0_18",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:00:07.0_c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:00:07.0_start",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:00:07.0_end",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:00:07.0_flags",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:04:00.0_24",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:04:00.0_28",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:04:00.0_2c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:04:00.0_18",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:04:00.0_c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:04:00.0_start",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:04:00.0_end",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:04:00.0_flags",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:05:00.0_24",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:05:00.0_28",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:05:00.0_2c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:05:00.0_18",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_config_0000:05:00.0_c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:05:00.0_start",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:05:00.0_end",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "bridge_resource_0000:05:00.0_flags",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_config_14",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_config_18",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_config_1c",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_config_20",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_start",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_size",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_no_prefetch",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_wrong_type",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_unset",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_1_busy",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_start",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_size",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_no_prefetch",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_wrong_type",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_unset",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "gpu_resource_3_busy",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "truncated_config",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "missing_resource",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "malformed_resource",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "negative_resource",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "overflow_resource",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "extra_resource_token",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "truncated_resource_line",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "too_many_resource_lines",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    },
+    {
+      "case": "too_few_resource_lines",
+      "passed": true,
+      "returncode": 1,
+      "fixture_unchanged": true
+    }
+  ]
+}

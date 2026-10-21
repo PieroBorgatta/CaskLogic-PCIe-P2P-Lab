@@ -1,0 +1,184 @@
+[
+  {
+    "source_cuda": 0,
+    "before": {
+      "epoch": 1792528241.6718044,
+      "mode": "observe",
+      "rows": [
+        {
+          "bdf": "0000:00:01.0",
+          "exp": 64,
+          "control": 47,
+          "status": 16,
+          "acs": 29
+        },
+        {
+          "bdf": "0000:01:00.0",
+          "exp": 120,
+          "control": 272,
+          "status": 0
+        },
+        {
+          "bdf": "0000:00:07.0",
+          "exp": 64,
+          "control": 0,
+          "status": 16,
+          "acs": 29
+        },
+        {
+          "bdf": "0000:04:00.0",
+          "exp": 128,
+          "control": 10512,
+          "status": 9
+        },
+        {
+          "bdf": "0000:05:00.0",
+          "exp": 128,
+          "control": 10512,
+          "status": 9
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "exp": 120,
+          "control": 272,
+          "status": 0
+        }
+      ]
+    },
+    "applied": {
+      "epoch": 1792528241.813877,
+      "mode": "apply",
+      "rows": [
+        {
+          "bdf": "0000:00:01.0",
+          "exp": 64,
+          "control": 47,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:01:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        },
+        {
+          "bdf": "0000:00:07.0",
+          "exp": 64,
+          "control": 0,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:04:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:05:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        }
+      ]
+    }
+  },
+  {
+    "source_cuda": 1,
+    "before": {
+      "epoch": 1792528242.444601,
+      "mode": "observe",
+      "rows": [
+        {
+          "bdf": "0000:00:01.0",
+          "exp": 64,
+          "control": 47,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:01:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        },
+        {
+          "bdf": "0000:00:07.0",
+          "exp": 64,
+          "control": 0,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:04:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:05:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        }
+      ]
+    },
+    "applied": {
+      "epoch": 1792528242.5847695,
+      "mode": "apply",
+      "rows": [
+        {
+          "bdf": "0000:00:01.0",
+          "exp": 64,
+          "control": 47,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:01:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        },
+        {
+          "bdf": "0000:00:07.0",
+          "exp": 64,
+          "control": 0,
+          "status": 16,
+          "acs": 0
+        },
+        {
+          "bdf": "0000:04:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:05:00.0",
+          "exp": 128,
+          "control": 8448,
+          "status": 9
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "exp": 120,
+          "control": 256,
+          "status": 0
+        }
+      ]
+    }
+  }
+]

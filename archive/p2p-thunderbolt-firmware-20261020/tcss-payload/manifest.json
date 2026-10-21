@@ -1,0 +1,95 @@
+[
+  {
+    "image": "runtime/reports/gpu-followup-20261020/uefi-p2p/spi-backup-a.bin",
+    "image_sha256": "ad8ab9c0f7c2d09273bf4fe2f3b12be6cb203495f384f18a86e5d023ae5cfe9b",
+    "partition_start": "0x1d8000",
+    "count": 3,
+    "header_len": 20,
+    "entries": [
+      {
+        "name": "TBTP.man",
+        "offset": "0x1d805c",
+        "length": 1124,
+        "sha256": "d70cf3009e7feb1551ed682c63f2ec114bd3a1b4562f90e74012eaabfbab62b6",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/installed_spi_0_TBTP.man.bin",
+        "manifest_prefix": "04000000e10000000010020001000000868000000208222019010000244d4e32000000001000000000000b07000000001000010019008c07000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000001000000"
+      },
+      {
+        "name": "tbt.met",
+        "offset": "0x1d84c0",
+        "length": 72,
+        "sha256": "be22e27ba7be11c16186dcf9937afb9f5f97617aac7f216885a133fbcb97d5ab",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/installed_spi_0_tbt.met.bin"
+      },
+      {
+        "name": "tbt",
+        "offset": "0x1d8540",
+        "length": 262144,
+        "sha256": "b50d0f9fb732564cf8920349eba9795c06634e4f959254515962288ec77dd6c3",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/installed_spi_0_tbt.bin"
+      }
+    ]
+  },
+  {
+    "image": "runtime/reports/gpu-followup-20261020/driver-reference/bios-1.26/AHWSA.1.26.bin",
+    "image_sha256": "223d9966ef2fd75b11eb0400fa6f988806d534a8b48632aafead7345a43968af",
+    "partition_start": "0x1d8000",
+    "count": 3,
+    "header_len": 20,
+    "entries": [
+      {
+        "name": "TBTP.man",
+        "offset": "0x1d805c",
+        "length": 1124,
+        "sha256": "d70cf3009e7feb1551ed682c63f2ec114bd3a1b4562f90e74012eaabfbab62b6",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_26_0_TBTP.man.bin",
+        "manifest_prefix": "04000000e10000000010020001000000868000000208222019010000244d4e32000000001000000000000b07000000001000010019008c07000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000001000000"
+      },
+      {
+        "name": "tbt.met",
+        "offset": "0x1d84c0",
+        "length": 72,
+        "sha256": "be22e27ba7be11c16186dcf9937afb9f5f97617aac7f216885a133fbcb97d5ab",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_26_0_tbt.met.bin"
+      },
+      {
+        "name": "tbt",
+        "offset": "0x1d8540",
+        "length": 262144,
+        "sha256": "b50d0f9fb732564cf8920349eba9795c06634e4f959254515962288ec77dd6c3",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_26_0_tbt.bin"
+      }
+    ]
+  },
+  {
+    "image": "runtime/reports/gpu-followup-20261020/driver-reference/bios-1.27/AHWSA.bin",
+    "image_sha256": "dfd4ec78bfe81c33f236b222ffc9acdde648fe39641d0aa0df7e1796e0951201",
+    "partition_start": "0x1d8000",
+    "count": 3,
+    "header_len": 20,
+    "entries": [
+      {
+        "name": "TBTP.man",
+        "offset": "0x1d805c",
+        "length": 1124,
+        "sha256": "d70cf3009e7feb1551ed682c63f2ec114bd3a1b4562f90e74012eaabfbab62b6",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_27_0_TBTP.man.bin",
+        "manifest_prefix": "04000000e10000000010020001000000868000000208222019010000244d4e32000000001000000000000b07000000001000010019008c07000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000001000000"
+      },
+      {
+        "name": "tbt.met",
+        "offset": "0x1d84c0",
+        "length": 72,
+        "sha256": "be22e27ba7be11c16186dcf9937afb9f5f97617aac7f216885a133fbcb97d5ab",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_27_0_tbt.met.bin"
+      },
+      {
+        "name": "tbt",
+        "offset": "0x1d8540",
+        "length": 262144,
+        "sha256": "b50d0f9fb732564cf8920349eba9795c06634e4f959254515962288ec77dd6c3",
+        "file": "runtime/reports/p2p-thunderbolt-firmware-20261020/tcss-payload/vendor_1_27_0_tbt.bin"
+      }
+    ]
+  }
+]

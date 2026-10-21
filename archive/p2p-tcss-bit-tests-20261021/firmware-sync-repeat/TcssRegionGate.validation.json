@@ -1,0 +1,59 @@
+{
+  "version": "Sync v4",
+  "region_bytes": 122880,
+  "region_start": "0x01B0B000",
+  "checks": {
+    "PRE": {
+      "returncode": 0,
+      "scenarios": 15,
+      "all_pass": true
+    },
+    "POST_CHECK": {
+      "returncode": 0,
+      "scenarios": 14,
+      "all_pass": true
+    },
+    "RESTORE_CHECK": {
+      "returncode": 0,
+      "scenarios": 14,
+      "all_pass": true
+    }
+  },
+  "scope": "Host file-logic tests only; PRE calls file validator directly without privileged native guard. Three native ELF objects compile checked locally. No EFI execution, ESP staging or hardware writes.",
+  "CURRENT_equals_ORIGINAL": true,
+  "candidate_identical_to_previous_combined": true,
+  "native_security_guard_unchanged": true,
+  "files": {
+    "TcssRegionGate.c": {
+      "sha256": "6bd0726b0f51c448d5e453fcfe343c38ecaae6b06e722fe154aa20340163f073",
+      "bytes": 13325
+    },
+    "TcssRegionProfile.h": {
+      "sha256": "95ba04b0e681254dedbbc133dd58cd7fce21737e27f626532596f1cccaba71d4",
+      "bytes": 261
+    },
+    "TcssRegionGate.host-test.c": {
+      "sha256": "145efde6adb361f3e596a43185592c65acc65c7fb5263439a2b2a28e074a8a97",
+      "bytes": 9878
+    },
+    "ORIGINAL.bin": {
+      "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+      "bytes": 122880,
+      "crc32": "4A14C7B5"
+    },
+    "CURRENT.bin": {
+      "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+      "bytes": 122880,
+      "crc32": "4A14C7B5"
+    },
+    "CANDIDATE.bin": {
+      "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+      "bytes": 122880,
+      "crc32": "549D8326"
+    },
+    "build_region_gates.py": {
+      "sha256": "ee0b39d3a432b8bafef1775496b9eaed2d86537022f20ce483c57a36213278ad",
+      "bytes": 2022
+    }
+  }
+}

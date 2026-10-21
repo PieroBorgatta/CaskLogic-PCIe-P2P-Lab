@@ -1,0 +1,35 @@
+{
+  "status": "READY_FOR_COORDINATED_CPU_BUILD_AND_READ_ONLY_NATIVE_DIAGNOSTIC",
+  "files": {
+    "cask_vtd_snapshot.c": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+    "dmar_parse.inc": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552",
+    "Makefile": "89fff4040461eaef260c0ca7b468772b971e2976971513b8211f0c822f14f3ab",
+    "test_dmar_parser.c": "6c1a3d852bc580d3cca3c22f8021e56d805d623c9b52f8a486cea8eef6223a61",
+    "LEGGIMI.md": "913845f0e5c7f08cd5c37a80c8b60ada167528fe9e453ca5575728eee8afdbbc",
+    "offline-validation.json": "8cc5e59a06366ddc52ffc565ea8070fe9a3da1d1898e68bd0991867c09ec8c75"
+  },
+  "cpu_signature": "000906a3",
+  "hypervisor_required": false,
+  "declared_DRHD_base": "fed91000",
+  "TCSS_default_enabled": true,
+  "TCSS_profile": {
+    "pci_host_id": "46418086",
+    "MCHBAR_raw64": "00000000fedc0001",
+    "VTDBAR_offsets": [
+      "7888",
+      "7890",
+      "7898",
+      "78a0"
+    ],
+    "VTDBAR_mask": "7ffffff000",
+    "enable_bit": 0,
+    "accepted_unit_aperture": "fed00000-fedfffff"
+  },
+  "side_effects": "No control register or PCI configuration writes; MMIO mappings released during init. Module load/unload only.",
+  "source_provenance": [
+    "../reference/vtd-linux7/sources.json",
+    "../reference/vtd-linux7/coreboot-sources.json"
+  ],
+  "offline_cases": 159,
+  "hardware_access_by_author": false
+}

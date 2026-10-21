@@ -1,0 +1,56 @@
+{
+  "status": "LOCAL_REVIEW_AND_CANDIDATE_ONLY_NOT_EXECUTED",
+  "firmware_restored_by_this_work": false,
+  "reviewed_files": {
+    "cleanup_sync_trial.py": "0644c2a6d0d36c5fa6218a485828f12b67e8cc4e81f904a751474a52f6e10ede",
+    "install_sync_firmware.py": "7dd44b63b88040dac4296b17d9c0a1dd0ff912060f8530cbffc2b5165824535f",
+    "cleanup_sync_trial_verified.py": "47ef60bdff9802c70864369a61fcdded8cb925ef0020002c9569337b882236f5"
+  },
+  "restore_package_files": {
+    "CANDIDATE.bin": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+    "CURRENT.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "Fpt.efi": "d3747b061cf185f9883562a0b2ee890079872541af4f43f2caa074c2fb256a05",
+    "ORIGINAL.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "RegionPost.efi": "d4614153c855c038a7a39eda8f7fcea26168a0d54bdcc5e4afcdb0a1c5ef2ca4",
+    "RegionPre.efi": "e796d7f90e10c55f0b916d4372369b5d670f8c3ede77219421ea58ad78b634d5",
+    "RegionRestore.efi": "9976cf225cac6ba9312504d62e0313244c6578052b2a6aaf1907719b0f5564dd",
+    "Shell.efi": "24dcc034bf6a5158f43b23b71a16acbfdcf1597de55aa309f7f6ac5af90666e6",
+    "startup-restore.nsh": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309",
+    "startup.nsh": "31a58663e33e8f2cd5180bbcbb981b5f800e3bcd3976127bada1d23361fa5439"
+  },
+  "region_start": 28356608,
+  "region_bytes": 122880,
+  "original_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "original_crc32": 1242875829,
+  "expected_ccfg_after_real_restore": {
+    "00:01.0": "04008077",
+    "00:07.0": "0e009077",
+    "00:07.2": "0e009077"
+  },
+  "restore_flow_checks": [
+    "Installer--restore requireshaltedVMs,originalbootfileshash,source+ESPpackagehashandpreviouscandidateexact",
+    "Native script removesstaledumps/flags; freshcandidate dump andRegionPostgate precedeORIGINALwrite",
+    "Freshoriginalreadback+RegionRestorefullbyte/CRCcomparison+RESTOREDflag precede reset",
+    "NonzeroFPTwritestatus never replacesfullreadback verification; unverifiedpostwrite entersfatalwithoutreset"
+  ],
+  "existing_cleanup_limit": "Copies exclude SPI/kernel/initrd and copiedtreehashes are not checked before deletions; comments presume copieselsewhere withoutverification. Newcandidate copiesallfiles first andverifiesbothcompletebackups.",
+  "new_candidate": "cleanup_sync_trial_verified.py",
+  "new_candidate_checks": [
+    "Defaultread-only,explicit--execute forbackup+cleanup; Python3.6compatible",
+    "Exacthost/board/BIOS/ESP/BootCurrent/BootOrder/noBootNext",
+    "DynamicentryIDs resolvedonlyfrom2exactlabels/loaders/ESP; refusesanyextraentry",
+    "Verifiedrestorestate,ESPoriginalspanandcollectedspan,originalpackagehashes,UEFIflag/status/fullbytegate",
+    "StreamingSHA256 ofallfiles,emptydirectoriesincluded,symlinks/specialfiles/submountsrefused",
+    "Fullbackupincludingkernel/initrd/fullSPI; file+directoryfsync andhashchecks beforeanyentry/directoryremoval",
+    "Bootentries,originalfiles,CCFGandinputtreesrechecked afterbackup; finalstate+journalwritten",
+    "Interruptedcleanup retainsfullbackup; originalfilesnotdeleted"
+  ],
+  "offline_validation": "cleanup-sync-candidate-offline-validation.json:14/14CPUlocalfixturecasespassed",
+  "operational_limits": [
+    "Installer first--restore run reviewed; it isnotidempotent afterstartupreplacement/restore_armed and shouldnotbe blindlyrerun",
+    "CleanupdoesnotreadcurrentSPIitself: itchecksactualUEFIreadbackevidence plusliveCCFG; anoperator mustcollectfreshrestoreresultsfirst",
+    "IfEFIdelete succeeds thenverificationfails,theexistingboot_beforeandbackupallowmanualrecovery; journalmutationsmaynotyetlistthatdelete",
+    "SaSetupNVnotdirectlyreadbycleanup; originalFSPspanrestorewasdesigned toleavepreviousSaSetuppolicyinplace"
+  ],
+  "remote_operations": false
+}

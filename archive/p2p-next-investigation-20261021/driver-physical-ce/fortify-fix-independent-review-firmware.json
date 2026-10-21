@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "hardware_operations": false,
+  "only_semantic_change": "13 assegnazioni output esplicite sostituiscono il memset cross-field; nessun input, ABI, guardia, mapping o metodo CE cambiato",
+  "source_sha256": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f",
+  "patch_sha256": "9dfb9c6af93c2e08b10b0d80b0efd08b0ed8daec581cee2f3a32efce9645908e",
+  "old_source_sha256": "d8fdae24312cf1cb8097fc71c42e53e21620d6b7048332f1ff5fd7328f1b7db1",
+  "fields_zeroed": [
+    "source_physical",
+    "destination_physical",
+    "source_allocation_offset",
+    "destination_allocation_offset",
+    "source_rm_handle",
+    "destination_rm_handle",
+    "ce_class",
+    "launch_dma",
+    "source_phys_mode",
+    "destination_phys_mode",
+    "result_flags",
+    "rmStatus",
+    "reserved_out"
+  ],
+  "fixture_source_sha256": "0b26c375e4b50d95d719fc58a3b4098b067bc6fb0ba207a073318781fa327fa1",
+  "fixture_command": [
+    "clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "runtime/reports/p2p-next-investigation-20261021/driver-physical-ce/test_zero_outputs.c",
+    "-o",
+    "runtime/reports/p2p-next-investigation-20261021/driver-physical-ce/test_zero_outputs"
+  ],
+  "fixture_stdout": "PASS:72 input bytes unchanged;72 output bytes zero;13 explicit assignments\n",
+  "new_uvm_sha256": "9f40cd58362566aae90d5bcd10b3cdda3a2a2a7ac6457fa3228a7049c32a8247",
+  "limitation": "Prova locale del delta output; non esegue codice kernel o GPU."
+}

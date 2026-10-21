@@ -1,0 +1,32 @@
+{
+  "status": "PASS_STATIC_REVIEW_EXPECTED_RESTORE_FLOW",
+  "source": "collect_sync_restored.py",
+  "sha256": "4e845fb54327f1a48dc6400179d31033c8afd4591e8161299e6b069cce39f46a",
+  "source_modified": false,
+  "executed": false,
+  "hardware_operations": false,
+  "checks": [
+    "Host, root UID and exact ESP PARTUUID gate before collection",
+    "Output directory must not exist",
+    "BootCurrent 0000, BootOrder 0000,0001, BootNext absent",
+    "Firmware state restore_armed and identical package manifest",
+    "All package and ESP inputs hashed; startup.nsh must equal startup-restore.nsh",
+    "Candidate readback c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+    "Restored original b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9 plus full byte equality over 0x1e000",
+    "UEFI status, RESTORED flag and complete zero-mismatch gate log checked",
+    "Three exact root-port device IDs and CCFG original values checked via O_RDONLY config",
+    "Original EFI file hashes checked",
+    "Entire diagnostic ESP directory copied without modifying source; each copied file rehashed; os.sync at end",
+    "No VM management, firmware/PCI writes, boot-entry changes or source deletion"
+  ],
+  "restore_script_sha256": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309",
+  "limits": [
+    "Assertions require ordinary Python execution without -O or PYTHONOPTIMIZE.",
+    "Freshness follows the verified UEFI script deleting and recreating both readbacks and markers, plus state transition; collector alone has no independent boot nonce.",
+    "SaSetup_P2P_prior_setting_preserved describes the FSP-only restore scope; collector does not reread the SaSetup variable itself.",
+    "If copying fails, a partial output directory remains and rerun refuses to overwrite it; originals remain intact.",
+    "Review is static/local only, not evidence that restoration has already occurred."
+  ],
+  "previous_reviewed_sha256": "05ab04bcb3f7b922baf69e7653e30d5835f719d2042e35b02cef89b3b7c19e73",
+  "metadata_delta": "SaSetup preservation is now explicitly stated as inference from the FSP-only span, not an independent variable read."
+}

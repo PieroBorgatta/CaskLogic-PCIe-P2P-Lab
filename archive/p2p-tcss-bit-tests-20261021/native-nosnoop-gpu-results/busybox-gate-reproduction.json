@@ -1,0 +1,28 @@
+{
+  "busybox_sha256": "df12634c17fcdca839ae5dc47d7627b7558511f7645de7c99ccf097a0f28ed5b",
+  "result_sha256": "b60182ce923b8a4857c574b8768371b0fc20cd976b508341d66688d0febac4a7",
+  "hardware_operations": false,
+  "runs": [
+    {
+      "gate": "root-gate-original.awk",
+      "gate_sha256": "16c53d5f447fccd25222d358f9afdcee87b78a77455a394dff0a7130489c85a3",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "gate": "root-gate-debug.awk",
+      "gate_sha256": "dd65963ea7db949e2c61afe01184706f239cb6c15308e144213f573f60dfb615",
+      "exit_code": 1,
+      "stdout": "FIRSTBAD 814 ATTR_PHASE_BEGIN index=0 name=baseline_initial mode=0 allocations_unchanged=1\nCOUNTS 5 5 -1 1 1 6\n",
+      "stderr": ""
+    },
+    {
+      "gate": "root-gate-explicit-zero.awk",
+      "gate_sha256": "20389e03f6f724d491bb715d8739f7fbd4523729b2782d82329f02fc0e171c27",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

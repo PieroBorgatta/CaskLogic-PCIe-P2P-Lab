@@ -1,0 +1,37 @@
+{
+  "source": "runtime/reports/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/result.log",
+  "source_sha256": "98244c83fae5f6a3deb002c6b9a28b734a0f20e110802289b77d9225afc59a66",
+  "pci_devices": 36,
+  "target": [
+    "0x80000000",
+    "0x91ffffff"
+  ],
+  "checks": {
+    "all_resources_present": true,
+    "target_has_no_conflicts": true,
+    "root_window_exact": true,
+    "BAR1_256MiB": true,
+    "BAR3_32MiB": true,
+    "bridge_pref_flags_compatible": true,
+    "gpu_pref_flags_compatible": true,
+    "external_bus_inventory_exact": true,
+    "failure_before_nvidia_load": true,
+    "iommu_disabled_in_cmdline": true
+  },
+  "conflicts": [],
+  "status": "MAP_COMPATIBLE_RUNTIME_PREFLIGHT_STILL_REQUIRED",
+  "remaining_live_checks": [
+    "CPU CPUID and actual hypervisor bit",
+    "all GPU function driver pointers NULL",
+    "D0 and runtime-PM active/disabled without transition",
+    "config BAR/window readback equals kernel resource addresses",
+    "resource parent pointers and exact child count",
+    "atomic request_resource target reservation",
+    "external CCFG baseline gate"
+  ],
+  "notes": [
+    "Native resource maps show no obstacle for 0x80000000-0x91ffffff.",
+    "D7 original prefetch window 8GiB+32MiB remains larger than native ASM288MiB windows; helper stores each distinct original range and does not require equal sizes.",
+    "Raw config snapshots were not saved because FAT rejected colon in filename; runtime checks cannot be waived."
+  ]
+}

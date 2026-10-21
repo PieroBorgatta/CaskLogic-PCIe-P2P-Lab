@@ -1,0 +1,408 @@
+{
+  "status": "SYS_COH_effettivo_confermato_P2P_ancora_3_fallimenti_su_4",
+  "collected_sha256_verified": {
+    "files.json": "9caab7ffdf337bf32e8a730931e52e1298718c20fb40900ff43328594dd6d94c",
+    "native-coherent-postwrite-gpu-state.json": "824dcd5e4f5592305bed29ec5d7ea876905a8b94f7b61b15d7322fd486a2e492",
+    "build-manifest.json": "3be1c77b202a805e07c3cb1cab65fd21e1f7822e67f1a02aa9b9340245bc4a74",
+    "result.log": "9d29b131d02b35e709287aef975785754feceb25a91042eec4cff01fb01898f9",
+    "kernel.log": "791391a63417ff52ef6f73738f8ea9f3b8e4d1b8ee41fd0bfaf53c82a9ba5767",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_00_01.0.config": "a0ea40584ece6c70c7d30ca48c88e8d85347ece5989071886bee827ae6d7bc0a",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/0000_00_07.2.config": "4b0dbbd70c6ad1de50413e84e446a5dc9fdea41f273e52f071ba407d219feee1",
+    "before-driver/iomem.txt": "d7d3f3234417919e55007cbe15aa06bb12391012e587ae459b448044173be8a6",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7",
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_07.0.config": "2fb538390ff7ddfeb1cc5c218773988af2e81b7b4cd75fd6b241932d13c01e6f",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25"
+  },
+  "package_and_source_review": "../native-coherent-postwrite-probe/independent-package-review-storico.json",
+  "build_hashes": {
+    "module_sha256": "c89df9beff8ee414e020a46d8860ec8b198b896d262bd49d89811d03e052e7eb",
+    "uvm_module_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+    "native_program_sha256": "f5918b04fd9416d8378f962f0f772968dd877ac1a21153b82a9f4abe0ce1ad5b",
+    "native_source_sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+    "cpu_header_sha256": "b5a4627e692b929eda5689622b884b12f41e8e44259ca36585179915fe6c1170"
+  },
+  "source_identical_to_baseline": true,
+  "CPU_parser_only_change": "software enum4->HW2; enum3->HW3; rejectPEER2",
+  "GPU_identity": {
+    "0": {
+      "bdf": "0000:01:00.0",
+      "uuid": "GPU-00000000-0000-0000-0000-000000000001",
+      "pci_id": "0x28b010de"
+    },
+    "1": {
+      "bdf": "0000:06:00.0",
+      "uuid": "GPU-00000000-0000-0000-0000-000000000002",
+      "pci_id": "0x257110de"
+    }
+  },
+  "CCFG_before_driver_after_driver_after_test": {
+    "0000:00:01.0": [
+      "00008077",
+      "00008077",
+      "00008077"
+    ],
+    "0000:00:07.0": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ],
+    "0000:00:07.2": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ]
+  },
+  "registry_override": "RM64KBBAR1Mappings=0;RMCaskPeerCoherent=1",
+  "software_mapping_chains": [
+    {
+      "window_id": 1,
+      "owner": "0000:01:00.0",
+      "requester": "0000:06:00.0",
+      "gpu_va": "753b03400000",
+      "role": "src: actual peer-read/peer-write target",
+      "nonce": "a1f4b634-7ded-431e-b07d-e758cab85582",
+      "page_bytes": 2097152,
+      "entry_bytes": 16,
+      "bar": "4000000000",
+      "bar_offset": "400000",
+      "physical_dma_decoded": "4000400000",
+      "raw0": "060000040004000d",
+      "software_enum": 4,
+      "hardware_encoding": 2,
+      "readonly": 0,
+      "volatile": 1,
+      "atomic": 1,
+      "line_rm": 1403,
+      "line_uvm": 1405
+    },
+    {
+      "window_id": 2,
+      "owner": "0000:06:00.0",
+      "requester": "0000:01:00.0",
+      "gpu_va": "753b03600000",
+      "role": "dst: local output of read kernel",
+      "nonce": "411de540-fc37-4475-a700-fa23657d7c6c",
+      "page_bytes": 2097152,
+      "entry_bytes": 16,
+      "bar": "4600000000",
+      "bar_offset": "400000",
+      "physical_dma_decoded": "4600400000",
+      "raw0": "060000046004000d",
+      "software_enum": 4,
+      "hardware_encoding": 2,
+      "readonly": 0,
+      "volatile": 1,
+      "atomic": 1,
+      "line_rm": 1419,
+      "line_uvm": 1421
+    },
+    {
+      "window_id": 3,
+      "owner": "0000:06:00.0",
+      "requester": "0000:01:00.0",
+      "gpu_va": "753b03800000",
+      "role": "src: actual peer-read/peer-write target",
+      "nonce": "94768b42-7522-42ea-8f47-200e7050d8de",
+      "page_bytes": 2097152,
+      "entry_bytes": 16,
+      "bar": "4600000000",
+      "bar_offset": "600000",
+      "physical_dma_decoded": "4600600000",
+      "raw0": "060000046006000d",
+      "software_enum": 4,
+      "hardware_encoding": 2,
+      "readonly": 0,
+      "volatile": 1,
+      "atomic": 1,
+      "line_rm": 1443,
+      "line_uvm": 1445
+    },
+    {
+      "window_id": 4,
+      "owner": "0000:01:00.0",
+      "requester": "0000:06:00.0",
+      "gpu_va": "753b03a00000",
+      "role": "dst: local output of read kernel",
+      "nonce": "bef271a5-d219-431f-b7f7-a4d820371d25",
+      "page_bytes": 2097152,
+      "entry_bytes": 16,
+      "bar": "4000000000",
+      "bar_offset": "600000",
+      "physical_dma_decoded": "4000600000",
+      "raw0": "060000040006000d",
+      "software_enum": 4,
+      "hardware_encoding": 2,
+      "readonly": 0,
+      "volatile": 1,
+      "atomic": 1,
+      "line_rm": 1467,
+      "line_uvm": 1469
+    }
+  ],
+  "mapping_checks_failed": 0,
+  "mapping_checks_missing": 0,
+  "all_same_addresses_and_attributes_except_aperture": true,
+  "raw0_XOR_vs_baseline": [
+    "0x2",
+    "0x2",
+    "0x2",
+    "0x2"
+  ],
+  "owner_checks_count": 10,
+  "owner_checks_pass": 10,
+  "peer_operations": [
+    {
+      "operation": "REMOTE_READ",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 853
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "1",
+      "line": 886
+    },
+    {
+      "operation": "REMOTE_READ",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "0",
+      "line": 949
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 983
+    }
+  ],
+  "corruption_lines": [
+    "CORRUPTION read i 0 got edcba987 expected 12346641",
+    "CORRUPTION read i 0 got edcba987 expected 12346641",
+    "CORRUPTION write i 0 got 00000000"
+  ],
+  "CPU_before_peer": [
+    {
+      "owner": "0",
+      "gpu_va": "0x753b03400000",
+      "status": "PASS",
+      "reason": "two_patterns_match",
+      "restored": "1"
+    },
+    {
+      "owner": "1",
+      "gpu_va": "0x753b03800000",
+      "status": "PASS",
+      "reason": "two_patterns_match",
+      "restored": "1"
+    }
+  ],
+  "CPU_postwrite": [
+    {
+      "line": 885,
+      "owner": "0",
+      "writer": "1",
+      "bdf": "0000:01:00.0",
+      "gpu_va": "0x753b03400000",
+      "window_id": "1",
+      "physical": "4000400000",
+      "observed": "a5a42468",
+      "expected": "a5a42468",
+      "valid": "1",
+      "status": "PASS",
+      "mapping": "O_RDONLY_PROT_READ"
+    },
+    {
+      "line": 981,
+      "owner": "1",
+      "writer": "0",
+      "bdf": "0000:06:00.0",
+      "gpu_va": "0x753b03800000",
+      "window_id": "3",
+      "physical": "4600600000",
+      "observed": "00000000",
+      "expected": "a5a42468",
+      "valid": "0",
+      "status": "FAIL",
+      "mapping": "O_RDONLY_PROT_READ"
+    }
+  ],
+  "native_and_script_RC": 5,
+  "PROBE_COMPLETED": true,
+  "pcie_snapshots": 126,
+  "pcie_all_readable": true,
+  "all_sequential_pcie_deltas": [
+    {
+      "bdf": "0000:00:07.0",
+      "field": "PCI_STATUS",
+      "before": "0010",
+      "after": "2010",
+      "phase": "read_0_to_1_after"
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "field": "PCI_STATUS",
+      "before": "0010",
+      "after": "2010",
+      "phase": "read_0_to_1_after"
+    },
+    {
+      "bdf": "0000:00:01.0",
+      "field": "PCI_STATUS",
+      "before": "0010",
+      "after": "2010",
+      "phase": "read_1_to_0_after"
+    },
+    {
+      "bdf": "0000:01:00.0",
+      "field": "PCI_STATUS",
+      "before": "0010",
+      "after": "2010",
+      "phase": "read_1_to_0_after"
+    }
+  ],
+  "operation_pcie_deltas": [
+    {
+      "operation": "read_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:06:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:00:07.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    },
+    {
+      "operation": "read_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:01:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:00:01.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    }
+  ],
+  "data_done_monotonic": 13.669963975,
+  "context_exit_begin_monotonic": 13.670357475,
+  "clock_alignment": {
+    "sample_count": 41,
+    "kernel_minus_monotonic_median": 0.0063650600000002555,
+    "spread_seconds": 3.940300000060404e-05
+  },
+  "cleanup_errors": [
+    {
+      "line": 1501,
+      "raw": "[   13.947604] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100",
+      "estimated_monotonic": 13.94123894,
+      "after_context_exit_ms": 270.88146500000045
+    },
+    {
+      "line": 1502,
+      "raw": "[   13.974365] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "estimated_monotonic": 13.96799994,
+      "after_context_exit_ms": 297.6424650000009
+    },
+    {
+      "line": 1503,
+      "raw": "[   13.974371] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "estimated_monotonic": 13.96800594,
+      "after_context_exit_ms": 297.648465
+    },
+    {
+      "line": 1504,
+      "raw": "[   13.974432] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "estimated_monotonic": 13.96806694,
+      "after_context_exit_ms": 297.7094650000005
+    },
+    {
+      "line": 1505,
+      "raw": "[   13.974435] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "estimated_monotonic": 13.96806994,
+      "after_context_exit_ms": 297.71246500000007
+    },
+    {
+      "line": 1506,
+      "raw": "[   13.976414] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "estimated_monotonic": 13.97004894,
+      "after_context_exit_ms": 299.69146500000045
+    },
+    {
+      "line": 1507,
+      "raw": "[   13.976417] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "estimated_monotonic": 13.97005194,
+      "after_context_exit_ms": 299.694465
+    },
+    {
+      "line": 1508,
+      "raw": "[   13.976434] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "estimated_monotonic": 13.970068939999999,
+      "after_context_exit_ms": 299.7114649999997
+    },
+    {
+      "line": 1509,
+      "raw": "[   13.976436] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "estimated_monotonic": 13.97007094,
+      "after_context_exit_ms": 299.7134649999999
+    }
+  ],
+  "window_destroy_done_ids": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "Xid_count": 0,
+  "hardware_operations_by_reviewer": false,
+  "limits": [
+    "Il PTE software e il submit completato non sono readback delle tabelle hardware né cattura TLP.",
+    "Le operazioni sono load/store ordinari: nessuna qualifica atomiche, managed memory o produzione.",
+    "La prova non cambia simultaneamente SYS_COH e DeviceControl; non esclude ogni combinazione futura.",
+    "Il codice non corregge il cleanup IOVAS; i residui/assert registrati seguono tutti i confronti.",
+    "L’esito negativo non identifica il componente finale che impedisce la consegna né prova impossibilità hardware assoluta."
+  ]
+}

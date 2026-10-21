@@ -1,0 +1,28 @@
+{
+  "status": "READY_FOR_CPU_BUILD_NOT_EXECUTED",
+  "baseline_sha256": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+  "source_sha256": "017dc64e2de0b3b11782cbc686e6c4db708022e1d19a88fb20cecaccaed18003",
+  "makefile_sha256": "307d2384936758e2429f42144fa4d296550bb2a0d1e244bc6694f9a1da043192",
+  "delta": "one logging-only function plus one call before existing validate guards",
+  "original_recovered_byte_exact_by_removing_log_function_and_call": true,
+  "unchanged": [
+    "acceptance guards",
+    "MMIO/PCI write paths",
+    "resource transaction",
+    "PM reference handling",
+    "module parameters and name"
+  ],
+  "added_hardware_access": "CPUID reads only; no PCI accesses or power-state operations",
+  "runtime_use": "execute=0 only for requested diagnostic boot",
+  "limits": [
+    "Diagnostic fields are observations and may change while a runtime-PM transition already in flight completes.",
+    "usage_count includes one get_noresume reference per device held by this module.",
+    "No runtime resume, reset or power-state change is performed."
+  ],
+  "independent_review": {
+    "reviewer": "/root/storico_prove",
+    "status": "STATIC_PASS",
+    "note": "Only CPUID/PCIdev/PM field reads, atomic usage_count read and pr_info. No guard/resume/write delta. PM observations are not an atomic snapshot."
+  },
+  "notes_sha256": "b74199e984c61f7de1aae1b1dc9c45ceeba2c63446d7abd4951a4752110d9897"
+}

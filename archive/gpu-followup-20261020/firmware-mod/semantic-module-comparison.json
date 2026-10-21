@@ -1,0 +1,9 @@
+{
+  "original_leaf_count": 1482,
+  "candidate_leaf_count": 1482,
+  "missing": [],
+  "added": [],
+  "changed": [
+    "regions/region-bios/volume-0/file-9e21fd93-9c72-4c15-8c4b-e77f1db2d792/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-899407d7-99fe-43d8-9a21-79ec328cac21/section1.pe"
+  ]
+}

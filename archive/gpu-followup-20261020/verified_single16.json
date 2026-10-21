@@ -1,0 +1,36 @@
+{
+  "kind": "training",
+  "parameters": 268469248,
+  "layers": 16,
+  "context": 2048,
+  "global_batch_sequences": 32,
+  "global_batch_tokens": 65536,
+  "microbatch": 2,
+  "sequences_per_rank": [
+    32
+  ],
+  "world_size": 1,
+  "activation_checkpointing": false,
+  "mixed_precision": "BF16, FP32 parameters and Adam states",
+  "warmup_updates": 2,
+  "measured_updates": 5,
+  "seconds": [
+    6.404595462999964,
+    6.4157095179999715,
+    6.419146808999983,
+    6.4321366080000075,
+    6.436833641999954
+  ],
+  "median_seconds": 6.419146808999983,
+  "tokens_per_second": 10209.45648230308,
+  "losses": [
+    10.058304786682129,
+    9.99361801147461,
+    9.921552658081055,
+    9.911829948425293,
+    9.784343719482422
+  ],
+  "replica_sample_max_difference": 0.0,
+  "peak_reserved_bytes_rank0": 10498342912,
+  "scope": "Synthetic data and random weights. No production checkpoint, no compilation, no linguistic quality evaluation."
+}

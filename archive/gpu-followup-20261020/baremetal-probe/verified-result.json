@@ -1,0 +1,27 @@
+{
+  "epoch": 1792532586.5939178,
+  "valid": true,
+  "physical_native_no_Xen": true,
+  "IOMMU_disabled": true,
+  "two_GPUs_detected": true,
+  "drivers": [
+    "compiled-diagnostic",
+    "compiled-coherent"
+  ],
+  "test_bytes": 4,
+  "each_trial": {
+    "external_A2000_to_internal_Ada_write": "pass",
+    "internal_Ada_to_external_A2000_write": "fail",
+    "read_both_directions": "fail",
+    "failures": 3
+  },
+  "native_CCFG_clear_ignored": {
+    "00:01.0": "04008077",
+    "00:07.0": "0e009077"
+  },
+  "inference": "Same failure pattern without Xen/translated IOMMU; virtualization is not needed to reproduce. Exact blocking component within CPU-root/fabric/USB4 path is not yet isolated. Diagnostic driver cleanup assertions also present in kernel log.",
+  "result_sha256": "1ae0f586bec960933ada9095c886217b3c5587fa3daa4b645f385cae7a27a63c",
+  "kernel_log_sha256": "fd89bdd66c4537929e1a01d59fb82b422a2ec3f2e541d1dc103f60f90cd6bb01",
+  "training": "never started",
+  "temporary_boot_entry_and_files": "removed; original boot order and original EFI hashes verified"
+}

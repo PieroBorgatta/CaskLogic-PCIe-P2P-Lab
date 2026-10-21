@@ -1,0 +1,12 @@
+--- a/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
++++ b/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c
+@@ -3990,7 +3990,8 @@
+                 // Pre-Blackwell devices do not support coherent peer mapping due to
+                 // the lack of inbound atomics support. See bug 3264814.
+                 //
+-                return GMMU_APERTURE_SYS_NONCOH;
++                /* Diagnostic: coherent PCIe requests, with peer atomics disabled. */
++                return GMMU_APERTURE_SYS_COH;
+             }
+         }
+ 

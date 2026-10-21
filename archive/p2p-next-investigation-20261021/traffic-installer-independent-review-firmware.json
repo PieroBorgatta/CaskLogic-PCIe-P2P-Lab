@@ -1,0 +1,19 @@
+{
+  "status": "PASS_STATIC_DELTA_REVIEW",
+  "file": "ARCHIVE_ROOT/p2p-next-investigation-20261021/install_native_traffic.py",
+  "sha256": "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321",
+  "baseline_installer_sha256": "8d86cfac50fc14ba07b0afa93c72351873088dfe8258a2952faf9c784d7fca30",
+  "findings_blocking": [],
+  "verified_delta": [
+    "Directory/pacchetto/identità/label/loader/argomento initrd coerenti in CaskLogicTcssTraffic.",
+    "File di stato traffic-state e backup traffic-stage-metadata separati.",
+    "Contratto4 confronti da1MiB in PUSH con SM e CUDA_COPY_REQUEST; CE_observed_in_this_probe=False.",
+    "Funzioni delle transazioni, controlli VM/ESP/boot/CCFG, import e default sola lettura invariati.",
+    "Settimo payload NVML con hash770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de vincolato in PINNED e verifica completa CPIO ereditata."
+  ],
+  "integration_followup": "Risolto: builder verifica SHA della libreria NVML e include settimo payload; installer lo verifica nel manifesto e nello stream CPIO.",
+  "author_tests_sha256": "c46001d7fdc604130e607a2b6e5d8098135ffb734385d34fbd526abdabaaf543",
+  "scope": "Diff sorgenti locale; nessuna esecuzione entrypoint/remoto/hardware.",
+  "builder_sha256": "f564497f8103478c92ad1a7e963443c3406ca355514869f8b992cfa9e2a9ca9e",
+  "init_sha256": "f7ed628c7f12c1154d48c1db748aed9209a56203696974ca704a0e025fa0d306"
+}

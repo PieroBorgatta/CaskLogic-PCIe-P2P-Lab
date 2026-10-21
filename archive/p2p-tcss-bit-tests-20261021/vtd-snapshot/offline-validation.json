@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "fixture_cases": 159,
+  "hardware_access": false,
+  "compiled_file": "test_dmar_parser.c",
+  "included_actual_parser": "dmar_parse.inc",
+  "flags": [
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined"
+  ],
+  "source_sha256": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+  "parser_sha256": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552",
+  "fixture_sha256": "6c1a3d852bc580d3cca3c22f8021e56d805d623c9b52f8a486cea8eef6223a61",
+  "no_MMIO_or_PCI_write_apis": true,
+  "limits": "Fixtures exercise parser only; static reviews cover MMIO reads; real kernel build and hardware snapshot remain separate."
+}

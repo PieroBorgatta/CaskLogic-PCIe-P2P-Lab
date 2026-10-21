@@ -1,0 +1,6 @@
+{
+  "state": "FAILED",
+  "phase": "smoke_ddp32",
+  "error": "RuntimeError('requested stop')",
+  "reason": "requested stop"
+}

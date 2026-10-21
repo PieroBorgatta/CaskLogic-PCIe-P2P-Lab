@@ -1,0 +1,87 @@
+{
+  "cases": [
+    {
+      "all_requested_bits_cleared": false,
+      "case": "clear_bit25",
+      "changed_mask": 0,
+      "desired": 201363575,
+      "immediate": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "immediate_after_ns": 20050,
+      "mask": 33554432,
+      "settled": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "settled_after_ns": 50120642
+    },
+    {
+      "all_requested_bits_cleared": false,
+      "case": "clear_bit26",
+      "changed_mask": 0,
+      "desired": 167809143,
+      "immediate": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "immediate_after_ns": 19705,
+      "mask": 67108864,
+      "settled": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "settled_after_ns": 50195376
+    },
+    {
+      "all_requested_bits_cleared": false,
+      "case": "clear_bit27",
+      "changed_mask": 0,
+      "desired": 100700279,
+      "immediate": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "immediate_after_ns": 20330,
+      "mask": 134217728,
+      "settled": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "settled_after_ns": 50231567
+    },
+    {
+      "all_requested_bits_cleared": false,
+      "case": "clear_bits25_26_27",
+      "changed_mask": 0,
+      "desired": 36983,
+      "immediate": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "immediate_after_ns": 21652,
+      "mask": 234881024,
+      "settled": {
+        "ecam": 234918007,
+        "pci_sysfs": 234918007,
+        "regbar": 234918007
+      },
+      "settled_after_ns": 50237079
+    }
+  ],
+  "final": {
+    "ecam": 234918007,
+    "pci_sysfs": 234918007,
+    "regbar": 234918007
+  },
+  "restored": true,
+  "utc": "2026-10-20T22:15:08.919186+00:00"
+}

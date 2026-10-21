@@ -1,0 +1,21 @@
+{
+  "status": "PASS_STATIC_DELTA_REVIEW",
+  "source_sha256": "3f55762b758225756a89342e1aa3d89abf9d20d3a5327199e50b35eb3b32319b",
+  "installer_sha256": "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321",
+  "baseline_collector_sha256": "49dbb779c7f1fc470c0c6157b3871576faced06bef1847ccc8b37fb7b859ca0d",
+  "findings_blocking": [],
+  "reviewed_delta": [
+    "Import hash vincolato a installerTraffic070147 e directory/stato/backup Traffic coerenti.",
+    "Transazioni collect/cleanup e tutela originali identiche al collector Next revisionato.",
+    "Validazione4fasi e ordine SM/CUDA_COPY_REQUEST, forward/reverse; marker conclusivi unici.",
+    "RC6 preserva risultati non qualificati con protocollo completo e non li spaccia per misura valida; RC0/5 coerenti con qualificazione e fallimenti.",
+    "Owner8validi, dimensioni/mismatch, ordine temporale begin/end/join e batch/payload richiesti coerenti.",
+    "CCFGoriginali e identità GPU richiesti, ce_observed/direct_route_proven sempre0; P2P_solution_claimedFalse indipendente dal confronto."
+  ],
+  "author_fixture_report": "runtime/reports/p2p-next-investigation-20261021/traffic-installer-collector-offline-tests.json",
+  "author_fixture_report_sha256": "8dce9ebbfee36cd2ea79b10a0d971486d6c56380ce0d049b5180eb1167fa72b9",
+  "limits": [
+    "Il collector valida la raccolta e i riepiloghi del programma; il ricalcolo completo delle statistiche dai campioniNVML resta compito dell’analizzatore risultati.",
+    "Nessuna nuova esecuzione hardware/remota o entrypoint collector effettuata dal revisore."
+  ]
+}

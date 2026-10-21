@@ -1,0 +1,6 @@
+{
+  "state": "FAILED",
+  "phase": "direct_sm_peer_verify",
+  "error": "RuntimeError('required stage failed: direct_sm_peer_verify')",
+  "reason": null
+}

@@ -1,0 +1,23 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "init-physical.sh": "23972f8abfc52668383ea36b926c8dc2595b6a3da6281fd3423a886415097ac6",
+    "build_physical_package.py": "c092f4c95ea5c07e0535bbc9233b75ef6eae552b1e355319a3448365fedb43df",
+    "verify_physical_package.py": "94817640477b794e14f0a9f94cd6a934b5969274081d1b1d71c98f9ab254c649",
+    "driver-physical-ce-build-02/build-manifest.json": "957a87e341b9c9bbfdad13d95885c4fa31075a0fa5ddb93c7d33945c5cde71bd",
+    "driver-physical-ce-build-02/modules/nvidia-uvm.ko": "9f40cd58362566aae90d5bcd10b3cdda3a2a2a7ac6457fa3228a7049c32a8247",
+    "driver-physical-ce/manifest.json": "d74748439932ec6d2a4f4f17d7ac1b3900396533ff7e948fec2f5e4ba9cf7dcb",
+    "driver-physical-ce/build-contract.json": "f15c9a712538e36873ed7ce2c50d173d919bd748f98afc07512feba38b3b0ac1",
+    "driver-physical-ce/root-fortify-fix-review.json": "6ffebbe7785831e0e5823785f939a1d189dcbbc81b848a5e7309995358d6e71a",
+    "native-physical-ce-probe/peer_physical_ce_native": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+    "native-physical-ce-probe/peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "native-physical-ce-probe/phys_ce_client.h": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab",
+    "native-physical-ce-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-physical-ce-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-physical-ce-probe/include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "native-physical-ce-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-physical-ce-probe/source-provenance.json": "ba8334a956fcaebf4a2ddb52ec2a1675e88ab594f73d3f4ca2577f2f6d83b6c6",
+    "native-physical-ce-probe/offline-client-validation.json": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7",
+    "native-physical-ce-probe/independent-review-firmware.json": "f9fda893534d98dfcba67294ceada290b233060da2019dd1288716e3ec336599"
+  }
+}

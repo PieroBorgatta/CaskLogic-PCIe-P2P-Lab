@@ -1,0 +1,36 @@
+{
+  "status": "PASS_STATIC_AND_OFFLINE_FIXTURES",
+  "reviewer": "ricerca_p2p_nvidia",
+  "reviewed_header_sha256": "b5a4627e692b929eda5689622b884b12f41e8e44259ca36585179915fe6c1170",
+  "reviewed_builder_sha256": "e5127157fd3fc9c954b8af120bf7b3e1141f12e8d7401830afad10aa6cb04d4f",
+  "scope": "Solo parser enum aperture e limiti della modifica; nessuna review aggiuntiva del driver coerente n\u00e9 esecuzione hardware",
+  "facts": [
+    "gmmu_fmt.h enum: INVALID0 VIDEO1 PEER2 SYS_NONCOH3 SYS_COH4",
+    "RM_PTE aperture proviene da gmmuFieldGetAperture: valore software decodificato, non raw bits",
+    "kern_gmmu_fmt_gm10x.c associa SYS_COH a NV_MMU_PTE_APERTURE_SYSTEM_COHERENT_MEMORY; dev_mmu.h Ampere/Turing: hardware2; NONCOH hardware3",
+    "Diff ristretto a commento e due condizioni: enum3\u2192hardware3, enum4\u2192hardware2; enum2 esplicitamente escluso",
+    "Identit\u00e0, nonce, mapping/indirizzi, rawRM=rawUVM, bounds e lifetime invariati"
+  ],
+  "tests": {
+    "new_header_asan_ubsan_fixture_cases": 120,
+    "old_header_reproduces_false_coherent_skip_cases": 8,
+    "fixture_base": "Quattro frammenti reali preesistenti; variante coerente modifica solo RM enum e i due raw PTE corrispondenti",
+    "negative_cases": [
+      "enum2/0/1/5/6 con ogni campo HW",
+      "enum4 con HW3/0/1",
+      "enum3 con HW2",
+      "readonly",
+      "marker assente",
+      "window distrutta",
+      "raw UVM diverso da RM"
+    ]
+  },
+  "test_source_sha256": "868e63b8811401f85e6bf4a81a7a56fbddeea2caa2a9ae9d271ee95e01a4baa2",
+  "hardware_access": false,
+  "remote_actions": false,
+  "limits": [
+    "Prova del parser e della corrispondenza enum/campo; non certifica le PTE installate in hardware n\u00e9 risolve il trasferimento P2P",
+    "Il caso valido precedente aperture3 rimane accettato; le prove precedenti non diventano invalide per questa correzione",
+    "Letture CPU rimangono O_RDONLY/PROT_READ; nessuna modifica alle condizioni di mmap"
+  ]
+}

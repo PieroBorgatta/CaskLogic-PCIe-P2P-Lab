@@ -1,0 +1,11 @@
+[
+  {
+    "name": "double_buffered_transfers",
+    "command": [
+      "python",
+      "-u",
+      "/audit/pipeline_copy.py"
+    ],
+    "timeout": 100
+  }
+]

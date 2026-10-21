@@ -1,0 +1,38 @@
+{
+  "base": "Official Minisforum MS-01 AHWSA BIOS 1.26",
+  "base_bytes": 33554432,
+  "base_sha256": "223d9966ef2fd75b11eb0400fa6f988806d534a8b48632aafead7345a43968af",
+  "variants": [
+    {
+      "variant": "tcss-d7",
+      "offset_in_oem": 28401664,
+      "region_bytes": 77824,
+      "original_region_sha256": "b60186e3126a68a06d2fa18cf6b1ac0bb357cab48c7ee06f48ce54a8d77f31e5",
+      "candidate_region_sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e",
+      "historical_region_flashed": true,
+      "p2p_fixed": false,
+      "changed_byte_count": 72228
+    },
+    {
+      "variant": "peg-tcss-d1-d7",
+      "offset_in_oem": 28356608,
+      "region_bytes": 122880,
+      "original_region_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+      "candidate_region_sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+      "historical_region_flashed": true,
+      "p2p_fixed": false,
+      "full_image_file": "images/AHWSA-1.26-PEG-TCSS-D1-D7-EXPERIMENTAL.bin",
+      "full_image_sha256": "009e6e7b63dff823552e8dae3583b16a466ad8cbf6113cc51ea4e8b71c017759",
+      "full_image_flashed": false,
+      "changed_byte_count": 115708
+    }
+  ],
+  "menu_candidate": {
+    "file": "images/AHWSA.1.26-P2P-MENU-CANDIDATE.bin",
+    "sha256": "43e6b93504b16229eb16386309053537cf69982d9fb55f38697637af6a003713",
+    "historical_flash_performed": false,
+    "semantic_change": "Setup form reference 0x2AE2 to 0x27C4; two uncompressed module bytes; packaging recompressed",
+    "p2p_fixed": false
+  },
+  "privacy": "FSP original regions exactly match the official OEM image. Full D1/D7 image equals OEM outside the FSP span. No personal SPI/NVRAM dump used."
+}

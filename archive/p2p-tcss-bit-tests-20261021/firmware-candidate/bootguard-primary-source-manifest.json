@@ -1,0 +1,30 @@
+{
+  "slimbootloader_commit": "fbcec1f60dfc887ea9da7fe50d7289d67e7c217c",
+  "references": [
+    {
+      "url": "https://raw.githubusercontent.com/slimbootloader/slimbootloader/fbcec1f60dfc887ea9da7fe50d7289d67e7c217c/Silicon/AlderlakePkg/Include/CpuRegs.h",
+      "sha256": "299337dd147f18974c5492ef16f6ab924bf68c22fb27a6895229c8b20685e31a",
+      "local": "runtime/reports/p2p-tcss-bit-tests-20261021/firmware-candidate/ref-CpuRegs.h"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/slimbootloader/slimbootloader/fbcec1f60dfc887ea9da7fe50d7289d67e7c217c/Silicon/CommonSocPkg/Library/BootGuardLibCBnT/BootGuardRegister.h",
+      "sha256": "cb083bdf43fe713e0516727d9d0c160123f2da8cc3fa171db51609f6e3804c34",
+      "local": "runtime/reports/p2p-tcss-bit-tests-20261021/firmware-candidate/ref-BootGuardRegister.h"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/slimbootloader/slimbootloader/fbcec1f60dfc887ea9da7fe50d7289d67e7c217c/Silicon/CommonSocPkg/Library/BootGuardLibCBnT/BootGuardLibrary.c",
+      "sha256": "329ea95c820b55973a6ffb634ff94df939337178bfb6f41630e78efc4d25f782",
+      "local": "runtime/reports/p2p-tcss-bit-tests-20261021/firmware-candidate/ref-BootGuardLibrary.c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/slimbootloader/slimbootloader/fbcec1f60dfc887ea9da7fe50d7289d67e7c217c/Platform/AlderlakeBoardPkg/BoardConfig.py",
+      "sha256": "b4bb85ed77f7b3f352003eecd4acd3a2095079a2a4c752c05b1f26b0d1171b6b",
+      "local": "runtime/reports/p2p-tcss-bit-tests-20261021/firmware-candidate/ref-BoardConfig.py"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/slimbootloader/slimbootloader/fbcec1f60dfc887ea9da7fe50d7289d67e7c217c/Platform/AlderlakeBoardPkg/BoardConfigAdlP.py",
+      "sha256": "406b6e0c4a54813dbef7cacc6b1388b3d17060f46ea481927756781f7bbab68f",
+      "local": "runtime/reports/p2p-tcss-bit-tests-20261021/firmware-candidate/ref-BoardConfigAdlP.py"
+    }
+  ]
+}

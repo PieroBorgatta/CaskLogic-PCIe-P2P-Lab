@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "valid": false,
+  "script_rc": 5,
+  "total_failures": 3,
+  "rows": [
+    "REMOTE_READ s=0 d=1 bytes=4 valid=0",
+    "REMOTE_WRITE s=1 d=0 bytes=4 valid=1",
+    "REMOTE_READ s=1 d=0 bytes=4 valid=0",
+    "REMOTE_WRITE s=0 d=1 bytes=4 valid=0"
+  ],
+  "tcss_9077_before_after_load_after_test": true,
+  "internal_ccfg": "04008077",
+  "virtualization": "native Linux; hypervisor guard passed",
+  "iommu": "disabled kernel command line",
+  "test": "TCSS-only firmware candidate",
+  "kernel_gpu_anomalies": [
+    "[   13.372954] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100",
+    "[   13.397920] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+    "[   13.397925] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+    "[   13.397971] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+    "[   13.397974] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+    "[   13.399972] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+    "[   13.399974] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+    "[   13.399991] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+    "[   13.399993] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "torch": "2.10.0+cu126",
+  "cuda": "12.6",
+  "mode": "memory",
+  "device": 0,
+  "started_epoch": 1792522754.5828834,
+  "cases": [],
+  "gpu": {
+    "name": "NVIDIA RTX 2000 Ada Generation",
+    "uuid": "00000000-0000-0000-0000-000000000001",
+    "total_memory": 16724066304
+  },
+  "vram": {
+    "tested_bytes": 13153337344,
+    "free_at_start": 16624386048,
+    "total": 16724066304,
+    "patterns_per_pass": 5,
+    "passes": [
+      {
+        "pass": 1,
+        "errors": 0
+      },
+      {
+        "pass": 2,
+        "errors": 0
+      },
+      {
+        "pass": 3,
+        "errors": 0
+      }
+    ],
+    "errors": 0,
+    "elapsed_seconds": 3.9623493220000228
+  },
+  "memory_bandwidth": {
+    "median_ms": 10.399195671081543,
+    "min_ms": 10.397695541381836,
+    "max_ms": 10.402048110961914,
+    "samples_ms": [
+      10.397695541381836,
+      10.399195671081543,
+      10.401280403137207,
+      10.402048110961914,
+      10.399104118347168
+    ],
+    "repetitions": 8,
+    "bytes_per_copy": 1073741824,
+    "payload_GBps": 103.25239162350795,
+    "read_plus_write_GBps": 206.5047832470159,
+    "correct": true
+  },
+  "finished_epoch": 1792522759.6380794
+}

@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "valid": false,
+  "rc": 5,
+  "rows": [
+    "REMOTE_READ s=0 d=1 bytes=4 valid=0",
+    "REMOTE_WRITE s=1 d=0 bytes=4 valid=1",
+    "REMOTE_READ s=1 d=0 bytes=4 valid=0",
+    "REMOTE_WRITE s=0 d=1 bytes=4 valid=0"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source_sha256": "6bd0726b0f51c448d5e453fcfe343c38ecaae6b06e722fe154aa20340163f073",
+  "builds": {
+    "RegionPre": {
+      "sha256": "e796d7f90e10c55f0b916d4372369b5d670f8c3ede77219421ea58ad78b634d5",
+      "bytes": 59495,
+      "defines": []
+    },
+    "RegionPost": {
+      "sha256": "d4614153c855c038a7a39eda8f7fcea26168a0d54bdcc5e4afcdb0a1c5ef2ca4",
+      "bytes": 57971,
+      "defines": [
+        "-DPOST_CHECK"
+      ]
+    },
+    "RegionRestore": {
+      "sha256": "9976cf225cac6ba9312504d62e0313244c6578052b2a6aaf1907719b0f5564dd",
+      "bytes": 57971,
+      "defines": [
+        "-DRESTORE_CHECK"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+--- a/kernel-open/nvidia/nv-dma.c
++++ b/kernel-open/nvidia/nv-dma.c
+@@ -809,6 +809,17 @@
+          */
+         NvU64 offset = *va - res->start;
+         *va = pci_bus_address(peer_pci_dev, bar_index) + offset;
++        /* Diagnostic only: verified physical BAR1 bases for the two GPUs
++         * assigned to this Xen VM. Applies solely to their BAR1 window,
++         * after the allocation and resource bounds checks above.
++         * No system-RAM addresses or unrelated devices are changed. */
++        if (bar_index == 1 && peer_pci_dev->vendor == 0x10de)
++        {
++            if (peer_pci_dev->device == 0x28b0 && res->start == 0x800000000ULL)
++                *va = 0x4000000000ULL + offset;
++            else if (peer_pci_dev->device == 0x2571 && res->start == 0xc00000000ULL)
++                *va = 0x4600000000ULL + offset;
++        }
+         status = NV_OK;
+     }
+ 

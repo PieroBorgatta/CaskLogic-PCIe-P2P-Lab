@@ -1,0 +1,23 @@
+{
+  "status": "independent_static_review_no_blocking_finding",
+  "files": {
+    "uvm-peer-4k.patch": "3fe976ddeec6a90a258d6cd97df521c442f60b3a60eb85b9a81f41511fe284a5",
+    "build_uvm_only.py": "1effce6a72f7e02ec11f15aeb03153103a2c7df097f3ce757e33f8c00290931b",
+    "manifest.json": "df28028c0d8ced9a68223f68666ad0d9637db6abd6cbdbb1ff396abb838c178e",
+    "uvm_map_external.c": "e12feb849fdaa884f87117b72006af7ed6d037961662db8900a0ef5c672ae405"
+  },
+  "checked": [
+    "Opt-in read-only module parameter default false",
+    "Only external cross-GPU vidmem mapping gets 4K clamp",
+    "4K capability checked before assigning mapping_page_size and mem_info.pageSize",
+    "Original VA, offset, length alignment at least4K remains compatible",
+    "No change to RM addresses, owner mappings, allocation ownership, or cleanup",
+    "Builder verifies preimages and source/module hashes, copies tree into new output, builds onlyUVM, retains originalRM hash",
+    "No modules_install or module load in builder"
+  ],
+  "limitations": [
+    "Opt-in affects all peer vidmem transports, not exclusively BAR1",
+    "Static review does not establish actual emitted PTE or runtime fix",
+    "No compilation or hardware operation by this review"
+  ]
+}

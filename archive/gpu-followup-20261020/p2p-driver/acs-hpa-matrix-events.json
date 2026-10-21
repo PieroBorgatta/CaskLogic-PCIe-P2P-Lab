@@ -1,0 +1,279 @@
+[
+  {
+    "epoch": 1792526980.009491,
+    "command": [
+      "systemctl",
+      "is-active",
+      "riscrivo-training.service"
+    ],
+    "rc": 3,
+    "out": "inactive\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.0903263,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.112495,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.1186888,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.12352,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.495849,
+    "command": [
+      "systemctl",
+      "mask",
+      "--runtime",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": "Created symlink '/run/systemd/system/nvidia-cdi-refresh.service' \u2192 '/dev/null'.\n"
+  },
+  {
+    "epoch": 1792526980.555675,
+    "command": [
+      "fuser",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidiactl",
+      "/dev/nvidia-uvm"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526980.6921587,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.6466568,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.6486204,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.7241778,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.8048573,
+    "command": [
+      "insmod",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-xen-bar/nvidia.ko",
+      "NVreg_RegistryDwords=ForceP2P=0x11;RMForceP2PType=1;RMPcieP2PType=1;RMForceStaticBar1=0"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.8402255,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526981.8416522,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526985.0967226,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526985.1295526,
+    "command": [
+      "nvidia-smi",
+      "-q",
+      "-d",
+      "MEMORY"
+    ],
+    "rc": 0,
+    "out": "\n==============NVSMI LOG==============\n\nTimestamp                                              : Tue Oct 20 20:09:45 2026\nDriver Version                                         : 595.99.02\nCUDA Version                                           : 13.2\n\nAttached GPUs                                          : 2\nGPU 00000000:00:06.0\n    FB Memory Usage\n        Total                                          : 12282 MiB\n        Reserved                                       : 376 MiB\n        Used                                           : 1 MiB\n        Free                                           : 11906 MiB\n    BAR1 Memory Usage\n        Total                                          : 8192 MiB\n        Used                                           : 1 MiB\n        Free                                           : 8191 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n\nGPU 00000000:00:09.0\n    FB Memory Usage\n        Total                                          : 16380 MiB\n        Reserved                                       : 431 MiB\n        Used                                           : 2 MiB\n        Free                                           : 15949 MiB\n    BAR1 Memory Usage\n        Total                                          : 16384 MiB\n        Used                                           : 1 MiB\n        Free                                           : 16383 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792526985.1359289,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": "Job failed. See \"journalctl -xe\" for details.\n"
+  },
+  {
+    "epoch": 1792526985.1410913,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792526985.147096,
+    "command": [
+      "systemctl",
+      "start",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792527042.2180264,
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "riscrivo-compiled-p2p"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": "Error response from daemon: cannot remove container \"riscrivo-compiled-p2p\": could not kill container: tried to kill container, but did not receive an exit event\n"
+  },
+  {
+    "epoch": 1792527064.8622537,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792527064.8814952,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792527064.885722,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792527064.889068,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792527064.8902438,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": "modprobe: FATAL: Module nvidia_uvm is in use.\n"
+  }
+]

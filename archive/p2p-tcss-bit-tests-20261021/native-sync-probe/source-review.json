@@ -1,0 +1,44 @@
+{
+  "files": {
+    "peer_vmm_word_sync.cu": "0b8dfdbfa3a1235a563f987d8c64093cff92e506e72ec1e5738e064629462972",
+    "init-tcss-native.sh": "fafa4d92e606bdc73232d76094e9a9c9fc2d4c3d9d3bc01bf1a4a03981211af2",
+    "build_native_repeat.py": "17e43b8c9b338b4c927d27fb8cca5b5dc0c4ae4d44738f1f7df333dc55479de9",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "review_scope": "Local source review only; no remote commands or GPU test",
+  "owner_init_sequence": [
+    "cudaSetDevice(owner)",
+    "VMM allocation",
+    "cudaMemcpy H2D",
+    "cudaDeviceSynchronize owner",
+    "cudaMemcpy local owner D2H and exact seed check",
+    "owner_init_ready",
+    "cudaSetDevice(peer)"
+  ],
+  "owner_zero_sequence": [
+    "cudaSetDevice(owner)",
+    "cudaMemset zero",
+    "cudaDeviceSynchronize owner",
+    "cudaMemcpy local owner D2H and exact zero check",
+    "owner_zero_ready",
+    "cudaSetDevice(peer)"
+  ],
+  "other_ordering": {
+    "destination_memset_and_read_kernel": "same device and default stream; ordered",
+    "read_kernel_then_comparison": "cudaDeviceSynchronize executing device before D2H",
+    "write_kernel_then_comparison": "cudaDeviceSynchronize executing peer after __threadfence_system kernel; switch owner and D2H",
+    "allocation_lifetime": "all four allocations retained until data_done"
+  },
+  "pcie_snapshots": 9,
+  "pcie_devices_each": 6,
+  "pci_config_access": "read-only, never clears sticky bits",
+  "historical_caveat": "Missing owner synchronization was a test limitation; not proof that it caused the observed corrupt data. This corrected run is needed to resolve that uncertainty.",
+  "ram_base": "native-probe/unpacked copied to native-sync-probe/unpacked",
+  "package_output": "native-sync-probe-package",
+  "efi_path": "EFI/CaskLogicTcssNative",
+  "syntax_checks": [
+    "Python AST parse",
+    "sh -n init"
+  ],
+  "CUDA_compile_executed_locally": false
+}

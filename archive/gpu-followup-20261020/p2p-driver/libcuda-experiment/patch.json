@@ -1,0 +1,32 @@
+{
+  "original_sha256": "192d4eedb1b39f0568f2b5423d35227d13b32b9025599e1968a9081982da207d",
+  "patched_sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+  "changes": [
+    {
+      "offset": "0x2a8566",
+      "before": "74",
+      "after": "eb",
+      "target": "0x2a85ac"
+    },
+    {
+      "offset": "0x2a8661",
+      "before": "74",
+      "after": "eb",
+      "target": "0x2a86a8"
+    },
+    {
+      "offset": "0x2cfed3",
+      "before": "74",
+      "after": "eb",
+      "target": "0x2cff16"
+    },
+    {
+      "offset": "0x43ad7c",
+      "before": "74",
+      "after": "eb",
+      "target": "0x43ade8"
+    }
+  ],
+  "scope": "isolated experimental copy; system library untouched",
+  "basis": "aikitoria mixed architecture patch, ported to 595.99.02 with disassembly"
+}

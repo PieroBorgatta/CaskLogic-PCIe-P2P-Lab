@@ -1,0 +1,30 @@
+{
+  "scope": "PHYS3 CPU-only source, modeCOHERENT1 paired with nativePHYS2 NONCOHERENT2",
+  "inputs": {
+    "peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "analyze_physical.py": "bfdc1a5a6e61838b537f80680a99e907f5f464d394670c7b1e5643b6dda70af7",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "nvml_analysis_core.py": "4d37a30bb26301355f4fbff92ca297ab217ca9e7d8c59ad1434b518836fb93d4",
+    "nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "phys_ce_client.h": "4131933670fab1d4e6e0e9cbcb34c651558061e56933e5182bb24cc668dbf2d5",
+    "client-fixtures.cpp": "b8b59099014565a897249e6175edea618840c07c3b943f0f2c2483f715f7ea0c",
+    "test_analyze_physical.py": "f34a8bc1b1b834d372e20422829c113e8008e721442496c19c60c5b04db9e0d5",
+    "include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "offline-fixture-include/cpuid.h": "a8c6c2fa6e063beb0be929b38ee56bfc823cd389b2181fcfa8da2532ce61e70f"
+  },
+  "runtime_contract": {
+    "p2p_comparisons": 4,
+    "physical_operations": 2,
+    "physical_bytes": 4,
+    "destination_mode": 1,
+    "abi": 1,
+    "ioctl": 315,
+    "calibration_windows": 4,
+    "calibration_bytes": 1048576,
+    "nvml_initialized_only_after_p2p": true,
+    "uncertain_completion": "retain and park until RAM watchdog reboot"
+  },
+  "only_functional_client_change": "strict expected destination mode2\u21921; all other tokens identical",
+  "main_unchanged": true
+}

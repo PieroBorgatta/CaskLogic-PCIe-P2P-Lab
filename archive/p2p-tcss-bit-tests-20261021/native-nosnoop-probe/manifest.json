@@ -1,0 +1,33 @@
+{
+  "status": "CANDIDATE_LOCAL_NOT_GPU_TESTED",
+  "baseline_sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+  "unchanged_baseline_prefix_except_error_exceptions_and_includes": true,
+  "unchanged_cpubar_and_pcie_headers": true,
+  "phases": [
+    "baseline_initial",
+    "ada_off",
+    "baseline_restored",
+    "both_off",
+    "baseline_final"
+  ],
+  "comparisons": 20,
+  "allocations_persistent": 4,
+  "gpu_run": false,
+  "remote_actions": false,
+  "nvcc_compile": false,
+  "tests": {
+    "decoder_and_mask_asan_ubsan_cases": 262161,
+    "cpp17_linux_branch_syntax": "PASS with klog shim and CUDA declarative stubs; not CUDA execution"
+  },
+  "files_sha256": {
+    "pci_attrs.h": "6780c0ceb37cbfd1585406e9e9334697e90145412456216a5eec37bd32520d31",
+    "trial_main.inc": "c330936901293714a696f0aae5a4feadbba982a08ab4093fd50456a3332b8876",
+    "peer_vmm_word_nosnoop.cu": "d7e8cf9af7964ec93206638014586f028346058c045b8a043751a9c35025427b",
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "test_pci_attrs.cpp": "90c0cb09765edfba623ebb5a46b0b6f6e9a3b4f203fd00641893df13b8b02bdb",
+    "main_syntax.cpp": "29ea11f83d96c88cd43688fccaaac2ee6d0da0c25dedcf567fde19839b230f82",
+    "syntax_stubs.inc": "abc9c6fc020a7b05e204505d54b0b2123e6045e0d9480c9ffa08f1694e57ef6a",
+    "README.md": "77e88c0906fb736e9b1f5c985d343a0b817de9e335c9497888d18dc394762a70"
+  }
+}

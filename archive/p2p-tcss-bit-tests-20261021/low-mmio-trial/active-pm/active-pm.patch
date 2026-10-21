@@ -1,0 +1,121 @@
+--- diagnostic/cask_low_mmio.c
++++ active-pm/cask_low_mmio.c
+@@ -1,5 +1,5 @@
+ // SPDX-License-Identifier: GPL-2.0-only
+-/* Local candidate only. Native RAM boot; topology-specific; no firmware writes. */
++/* Active-PM candidate. Native RAM boot; topology-specific; no firmware writes. */
+ #include <linux/module.h>
+ #include <linux/pci.h>
+ #include <linux/ioport.h>
+@@ -25,7 +25,7 @@
+ module_param(execute, bool, 0400);
+ module_param(base, ullong, 0400);
+ module_param_string(result, result, sizeof(result), 0444);
+-MODULE_PARM_DESC(execute, "Default false: validate only. True changes RAM-boot PCI configuration.");
++MODULE_PARM_DESC(execute, "Default false: no BAR relocation; activate_audio may run standard PM callbacks. True changes RAM-boot PCI configuration.");
+ 
+ /* Root-to-leaf bridges, external GPU+audio, internal GPU+audio. */
+ static const struct { u8 bus, devfn; u16 vendor, device; } identity[ND] = {
+@@ -54,6 +54,8 @@
+     return pci_read_config_dword(d, off, v) == PCIBIOS_SUCCESSFUL ? 0 : -EIO;
+ }
+ 
++#include "audio_pm.inc"
++
+ static int write32_verify(struct pci_dev *d, int off, u32 v)
+ {
+     u32 actual;
+@@ -289,6 +291,8 @@
+     int i;
+     u16 flags, status;
+     unsigned int tries;
++    if (verify_live_pm_ready())
++        return -EIO;
+     hardware_touched = true;
+     for (i = ND-1; i >= 0; i--) {
+         flags = old_command[i] & ~PCI_COMMAND_MASTER;
+@@ -380,6 +384,9 @@
+ static int restore_commands(void)
+ {
+     unsigned int i;
++    /* Re-read hardware identity/D0 immediately before any COMMAND enable. */
++    if (verify_live_pm_ready())
++        return -EIO;
+     /* Root first, endpoints last. Original values only after exact config/tree. */
+     for (i = 0; i < ND; i++)
+         if (command_verify(devs[i], old_command[i]))
+@@ -431,6 +438,12 @@
+ {
+     unsigned int i, locked = 0;
+     int ret;
++    /* Reject another platform before any optional runtime-PM callback. */
++    if (boot_cpu_has(X86_FEATURE_HYPERVISOR) || cpuid_eax(1) != 0x000906a3)
++        return -EPERM;
++    if ((base & (B1_SIZE - 1)) || base < 0x50400000ULL ||
++        base > 0xc0000000ULL - WIN_SIZE)
++        return -EINVAL;
+     pci_lock_rescan_remove();
+     for (i = 0; i < ND; i++) {
+         devs[i] = pci_get_domain_bus_and_slot(0, identity[i].bus, identity[i].devfn);
+@@ -438,12 +451,24 @@
+             ret = -ENODEV;
+             goto out;
+         }
+-        /* No resume or hardware access: prevent a new runtime suspend. */
++        /* Acquire all references before any resume or device_lock. */
+         pm_runtime_get_noresume(&devs[i]->dev);
+         pm_refs++;
++    }
++    /* PCI PM callbacks must never run with any device_lock held. */
++    ret = prepare_audio_pm();
++    if (ret)
++        goto out;
++    for (i = 0; i < ND; i++) {
+         device_lock(&devs[i]->dev);
+         locked++;
+     }
++    ret = verify_pm_config_resources();
++    if (ret)
++        goto out;
++    ret = verify_live_pm_ready();
++    if (ret)
++        goto out;
+     ret = validate();
+     if (ret)
+         goto out;
+@@ -457,7 +482,8 @@
+         if (ret && new_guard.parent)
+             goto retain;
+         if (!ret)
+-            strscpy(result, "preflight_ok_no_hardware_writes", sizeof(result));
++            strscpy(result, activate_audio ? "preflight_ok_pm_ready" :
++                    "preflight_ok_no_hardware_writes", sizeof(result));
+         goto out;
+     }
+     old_guard.start = old_start[0];
+@@ -480,6 +506,9 @@
+     if (ret)
+         goto failed;
+     ret = program_config(false);
++    if (ret)
++        goto failed;
++    ret = verify_live_pm_ready();
+     if (ret)
+         goto failed;
+     /* Keep guard objects until all config readbacks succeed. */
+@@ -522,7 +551,8 @@
+     while (locked)
+         device_unlock(&devs[--locked]->dev);
+     pci_unlock_rescan_remove();
+-    pr_info(PFX "result=%s rc=%d\n", result, ret);
++    pr_info(PFX "result=%s rc=%d audio_pm_prepared=%u\n", result, ret,
++            (unsigned int)audio_pm_prepared);
+     /* Keep PM references through the isolated trial after a commit/fatal state. */
+     if (!pinned)
+         while (pm_refs)
+@@ -546,4 +576,4 @@
+ module_init(low_init);
+ module_exit(low_exit);
+ MODULE_LICENSE("GPL");
+-MODULE_DESCRIPTION("CaskLogic isolated native PCI low-MMIO experiment; local candidate awaiting review");
++MODULE_DESCRIPTION("CaskLogic isolated native PCI low-MMIO experiment with verified audio runtime resume");

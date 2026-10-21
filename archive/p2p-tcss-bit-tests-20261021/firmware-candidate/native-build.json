@@ -1,0 +1,25 @@
+{
+  "build": "GNU-EFI existing headers/libs; gcc freestanding, GNU_EFI_USE_MS_ABI; ld -nostdlib -shared -Bsymbolic; objcopy -O efi-app-x86_64",
+  "writes_to_firmware": false,
+  "files": {
+    "BootGuardRead.c": {
+      "sha256": "2342a37c69d7fd012271038ee491710e7e3a260a5c5a871c17ee494acb64d61a",
+      "bytes": 7576
+    },
+    "BootGuardRead.o": {
+      "sha256": "1403c4cced35c74dbac81157794d8ed36838ac539e2b5f5b0bf7005ee2833592",
+      "bytes": 9304
+    },
+    "BootGuardRead.so": {
+      "sha256": "0dc5412cd7210fc6f370f308f79ecd99bee0e3fa4b53506f9852520a995d0dc6",
+      "bytes": 87168
+    },
+    "BootGuardRead.efi": {
+      "sha256": "794f2f8c022edf914d3351f780ee84d9c78544b20162db4284ed2ba0ea2483c7",
+      "bytes": 55682
+    }
+  },
+  "msr_instructions": [
+    " 514:\t0f 32                \trdmsr"
+  ]
+}

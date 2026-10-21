@@ -1,0 +1,13 @@
+{
+  "baseline_dir": "runtime/reports/p2p-next-investigation-20261021/native-traffic-probe",
+  "baseline_source_sha256": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+  "change": "Only quiet baseline sleep 200ms -> 2000ms, once. Source remainder and all headers byte-identical.",
+  "reason": "First native run: NVML calls take about20ms serially, leaving only1-2 quiet samples/counter in200ms; requestedminimum5 was not met.",
+  "runtime_tested": false,
+  "files": {
+    "peer_traffic.cu": "8a6d53690bee7ec028aee0dc7196e463ce4418325c8831ca59bb5b8bd8c75cc1",
+    "nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9"
+  }
+}

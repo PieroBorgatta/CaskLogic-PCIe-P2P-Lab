@@ -1,0 +1,11 @@
+{
+  "files": {
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-d1-probe/peer_vmm_word_delayed.cu": "2c3ea614b702fd6d02e940e10586976b51d80ce849b425767578d6521530d117",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-d1-probe/init-tcss-native.sh": "5e625ff6c332e0a5ee49c96395ef69ca62b6dadf743f281f491484856dc4c66e",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-d1-probe/build_native_repeat.py": "4d64b6a001093fefa17bcf4ba1f03c5da78371fef0da979befe55f8c92c5d816",
+    "runtime/reports/gpu-followup-20261020/p2p-driver/peer_vmm_word": "612a93dd9f912941ad9870fdd9403265ca4216f0c3ebfbf2917925f24f872dc5",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/driver/nvidia-dynamic.ko": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80"
+  },
+  "native_test_run_by_this_agent": false,
+  "note": "Only static local analysis; native operator is root."
+}

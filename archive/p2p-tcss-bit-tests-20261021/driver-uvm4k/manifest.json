@@ -1,0 +1,12 @@
+{
+  "source_path": "kernel-open/nvidia-uvm/uvm_map_external.c",
+  "preimage_sha256": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5",
+  "candidate_sha256": "e12feb849fdaa884f87117b72006af7ed6d037961662db8900a0ef5c672ae405",
+  "patch_sha256": "3fe976ddeec6a90a258d6cd97df521c442f60b3a60eb85b9a81f41511fe284a5",
+  "baseline_nvidia_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+  "baseline_uvm_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+  "parameter": "uvm_cask_peer_small_pages",
+  "default": false,
+  "scope": "only external cross-GPU vidmem with known owning GPU, after normal page selection; RM unchanged",
+  "status": "prepared_locally_not_compiled"
+}

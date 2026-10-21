@@ -1,0 +1,15 @@
+{
+  "status": "prepared_only_not_built_or_loaded",
+  "baseline_source": "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/driver-instrumented/instrumented-subset/src/nvidia/src/kernel/rmapi/nv_gpu_ops.c",
+  "baseline_sha256": "6b264b23b02fccd94a5c21fda80a66897d043202a695a4c269e89f71137cf141",
+  "candidate_sha256": "32973ae9a17372d08e0dfd86b1f8d949f5b127d0a74feb36bbf15345b6b6a053",
+  "patch_sha256": "8acea9734a2521ffcffe2f3ebf10f72fb41534ffe43b20372e29013fea61599e",
+  "strict_forward_and_reverse_pass": true,
+  "only_changed_function": "nvGpuOpsDeviceDestroy",
+  "purpose": "Move emergency dynamic-window drain before RM subdevice/child release. Not established as fix for observed residual mappings.",
+  "mapping_calculation_changed": false,
+  "uvm_changed": false,
+  "io_vaspace_asserts_changed": false,
+  "io_vaspace_stock_sha256": "70a6dd78b381e77a7c1a96674427a3d882afd03c02fa7bb18bb76e93754cb31e",
+  "io_vaspace_stock_identical": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_STATIC_FLOW_REVIEW",
+  "files_sha256": {
+    "peer_pushpull_cupti.cu": "47583f96e9f54f4fe06b8729ff6ebb3f6d0866f3b123146d36b07dcdab4bfe61",
+    "cupti_trace.h": "a59d3f1a132f2ae43b073ffc16cf86cbaf740c9bfae6c0d93c047fbb7c3adca8"
+  },
+  "source_modified": false,
+  "GPU_executed": false,
+  "checks": [
+    "24cases:12PUSH then12PULL,3sizes2directions2engines",
+    "8distinct allocations created once and all alive through data_done",
+    "PUSH send owner-only and receive shared; only source can access both",
+    "PULL send shared and receive owner-only; only destination can access both",
+    "Owner initialization, synchronize and fullreadback before each transfer",
+    "Executor current context/device/stream checked against PUSH source or PULL destination",
+    "Kernel and DtoDAsync use executor stream; same stream synchronize before owner D2H",
+    "All free operations deferred until all24comparisons",
+    "CUPTI source_device is separate from executor device; PtoP fields compared with data ownership",
+    "Preserved conservative coverage/dropped/error checks and direct_route_proven0"
+  ],
+  "notes": [
+    "Shared remote PULL source permissions are READWRITE, not READ-only. Executor exclusivity follows from owner-only destination. Kernels only read that source.",
+    "Static source review does not prove direct routing, CE behavior or correctness on hardware."
+  ],
+  "previous_source_sha256": "cf3b94fe9f2b0cac5bc41fdd96862612c80143f161a44789c4de4075e41dde23",
+  "additional_reviewed_delta": "Only engine ordering: PUSH SM thenCE, PULL CE thenSM. Case13 CE PULL precedes any peer-read kernel."
+}

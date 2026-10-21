@@ -1,0 +1,269 @@
+{
+  "scope": "offline logs only",
+  "records": [
+    {
+      "directory": "native-instrumented2-gpu-results",
+      "kernel_sha256": "6b3a6dde7fc7c8781ed80c616b4b5665f2ad578f06ae8f0a07231d319fd63a80",
+      "result_sha256": "23e95821ef48d953691bb3ee5541abb5eef1bae46d735f971f15f82d8cc76525",
+      "clock_alignment": {
+        "sample_count": 10,
+        "kernel_minus_monotonic_median": 0.00636271850000103,
+        "spread_seconds": 1.34710000008198e-05
+      },
+      "monotonic_phases": {
+        "data_done": 13.292596994,
+        "cleanup_begin": 13.292597587,
+        "cleanup_done": 13.292994002,
+        "context_exit_begin": 13.292994563
+      },
+      "all_created_windows_have_done": true,
+      "created_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "first_leftover_after_context_exit_seconds": 0.269029718499997,
+      "first_leftover_after_last_window_done_seconds": 0.2690609999999989,
+      "events": [
+        {
+          "line": 1412,
+          "kernel_seconds": 13.258447,
+          "raw": "[   13.258447] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=1 mem=caf0013c subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8BADE6F9EA08 iovas=600 size=200000 bar1=4000000000 bar1_size=400000000 bar1_off=400000 window_phys=4000400000 dma=4000400000 ranges=1"
+        },
+        {
+          "line": 1422,
+          "kernel_seconds": 13.258578,
+          "raw": "[   13.258578] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=2 mem=caf0013d subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8BADE6F98C08 iovas=100 size=200000 bar1=4600000000 bar1_size=10000000 bar1_off=2a0000 window_phys=46002a0000 dma=46002a0000 ranges=1"
+        },
+        {
+          "line": 1442,
+          "kernel_seconds": 13.27881,
+          "raw": "[   13.278810] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=3 mem=caf0013f subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8BADE6FAD808 iovas=100 size=200000 bar1=4600000000 bar1_size=10000000 bar1_off=4a0000 window_phys=46004a0000 dma=46004a0000 ranges=1"
+        },
+        {
+          "line": 1459,
+          "kernel_seconds": 13.278917,
+          "raw": "[   13.278917] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=4 mem=caf00142 subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8BADE6FAFC08 iovas=600 size=200000 bar1=4000000000 bar1_size=400000000 bar1_off=600000 window_phys=4000600000 dma=4000600000 ranges=1"
+        },
+        {
+          "line": 1466,
+          "kernel_seconds": 13.298975,
+          "raw": "[   13.298975] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=1 mem=caf0013c src=1 iovas=600 dma=4000400000 size=200000"
+        },
+        {
+          "line": 1467,
+          "kernel_seconds": 13.298985,
+          "raw": "[   13.298985] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=1 mem=caf0013c"
+        },
+        {
+          "line": 1468,
+          "kernel_seconds": 13.299069,
+          "raw": "[   13.299069] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=2 mem=caf0013d src=0 iovas=100 dma=46002a0000 size=200000"
+        },
+        {
+          "line": 1469,
+          "kernel_seconds": 13.299086,
+          "raw": "[   13.299086] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=2 mem=caf0013d"
+        },
+        {
+          "line": 1470,
+          "kernel_seconds": 13.299196,
+          "raw": "[   13.299196] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=3 mem=caf0013f src=0 iovas=100 dma=46004a0000 size=200000"
+        },
+        {
+          "line": 1471,
+          "kernel_seconds": 13.299211,
+          "raw": "[   13.299211] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=3 mem=caf0013f"
+        },
+        {
+          "line": 1472,
+          "kernel_seconds": 13.299319,
+          "raw": "[   13.299319] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=4 mem=caf00142 src=1 iovas=600 dma=4000600000 size=200000"
+        },
+        {
+          "line": 1473,
+          "kernel_seconds": 13.299326,
+          "raw": "[   13.299326] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=4 mem=caf00142"
+        },
+        {
+          "line": 1475,
+          "kernel_seconds": 13.568387,
+          "raw": "[   13.568387] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100"
+        },
+        {
+          "line": 1476,
+          "kernel_seconds": 13.59354,
+          "raw": "[   13.593540] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1477,
+          "kernel_seconds": 13.593546,
+          "raw": "[   13.593546] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1478,
+          "kernel_seconds": 13.59361,
+          "raw": "[   13.593610] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1479,
+          "kernel_seconds": 13.593613,
+          "raw": "[   13.593613] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1480,
+          "kernel_seconds": 13.595725,
+          "raw": "[   13.595725] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1481,
+          "kernel_seconds": 13.595728,
+          "raw": "[   13.595728] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1482,
+          "kernel_seconds": 13.595747,
+          "raw": "[   13.595747] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1483,
+          "kernel_seconds": 13.59575,
+          "raw": "[   13.595750] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        }
+      ]
+    },
+    {
+      "directory": "native-regalign-gpu-results",
+      "kernel_sha256": "564d40d8f3bcdefb06d6efdefa6d019569d23e508c8298fff2dc80a850fc4164",
+      "result_sha256": "ed531097c138a984a33cb9d9e087a1055e508f89055fd08ffe1a0156a46c5eae",
+      "clock_alignment": {
+        "sample_count": 10,
+        "kernel_minus_monotonic_median": 0.0063189209999992,
+        "spread_seconds": 2.089800000071307e-05
+      },
+      "monotonic_phases": {
+        "data_done": 13.310621668,
+        "cleanup_begin": 13.310622225,
+        "cleanup_done": 13.311004439,
+        "context_exit_begin": 13.311005162
+      },
+      "all_created_windows_have_done": true,
+      "created_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "first_leftover_after_context_exit_seconds": 0.2769109169999986,
+      "first_leftover_after_last_window_done_seconds": 0.27694499999999955,
+      "events": [
+        {
+          "line": 1400,
+          "kernel_seconds": 13.276415,
+          "raw": "[   13.276415] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=1 mem=caf0013c subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8DDFEC146808 iovas=600 size=200000 bar1=4000000000 bar1_size=400000000 bar1_off=400000 window_phys=4000400000 dma=4000400000 ranges=1"
+        },
+        {
+          "line": 1410,
+          "kernel_seconds": 13.276521,
+          "raw": "[   13.276521] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=2 mem=caf0013d subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8DDFEC134A08 iovas=100 size=200000 bar1=4600000000 bar1_size=10000000 bar1_off=400000 window_phys=4600400000 dma=4600400000 ranges=1"
+        },
+        {
+          "line": 1430,
+          "kernel_seconds": 13.296765,
+          "raw": "[   13.296765] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=3 mem=caf0013f subdev=caf00001 src=0 dst=1 src_gpu_id=100 dst_gpu_id=600 desc=FFFF8DDFEC136A08 iovas=100 size=200000 bar1=4600000000 bar1_size=10000000 bar1_off=600000 window_phys=4600600000 dma=4600600000 ranges=1"
+        },
+        {
+          "line": 1447,
+          "kernel_seconds": 13.296874,
+          "raw": "[   13.296874] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=4 mem=caf00142 subdev=caf00037 src=1 dst=0 src_gpu_id=600 dst_gpu_id=100 desc=FFFF8DDFEC135A08 iovas=600 size=200000 bar1=4000000000 bar1_size=400000000 bar1_off=600000 window_phys=4000600000 dma=4000600000 ranges=1"
+        },
+        {
+          "line": 1454,
+          "kernel_seconds": 13.316956,
+          "raw": "[   13.316956] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=1 mem=caf0013c src=1 iovas=600 dma=4000400000 size=200000"
+        },
+        {
+          "line": 1455,
+          "kernel_seconds": 13.316967,
+          "raw": "[   13.316967] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=1 mem=caf0013c"
+        },
+        {
+          "line": 1456,
+          "kernel_seconds": 13.317049,
+          "raw": "[   13.317049] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=2 mem=caf0013d src=0 iovas=100 dma=4600400000 size=200000"
+        },
+        {
+          "line": 1457,
+          "kernel_seconds": 13.317063,
+          "raw": "[   13.317063] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=2 mem=caf0013d"
+        },
+        {
+          "line": 1458,
+          "kernel_seconds": 13.317173,
+          "raw": "[   13.317173] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=3 mem=caf0013f src=0 iovas=100 dma=4600600000 size=200000"
+        },
+        {
+          "line": 1459,
+          "kernel_seconds": 13.317185,
+          "raw": "[   13.317185] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=3 mem=caf0013f"
+        },
+        {
+          "line": 1460,
+          "kernel_seconds": 13.317283,
+          "raw": "[   13.317283] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_BEGIN id=4 mem=caf00142 src=1 iovas=600 dma=4000600000 size=200000"
+        },
+        {
+          "line": 1461,
+          "kernel_seconds": 13.31729,
+          "raw": "[   13.317290] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=4 mem=caf00142"
+        },
+        {
+          "line": 1463,
+          "kernel_seconds": 13.594235,
+          "raw": "[   13.594235] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100"
+        },
+        {
+          "line": 1464,
+          "kernel_seconds": 13.618928,
+          "raw": "[   13.618928] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1465,
+          "kernel_seconds": 13.618933,
+          "raw": "[   13.618933] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1466,
+          "kernel_seconds": 13.618979,
+          "raw": "[   13.618979] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1467,
+          "kernel_seconds": 13.618982,
+          "raw": "[   13.618982] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1468,
+          "kernel_seconds": 13.621242,
+          "raw": "[   13.621242] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1469,
+          "kernel_seconds": 13.621245,
+          "raw": "[   13.621245] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        },
+        {
+          "line": 1470,
+          "kernel_seconds": 13.621259,
+          "raw": "[   13.621259] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+        },
+        {
+          "line": 1471,
+          "kernel_seconds": 13.621262,
+          "raw": "[   13.621262] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+        }
+      ]
+    }
+  ]
+}

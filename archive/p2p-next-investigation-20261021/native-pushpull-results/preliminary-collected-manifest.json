@@ -1,0 +1,22 @@
+{
+  "scope": "read-only transfer of 17 raw files; full ESP backup/cleanup pending",
+  "files": {
+    "IDENTITY.txt": "6009d33baf3c46049e2d5c3b9573745867f388c9b60587bbbbafbcefaa633596",
+    "files.json": "b498b50018f0daaaf409a1e08c58652ad12d6b093631d9306722255b086068df",
+    "build-manifest.json": "8a1313a98040ce7f212151634ced9272ed0c8ec707cca253d604991634d7645d",
+    "result.log": "125d4a9b0be44bfb6f5b8c38fbf7c8d6a6de8a7b8aa3193e5e13f5b5976786e0",
+    "kernel.log": "de7f039113f37f81898ca6ac61f1a70f16e10a98577983bb5b8e8b597a46cdd8",
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_01.0.config": "4038d4c9ac85e9bcd6a4c9a34e791bf4b0b1eb106bbd9a6e4b6fd6c0d50b6ad2",
+    "before-driver/0000_00_07.0.config": "24388931d8007a38d4a8fe32d300798e0352859f7291164d81a1c45c6a01a95e",
+    "before-driver/0000_00_07.2.config": "40a0327d87493016d948b7a75bbcbf4bf76e5848535bd8b4dc1908362887cf49",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/iomem.txt": "912022edd62e17a79d2b105d14b1d8907828e069603915134994952838346c2c",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7"
+  }
+}

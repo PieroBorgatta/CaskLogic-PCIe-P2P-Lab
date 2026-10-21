@@ -1,0 +1,23 @@
+{
+  "status": "PASS_static_VTd_wrapper_review",
+  "init_sha256": "332cd4364f19f329372d73980eddd7c15c8b37fb62db8ab5ed829b2339bf96bb",
+  "module_build_hash_reported_by_parent": "1e37c601f8b103a44c5125149c30474e4bafb89565e97857e1556a338fbf88c6",
+  "checks": [
+    "tcss=1 explicitly set on each load",
+    "before-driver and after-test separated by phase markers and DMAR/log files",
+    "Loaded module requires drhd_tcss_snapshot_ok and successful insmod; any mismatch rejects GPU run or completion",
+    "Failed init with unloaded module logs VTD_SNAPSHOT_UNAVAILABLE and does not falsely report success; GPU may continue independently",
+    "Successful insmod with missing sysfs module is rejected",
+    "rmmod failure aborts; module intended to be unloaded after each snapshot",
+    "4K parameter explicitly enabled and sysfs Y verified before CUDA",
+    "No low-MMIO relocation helper or PCI configuration writes introduced",
+    "POSIX shell syntax passed"
+  ],
+  "limits": [
+    "UNAVAILABLE is not evidence of TES=0; read-only diagnostic failure and P2P outcome must be reported independently.",
+    "Module binary contents and generated initramfs not verified by this source review.",
+    "The first devkmsg phase markers precede printk_devkmsg=on; missing markers must not be silently accepted during analysis."
+  ],
+  "remote_operations": false,
+  "hardware_operations": false
+}

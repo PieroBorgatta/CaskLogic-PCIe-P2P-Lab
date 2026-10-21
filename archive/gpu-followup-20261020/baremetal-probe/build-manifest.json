@@ -1,0 +1,9 @@
+{
+  "kernel": "7.0.0-38-generic",
+  "initrd_bytes": 215354089,
+  "initrd_sha256": "080660ffa5936529d2f3b102f354108c7c598b340cb7f0d47a5e803c955ffa46",
+  "kernel_sha256": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+  "device_access": "physical GPUs, IOMMU disabled by temporary kernel command line",
+  "disks": "only known ESP mounted for result log; XCP and VM filesystems never mounted",
+  "automatic_return": "180-second watchdog and normal end both reboot; EFI BootNext consumed"
+}

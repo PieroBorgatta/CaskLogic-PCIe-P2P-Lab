@@ -1,0 +1,89 @@
+{
+  "status": "PASS_offline_only",
+  "cases": [
+    {
+      "name": "success",
+      "pass": true,
+      "expected_refusal": null
+    },
+    {
+      "name": "readonly",
+      "pass": true,
+      "expected_refusal": null
+    },
+    {
+      "name": "corrupt_backup",
+      "pass": true,
+      "expected_refusal": "Backup hash diverso: CaskLogicTcssNative"
+    },
+    {
+      "name": "second_delete_failure",
+      "pass": true,
+      "expected_refusal": "injected efibootmgr failure"
+    },
+    {
+      "name": "wrong_restored_span",
+      "pass": true,
+      "expected_refusal": "Span originale non confermato: /var/folders/58/sk2zqn496yg9jrnygjg8n8z00000gn/T/cask-cleanup-test-b1rqlr70/esp/EFI/CaskLogicTcssSyncTest/region-restored.bin"
+    },
+    {
+      "name": "missing_restored_flag",
+      "pass": true,
+      "expected_refusal": "[Errno 2] No such file or directory: '/var/folders/58/sk2zqn496yg9jrnygjg8n8z00000gn/T/cask-cleanup-test-su67kqg_/esp/EFI/CaskLogicTcssSyncTest/RESTORED.flag'"
+    },
+    {
+      "name": "failed_restore_status",
+      "pass": true,
+      "expected_refusal": "Stato UEFI restore non valido"
+    },
+    {
+      "name": "UEFI_byte_mismatch",
+      "pass": true,
+      "expected_refusal": "Confronto UEFI completo non confermato"
+    },
+    {
+      "name": "original_boot_changed",
+      "pass": true,
+      "expected_refusal": "File avvio originale cambiato: /var/folders/58/sk2zqn496yg9jrnygjg8n8z00000gn/T/cask-cleanup-test-9bar4921/esp/EFI/original/boot.efi"
+    },
+    {
+      "name": "extra_boot_entry",
+      "pass": true,
+      "expected_refusal": "Altre voci EFI: interrompere senza eliminarle"
+    },
+    {
+      "name": "bootnext_present",
+      "pass": true,
+      "expected_refusal": "BootNext ancora presente"
+    },
+    {
+      "name": "wrong_esp_entry",
+      "pass": true,
+      "expected_refusal": "PARTUUID della voce EFI inatteso"
+    },
+    {
+      "name": "restore_not_armed",
+      "pass": true,
+      "expected_refusal": "Ripristino non risulta avviato"
+    },
+    {
+      "name": "symlink_in_target",
+      "pass": true,
+      "expected_refusal": "File non regolare: /var/folders/58/sk2zqn496yg9jrnygjg8n8z00000gn/T/cask-cleanup-test-2wx5hv8r/esp/EFI/CaskLogicTcssNative/link"
+    }
+  ],
+  "case_count": 14,
+  "source_sha256": "47ef60bdff9802c70864369a61fcdded8cb925ef0020002c9569337b882236f5",
+  "hardware_operations": false,
+  "mocked": [
+    "hostname",
+    "efibootmgr",
+    "findmnt",
+    "PCI CCFG",
+    "DMI files",
+    "geteuid",
+    "global os.sync"
+  ],
+  "filesystem": "isolated temporary local fixtures only; no real ESP touched",
+  "syntax": "PythonAST PASS"
+}

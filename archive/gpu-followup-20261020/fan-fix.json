@@ -1,0 +1,8 @@
+{
+  "epoch": 1792525034.82629,
+  "target_uuid": "GPU-00000000-0000-0000-0000-000000000001",
+  "curve": "30% at40C,100%at80C,original interpolation retained",
+  "backup": "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/fan-backup",
+  "original_sha256": "06a1943410de988f7eccfc3e315b13b6f54dd02e3bb26ecde100fe7cac15885e",
+  "new_sha256": "4cd4f76b8a1d3e56b6e4414a6f0c0d07d54cbccca95306ee9222677792e13d7e"
+}

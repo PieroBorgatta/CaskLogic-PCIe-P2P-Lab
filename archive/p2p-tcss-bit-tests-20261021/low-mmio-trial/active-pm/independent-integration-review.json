@@ -1,0 +1,25 @@
+{
+  "result": "PASS_STATIC_SOURCE_REVIEW; PACKAGE_NOT_REVIEWED",
+  "files": {
+    "low-mmio-trial/active-pm/cask_low_mmio.c": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+    "low-mmio-trial/active-pm/audio_pm.inc": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+    "native-lowmmio-probe/init-tcss-native.sh": "25ceb2f0b2c5b4bc25c46dc3bb529ec4df99df055d7d571cf6ea976fdf9c2435",
+    "native-lowmmio-probe/build_native_repeat.py": "018125edfcd3bc298c99e7c5e03d831bd645efc08dcd18845683b2c09e1a601f",
+    "install_native_lowmmio_gpu.py": "94db072edd98b86f3230eefe56d4db5a6b802e51c06335a9ff40109ab14516c4"
+  },
+  "helper_object_sha256_reported_by_parent": "2f643a3bffc6f8fe8a7a8c07da4d6ac66145d59eb99b8260f8f87951a0ee4b8d",
+  "build_guard_still_pending": false,
+  "observations": [
+    "Standard PM callbacks only for two known audio functions with physical D0 and explicit activate_audio opt-in; defaults remain false",
+    "Runtime PM refs acquired before callbacks; callbacks before all device_lock; identity, PMCSR, resources and config baseline checked before relocation",
+    "Preexisting topology/resource/transaction/rollback guards remain; no GPU load permitted after fatal/noncommitted result",
+    "Init requires exact committed result and standalone verifier PASS after relocation, driver load and test",
+    "Watchdog uses sync followed by sysrq-b at 180s, reboot-f fallback, only isolated RAM boot; sysrq file required before helper",
+    "Installer predecessor is the pending PUSH package/results, with VM halt/boot order and backup hash gates"
+  ],
+  "limits": [
+    "No local GPU/kernel-module execution or remote mutation",
+    "Static review is not proof of runtime callback liveness or successful PCIe routing",
+    "Kernel build and object digest reported by parent; package build must pin the confirmed module hash before execution"
+  ]
+}

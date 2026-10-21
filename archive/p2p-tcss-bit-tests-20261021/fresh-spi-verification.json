@@ -1,0 +1,14 @@
+{
+  "fresh_dumps_identical": true,
+  "fresh_spi_sha256": "cfe6c07a4f2113928e13198ab2b8adc52924893aa0c239982c2213feb53c5124",
+  "target_ffs_matches": true,
+  "region_start": "0x1b16000",
+  "region_bytes": 77824,
+  "region_original_sha256": "b60186e3126a68a06d2fa18cf6b1ac0bb357cab48c7ee06f48ce54a8d77f31e5",
+  "region_candidate_sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e",
+  "candidate_whole_image_sha256": "1ddc33f1e8164e1e0ee888886ebc6b709ba2c266daf69685d27b3e5a3219bdf2",
+  "outside_target_region_unchanged": true,
+  "nv_me_descriptor_preserved": true,
+  "purpose": "Analisi locale. La verifica strutturale non equivale a prova di avvio.",
+  "hardware_writes": false
+}

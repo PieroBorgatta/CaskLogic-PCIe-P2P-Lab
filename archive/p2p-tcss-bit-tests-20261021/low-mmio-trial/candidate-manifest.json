@@ -1,0 +1,59 @@
+{
+  "status": "READY_FOR_CPU_BUILD_AND_REVIEW_NOT_EXECUTED",
+  "source_sha256": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+  "compiled": false,
+  "executed": false,
+  "exports_actual_kernel": {
+    "request_resource": [
+      "0x1010dd51\trequest_resource\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "release_resource": [
+      "0xce08e170\trelease_resource\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "insert_resource": [
+      "0x14761fd9\tinsert_resource\tvmlinux\tEXPORT_SYMBOL_GPL\t"
+    ],
+    "remove_resource": [
+      "0xce08e170\tremove_resource\tvmlinux\tEXPORT_SYMBOL_GPL\t"
+    ],
+    "pci_get_domain_bus_and_slot": [
+      "0x12e4cbfe\tpci_get_domain_bus_and_slot\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_bus_resource_n": [
+      "0xbf50bdcc\tpci_bus_resource_n\tvmlinux\tEXPORT_SYMBOL_GPL\t"
+    ],
+    "pci_lock_rescan_remove": [
+      "0xd272d446\tpci_lock_rescan_remove\tvmlinux\tEXPORT_SYMBOL_GPL\t"
+    ],
+    "pci_unlock_rescan_remove": [
+      "0xd272d446\tpci_unlock_rescan_remove\tvmlinux\tEXPORT_SYMBOL_GPL\t"
+    ],
+    "pcie_capability_read_word": [
+      "0xfa2a2d07\tpcie_capability_read_word\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_read_config_word": [
+      "0xcf0f5ed6\tpci_read_config_word\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_write_config_word": [
+      "0x82fa9d87\tpci_write_config_word\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_read_config_dword": [
+      "0x44ed41cc\tpci_read_config_dword\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_write_config_dword": [
+      "0x011a1eab\tpci_write_config_dword\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "pci_dev_put": [
+      "0x179b16bc\tpci_dev_put\tvmlinux\tEXPORT_SYMBOL\t"
+    ],
+    "boot_cpu_data": [
+      "0x048fdb82\tboot_cpu_data\tvmlinux\tEXPORT_SYMBOL\t"
+    ]
+  },
+  "runtime_pm": "get_noresume/put_noidle inline; no resume issued; active/D0 required; refs retained after committed/fatal state",
+  "files": {
+    "cask_low_mmio.c": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+    "Makefile": "307d2384936758e2429f42144fa4d296550bb2a0d1e244bc6694f9a1da043192",
+    "PROPOSTA.md": "ae9d58107ef9f03611bf8149f0bc46465cc0bb9dad734c2527ea13acf748e45e"
+  }
+}

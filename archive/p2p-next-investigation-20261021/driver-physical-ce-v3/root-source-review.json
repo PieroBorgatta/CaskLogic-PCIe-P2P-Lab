@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ROOT_SOURCE_REVIEW",
+  "source_sha256": "35d3cb183d7bbef27aebdb626aea5835458dec0939a0c648e21dae3eea9973e7",
+  "patch_sha256": "34acdf3111d112f35358b4b549a4f1c9c55b76cce9ac2f4581354e783bc476af",
+  "checks": [
+    "KIND0 or GENERIC_MEMORY6 only, no compressed kinds",
+    "Default mapping is candidate only; explicit RW physical queries enforce descriptor permission before channel and methods",
+    "Only allocation offset0/firstword; existing identities and bounds maintained",
+    "Pair and three handle references, uncertain completion park policy unchanged",
+    "16 guard flags and metadata logged; last_stage reported"
+  ],
+  "independent_review": "NVIDIA agent reviewed same source and patch hashes with PASS; hardware not yet tested"
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "event": "runner_started",
+    "args": [
+      "python3",
+      "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver/run_word_trial.py",
+      "--trial-root",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver",
+      "--module",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-dynamic/nvidia.ko",
+      "--module-sha256",
+      "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+      "--out",
+      "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver/candidate"
+    ],
+    "epoch": 1792535732.6703548
+  },
+  {
+    "event": "host_registers_at_gpu_gate",
+    "gate": "0",
+    "observed": {
+      "0000:00:07.0": [
+        1181646982,
+        36983
+      ],
+      "0000:00:07.2": [
+        1177518214,
+        36983
+      ]
+    },
+    "expected": {
+      "0000:00:07.0": [
+        1181646982,
+        36983
+      ],
+      "0000:00:07.2": [
+        1177518214,
+        36983
+      ]
+    },
+    "epoch": 1792535741.474595
+  },
+  {
+    "event": "gate_released",
+    "gate": "0",
+    "epoch": 1792535741.6361449
+  },
+  {
+    "event": "host_registers_at_gpu_gate",
+    "gate": "1",
+    "observed": {
+      "0000:00:07.0": [
+        1181646982,
+        36983
+      ],
+      "0000:00:07.2": [
+        1177518214,
+        36983
+      ]
+    },
+    "expected": {
+      "0000:00:07.0": [
+        1181646982,
+        36983
+      ],
+      "0000:00:07.2": [
+        1177518214,
+        36983
+      ]
+    },
+    "epoch": 1792535742.4545379
+  },
+  {
+    "event": "gate_released",
+    "gate": "1",
+    "epoch": 1792535742.6300101
+  },
+  {
+    "event": "runner_finished",
+    "rc": 5,
+    "released": [
+      "0",
+      "1"
+    ],
+    "epoch": 1792535747.8373818
+  }
+]

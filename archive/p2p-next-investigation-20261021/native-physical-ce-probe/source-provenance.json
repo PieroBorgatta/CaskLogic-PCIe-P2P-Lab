@@ -1,0 +1,47 @@
+{
+  "scope": "CPU-only source candidate; no GPU execution by author",
+  "inputs": {
+    "peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "phys_ce_client.h": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab",
+    "nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "client-fixtures.cpp": "7e59b10bb24ca2e181d82e85cf7fd0ae2d90003145c453d274c66870c5483edf",
+    "offline-fixture-include/cpuid.h": "a8c6c2fa6e063beb0be929b38ee56bfc823cd389b2181fcfa8da2532ce61e70f"
+  },
+  "baseline_source": "../native-traffic2-probe/peer_traffic.cu",
+  "baseline_source_sha256": "8a6d53690bee7ec028aee0dc7196e463ce4418325c8831ca59bb5b8bd8c75cc1",
+  "abi": {
+    "version": 1,
+    "ioctl": 315,
+    "bytes": 4,
+    "size": 144,
+    "successful_execute_flags": "0x77",
+    "classes": [
+      "0xc6b5",
+      "0xc7b5"
+    ],
+    "source_mode": "LOCAL_FB=0",
+    "destination_mode": "NONCOHERENT_SYSMEM=2",
+    "launch_by_class": {
+      "0xc6b5": "0x00003186",
+      "0xc7b5": "0x04003186"
+    }
+  },
+  "runtime_contract": {
+    "p2p_comparisons": 4,
+    "physical_operations": 2,
+    "cuda_sm_operations": 2,
+    "buffers": 4,
+    "allocation_bytes": 8388608,
+    "calibration_windows": 4,
+    "calibration_bytes": 1048576,
+    "calibration_baseline_ms": 2000,
+    "calibration_active_target_ms": 1200,
+    "calibration_buffer": "send_buffer[owner], peer access NONE",
+    "nvml_initialized_only_after_p2p": true,
+    "uncertain_completion": "ignore SIGTERM, preserve process/FD/VA/contexts, pause until external RAM watchdog reboot",
+    "hardware_executed": false
+  }
+}

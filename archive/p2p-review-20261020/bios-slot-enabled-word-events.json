@@ -1,0 +1,436 @@
+[
+  {
+    "epoch": 1792531471.683737,
+    "command": [
+      "systemctl",
+      "is-active",
+      "riscrivo-training.service"
+    ],
+    "rc": 3,
+    "out": "inactive\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792531471.79609,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531471.8162858,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531471.826284,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531471.8348968,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531473.7796874,
+    "command": [
+      "systemctl",
+      "mask",
+      "--runtime",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": "Created symlink '/run/systemd/system/nvidia-cdi-refresh.service' \u2192 '/dev/null'.\n"
+  },
+  {
+    "epoch": 1792531473.9302137,
+    "command": [
+      "fuser",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidiactl",
+      "/dev/nvidia-uvm"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531477.7521873,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531478.9148536,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531478.9168446,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531479.030033,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531479.1433356,
+    "command": [
+      "insmod",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-diagnostic/nvidia.ko",
+      "NVreg_RegistryDwords=ForceP2P=0x11;RMForceP2PType=1;RMPcieP2PType=1;RMForceStaticBar1=0"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531479.1891947,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531479.190748,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531482.4696987,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531482.4978228,
+    "command": [
+      "nvidia-smi",
+      "-q",
+      "-d",
+      "MEMORY"
+    ],
+    "rc": 0,
+    "out": "\n==============NVSMI LOG==============\n\nTimestamp                                              : Tue Oct 20 21:24:42 2026\nDriver Version                                         : 595.99.02\nCUDA Version                                           : 13.2\n\nAttached GPUs                                          : 2\nGPU 00000000:00:06.0\n    FB Memory Usage\n        Total                                          : 12282 MiB\n        Reserved                                       : 376 MiB\n        Used                                           : 1 MiB\n        Free                                           : 11906 MiB\n    BAR1 Memory Usage\n        Total                                          : 8192 MiB\n        Used                                           : 1 MiB\n        Free                                           : 8191 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n\nGPU 00000000:00:09.0\n    FB Memory Usage\n        Total                                          : 16380 MiB\n        Reserved                                       : 431 MiB\n        Used                                           : 2 MiB\n        Free                                           : 15949 MiB\n    BAR1 Memory Usage\n        Total                                          : 16384 MiB\n        Used                                           : 1 MiB\n        Free                                           : 16383 MiB\n    Conf Compute Protected Memory Usage\n        Total                                          : 0 MiB\n        Used                                           : 0 MiB\n        Free                                           : 0 MiB\n\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792531482.5036623,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 1,
+    "out": "",
+    "err": "Job failed. See \"journalctl -xe\" for details.\n"
+  },
+  {
+    "epoch": 1792531482.5411754,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531482.5488682,
+    "command": [
+      "systemctl",
+      "start",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531483.8687928,
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--name",
+      "riscrivo-compiled-p2p",
+      "--gpus",
+      "all",
+      "--network",
+      "none",
+      "--cpus",
+      "4",
+      "--memory",
+      "2g",
+      "-v",
+      "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver:/trial",
+      "-e",
+      "LD_LIBRARY_PATH=/trial/libcuda-experiment:/usr/local/cuda/lib64:/usr/local/nvidia/lib64",
+      "--entrypoint",
+      "/trial/peer_vmm_word",
+      "casklogic-riscrivo:torch2.10-cu126"
+    ],
+    "rc": 5,
+    "out": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=4 valid=0\nSTART peer_write src 1 dst 0 bytes 4\nREMOTE_WRITE s=1 d=0 bytes=4 valid=1\nSTART peer_read src 1 dst 0 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=4 valid=0\nSTART peer_write src 0 dst 1 bytes 4\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=4 valid=0\nTOTAL_FAILURES 3\n",
+    "err": ""
+  },
+  {
+    "epoch": 1792531483.8903654,
+    "command": [
+      "docker",
+      "rm",
+      "-f",
+      "riscrivo-compiled-p2p"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531483.9707806,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531484.0624025,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531484.0662098,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531484.0704117,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531485.074735,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531485.8650901,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531485.86732,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531486.0435042,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531486.1322913,
+    "command": [
+      "modprobe",
+      "nvidia"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531486.1777859,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531486.1802647,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531489.4595366,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531489.977832,
+    "command": [
+      "systemctl",
+      "unmask",
+      "--runtime",
+      "nvidia-cdi-refresh.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": "Removed '/run/systemd/system/nvidia-cdi-refresh.service'.\n"
+  },
+  {
+    "epoch": 1792531489.9850178,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-cdi-refresh.path"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531489.9897108,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-persistenced.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531489.9950073,
+    "command": [
+      "systemctl",
+      "start",
+      "n3rdware-gpu-fan.service"
+    ],
+    "rc": 0,
+    "out": "",
+    "err": ""
+  },
+  {
+    "epoch": 1792531490.0217805,
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=uuid,name,memory.total,power.limit",
+      "--format=csv"
+    ],
+    "rc": 0,
+    "out": "uuid, name, memory.total [MiB], power.limit [W]\nGPU-00000000-0000-0000-0000-000000000002, NVIDIA RTX A2000 12GB, 12282 MiB, 70.00 W\nGPU-00000000-0000-0000-0000-000000000001, NVIDIA RTX 2000 Ada Generation, 16380 MiB, 70.00 W\n",
+    "err": ""
+  }
+]

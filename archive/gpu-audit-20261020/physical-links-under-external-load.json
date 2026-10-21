@@ -1,0 +1,15 @@
+{
+  "epoch": 1792523496.7914739,
+  "links": {
+    "0000:01:00.0": [
+      "DevCtl:\tReport errors: Correctable- Non-Fatal- Fatal- Unsupported-",
+      "LnkCap:\tPort #0, Speed 16GT/s, Width x8, ASPM L1, Exit Latency L0s <4us, L1 <4us",
+      "LnkSta:\tSpeed 2.5GT/s, Width x8, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-"
+    ],
+    "0000:06:00.0": [
+      "DevCtl:\tReport errors: Correctable- Non-Fatal- Fatal- Unsupported-",
+      "LnkCap:\tPort #0, Speed 16GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <1us, L1 <4us",
+      "LnkSta:\tSpeed 16GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-"
+    ]
+  }
+}

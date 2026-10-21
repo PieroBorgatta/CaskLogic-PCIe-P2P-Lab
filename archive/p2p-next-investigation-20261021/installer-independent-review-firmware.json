@@ -1,0 +1,49 @@
+{
+  "status": "PASS_STATIC_REVIEW_AND_5_LOCAL_ARGUMENT_FIXTURES",
+  "source_sha256": "8d86cfac50fc14ba07b0afa93c72351873088dfe8258a2952faf9c784d7fca30",
+  "no_remote_operations": true,
+  "no_entrypoint_executed": true,
+  "source_modified_by_reviewer": false,
+  "checks": [
+    "Default path performs reads only; all mutation branches require --stage or --arm",
+    "Host board BIOS ESP PARTUUID and original EFI files pinned before stage/arm",
+    "CCFG and PCI identity read-only guards require restored FSP profile",
+    "Prior metadata and state fsynced before directory creation and EFI entry creation",
+    "Create-only EFI addition preserves BootOrder and original entries; stage does not arm or reboot",
+    "Arm requires Docker halted and no other running or paused VM, checks staged content and then only sets BootNext",
+    "Pending states written before mutations; verification errors preserve artifacts and prevent automatic later actions",
+    "Exact EFI optional-data suffix now rejects added or removed kernel arguments",
+    "Failure after successful BootNext mutation remains arm_pending for operator recovery; no false armed-success claim"
+  ],
+  "argument_fixtures": [
+    {
+      "name": "plain",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "name": "ucs2_visible",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "name": "added_arg",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "name": "missing_arg",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "name": "prefixed_arg",
+      "accepted": false,
+      "expected": false
+    }
+  ],
+  "limitations": [
+    "Static review and local pure-function fixtures are not host execution",
+    "After a partial failure operator must inspect preserved state before retrying; script intentionally does not silently roll back EFI"
+  ]
+}

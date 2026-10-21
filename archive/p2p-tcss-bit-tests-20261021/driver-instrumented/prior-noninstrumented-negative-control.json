@@ -1,0 +1,467 @@
+{
+  "status": "trace_incomplete",
+  "event_counts": {},
+  "chains": [],
+  "checks": [],
+  "events": [],
+  "phases": [
+    {
+      "phase": "program_start",
+      "monotonic": "9.694134043",
+      "s": "-1",
+      "d": "-1",
+      "line": 112
+    },
+    {
+      "phase": "mapping_begin",
+      "monotonic": "13.142382008",
+      "s": "0",
+      "d": "1",
+      "line": 122
+    },
+    {
+      "phase": "owner_init_ready",
+      "monotonic": "13.142544683",
+      "s": "0",
+      "d": "1",
+      "line": 124
+    },
+    {
+      "phase": "mapping_done",
+      "monotonic": "13.142661261",
+      "s": "0",
+      "d": "1",
+      "line": 125
+    },
+    {
+      "phase": "read_begin",
+      "monotonic": "13.142663163",
+      "s": "0",
+      "d": "1",
+      "line": 126
+    },
+    {
+      "phase": "read_done",
+      "monotonic": "13.152789247",
+      "s": "0",
+      "d": "1",
+      "line": 142
+    },
+    {
+      "phase": "write_begin",
+      "monotonic": "13.152790974",
+      "s": "1",
+      "d": "0",
+      "line": 143
+    },
+    {
+      "phase": "owner_zero_ready",
+      "monotonic": "13.152803058",
+      "s": "0",
+      "d": "1",
+      "line": 145
+    },
+    {
+      "phase": "write_done",
+      "monotonic": "13.162834322",
+      "s": "1",
+      "d": "0",
+      "line": 160
+    },
+    {
+      "phase": "mapping_begin",
+      "monotonic": "13.162835845",
+      "s": "1",
+      "d": "0",
+      "line": 161
+    },
+    {
+      "phase": "owner_init_ready",
+      "monotonic": "13.162966053",
+      "s": "1",
+      "d": "0",
+      "line": 163
+    },
+    {
+      "phase": "mapping_done",
+      "monotonic": "13.163027840",
+      "s": "1",
+      "d": "0",
+      "line": 164
+    },
+    {
+      "phase": "read_begin",
+      "monotonic": "13.163028596",
+      "s": "1",
+      "d": "0",
+      "line": 165
+    },
+    {
+      "phase": "read_done",
+      "monotonic": "13.173064967",
+      "s": "1",
+      "d": "0",
+      "line": 181
+    },
+    {
+      "phase": "write_begin",
+      "monotonic": "13.173065581",
+      "s": "0",
+      "d": "1",
+      "line": 182
+    },
+    {
+      "phase": "owner_zero_ready",
+      "monotonic": "13.173082856",
+      "s": "1",
+      "d": "0",
+      "line": 184
+    },
+    {
+      "phase": "write_done",
+      "monotonic": "13.183112271",
+      "s": "0",
+      "d": "1",
+      "line": 200
+    },
+    {
+      "phase": "data_done",
+      "monotonic": "13.183113350",
+      "s": "-1",
+      "d": "-1",
+      "line": 202
+    },
+    {
+      "phase": "cleanup_begin",
+      "monotonic": "13.183113972",
+      "s": "-1",
+      "d": "-1",
+      "line": 203
+    },
+    {
+      "phase": "allocation_free_begin",
+      "monotonic": "13.183114668",
+      "s": "0",
+      "d": "-1",
+      "line": 204
+    },
+    {
+      "phase": "allocation_free_done",
+      "monotonic": "13.183178667",
+      "s": "0",
+      "d": "-1",
+      "line": 205
+    },
+    {
+      "phase": "allocation_free_begin",
+      "monotonic": "13.183179405",
+      "s": "1",
+      "d": "-1",
+      "line": 206
+    },
+    {
+      "phase": "allocation_free_done",
+      "monotonic": "13.183253511",
+      "s": "1",
+      "d": "-1",
+      "line": 207
+    },
+    {
+      "phase": "allocation_free_begin",
+      "monotonic": "13.183254153",
+      "s": "1",
+      "d": "-1",
+      "line": 208
+    },
+    {
+      "phase": "allocation_free_done",
+      "monotonic": "13.183374647",
+      "s": "1",
+      "d": "-1",
+      "line": 209
+    },
+    {
+      "phase": "allocation_free_begin",
+      "monotonic": "13.183375222",
+      "s": "0",
+      "d": "-1",
+      "line": 210
+    },
+    {
+      "phase": "allocation_free_done",
+      "monotonic": "13.183493434",
+      "s": "0",
+      "d": "-1",
+      "line": 211
+    },
+    {
+      "phase": "cleanup_done",
+      "monotonic": "13.183494064",
+      "s": "-1",
+      "d": "-1",
+      "line": 212
+    },
+    {
+      "phase": "context_exit_begin",
+      "monotonic": "13.183494617",
+      "s": "-1",
+      "d": "-1",
+      "line": 213
+    }
+  ],
+  "owners": [
+    {
+      "stage": "initialized",
+      "device": "0",
+      "observed": "00003039",
+      "expected": "00003039",
+      "valid": "1",
+      "line": 123
+    },
+    {
+      "stage": "zeroed",
+      "device": "0",
+      "observed": "00000000",
+      "expected": "00000000",
+      "valid": "1",
+      "line": 144
+    },
+    {
+      "stage": "initialized",
+      "device": "1",
+      "observed": "00003039",
+      "expected": "00003039",
+      "valid": "1",
+      "line": 162
+    },
+    {
+      "stage": "zeroed",
+      "device": "1",
+      "observed": "00000000",
+      "expected": "00000000",
+      "valid": "1",
+      "line": 183
+    }
+  ],
+  "data_operations": [
+    {
+      "operation": "REMOTE_READ",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 141
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "1",
+      "line": 159
+    },
+    {
+      "operation": "REMOTE_READ",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "0",
+      "line": 180
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 199
+    }
+  ],
+  "pcie_changes": [
+    {
+      "operation": "read_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:00:07.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    },
+    {
+      "operation": "read_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:01:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:00:01.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    }
+  ],
+  "kernel_errors": [
+    {
+      "line": 1083,
+      "kernel_time": 13.47176,
+      "raw": "[   13.471760] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100",
+      "monotonic_estimate": 13.4653969095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1084,
+      "kernel_time": 13.49771,
+      "raw": "[   13.497710] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.491346909499999,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1085,
+      "kernel_time": 13.497719,
+      "raw": "[   13.497719] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.491355909500001,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1086,
+      "kernel_time": 13.49778,
+      "raw": "[   13.497780] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.4914169095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1087,
+      "kernel_time": 13.497783,
+      "raw": "[   13.497783] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.4914199095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1088,
+      "kernel_time": 13.499806,
+      "raw": "[   13.499806] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.4934429095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1089,
+      "kernel_time": 13.499809,
+      "raw": "[   13.499809] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.4934459095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1090,
+      "kernel_time": 13.499831,
+      "raw": "[   13.499831] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.493467909500001,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    },
+    {
+      "line": 1091,
+      "kernel_time": 13.499833,
+      "raw": "[   13.499833] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.4934699095,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.183494617",
+        "s": "-1",
+        "d": "-1",
+        "line": 213
+      }
+    }
+  ],
+  "clock_alignment": {
+    "sample_count": 10,
+    "kernel_minus_monotonic_median": 0.006363090499999835,
+    "spread_seconds": 1.2278999999892903e-05
+  },
+  "limits": [
+    "Software PTE and submission trace is not a hardware page-table readback or a TLP capture.",
+    "Probe src/dst pointers are inferred from mapping phases, not printed directly.",
+    "No absent trace or missing status is treated as success.",
+    "No transport correctness is inferred from a successful mapping chain."
+  ],
+  "sources": {
+    "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/kernel.log": "63d91cd4bd351ef4955faf246581216a4a9ca95c6052216acea97ecf2bf2dc70",
+    "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/result.log": "d28a4b81d5fe5fda9f8e4954c78ef8ad0b6b8d5d8f1c9468be214a5a94a07a53",
+    "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/driver-instrumented/analyze_p2ptrc.py": "5a17b23423607776c533661093bf84e743f40e7c5e8747890e747ef82c2b9c44"
+  }
+}

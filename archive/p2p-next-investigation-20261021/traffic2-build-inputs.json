@@ -1,0 +1,20 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "native-traffic2-probe/peer_traffic.cu": "8a6d53690bee7ec028aee0dc7196e463ce4418325c8831ca59bb5b8bd8c75cc1",
+    "native-traffic2-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-traffic2-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-traffic2-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-traffic2-probe/peer_traffic_native": "d8d4598ab3af394ea4f435ec88403e4744c6b5a6a01ef44ec73db33e6261ad11",
+    "native-traffic2-probe/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic2-probe/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic2-probe/source-provenance.json": "bbcb3019b02c31fd6ada7755a1fcfa063b9338012c8fda9c8a2be2ae0e98fe5f",
+    "native-traffic2-probe/delta-review-root.json": "5ee6d20d0e3656e4f46888ba8c9fa78ac9a84dc4876c368c61cbeaed5b9f1f9f",
+    "init-traffic2.sh": "5d45b57481cce98ce2cdaca0de5f9e806c103d2c501fe9fb76ee13be6d538b89",
+    "build_traffic2_package.py": "693dc275683e120ef9e2df6d88f09b975854e9711ebeeb466a0bc6061b34678d"
+  },
+  "runtime_tested": false,
+  "CPU_compile": "nvcc12.6.85 runc no GPU network none 2CPU 2GiB",
+  "flags": "-O2 -std=c++17 --cudart=static -gencode arch=compute_86,code=sm_86 -gencode arch=compute_89,code=sm_89 -I include -L /usr/local/cuda/lib64/stubs -lcuda -ldl -Xcompiler -pthread",
+  "delta": "baseline wait200ms to2000ms only, new EFI identity; thresholds unchanged"
+}

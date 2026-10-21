@@ -1,0 +1,14 @@
+{
+  "scope": "diagnostic parser only, CUDA source/kernel/data byte-identical",
+  "source_sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+  "header_before_sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+  "header_after_sha256": "b5a4627e692b929eda5689622b884b12f41e8e44259ca36585179915fe6c1170",
+  "builder_sha256": "e5127157fd3fc9c954b8af120bf7b3e1141f12e8d7401830afad10aa6cb04d4f",
+  "allowed_software_to_hardware_aperture": {
+    "3": 3,
+    "4": 2
+  },
+  "rejected_software_peer_enum": 2,
+  "all_other_parser_checks_unchanged": true,
+  "hardware_operations": false
+}

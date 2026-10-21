@@ -1,0 +1,22 @@
+{
+  "status": "PASS_offline_watchdog_structure_only",
+  "init_sha256": "23972f8abfc52668383ea36b926c8dc2595b6a3da6281fd3423a886415097ac6",
+  "fixtures": [
+    {
+      "identity_valid": true,
+      "blocked_sync_seconds": 1,
+      "reboot_observed_seconds": 0.1406,
+      "marker_and_kernel_saved": true,
+      "PASS": true
+    },
+    {
+      "identity_valid": false,
+      "blocked_sync_seconds": 1,
+      "reboot_observed_seconds": 0.1407,
+      "marker_and_kernel_saved": false,
+      "PASS": true
+    }
+  ],
+  "real_watchdog_seconds_tested": false,
+  "note": "Extracted actual watchdog; deadlines scaled to50ms each, device writes redirected to temporary files, dmesg stubbed, sync deliberately delayed1s. No mount/GPU/reboot executed."
+}

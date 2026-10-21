@@ -1,0 +1,42 @@
+{
+  "status": "READY_STATIC_REVIEW_AND_31_CLASSIFIER_FIXTURES_PASS",
+  "scope": "Independent local read-only review; no remote access, GPU execution or device write. Runtime source not modified.",
+  "files": {
+    "peer_ce_cupti.cu": "89f1639244b589ef89dfb3231c84b278b5c8caedef5c74e9d76d5a16da3d309c",
+    "cupti_trace.h": "0de1f3097fbe22c775d4c603615cfd9f0a69c328e9e7da55d50389e60ed5b468",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "independent-classifier-fixtures.cpp": "e11039d0f02984838cbff57e644685ad29ad92a20f934e6f4c31be93371e77b1"
+  },
+  "findings": [],
+  "verified": [
+    "Four8MiB VMM allocations retained across12cases; source has owner-only access and target has RW access on both GPUs; properties and endpoint access permissions checked before and after each case.",
+    "Exactly3sizes x2directions x2requested engines; source content and destination bitwise-complement poison reinitialized and fully owner-verified before each case.",
+    "Owner initialization includes explicit synchronization before D2H verification; both GPUs synchronized before transfer.",
+    "Executor current context, device and stream context are checked against source primary context; SM reads only source-local VRAM and writes peer destination.",
+    "Transfer stream synchronized before closing CUPTI case and before destination-owner D2H full comparison.",
+    "No allocation remap or release between SM and CE; release occurs after all comparisons and CUPTI finish.",
+    "CUPTI12.6 ABI uses Memcpy5,MemcpyPtoP4,Kernel9,ActivityAPI; callback copies scalar parameters within callback lifetime and return value only at API_EXIT.",
+    "Callbacks and activity vectors protected by mutex; bounded collection marks errors on exhaustion; no CUDA call or payload access from callbacks.",
+    "Final forced flush after both-device synchronization, disabled-activity flush and unsubscribe precede reading trace under mutex.",
+    "CE classification requires matching DtoD entry/exit/driver correlation, VA,length,context,stream and successful API result; activity bytes/channel/type/source-target metadata validated.",
+    "Trace errors,dropped records,incomplete cases,missing CE or missing SM prevent successful program status.",
+    "PCI diagnostic header uses only O_RDONLY,pread,close; no PCI configuration writes.",
+    "All emitted direct_route_proven flags remain0; CPU input/validation copies outside the active transfer interval are not claimed absent from the complete program."
+  ],
+  "limits": [
+    "Observation of ASYNC_MEMCPY activity does not prove the absence of hidden driver staging or a physical P2P route; no TLP capture is performed.",
+    "The classifier conservatively rejects CE activity executed by a context/device/stream different from the requested source. Raw records may still provide a useful observation of a different executor.",
+    "Trace completeness refers to the12selected transfer cases and enabled CUPTI activity kinds, not every possible internal hardware operation.",
+    "Only the requested prefix is compared for each size, while the allocations remain8MiB each.",
+    "Header lines referring to generated_cuda_meta were corrected solely by root after CPU compiler diagnosed double inclusion; current hash0de1f309 is the reviewed version."
+  ],
+  "offline_classifier_fixture": {
+    "file": "independent-classifier-fixtures.cpp",
+    "cases": 31,
+    "status": "PASS31/31; exit0 reported by coordinator; actual stderr independently read locally.",
+    "method": "Includes unchanged production header; mocks only5CUPTI terminal APIs and calls actual finish() with synthetic records. NoGPU.",
+    "compiler": "g++ C++17 -O2 -fsanitize=address,undefined -fno-omit-frame-pointer, complete CUDA12.6 headers, coordinator CPU-only container.",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "50a54fa88c23815b7847a3fcb0fb6b0c79a761b778451cbabc2e761cd74057c3"
+  }
+}

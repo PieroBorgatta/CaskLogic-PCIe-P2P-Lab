@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ROOT_FIX_REVIEW",
+  "source_sha256": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f",
+  "delta_only_output_reset": true,
+  "output_fields_zeroed": 13,
+  "ABI_changed": false,
+  "inputs_changed": false,
+  "builder_output": "driver-physical-ce-build-02",
+  "builder_sha256": "432135a9009cbf41c3c1ccaa4eca22767891ccd9131b3208743fe1176bcc60e6"
+}

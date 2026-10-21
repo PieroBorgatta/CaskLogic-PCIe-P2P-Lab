@@ -1,0 +1,33 @@
+--- a/kernel-open/nvidia-uvm/uvm_map_external.c
++++ b/kernel-open/nvidia-uvm/uvm_map_external.c
+@@ -46,6 +46,12 @@
+ 
+ // Assume almost all of the push space can be used for PTEs leaving 1K of margin.
+ #define MAX_COPY_SIZE_PER_PUSH ((size_t)(UVM_MAX_PUSH_SIZE - 1024))
++
++// Diagnostic opt-in: bound peer mappings to the smallest supported page.
++static bool uvm_cask_peer_small_pages;
++module_param(uvm_cask_peer_small_pages, bool, 0444);
++MODULE_PARM_DESC(uvm_cask_peer_small_pages,
++                "Use 4K pages for external cross-GPU vidmem mappings (default false)");
+ 
+ typedef struct
+ {
+@@ -960,6 +966,17 @@
+             mapping_page_size = biggest_mapping_page_size;
+     }
+ 
++    if (uvm_cask_peer_small_pages && !ext_gpu_map->is_sysmem && ext_gpu_map->owning_gpu &&
++        mapping_gpu != ext_gpu_map->owning_gpu) {
++        if (!uvm_mmu_page_size_supported(&gpu_va_space->page_tables, UVM_PAGE_SIZE_4K)) {
++            status = NV_ERR_NOT_SUPPORTED;
++            goto error;
++        }
++        pr_info("P2PTRC PEER_PAGE_CLAMP gpu=%s gpu_va=%llx old_page=%llx new_page=%llx\n",
++                uvm_gpu_name(mapping_gpu), base, mapping_page_size, (NvU64)UVM_PAGE_SIZE_4K);
++        mapping_page_size = UVM_PAGE_SIZE_4K;
++    }
++
+     mem_info.pageSize = mapping_page_size;
+ 
+     status = uvm_va_range_map_rm_allocation(&external_range->va_range,

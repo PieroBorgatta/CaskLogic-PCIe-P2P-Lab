@@ -1,0 +1,13 @@
+{
+  "epoch": 1792537268.5919473,
+  "restored_spi_region_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "ccfg_final": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "original_boot_files_unchanged": true,
+  "temporary_entries_and_esp_directories_removed": true,
+  "boot_final": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\n",
+  "preserved_prior_SaSetup_P2P_setting": true
+}

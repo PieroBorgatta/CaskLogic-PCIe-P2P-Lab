@@ -1,0 +1,3757 @@
+{
+  "scope": "Public files only; this manifest is excluded from its own hashes.",
+  "files": {
+    ".gitignore": {
+      "bytes": 104,
+      "sha256": "f20730e20e51392b46add61904d4430ca466dd7aafb6b3f721c4c8f6452e24ee"
+    },
+    "LICENSE.md": {
+      "bytes": 890,
+      "sha256": "02eac55fa4f82a3ccfc63acd5c2aa8ed4fbf7f1d9e09c4d3e976d3b47170e174"
+    },
+    "LICENSES/MIT.txt": {
+      "bytes": 1071,
+      "sha256": "7c4649860d5067437c34eadb1e6aeb34e901368c034fab915fb351f07fef697b"
+    },
+    "LICENSES/NVIDIA-COPYING": {
+      "bytes": 19391,
+      "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
+    },
+    "README.md": {
+      "bytes": 9828,
+      "sha256": "fc1359a2d5eb378c4b54772ec908c52a1e13d5a230c669905a60224aca7c8ed2"
+    },
+    "archive/gpu-audit-20261020/build_tools.py": {
+      "bytes": 1166,
+      "sha256": "2ec98ea12561f0367438352275a8167472f3b058aad82cf32bcf3ec72481d334"
+    },
+    "archive/gpu-audit-20261020/compute_checks.py": {
+      "bytes": 11193,
+      "sha256": "590b3f7ba69e4c85213bd97cbc97b9e86a56d7b9b9b52b6b26e5a884059608db"
+    },
+    "archive/gpu-audit-20261020/compute_gpu0.json": {
+      "bytes": 10629,
+      "sha256": "f1551271ed4ee70b1c2a287100d9d4a974e018821b9ab18613a95ff2fd56a4eb"
+    },
+    "archive/gpu-audit-20261020/compute_gpu1.json": {
+      "bytes": 8900,
+      "sha256": "8e9737c25d6f3e1840116848196cb448f708d561e84f0d9ec219c57fc04e1742"
+    },
+    "archive/gpu-audit-20261020/compute_hot_gpu0.json": {
+      "bytes": 10630,
+      "sha256": "22be05b7b4f85c6ce04100fd7dfec47afdfcd170f446750804090a7e0305fe2f"
+    },
+    "archive/gpu-audit-20261020/compute_hot_gpu1.json": {
+      "bytes": 8881,
+      "sha256": "51887b9359ae188124e254477547186c6a80cefd2944455c4e43e3ec6da7e254"
+    },
+    "archive/gpu-audit-20261020/conclusions.json": {
+      "bytes": 2979,
+      "sha256": "afa98bc625832d63bae97298067a8a4c5e443da94e5c4edae1b4df55c1fc5b8d"
+    },
+    "archive/gpu-audit-20261020/confirm_routes.py": {
+      "bytes": 2521,
+      "sha256": "847496fb8f72e4256cd3a3d3e33a00ae2e36d20fe604a49ac2f55fa75b5bcba9"
+    },
+    "archive/gpu-audit-20261020/make_report.py": {
+      "bytes": 26338,
+      "sha256": "f2af1f64ffbe2aaec291aa47c0cd58cc9b12215a29272d5fd8b44942bb58e920"
+    },
+    "archive/gpu-audit-20261020/memory_gpu0.json": {
+      "bytes": 1162,
+      "sha256": "af320e22752d3faf605acdef38f8e0ebfce9ffcee73a0630a146dad5478d96bc"
+    },
+    "archive/gpu-audit-20261020/memory_gpu1.json": {
+      "bytes": 1139,
+      "sha256": "71357a2798c49efb9e241f3541a7d9b268927f37cb68e60998e73adc3f3f0736"
+    },
+    "archive/gpu-audit-20261020/nccl_default.json": {
+      "bytes": 11337,
+      "sha256": "dd6d2308b6d48bd3d703b115af1c9a3f43e5f250a2eb0e8c24c9db92c5cb1a69"
+    },
+    "archive/gpu-audit-20261020/nccl_host_staged.json": {
+      "bytes": 11362,
+      "sha256": "eceddcfe0595af189a841cf2e391dac4ea526e956bddd041dfb764755f7b56ef"
+    },
+    "archive/gpu-audit-20261020/physical-links-under-external-load.json": {
+      "bytes": 633,
+      "sha256": "dab0c498d5fbdb3abcefca48be677e4109a812572bbbd18e64b0aa11ccb10ff7"
+    },
+    "archive/gpu-audit-20261020/report-build-summary.json": {
+      "bytes": 18080,
+      "sha256": "7f6ea97a42e8cc7b0534f08fd5bd8373e21aa78971b3cf999daa77f707789bee"
+    },
+    "archive/gpu-audit-20261020/run_audit.py": {
+      "bytes": 11115,
+      "sha256": "9e86606e0ac8c2fcf3b3b131c3510be2d869fd715d12bdb017ee42fbf40d6fd5"
+    },
+    "archive/gpu-audit-20261020/sources.json": {
+      "bytes": 697,
+      "sha256": "48be7e868afb7e14e8f9066fbb74bcb4bf6a3688b303ce8709a812d6369151f5"
+    },
+    "archive/gpu-audit-20261020/stages.json": {
+      "bytes": 15367,
+      "sha256": "f9cee79e8d52c695433451d8bfdad634a78847f1ecdc4ee8830b7a349ed7023e"
+    },
+    "archive/gpu-audit-20261020/status.json": {
+      "bytes": 178,
+      "sha256": "577417f807611ba5f596c178fca8faa565de5acfe117d402cebd516479ac3d06"
+    },
+    "archive/gpu-audit-20261020/summary.json": {
+      "bytes": 18079,
+      "sha256": "3adf4502bfd2d50a425e325a2c305753c8d34527db44e10c02686e4d9f91d3a7"
+    },
+    "archive/gpu-audit-20261020/telemetry-latest.json": {
+      "bytes": 910,
+      "sha256": "3920c1cf0afc7fe86af5ce41142d39a2baf24b5e72e6816a1cb6e9a328be5942"
+    },
+    "archive/gpu-followup-20261020/baremetal-probe/build-manifest.json": {
+      "bytes": 507,
+      "sha256": "8e9135154ccaff518c0771a99ef6844180098989179454639066ef43bddc445d"
+    },
+    "archive/gpu-followup-20261020/baremetal-probe/build_ram_probe.py": {
+      "bytes": 4122,
+      "sha256": "9ed16c54018422fdfbba28275b9de2b8622111761071e8d78e6b18a07533e18c"
+    },
+    "archive/gpu-followup-20261020/baremetal-probe/host-cleanup-state.json": {
+      "bytes": 711,
+      "sha256": "ab811c9ce77e81f1fabf3450ef3a38af3b5f9e693beda0adfc5846bffa4515c0"
+    },
+    "archive/gpu-followup-20261020/baremetal-probe/result.log": {
+      "bytes": 3261,
+      "sha256": "0cc08774f1b1b89ca736712cb7d2f796c4383da875be8830593b7d6d9b53a072"
+    },
+    "archive/gpu-followup-20261020/baremetal-probe/verified-result.json": {
+      "bytes": 1068,
+      "sha256": "e68aea37f7dd65cab695c9d546f8c2647a071611b74029d86b546f3d1b3f01ed"
+    },
+    "archive/gpu-followup-20261020/communication/latest.json": {
+      "bytes": 837,
+      "sha256": "c9357dc1d93b05a3769576f1ccabd9e3f246ef295ce3d4df7351f6c2e9eb880a"
+    },
+    "archive/gpu-followup-20261020/communication/stages.json": {
+      "bytes": 4558,
+      "sha256": "31d237a72a09669d20f047557d88777bfcbba95399770f86fbe2226d4ecf891d"
+    },
+    "archive/gpu-followup-20261020/communication/status.json": {
+      "bytes": 84,
+      "sha256": "942d1407df38c7e6c4f960b874887fd821724baf753f4767e534772f17eda704"
+    },
+    "archive/gpu-followup-20261020/communication.json": {
+      "bytes": 3595,
+      "sha256": "1ce8828b5491a8f77d738b3aaacd35e238d2055304c1ebc6ecc1edea6bb0bcd4"
+    },
+    "archive/gpu-followup-20261020/ddp_direct_check/latest.json": {
+      "bytes": 843,
+      "sha256": "b2e6265e97c61bd9d865c9abba4532f5a47f3626a0eea2655b54f5e03e95947e"
+    },
+    "archive/gpu-followup-20261020/ddp_direct_check/stages.json": {
+      "bytes": 697,
+      "sha256": "4009a1fb77d2a569bffe9eba666cd2b6afab6f5d09eacc95fdbb06e7a7dde99b"
+    },
+    "archive/gpu-followup-20261020/ddp_direct_check/status.json": {
+      "bytes": 84,
+      "sha256": "bf45158ba493a4df9c2606e45f1d5f0d6c0e7bb328eb3e24a5763a8f86b5c14a"
+    },
+    "archive/gpu-followup-20261020/ddp_direct_check.json": {
+      "bytes": 576,
+      "sha256": "d469c937f6fea5a6842757777604b7389f8f15e49b9ac6d2e0e4eafd3c63ecc9"
+    },
+    "archive/gpu-followup-20261020/fan-100-confirmation.json": {
+      "bytes": 1393,
+      "sha256": "21f164be585566aca249acac2c4c109aac7c0fa87ebabc75a9e51ed3f7c8245f"
+    },
+    "archive/gpu-followup-20261020/fan-backup/gpu_fan_curve.py": {
+      "bytes": 1505,
+      "sha256": "06a1943410de988f7eccfc3e315b13b6f54dd02e3bb26ecde100fe7cac15885e"
+    },
+    "archive/gpu-followup-20261020/fan-fix.json": {
+      "bytes": 413,
+      "sha256": "556c9184e932b1cf1b51b6205e8665ecf964ae581910b3d72de434c7949653ad"
+    },
+    "archive/gpu-followup-20261020/fan_validation/latest.json": {
+      "bytes": 852,
+      "sha256": "0234b1361a892bcc53de01a8bd8a4cbb71a18e8483a94bdc62dcb0725b880dd7"
+    },
+    "archive/gpu-followup-20261020/fan_validation/stages.json": {
+      "bytes": 364,
+      "sha256": "d3771eaf7cb49af3a34853c2f09d9fc8271ba291fb12614d31fd637fb6fd7382"
+    },
+    "archive/gpu-followup-20261020/fan_validation/status.json": {
+      "bytes": 134,
+      "sha256": "dfd9485196c1b4d161c973c66ca653899e0bd513e7cfa5fbbf16a9105467c94e"
+    },
+    "archive/gpu-followup-20261020/fan_validation.json": {
+      "bytes": 243,
+      "sha256": "a78b6cc53bf6c1e6da912bf54ddefd8a006a17d1e81a7db46b4dad2161250751"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/NvP2PPrepare.c": {
+      "bytes": 5379,
+      "sha256": "be7965d07b51a4b247cb15cbdb25ee835244a4edada9f48d605cba0a38f85453"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/SaSetup-persisted.verified.json": {
+      "bytes": 435,
+      "sha256": "0f93675d7aba9e0b4e968238c3887220a5251a40dc70a59bfdaf5c195318bcda"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/all-objects-comparison.json": {
+      "bytes": 1123,
+      "sha256": "5185ff6465683bc4c607b391684587419dd0bcaaf157dbbf48a78297b70b94a1"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/candidate-binary-diff.json": {
+      "bytes": 787124,
+      "sha256": "1adb1dd67340c85b5e2a4462f613a43c724d60d3774a97a5540e4b2eaa2b13c5"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/ccfg-readbit-after-enable.json": {
+      "bytes": 346,
+      "sha256": "106474cb86dbcc18477197aded9a4542fc5caa4b0ec0dc4472308825543353a5"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/menu-patch-analysis.json": {
+      "bytes": 570,
+      "sha256": "53277c3686dc98b27e8fce810d950923d87fe8004e4c9899a026bc33078a27fd"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/nv-dry-run-verified.json": {
+      "bytes": 581,
+      "sha256": "a6049ebfbaab97265a04ddfca3a4a17a5952d5934514bee178473fb4549f8b6c"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/nv-p2p-state.json": {
+      "bytes": 506,
+      "sha256": "1d4c798be07f7e1ec7044c3236c133e0ae3f915c1f6c01a2e11a9d7aaaeb45a5"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/nv-write-verified.json": {
+      "bytes": 508,
+      "sha256": "3f3c9c7b09612955d8f51ee9a8e26eec379f49df9979f73c3aecbd51dd95d73a"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/nvar_p2p.h": {
+      "bytes": 2907,
+      "sha256": "c41bc839f9eb193fbba6c52d0c122bf6fca77fc9059d5919ab190e946e48060c"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/nvar_parser_check.c": {
+      "bytes": 1344,
+      "sha256": "2bdda72ef3551d9c4f13b36b0c5e87cafe329f5400c819f11953bb6975dd8a5a"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/restore-pci-after-bios.py": {
+      "bytes": 706,
+      "sha256": "84ab08fa873c46a3ef69d2bd29cd4c13ee8a1560c405f18675ed2b38e182149e"
+    },
+    "archive/gpu-followup-20261020/firmware-mod/semantic-module-comparison.json": {
+      "bytes": 310,
+      "sha256": "50f1d032a4d7e3a42cb6cf9af8a528a2bcc71f59e266dc2d32b63618530ba982"
+    },
+    "archive/gpu-followup-20261020/host-p2p.json": {
+      "bytes": 280,
+      "sha256": "c154750377e779a460953cdc6a50851cc13cfe2576ee04b2529b0cef96274d1e"
+    },
+    "archive/gpu-followup-20261020/libcuda_peer_validation/latest.json": {
+      "bytes": 839,
+      "sha256": "4739b65e1c5493b250b9805d27c7ee653ba3423792ae7cac99838b1ec6052325"
+    },
+    "archive/gpu-followup-20261020/libcuda_peer_validation/stages.json": {
+      "bytes": 420,
+      "sha256": "ae1d4474b5ce7486320aab7d54fc0fe8e8ac0a73ff887fdb46a9625d4cec0d74"
+    },
+    "archive/gpu-followup-20261020/libcuda_peer_validation/status.json": {
+      "bytes": 152,
+      "sha256": "ebdf8f21a910d835cf6c6fb4b3119e7b9093acb31f1a67b4546208c43470e322"
+    },
+    "archive/gpu-followup-20261020/libcuda_peer_validation.json": {
+      "bytes": 300,
+      "sha256": "0c2775a67156ba0116acb564e9bc61cf95d2903204b5c20bfc258d1e3fbdf45a"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks/latest.json": {
+      "bytes": 842,
+      "sha256": "8a4e8443066ba682837fefcc56a98190df1ca411c6f63c49426293742d62e376"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks/stages.json": {
+      "bytes": 967,
+      "sha256": "ff86c6bbc3d2ae503df01c6b8f03537ef8dd29c48122247c82cdc9cec786e09f"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks/status.json": {
+      "bytes": 124,
+      "sha256": "39f83df37ac8086c903838f59fd111599ec9989f189ed7336632bebecdf8e7b8"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks.json": {
+      "bytes": 3986,
+      "sha256": "606117359b87084e9c5835897479823f17e889cd935a3b8e80138b0dee8b2f1d"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_v2/latest.json": {
+      "bytes": 842,
+      "sha256": "367439b03cec932ca0859502d3773ddb4b5d3f15b068ee154ec41a5f9743f391"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_v2/stages.json": {
+      "bytes": 763,
+      "sha256": "4475969102453e94cec3224b34de45102f83418f587a20332c1db1f07d271c64"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_v2/status.json": {
+      "bytes": 124,
+      "sha256": "39f83df37ac8086c903838f59fd111599ec9989f189ed7336632bebecdf8e7b8"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_v2.json": {
+      "bytes": 4173,
+      "sha256": "34a3e0907ac4e18da5ea81a2274efd2d1078298dd0f5b7faa25357f18c675b08"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_verified/latest.json": {
+      "bytes": 847,
+      "sha256": "702f24310f7d9db7ba6ee263f9977705fb14c5fd14c13bf60a27ddde52ad27a5"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_verified/stages.json": {
+      "bytes": 1848,
+      "sha256": "c4c5060787e53a7b5c08388c16eb5f56a5511f25dd6a7cb84af862337dc59a2a"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_verified/status.json": {
+      "bytes": 127,
+      "sha256": "d2dda1552f51f35dc5bf21c67a2a7d61ccee0be95de5fe969a3da5b1e0a42121"
+    },
+    "archive/gpu-followup-20261020/model_benchmarks_verified.json": {
+      "bytes": 4315,
+      "sha256": "7b4a631198b44009f110015b90856ad542109df0def7c572b76401628910cdd1"
+    },
+    "archive/gpu-followup-20261020/multiprocess_validation/latest.json": {
+      "bytes": 832,
+      "sha256": "7496ae0af5a820e9a3f938869f73f555902fb6a7c4bee49b5f17d1337022c978"
+    },
+    "archive/gpu-followup-20261020/multiprocess_validation/stages.json": {
+      "bytes": 917,
+      "sha256": "9791289468443a1e8eb0b1fb9dff2b5bc9595c1ed78337a7b36f4d04e9e39b75"
+    },
+    "archive/gpu-followup-20261020/multiprocess_validation/status.json": {
+      "bytes": 84,
+      "sha256": "e56e4c5f73d42fb8b3024d63122bbe44a11cf324a2f5ddb552bcc7eb30fabf63"
+    },
+    "archive/gpu-followup-20261020/multiprocess_validation.json": {
+      "bytes": 678,
+      "sha256": "d224e0dad292279282f8f49d39613be260b240d59ca7e75ec86799ede7cd4687"
+    },
+    "archive/gpu-followup-20261020/nccl_process_probe.py": {
+      "bytes": 802,
+      "sha256": "101d5e7a11dfcb54f46e59ccf9bf186a23196c72a4a6bbf212d323728aa68236"
+    },
+    "archive/gpu-followup-20261020/p2p-diagnosis.json": {
+      "bytes": 4306,
+      "sha256": "51211f47686b28bbc52b820540e600c5d5dbfeda100d187a44c1d20a789b7033"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/acs-gpa-matrix-events.json": {
+      "bytes": 11307,
+      "sha256": "3bcf44fcd50f7a3e411587b125305c7844d9281f29a9483b69e7d7944b25461c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/acs-hpa-matrix-events.json": {
+      "bytes": 6610,
+      "sha256": "2905568e4390e7d061b8f2cb1995976bf80e338c226eec4adc44c8eccaf44c8a"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/acs-zero-small-events.json": {
+      "bytes": 9823,
+      "sha256": "36e6af31e87a2d58aabcb339a0298c402f6b1c5b5c2a655100d3d167bb1b6354"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-coherent-diagnostic.patch": {
+      "bytes": 508,
+      "sha256": "74c82e64ee12ece6b2e336a4a06a8e758780f6b84f55d8ea2e8c0c95ffcd1b2d"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-diagnostics.patch": {
+      "bytes": 2110,
+      "sha256": "23b6c5d64607074d0d311817d84f6db7bde8c739c0f5fd3a4b158f42efe5987c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-disable-nosnoop.patch": {
+      "bytes": 633,
+      "sha256": "0b180b0ef7ddc92908469826fa31fb145505aaf13f5bb49dc019d30a6482f5bf"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-dma-diag.patch": {
+      "bytes": 538,
+      "sha256": "6a2550bc7cedcf130c70566119b0a55a70a5748d30044428d2edacfb549f36f1"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-dynamic.patch": {
+      "bytes": 41035,
+      "sha256": "6afa9977c1b9a06c9abb4e5d7f4f852e8a089a7039b2ed66238fb3c61a2f3eab"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/bar1-minimal.patch": {
+      "bytes": 2812,
+      "sha256": "f32767c21475d1ec39ea0a63c58d2b4b12ba0aa624ac13a797558cb505339fe7"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/before.json": {
+      "bytes": 601,
+      "sha256": "4436380f0841e68dda7d488e1db179b7b91a2abf435d6dacf325fbedd93e91fd"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/build_xen_alias.py": {
+      "bytes": 1751,
+      "sha256": "8257e66084cf256a7712228ccb39457f4aa11604470b0de60180a87e7375f2cd"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/ccfg-peer-word-events.json": {
+      "bytes": 9349,
+      "sha256": "d05624314427387c37fd561ba5a8d580873576c00e102dac2fb0ceac8b47838a"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/ccfg-writability.json": {
+      "bytes": 608,
+      "sha256": "56acc754729f96f5a04f71ae95965d0129072e579c2620c021d21f743fdab5c1"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/ccfg_control.py": {
+      "bytes": 1385,
+      "sha256": "fb8bc65ad8abfb690ad7c33d2bf54b3e46a0145736501d4cf2abc4e5e405aad4"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/ce-small-events.json": {
+      "bytes": 9765,
+      "sha256": "7e27a1b3659fade187c692b7e261aecaf4f1294c55a4f42b17635859e055651f"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/coherent-config-gate-events.json": {
+      "bytes": 6055,
+      "sha256": "c2bafbd2477e6dbcacbafcfc9ba0ab16e5d30c87b4036f5a491484b2474bd4f0"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/coherent-config-gate-v2-events.json": {
+      "bytes": 9793,
+      "sha256": "fdf9ed0172a805b2ed1cc75bd53c39bbb9381be611bf5d929ecfeb580e382b6d"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/coherent-config-gate-v2-host.json": {
+      "bytes": 3618,
+      "sha256": "2057e3e2195c825d4c2b765c17399c3ddced5f877d50979093c7df84d1404283"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/coherent-small-events.json": {
+      "bytes": 9817,
+      "sha256": "351af3ee671821791339b7f3efb2c2dcca36f4f4ab7c792ddacbb6a495862ad8"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/cpu-bar-observations.json": {
+      "bytes": 1180,
+      "sha256": "4f77d7821738961114a01a065d1503c4cf93146185b07feff8c4e22c774ecadb"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/cpu_bar_reader.py": {
+      "bytes": 1040,
+      "sha256": "2dfd61ff85b075c23434c1c2009c9804073b51a49598be775422e4e87ef928e5"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-cpu-probe-events.json": {
+      "bytes": 9571,
+      "sha256": "d741420acf1a9efda3c2f0a116b7e245dca29821005c14fa9c22f3368e5c61f3"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-cpu-probe-v2-events.json": {
+      "bytes": 9827,
+      "sha256": "735d748c79909abf02d4a431d6be16ff418bc8bcee08dbb2ad231a81e9b9399e"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-diagnostic-events.json": {
+      "bytes": 9430,
+      "sha256": "ebbbbab1a1332c13833733268f56febf8a9be1bf232763179da94bc092d6ad1a"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-full-vram-events.json": {
+      "bytes": 9421,
+      "sha256": "5c15c8b03a707c5de8d22fadf205e203b3ec1ecaf53e67d0aedcad4359ace94b"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-matrix-fenced-events.json": {
+      "bytes": 11299,
+      "sha256": "d443fc19d6ae393cd0f0932fbe583c5809fe5b72e375e12cbca265c3da160b13"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-port/kern_bus_gh100.c": {
+      "bytes": 102047,
+      "sha256": "fc3919c27e1e34418a46e6792eb62b313ae2e0142018fc71277a8a70c98f456d"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-port/nv_gpu_ops.c": {
+      "bytes": 457753,
+      "sha256": "b459cc20ea2931f6f621fe96f6fbdd6b2d995d44c5778b4c390dbe56222c35a8"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-port/p2p_api.c": {
+      "bytes": 31032,
+      "sha256": "a5012095fd4acb995dac10a590ad62e32874f361f3013e7fc048d4e3417325a3"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-port/provenance.json": {
+      "bytes": 352,
+      "sha256": "97cc742d56820b402a212b7278c3d47a665ac8209d332acf6b9a89ec2766fe2a"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-vmm-events.json": {
+      "bytes": 9428,
+      "sha256": "32608c11e36d7a1b2adc3850b834e4852efd028e62c27e4df4275680667e00d0"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/dynamic-writes-events.json": {
+      "bytes": 9498,
+      "sha256": "9d67394bc45cfbe28198b7cb48eb384437b1f1240786d1abdcbf86d77eac135c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/libcuda-experiment/patch.json": {
+      "bytes": 796,
+      "sha256": "c9ad442347111eb898522a0ccd3b7d52eb4280adaf3059c8ce656fc1981a0c5c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/libcuda-experiment/provenance.json": {
+      "bytes": 167,
+      "sha256": "5c8adcfde50aa469d3f51945be5b9177f66c7e7a762e26096198d000b4297770"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/libcuda-only-result.json": {
+      "bytes": 156,
+      "sha256": "353234f52322f0745e312e28576dd9e3080472bffdb6a26b6c445a7805a61da3"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/mailbox-word-clean-events.json": {
+      "bytes": 9791,
+      "sha256": "83916a5421fe70d2c75fa65762b301c2e574cc02ace05494dbe3c7aacae937b3"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/mailbox-word-events.json": {
+      "bytes": 6064,
+      "sha256": "952f0db58eb7add4fe6792c0e5510ecd2e90596de232c8108685e825da4b2523"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/nosnoop-off-small-events.json": {
+      "bytes": 9819,
+      "sha256": "4effbec2498ad385c657c40d9a89aef9d589a935171d57cd57b4be70f8246a89"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/packet128-small-events.json": {
+      "bytes": 9816,
+      "sha256": "163bc9b351e8da9916c0b270b5e5f33348da75c67333f75558ca1e2ea6051e68"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/packet128-word-events.json": {
+      "bytes": 9788,
+      "sha256": "894086814fa1686302e9d8be67ad4aed279f0544ec87b48f67783f9bec59b541"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/parameter-events.json": {
+      "bytes": 5292,
+      "sha256": "56055ce8d5887dcc52d1024c0abc47de27e5bebfd28d0b27e7174f707c63d312"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/parameter-result.json": {
+      "bytes": 247,
+      "sha256": "e7f10f247be315700ed13543039667583cbf47d0f6ef30751d005f3f1208cde8"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/patch_libcuda_595.py": {
+      "bytes": 1169,
+      "sha256": "adb22c4260320e493ca0b5145c11bb6cad380952759f3bd27d81775fdc3d4d53"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/pcie-packet-128.patch": {
+      "bytes": 779,
+      "sha256": "62cc86572545b51663bac24bfbd7d554d525bbf89a6b99985e87fbfff1feff06"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/pcie_packet_control.py": {
+      "bytes": 1389,
+      "sha256": "1128ba707ad6ae5eac8702c4bbaaf76fa6ffce679e244582dfdde26e9c2e641a"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/pcie_request_control.py": {
+      "bytes": 1599,
+      "sha256": "f1750216cd4e8f3fd1cb0ff63167c11efbbafde1252b124ec86514595bdb01a7"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_ce_small.cu": {
+      "bytes": 3164,
+      "sha256": "53f3f9574b0ea5805f68540140f3f6f89bc35149c2c224fed5ca05f10a26b969"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_cpu_probe.cu": {
+      "bytes": 4084,
+      "sha256": "8242552d3c174955416141362d4f447f3f0560a2f9f44b465d0c047d0b286655"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_verify.cu": {
+      "bytes": 2375,
+      "sha256": "1d849f7c564401f0ff46b0367958dc63df8a99bdd8e4700661ee9518012fd98f"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_config_gate.cu": {
+      "bytes": 4018,
+      "sha256": "0a26e7b4934477e828532a34ea7daaf226a611ef4d495b8c582acc9fa81da6e4"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_matrix.cu": {
+      "bytes": 3757,
+      "sha256": "96001c749a9fc0f34f6789c4c97bf37c8245808f03a9e316f37ec3b47cdf9ab9"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_small.cu": {
+      "bytes": 3707,
+      "sha256": "63d2d517553a6111c050249f55d43f136093ad8843b10da7ee1113106be84096"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_verify.cu": {
+      "bytes": 3602,
+      "sha256": "ed772a21747fdce98222458646c696ed4ceec72838228588098a29275916c4d4"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_word.cu": {
+      "bytes": 3703,
+      "sha256": "50c8cbbebbd8709be273c5a9835ba39c170b910221f0e7642dbcee9bef874549"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/peer_vmm_write.cu": {
+      "bytes": 3192,
+      "sha256": "8e62d19665664937c2365954fddf01b86745121ed2eb401bdb2dc4a907975d49"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/restore_acs.py": {
+      "bytes": 360,
+      "sha256": "660f4e29e372a97d15ed2834ab7ce98935fb854bf7ea3246a32324a683d58f66"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/run_ccfg_gate.py": {
+      "bytes": 1734,
+      "sha256": "f9580006d84acf5ebd6b4872001d2c34e0270c43675b138f2a0cb59c721b756c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/run_config_gate.py": {
+      "bytes": 1784,
+      "sha256": "e286949185b028cdb54493b78f57e8b816712cbe0bba318de899ffac930f9a31"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/source-provenance.json": {
+      "bytes": 203,
+      "sha256": "323c2fa7ad0b185ebe66c264f38e7b8144660cdc89ad0dc4ea2b5d5d00eb5250"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/static-capped-events.json": {
+      "bytes": 5318,
+      "sha256": "0a817eb6eb971bc45da0a9201203f58a81a9a32183c63a89198d68d07cba583e"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/static-word-v2-events.json": {
+      "bytes": 6081,
+      "sha256": "4dc02f8d95cb561f6bba83f918d21b6ab6cead9d1124a665e0b13f6794618ebd"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/trial-index.json": {
+      "bytes": 13018,
+      "sha256": "f38e48dde2f75ca622a03da9416eb7d6960d1c35c5de4d3fbf5a077025a5e87d"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/trial_compiled.py": {
+      "bytes": 2582,
+      "sha256": "23f4495d5f6633f0b01643e7c78de09d18b41af87f7eeafae053789d5db55d6c"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/xen-alias-word-events.json": {
+      "bytes": 9785,
+      "sha256": "36f0ef9c6e961d3d332824175c26ce2dff15325e35f7e00ac090406b6fc09e7b"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/xen-bar-translation-events.json": {
+      "bytes": 9423,
+      "sha256": "09a7497813fdab20d58e6134c48973aca0c491009b944febf2b81ef64ddbfe52"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/xen-low-gpa-alias.patch": {
+      "bytes": 929,
+      "sha256": "cd6acdc66e24052744297c3d1d85508692281bdcd7b59c1da2675d84f9d1abb7"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/xen-physical-bar-diagnostic.patch": {
+      "bytes": 883,
+      "sha256": "98472b725ffdd3a16e96658cf3e9b45bf1cfce28877c6dfd815e68fadcc738ad"
+    },
+    "archive/gpu-followup-20261020/p2p-driver/xen_alias.py": {
+      "bytes": 2047,
+      "sha256": "9bbe723eb0aa194f4f0ff2ce7df9fc4b022b873eb8023cdeda52454650c01419"
+    },
+    "archive/gpu-followup-20261020/pci-gpudirect-capabilities.json": {
+      "bytes": 1210,
+      "sha256": "1cb70c59af8b29206a1199b346f2d81485059d28ee7e998901cf740c1c31dcad"
+    },
+    "archive/gpu-followup-20261020/pipeline_copy.py": {
+      "bytes": 1888,
+      "sha256": "f5469f961e64b04dad14faea14b9c272768b66a772b47f37b985f5ff46642b87"
+    },
+    "archive/gpu-followup-20261020/pipelined_transfers.json": {
+      "bytes": 2629,
+      "sha256": "0ecb3636ef695a3dbb4849aaab90c7da9b831a7a3632e0a25f2843c63687dc70"
+    },
+    "archive/gpu-followup-20261020/quick_model-before-diagnostic.py": {
+      "bytes": 7608,
+      "sha256": "9277b395347f46db3451717937dce9610a46d68c70031e2dca88f3197e257219"
+    },
+    "archive/gpu-followup-20261020/quick_model.py": {
+      "bytes": 7870,
+      "sha256": "63739fd55c59b546b1f344a427a56f119cd58ab9ca2b92c3db80deafbef0389e"
+    },
+    "archive/gpu-followup-20261020/runner-before-numa.py": {
+      "bytes": 3730,
+      "sha256": "31df6859c90db58d33ecdaa59537c5370f49e7785bab52d61878d6bdb78ac676"
+    },
+    "archive/gpu-followup-20261020/runner.py": {
+      "bytes": 3754,
+      "sha256": "85a466964643f284d2e0a2322da0c548c0373b176e15526047da40d9d6045637"
+    },
+    "archive/gpu-followup-20261020/smoke_ddp32_shm.json": {
+      "bytes": 749,
+      "sha256": "1d6312ec305b5bd00b499adb88fdb0cc491d370e22962bd88e50f557ea17c832"
+    },
+    "archive/gpu-followup-20261020/source_hashes.json": {
+      "bytes": 188,
+      "sha256": "aeb153019109b121dd3809cbf699552ee984f28bcc18014d1040439092f758df"
+    },
+    "archive/gpu-followup-20261020/source_snapshot/riscrivo/__init__.py": {
+      "bytes": 77,
+      "sha256": "e356811a8d89ebcce748c67bdf23e6bd24b6a1db5f8269babf4c6ced4dc25812"
+    },
+    "archive/gpu-followup-20261020/source_snapshot/riscrivo/model.py": {
+      "bytes": 8491,
+      "sha256": "33b9c9d089eb743ae99686636bb3b39d703c43fa89e57c1618d76d3bbf52385e"
+    },
+    "archive/gpu-followup-20261020/transfer_pipeline.json": {
+      "bytes": 155,
+      "sha256": "45c0b3d54c45161d1db6c6afc478e35764b59ef2ac0aafc933128752c6631e64"
+    },
+    "archive/gpu-followup-20261020/try_p2p_parameters.py": {
+      "bytes": 2333,
+      "sha256": "db207f7526df477f58f76940f3d8b3f81f51d6722046344716baf841c704d362"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/DmpStore.c": {
+      "bytes": 31007,
+      "sha256": "2bdd06e8dbd72fad1c66ed5e39246d65f57b8ba6fd1eb7751b17656b41a177a9"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/OpenP2PForm.c": {
+      "bytes": 4357,
+      "sha256": "5afc3fa24e335f482438638941a29444b92794c7a6b06cd14636324804cb0425"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/SaSetup-after-native-ui.verified.json": {
+      "bytes": 435,
+      "sha256": "bbcc6f8a19d6188fd2ebf84e2dd935355c18742130815118fce9dab4a4f3a2b2"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/SaSetup-backup.verified.json": {
+      "bytes": 435,
+      "sha256": "bbcc6f8a19d6188fd2ebf84e2dd935355c18742130815118fce9dab4a4f3a2b2"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/SaSetup-enabled.verified.json": {
+      "bytes": 435,
+      "sha256": "bbcc6f8a19d6188fd2ebf84e2dd935355c18742130815118fce9dab4a4f3a2b2"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/Shell.c": {
+      "bytes": 102226,
+      "sha256": "d49af40645eee389a5750b68d5e8602024a92246078defa43562effe2c780907"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/install_probe.py": {
+      "bytes": 2189,
+      "sha256": "c9f75dc2f332eb867b35d50764fdd5716f891f7a111aaeeac618dfe341a1499e"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/native-ui-provenance.json": {
+      "bytes": 671,
+      "sha256": "14ddee85b92542c28f2bef62080573ebd1cd5d630aedf144c04e4ccc8f14f2c6"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/parse_backup.py": {
+      "bytes": 1081,
+      "sha256": "70318f69527bf37d3f8839b9579e9e0d55fd7aa203b4b2dc470d309793407509"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/plan.json": {
+      "bytes": 470,
+      "sha256": "f05c38260e38aed3379957a930b08521a45734a6402361f0daec86b1b1ce8bea"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/provenance.json": {
+      "bytes": 789,
+      "sha256": "8ebecd73cb82263cebe8282528e2cdc1e788ca98bae6ff94259e2ab016089010"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/server-state-final.json": {
+      "bytes": 489,
+      "sha256": "a9571fd96b07a9f4a9c829e996dc01ed69fb689cf5964eb1b194d56f9715c3e1"
+    },
+    "archive/gpu-followup-20261020/uefi-p2p/server-state.json": {
+      "bytes": 184,
+      "sha256": "303bfca1d78a0bf587c28b87bcadda1bfc83a7b0ecf990500383ebe671903fc0"
+    },
+    "archive/gpu-followup-20261020/verified_single16.json": {
+      "bytes": 932,
+      "sha256": "0e825c45b1da681a374b85b528a4a1a7453cfb4af44903265f398ce492f038c3"
+    },
+    "archive/gpu-followup-20261020/verified_smoke_ddp32.json": {
+      "bytes": 747,
+      "sha256": "c2ad2487e36b0d7dc6fa6ac9f28b5042c25536aa85f875ac811dd2b8646cf8dc"
+    },
+    "archive/p2p-aoostar-architecture-20261021/ESITO.md": {
+      "bytes": 9474,
+      "sha256": "bbc9e7b3e4a43fce783747631bcab1636e5afc73de9583dd5b74e2f831e8d849"
+    },
+    "archive/p2p-aoostar-architecture-20261021/aoostar-download-check.json": {
+      "bytes": 737,
+      "sha256": "f3bfca67aea1ca646a396acf4e486998439846afbcf796e90b7cf8fdc76819a0"
+    },
+    "archive/p2p-aoostar-architecture-20261021/manifest.json": {
+      "bytes": 672,
+      "sha256": "1811e0f2a790492fc3bafa1002639604f74bfb5019b78589fa179dc9913e7b03"
+    },
+    "archive/p2p-next-investigation-20261021/ESITO-provvisorio-phys1.md": {
+      "bytes": 6373,
+      "sha256": "5af17e83a2ed89049461dc1009a6fe3255f8718c37d086de9aa1c200df26d87c"
+    },
+    "archive/p2p-next-investigation-20261021/ESITO.md": {
+      "bytes": 10018,
+      "sha256": "1511a224c62ee32ccdcbbf31589369835229b486961419520d180892c15a3e27"
+    },
+    "archive/p2p-next-investigation-20261021/WORKSTATE.md": {
+      "bytes": 24640,
+      "sha256": "ee0d8020510fe3022080e7445b867cebeb2575de67e27f98581fc38a13751b5e"
+    },
+    "archive/p2p-next-investigation-20261021/audit_pushpull_mapping.py": {
+      "bytes": 10008,
+      "sha256": "78e5b07838884c8e1109e782bfa7d7254b7dfac5213162c4d8b032b76b5f1d67"
+    },
+    "archive/p2p-next-investigation-20261021/audit_traffic_mapping.py": {
+      "bytes": 9910,
+      "sha256": "080bc5f13dbac6bcd07bd72b09179e9f9297cd241c0877d1835287c67cca4157"
+    },
+    "archive/p2p-next-investigation-20261021/build-inputs.json": {
+      "bytes": 1410,
+      "sha256": "81353b752c845befb90cd1697485a69bda59d9a6278d27a11dce50891b2510d3"
+    },
+    "archive/p2p-next-investigation-20261021/build_package.py": {
+      "bytes": 4360,
+      "sha256": "663b77f4238f621ba53287d9deda8f912220397ee20acb401ed3cd27f156a0c3"
+    },
+    "archive/p2p-next-investigation-20261021/build_physical2_package.py": {
+      "bytes": 7140,
+      "sha256": "db448aa1d2210a6e1cb187f191f11c753d59dcaf8ceab79af94b8a3fb58edc4a"
+    },
+    "archive/p2p-next-investigation-20261021/build_physical3_package.py": {
+      "bytes": 7137,
+      "sha256": "c64247d7c9c32187bbb5bb8dce07a4131693b06044b3217e6bcaea0af9659bf4"
+    },
+    "archive/p2p-next-investigation-20261021/build_physical_package.py": {
+      "bytes": 7120,
+      "sha256": "82166ff1fc354f4745344b2c5bb1b4257de5104f419bfd0e8c2259b7c7a13dbc"
+    },
+    "archive/p2p-next-investigation-20261021/build_traffic2_package.py": {
+      "bytes": 4649,
+      "sha256": "c56094b7c2a23db4eab67918154242337c3e82dcd5fbe992322672779e5c9dee"
+    },
+    "archive/p2p-next-investigation-20261021/build_traffic_package.py": {
+      "bytes": 4643,
+      "sha256": "310c4040d6942ceec2cb6e183707f473979c49b9e29c9fb8397fba3c2d5fcf26"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_native.py": {
+      "bytes": 11804,
+      "sha256": "54d0576616d993e596d8b000ab2ad2356225d5d6612ae4dec873fefe73c6c6e3"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_physical.py": {
+      "bytes": 10797,
+      "sha256": "8f19f83ad70a5bef393e190df959c87bf0cc4ae13556a40110e272edcacbc8e5"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_physical2.py": {
+      "bytes": 10804,
+      "sha256": "a35b7f6bf9a0af292adb191043adc6e8fba1e58ff36becee2b54c1973079e27c"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_physical3.py": {
+      "bytes": 10805,
+      "sha256": "ba923c9799ee47b3473ae9ad9d1f46975054b0139bced05fb2c5e2293aed5b11"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_traffic.py": {
+      "bytes": 14225,
+      "sha256": "a0a7d6a941f00c20ff5fc126cf164793d81a91e057ebd00d7ee32f20247b0236"
+    },
+    "archive/p2p-next-investigation-20261021/collect_cleanup_traffic2.py": {
+      "bytes": 14233,
+      "sha256": "ad44a87883425e00a71a1f0974b46254a59352ccda1e0af1f2d509796285cfed"
+    },
+    "archive/p2p-next-investigation-20261021/collector-independent-review-firmware.json": {
+      "bytes": 2444,
+      "sha256": "2160cb189348453d535d63bbe21104e55fd6c27fd9add5103c5d380fa9fae7a0"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/README.md": {
+      "bytes": 6374,
+      "sha256": "ac045286e646a81b0bb672ef29dee7e2d5843e1d509b9ed59bd47f5979ea1ea9"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/ARCHIVE-REASON.json": {
+      "bytes": 276,
+      "sha256": "18a6eebe7fe6ac2998eeb1cee47faba732918990c46a307c3a5efc7ab607bdbb"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/README.md": {
+      "bytes": 6374,
+      "sha256": "ac045286e646a81b0bb672ef29dee7e2d5843e1d509b9ed59bd47f5979ea1ea9"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/build-contract.json": {
+      "bytes": 3174,
+      "sha256": "0c10484c8e1d7b760c1043878449d67f05e838456011ed810d0432a440e7da21"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/cask_phys_ce.inc": {
+      "bytes": 14630,
+      "sha256": "3ac8a40d2b86db7242d8614861fef601e337cb01ff7353305a9677994f19bb55"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/cask_phys_ce_ioctl.h": {
+      "bytes": 2245,
+      "sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/independent-review-firmware.json": {
+      "bytes": 2424,
+      "sha256": "c9b4dca3c3f6405c540f72459923a3e5f43ede234f8cb66742ef2cb5734b4d98"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/manifest.json": {
+      "bytes": 3910,
+      "sha256": "e4c61143efc0b60a0eb9c0bbd9bec2c0e3ee02c1e5df2e06896c216b5dbcb979"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/offline-validation.json": {
+      "bytes": 537,
+      "sha256": "0e3d0bb8fba79c204d93ecf6fe4e3ced8782865bdb8193654d07b209cd76daaa"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/physical-ce.patch": {
+      "bytes": 24402,
+      "sha256": "7a228a6287ff9889aad2e19beade1481f6b597f4be8cd732645064bd6a862cfc"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/archive-fortify-v1/prepare_overlay.py": {
+      "bytes": 8901,
+      "sha256": "3943ac33b0da002cbf8b2b90a050daf803e67ff35ed1eef3dad0c73d170580ff"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/build-contract.json": {
+      "bytes": 3170,
+      "sha256": "f15c9a712538e36873ed7ce2c50d173d919bd748f98afc07512feba38b3b0ac1"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/build_uvm.py": {
+      "bytes": 5693,
+      "sha256": "7d366b57d1a94ef082a69dd979b7bec7bc54270ec5dae704d2a2570b891c892c"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/cask_phys_ce.inc": {
+      "bytes": 15082,
+      "sha256": "d9bd664c849b8052e8a91cbf2d2666cc9253081b3247c7690f11024acf18e218"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/cask_phys_ce_ioctl.h": {
+      "bytes": 2245,
+      "sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/fortify-fix-independent-review-firmware.json": {
+      "bytes": 1512,
+      "sha256": "fa1ae4ba15d938671bd61d39bf7f8d8d701f0138ec745d45bb2334a4ff880be3"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/independent-review-firmware.json": {
+      "bytes": 2624,
+      "sha256": "ae148ce734fd46cd79542fb922f14be841a7da74131bd4b78bbf49a354ee60f9"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/manifest.json": {
+      "bytes": 3910,
+      "sha256": "84b294e1c6accb5a32b885082590b4870f3a205d72d0ae75ad84da60de22a561"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/offline-validation.json": {
+      "bytes": 619,
+      "sha256": "470df9a0f500f5dbdf84160511e173eab2e529d8a4ab55e0af71014baaaeea15"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/physical-ce.patch": {
+      "bytes": 24862,
+      "sha256": "154d04f2e437b76237be70b1cff6454346afb395c68851075df658100692cffd"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/prepare_overlay.py": {
+      "bytes": 8901,
+      "sha256": "3943ac33b0da002cbf8b2b90a050daf803e67ff35ed1eef3dad0c73d170580ff"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/root-fortify-fix-review.json": {
+      "bytes": 381,
+      "sha256": "6ffebbe7785831e0e5823785f939a1d189dcbbc81b848a5e7309995358d6e71a"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/test_abi.c": {
+      "bytes": 1374,
+      "sha256": "7210eb183b8ec93e6335daee7a6033e560e2b0ce7753683fb3680d71fb60d671"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce/test_zero_outputs.c": {
+      "bytes": 950,
+      "sha256": "0b26c375e4b50d95d719fc58a3b4098b067bc6fb0ba207a073318781fa327fa1"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-build-01/build-manifest.json": {
+      "bytes": 12980,
+      "sha256": "fd119279d4be1b088f9418da6f2020aab4dfd09b60d48905d92da36474435c46"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-build-02/build-manifest.json": {
+      "bytes": 12981,
+      "sha256": "957a87e341b9c9bbfdad13d95885c4fa31075a0fa5ddb93c7d33945c5cde71bd"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-build-02/independent-build-review-storico.json": {
+      "bytes": 701,
+      "sha256": "69b74c26993e4e383c14240447cf2c7909c154e780d549a7a2b8347d64e617dc"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-build-03/build-manifest.json": {
+      "bytes": 12981,
+      "sha256": "9746d74f09d74796ed10b25b9678078163fec64d3f4a00d4c7ee755f29bf6935"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-build-04/build-manifest.json": {
+      "bytes": 12979,
+      "sha256": "20b3b8a71d7f68d98526ce09c279afb09d50e71967109505c995739696d9191e"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/README.md": {
+      "bytes": 6374,
+      "sha256": "ac045286e646a81b0bb672ef29dee7e2d5843e1d509b9ed59bd47f5979ea1ea9"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/build-contract.json": {
+      "bytes": 3174,
+      "sha256": "0c10484c8e1d7b760c1043878449d67f05e838456011ed810d0432a440e7da21"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/build_uvm.py": {
+      "bytes": 5693,
+      "sha256": "a74b429da7e37a40f47fabf068eade0a03b7e4949f80fd6851c770d179e0400e"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/cask_phys_ce.inc": {
+      "bytes": 14630,
+      "sha256": "3ac8a40d2b86db7242d8614861fef601e337cb01ff7353305a9677994f19bb55"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/cask_phys_ce_ioctl.h": {
+      "bytes": 2245,
+      "sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/independent-review-firmware.json": {
+      "bytes": 2424,
+      "sha256": "c9b4dca3c3f6405c540f72459923a3e5f43ede234f8cb66742ef2cb5734b4d98"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/manifest.json": {
+      "bytes": 3910,
+      "sha256": "e4c61143efc0b60a0eb9c0bbd9bec2c0e3ee02c1e5df2e06896c216b5dbcb979"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/offline-validation.json": {
+      "bytes": 537,
+      "sha256": "0e3d0bb8fba79c204d93ecf6fe4e3ced8782865bdb8193654d07b209cd76daaa"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/physical-ce.patch": {
+      "bytes": 24402,
+      "sha256": "7a228a6287ff9889aad2e19beade1481f6b597f4be8cd732645064bd6a862cfc"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/prepare_overlay.py": {
+      "bytes": 8901,
+      "sha256": "3943ac33b0da002cbf8b2b90a050daf803e67ff35ed1eef3dad0c73d170580ff"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-source-v1/test_abi.c": {
+      "bytes": 1374,
+      "sha256": "7210eb183b8ec93e6335daee7a6033e560e2b0ce7753683fb3680d71fb60d671"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/build-contract.json": {
+      "bytes": 3066,
+      "sha256": "e365f57cd3cef9f8babb723bb56511dc7f050ca26e3b0d57f7a1085ab98761f5"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/build_uvm.py": {
+      "bytes": 5696,
+      "sha256": "b7b8716edd61d6cc0699ca0a4d6dc2cd5a4f4264e36f820c951409a46f26a599"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/cask_phys_ce.inc": {
+      "bytes": 20252,
+      "sha256": "db660c96b8c1df62fcbb04e70e64c910ea0a4008c7550ca2627575faf8561b8a"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/cask_phys_ce_ioctl.h": {
+      "bytes": 2245,
+      "sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/independent-kind-permission-review-nvidia.json": {
+      "bytes": 1093,
+      "sha256": "5eeadb0a92baebbccd27588eb364a0cfaff22e4f76f9d8c4fc241ed37a927c45"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/manifest.json": {
+      "bytes": 4034,
+      "sha256": "11826894bf6abb074a1ed973c3100502313c484f90f31c7c4700474251b468d5"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/physical-ce.patch": {
+      "bytes": 30112,
+      "sha256": "e9fbb5dc3d25883696bbc5be606aba01391d6bdaf06c01cc68cb60e0280b9507"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/prepare_overlay.py": {
+      "bytes": 9017,
+      "sha256": "ec87832aa836dbd7fac6dc090f645f12f14bbfe02b78c18e55b2ddc1f5d3e798"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/root-source-review.json": {
+      "bytes": 763,
+      "sha256": "0d9a55136d0ba6983f52e8e0c7f080591e77ec8642401d8137a072e290699631"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/test_abi.c": {
+      "bytes": 1374,
+      "sha256": "7210eb183b8ec93e6335daee7a6033e560e2b0ce7753683fb3680d71fb60d671"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v3/test_zero_outputs.c": {
+      "bytes": 950,
+      "sha256": "0b26c375e4b50d95d719fc58a3b4098b067bc6fb0ba207a073318781fa327fa1"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/build-contract.json": {
+      "bytes": 3066,
+      "sha256": "56394e43344b3e6add04cbc938ff858a08c97c07478c1903bf23a7d717111a2d"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/build_uvm.py": {
+      "bytes": 5696,
+      "sha256": "00fc4804e5fca9fe37e9116a1484db96f39aaaecb920d49a658ddcd47eaef76b"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/cask_phys_ce.inc": {
+      "bytes": 20254,
+      "sha256": "15f1e4817ca6015c3042c06bf2acb95086009c1271c7ff719dee99798358f1a0"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/cask_phys_ce_ioctl.h": {
+      "bytes": 2245,
+      "sha256": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/manifest.json": {
+      "bytes": 4036,
+      "sha256": "26de5d5569919082be7f61a23fd0e17028e64594306a2e1b34226f2bc912fb9c"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/physical-ce.patch": {
+      "bytes": 30114,
+      "sha256": "246da840cf87f136333e8dd922d32d23404d4e13e4fb8a0813e4433909ad8f24"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/prepare_overlay.py": {
+      "bytes": 9019,
+      "sha256": "b7dd0af1c9a3a65f58667e36c671ad6d564e2b41edf69dfd81d039331fe14893"
+    },
+    "archive/p2p-next-investigation-20261021/driver-physical-ce-v4/root-source-review.json": {
+      "bytes": 571,
+      "sha256": "819088cb0ca97e397c23f992a8c11d04fa36436179099c6f0eb037813b47ed98"
+    },
+    "archive/p2p-next-investigation-20261021/driver-review.md": {
+      "bytes": 15667,
+      "sha256": "1331162771933eacecfe6526be351af24ed35ef221bdad31edfc5e938b5482b3"
+    },
+    "archive/p2p-next-investigation-20261021/final-review-backup-verification.json": {
+      "bytes": 220,
+      "sha256": "f2e9b9c4798d1658a0a0e10c499441653826c975eac5026dbf0e1834bb15191b"
+    },
+    "archive/p2p-next-investigation-20261021/final-review-manifest.json": {
+      "bytes": 1471,
+      "sha256": "ef4716871d0f97ae602cb69e4a0dc7cc8cfe6a162df062ef4593c9533d55f598"
+    },
+    "archive/p2p-next-investigation-20261021/firmware-review.md": {
+      "bytes": 8909,
+      "sha256": "f1dca08e65d47e19072ee1bdc70ca0024f676cbcb408b3b218c953597e21daed"
+    },
+    "archive/p2p-next-investigation-20261021/gaps-review.md": {
+      "bytes": 8647,
+      "sha256": "7ab30f41c294c7b94d390e2a5f5e6a698177913cf40a370761e365dcaaf87001"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_physical.py": {
+      "bytes": 19324,
+      "sha256": "051c2a73204a1c5af825496047ad044e242bcbf6b4b5004b69ddb0bb9fffe87e"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_physical2.py": {
+      "bytes": 19334,
+      "sha256": "50524c14c708c92c54038b1eef65669ed3aba7356ca1ebf0791651f6ffb2619b"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_physical3.py": {
+      "bytes": 19334,
+      "sha256": "a268add90c40c48790a997f3d8901e8918096aea9dea0ac6edc044921912828e"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_probe.py": {
+      "bytes": 18644,
+      "sha256": "8fab0f8aff48a39638a0b2094d151385e41bc4c4ce8d9a82bf29214ca64991f8"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_traffic.py": {
+      "bytes": 18865,
+      "sha256": "b0134d9c97b70e9a087449752de6cb56303756418f61d61b64e0a99279e5e4e4"
+    },
+    "archive/p2p-next-investigation-20261021/install_native_traffic2.py": {
+      "bytes": 18875,
+      "sha256": "4349a4da5aad91f33a0ec8deb673e93fe3c421d9d4ff4f5a78c676c44ca3f339"
+    },
+    "archive/p2p-next-investigation-20261021/installer-collector-offline-tests.json": {
+      "bytes": 782,
+      "sha256": "9c75100db21312c21d6399f43d38c9afbc64eefd0426bad3e83df8c637364359"
+    },
+    "archive/p2p-next-investigation-20261021/installer-independent-review-firmware.json": {
+      "bytes": 1877,
+      "sha256": "a2b22567818b3b0cf1e516c0565e3282a779ba506ce58c67ba862e8c0f90cca4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-collection.json": {
+      "bytes": 7622,
+      "sha256": "90fc9e63e621a79a5aaef6ea3c74ae0025ff0d26bca55c4d20c5dc910c6ee6d7"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/LEGGIMI.md": {
+      "bytes": 4528,
+      "sha256": "8d09e3118969ec8edcaf26ed946b286427b3649128f77709589c55fb59366314"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/analyze_physical.py": {
+      "bytes": 12641,
+      "sha256": "25dc8fb711b29731c657b621cfcfc46e75b25d246bce8518c91530c5017e2d50"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/archive-client-v1/client-fixtures.cpp": {
+      "bytes": 3615,
+      "sha256": "d572e430061b75d97d003e8851e12d4e55f767cc1b7f53b8d661b6211841a037"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/archive-client-v1/offline-client-validation.json": {
+      "bytes": 938,
+      "sha256": "2de71c11f3e845eb1aa46b4aa9b9d42c827171fa9d347ff1be972bdbf9d6efc3"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/archive-client-v1/phys_ce_client.h": {
+      "bytes": 7770,
+      "sha256": "baefbc74e2d3792dc382adaca057b9344ac09657e0cb8e3d04c650e6d1a29380"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/archive-client-v1/source-provenance.json": {
+      "bytes": 1841,
+      "sha256": "abbd1a997561fd16f509928b977cf65450589a76dffc2dcd3617f123839c84ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/client-fixtures.cpp": {
+      "bytes": 3719,
+      "sha256": "7e59b10bb24ca2e181d82e85cf7fd0ae2d90003145c453d274c66870c5483edf"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/independent-review-firmware.json": {
+      "bytes": 1486,
+      "sha256": "f9fda893534d98dfcba67294ceada290b233060da2019dd1288716e3ec336599"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/nvml_analysis_core.py": {
+      "bytes": 4094,
+      "sha256": "4d37a30bb26301355f4fbff92ca297ab217ca9e7d8c59ad1434b518836fb93d4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/nvml_sampler.h": {
+      "bytes": 7600,
+      "sha256": "00deb24339644e8393c7c88c71c47a8c02b88d5c3d9295122992b0ef5c73e580"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/offline-analyzer-validation.json": {
+      "bytes": 845,
+      "sha256": "f7868edd6f5e917eb59f658e01bb2236880db8cc3699bb0da88dceb69f8d3643"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/offline-client-validation.json": {
+      "bytes": 1016,
+      "sha256": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/offline-fixture-include/cpuid.h": {
+      "bytes": 179,
+      "sha256": "a8c6c2fa6e063beb0be929b38ee56bfc823cd389b2181fcfa8da2532ce61e70f"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/peer_physical_ce.cu": {
+      "bytes": 20336,
+      "sha256": "4055388115f48b90211da9956edbb3e45a8ea2f7b65b2388c9ef708151e611da"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/phys_ce_client.h": {
+      "bytes": 7801,
+      "sha256": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/source-provenance.json": {
+      "bytes": 1932,
+      "sha256": "ba8334a956fcaebf4a2ddb52ec2a1675e88ab594f73d3f4ca2577f2f6d83b6c6"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-probe/test_analyze_physical.py": {
+      "bytes": 8616,
+      "sha256": "98faa495e54791c0d3ba84d4827a8e9fe84bd75f7f3f54e7731efd9d340c695c"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/build-manifest.json": {
+      "bytes": 5473,
+      "sha256": "973b4c324cef5b4edfa30a25e44381e66438a2e6c562838edd5b42474d70493e"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "c8411ef8e7774f2a2674ac63b2d646eeaf13876d37f8f3a2052f30c050fbcba7"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/files.json": {
+      "bytes": 269,
+      "sha256": "e853946eedbd8dcae5bdb11d2ff2bd278e276ee428125b78f459104a8349f9a5"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/physical-state.json": {
+      "bytes": 3695,
+      "sha256": "7bddd02b80b46570fd7bf02c2f7fdb7335c3964f1b1c483f9095a194f99a9082"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/result.log": {
+      "bytes": 44913,
+      "sha256": "9b0b28c6ddc14c86d09490e078552eb0596a5177fd4b3987b670b831ca593c8a"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical-ce-results/root-outcome.json": {
+      "bytes": 693,
+      "sha256": "a8549439c643303e22fe5a08870f92f7603d6e0896a4a22f7a5f3bcbead04e0b"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-collection.json": {
+      "bytes": 7614,
+      "sha256": "3963b602f774b68530085ab48a50d84de4cbdd730edf66f16edfcbc8d03a6157"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/LEGGIMI.md": {
+      "bytes": 4528,
+      "sha256": "8d09e3118969ec8edcaf26ed946b286427b3649128f77709589c55fb59366314"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/analyze_physical.py": {
+      "bytes": 12641,
+      "sha256": "25dc8fb711b29731c657b621cfcfc46e75b25d246bce8518c91530c5017e2d50"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/client-fixtures.cpp": {
+      "bytes": 3719,
+      "sha256": "7e59b10bb24ca2e181d82e85cf7fd0ae2d90003145c453d274c66870c5483edf"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/independent-review-firmware.json": {
+      "bytes": 1486,
+      "sha256": "f9fda893534d98dfcba67294ceada290b233060da2019dd1288716e3ec336599"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/nvml_analysis_core.py": {
+      "bytes": 4094,
+      "sha256": "4d37a30bb26301355f4fbff92ca297ab217ca9e7d8c59ad1434b518836fb93d4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/nvml_sampler.h": {
+      "bytes": 7600,
+      "sha256": "00deb24339644e8393c7c88c71c47a8c02b88d5c3d9295122992b0ef5c73e580"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/offline-analyzer-validation.json": {
+      "bytes": 845,
+      "sha256": "f7868edd6f5e917eb59f658e01bb2236880db8cc3699bb0da88dceb69f8d3643"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/offline-client-validation.json": {
+      "bytes": 1016,
+      "sha256": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/peer_physical_ce.cu": {
+      "bytes": 20336,
+      "sha256": "4055388115f48b90211da9956edbb3e45a8ea2f7b65b2388c9ef708151e611da"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/phys_ce_client.h": {
+      "bytes": 7801,
+      "sha256": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/source-provenance.json": {
+      "bytes": 1932,
+      "sha256": "ba8334a956fcaebf4a2ddb52ec2a1675e88ab594f73d3f4ca2577f2f6d83b6c6"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-probe/test_analyze_physical.py": {
+      "bytes": 8616,
+      "sha256": "98faa495e54791c0d3ba84d4827a8e9fe84bd75f7f3f54e7731efd9d340c695c"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/ANALISI.md": {
+      "bytes": 6950,
+      "sha256": "226053b52ea975168ef1cb2c131707301e7c4caab8d519f48f388ec189308ec3"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/analyze_kernel_nvidia.py": {
+      "bytes": 9114,
+      "sha256": "286542f63e4d8740346178cb600e204f401cef6aa21dae7cf6da891816e4eea0"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/build-manifest.json": {
+      "bytes": 5634,
+      "sha256": "ecc0841cece826fa6f8b0e548650f99021c27fe42fa6d42fe4cc3d8af97768e4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "e2fd8b2284005e4f481268a7c521c8ba783917b14c0c3b4c4e75189f9f801691"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/files.json": {
+      "bytes": 269,
+      "sha256": "73e0e8294eab945ea3fcb9bfc0615f9145fc3e311c1bf120d7fd17fdd9811a65"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/physical2-state.json": {
+      "bytes": 3706,
+      "sha256": "e32700fefb94dbe093620a632428cfea564e9fc19fbe357f31984794fe07e6e7"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/result.log": {
+      "bytes": 211398,
+      "sha256": "dc5d2661da87eab2327dee9d4cbc464cd179a8078f065a1d8d323752d33f7dc4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/verified-kernel-nvidia.json": {
+      "bytes": 3419,
+      "sha256": "a1af01753d37a5357c46ab8d7478408db264479e20937d660a3d1165c638bbd5"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/verified-protocol-nvidia.json": {
+      "bytes": 14629,
+      "sha256": "823577b8347c205b789ff1e7233fbd4861daddc033af02214e3dbd6fa6de764e"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical2-ce-results/verified-result.json": {
+      "bytes": 21013,
+      "sha256": "cf79f7d3b4510650311a74d74eddfedc42761af33abc73cc2898cae6633cc9bd"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-collection.json": {
+      "bytes": 7615,
+      "sha256": "dd2595c04a1a94858535737bf773d1c349c99f5aeffa74493686284b91ec5581"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/analyze_physical.py": {
+      "bytes": 12638,
+      "sha256": "3da7561b8deef30c8725f71ae55336c39bc4dcc9745ae101b2542c9f7da42cdc"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/client-fixtures.cpp": {
+      "bytes": 3719,
+      "sha256": "b8b59099014565a897249e6175edea618840c07c3b943f0f2c2483f715f7ea0c"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/nvml_analysis_core.py": {
+      "bytes": 4094,
+      "sha256": "4d37a30bb26301355f4fbff92ca297ab217ca9e7d8c59ad1434b518836fb93d4"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/nvml_sampler.h": {
+      "bytes": 7600,
+      "sha256": "00deb24339644e8393c7c88c71c47a8c02b88d5c3d9295122992b0ef5c73e580"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/offline-analyzer-validation.json": {
+      "bytes": 258,
+      "sha256": "76c909c957925e5f40c02a8e756b5e849ca8ac391f150bb2d739c59546d13c22"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/offline-client-validation.json": {
+      "bytes": 382,
+      "sha256": "55121ad8094b483823172a81a37d32c55a94cf2585dfe15764c0c8fd79a57c76"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/offline-fixture-include/cpuid.h": {
+      "bytes": 179,
+      "sha256": "a8c6c2fa6e063beb0be929b38ee56bfc823cd389b2181fcfa8da2532ce61e70f"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/peer_physical_ce.cu": {
+      "bytes": 20336,
+      "sha256": "4055388115f48b90211da9956edbb3e45a8ea2f7b65b2388c9ef708151e611da"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/phys_ce_client.h": {
+      "bytes": 7808,
+      "sha256": "4131933670fab1d4e6e0e9cbcb34c651558061e56933e5182bb24cc668dbf2d5"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/root-client-review.json": {
+      "bytes": 380,
+      "sha256": "be1c697657d145c2d6a27781d2d893e64ed429d8ffa0d2ce54b10fc2f865ac17"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/source-provenance.json": {
+      "bytes": 1644,
+      "sha256": "2ad55845ca3be080cf6746a1b0e36f802928e02b6082c13f52045b659ffe1cfc"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-probe/test_analyze_physical.py": {
+      "bytes": 8616,
+      "sha256": "7e07e6af2b48d66738b6df2b1e2bc827c2bb7fbb3488fc873ce7c4bd4b7fd3f3"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/ANALISI.md": {
+      "bytes": 2962,
+      "sha256": "f77fe5ff62e37cd12ea7b9c1bb99abb3f313424f1b0bfee8626cd1e1670fe248"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/build-manifest.json": {
+      "bytes": 5478,
+      "sha256": "5e851a1d7781fc3985f8469919fdb38b512b6ab31cb1d00724ab599fbcd2547a"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "1d4d1cb267228873ed5af0f60b0e04362024ec5e2b12d4b09aa58b4ad82984f8"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/files.json": {
+      "bytes": 269,
+      "sha256": "64f7f0d8828518975e5da7a1980eb20b843e1173546a6343115691b6a65fff5c"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/physical3-state.json": {
+      "bytes": 3705,
+      "sha256": "8ef0c2447f43049dcb94eaa7dc5997ca756e692112e058e5ad2e6bcc4915c748"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/result.log": {
+      "bytes": 211397,
+      "sha256": "3e5a2eb6786ea9a994dd097c04cb9cb198ca4150779d31678823391b5205ae1b"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/verified-kernel-root.json": {
+      "bytes": 3411,
+      "sha256": "e1ac7c79e63932198752333fc36affb9504dc4ca9b73bd4dfdf2b7b8041e7e83"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/verified-protocol-root.json": {
+      "bytes": 14596,
+      "sha256": "f110ce47456cfd18b1ac78f11543d3618680d584bd898335678613821959f351"
+    },
+    "archive/p2p-next-investigation-20261021/native-physical3-ce-results/verified-result.json": {
+      "bytes": 21356,
+      "sha256": "cea06541a3c69596d3afbe78d2e2ec5adf1c9113b0b35d62c753f8beacff2955"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-collection.json": {
+      "bytes": 7210,
+      "sha256": "08aa2b4145c42c72f95d7cbb8819c3bddc20e451ab240b895eaa522d012b31bb"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/analyze_ce.py": {
+      "bytes": 12899,
+      "sha256": "e4f9d405aef3c1f8e34a46fc35a47b2740931bf5f0803d6341d6073c3cee0077"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/classifier-fixtures.cpp": {
+      "bytes": 6087,
+      "sha256": "9f46e3fff5a64faa32493095da5656488cf4a25c403d3978c9b008380a246d7c"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/cupti_trace.h": {
+      "bytes": 13653,
+      "sha256": "a59d3f1a132f2ae43b073ffc16cf86cbaf740c9bfae6c0d93c047fbb7c3adca8"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/independent-flow-review-storico.json": {
+      "bytes": 1633,
+      "sha256": "baacd31a9d3b0d663d6fc0487f816e4ec54bcd86758a0779a275eec4cabc0dc9"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/independent-review-firmware.json": {
+      "bytes": 3311,
+      "sha256": "6b4fe01bd17cb03b9a87a00fb2b4c312312d00d7dc602b9b9e9fcf9ba2727c17"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/offline-analysis-fixtures.json": {
+      "bytes": 1245,
+      "sha256": "3746d52232d9f6a92af012f008f9da1de2c62acc48aa912438692d024e40e9b6"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/peer_pushpull_cupti.cu": {
+      "bytes": 15646,
+      "sha256": "ccc394d0091ba009862e9e80c76d6b6b6b568407c377f9cb2ac6a8e58b72260a"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/prepare_from_verified.py": {
+      "bytes": 7616,
+      "sha256": "0678ddd369af0b53a0227bfdb256222c219c5f64545efb0e65ff744f6ad69ff2"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/prepare_offline_audit.py": {
+      "bytes": 7549,
+      "sha256": "ef308115042dbe06f5a4b7d52a4e7049807447a88eee61c0d3727cc1eef36904"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/source-provenance.json": {
+      "bytes": 816,
+      "sha256": "8f3e2d5a260fe59bd53df10695ae344de533889c63e1a341c12c37b242dbd409"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-probe/test_analyze_ce.py": {
+      "bytes": 9490,
+      "sha256": "bdede9733286183046fe8526f9c951fe443c95c78710e71e179b57dd6e2cfaf6"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI-MAPPING-FIRMWARE.md": {
+      "bytes": 4834,
+      "sha256": "395eaba90ef2eb7183688ef508a291b103e5d2b4c333f30aea9bc71255977c88"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI.md": {
+      "bytes": 5487,
+      "sha256": "94b281f9da7cd1da1a4328c2f1a9420700c72e383dba8f3d16a51e88d3aaa458"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/build-manifest.json": {
+      "bytes": 3316,
+      "sha256": "8a1313a98040ce7f212151634ced9272ed0c8ec707cca253d604991634d7645d"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "a8fff5b22f94d0eedfc878ff356e5ff07f397b2f9bd93093f694b69771441481"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/complete_cupti_analysis.py": {
+      "bytes": 8430,
+      "sha256": "2e510076432a2207061d0ef777839dd26798d749f42a802cdace180cf1aa206d"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/cupti-independent-log-audit.json": {
+      "bytes": 10167,
+      "sha256": "e13ff42757255e831abf640d500879c6eb2d7086f1438c5eca258124f7126528"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/files.json": {
+      "bytes": 269,
+      "sha256": "b498b50018f0daaaf409a1e08c58652ad12d6b093631d9306722255b086068df"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/independent-mapping-pci-lifetime-review-firmware.json": {
+      "bytes": 64472,
+      "sha256": "f4756a6d137b95b30af11c913119b8c850f85c730955248a2c393e3863186208"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/native-pushpull-state.json": {
+      "bytes": 3657,
+      "sha256": "74fccaa511b485b2beb40617ea7ac1a30c072c464a90d7409b8d239297744bcc"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/preliminary-collected-manifest.json": {
+      "bytes": 1833,
+      "sha256": "4749408fa1dbf7db4579232aa487eb07a416f3b9b5b9a2cb88adafc034173706"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/result.log": {
+      "bytes": 618939,
+      "sha256": "61fc0c0dc9f3227d33a0f6f9bd7e073c4d8a05b3d5b0fe6fc9b7f12a1dffbc33"
+    },
+    "archive/p2p-next-investigation-20261021/native-pushpull-results/verified-result.json": {
+      "bytes": 91604,
+      "sha256": "a209cac0fc5f3f4d0d2550fd6eb2e652511267a2bfc60da8d82a7c1008399614"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-collection.json": {
+      "bytes": 7308,
+      "sha256": "d542b1cb19edaa0734f43418d1044b89a53647dd1da78e6f88ba9456537b8222"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/LEGGIMI.md": {
+      "bytes": 5390,
+      "sha256": "a6992efd3108aa0ac67c310941edb31d8fbab996f5de77250c7b2c13d0efe324"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/analyze_traffic.py": {
+      "bytes": 12251,
+      "sha256": "2ce4109844acefd8932710aceb748f4138ff328fe1429d6e80db1ee5ad39178f"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/independent-flow-review-storico.json": {
+      "bytes": 1535,
+      "sha256": "bf4d47fcb8ff047e45968785ad7427847f7d983c352235650f2984968955f222"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/independent-sampler-review-firmware.json": {
+      "bytes": 4438,
+      "sha256": "44e8ed52b959caf08670da9697392790bc91a8e793404a3a45ea609481441113"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/interpretazione-nvml.md": {
+      "bytes": 3813,
+      "sha256": "d472491105af7c1d2b2c3e5a9b84484d4a0c0dbdc69ba1b5e7d272fc4e7a5ddc"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/nvml-counter-semantics-review.md": {
+      "bytes": 2601,
+      "sha256": "5dcae3dbcd4d873c669b8c7bae7d0771fb274988ca0611c30bce548a4989b2d5"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/nvml_sampler.h": {
+      "bytes": 7600,
+      "sha256": "00deb24339644e8393c7c88c71c47a8c02b88d5c3d9295122992b0ef5c73e580"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/offline-analyzer-validation.json": {
+      "bytes": 451,
+      "sha256": "fa94b01beb69627cda3689ab9da13e9187d139102ee1a0604380ab84bc4c5a77"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/offline-fake-nvml/fake.cpp": {
+      "bytes": 1342,
+      "sha256": "4d38572345561a3ce7d340872517c0042309023fd5912f71f2a1901edae0605d"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/offline-fake-nvml/run.cpp": {
+      "bytes": 515,
+      "sha256": "d50fcbb9af8665463665abcfef4e73ba5397c186fc572d3d4c88a7797e74caf0"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/offline-sampler-validation.json": {
+      "bytes": 855,
+      "sha256": "f05fdc8d775b9967be00cc32b27989982811c75cef472b4d3648d4905698b1cf"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/peer_traffic.cu": {
+      "bytes": 16548,
+      "sha256": "c25defa4bcc0afabcaf51159c179b5240543372acd2aaf1713c4f6e944ae78d3"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/prepare_source.py": {
+      "bytes": 9004,
+      "sha256": "db1effa4ab278fdddf58832c66891a4a63e5ae40427519be71cc9fda8568a82e"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/run_sampler_fixtures.py": {
+      "bytes": 1789,
+      "sha256": "ed58130eae952fe22efbed6669a3dbeab60d525d860a6038a7cc1b252f9df532"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/sampler-fixtures.cpp": {
+      "bytes": 1508,
+      "sha256": "5aee4b1b8127dad1c66a377df6f600b669ffc1685c0ff0ab628d89e191ff8be8"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/source-provenance.json": {
+      "bytes": 1356,
+      "sha256": "118f041d0287012c69669ba0ad40ceead5ea1e74e3904d57760cc12ef8791f14"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-probe/test_analyze_traffic.py": {
+      "bytes": 7354,
+      "sha256": "544a60b539b8a2037aa8e655fe098878ce76b9ef556ea65ee15d6db692368053"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/ANALISI.md": {
+      "bytes": 4359,
+      "sha256": "0fc4b09a4e3de3ca5e430ec52a5c6c190ca7c4bde25951fedca32087c1e4c5a4"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/analyzer-output.json": {
+      "bytes": 12819,
+      "sha256": "8b63cf426063e9db0251f1e97bf845869a296f0e9e43524173ecd146fcbeb95d"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/build-manifest.json": {
+      "bytes": 4001,
+      "sha256": "3378cc6da22ca66fe6e3d3381c241e5c1e92de69fd024e7f74f82ef85f48bc99"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "8c74ca30756cb2ddc8ad0235e152e3bb2ba0eb202431333e8f2f2dd297fbc8a9"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/complete_analysis.py": {
+      "bytes": 5871,
+      "sha256": "3523532f5d47076f7caadcc552a1307b5d61fc88109476634a26c11a96bfd426"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/files.json": {
+      "bytes": 269,
+      "sha256": "2022296ae0accb757ba6fa30dbc9d4e5ce179ea28fd5d04a178b02b00b072e7d"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/independent-mapping-pci-nvml-review-firmware.json": {
+      "bytes": 47865,
+      "sha256": "34c287d4def52334fc7d6a96eef8aec59f93a6e2221a12a792711d2ac13b9928"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/independent-traffic-audit.json": {
+      "bytes": 12818,
+      "sha256": "bc4880fda0da715b62511aa3e4da61da777fb628acac0f597f6e01c71765984d"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/result.log": {
+      "bytes": 127689,
+      "sha256": "0c9ad643bbd9689700d5cf1d121b7d64c142082a185df6d705108574e9dcb8b4"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/traffic-state.json": {
+      "bytes": 3683,
+      "sha256": "25b788cbf1d1523c87adfbb8acc3cdb9283375be677a6752501c7d2e43678918"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/verified-result.json": {
+      "bytes": 15125,
+      "sha256": "8b6f0f35d07e4f051ac10566201144f49e17426ba7cc1c6ecd9d06932c1b6eb7"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic-results/verified-traffic.json": {
+      "bytes": 12818,
+      "sha256": "bc4880fda0da715b62511aa3e4da61da777fb628acac0f597f6e01c71765984d"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-collection.json": {
+      "bytes": 7321,
+      "sha256": "a54852d535e1b86ac12da3d238f3245c36fa78eebe7a6849ce57f6e4c6a900ab"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/LEGGIMI.md": {
+      "bytes": 745,
+      "sha256": "7e7a5141b01ff4df851f86c5aa09d6202149927434c28e6d510feea9a1160e69"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/delta-review-root.json": {
+      "bytes": 760,
+      "sha256": "5ee6d20d0e3656e4f46888ba8c9fa78ac9a84dc4876c368c61cbeaed5b9f1f9f"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/nvml_sampler.h": {
+      "bytes": 7600,
+      "sha256": "00deb24339644e8393c7c88c71c47a8c02b88d5c3d9295122992b0ef5c73e580"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/peer_traffic.cu": {
+      "bytes": 16549,
+      "sha256": "e2f3c18f4991cf2d042e8dab753ebb277612cb6ed01ffee992a2f3d9fc044f03"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-probe/source-provenance.json": {
+      "bytes": 851,
+      "sha256": "bbcb3019b02c31fd6ada7755a1fcfa063b9338012c8fda9c8a2be2ae0e98fe5f"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/ANALISI-MAPPING-FIRMWARE.md": {
+      "bytes": 2834,
+      "sha256": "a396d18d24a927267210f6c4893519b9f4d7cc4f2cb622e259bb8fbb6d09d2d7"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/ANALISI.md": {
+      "bytes": 3439,
+      "sha256": "9fe24eafec024702d9eae654e6491dd68d271518578c71d00d822f3df69c45df"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/analyzer-output.json": {
+      "bytes": 13095,
+      "sha256": "c9573f4b107623560906986ac184f2883e77fe24ae5cd5e081e27c156d1440d5"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/build-manifest.json": {
+      "bytes": 3624,
+      "sha256": "819cf694f42d8ce51a88187d00500d9ca650494cec3eb2b0b94c5e078a899784"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/collected-sha256.json": {
+      "bytes": 1700,
+      "sha256": "e6a4fa1fe0bd460fa05ba7b1e7f4f0d1a02d304a5174b0b4a18de3f495d87d50"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/complete_analysis.py": {
+      "bytes": 4405,
+      "sha256": "42d7b5049cb486fcc6c1f39b6a0359423176441ba62f9f3cae62690a6d14521b"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/files.json": {
+      "bytes": 269,
+      "sha256": "942075e8c4b77113f78c5a51aa514804f6e42bda52f1bc37e8362e8d4c67e97f"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/independent-mapping-pci-nvml-review-firmware.json": {
+      "bytes": 48765,
+      "sha256": "0fb24368cd27817ba792d3505bdafb02e5bba7d1d1d9c8dbac751d406040ae11"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/independent-traffic-audit.json": {
+      "bytes": 13094,
+      "sha256": "8a6fe5d489656ffa399a25ed30276f8a9059063ab6b2316e66362868e1cc36f0"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/result.log": {
+      "bytes": 179652,
+      "sha256": "a6b70a0a11e875d095c189b8e103a62213919c37137fcca690679d97e5f85715"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/traffic2-state.json": {
+      "bytes": 3694,
+      "sha256": "bc42b090aef51f85ff8cb89925ef50e3b036325cd290bc00926a58b674b351a3"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/verified-result.json": {
+      "bytes": 15066,
+      "sha256": "6f21c65df973c67d51d41a32e18fc7ad29e1951a60bd436f3807507d9750147c"
+    },
+    "archive/p2p-next-investigation-20261021/native-traffic2-results/verified-traffic.json": {
+      "bytes": 13094,
+      "sha256": "8a6fe5d489656ffa399a25ed30276f8a9059063ab6b2316e66362868e1cc36f0"
+    },
+    "archive/p2p-next-investigation-20261021/nvml-readonly-preflight.json": {
+      "bytes": 577,
+      "sha256": "8cd8004ad6a8cd2b1efe08ad6d0c5aa643d1639a629afa7bb7ef1a7971600c93"
+    },
+    "archive/p2p-next-investigation-20261021/physical-aperture-followup.md": {
+      "bytes": 4815,
+      "sha256": "fe58fe07be6425dc09a17808f47f259ac4bee3f1947416810f71606b9681a655"
+    },
+    "archive/p2p-next-investigation-20261021/physical-build-inputs.json": {
+      "bytes": 2161,
+      "sha256": "9db071e5ea6d1c360f7dd521642726ba59070f02c96797eb2cfc15a7fe0eaf31"
+    },
+    "archive/p2p-next-investigation-20261021/physical-installer-collector-diff.patch": {
+      "bytes": 16158,
+      "sha256": "27d729027ee22355246d91aa0d50bf10724bce4201ad7dea99de5e2f726244d4"
+    },
+    "archive/p2p-next-investigation-20261021/physical-installer-collector-independent-review-storico.json": {
+      "bytes": 1408,
+      "sha256": "6afea1f38ba9a8edce2399f5dbf24c539deac70512dcd0350c6987a15d68564f"
+    },
+    "archive/p2p-next-investigation-20261021/physical-installer-collector-offline-tests.json": {
+      "bytes": 2830,
+      "sha256": "7e47da82c464d71eb845eeb8e7270e528bc9830d6805b012e09168ad699787c0"
+    },
+    "archive/p2p-next-investigation-20261021/physical-kind6-review.md": {
+      "bytes": 6246,
+      "sha256": "f2efc92da8cf384f52a4dc33f7d541f1d0daf0c1626368e9f0def19f3c9c8803"
+    },
+    "archive/p2p-next-investigation-20261021/physical-watchdog-offline-validation.json": {
+      "bytes": 742,
+      "sha256": "3d7efe3f4e243187abe24417d7c900f2bb23110b38b9e8d3d9419385fff8494f"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-build-inputs.json": {
+      "bytes": 2322,
+      "sha256": "89658349edce921f2da034932fd15513a0e7cbbf99869b798be6e78b792ee7e9"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-package-preflight-v1/build_physical2_package.py": {
+      "bytes": 7140,
+      "sha256": "7355b3c1ec53ada27e22972adb62f528e7e3c6ff9a20a39a5897b0a8fff18c82"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-package-preflight-v1/physical2-build-inputs.json": {
+      "bytes": 2322,
+      "sha256": "a79b665c908353563bae126e2469d920a72cf2abf816f148edd1c6e170fede73"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-package-preflight-v1/physical2-root-review.json": {
+      "bytes": 1101,
+      "sha256": "b748a145afa6aa88c87adb7f1d8554ce580b7ece49ddc90914bf168cca387b8f"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-package-preflight-v1/verify_physical2_package.py": {
+      "bytes": 6546,
+      "sha256": "5da9fa87dcb4bfe875269ebdde61cafb7115b176aaf1bf660fe3fb989a3215fe"
+    },
+    "archive/p2p-next-investigation-20261021/physical2-root-review.json": {
+      "bytes": 1218,
+      "sha256": "7f6d7f91e2a316a40a4f86aa7f437dee82127c553c42d6da298256ca904ced55"
+    },
+    "archive/p2p-next-investigation-20261021/physical3-build-inputs.json": {
+      "bytes": 2169,
+      "sha256": "06ec9e2406194ecaa2c155eaba04ea701d12a1f38aea277158cf633b89f4e0f3"
+    },
+    "archive/p2p-next-investigation-20261021/physical3_log_fixture.py": {
+      "bytes": 3333,
+      "sha256": "1f7975b676232ab3e0db8f51b9d2b8b4bf71f157aa692b6692a2e4a3bc3d0a61"
+    },
+    "archive/p2p-next-investigation-20261021/physical3_log_validation.py": {
+      "bytes": 9873,
+      "sha256": "de96d753ca554e8f8f0e8303e2c525c43a8acc36a8bb0d1ad91594e84f3af512"
+    },
+    "archive/p2p-next-investigation-20261021/physical_log_fixture.py": {
+      "bytes": 3333,
+      "sha256": "3d05a209eaae920a3a8e143850c6cddc1adcf1698840d76ab24b1a290b84b08c"
+    },
+    "archive/p2p-next-investigation-20261021/physical_log_validation.py": {
+      "bytes": 9873,
+      "sha256": "16ea541396243f10872629bbb84ce4624f01eed70543243b664f10d6d8d6668b"
+    },
+    "archive/p2p-next-investigation-20261021/test_collect_cleanup_native.py": {
+      "bytes": 5108,
+      "sha256": "bef1077a6dd3c18706ceb3e9ce86003cb309ee2b60211033f0629480443372bb"
+    },
+    "archive/p2p-next-investigation-20261021/test_collect_cleanup_physical.py": {
+      "bytes": 9569,
+      "sha256": "d4f4b6b78264ff829f623108dade963ee6b3cb50c74180ce4c1293e3621fd347"
+    },
+    "archive/p2p-next-investigation-20261021/test_collect_cleanup_physical2.py": {
+      "bytes": 9571,
+      "sha256": "df3667bc9cbdf308c1a92ee518023622b283f15062ef1340077b8b99a3e3251b"
+    },
+    "archive/p2p-next-investigation-20261021/test_collect_cleanup_physical3.py": {
+      "bytes": 9572,
+      "sha256": "2671a23afbea0f33a5830c7a0cc847972c86cdbed47abc9a0fd280aa5de6e032"
+    },
+    "archive/p2p-next-investigation-20261021/test_collect_cleanup_traffic.py": {
+      "bytes": 7387,
+      "sha256": "941770845bfeaa2d008ee978e1d308453dfb093e02e4805ede862e93918320ea"
+    },
+    "archive/p2p-next-investigation-20261021/test_install_native_physical.py": {
+      "bytes": 7248,
+      "sha256": "88d3fff341e9afad68edf379eba63a75ea4bce874d8df4b80435be9a9021f19f"
+    },
+    "archive/p2p-next-investigation-20261021/test_install_native_physical2.py": {
+      "bytes": 7252,
+      "sha256": "28c980aa754a61222b06b279716013ea531774d2c763a5d2a8821418f68fb66b"
+    },
+    "archive/p2p-next-investigation-20261021/test_install_native_physical3.py": {
+      "bytes": 7252,
+      "sha256": "e7fa2dd06e21aa869a505b3b2b4862d1c35ee1c751af1d3b3922f26634e1066c"
+    },
+    "archive/p2p-next-investigation-20261021/test_install_native_probe.py": {
+      "bytes": 7167,
+      "sha256": "f77e275241ee3fe1c6030723259bf8ff1ea9bbe9b53968c63dc1db054fa9b86e"
+    },
+    "archive/p2p-next-investigation-20261021/test_install_native_traffic.py": {
+      "bytes": 7178,
+      "sha256": "7183cdc7c45753d10149d0ce950d7a9c78e1bc0f810e86ea7738ebf33ed9026b"
+    },
+    "archive/p2p-next-investigation-20261021/test_traffic2_delta.py": {
+      "bytes": 4098,
+      "sha256": "9d03b3b1f17352713a887a33ec29dd0a31ffd6d53eeb0fc389ada886c3ef05f5"
+    },
+    "archive/p2p-next-investigation-20261021/traffic-build-inputs.json": {
+      "bytes": 1932,
+      "sha256": "c83b49d4b5fbbb998785253c85c09cc2dc9eb0f88e57da9cc822a71ba8016960"
+    },
+    "archive/p2p-next-investigation-20261021/traffic-collector-independent-review-firmware.json": {
+      "bytes": 1580,
+      "sha256": "2e548ab99d39c2d30e0faad1a233685bdbd6539ae1c08ad0a53d2495032e665b"
+    },
+    "archive/p2p-next-investigation-20261021/traffic-installer-collector-offline-tests.json": {
+      "bytes": 961,
+      "sha256": "8dce9ebbfee36cd2ea79b10a0d971486d6c56380ce0d049b5180eb1167fa72b9"
+    },
+    "archive/p2p-next-investigation-20261021/traffic-installer-independent-review-firmware.json": {
+      "bytes": 1414,
+      "sha256": "2487c931851f98d7dc3c894fb0a62e3d64d10771d8be56aa6a9425b18a7692ce"
+    },
+    "archive/p2p-next-investigation-20261021/traffic-installer-offline-tests.json": {
+      "bytes": 665,
+      "sha256": "93e086309f0d2875608e0349f252310ba751f074b9f11b8ebc6bf87284053700"
+    },
+    "archive/p2p-next-investigation-20261021/traffic2-build-inputs.json": {
+      "bytes": 1642,
+      "sha256": "97d119562ad7763f020285a17a6bfa346e628f74e90e994f55fa2f7d3d841014"
+    },
+    "archive/p2p-next-investigation-20261021/traffic2-delta-fixtures.json": {
+      "bytes": 1260,
+      "sha256": "2f4da6dc801bc90e82e90c1d59e854bb6aeae2409fdb049c04456a4a9261bcd3"
+    },
+    "archive/p2p-next-investigation-20261021/traffic2-installer-collector-independent-review-storico.json": {
+      "bytes": 932,
+      "sha256": "2f18110e0fbbbcab277c2c466c6d95843b1c26bd3616b7a04db02afa3b8f3902"
+    },
+    "archive/p2p-next-investigation-20261021/traffic2-installer-collector-provenance.json": {
+      "bytes": 1493,
+      "sha256": "b60e65997d818335c6944e582832abe77f172668033fe4b4e42cab8c08da48a0"
+    },
+    "archive/p2p-next-investigation-20261021/verify_package.py": {
+      "bytes": 3553,
+      "sha256": "2c6aef3def13318751c4e7a5766f032ca8e9b2cde8312faf6ddcfae1a72b911a"
+    },
+    "archive/p2p-next-investigation-20261021/verify_physical2_package.py": {
+      "bytes": 6546,
+      "sha256": "f473598dac854cdfa2956858cd7d2cbaedb50e9c46ae15e127b695b62b1b9eec"
+    },
+    "archive/p2p-next-investigation-20261021/verify_physical3_package.py": {
+      "bytes": 6543,
+      "sha256": "0d4177b1a276ef10e55ae00de689da73e2141df62b896418bf863607a0aa005a"
+    },
+    "archive/p2p-next-investigation-20261021/verify_physical3_results.py": {
+      "bytes": 9141,
+      "sha256": "1b6bec3dcce0e9c1a66c42b898fa36a29e45c613bcc8890b5e04d965e91bbf90"
+    },
+    "archive/p2p-next-investigation-20261021/verify_physical_package.py": {
+      "bytes": 6525,
+      "sha256": "94817640477b794e14f0a9f94cd6a934b5969274081d1b1d71c98f9ab254c649"
+    },
+    "archive/p2p-next-investigation-20261021/verify_traffic2_package.py": {
+      "bytes": 3731,
+      "sha256": "0288f6ee36f2682bf75b281aed8bb8bd804c4f5eaebeafd81e264316e3bd1583"
+    },
+    "archive/p2p-next-investigation-20261021/verify_traffic_package.py": {
+      "bytes": 3725,
+      "sha256": "efad8ea1cfaadc5c24fe4cf97bb60152d51ddea40628ffbb987a1ee88823b173"
+    },
+    "archive/p2p-review-20261020/bios-slot-enabled-acs-off-word-events.json": {
+      "bytes": 9794,
+      "sha256": "10828e9bdf5bc1b1ebe55edde883bfcf80451ad4193bc0973da1855cafd4ea8f"
+    },
+    "archive/p2p-review-20261020/bios-slot-enabled-coherent-nosnoop-off-events.json": {
+      "bytes": 9793,
+      "sha256": "fbd532a32be75dc801b40030e5ba78a14246570e4192429602042961cc618f6b"
+    },
+    "archive/p2p-review-20261020/bios-slot-enabled-word-events.json": {
+      "bytes": 9791,
+      "sha256": "3f7ff889184b08b70bf409788ef54c8a6447ba06eb3de5b8f91de80af9dc3b07"
+    },
+    "archive/p2p-review-20261020/diagnosi-e-soluzione.md": {
+      "bytes": 10619,
+      "sha256": "c1ec0c01972dc41adf71c15066e4556cb3bee84ba9d3ca0bb99c8de8351e6ff2"
+    },
+    "archive/p2p-review-20261020/firmware-static-audit.json": {
+      "bytes": 2147,
+      "sha256": "af63cdb9712a6a06e3b2665b78fe3cb498d55def83f1b89b472350e06780a405"
+    },
+    "archive/p2p-review-20261020/verifica-attuale.json": {
+      "bytes": 1031,
+      "sha256": "d6c5dc6b0fbe13d0d31db5eeeb6cce830bc8f5536f603c864c7a52ea522c7e69"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/ESITO-fase-precedente.md": {
+      "bytes": 22777,
+      "sha256": "39a9b922bc0ef9214632d559e978d1036d28f99175a72e43600a0e718b3f2ca6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/ESITO.md": {
+      "bytes": 11466,
+      "sha256": "dd83ac3caafc433d441b4e79f9432df8158dc1288e0e63fd630a0902feda28f4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/NCCL-WRITE-ONLY.md": {
+      "bytes": 8527,
+      "sha256": "57895ac989ced88beec2dd86bd991a209b667f9e7b416de8bda67aec32827a66"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/NEXT-INVESTIGATION.md": {
+      "bytes": 13937,
+      "sha256": "fd4dd2a3d4cdf0c9aae5c6a6da6596b7c35170a5ccdf0f0715689237a7300867"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/PROTOCOLLO.md": {
+      "bytes": 3127,
+      "sha256": "1ef80b0afdd673c42d0ca37782140d0f6ce2fea18092df6aad1c056b2b72a5b6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/SITUAZIONE-ATTUALE.md": {
+      "bytes": 1166,
+      "sha256": "6aeb2ab44588846839a8757d8d8c9b9b5d434752f44aeb48ebc5a30b783f0aec"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/STORICO-PROVE.md": {
+      "bytes": 40083,
+      "sha256": "fc50f7f4088b4f13fa8f0fe4982889849a9c89cb0864a69c1dcb6147f92d65fd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/WORKSTATE.md": {
+      "bytes": 24029,
+      "sha256": "a035e2866c68d89babe65680994af6c38673eb91b531a30471a44655cf03473c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/arm_firmware_restore.py": {
+      "bytes": 2173,
+      "sha256": "0b5bd9aa62d8ee4a169e51a05c03f358ebcba9ced25e07f396dcee5a0cd23c29"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/arm_native_d1_repeat.py": {
+      "bytes": 2133,
+      "sha256": "33dc143eecbb5de55ee277769593b5b1f20aceeb75cc15b08620c122e8c0e184"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/build_region_gates.py": {
+      "bytes": 2021,
+      "sha256": "a8a2a11011d8f979697ef1ac7ac9dbb95186f707451f737847d214289b29f263"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-sync-candidate-offline-validation.json": {
+      "bytes": 2631,
+      "sha256": "93385d360e28353af0bdb287ece64b151c3c4999e6db69030f4c6c5b21118287"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-sync-candidate-review.json": {
+      "bytes": 3848,
+      "sha256": "7d0c81b2a6ac29367a09e9d59b3fccf3d81980974aa0a55996b2c4acf4ceb67e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-sync-independent-review-storico.json": {
+      "bytes": 1676,
+      "sha256": "e6c6f29c4b6b6b1a47218a8516038057be314387f12746eff895d91c12d6853a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-sync-preflight.json": {
+      "bytes": 9122,
+      "sha256": "60aeb4470ebffa4769427a05d13b7ba5c8c54f799e24998cd0cab44f3857f754"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-sync-verified.json": {
+      "bytes": 10027,
+      "sha256": "7edda3b83e6793de359ec2d48a1729eae642f76b97e26923c1ecfda874158e5e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup-verified.json": {
+      "bytes": 716,
+      "sha256": "89785bc2e02cf2f354041da3a436969feb185eee33da6b22a0e70d674eaa5e71"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup_sync_trial.py": {
+      "bytes": 3041,
+      "sha256": "ebfbf5d0b6ab27db1cc3bac158cf161d8c51ab55e1b146492f0bbc0972376057"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup_sync_trial_verified.py": {
+      "bytes": 12181,
+      "sha256": "b06c4f893df55b6b1c33170177c8f0ab4cb9be84637551e27b06b1d5ed77d447"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/cleanup_trial_boot.py": {
+      "bytes": 3101,
+      "sha256": "436e457d290e11c50d11af57b146c0e383b075f73f8257444ee708565a167ca5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/collect-sync-restored-independent-review-storico.json": {
+      "bytes": 2175,
+      "sha256": "963e529c7de28e4bd5f747f274a487f1b333e9527323432877169783b0213fb7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/collect_decode_snapshot.py": {
+      "bytes": 1829,
+      "sha256": "73a7f7c0f289b779461dce55ec5e7890322c69a7db7d9e9830918770ecccb042"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/collect_native_results.py": {
+      "bytes": 1620,
+      "sha256": "986f14d6d0f2ec402728f5acec00e0cfb9a21ab49e4e59a0cfec30d77674b481"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/collect_sync_restored.py": {
+      "bytes": 3570,
+      "sha256": "eb969d6517c61bc1fe481ca34697d31208e24be2a03324e51a4409d8c311ec0f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/decode-snapshot-20261021/analyze_snapshot.py": {
+      "bytes": 5980,
+      "sha256": "e6acc894dbf15ff2f440619740f340b054d148f19ec2219957be1e652a552dad"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/decode-snapshot-20261021/decode-analysis.json": {
+      "bytes": 13984,
+      "sha256": "6fde440fccbd2c6462f5198a10e9bac9802a326cf960f5662c7be2331bd0cadf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/BAR1-ALIGNMENT-INDEPENDENT.md": {
+      "bytes": 3735,
+      "sha256": "5383cdde3c8a3b8173a815a90dddad16aa6ae50df86c85901bff4d2c77f7be09"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/COPY-ENGINE-VS-SM.md": {
+      "bytes": 12825,
+      "sha256": "61f4e544c44d1c405917f2b706220288356d7efae560c84e07dae1a4bb304fc1"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/CPU-BAR1-CONTROL-PROPOSAL.md": {
+      "bytes": 7334,
+      "sha256": "63f87de33c1aedbe6571a8be462175001807652c5df641384a6bf997296389da"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/PEER-WRITE-VISIBILITY.md": {
+      "bytes": 4947,
+      "sha256": "63eec75cca8a379ec51e8ec6727cbd7cd0584577b929d4408dcc49cddc96fef8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/PERCORSO-MINIMO.md": {
+      "bytes": 8335,
+      "sha256": "96e389694292d8895163d5f7f420236962884a5c5c919f43981679dbfdf0421b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/PTE-INSTRUMENTATION.md": {
+      "bytes": 8936,
+      "sha256": "e61781225569a39f04a4070a4904f1874f55781ac1dd1ae80bec039638bd45c4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/USB4-ROUTING-ATTRIBUTES.md": {
+      "bytes": 8705,
+      "sha256": "61d9f080eb15696d6afb17611fb9009f811e4103e58850185db970c5142e05c0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/build-audit.json": {
+      "bytes": 993,
+      "sha256": "8f0806665869b6cc4fdd52e375b35548dca3d23bb144370b5acc764720d9e16f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/candidate/before.json": {
+      "bytes": 1099,
+      "sha256": "aa5c6735a6d223baa506fe6d0a89c8795a3c38fb4ed159e8030efbbf9b7d287a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/candidate/gpu-result.json": {
+      "bytes": 242,
+      "sha256": "43cb27cc64897938bb3b6f2279814e44bc035d3ff1311edcdf5b38c3b0178a34"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/candidate/restore.json": {
+      "bytes": 76,
+      "sha256": "186a7ceeea0e7813840f589d86fa993fcf7b527ec84ae6c938f02dfff9b5957f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/coordinate_word_trial.py": {
+      "bytes": 2972,
+      "sha256": "738b617247ea5399437b49d7d259d983d24e290950af8965c5c872f68cfaf0b9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/coordinator-events.json": {
+      "bytes": 1770,
+      "sha256": "1a6bf61468a1a6420b3b96c61d1b0f203b6f31e3124d0f2e67c5e8fa60f95f97"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/final-mapping-review.md": {
+      "bytes": 7491,
+      "sha256": "45791abfd0e3d85a40e01a69ab32602ab851f07c760646aabdba2dde518a6128"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/native-push-independent-review.json": {
+      "bytes": 1386,
+      "sha256": "23a26985f66989b6ff9e792cb7fe87b6047c13a2cf0530ffa6cb5d7e1b19dc3c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver/run_word_trial.py": {
+      "bytes": 9516,
+      "sha256": "f22befd48d78b6ffb595a0b69dcbf5d451cb1c3202c5b17099b4cffbcf949159"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-cleanup/DIAGNOSI.md": {
+      "bytes": 7719,
+      "sha256": "85c1a4ed256ea971e8e5334a3bf1c6dc4db2807e57eaaffbfdd529f0ea0220d9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-cleanup/candidate/nv_gpu_ops.c": {
+      "bytes": 461210,
+      "sha256": "32973ae9a17372d08e0dfd86b1f8d949f5b127d0a74feb36bbf15345b6b6a053"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-cleanup/cleanup-evidence.json": {
+      "bytes": 12028,
+      "sha256": "776fa7d2f1c9d56f1cb0fdb433d2b61fe18129d00b00acebca76a5465dc681ab"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-cleanup/manifest.json": {
+      "bytes": 938,
+      "sha256": "6aac993bb195bb0b9048ae8da80d1936992d87172bca25454b7cb082d4b0eecb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-cleanup/subdevice-before-rm-free.patch": {
+      "bytes": 1220,
+      "sha256": "8acea9734a2521ffcffe2f3ebf10f72fb41534ffe43b20372e29013fea61599e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/analyze_p2ptrc.py": {
+      "bytes": 16800,
+      "sha256": "0863f5ac77f7ab1580fc10e75dbb8c720e18bdf74ca8e66e0fd26cbf2ac3d828"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/bar1-dynamic.patch": {
+      "bytes": 41035,
+      "sha256": "6afa9977c1b9a06c9abb4e5d7f4f852e8a089a7039b2ed66238fb3c61a2f3eab"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/bar1-minimal.patch": {
+      "bytes": 2812,
+      "sha256": "f32767c21475d1ec39ea0a63c58d2b4b12ba0aa624ac13a797558cb505339fe7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/build-manifest.json": {
+      "bytes": 7202,
+      "sha256": "06afebaba6bd6d6063d5a084056cb2bd58fe65d186ed43a829c37bc049bfbdc1"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/build-verification.json": {
+      "bytes": 2926,
+      "sha256": "6693b460246de69d562207ddf1b34a41d2338702a98cd5b4f18fa7092a691f95"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/independent-logging-review.json": {
+      "bytes": 3586,
+      "sha256": "0c0604383cd8d338834e752dcc1ad4e6542675b215dddcd3d8457b7d9cc6369e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/prepare_and_build.py": {
+      "bytes": 6840,
+      "sha256": "7a109b51c4a4699ca5c29498d1ae8b08b4f236220d812887e4518710b083d6d3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/prior-noninstrumented-negative-control.json": {
+      "bytes": 10798,
+      "sha256": "4419476cf6774d628fda9cf7893bb3706194805a8b648bfe3e65d482d901b1ac"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/pte-logging.patch": {
+      "bytes": 8737,
+      "sha256": "9e637f4964b8ae768f80aff4fbe18fe537871e786f7ef0946d978de067e26fe5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/source-manifest.json": {
+      "bytes": 3462,
+      "sha256": "196b59dec149196dc197221b664b8ad3e3b155da1f14c6e8cf58751d275491a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/strict_patch.py": {
+      "bytes": 1751,
+      "sha256": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/test_analyze_p2ptrc.py": {
+      "bytes": 4091,
+      "sha256": "34dc8073d441256c7a7dd2744db3a78ae44614012bea02a32da0d59359c93984"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-instrumented/validation.json": {
+      "bytes": 1084,
+      "sha256": "78f6447d9de133ee1f011535349ac0c274ba7c8e9e1be2181121c6f8938a987e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/README.md": {
+      "bytes": 4196,
+      "sha256": "4540b1d07b446c42084f6701124585164c1c8314ebb69c3ff81387d6cd5ef468"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/analyze_coherent.py": {
+      "bytes": 5300,
+      "sha256": "d92bd16a29bcaf3203d2f1f244045ea7cc99da8b2d7da27c78cdae850bfefcd1"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/build-manifest.json": {
+      "bytes": 7258,
+      "sha256": "caf1ec73c829271313c4c41ec9be657d1f6ef6917a07e0b405e023a800251d4f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/build_rm_only.py": {
+      "bytes": 9390,
+      "sha256": "fc0e3f9743465df2c8614baf30b0ce5385a1f584864d91d6ad9b8a73f8cacbdf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/independent-review-firmware.json": {
+      "bytes": 2286,
+      "sha256": "e6ff3997d6dd8578485a264c3d8a82f8c87033e7a70d5bcce4206a0ab480f52b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/manifest.json": {
+      "bytes": 1733,
+      "sha256": "7f0960c2783deb3da9e4863f211e7c49f558a909cffe2a165d333694cfd7a3b8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/nv_gpu_ops.c": {
+      "bytes": 461520,
+      "sha256": "0f9dedebdf54afbfe6d758448a7a8480d5c47ce8febd4db1b05e3029ee23b4c0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/peer-coherent.patch": {
+      "bytes": 843,
+      "sha256": "06fae9f1e946e4d3a79d236d85ae1fd7bb31de114503a2d4a208888964565cc8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-peer-coherent/strict_patch.py": {
+      "bytes": 1751,
+      "sha256": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/build-manifest.json": {
+      "bytes": 11942,
+      "sha256": "3f07b5c170b7b851d8a8f2b0f36a69fc1f7edd3b01fadcd51ec100f818e6cb1b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/build_uvm_only.py": {
+      "bytes": 5898,
+      "sha256": "1effce6a72f7e02ec11f15aeb03153103a2c7df097f3ce757e33f8c00290931b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/firmware-audit-review.json": {
+      "bytes": 3647,
+      "sha256": "ba215fc35f0f7b9072f28cd5fd657cec0d428850f1e27ef78fa9aa933ca3055d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/independent-review.json": {
+      "bytes": 1236,
+      "sha256": "eaa9a52fa7e8c8fc6ce2f1c58213266e0a49a610df6dfa6078ab48689edab9be"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/manifest.json": {
+      "bytes": 738,
+      "sha256": "df28028c0d8ced9a68223f68666ad0d9637db6abd6cbdbb1ff396abb838c178e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/strict_patch.py": {
+      "bytes": 1751,
+      "sha256": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/uvm-peer-4k.patch": {
+      "bytes": 1360,
+      "sha256": "3fe976ddeec6a90a258d6cd97df521c442f60b3a60eb85b9a81f41511fe284a5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/uvm_map_external.c": {
+      "bytes": 56821,
+      "sha256": "e12feb849fdaa884f87117b72006af7ed6d037961662db8900a0ef5c672ae405"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/driver-uvm4k/validation.json": {
+      "bytes": 452,
+      "sha256": "278cddf3075c3f147f2b83a54576d90f52cb5282cb386b0f4649349d6d108ea7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/final-registers.json": {
+      "bytes": 2267,
+      "sha256": "5a9ab2bd7bcd88352d55c6844e0e0da8b390fb22f20641f3e336c310eedff82d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/final-status.json": {
+      "bytes": 1074,
+      "sha256": "f83a603828947bace39111b342d66c437ed01cc8910273e8ed231c9d355beb2c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/final-summary-files.json": {
+      "bytes": 1101,
+      "sha256": "70c7bdbeeea622862a37703280eb407d0e1ee3133d27d21f15458015aa12481e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/final-sync-independent-review-storico.json": {
+      "bytes": 3188,
+      "sha256": "779d5b16f4371a123b7d2b6290833798760722891f88f696c597a4a34a79361f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-analysis-d1/D1-P2P-analysis.md": {
+      "bytes": 5599,
+      "sha256": "8f5679c6768f4145fba8c5c9abb21bb8219024697359ca1c5c37eae10d8acb57"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-analysis-d1/D1-evidence.json": {
+      "bytes": 3211,
+      "sha256": "93dddd8e05d123b16c3d46b43c9a9ae145187dbb0520d90ff1723e6155276c8c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-analysis-d1/beyond-CCFG-evidence.json": {
+      "bytes": 804,
+      "sha256": "df6182972b942aa5be72cdf77a49c86f326ac2a9a3053fa7f574bb46c5b50168"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-analysis-d1/beyond-CCFG.md": {
+      "bytes": 8658,
+      "sha256": "542bba6ba3d2dc9dfee331bc95b8f3be3d5852eb6e4664bab7a79c27c9455a8b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-analysis-d1/verify_d1_chain.py": {
+      "bytes": 5093,
+      "sha256": "1964f24d5b25d37303d8a2434301a486e8ec112bb3e44a21128c99d25dd37d09"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/BootGuardRead.c": {
+      "bytes": 7576,
+      "sha256": "2342a37c69d7fd012271038ee491710e7e3a260a5c5a871c17ee494acb64d61a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/LEGGIMI.md": {
+      "bytes": 7032,
+      "sha256": "3cd7f5f438b1919074c62e9db16ae8ddfb6a8042ccda28d4cb697f4fab465454"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/TcssRegionGate.c": {
+      "bytes": 12008,
+      "sha256": "16a095c6dc06ac2de484a40e9b32f76aed87302d27ae766d578ecc52256645d4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/TcssRegionGate.host-test.c": {
+      "bytes": 8028,
+      "sha256": "08cffff04e6042282dfd327d9949eb57deb456a70ec031cc4dab6e4fcc8c20f3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/TcssRegionGate.validation.json": {
+      "bytes": 980,
+      "sha256": "9646f0b9a52ebc5436c1d56bfcf6dbdef7232e96d7751997d5bd4d94dc8cc77e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/audit_fresh_spi.py": {
+      "bytes": 5448,
+      "sha256": "a52539110b0d2ddf0426cf3a43c617f72fb749e482fb6ebafc543381b7c5b728"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/bootguard-native-crosscheck.json": {
+      "bytes": 181,
+      "sha256": "e5ad96730cfa8fbf3a4ab6cbaa58c13709dc4d8557f72788ac08e64010a1dc94"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/bootguard-primary-source-manifest.json": {
+      "bytes": 1947,
+      "sha256": "e4ac514efb8d8c059c26826cd6adfe50a5a73695cdc872bab6101df97e4998f7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/bootguard-review.md": {
+      "bytes": 14886,
+      "sha256": "d4371541b893c564025a60b93e1ed32fda8ea618b9ffe9b0789379a44505d979"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/bootguard-static-evidence.json": {
+      "bytes": 1220,
+      "sha256": "155946eddc6b6273ce06f205d624d3f2ecfd8d463649d36c5ed9343352ff19ab"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/fresh-independent-audit.json": {
+      "bytes": 5583,
+      "sha256": "f265b0b84dcd9d84f6f6d89f4eeea89a4821efd15720d26632414d31d64e9341"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/native-build.json": {
+      "bytes": 813,
+      "sha256": "f318fa9b4d7929cf2467f8a683d6a987b6e0a721c26b9ffe18c7522d0dac4a22"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/patch-manifest.json": {
+      "bytes": 3438,
+      "sha256": "2206e54c418633c145f0b828b19b521bff421e333b0c83b1df90d255ee83b88f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/prepare_candidate.py": {
+      "bytes": 5399,
+      "sha256": "352a965b7b86f9c5b062409943560507fc4ebbaea7bda10e34d137d9c664da9f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/region-gates-build.json": {
+      "bytes": 632,
+      "sha256": "0e6235612dd1aa1ba5ec4b21934b24f00e7d7c1e2ccd33e2e13124164041b57d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/repack-verification.json": {
+      "bytes": 6603,
+      "sha256": "6cdc7d2a92e651f7656f501f066809acb12f7999cd6cdd76b37ce8ebe9360028"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/shell-independent-review.json": {
+      "bytes": 3099,
+      "sha256": "17c91c8c6687fb042786e3431d94a734ed0d597f7dfc26339d8b658559aa05b8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate/verify_candidate.py": {
+      "bytes": 4974,
+      "sha256": "30ebde966380a29aeb463d40afbfcaf6a22ce71d47afbb3a951735bb635d842f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/GATE.md": {
+      "bytes": 3849,
+      "sha256": "4432d8ad69b7053bae833fef877cddc6a1934a4ee6fc3125d068ad575a045eb5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/LEGGIMI.md": {
+      "bytes": 2329,
+      "sha256": "9a8a0c9335d3ed025e3c830af4e4a60248067f3acab2fff09f1dd6e1216fde12"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/TcssRegionGate.c": {
+      "bytes": 13222,
+      "sha256": "3899971657667fa2be3e9c7c93294c70c3d273d30e2c53cd68b9738743a730af"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/TcssRegionGate.host-test.c": {
+      "bytes": 9720,
+      "sha256": "33b9fad7ab1c6ad7d1a00cf556a5eaa4bdc6d4c667e13d1aa48cf8b3910aa2fe"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/TcssRegionGate.validation.json": {
+      "bytes": 1454,
+      "sha256": "8fecae872f920203cfd215db0c246da0fdb09893f5a643021b84b6688cb73b27"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/TcssRegionProfile.h": {
+      "bytes": 261,
+      "sha256": "6683455c94f6f96c63871d9474a8a8509c38ebc856ca130ebdd758613a0a3e6c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/combined-verification.json": {
+      "bytes": 10063,
+      "sha256": "ba1c7aaa460f9bbb257ea68ea3d4bcd64c7e3b12090be757e259a4fb1a71d7f6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/flash-profile.json": {
+      "bytes": 420,
+      "sha256": "2b36579820d29e2b4c9aef4c77897ba9f05c761b94006ae63e3e14a1ca4ea95a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/gate-shell-independent-review.json": {
+      "bytes": 702,
+      "sha256": "53d11d092d71f941e68961e01bbd56cce62b5e80b92e52b7ed904558b1ab3109"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/independent-pe-review.json": {
+      "bytes": 4104,
+      "sha256": "6d4d9a79dcbd0002fe667ac63a289c617e5273bb7f8221d6e77375d70e2de4bb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/prepare_combined.py": {
+      "bytes": 8246,
+      "sha256": "4f72cbc0fbdcdba2e2e92a9be67195c73b641c5a45a3ef01e07b4ed07f333a91"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/region-gates-build.json": {
+      "bytes": 632,
+      "sha256": "a8a9e60ab5aa15464d33f8ba3c73cd3b1fd8226b91dd43621415b769ec9fbb0b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-candidate-d1/restore-cleanup-independent-review.json": {
+      "bytes": 1575,
+      "sha256": "5fc911d13f9c33b457bfe782b84c8e7fd1c4e8d4f76cf2f10bc8b1ef2a9bc070"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-d1-trial-registers.json": {
+      "bytes": 2249,
+      "sha256": "b29cfa77734e0d456dfaa03a0b0b9f5ce509f7c98d8df7ed62d3e7f6b6cc212f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/GATE.md": {
+      "bytes": 2716,
+      "sha256": "8589d2444b689c5e28e31a99318aad36ceeea38fea1c1fad8acb77a32595dfa3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/TcssRegionGate.c": {
+      "bytes": 13325,
+      "sha256": "6bd0726b0f51c448d5e453fcfe343c38ecaae6b06e722fe154aa20340163f073"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/TcssRegionGate.host-test.c": {
+      "bytes": 9878,
+      "sha256": "145efde6adb361f3e596a43185592c65acc65c7fb5263439a2b2a28e074a8a97"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/TcssRegionGate.validation.json": {
+      "bytes": 1795,
+      "sha256": "1b1523597c7e069347e329b6c113d1507df8b996da0721447013254b033b146c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/TcssRegionProfile.h": {
+      "bytes": 261,
+      "sha256": "95ba04b0e681254dedbbc133dd58cd7fce21737e27f626532596f1cccaba71d4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/build_region_gates.py": {
+      "bytes": 2021,
+      "sha256": "a8a2a11011d8f979697ef1ac7ac9dbb95186f707451f737847d214289b29f263"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/flash-profile.json": {
+      "bytes": 420,
+      "sha256": "4bffb6794cb4b2e695cc336265a5db21513e171a327d1167d5ad026233db6d3f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/independent-source-review.json": {
+      "bytes": 731,
+      "sha256": "1b2d941734a4991ac74c3a50cc0f2bff31d1693346fcebfadda45c3547ac93dc"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/region-gates-build.json": {
+      "bytes": 632,
+      "sha256": "25b9134c635d93e498ccb35e18f1f5285a7a4bc8f83bfd7f0f4c463b0852111e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-repeat/sync-package-independent-review.json": {
+      "bytes": 2040,
+      "sha256": "4622e8b8af489e0eb391e72e09fb2282211d97ed6cc9bd501a3d34ace38843ca"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-sync-trial-registers.json": {
+      "bytes": 2249,
+      "sha256": "04960670f8e088bc1bbd8155fe455df3e7424a323cafd81aae2e3096d5f5e4f3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/firmware-trial-registers.json": {
+      "bytes": 2252,
+      "sha256": "248fac647a31c062231ea5b61c321f0bec883b86bdeedd013bafced847b3ffdd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/fresh-spi-verification.json": {
+      "bytes": 703,
+      "sha256": "547d82df0602fa2e411ad264a1a92b899d359ca7a7216a8d5a865b5578cb9941"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_d1_trial.py": {
+      "bytes": 4149,
+      "sha256": "ff515c273c804db6879de546bd07b8b97b530d83419da5ba5fdc54ad896664d9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_ce_gpu.py": {
+      "bytes": 5407,
+      "sha256": "4e355b5aa86a9fd0d5e32d7a320f47035ea50d80c45affccaa89101be37000b3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_coherent_postwrite_gpu.py": {
+      "bytes": 6509,
+      "sha256": "85ce093901f8668c66ad85f01baa6feec5717d04442f3708747af1c06690500b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_cpubar_gpu.py": {
+      "bytes": 5059,
+      "sha256": "30e3a352a584c6875d9386e4bf672a337ccfd95346032bf14b6ae95a1c95aa8f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_cpubar_postwrite_gpu.py": {
+      "bytes": 5169,
+      "sha256": "652d15e5031073380e97ec7feaf0c380d56cae20b381fca8946dbdc446d08c78"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_cpubar_rw_gpu.py": {
+      "bytes": 5218,
+      "sha256": "f03de4f84623d3d70a1f78ade5ac55599d96f733f65151e69633b597969a74ee"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_gpu.py": {
+      "bytes": 3408,
+      "sha256": "ad20d622d7a2fc9d86261f02f5dd398fd8c3878bc9d0d5cea4e4b786cc8ea202"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_instrumented2_gpu.py": {
+      "bytes": 5163,
+      "sha256": "80bc2bcd01b3027d1f4d38db741c540622ad3a08b1e10e1ec1fe9498039da568"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_instrumented_gpu.py": {
+      "bytes": 4979,
+      "sha256": "faad3546dafcc255a0902690e11a9877cee61210d0c794cb5b1a3e3522b289e3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_lowmmio_gpu.py": {
+      "bytes": 5050,
+      "sha256": "bbf3637283efbf8e047463a8eb8688f3766fa35eecda16bbf40710d78f1e288e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_nosnoop_gpu.py": {
+      "bytes": 5197,
+      "sha256": "383378505f889748852c64a026f1b4e16033fe24d8d29f8ae9cdc29551d0c98f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_push_gpu.py": {
+      "bytes": 5047,
+      "sha256": "b62d0a12db6c7bdbe7c81da87be4d03a616728f5e42ecb74a723f2faafcabfcd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_read.py": {
+      "bytes": 3530,
+      "sha256": "157b5da8024325885c9b4c5308ef76a13acd6dd39cfb4e3e441f47b8536f3715"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_regalign_gpu.py": {
+      "bytes": 5080,
+      "sha256": "193a4d56636fa2dc71565a2eeee6dce377ca8f96fa649222f0c61dd349bb1290"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_sync_gpu.py": {
+      "bytes": 4013,
+      "sha256": "fc6737c3c6788688b4f30a9d95f8cce73f76a4ee2e069a72b2c308ef68dcd0db"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_native_uvm4k_postwrite_gpu.py": {
+      "bytes": 5147,
+      "sha256": "6613285be02ef0677c4caa86bf1ef70abb6487715d7c44645160fd94630bf249"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/install_sync_firmware.py": {
+      "bytes": 4347,
+      "sha256": "ba99e60f2852a78dfa6d7a9534aba2f66668ce15a7f389919c12a618add26cdf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/lock-observation-before.json": {
+      "bytes": 425,
+      "sha256": "435ec03bc196f692e11ba7ebe84e2b1465d9847eadad523589419ecd4b2495fa"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/PROPOSTA.md": {
+      "bytes": 7094,
+      "sha256": "f7980e24b55151d60d883e996cbcfb1edae20a3564e8e544b3b031d48c910ef5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/VERIFICATORE.md": {
+      "bytes": 2603,
+      "sha256": "b58ad811273075cf7b627d5802ae1323a8034607fbf725792aaa441dd67687ca"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/LEGGIMI.md": {
+      "bytes": 5477,
+      "sha256": "c1a53e6f45aab1b2333a3e212c54aed0baa9292f707756d323b52fbe39e5d2de"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/active-pm.patch": {
+      "bytes": 4406,
+      "sha256": "06ea4c882f28463ae1d02dedeba0026a8408654d1da9c7a7baf1b22d766f6c2c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/audio_pm.inc": {
+      "bytes": 6278,
+      "sha256": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/cask_low_mmio.c": {
+      "bytes": 20891,
+      "sha256": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/independent-integration-review.json": {
+      "bytes": 1901,
+      "sha256": "5d49a5756392e1379c98e1049bed3db760af843684dfcb5f50eacb1a73974887"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/independent-pm-review.json": {
+      "bytes": 1279,
+      "sha256": "74f58a30728f663d5415090edc3996814d145470638dec3d42dc1fc27d628e5a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/manifest.json": {
+      "bytes": 2830,
+      "sha256": "a720367ca236cbe768350bb832994d9d12db0239c5db0bf66857f7bace9464e8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/offline-validation.json": {
+      "bytes": 1738,
+      "sha256": "39ec47f0fb7c2fb41db40c4ffbc8b695dab8eab9eb89f9b5cc7f3ca062c9787f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/run_offline_checks.py": {
+      "bytes": 4332,
+      "sha256": "cd151c9258444cc3e62b927d65f8d042b4fcd365ffcb8ca6cc0b36dd773a143a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/active-pm/test_audio_pm.c": {
+      "bytes": 10655,
+      "sha256": "b14be1f182e3eda3cd213b44f86f3ca3d13824c7d76f5cb84e2dedc42a944034"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/build-manifest.json": {
+      "bytes": 1029,
+      "sha256": "acc94c6453b528a40cd2272a50c3975c37cc8c4e44e368f37057f139dd1851ca"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/candidate-manifest.json": {
+      "bytes": 2186,
+      "sha256": "e5fc953ff50d60c703239438af4c3dc9067593fce1ee58d31268d61de8b745c8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/cask_low_mmio.c": {
+      "bytes": 17590,
+      "sha256": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/diagnostic/LETTURA.md": {
+      "bytes": 2219,
+      "sha256": "28e4df254fd6b117f4f2ec6933cc4dac7562c51918862d1457217c74c06d22e6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/diagnostic/POWER-STATE-API.md": {
+      "bytes": 2323,
+      "sha256": "7b2e225e5f66852c7c32dd2428255f3d80fd4ab69dde527b2d39c20ffba0a1ab"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/diagnostic/cask_low_mmio.c": {
+      "bytes": 19838,
+      "sha256": "017dc64e2de0b3b11782cbc686e6c4db708022e1d19a88fb20cecaccaed18003"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/diagnostic/logging-only.patch": {
+      "bytes": 2677,
+      "sha256": "02f9eadd8c48726c4d036093a5f53d1af938f70b44102ce381b2b65d7ad87716"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/diagnostic/manifest.json": {
+      "bytes": 1429,
+      "sha256": "e5aa133ad3c6589db1c15080ed549e9bb14bf5b08dfbd60dfd891587f64adebe"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/independent-transaction-review.json": {
+      "bytes": 1366,
+      "sha256": "ec10b8ac2406486adb925b57e58919d2a26c116dc7216595a4bf627bdb26cd1d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/native-map-review.json": {
+      "bytes": 1482,
+      "sha256": "e5135e09d44f9212cc0f4c5698c52094d069d06f2889227fcf5c17d93f011215"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/test_verify_low_mmio.py": {
+      "bytes": 7871,
+      "sha256": "e11f27466ecfe5c7789b8af3bb541cbd65fd78cb184595d10dc371b676d6da18"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/verifier-manifest.json": {
+      "bytes": 756,
+      "sha256": "8b49a35ab3bc703d0fa8e7ea09ea9b656d47df675eff950618c4920cf34a721a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/verifier-offline-tests.json": {
+      "bytes": 10246,
+      "sha256": "549f3c684c37edf18e06c916d402a16bc2755321d09f2228c9a81a6233dd88d9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/low-mmio-trial/verify_low_mmio.c": {
+      "bytes": 10838,
+      "sha256": "d2143a49731bb30d10bc5bea3ffef1147b44eca04667eec9a2af1c31b08f8a96"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/ANALISI.md": {
+      "bytes": 7801,
+      "sha256": "20b9fc76e469b2c84d0b2f52af15c24b5a16d5a4298127d6b77c85c6533851da"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/analyze_mapping_lifetime_storico.py": {
+      "bytes": 11126,
+      "sha256": "04df827ab0d915c7c1146794ad9b8a159c72914833bf98a862b393fafc1a3ab4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/build-manifest.json": {
+      "bytes": 7628,
+      "sha256": "f2d53de4de4825b4b4ec5e317d22038608b0ac897d19a0e6c9f1686edd55bbf7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/collected-sha256.json": {
+      "bytes": 1712,
+      "sha256": "f1e2adfa814c4f9b7a128392db38b75157075fc181a17e2ed9163661deada82c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/complete_ce_analysis.py": {
+      "bytes": 6251,
+      "sha256": "4490949429ca7305511c6949e16bcbc58fb47bd5dcc8d1368e9230f9bd9cd2aa"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/cupti-independent-log-audit.json": {
+      "bytes": 4816,
+      "sha256": "379388625840c5511c00caca781a44a6079fe9a3c76f4aa9896627d642e83deb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "3b856684e299f8ad5d9445aab2ee317ef8b320263b30d088fce32179d1eac6b8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/independent-mapping-lifetime-review-storico.json": {
+      "bytes": 11114,
+      "sha256": "afc9846cff1d5cf6d1307814266601a9630426dc4fc08a9dc468ec008fc664a7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/native-ce-gpu-state.json": {
+      "bytes": 4059,
+      "sha256": "073c6b415e261b1524bbb14e7bb4c146f1a42d98e13350874a1957eb6fbbbc2f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/pte-chain-validation.json": {
+      "bytes": 304721,
+      "sha256": "98029146c100d2bfd6c3c921b91a3577fdb717b669b5b72613b00a7c4b036216"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/result.log": {
+      "bytes": 406330,
+      "sha256": "9603f590612db67629e2c37b85fa7d70e7f345938ea4afcc39e0abcbd7b93bf4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/root-ce-validation.json": {
+      "bytes": 4816,
+      "sha256": "379388625840c5511c00caca781a44a6079fe9a3c76f4aa9896627d642e83deb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-gpu-results/verified-result.json": {
+      "bytes": 50202,
+      "sha256": "10a5f325a33cf9991c3280b03dbe0d75f5f69dfb582f20b48e0678f23b5c6793"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/PROTOCOLLO.md": {
+      "bytes": 2745,
+      "sha256": "b586376fd12bf724d8bc85315a1a966bac3834382ef3793cec60fec479563a02"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/analyze_ce.py": {
+      "bytes": 11925,
+      "sha256": "1423811b87f193eba96d8b4df5db74395c76489e9db63a74a17211b56d3bbe1c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/build-inputs.json": {
+      "bytes": 5703,
+      "sha256": "54d585473c8738687eac7e6eba15867ae862c3d381baa4679f93e5081572ac23"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/build_native_ce.py": {
+      "bytes": 5737,
+      "sha256": "dc0df8792e4335005156ad8064364343a93dbd17369ae96cbbf84731b3a18b86"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/cupti_trace.h": {
+      "bytes": 13325,
+      "sha256": "0de1f3097fbe22c775d4c603615cfd9f0a69c328e9e7da55d50389e60ed5b468"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/independent-builder-init-review-storico.json": {
+      "bytes": 2282,
+      "sha256": "96c30c46820dc4aae89305a714dde6ff668a910f108f9fd87c5a5b33b5120a20"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/independent-classifier-fixtures.cpp": {
+      "bytes": 5035,
+      "sha256": "e11039d0f02984838cbff57e644685ad29ad92a20f934e6f4c31be93371e77b1"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/independent-installer-review-storico.json": {
+      "bytes": 1935,
+      "sha256": "10662584bcd06f10be4043fd31ffac50de5f3ed9e41f00aef45940b78465d7f3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/independent-package-review-storico.json": {
+      "bytes": 8421,
+      "sha256": "1a043c2f3c28a6aca607fafd1ce001e6b8a80aa65f169d7d7aaddc8c4961f74c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/independent-source-review-firmware.json": {
+      "bytes": 4003,
+      "sha256": "0fd92bf7f86e4e40ead25bccb87ca313a33416d5161cdeb82cf387bf85df70b6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/offline-analysis-fixtures.json": {
+      "bytes": 1077,
+      "sha256": "33b1e833bd11e755096bef5285466c04be4e1067674f3215894a34e5add8edff"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/peer_ce_cupti.cu": {
+      "bytes": 14524,
+      "sha256": "4326e28bcf28f7db2d1392e06bd35c0f9bec8e3953cb55fb1573ae7ddc2dfa81"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/syntax_header.cpp": {
+      "bytes": 47,
+      "sha256": "75103802537b3c278a056f0e8a887b8333601ba9a9bded8f21f267d46fe71d85"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/syntax_host.cpp": {
+      "bytes": 14028,
+      "sha256": "18b39d16a9c65e16f581e47611717be963f7e55d6d63d8fdf02277ee0ff03ec5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/test_analyze_ce.py": {
+      "bytes": 8071,
+      "sha256": "1a983bc4937ff9f180b8fb6992e8b3ec12e113ff1b485038054b3f2f7355cd74"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-ce-probe/verify_package_local.py": {
+      "bytes": 4715,
+      "sha256": "61cf19aa9175d51b18887bf0b840b503aa7e9380cb42ff87c5058754da2721ad"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/ANALISI.md": {
+      "bytes": 4495,
+      "sha256": "2759b7abca813cd71e5ac5f054e3f92941ac113fb3bc9cbcb05bb7b5742f0369"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/analyze_result.py": {
+      "bytes": 9341,
+      "sha256": "8c78207101a2699a3b076bc8adcbabcacd74d95135de4162af30c78a0b7c0265"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/build-manifest.json": {
+      "bytes": 3431,
+      "sha256": "3be1c77b202a805e07c3cb1cab65fd21e1f7822e67f1a02aa9b9340245bc4a74"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/coherent-chain-validation.json": {
+      "bytes": 386502,
+      "sha256": "e92e0bb869af1946cf8d5ab41d8dc6796923bec5e739b831e48d35bc67c7e3b3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/coherent-root-validation.json": {
+      "bytes": 386502,
+      "sha256": "e92e0bb869af1946cf8d5ab41d8dc6796923bec5e739b831e48d35bc67c7e3b3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/collected-sha256.json": {
+      "bytes": 1728,
+      "sha256": "34ce92f09391311775ba3ff387a9168b22d7f8fa1a1ddc8ea4edccd826bfa5cb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "9caab7ffdf337bf32e8a730931e52e1298718c20fb40900ff43328594dd6d94c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/native-coherent-postwrite-gpu-state.json": {
+      "bytes": 4076,
+      "sha256": "824dcd5e4f5592305bed29ec5d7ea876905a8b94f7b61b15d7322fd486a2e492"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/result.log": {
+      "bytes": 98799,
+      "sha256": "3c20616c391b0d3cd9740ab7f8faf2126f19ad437741b8d27326cb9f678daa82"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-gpu-results/verified-result.json": {
+      "bytes": 12660,
+      "sha256": "0c19afd9325ff88e5ee3fb22d186aeafa9d6e3c8cc4c90fdda9633ed711a98ba"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/build_native_repeat.py": {
+      "bytes": 7540,
+      "sha256": "e5127157fd3fc9c954b8af120bf7b3e1141f12e8d7401830afad10aa6cb04d4f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/cpu-parser-change.json": {
+      "bytes": 628,
+      "sha256": "37745ea3cd3b21fb9ac12c23f0023052fe22bfa8fed28af237204c3adec2589d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/cpu-parser-coherent.patch": {
+      "bytes": 1883,
+      "sha256": "34fe0088ba95da5a774d49a2c2739b174d0cf4494232092a7da5e2a5ac761cc0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/cpubar_trace.h": {
+      "bytes": 16000,
+      "sha256": "b5a4627e692b929eda5689622b884b12f41e8e44259ca36585179915fe6c1170"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/independent-installer-review-storico.json": {
+      "bytes": 3124,
+      "sha256": "16233454268319f9a227ff640970f1f137d69775931997adf06cc8bf2f5af30d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/independent-package-review-storico.json": {
+      "bytes": 2555,
+      "sha256": "e7f0e29e834e8c3df411b6ceb97986ae2bc32e7bcd45b8a0fbe692ffc7f3ce13"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-coherent-postwrite-probe/peer_vmm_word_cpubar_postwrite.cu": {
+      "bytes": 14050,
+      "sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/ANALISI.md": {
+      "bytes": 8027,
+      "sha256": "189c5a16120ef701dc174362ea90438bd940cb3cbb4ec0d61ac87fa3445a6aea"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/analyze_cpubar.py": {
+      "bytes": 12757,
+      "sha256": "eac220a7a28708f92e8fcb46c46bbab214629965e1034f2930fe29d267334634"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/build-manifest.json": {
+      "bytes": 3080,
+      "sha256": "5d1647ca5562e4e2528462e8e66a4f0e068bbd9c5540c84ff1454f03e0a3050b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/collected-sha256.json": {
+      "bytes": 1698,
+      "sha256": "dd03ce6b0d1bdcb3a3c674ecc8e0dbb1dfe76e3223205e68ed39874570556827"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "efacdb51be15a3bea55787d55db5454bce9696ca4b5e659e10f7876adf30c1fc"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/result.log": {
+      "bytes": 87758,
+      "sha256": "e1c554f3627f426a70370934c960576ce96806eaf7dfb06ab1a958a59a5bfa93"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/state.json": {
+      "bytes": 4064,
+      "sha256": "3701a507331bfce2eb92c0e9a672aa59a4fac1d297e95df6f4c6b971959d1eb7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-gpu-results/verified-result.json": {
+      "bytes": 115536,
+      "sha256": "77599a1c3f0444f2729df5b1aecdb21d7405790e9a4de183673e89c320dcbc53"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/ANALISI.md": {
+      "bytes": 5921,
+      "sha256": "9f1d744b36208b570d20a46d17bdcb914b1ab81b303ae0abc24c5b46fb1307cd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/analyze_cpubar_postwrite.py": {
+      "bytes": 14960,
+      "sha256": "2b4cd376d7145c39358f05271f009dc45160e072151d9553873dc3defcd78522"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/build-manifest.json": {
+      "bytes": 3115,
+      "sha256": "5f38cf44dab2e22597326a27230886803bc1fc789f72b69dce1e9e8767f24064"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/collected-sha256.json": {
+      "bytes": 1698,
+      "sha256": "c931eb7cabe34aa1820fd8af4ca0b76f59a7db18f698c98723f7787130db57d8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "af03a8386ed190d7e45b299a897d5e6f1bf09173c912acbb874d6e0c082d11ec"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/result.log": {
+      "bytes": 98748,
+      "sha256": "e2c2bf161cc5dcc907fe67791ecd04d18c30f216d85161458643ba751f1e45b6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/state.json": {
+      "bytes": 4074,
+      "sha256": "da3cc7a1fffae0085800f82359d6f0ac4e0942363af19f2a5d40358a85ed3b19"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/verified-result.json": {
+      "bytes": 136812,
+      "sha256": "f6beb6f4cc8702211742e8f66b5266af1fd24ba730d3d3dc49880b03cd2a63ef"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/README.md": {
+      "bytes": 2942,
+      "sha256": "f0d503590d71c3d73c45717512283dc035fdebe095fcbbf359ccd556ac1ad6a0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/build_native_repeat.py": {
+      "bytes": 7159,
+      "sha256": "fc173198118c82f7b55a2255f05750d2ca40932eee79c28a618cbfc5441655bf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/independent-review.json": {
+      "bytes": 2126,
+      "sha256": "c1c3977180ad5f45715ff6ddba431cbe41a2fdf090091ec6e7cb6bd73eac9b2c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/independent-wrapper-review.json": {
+      "bytes": 1711,
+      "sha256": "fb1d4740988c24d32fc2ff7257df55a5e22bcdef3adf77395436cf07885de2c7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/local-validation.json": {
+      "bytes": 1858,
+      "sha256": "6bdc76f8416b3dfa72d97ed8650fc0edc3afecad23c4cdb9ea25e5861439d7d5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/parser-4k-validation.json": {
+      "bytes": 1872,
+      "sha256": "1649ee3bafd024e3031826d4df4c8bce6f35e67a548d71187e27be8ab44f0637"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/peer_vmm_word_cpubar_postwrite.cu": {
+      "bytes": 14050,
+      "sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/postwrite_syntax.cpp": {
+      "bytes": 2503,
+      "sha256": "83a7e98ba9f4d41811bdec18277318eb7f8c72e83452b6ae390594b638d1000c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/test_parser_4k.cpp": {
+      "bytes": 3072,
+      "sha256": "7c757354ffb2e26211a76798dadf671037518bbb7e41cfdd96d85d37ac61fdb0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/README.md": {
+      "bytes": 5195,
+      "sha256": "10d92481f18542de95e0e5938710aa8b52b0b26ab4d38f21061cfe44d6d8cfa3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/build_native_repeat.py": {
+      "bytes": 7288,
+      "sha256": "a93ca84288cc568c6e4ef21dffb2a87f071d2e0ae86ec843c11d8fa2a43c3249"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/independent-review.json": {
+      "bytes": 988,
+      "sha256": "d42ec97144356c7059fce6af88d94aca4256cd049ea53d075962763249fbd94d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/local-validation.json": {
+      "bytes": 2213,
+      "sha256": "f9260a5c41770fb8c571f6b513acac23961e1bf48276960e1d53e73cb78b4107"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/peer_vmm_word_cpubar.cu": {
+      "bytes": 11847,
+      "sha256": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-probe/test_cpubar_trace.cpp": {
+      "bytes": 3843,
+      "sha256": "a5068622368fc41c5e4062824dc0760192907c4143efef8e2eda77d1d8bb4819"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/ANALISI.md": {
+      "bytes": 1383,
+      "sha256": "27d598c76bb748b51901ed7e38f220206ec276286833aa17cbf6ae18cb42beff"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/build-manifest.json": {
+      "bytes": 3586,
+      "sha256": "4746a22972fd98d0bb961fb6144eff3b06c5e650411ac128a6ec89dcd8cb24b8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/collected-sha256.json": {
+      "bytes": 1719,
+      "sha256": "680fba9816ce69207bc238bef12e314f1c4564a7b2d8efbb2c1eb5d316b2072d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "4d65376355a47cb96b4b86118a4fac2b3d5d32a080c0b17dcabe4262b3add03a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/native-cpubar-rw-gpu-state.json": {
+      "bytes": 4068,
+      "sha256": "5d202bcb47da040f98ddaba44c9c645e35d1078f88ef7b2bf55c8a8100ee5003"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/result.log": {
+      "bytes": 111166,
+      "sha256": "27eecc3411191742a8a0cab1d254c74731a7cece4b9ff65028fe7c6c6d94abcc"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-gpu-results/verified-result.json": {
+      "bytes": 5288,
+      "sha256": "fe9e38d78ae93cbfdc6995d91c66b8524d676ea217de269a79c2ad0f0672e46b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/README.md": {
+      "bytes": 4763,
+      "sha256": "18bf2658af2a805f530a4333eb449cacbe1f709d4d63e850f30844c58138bea3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/build_native_repeat.py": {
+      "bytes": 7792,
+      "sha256": "400b22d18a66d24491e643b583b86fee0349a418ebecf8be72a5e9d0d1c95692"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/cpubar_rw.h": {
+      "bytes": 4484,
+      "sha256": "65756bf89a585842f751220c1eec632e645de6f5dcba03a4833a785a15116043"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/cpubar_rw_control.inc": {
+      "bytes": 6341,
+      "sha256": "c7a46ed69da33b24db2f38af7ec04205f70b53beb2f7bb3c006953ae8711881d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/independent-review-firmware.json": {
+      "bytes": 2166,
+      "sha256": "3ddb1ebca169975695d63b511c6f208f9ec1a9a217ded36b2111a678c4178cd5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/independent-review-nvidia.json": {
+      "bytes": 2617,
+      "sha256": "a56a627fd066acf512f6b622a40cf39ba4931365e79dea45e749984b3de17630"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/local-validation.json": {
+      "bytes": 1483,
+      "sha256": "0b5d21298a7c371bde04f42fdd58d11ca3275fb9d9bc520c0ceaabff6c10931f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/manifest.json": {
+      "bytes": 1624,
+      "sha256": "ad3952ab370589ac9ad5c57fcbc0f18f6c23f6f93813cf9de647f08dbe2b5090"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/peer_vmm_word_cpubar_rw.cu": {
+      "bytes": 14427,
+      "sha256": "26c18b1be40b5f17008c2c4ad7e6e13c2c320462c68c902d22916c8af3a146b0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/rw_syntax.cpp": {
+      "bytes": 785,
+      "sha256": "544c5881880449e8dfadfc6464f2d6ca275742f004f096c710032bfddb9f7ee3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-cpubar-rw-probe/test_rw_word.cpp": {
+      "bytes": 2735,
+      "sha256": "ac81167ed1564d7bb3cf48daaa67007b668327d54a9c7131278c72c9702d6efa"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-flash-results/files.json": {
+      "bytes": 869,
+      "sha256": "6fc8448b9d444ac11210af39eaf2bf7e94e52e21f92e8dd965a4d3df65665138"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-gpu-results/ANALISI.md": {
+      "bytes": 2897,
+      "sha256": "d1cb08959a404f07e719c406e0e21561597a6bc40c5ac33056d496bbff1028d5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-gpu-results/native-d1-gpu-state.json": {
+      "bytes": 1673,
+      "sha256": "ef3b2aeb68ff6fe1e86ec017d77a6e852949721180cb4c5e37775d8e5f361d2d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-gpu-results/result.log": {
+      "bytes": 7308,
+      "sha256": "9d1f082ee1c898f89c6386b8641edd4f878461a0240b6cb0841d8578031430ad"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-gpu-results/verified-result.json": {
+      "bytes": 12070,
+      "sha256": "f3d0a9ebfea0b85814e24f0ab48de2a17b4169f523bc77d8ade3eece8fbe3cac"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-probe/CLEANUP-ANALYSIS.md": {
+      "bytes": 4942,
+      "sha256": "8326f5ec37fc4f3aa2deb2f05a5b2e3eb897204bed34a6dbd0d6645f06cf48a3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-probe/PROCEDURA.md": {
+      "bytes": 2122,
+      "sha256": "9a3f50fdf39b108aac953ea552ec4ff44d21b818533218a923956f7fec843d53"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-probe/build_native_repeat.py": {
+      "bytes": 5302,
+      "sha256": "4d64b6a001093fefa17bcf4ba1f03c5da78371fef0da979befe55f8c92c5d816"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-probe/local-source-audit.json": {
+      "bytes": 883,
+      "sha256": "68031c0f123d89af968e17ce98b45879eabd524f7d027e30d9368d1fa1ee8c23"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-probe/peer_vmm_word_delayed.cu": {
+      "bytes": 5078,
+      "sha256": "2c3ea614b702fd6d02e940e10586976b51d80ce849b425767578d6521530d117"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-restore-results/files.json": {
+      "bytes": 869,
+      "sha256": "6fc8448b9d444ac11210af39eaf2bf7e94e52e21f92e8dd965a4d3df65665138"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-restore-results/native-d1-state.json": {
+      "bytes": 4281,
+      "sha256": "0b6c923980ac9cfa2339bb59b2530eac06f2ff4c493419f112b4b06f86729788"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-d1-state.json": {
+      "bytes": 4273,
+      "sha256": "99f55973f9a09da565f78254cf62901cfcf385c02505ccf0a08729326d6ea620"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-flash-results/files.json": {
+      "bytes": 343,
+      "sha256": "eb8b4e49b1982842a0bcfc0186b40db4c923d93e5c2f998de290442e4723711b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-gpu-results/build-manifest.json": {
+      "bytes": 1277,
+      "sha256": "525550b1d4e8c657609e573ec8e15b4c8e112a18be375aebdd46b6ae5da4f549"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "c4ac90d861c53c2f9119c4347515a64d882cf19712715c44926ccaccfdf6d79f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-gpu-results/result.log": {
+      "bytes": 5522,
+      "sha256": "10003ef4efdfb90beca6f41164160ba0dbb0a86f0b3d8c16dfa742a17b641849"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-gpu-results/verified-result.json": {
+      "bytes": 1467,
+      "sha256": "69a36f2b6e7b1aea186ee887981fdd64c4af021bed4bcb60951da836de3a86bf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-gpu-state.json": {
+      "bytes": 3044,
+      "sha256": "c725b434c1b64b4493f9be308e831af491ef2c10e656b40e056c245d125158a1"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/build-manifest.json": {
+      "bytes": 2582,
+      "sha256": "c50a09018d020bbda8de81a1f714e0c616ee0dbd97d6eda17749a9185c850620"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/collected-sha256.json": {
+      "bytes": 432,
+      "sha256": "562f91b208b11920b599e4a2bff5a2ccdb7d5c4293ac7b89839aa618a530918b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "1b26194699e8d5972d97f3ed4e0c15e71cc3f1ea00d155d9184b4081910fa4ee"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/result.log": {
+      "bytes": 36587,
+      "sha256": "98244c83fae5f6a3deb002c6b9a28b734a0f20e110802289b77d9225afc59a66"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-gpu-results/state.json": {
+      "bytes": 4070,
+      "sha256": "7d23941a4c385d32e92d6b8b0f3ceb042f7b92a95380b40e46b46f755f5dd71e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-probe/build_native_repeat.py": {
+      "bytes": 6528,
+      "sha256": "b80e41e34a795056bf2f878ea933e28bb895e4df60310d15a7c67050d6809fee"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented-probe/peer_vmm_word_sync.cu": {
+      "bytes": 6058,
+      "sha256": "0b8dfdbfa3a1235a563f987d8c64093cff92e506e72ec1e5738e064629462972"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/PTE-ALIGNMENT.md": {
+      "bytes": 4210,
+      "sha256": "ff6a6c6e322b40aee1502077bd0b7a0a20475f293ca2968ab7b9785d21d0c9d0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/build-manifest.json": {
+      "bytes": 2716,
+      "sha256": "42a11acea2a5899d1451636100bff0ca615b817e11cf0fb8940fb1d5bf0ffd69"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/collected-sha256.json": {
+      "bytes": 1484,
+      "sha256": "61864a9e8b5f8423253c492754758a85ac65bc18aa372f1555d757889439feca"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "f2b958db459b38dcde25dfba1a1ed8e75fd4b7a779a8be47d8e3fa4f128b04e8"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/pte-chain-validation.json": {
+      "bytes": 376926,
+      "sha256": "29686d744e6d46c7a5ce135e972386941720e3532b3cc3fce1f57ca06778245f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/result.log": {
+      "bytes": 62855,
+      "sha256": "fcf21c6d0b1078bedf269a24467fe4daf963ac758af582679afef75b07080de5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-gpu-results/state.json": {
+      "bytes": 4071,
+      "sha256": "d24b4797d18a0fde8e0e63df7844f3a68ac82d38171a64514047bceb3446e18c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-probe/build_native_repeat.py": {
+      "bytes": 6816,
+      "sha256": "e4ff4c9b926322566110d6ce0dce8337639a07d2af23f064b93ec0f8017af2f6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-instrumented2-probe/peer_vmm_word_sync.cu": {
+      "bytes": 6146,
+      "sha256": "ee49e48897817534281741bcf8131a5b0123812636834ae60d5ca8f437826cb3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/ANALISI.md": {
+      "bytes": 5838,
+      "sha256": "cd78d7ebe8afd65a6a5ef6dc9bc8c8ff8769814111bd49513aafb2f521cee7a0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/after-reboot-host.json": {
+      "bytes": 4204,
+      "sha256": "b185977e6e0d65ca5de360363ddc42a7e9c439a746cb40e75075711c894c9f61"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/build-manifest.json": {
+      "bytes": 3493,
+      "sha256": "5e45122cbd86e61f200fa6fd1becf0ca60b847f27974cc23b660b16946fc2051"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/collected-sha256.json": {
+      "bytes": 5589,
+      "sha256": "6297c6dd54082d84aa03b6d3c4e999523b3e9772bc17378f136d2e29e5ca977b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "61fb1623f741abf5ea545fe27e65dd7a0bb998711a5baab0dec5ba340cd512e0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/result.log": {
+      "bytes": 89952,
+      "sha256": "9518ae8bbbf7cbf1e565f4646fb658eb6942d3a4cc50a459c8e8d0ebf9b2ca8d"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/state.json": {
+      "bytes": 4066,
+      "sha256": "8ba9b5b0621f6ba0d80499469cabfaf8d67db1a9dde4898b784d82830e67bff6"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-gpu-results/verified-result.json": {
+      "bytes": 12637,
+      "sha256": "c95cc1e7b07575945ba7310b8c4081184550b86b2b8d53f77912e831b0c4778c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-probe/build_native_repeat.py": {
+      "bytes": 7804,
+      "sha256": "018125edfcd3bc298c99e7c5e03d831bd645efc08dcd18845683b2c09e1a601f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-lowmmio-probe/peer_vmm_word_cpubar.cu": {
+      "bytes": 11847,
+      "sha256": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/ANALISI.md": {
+      "bytes": 4984,
+      "sha256": "b7fee3b722a73d86edcae3da8efa006a4fb1f0c2d2eb8821a43eb132cc02330f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/analyze_nosnoop.py": {
+      "bytes": 20897,
+      "sha256": "4c74cee3a996ac23d70f737106fad2cd3d255ea30ec05a751dc20d589f3d5423"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/build-manifest.json": {
+      "bytes": 3716,
+      "sha256": "a0e00c06e7fbb0d525f0f035ef498d02798f5cefa073f0ffdd66d65187fa361a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/busybox-gate-reproduction.json": {
+      "bytes": 950,
+      "sha256": "7349240164d9a6341ae47bf4d805e9694a51ffb5271cfb15f36d3d8eddf25444"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/collected-sha256.json": {
+      "bytes": 1717,
+      "sha256": "f56a871dcf649118bc6b259728c8968ec3f1f3926b596bf2e13b2d5da7349a99"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "12a2b9aed045b67489dbeb5c23bd59d48e87420158476769671a5dbf0afdf5ce"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/native-nosnoop-gpu-state.json": {
+      "bytes": 4065,
+      "sha256": "7fee4a57a70b9189aaaad1b9d908c171a602e440d3d802f0a49578ddb3b0ccaa"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/result.log": {
+      "bytes": 377941,
+      "sha256": "b026845d09353bd8b8a091d7dd24a1ce73d91e435371f7e4d5fa47d7dc395aa3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-gpu-results/verified-result.json": {
+      "bytes": 175467,
+      "sha256": "9f14a591eda74d78b42f6cd42e2fc21a44125f8e3a9d25867f7c125637841478"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/README.md": {
+      "bytes": 4669,
+      "sha256": "0b8ca6c8705d736c89c2e6f13c01c692021e9278bcd24abb4147098b5e6ed40f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/build_native_repeat.py": {
+      "bytes": 8320,
+      "sha256": "a77e65808aca10da4015235e7409c9ba1ef6d0e1fc83538dee83f965a5d7e186"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/build_native_repeat_gate2.py": {
+      "bytes": 8329,
+      "sha256": "e2d8df1f95d7865146e9062228d7cf4523404b135cec29644722d4551cede52e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/independent-flow-review-storico.json": {
+      "bytes": 2082,
+      "sha256": "5b7fca1b699eb9326138466ecc1f5e52c33d12dd8309a11007d7668df6695e59"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/independent-header-review-firmware.json": {
+      "bytes": 962,
+      "sha256": "86bf13bb7540c2dfc7c887e9be077190733a13e9470179ada77a0679edea81e9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/independent-wrapper-review-firmware.json": {
+      "bytes": 1716,
+      "sha256": "734afc686285002b86545881b2648f44395986d5a769efba34fba0d0009acecd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/log-gate-validation.json": {
+      "bytes": 589,
+      "sha256": "9af915f8d222ab2539d026a9acc20bc8ff32f97f09a359e17b1e5d5d5092756e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/main_syntax.cpp": {
+      "bytes": 7753,
+      "sha256": "29ea11f83d96c88cd43688fccaaac2ee6d0da0c25dedcf567fde19839b230f82"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/manifest.json": {
+      "bytes": 1510,
+      "sha256": "fb202f688620cc37d07cddca340362ddb6e89ab6ac22e356b373676f20513ecb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/pci_attrs.h": {
+      "bytes": 9631,
+      "sha256": "e155131e3c92dbb98094836a0d2389df669d9f8d0d715ac24df2d377b08127e0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/peer_vmm_word_nosnoop.cu": {
+      "bytes": 11071,
+      "sha256": "d7e8cf9af7964ec93206638014586f028346058c045b8a043751a9c35025427b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/syntax_stubs.inc": {
+      "bytes": 1405,
+      "sha256": "abc9c6fc020a7b05e204505d54b0b2123e6045e0d9480c9ffa08f1694e57ef6a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/test_log_gate.py": {
+      "bytes": 3085,
+      "sha256": "0cd573c4bc7efbf8beacd5de5d81b9def7e5ecbd901a7a0a02cfebe05b2a3ede"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/test_pci_attrs.cpp": {
+      "bytes": 1783,
+      "sha256": "90c0cb09765edfba623ebb5a46b0b6f6e9a3b4f203fd00641893df13b8b02bdb"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-nosnoop-probe/trial_main.inc": {
+      "bytes": 7751,
+      "sha256": "c330936901293714a696f0aae5a4feadbba982a08ab4093fd50456a3332b8876"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-probe/PROCEDURA.md": {
+      "bytes": 4767,
+      "sha256": "70677563c776eae38b6d8b0604473cc5999a93b72be8d798e8410632ae9cd14c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-probe/build_native_repeat.py": {
+      "bytes": 4918,
+      "sha256": "0febc9a013f65d4d91fdadb8255fb99c3d5bf5c761aeec27f5201f97c9646699"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/ANALISI.md": {
+      "bytes": 3284,
+      "sha256": "26471770efa7d6c8f4d9a6b3e41e016d6dd915c83a0fbb944241818993566741"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/build-manifest.json": {
+      "bytes": 2894,
+      "sha256": "593dccd784cd19f2bff609bc8a4cf56fcc4fa2594d77842aa6e501fca7be4ad3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/collected-sha256.json": {
+      "bytes": 1698,
+      "sha256": "805e5301460fceb336aae43acc6781128b8b476da10351776736195b956c72e4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "60500f9837a949bcf557a7a396e5e8a8dada90b92ee2d79405db21e1ccbdc2e5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/result.log": {
+      "bytes": 71654,
+      "sha256": "38823801480ddef21912f7b1593a2f0cd176dae0bfda0536fdf3035531bda6f0"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/state.json": {
+      "bytes": 4062,
+      "sha256": "bb3cca59bbfd348d1b523633ef19478feba74faac80c3c55d0a944d669cd7b0a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-gpu-results/verified-result.json": {
+      "bytes": 13421,
+      "sha256": "dbf9ce5d5c189235952f36f32ba897dcf7f6fbcb4c8a01238c3a68ea146c17ab"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-probe/build_native_repeat.py": {
+      "bytes": 6822,
+      "sha256": "7800fa3e18d9f83aff0b0a6f29fbb4a8ecd0531214c27e4af8734469ad2c9e02"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-probe/independent-wrapper-review.json": {
+      "bytes": 1650,
+      "sha256": "0961210f68ea040483b24e7395ee7dae4f90000c3b911c1f8c01383acf867a25"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-push-probe/peer_push.cu": {
+      "bytes": 11886,
+      "sha256": "f5b8f8505fd0a17fb4bf11855704de74fba0298139760349b5000c59a83b987e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-read-state.json": {
+      "bytes": 2441,
+      "sha256": "b1bc62f40972c8535a9161061d98f5f3bbc97379191546640fa6cdcf57b64367"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/ANALISI.md": {
+      "bytes": 2208,
+      "sha256": "f5235dcacc0deadd2c0922ee72f92518672f41684bca61f0f406ee7aeef632da"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/alignment-comparison.json": {
+      "bytes": 7642,
+      "sha256": "e9e42e38583f6fc5cba49db65d693170ddc02546922ab5f3ea9eb1e762e192e7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/build-manifest.json": {
+      "bytes": 2671,
+      "sha256": "c71501c0948ab1b835557a8ac3854a72c1578544b5a13099e57f81202cd038d9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/collected-sha256.json": {
+      "bytes": 1484,
+      "sha256": "f3af15e585767680e9c239830991df5a1a618234c50118dd78dbd9783ce43333"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/cpubar-parser-validation/test_regalign.cpp": {
+      "bytes": 3904,
+      "sha256": "eec9a1c6497d23c7418e9309c5ffd9ad6ad93c025a2d33cf8eece243061ed806"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/cpubar-parser-validation/validation.json": {
+      "bytes": 484,
+      "sha256": "9f4f14b4b55f332c9b8f5b30724de11d84728facfcf62a6bef9829e926e09e9c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "19be9cbe28205b3775218e735c437904035b0f30a3235788d8db2d598468ffa5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/pte-chain-validation.json": {
+      "bytes": 376671,
+      "sha256": "5865ccd73b54ec3a0abee4f3a6395265a47c601844879439a08054a9c5b70b5e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/result.log": {
+      "bytes": 62749,
+      "sha256": "f705f12f50e90472ac4145cb2c3b750431df74295464e26581c1a26828632424"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-gpu-results/state.json": {
+      "bytes": 4067,
+      "sha256": "25e0a9ad386485ad4b54ef17f5ebbc919d60b6d8c22c236816534d2e8b98ce89"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-probe/build_native_repeat.py": {
+      "bytes": 6625,
+      "sha256": "b44068e1668dad918f87572184d91913404bf6bf35c5e42f6aa72b28115d6ce2"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-regalign-probe/peer_vmm_word_sync.cu": {
+      "bytes": 6146,
+      "sha256": "ee49e48897817534281741bcf8131a5b0123812636834ae60d5ca8f437826cb3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-smallpage-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-smallpage-probe/peer_vmm_word_sync.cu": {
+      "bytes": 6146,
+      "sha256": "ee49e48897817534281741bcf8131a5b0123812636834ae60d5ca8f437826cb3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-flash-results/files.json": {
+      "bytes": 869,
+      "sha256": "046eb56e742d28d233d0c6ef77a5096d3cf4706267137b8105921c1b7dd79c94"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-flash-results/native-sync-firmware-state.json": {
+      "bytes": 2881,
+      "sha256": "746f983a3a1264d84ba44b7f461809f7763bca2346bbfcda813f8244a7ab5787"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/ANALISI.md": {
+      "bytes": 8088,
+      "sha256": "40d01e00808fbd52e676aa9242c4ffd313438486099886dbabbd98b8e873cb55"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/analyze_native_sync.py": {
+      "bytes": 9001,
+      "sha256": "98556a68f7d2448d3ada856a6455adf583f2c9cead9b140542d9ef3ba978cd74"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/native-sync-gpu-state.json": {
+      "bytes": 3165,
+      "sha256": "b64390ca550dd032c1473dca76fc73b0e86ea3ac7a5098eecdafa6aa25f82699"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/result.log": {
+      "bytes": 30626,
+      "sha256": "7112532e382d8b512f69c8d6661feec3ab9026825dcbc39b61f3495de8839b26"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-gpu-results/verified-result.json": {
+      "bytes": 50889,
+      "sha256": "891fda4c7745608868b3d8f8b2c1874b52cf004e059668c6064fd6aa8457a413"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/PROCEDURA.md": {
+      "bytes": 2485,
+      "sha256": "f6004a87c277874e2c0e64311598df4598058a03641474ccadf93a7de0785d8a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/build_native_repeat.py": {
+      "bytes": 5871,
+      "sha256": "17e43b8c9b338b4c927d27fb8cca5b5dc0c4ae4d44738f1f7df333dc55479de9"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/pcie_diag.validation.json": {
+      "bytes": 396,
+      "sha256": "901974b279cdd6c81dd6e8b7d5bccf6abb44cf474c0e7837d9e1f5cfdc57c71e"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/pcie_diag_local_check.cpp": {
+      "bytes": 1623,
+      "sha256": "4ad776dfba7740516aabe5bbcc5f573117df64b174c0320abe079f4614ac7c96"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/peer_vmm_word_sync.cu": {
+      "bytes": 6058,
+      "sha256": "0b8dfdbfa3a1235a563f987d8c64093cff92e506e72ec1e5738e064629462972"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-probe/source-review.json": {
+      "bytes": 1924,
+      "sha256": "0d33832c949f107804a35d5527f9d8a2a1a8c1acf11e616f058c4c02098289b7"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-restore-results/collected-sha256.json": {
+      "bytes": 2535,
+      "sha256": "4beebed8018cc21b08fa7bbe18a6ce7100c90ccc43d869e7186be0bf30452b95"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-restore-results/files.json": {
+      "bytes": 869,
+      "sha256": "046eb56e742d28d233d0c6ef77a5096d3cf4706267137b8105921c1b7dd79c94"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-restore-results/native-sync-firmware-state.json": {
+      "bytes": 2890,
+      "sha256": "267462aed467ba11d890ee4951278eba6c366a72f8ce740f608a9eb6791e15f4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-sync-restore-results/restore-verification.json": {
+      "bytes": 1837,
+      "sha256": "ac91cb4b1f51cff44abff83751f3d1bca0217ba678ce22b0d730ac97c1451fc3"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/ANALISI.md": {
+      "bytes": 3132,
+      "sha256": "b0e25ef6420b7848023bd663195ba4da22601de50fecd56259df07a40ae6a8bd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/analyze_4k_result.py": {
+      "bytes": 4927,
+      "sha256": "14067150574bb49cf3ceb2201124c6bb2cf67d6fc48d1875c7ab48ba4e713199"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/build-manifest.json": {
+      "bytes": 3638,
+      "sha256": "1035e8a8ffc1052101c3ffcffee7a98aba427641708d162c5475f17cae8f29c2"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/collected-sha256.json": {
+      "bytes": 2074,
+      "sha256": "2b4c2f10467fdce2ebb0709d41e6f0833c4b3253d64c31df84f1382afe8592b5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/files.json": {
+      "bytes": 269,
+      "sha256": "2f386f786f6034e6539fd7fa67bd52bbf350bd5bb48fe17430f8b51b4ef56897"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/pte-chain-validation.json": {
+      "bytes": 382780,
+      "sha256": "fcdfa7b49ca601fc8150f65324046c54335213663107a8fc4cc3b4f46e069f09"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/result.log": {
+      "bytes": 99060,
+      "sha256": "d0f331af30e41fe37d8cb4f7b8d88db027c051029d6cdc853cc332131a7379d4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/state.json": {
+      "bytes": 4074,
+      "sha256": "d6e140852adcea1857ea70fa5394202d965b7dc2cdfb785d288b63ea774bf58b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-gpu-results/verified-result.json": {
+      "bytes": 6309,
+      "sha256": "4df7d023fde0c29a9c8fafb3000135a4cd67d8697754cadabe33d81976362d1b"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-probe/build_native_repeat.py": {
+      "bytes": 7828,
+      "sha256": "1d7ec47c5e1984c4e92ee0119ce3c44fb8594ed7c8d6ef316f1aef90652a9d06"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-probe/cpubar_trace.h": {
+      "bytes": 15909,
+      "sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-probe/pcie_diag.h": {
+      "bytes": 6825,
+      "sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/native-uvm4k-postwrite-probe/peer_vmm_word_cpubar_postwrite.cu": {
+      "bytes": 14050,
+      "sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/parser-coherent-candidate/independent-review-nvidia.json": {
+      "bytes": 1957,
+      "sha256": "198a61aa2aaeed35f9d7efcbc399a4ae6daec9793920e8d459adf18b324780ca"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/parser-coherent-candidate/test_aperture.cpp": {
+      "bytes": 3184,
+      "sha256": "7d87893555c8e76f0806dd09c044b7d32e285099b2df208cde7939f8c484bdf2"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/prepare_d1_package.py": {
+      "bytes": 1644,
+      "sha256": "885e402e24293f667d1f38e8fc02499ecf93e2fe76404a93fe3fdd307f629614"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/prepare_flash_package.py": {
+      "bytes": 3880,
+      "sha256": "2dc717c0a83d509708c3d4969e8f1657432bfb2655404f38b435eba91ce1161a"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/prepare_restore_script.py": {
+      "bytes": 1989,
+      "sha256": "3446272d9d8fb4187f99e026b208e2b9153fed672a0f1c8c8b315647435ff9fa"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/read_after_firmware.py": {
+      "bytes": 1692,
+      "sha256": "33780c1c18544cb086a2fbe6bb47966df95164da92dc1eaeabf742c5aa86ced5"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/regbar_mmio.c": {
+      "bytes": 639,
+      "sha256": "d1796e1a77ae2fe986dfc33c9c1ebb525a0f145e7090b851d2135782dc9ac000"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/regbar_probe.executed.py": {
+      "bytes": 18646,
+      "sha256": "a715fded8efa653fad6c54c011e37e9ab57a908419a83c54926add85d1ea149f"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/regbar_probe.py": {
+      "bytes": 18235,
+      "sha256": "b9fa3d1fad7b94e569d8fcf7498dcdb161ebdf467888d1317c0b30c2b165ed24"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/restore-cleanup-vm-review-storico.json": {
+      "bytes": 4488,
+      "sha256": "d5bfaf31f6ae9e36070d3e90a5e4c1a338fe1d68e45a1730413ab51d009e8053"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/runtime-c6/result.json": {
+      "bytes": 2039,
+      "sha256": "56bac7cc6686df238da8c99869fbbace88603856df2458fd1bfaaa7db0861094"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/stage_native_d1_probe.py": {
+      "bytes": 1721,
+      "sha256": "07da445971bea83f22cd422bd0edf6a04f338c05738b62050187c58fa6d3c4b2"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/system-driver-readonly-inspection.json": {
+      "bytes": 1004,
+      "sha256": "293eac4cfd6d0bf52acd5c7b16ae68c1f101aa2b37b5818dd0b5e51a51931c90"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/verify_final_sync_local_storico.py": {
+      "bytes": 7411,
+      "sha256": "17cf35c77d2c4597dbe07ad68ebf0d2d4cb257350d0c3fc0a9cde5aff2af14fe"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/verify_fresh_spi.py": {
+      "bytes": 2093,
+      "sha256": "a4b015bfcd293dd4ee05d0f317d4430e57b47b439b8ef76f6614e659fa85f92c"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-review/ANALISI.md": {
+      "bytes": 6103,
+      "sha256": "ee79cfb87da02495aa3b72ad4cc1082791fc6b5b96f9fa33acc97bb9c04b3541"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-review/evidence.json": {
+      "bytes": 9665,
+      "sha256": "13f24d1673f7656f27ebc008ba715af5dd46de4ec592713c68bfba2fba941e85"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/LEGGIMI.md": {
+      "bytes": 4257,
+      "sha256": "e4c5f4b0a7740c955760bf33318f07414258d8eb50dac94802806d321fa349cf"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/cask_vtd_snapshot.c": {
+      "bytes": 7392,
+      "sha256": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/dmar_parse.inc": {
+      "bytes": 2492,
+      "sha256": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/independent-review-nvidia.json": {
+      "bytes": 3269,
+      "sha256": "62455e0e3a8148fa09c90d69353aba0e1663be257a1143491c52fc4dcf5d3872"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/independent-review-storico.json": {
+      "bytes": 2063,
+      "sha256": "b588a6a80bcfb68774c22eae9ca38449720f27c0d6b3b49a5bf75a7d2f45a8cd"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/independent-review.json": {
+      "bytes": 3269,
+      "sha256": "62455e0e3a8148fa09c90d69353aba0e1663be257a1143491c52fc4dcf5d3872"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/independent-wrapper-review-nvidia.json": {
+      "bytes": 1387,
+      "sha256": "c5ec517423f8d12af2ea64239698a191a114b7a276ca9844fb95c719a878fc90"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/manifest.json": {
+      "bytes": 1383,
+      "sha256": "952714c7a0fd36840111f527be068f56b7cbbbf06a1f06ae36ba773534cb7d84"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/offline-validation.json": {
+      "bytes": 709,
+      "sha256": "8cc5e59a06366ddc52ffc565ea8070fe9a3da1d1898e68bd0991867c09ec8c75"
+    },
+    "archive/p2p-tcss-bit-tests-20261021/vtd-snapshot/test_dmar_parser.c": {
+      "bytes": 3372,
+      "sha256": "6c1a3d852bc580d3cca3c22f8021e56d805d623c9b52f8a486cea8eef6223a61"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/ESITO.md": {
+      "bytes": 7654,
+      "sha256": "d2694dbc91bf1e319732fdffdf6307e0302c0cc66253f67ad8e591405972ab9e"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/driver-analysis/ANALISI-DRIVER.md": {
+      "bytes": 14941,
+      "sha256": "2bfa066aba5a80cd39775ff4d1f227fda7ccca7714f9929bc39d776a700eb661"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/firmware-analysis/TCSS-D7-analysis.md": {
+      "bytes": 8499,
+      "sha256": "058dd90f12091cdb028f090d2b43a862c6306b4e37c5198e348b7c49fdf9ad90"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/firmware-analysis/disassemble_te.py": {
+      "bytes": 1712,
+      "sha256": "9606cb9c14fa10738ddf37a9eef6b6f005b4fec5959c01180cbbb16e44c66087"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/firmware-analysis/tcss-d7-static.json": {
+      "bytes": 3976,
+      "sha256": "912f7ff82aadcabe4920b55a470594f59520bf09f5f91adb70a2435720065b5b"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/firmware-analysis/te-manifest.json": {
+      "bytes": 5632,
+      "sha256": "3caca9ec3a93196f3d7ac41a4bbe8317456983066cecc9dc60026b226128f1a2"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/letture-registro-host.json": {
+      "bytes": 869,
+      "sha256": "e78517f627dd380bfb0d0cbb347e877f781546232d37065db0db1ce302c2de82"
+    },
+    "archive/p2p-thunderbolt-firmware-20261020/tcss-payload/manifest.json": {
+      "bytes": 4314,
+      "sha256": "cb6215d49418b9fac0cd699a1e5051b96d7383cba2f640b36231c44b848143bb"
+    },
+    "docs/assets/casklogic-logo.png": {
+      "bytes": 227719,
+      "sha256": "f424d12ef2e0c929beab7f62f242afe9d120db38e8bb4ab6648253d495a94df2"
+    },
+    "docs/assets/topology.svg": {
+      "bytes": 2830,
+      "sha256": "fb5360ba86b7b4dd5d4c89c5296e292d4f924c8d2ccd1581b83448789db1e7b0"
+    },
+    "docs/indice.md": {
+      "bytes": 2121,
+      "sha256": "71ec08323af4ab04e03680eabd0109cda5b94ffa89303fa296a2bcc37df977a6"
+    },
+    "docs/reddit-help.en.md": {
+      "bytes": 3859,
+      "sha256": "635dbc0e1d139851b0f2c6f810c2bcd97f462b4f353cf7fdf52b6a74de6abc23"
+    },
+    "docs/riproducibilita.md": {
+      "bytes": 3065,
+      "sha256": "b9878deae8ffb549d3ad82a9d17e0ed6353eaa87a37143e0279ea30b9a4ea476"
+    },
+    "docs/technical-summary.en.md": {
+      "bytes": 4222,
+      "sha256": "583a836d264782d3ee800547df1acd0935101fd9a669116f4ec6142a77240dd3"
+    },
+    "firmware/README.md": {
+      "bytes": 3762,
+      "sha256": "fcbd03017837f77caac8fcdabacb6e96f5f50ed87bf5b420551017ba07b66958"
+    },
+    "firmware/images/AHWSA-1.26-PEG-TCSS-D1-D7-EXPERIMENTAL.bin": {
+      "bytes": 33554432,
+      "sha256": "009e6e7b63dff823552e8dae3583b16a466ad8cbf6113cc51ea4e8b71c017759"
+    },
+    "firmware/images/AHWSA.1.26-P2P-MENU-CANDIDATE.bin": {
+      "bytes": 33554432,
+      "sha256": "43e6b93504b16229eb16386309053537cf69982d9fb55f38697637af6a003713"
+    },
+    "firmware/manifest.json": {
+      "bytes": 1722,
+      "sha256": "749362d0aa04dddad8a1d6b758ee6c0889bb4c17b29e8e1a4ae8fe44279fd152"
+    },
+    "firmware/regions/peg-tcss-d1-d7.bin": {
+      "bytes": 122880,
+      "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4"
+    },
+    "firmware/regions/tcss-d7.bin": {
+      "bytes": 77824,
+      "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
+    },
+    "provenance/export-manifest.json": {
+      "bytes": 292857,
+      "sha256": "8ef68eab8d34d8f5e077701d63ad20633f049a61835655b194a75b86762c6497"
+    },
+    "provenance/publication-validation.json": {
+      "bytes": 417,
+      "sha256": "a408444afb6be6fdd9ec22d61cd1216f7e42c3a82277e55d1bc0142dc48f720f"
+    },
+    "tools/rebuild_fsp_image.py": {
+      "bytes": 1840,
+      "sha256": "e605e6ea81dca792fa13e2e29150573c5b4f38bd7e92c88384a5ed7bc4b126f1"
+    },
+    "tools/replay_evidence.py": {
+      "bytes": 1098,
+      "sha256": "78f7cb3c187ecb1d89d2ea31da6467c41fed02e46949cdc8f0045367706fb0bd"
+    },
+    "tools/verify_publication.py": {
+      "bytes": 803,
+      "sha256": "240bf5aa17edc3a50e8f6672bc6d3b964e93c87cc613a1daa48d580c537d3c81"
+    }
+  }
+}

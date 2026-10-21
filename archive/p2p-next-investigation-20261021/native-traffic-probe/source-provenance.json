@@ -1,0 +1,25 @@
+{
+  "baseline_source": "ARCHIVE_ROOT/p2p-tcss-bit-tests-20261021/native-ce-probe/peer_ce_cupti.cu",
+  "baseline_sha256": "89f1639244b589ef89dfb3231c84b278b5c8caedef5c74e9d76d5a16da3d309c",
+  "files": {
+    "peer_traffic.cu": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+    "nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9"
+  },
+  "runtime_tested": false,
+  "remote_operations_by_author": false,
+  "initial_go_header_reference": {
+    "repository": "NVIDIA/go-nvml",
+    "commit": "1a1e86da474d340d7cf58274588f4a4afc8772e7",
+    "path": "pkg/nvml/nvml.h",
+    "git_blob": "d02cd6446d04727496f00c2df0fddf8c7def3147",
+    "sha256": "ee1c9483e393964c6f6cb95c64883906145564020480a4262ea333d72b3eda9a"
+  },
+  "nvml_header": {
+    "url": "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-nvml-dev-12-6_12.6.37-1_amd64.deb",
+    "package_sha256": "6af50904eed7c5130faf4955df768e5b826ada59681110f8497e66fbfdb94d2c",
+    "header_archive_path": "./usr/local/cuda-12.6/targets/x86_64-linux/include/nvml.h",
+    "header_sha256": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9"
+  }
+}

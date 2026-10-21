@@ -1,0 +1,30 @@
+{
+  "status": "STATIC_REVIEW_PASS_NOT_HARDWARE_VALIDATION",
+  "source_directory": "PROJECT_ROOT/runtime/native-push-probe",
+  "sha256": {
+    "peer_push.cu": "f5b8f8505fd0a17fb4bf11855704de74fba0298139760349b5000c59a83b987e",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "run_with_timeout.sh": "9fb423866b2f6b8707890f396158b1855a570e9b4da0f0e123ee62c495886c8e"
+  },
+  "checks": {
+    "kernel_reads_only_local_source": true,
+    "kernel_writes_peer_destination": true,
+    "no_cudaMemcpyPeer_or_cpu_payload_relay": true,
+    "system_fence_for_each_writer": true,
+    "owner_init_sync_and_full_readback_before_kernel": true,
+    "executor_sync_before_destination_readback": true,
+    "full_payload_comparison": true,
+    "poison_differs_at_every_word": true,
+    "four_allocations_each_8MiB": true,
+    "thirty_transfer_cases": true,
+    "all_free_after_data_done": true,
+    "diagnostic_header_identical_to_reviewed_sync_header": true,
+    "timeout_wrapper_25s": true
+  },
+  "limitations": [
+    "No NVCC compilation or GPU execution by this reviewer.",
+    "PCI/firmware/driver identity gates are the responsibility of native init.",
+    "Host memory seeds and validates payload; no source D2H is copied onward to peer H2D.",
+    "GPU event timings include kernel and system-fence cost; this is not a sustained throughput benchmark."
+  ]
+}

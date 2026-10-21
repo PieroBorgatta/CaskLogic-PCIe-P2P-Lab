@@ -1,0 +1,198 @@
+[
+  {
+    "name": "SiliconPolicyPeiPostMem",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-ce19678f-3f08-4e81-a1f3-1886ca13ada7/section1.te",
+    "sha256": "f2b08d79335536519b84af1edeed90cd910fec3ae902c6ff418b9b02aec37187",
+    "stripped": 448,
+    "imagebase": "0xffd38e3c",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x240",
+        "raw_offset": "0xa8",
+        "rawsize": 43232
+      },
+      {
+        "name": ".data",
+        "rva": "0xab20",
+        "raw_offset": "0xa988",
+        "rawsize": 4480
+      },
+      {
+        "name": ".reloc",
+        "rva": "0xbca0",
+        "raw_offset": "0xbb08",
+        "rawsize": 704
+      }
+    ]
+  },
+  {
+    "name": "SiInitPreMemFsp",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-d9117bd7-0807-4f38-b773-ad86a791eafc/section1.te",
+    "sha256": "2fb8ccb14e1ceeb78c556f7b1c092b40a0d583673ac0577747f6dc23f203e08c",
+    "stripped": 440,
+    "imagebase": "0xffbb8d1c",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x240",
+        "raw_offset": "0xb0",
+        "rawsize": 615904
+      },
+      {
+        "name": ".data",
+        "rva": "0x96820",
+        "raw_offset": "0x96690",
+        "rawsize": 28768
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x9d880",
+        "raw_offset": "0x9d6f0",
+        "rawsize": 6656
+      }
+    ]
+  },
+  {
+    "name": "FspInitPreMem",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-9e1cc850-6731-4848-8752-6673c7005eee/section1.te",
+    "sha256": "cd48aadc220b07a954a3c7b9ec4b3a00d6042a3bfb3df942d5f1c6bf5fee25b2",
+    "stripped": 424,
+    "imagebase": "0xffc57ea8",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x220",
+        "raw_offset": "0xa0",
+        "rawsize": 22816
+      },
+      {
+        "name": ".data",
+        "rva": "0x5b40",
+        "raw_offset": "0x59c0",
+        "rawsize": 2912
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x66a0",
+        "raw_offset": "0x6520",
+        "rawsize": 320
+      }
+    ]
+  },
+  {
+    "name": "PlatformInitPreMem",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-eeee611d-f78f-4fb9-b868-55907f169280/section1.te",
+    "sha256": "781d9785fd120318e76c2d18aca1357b11ceec63e3fb2d461bf29564e3ea0541",
+    "stripped": 424,
+    "imagebase": "0xffd128a0",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x220",
+        "raw_offset": "0xa0",
+        "rawsize": 27872
+      },
+      {
+        "name": ".data",
+        "rva": "0x6f00",
+        "raw_offset": "0x6d80",
+        "rawsize": 9120
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x92a0",
+        "raw_offset": "0x9120",
+        "rawsize": 1184
+      }
+    ]
+  },
+  {
+    "name": "FspWrapperPeim",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-f641ac56-3b92-4154-8547-80ef6aaff551/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-960241a5-5ce6-4ebf-b9c4-e37d294beba9/section1.te",
+    "sha256": "ddc4af4bcb1eca5f39f11280008ce2bee1244aeccc619ef7743b40bec43b486c",
+    "stripped": 424,
+    "imagebase": "0x0",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x220",
+        "raw_offset": "0xa0",
+        "rawsize": 13472
+      },
+      {
+        "name": ".data",
+        "rva": "0x36c0",
+        "raw_offset": "0x3540",
+        "rawsize": 480
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x38a0",
+        "raw_offset": "0x3720",
+        "rawsize": 96
+      }
+    ]
+  },
+  {
+    "name": "PlatformInitAdvancedPostMem",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-f641ac56-3b92-4154-8547-80ef6aaff551/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-314ee04c-1106-4dc6-acbc-cf19c0dbc5cc/section1.te",
+    "sha256": "8d3bbccc0fd7ad4836c10ab2c1dcfa3c5f812c686f9d9423054fd9f60ce0c869",
+    "stripped": 424,
+    "imagebase": "0x0",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x220",
+        "raw_offset": "0xa0",
+        "rawsize": 26912
+      },
+      {
+        "name": ".data",
+        "rva": "0x6b40",
+        "raw_offset": "0x69c0",
+        "rawsize": 2208
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x73e0",
+        "raw_offset": "0x7260",
+        "rawsize": 320
+      }
+    ]
+  },
+  {
+    "name": "FspsWrapperPeim",
+    "source": "ARCHIVE_ROOT/gpu-followup-20261020/driver-reference/bios-1.26/extracted/regions/region-bios/volume-0/file-f641ac56-3b92-4154-8547-80ef6aaff551/section0/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-0d244df9-6ce3-4133-a1cf-53200ab663ac/section1.te",
+    "sha256": "ae8f5dfa0fb962dd5be5faa485a64e2695dae3e718f2027c15d758a31f4da909",
+    "stripped": 424,
+    "imagebase": "0x0",
+    "machine": "0x14c",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x220",
+        "raw_offset": "0xa0",
+        "rawsize": 2112
+      },
+      {
+        "name": ".data",
+        "rva": "0xa60",
+        "raw_offset": "0x8e0",
+        "rawsize": 384
+      },
+      {
+        "name": ".reloc",
+        "rva": "0xbe0",
+        "raw_offset": "0xa60",
+        "rawsize": 64
+      }
+    ]
+  }
+]

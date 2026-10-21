@@ -1,0 +1,163 @@
+{
+  "status": "cleanup_verified",
+  "epoch": 1792550945.5755117,
+  "tree": {
+    "directories": [
+      "before-driver"
+    ],
+    "files": {
+      "probe-kernel.efi": {
+        "size": 17320328,
+        "sha256": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e"
+      },
+      "probe-initrd.img": {
+        "size": 279290767,
+        "sha256": "42879f432b3d3a1ab50b49e008ae04811cda70f3195d56819be9f5b4f4774282"
+      },
+      "IDENTITY.txt": {
+        "size": 33,
+        "sha256": "c389b5b9c8fef62633b3238f1b8d780f63282264d0ce7782e78e7b8e911009ff"
+      },
+      "files.json": {
+        "size": 269,
+        "sha256": "e853946eedbd8dcae5bdb11d2ff2bd278e276ee428125b78f459104a8349f9a5"
+      },
+      "build-manifest.json": {
+        "size": 5473,
+        "sha256": "973b4c324cef5b4edfa30a25e44381e66438a2e6c562838edd5b42474d70493e"
+      },
+      "result.log": {
+        "size": 44913,
+        "sha256": "9850efcefda7311096954ba9660edf4ca1045506e5a9bd5eebdb50545ba37e5d"
+      },
+      "kernel.log": {
+        "size": 160339,
+        "sha256": "91522b10f7422dbc8a0902a257a24d82cfde1527102281b40386c6b9203b4564"
+      },
+      "before-driver/0000_00_00.0.config": {
+        "size": 256,
+        "sha256": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd"
+      },
+      "before-driver/0000_00_01.0.config": {
+        "size": 4096,
+        "sha256": "8d0f2fa91c3d463c41a3a0cee12830beb4adcc22f61213a6a3789c515dc0b707"
+      },
+      "before-driver/0000_00_07.0.config": {
+        "size": 4096,
+        "sha256": "3d0a0b911c2fc802b23dc002ffa8537b95b79f35e61db587ab7f07c1fe1d2dd7"
+      },
+      "before-driver/0000_00_07.2.config": {
+        "size": 4096,
+        "sha256": "40a0327d87493016d948b7a75bbcbf4bf76e5848535bd8b4dc1908362887cf49"
+      },
+      "before-driver/0000_04_00.0.config": {
+        "size": 4096,
+        "sha256": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f"
+      },
+      "before-driver/0000_05_00.0.config": {
+        "size": 4096,
+        "sha256": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc"
+      },
+      "before-driver/0000_01_00.0.config": {
+        "size": 4096,
+        "sha256": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3"
+      },
+      "before-driver/0000_01_00.1.config": {
+        "size": 4096,
+        "sha256": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42"
+      },
+      "before-driver/0000_06_00.0.config": {
+        "size": 4096,
+        "sha256": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25"
+      },
+      "before-driver/0000_06_00.1.config": {
+        "size": 4096,
+        "sha256": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150"
+      },
+      "before-driver/iomem.txt": {
+        "size": 4505,
+        "sha256": "82879e115e4f436c374fb83e0d69f3b12268e94db153f045525fa594ca388215"
+      },
+      "before-driver/ioports.txt": {
+        "size": 1043,
+        "sha256": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7"
+      }
+    }
+  },
+  "state_sha256": "7bddd02b80b46570fd7bf02c2f7fdb7335c3964f1b1c483f9095a194f99a9082",
+  "baseline_sha256": "b1bc62f40972c8535a9161061d98f5f3bbc97379191546640fa6cdcf57b64367",
+  "original_files": {
+    "/boot/efi/EFI/BOOT/BOOTX64.EFI": {
+      "bytes": 1134592,
+      "sha256": "83291a31f8342da87e0931af10c9d2ab645760c1499b1f105631d74001ca3dae"
+    },
+    "/boot/efi/EFI/xenserver/gcdx64.efi": {
+      "bytes": 1134592,
+      "sha256": "3f899114e801f35d6dc6f0e04d392b6e045bd0d133aa1103e1198165e16f9975"
+    },
+    "/boot/efi/EFI/xenserver/grub.cfg": {
+      "bytes": 2372,
+      "sha256": "80b5f5a6b4023aed2f78c7ebcb934a45819e3d7f0663c2fe75d7d9b931f87c15"
+    },
+    "/boot/efi/EFI/xenserver/grubx64.efi": {
+      "bytes": 1134592,
+      "sha256": "83291a31f8342da87e0931af10c9d2ab645760c1499b1f105631d74001ca3dae"
+    }
+  },
+  "boot_before": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS physical probe\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssPhysical\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.P.h.y.s.i.c.a.l.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n",
+  "ccfg_before": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "entry": "0002",
+  "result": {
+    "status": "incomplete_preserved",
+    "protocol_complete": false,
+    "qualification_error": "Chiusura programma mancante/duplicata",
+    "program_rc": null,
+    "terminal_records": [],
+    "comparisons": null,
+    "failures": null,
+    "data_all_comparisons_pass": false,
+    "P2P_solution_claimed": false,
+    "direct_route_proven": false,
+    "watchdog_observed": false,
+    "retained_observed": false,
+    "logs_are_partial_evidence": true,
+    "missing_expected_files": []
+  },
+  "backup": "/root/riscrivo-p2p-next-investigation-20261021/native-physical-ce-esp-backup",
+  "results": "/root/riscrivo-p2p-next-investigation-20261021/native-physical-ce-results",
+  "installer_sha256": "a7d753df14a078f3c7217e8a841f8dbe99043b81874b92f50f13b535ac4fd3be",
+  "collector_sha256": "8f19f83ad70a5bef393e190df959c87bf0cc4ae13556a40110e272edcacbc8e5",
+  "validator_sha256": "20590c2d5eb6340999c1ea9ed15667ef7524cba4ba6a70d14a05b23e90ae5e1b",
+  "mutations": [
+    {
+      "entry_removed": "0002"
+    },
+    {
+      "directory_removed": "CaskLogicTcssPhysical"
+    }
+  ],
+  "epoch_collected": 1792550949.102258,
+  "boot_after_collect": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS physical probe\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssPhysical\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.P.h.y.s.i.c.a.l.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n",
+  "ccfg_after_collect": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "full_backup_files": 19,
+  "raw_result_files": 17,
+  "additional_state_files": 1,
+  "original_boot_files_unchanged": true,
+  "epoch_cleanup": 1792551038.7024925,
+  "epoch_completed": 1792551039.24295,
+  "boot_after_cleanup": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\n",
+  "ccfg_final": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "full_backup_preserved": true
+}

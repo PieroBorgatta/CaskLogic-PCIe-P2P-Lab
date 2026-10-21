@@ -1,0 +1,16 @@
+{
+  "epoch": 1792531241.4587688,
+  "stage": "single_byte_NVAR_write_verified",
+  "physical_slot_CCFG_before": "0x0E008077",
+  "physical_slot_CCFG_after": "0x04008077",
+  "Thunderbolt_root_CCFG_after": "0x0E009077",
+  "sector_flash_address": "0x01024000",
+  "byte_flash_address": "0x010243F9",
+  "byte_change": [
+    0,
+    1
+  ],
+  "all_other_sector_bytes_identical": true,
+  "sector_after_sha256": "ba646b781d38136787b8f19db448872860befc8223e386a9e56dc9a5b4b2f68b",
+  "GPU_data_integrity_tests": "pending"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS_static_candidate_and_CPU_builder",
+  "reviewer": "audit_firmware",
+  "hashes": {
+    "nv_gpu_ops.c": "0f9dedebdf54afbfe6d758448a7a8480d5c47ce8febd4db1b05e3029ee23b4c0",
+    "peer-coherent.patch": "06fae9f1e946e4d3a79d236d85ae1fd7bb31de114503a2d4a208888964565cc8",
+    "strict_patch.py": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948",
+    "build_rm_only.py": "fc0e3f9743465df2c8614baf30b0ce5385a1f584864d91d6ad9b8a73f8cacbdf",
+    "manifest.json": "91a3803bc659c163c73a5d6f21fbcfbc99ba31506543c977854b2fff8ffbed60"
+  },
+  "exact_patch_reversible": true,
+  "preimage_sha256": "6b264b23b02fccd94a5c21fda80a66897d043202a695a4c269e89f71137cf141",
+  "added_lines": 10,
+  "candidate_checks": [
+    "OnlyFBMEM externalBAR1 aperture path with existingatomicsupportedbranchfalse",
+    "Registry absent/0/other/error keepsSYS_NONCOH; value1 selectsSYS_COH",
+    "Defaultmappingflags atomic/readonly from separate helper unchanged; volatility remainsBAR1P2Pcache policy; addresses, lifetime andcleanup unchanged",
+    "Physical-address query also usesmodifiedaperture; localFillGpuMemoryInfo passesisBar1FALSE andunchanged",
+    "SoftwareenumSYS_COH4 versusSYS_NONCOH3; hardwarefmt2 aperturecode2 versus3 onbits2:1, expected rawdifference0x2 atidentical address/flags"
+  ],
+  "builder_checks": [
+    "Fresh output; verifiedstockarchive, baselinehelper, source_manifest, strictpatch andpatch",
+    "Reconstructs completecleanbaseline withseveninstrumentedsourcehashes; verifies targetpreimage/postimage",
+    "Compiles NV_KERNEL_MODULES=nvidia only; originalbaselineUVM9b99 copiedhashverified",
+    "AllRMexportCRC/type/namespace requiredsameasbaseline; version595.99.02 andkernelvermagic7.0.0-38 checked",
+    "Registrykey presence inbuiltRM required; noinstallation/reboot/hardware"
+  ],
+  "limitations": [
+    "Experimental diagnostic only: sourceexplicitly documents coherentpeer restrictionpreBlackwell becauseinboundatomics unsupported",
+    "ExistingatomicPTEpermission remains unchanged; trial kernels mustnotissueatomics",
+    "SoftwarePTElogs cannotprove actualTLPattributes orhardwareMMUreadback",
+    "NoNVCC/kernelbuild/hardwareexecutedbyreviewer"
+  ],
+  "offline_checks": [
+    "strictpatchreverse+reapply",
+    "SHA256",
+    "PythonAST"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "built_not_booted": true,
+  "files": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "e506991162a90ed552996617bf33f2ee310e00d478d0f814de07e32b03578f52",
+    "IDENTITY.txt": "636acc84b4d433e5c684aede02928b37883080439ee91549bbaadaaa0ea0a2d1"
+  },
+  "input_files": {
+    "native-traffic-probe/peer_traffic.cu": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+    "native-traffic-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-traffic-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-traffic-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-traffic-probe/peer_traffic_native": "d094a0ba7cc226c591314a39a7d1604315e7021973f5bfb934d8db84f0d346fb",
+    "native-traffic-probe/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic-probe/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-traffic-probe/source-provenance.json": "5854a9f165f47aab5e3b91c8553c926a780eb9d23ddae5ab016bfef752b44c78",
+    "native-traffic-probe/sampler-fixtures.cpp": "5aee4b1b8127dad1c66a377df6f600b669ffc1685c0ff0ab628d89e191ff8be8",
+    "native-traffic-probe/run_sampler_fixtures.py": "ed58130eae952fe22efbed6669a3dbeab60d525d860a6038a7cc1b252f9df532",
+    "native-traffic-probe/independent-sampler-review-firmware.json": "44e8ed52b959caf08670da9697392790bc91a8e793404a3a45ea609481441113",
+    "native-traffic-probe/independent-flow-review-storico.json": "bf4d47fcb8ff047e45968785ad7427847f7d983c352235650f2984968955f222",
+    "init-traffic.sh": "f7ed628c7f12c1154d48c1db748aed9209a56203696974ca704a0e025fa0d306",
+    "build_traffic_package.py": "f564497f8103478c92ad1a7e963443c3406ca355514869f8b992cfa9e2a9ca9e"
+  },
+  "build_inputs_sha256": "c83b49d4b5fbbb998785253c85c09cc2dc9eb0f88e57da9cc822a71ba8016960",
+  "baseline_package_initrd_sha256": "2f912fcfca5f69616b4f18159e777b28b60023ebe4e24d3e53a9d4ff7193fd72",
+  "intended_payload_changes": [
+    "init",
+    "opt/probe/peer_word"
+  ],
+  "initrd_bytes": 279245688,
+  "native_program_sha256": "d094a0ba7cc226c591314a39a7d1604315e7021973f5bfb934d8db84f0d346fb",
+  "init_sha256": "f7ed628c7f12c1154d48c1db748aed9209a56203696974ca704a0e025fa0d306",
+  "module_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+  "uvm_module_sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+  "libcuda_sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+  "expected_CCFG": {
+    "00:01.0": "04008077",
+    "00:07.0": "0e009077",
+    "00:07.2": "0e009077"
+  },
+  "automatic_return_seconds": 182,
+  "program_timeout_seconds": 60,
+  "vm_disks_mounted": false,
+  "pci_config_writes": false,
+  "firmware_writes": false,
+  "comparisons": 4,
+  "sizes": [
+    1048576
+  ],
+  "modes": [
+    "PUSH"
+  ],
+  "engines": [
+    "SM",
+    "CUDA_COPY_REQUEST"
+  ],
+  "CE_observed_in_this_probe": false,
+  "direct_route_proven": false,
+  "nvml_library_sha256": "770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de",
+  "payload_files": {
+    "opt/probe/peer_word": "d094a0ba7cc226c591314a39a7d1604315e7021973f5bfb934d8db84f0d346fb",
+    "opt/probe/nvidia-dynamic.ko": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "opt/probe/nvidia-instrumented-uvm.ko": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+    "usr/lib/x86_64-linux-gnu/libcupti.so.12": "76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d",
+    "usr/lib/x86_64-linux-gnu/libcuda.so.1": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+    "init": "f7ed628c7f12c1154d48c1db748aed9209a56203696974ca704a0e025fa0d306",
+    "usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1": "770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de"
+  }
+}

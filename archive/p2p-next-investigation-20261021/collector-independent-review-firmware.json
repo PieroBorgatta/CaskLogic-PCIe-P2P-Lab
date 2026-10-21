@@ -1,0 +1,68 @@
+{
+  "status": "PASS_STATIC_AND_LOCAL_FIXTURES",
+  "source": "ARCHIVE_ROOT/p2p-next-investigation-20261021/collect_cleanup_native.py",
+  "source_sha256": "49dbb779c7f1fc470c0c6157b3871576faced06bef1847ccc8b37fb7b859ca0d",
+  "installer_sha256": "8d86cfac50fc14ba07b0afa93c72351873088dfe8258a2952faf9c784d7fca30",
+  "scope": "Solo lettura sorgenti e fixture CPU su log locale/tempdir; nessun entrypoint o comando remoto eseguito.",
+  "findings_blocking": [],
+  "checks": [
+    "Default senza flag non muta; collect e cleanup mutuamente esclusivi.",
+    "Identità host/ESP, BootCurrent0000, BootOrder0000,0001, BootNext assente e voce esatta ricontrollati.",
+    "Backup integrale 19 file verificato con SHA256 e fsync prima di cancellazioni; raw17+stato+manifest preservati.",
+    "Rilettura albero completo, stato e originali prima di cleanup; rifiuto link/file speciali/mount annidati.",
+    "Rimozione esclusiva della voce registrata e directory fissa CaskLogicTcssNext; journal pending persistito prima di ogni azione.",
+    "Boot originale, CCFG e backup riletti dopo rimozioni; nessun comando VM/reboot/PCI/SPI."
+  ],
+  "fixtures": [
+    {
+      "name": "actual_complete_log_rc5_data18fail",
+      "passed": true,
+      "expected_accept": true
+    },
+    {
+      "name": "missing_end",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "incomplete_trace",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "missing_completion",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "mismatched_rc",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "duplicate_result",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "firmware_mismatch",
+      "passed": true,
+      "expected_accept": false
+    },
+    {
+      "name": "regular_tree_accept",
+      "passed": true,
+      "expected_accept": true
+    },
+    {
+      "name": "symlink_reject",
+      "passed": true,
+      "expected_accept": false
+    }
+  ],
+  "limitations": [
+    "La validazione del collector certifica completezza minima della raccolta; l’analisi numerica/CUPTI completa resta nel report dedicato.",
+    "Un’interruzione durante collect/cleanup lascia stato pending e conservazione diagnostica; non effettua ripresa automatica.",
+    "Hash e fsync non dimostrano di per sé assenza di ogni guasto fisico del supporto."
+  ]
+}

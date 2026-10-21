@@ -1,0 +1,97 @@
+{
+  "built_not_booted": true,
+  "files": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "cad7a46cdc266a20ef7062fdf7b79c4b3615e4e3cc22a81236c748031e45d677",
+    "IDENTITY.txt": "1439195ef22a51ed7f11daf5d766a19764a6602095bf2a002355750d6a006abf"
+  },
+  "input_files": {
+    "init-physical2.sh": "d7b0e985ee0db9b9d6548ce62db209b9f06e5270004a43de4fbecddc56944faf",
+    "build_physical2_package.py": "797dac08976b4e480f028643055d72aeb5ee985a5f58f9e671e603f8972e89bc",
+    "verify_physical2_package.py": "f473598dac854cdfa2956858cd7d2cbaedb50e9c46ae15e127b695b62b1b9eec",
+    "driver-physical-ce-build-03/build-manifest.json": "9746d74f09d74796ed10b25b9678078163fec64d3f4a00d4c7ee755f29bf6935",
+    "driver-physical-ce-build-03/modules/nvidia-uvm.ko": "83b6342f0ef44c0d97dd6fad0310e99438718a8450bf40a29939c250604e8bce",
+    "driver-physical-ce-v3/manifest.json": "f476c85d8e4a6e140ed6e3914ff05541b577a3167648fb083c4b306b4c476c40",
+    "driver-physical-ce-v3/build-contract.json": "e365f57cd3cef9f8babb723bb56511dc7f050ca26e3b0d57f7a1085ab98761f5",
+    "driver-physical-ce-v3/root-source-review.json": "0d9a55136d0ba6983f52e8e0c7f080591e77ec8642401d8137a072e290699631",
+    "driver-physical-ce-v3/independent-kind-permission-review-nvidia.json": "5eeadb0a92baebbccd27588eb364a0cfaff22e4f76f9d8c4fc241ed37a927c45",
+    "native-physical2-ce-probe/peer_physical_ce_native": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+    "native-physical2-ce-probe/peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "native-physical2-ce-probe/phys_ce_client.h": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab",
+    "native-physical2-ce-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-physical2-ce-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-physical2-ce-probe/include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "native-physical2-ce-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-physical2-ce-probe/source-provenance.json": "ba8334a956fcaebf4a2ddb52ec2a1675e88ab594f73d3f4ca2577f2f6d83b6c6",
+    "native-physical2-ce-probe/offline-client-validation.json": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7",
+    "native-physical2-ce-probe/independent-review-firmware.json": "f9fda893534d98dfcba67294ceada290b233060da2019dd1288716e3ec336599"
+  },
+  "build_inputs_sha256": "89658349edce921f2da034932fd15513a0e7cbbf99869b798be6e78b792ee7e9",
+  "baseline_package_initrd_sha256": "2f912fcfca5f69616b4f18159e777b28b60023ebe4e24d3e53a9d4ff7193fd72",
+  "intended_payload_changes": [
+    "init",
+    "opt/probe/peer_word",
+    "opt/probe/nvidia-instrumented-uvm.ko"
+  ],
+  "driver_build_manifest_sha256": "9746d74f09d74796ed10b25b9678078163fec64d3f4a00d4c7ee755f29bf6935",
+  "driver_build_contract_sha256": "e365f57cd3cef9f8babb723bb56511dc7f050ca26e3b0d57f7a1085ab98761f5",
+  "driver_source_patch_sha256": "34acdf3111d112f35358b4b549a4f1c9c55b76cce9ac2f4581354e783bc476af",
+  "driver_build_directory": "driver-physical-ce-build-03",
+  "initrd_bytes": 279293482,
+  "native_program_sha256": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+  "init_sha256": "d7b0e985ee0db9b9d6548ce62db209b9f06e5270004a43de4fbecddc56944faf",
+  "module_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+  "uvm_module_sha256": "83b6342f0ef44c0d97dd6fad0310e99438718a8450bf40a29939c250604e8bce",
+  "libcuda_sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+  "expected_CCFG": {
+    "00:01.0": "04008077",
+    "00:07.0": "0e009077",
+    "00:07.2": "0e009077"
+  },
+  "automatic_return_seconds": 182,
+  "program_timeout_seconds": 60,
+  "vm_disks_mounted": false,
+  "pci_config_writes": false,
+  "firmware_writes": false,
+  "comparisons": 4,
+  "sizes": [
+    4
+  ],
+  "modes": [
+    "PUSH"
+  ],
+  "engines": [
+    "SM",
+    "PHYSICAL_CE"
+  ],
+  "direct_route_proven": false,
+  "physical_ce_ioctl": 315,
+  "physical_ce_abi": 1,
+  "physical_ce_bytes": 4,
+  "physical_ce_module_parameters": {
+    "uvm_cask_physical_ce": "Y",
+    "uvm_enable_builtin_tests": "1"
+  },
+  "physical_destination_mode": "NONCOHERENT_SYSMEM",
+  "calibrations": 4,
+  "calibration_sizes": [
+    1048576
+  ],
+  "calibration_modes": [
+    "HOST_TO_DEVICE",
+    "DEVICE_TO_HOST"
+  ],
+  "calibration_payload_is_p2p": false,
+  "NVML_sampling_during_physical_ioctl": false,
+  "watchdog_evidence_capture": "best effort asynchronous worker writes marker and kernel log before nominal182second emergency return",
+  "nvml_library_sha256": "770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de",
+  "payload_files": {
+    "opt/probe/peer_word": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+    "opt/probe/nvidia-dynamic.ko": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "opt/probe/nvidia-instrumented-uvm.ko": "83b6342f0ef44c0d97dd6fad0310e99438718a8450bf40a29939c250604e8bce",
+    "usr/lib/x86_64-linux-gnu/libcupti.so.12": "76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d",
+    "usr/lib/x86_64-linux-gnu/libcuda.so.1": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+    "init": "d7b0e985ee0db9b9d6548ce62db209b9f06e5270004a43de4fbecddc56944faf",
+    "usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1": "770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de"
+  }
+}

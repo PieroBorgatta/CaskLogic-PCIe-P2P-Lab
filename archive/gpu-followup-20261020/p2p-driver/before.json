@@ -1,0 +1,16 @@
+{
+  "epoch": 1792525848.4845803,
+  "services": {
+    "n3rdware-gpu-fan.service": "active",
+    "nvidia-persistenced.service": "active",
+    "nvidia-powerd.service": "inactive",
+    "nvidia-cdi-refresh.path": "active"
+  },
+  "modules": {
+    "nvidia": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia.ko.zst",
+    "nvidia_uvm": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia-uvm.ko.zst",
+    "nvidia_modeset": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia-modeset.ko.zst",
+    "nvidia_drm": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia-drm.ko.zst"
+  },
+  "kernel": "7.0.0-38-generic"
+}

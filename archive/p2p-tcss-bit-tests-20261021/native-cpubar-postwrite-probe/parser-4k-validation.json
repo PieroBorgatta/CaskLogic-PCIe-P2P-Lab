@@ -1,0 +1,27 @@
+{
+  "status": "PASS_offline_synthetic_4k",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/test_parser_4k.cpp",
+    "-o",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/test_parser_4k"
+  ],
+  "compile_returncode": 0,
+  "run_returncode": 0,
+  "stdout": "EXPECTED_SKIP fixture=1 reason=ambiguous_RM_PTE\nEXPECTED_SKIP fixture=1 reason=ambiguous_UVM_PTE\nEXPECTED_SKIP fixture=1 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=1 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=2 reason=ambiguous_RM_PTE\nEXPECTED_SKIP fixture=2 reason=ambiguous_UVM_PTE\nEXPECTED_SKIP fixture=2 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=2 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=3 reason=ambiguous_RM_PTE\nEXPECTED_SKIP fixture=3 reason=ambiguous_UVM_PTE\nEXPECTED_SKIP fixture=3 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=3 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=4 reason=ambiguous_RM_PTE\nEXPECTED_SKIP fixture=4 reason=ambiguous_UVM_PTE\nEXPECTED_SKIP fixture=4 reason=uvm_pte_mismatch\nEXPECTED_SKIP fixture=4 reason=uvm_pte_mismatch\nCPUBAR_4K_COMPAT_PASS cases=20 hardware_access=0 synthetic_pages=1\n",
+  "stderr": "",
+  "source_sha256": "a63cbe4c48c1047d582a589311941ab683730311b8b33213b8d329067cddf09c",
+  "header_sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+  "hardware_access": false,
+  "limits": [
+    "Synthetic 4K granularity applied to four real historical traces; not a prediction of runtime batch partition.",
+    "Parser checks only first PTE for diagnostic four-byte word, not all 512 PTEs.",
+    "Duplicate RM/UVM record or split map_size rejects with explicit error; never relax matching."
+  ]
+}

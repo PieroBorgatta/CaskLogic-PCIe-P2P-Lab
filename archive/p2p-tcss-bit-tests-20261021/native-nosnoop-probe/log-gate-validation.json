@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "cases": 19,
+  "uses_actual_init_awk": true,
+  "hardware_or_remote_actions": false,
+  "case_names": [
+    "valid_3fail_per_phase",
+    "missing_phase",
+    "duplicate_phase",
+    "wrong_mode",
+    "failure_sum_disagrees",
+    "missing_read",
+    "wrong_operation_phase",
+    "invalid_result",
+    "attributes_changed",
+    "write_wrong_width",
+    "write_wrong_mask",
+    "missing_write",
+    "failed_restore",
+    "missing_final_restore",
+    "wrong_rc",
+    "incomplete",
+    "not_restored",
+    "abort_even_with_complete_records",
+    "out_of_order_phase"
+  ]
+}

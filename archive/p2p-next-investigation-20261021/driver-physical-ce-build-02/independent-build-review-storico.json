@@ -1,0 +1,22 @@
+{
+  "status": "PASS_independent_local_build_artifact_audit",
+  "compiler_executed_by_reviewer": false,
+  "hardware_loaded_by_reviewer": false,
+  "build_manifest_sha256": "957a87e341b9c9bbfdad13d95885c4fa31075a0fa5ddb93c7d33945c5cde71bd",
+  "modules": {
+    "nvidia.ko": {
+      "sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+      "bytes": 36774960
+    },
+    "nvidia-uvm.ko": {
+      "sha256": "9f40cd58362566aae90d5bcd10b3cdda3a2a2a7ac6457fa3228a7049c32a8247",
+      "bytes": 57249768
+    }
+  },
+  "overlay_count": 9,
+  "warnings": [
+    "warning: pahole version differs from the one used to build the kernel"
+  ],
+  "fortify_warning_present": false,
+  "errors": []
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_LOCAL_CPU_FIXTURES",
+  "installer_tests": 9,
+  "collector_tests": 10,
+  "multiple_refusal_subcases": true,
+  "actual_log_validation": "RC5,24comparisons,18failures,tracecomplete1 accepted for collection",
+  "hardware_commands_executed": false,
+  "all_command_effects_mocked": true,
+  "fixtures_in_temporary_directories": true,
+  "files_sha256": {
+    "install_native_probe.py": "8d86cfac50fc14ba07b0afa93c72351873088dfe8258a2952faf9c784d7fca30",
+    "collect_cleanup_native.py": "49dbb779c7f1fc470c0c6157b3871576faced06bef1847ccc8b37fb7b859ca0d",
+    "test_install_native_probe.py": "f77e275241ee3fe1c6030723259bf8ff1ea9bbe9b53968c63dc1db054fa9b86e",
+    "test_collect_cleanup_native.py": "e6ea1349b06fa48b0ea9b9dc451e604334965cf6b0c2c28542255fffdd55d47b"
+  }
+}

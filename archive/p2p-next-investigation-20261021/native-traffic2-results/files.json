@@ -1,0 +1,5 @@
+{
+  "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+  "probe-initrd.img": "7a932d5c1a229a178120d780da0d338a763991f53a34dfa150c3759f3aa88966",
+  "IDENTITY.txt": "dab6e61cc9122761b260e27b67a7b68934cd8670cabb50a8bbab25538c0d8456"
+}

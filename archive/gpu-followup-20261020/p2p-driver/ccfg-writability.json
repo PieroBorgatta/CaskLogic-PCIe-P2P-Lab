@@ -1,0 +1,30 @@
+[
+  {
+    "bdf": "0000:00:01.0",
+    "mode": "peer_decode",
+    "original": "0xe008077",
+    "requested": "0x8008077",
+    "observed": "0xe008077"
+  },
+  {
+    "bdf": "0000:00:01.0",
+    "mode": "fabric_decode",
+    "original": "0xe008077",
+    "requested": "0x1e008077",
+    "observed": "0xe008077"
+  },
+  {
+    "bdf": "0000:00:07.0",
+    "mode": "peer_decode",
+    "original": "0xe009077",
+    "requested": "0x8009077",
+    "observed": "0xe009077"
+  },
+  {
+    "bdf": "0000:00:07.0",
+    "mode": "fabric_decode",
+    "original": "0xe009077",
+    "requested": "0x1e009077",
+    "observed": "0xe009077"
+  }
+]

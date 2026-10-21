@@ -1,0 +1,30 @@
+{
+  "status": "PASS_static_no_blocking_finding",
+  "reviewer": "audit_firmware",
+  "files_sha256": {
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "peer_vmm_word_cpubar_rw.cu": "26c18b1be40b5f17008c2c4ad7e6e13c2c320462c68c902d22916c8af3a146b0",
+    "cpubar_rw_control.inc": "c7a46ed69da33b24db2f38af7ec04205f70b53beb2f7bb3c006953ae8711881d",
+    "build_native_repeat.py": "400b22d18a66d24491e643b583b86fee0349a418ebecf8be72a5e9d0d1c95692",
+    "init-tcss-native.sh": "1b77b7f8394510428d7e970aed2febe725a071bc3f75f264022ee244e9d78584",
+    "test_rw_word.cpp": "ac81167ed1564d7bb3cf48daaa67007b668327d54a9c7131278c72c9702d6efa",
+    "cpubar_rw.h": "65756bf89a585842f751220c1eec632e645de6f5dcba03a4833a785a15116043",
+    "rw_syntax.cpp": "544c5881880449e8dfadfc6464f2d6ca275742f004f096c710032bfddb9f7ee3"
+  },
+  "checks": [
+    "One aligned volatile32 store within the exact validated BAR1 word; only one page mapped RW",
+    "Fresh nonce/allocation/handle/window chain and GPU BDF/UUID/BAR identity validated before mapping and before every pattern or restore store",
+    "Saved CPU value equals owner D2H before stores; two distinct patterns; restore attempted after any attempted store including fault if identity remains valid",
+    "Restoration requires successful CPU store, CPU readback and owner D2H agreement; faults, identity loss or unverified restore halt subsequent RW controls",
+    "All CPU writes occur after data_done and original four P2P comparisons; CUDA allocations remain live until later cleanup",
+    "Builder retains instrumented baseline RM/UVM, no4K parameter; no PCI configuration writes introduced",
+    "All9 declared local source hashes independently matched"
+  ],
+  "limits": [
+    "Static review does not demonstrate hardware success",
+    "Author4143fixtures checked as evidence; reviewer did not rerun hardware or NVCC",
+    "Process termination or catastrophic fault can preempt user-space restoration; only transient dedicated allocation contents are targeted"
+  ],
+  "remote_operations": false
+}

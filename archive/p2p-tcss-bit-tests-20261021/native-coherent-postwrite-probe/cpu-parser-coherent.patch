@@ -1,0 +1,19 @@
+--- baseline/cpubar_trace.h
++++ coherent/cpubar_trace.h
+@@ -98,13 +98,14 @@
+        w.offset>w.bar_size||w.size>w.bar_size-w.offset||w.bar>UINT64_MAX-w.offset||w.physical!=w.bar+w.offset||
+        (w.offset&3)||!w.bar){error="window_bounds_or_address";return false;}
+     auto pte=unique(rs,"RM_PTE",[&](const Record&r){return equal(r,"client",client)&&equal(r,"src",src,10)&&equal(r,"dst",dst,10)&&field(r,"desc")==desc;},error);if(!pte)return false;
++    // RM enum SYS_NONCOH=3/SYS_COH=4; hardware APERTURE=3/2. PEER=2 is not BAR1.
+     U raw0=0,raw1=0,entry=0,page=0,aperture=0;
+     if(!get(*pte,"raw0",raw0)||!get(*pte,"raw1",raw1)||!get(*pte,"entry",entry,10)||(entry!=8&&entry!=16)||
+-       !get(*pte,"page",page)||page<0x1000||(page&(page-1))||!get(*pte,"aperture",aperture,10)||(aperture!=2&&aperture!=3)||
++       !get(*pte,"page",page)||page<0x1000||(page&(page-1))||!get(*pte,"aperture",aperture,10)||(aperture!=3&&aperture!=4)||
+        !equal(*pte,"valid",1,10)||!equal(*pte,"dynamic",1,10)||!equal(*pte,"offset",0)||
+        !equal(*pte,"dma_base",dma)||!equal(*pte,"phys_input",dma)||!equal(*pte,"decoded",dma)||
+        !equal(*pte,"readonly",0,10)||!equal(*pte,"fmt",2,10)||!equal(*pte,"addr_shift",12,10)||
+-       !(raw0&1)||((raw0>>1)&3)!=aperture||(((raw0>>8)&((U(1)<<46)-1))<<12)!=dma){error="rm_pte_mismatch";return false;}
++       !(raw0&1)||((raw0>>1)&3)!=(aperture==4?2:3)||(((raw0>>8)&((U(1)<<46)-1))<<12)!=dma){error="rm_pte_mismatch";return false;}
+     auto ret=unique(rs,"RM_RETURN",[&](const Record&r){return equal(r,"client",client)&&equal(r,"mem",mem)&&equal(r,"src",src,10);},error);
+     if(!ret||!equal(*ret,"status",0)){if(error.empty())error="rm_return_error";return false;}
+     auto up=unique(rs,"UVM_PTE",[&](const Record&r){return gpu_matches(r,q.requester_uuid)&&equal(r,"mem",mem)&&equal(r,"gpu_va",q.va);},error);if(!up)return false;

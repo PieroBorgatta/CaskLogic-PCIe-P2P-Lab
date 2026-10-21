@@ -1,0 +1,36 @@
+{
+  "status": "PASS_independent_static_review",
+  "source_sha256": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+  "parser_sha256": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552",
+  "checks": [
+    "Native CPUID906A3 and no hypervisor before MMIO",
+    "DMAR size/signature/checksum/subtable/scope bounds, duplicate DRHD reject, FED91000 segment0 must be declared",
+    "Only readl/readq MMIO and pci_read_config_dword configuration; no GCMD, MMIO/config write, PM-runtime resume, reset, IOMMU-policy calls",
+    "Fixed FED91000 and enabled documented TCSS bases constrained to aligned FED00000..FEDFF000 pages; map length4096 covers maximum accessed offset78+8",
+    "Host bridge46418086 and MCHBARfedc0001:00000000 exactly match freshly collected native config",
+    "MCH readq pageFEDC7000 offset888+8*i equals MCHBAR+7888/7890/7898/78A0; all accesses in one mapped page",
+    "MCHBAR reread after reading four BARs; changed values abort",
+    "TBTxBAR enabled bit0 and mask7ffffff000 match coreboot Alder Lake; disabled BAR never dereferenced; allones/reservedbits/range reject",
+    "GSTS offset1C and TES31,RTPS30,QIES26,IRES25,IRTPS24 match Linux definitions",
+    "PMR CAP5/6 checked for bound reads; PMEN EPM31/PRS0 marked raw; PMR_status_valid false on unsupported capability or allones",
+    "GSTS sampled before/after; mismatch abort; version0/allones capability or status reject",
+    "Every mapped page unmapped; host pci reference and ACPI table released; no backing GPU mapping or owner memory touched"
+  ],
+  "files": {
+    "runtime/reports/p2p-tcss-bit-tests-20261021/vtd-snapshot/cask_vtd_snapshot.c": "d5f5168d21a30d55dc1868321c985222c901929302c63e457c7dde756fd5c186",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/vtd-snapshot/dmar_parse.inc": "be379216773f81236ac792fdc5161b5276d47d623c7db9a770c244f77159f552",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/vtd-snapshot/Makefile": "89fff4040461eaef260c0ca7b468772b971e2976971513b8211f0c822f14f3ab",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/reference/vtd-linux7/coreboot-adl-systemagent.h": "f3d4d769064a9bb52f54587f712f29a67361f5bb9befe04f5a96d70bba829c0d",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/reference/vtd-linux7/coreboot-adl-acpi.c": "23130624127b9598a39cdb2ff6c5e108a0a823e4bbdc3fd700c9f4e623f84041",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/reference/vtd-linux7/iommu.h": "c56d58e02d32ac0277d916ad9b9ba287c2a9b393ebb0043f1886eb6e61e4fb67",
+    "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-gpu-results/before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd"
+  },
+  "limits": [
+    "Static review only: no Linux module compilation, loading, remote access or hardware reads by reviewer.",
+    "TES=0 on sampled units is not a proof that every platform protection is disabled; preserve per-unit origin and raw BAR/DMAR evidence.",
+    "The 4 TCSS ports may alias a base; repeated samples do not by themselves establish distinct units.",
+    "Read-only MMIO still exercises CPU register-read path; safe register semantics rely on documented and gated BAR identification."
+  ],
+  "hardware_operations": false,
+  "source_mutated_by_reviewer": false
+}

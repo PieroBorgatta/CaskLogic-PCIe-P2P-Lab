@@ -1,0 +1,17 @@
+{
+  "epoch": 1792530161.1544538,
+  "entry": "0002",
+  "boot_order_before": "0000,0001",
+  "path": "/boot/efi/EFI/CaskLogicP2P",
+  "stage": "complete_firmware_access_blocked",
+  "bios_setting_writes": true,
+  "offset": "0x3E3",
+  "before": 0,
+  "desired": 1,
+  "direct_write_result": "EFI_WRITE_PROTECTED",
+  "bios_setting_changed": false,
+  "current_p2p": 0,
+  "temporary_boot_entry_removed": true,
+  "temporary_esp_directory_removed": true,
+  "original_boot_files_hashes_verified": true
+}

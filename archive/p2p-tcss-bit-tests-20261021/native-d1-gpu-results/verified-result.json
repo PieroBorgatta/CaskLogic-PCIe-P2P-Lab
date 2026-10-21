@@ -1,0 +1,403 @@
+{
+  "test": "Native Linux with combined D7[27:25]=0 and D1[26]=0 firmware candidate; delayed allocation frees",
+  "complete": true,
+  "valid": false,
+  "measurement_complete": true,
+  "all_four_data_checks_passed": false,
+  "total_failures": 3,
+  "script_rc": 5,
+  "native_test_rc": 5,
+  "rows": [
+    {
+      "operation": "read",
+      "source": 0,
+      "destination": 1,
+      "payload_bytes": 4,
+      "valid": false
+    },
+    {
+      "operation": "write",
+      "source": 1,
+      "destination": 0,
+      "payload_bytes": 4,
+      "valid": true
+    },
+    {
+      "operation": "read",
+      "source": 1,
+      "destination": 0,
+      "payload_bytes": 4,
+      "valid": false
+    },
+    {
+      "operation": "write",
+      "source": 0,
+      "destination": 1,
+      "payload_bytes": 4,
+      "valid": false
+    }
+  ],
+  "read_corruption": {
+    "observed": "0xedcba987",
+    "expected": "0x12346641",
+    "remote_word_inferred_before_xor": "0xffffffff",
+    "inference_only": true
+  },
+  "write_0_to_1_corruption": {
+    "observed": "0x00000000",
+    "expected": "0xa5a42468"
+  },
+  "gpus": [
+    {
+      "cuda_index": 0,
+      "uuid": "GPU-00000000-0000-0000-0000-000000000001",
+      "name": "NVIDIA RTX 2000 Ada Generation",
+      "bdf": "0000:01:00.0",
+      "device_id": "10de:28b0",
+      "memory_MiB": 16380,
+      "temperature_C": 44,
+      "BAR1_start": "0x0000004000000000",
+      "BAR1_end": "0x00000043ffffffff",
+      "BAR1_bytes": 17179869184
+    },
+    {
+      "cuda_index": 1,
+      "uuid": "GPU-00000000-0000-0000-0000-000000000002",
+      "name": "NVIDIA RTX A2000 12GB",
+      "bdf": "0000:06:00.0",
+      "device_id": "10de:2571",
+      "memory_MiB": 12282,
+      "temperature_C": 35,
+      "BAR1_start": "0x0000004600000000",
+      "BAR1_end": "0x000000460fffffff",
+      "BAR1_bytes": 268435456
+    }
+  ],
+  "index_order": "CUDA_DEVICE_ORDER=PCI_BUS_ID enforced by verified init; identities from NVIDIA query and PCI inventory",
+  "ccfg_samples": {
+    "00:01.0": [
+      "00008077",
+      "00008077",
+      "00008077"
+    ],
+    "00:07.0": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ],
+    "00:07.2": [
+      "00009077",
+      "00009077",
+      "00009077"
+    ]
+  },
+  "ccfg_sample_stages": [
+    "before NVIDIA load",
+    "after NVIDIA load",
+    "after all comparisons"
+  ],
+  "native_context": {
+    "kernel": "7.0.0-38-generic",
+    "hypervisor_guard_passed": true,
+    "external_gpu_tunnel_established": true,
+    "dma_iommu_disabled_kernel_confirmation": true,
+    "interrupt_remapping_still_enabled": true,
+    "note": "DMAR-IR explicitly remains enabled; do not interpret DMA IOMMU disable as all remapping disabled."
+  },
+  "identity_verification": {
+    "package_sha256_actual": {
+      "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+      "probe-initrd.img": "22a6535bb5bbb081bcedf7219f117d7c7177f75086393c842ad7432036f684a5",
+      "IDENTITY.txt": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+    },
+    "package_matches_armed_state": true,
+    "initrd_embedded_actual_sha256": {
+      "opt/probe/peer_word": "7dc0ce74bb8b33d6a9aa8c68fa2f15f3501ae51f934ee3728dbba8483a0ec8a2",
+      "opt/probe/nvidia-dynamic.ko": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+      "usr/lib/x86_64-linux-gnu/libcuda.so.1": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+      "init": "5e625ff6c332e0a5ee49c96395ef69ca62b6dadf743f281f491484856dc4c66e"
+    },
+    "initrd_embedded_hashes_match_manifest": true,
+    "local_source_sha256": "2c3ea614b702fd6d02e940e10586976b51d80ce849b425767578d6521530d117",
+    "identity_text": "CaskLogic-TCSS-native-20261021"
+  },
+  "timing": {
+    "phases_stdout": [
+      {
+        "phase": "program_start",
+        "monotonic_ns": 9803819533,
+        "source": -1,
+        "destination": -1
+      },
+      {
+        "phase": "mapping_begin",
+        "monotonic_ns": 13262844522,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "mapping_done",
+        "monotonic_ns": 13263114055,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "read_begin",
+        "monotonic_ns": 13263117317,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "read_done",
+        "monotonic_ns": 13263216378,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "write_begin",
+        "monotonic_ns": 13263217794,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "write_done",
+        "monotonic_ns": 13263264750,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "mapping_begin",
+        "monotonic_ns": 13263266775,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "mapping_done",
+        "monotonic_ns": 13263430552,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "read_begin",
+        "monotonic_ns": 13263432334,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "read_done",
+        "monotonic_ns": 13263466963,
+        "source": 1,
+        "destination": 0
+      },
+      {
+        "phase": "write_begin",
+        "monotonic_ns": 13263467545,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "write_done",
+        "monotonic_ns": 13263499020,
+        "source": 0,
+        "destination": 1
+      },
+      {
+        "phase": "data_done",
+        "monotonic_ns": 13263499950,
+        "source": -1,
+        "destination": -1
+      },
+      {
+        "phase": "cleanup_begin",
+        "monotonic_ns": 13263500498,
+        "source": -1,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_begin",
+        "monotonic_ns": 13263501000,
+        "source": 0,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_done",
+        "monotonic_ns": 13263560885,
+        "source": 0,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_begin",
+        "monotonic_ns": 13263561572,
+        "source": 1,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_done",
+        "monotonic_ns": 13263635543,
+        "source": 1,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_begin",
+        "monotonic_ns": 13263636468,
+        "source": 1,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_done",
+        "monotonic_ns": 13263758728,
+        "source": 1,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_begin",
+        "monotonic_ns": 13263759317,
+        "source": 0,
+        "destination": -1
+      },
+      {
+        "phase": "allocation_free_done",
+        "monotonic_ns": 13263876962,
+        "source": 0,
+        "destination": -1
+      },
+      {
+        "phase": "cleanup_done",
+        "monotonic_ns": 13263877588,
+        "source": -1,
+        "destination": -1
+      },
+      {
+        "phase": "context_exit_begin",
+        "monotonic_ns": 13263878116,
+        "source": -1,
+        "destination": -1
+      }
+    ],
+    "common_kernel_markers": [
+      {
+        "phase": "program_start",
+        "kernel_ns": 9810215000,
+        "monotonic_ns": 9803819533,
+        "offset_ns": 6395467
+      },
+      {
+        "phase": "mapping_begin",
+        "kernel_ns": 13269219000,
+        "monotonic_ns": 13262844522,
+        "offset_ns": 6374478
+      },
+      {
+        "phase": "mapping_done",
+        "kernel_ns": 13269481000,
+        "monotonic_ns": 13263114055,
+        "offset_ns": 6366945
+      },
+      {
+        "phase": "read_begin",
+        "kernel_ns": 13269483000,
+        "monotonic_ns": 13263117317,
+        "offset_ns": 6365683
+      },
+      {
+        "phase": "read_done",
+        "kernel_ns": 13269582000,
+        "monotonic_ns": 13263216378,
+        "offset_ns": 6365622
+      },
+      {
+        "phase": "write_begin",
+        "kernel_ns": 13269583000,
+        "monotonic_ns": 13263217794,
+        "offset_ns": 6365206
+      },
+      {
+        "phase": "write_done",
+        "kernel_ns": 13269631000,
+        "monotonic_ns": 13263264750,
+        "offset_ns": 6366250
+      },
+      {
+        "phase": "mapping_begin",
+        "kernel_ns": 13269632000,
+        "monotonic_ns": 13263266775,
+        "offset_ns": 6365225
+      },
+      {
+        "phase": "mapping_done",
+        "kernel_ns": 13269797000,
+        "monotonic_ns": 13263430552,
+        "offset_ns": 6366448
+      },
+      {
+        "phase": "read_begin",
+        "kernel_ns": 13269798000,
+        "monotonic_ns": 13263432334,
+        "offset_ns": 6365666
+      }
+    ],
+    "clock_alignment_offset_ns": {
+      "minimum": 6365206,
+      "median": 6365966,
+      "maximum": 6395467
+    },
+    "kernel_markers_expected": 25,
+    "kernel_markers_visible": 10,
+    "kernel_markers_suppressed_reported": 15,
+    "data_done_monotonic_ns": 13263499950,
+    "context_exit_begin_monotonic_ns": 13263878116,
+    "first_iovas_destruct_kernel_ns": 13535957000,
+    "first_assert_kernel_ns": 13560577000,
+    "first_iovas_after_context_exit_ns_using_median_alignment": 265712918,
+    "first_assert_after_context_exit_ns_using_median_alignment": 290332918,
+    "all_explicit_frees_after_all_data_checks": true,
+    "all_four_explicit_frees_completed": true,
+    "cleanup_anomalies_after_data_checks_and_context_exit": true,
+    "ordering_method": "All25 phases persist in unbuffered stdout. Kernel timestamps calibrated using10 common markers (offset range about30 microseconds). IOVAS/ASSERT occur more than265 ms after context_exit. Final15 kmsg markers were rate-limited; their absence is not evidence of missing phases. Timing is cross-log alignment, not direct final-marker adjacency in kernel.log."
+  },
+  "kernel_gpu_anomalies": [
+    {
+      "kernel_ns": 13535957000,
+      "line": "[   13.535957] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100"
+    },
+    {
+      "kernel_ns": 13560577000,
+      "line": "[   13.560577] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+    },
+    {
+      "kernel_ns": 13560582000,
+      "line": "[   13.560582] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+    },
+    {
+      "kernel_ns": 13560628000,
+      "line": "[   13.560628] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+    },
+    {
+      "kernel_ns": 13560630000,
+      "line": "[   13.560630] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+    },
+    {
+      "kernel_ns": 13562629000,
+      "line": "[   13.562629] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+    },
+    {
+      "kernel_ns": 13562632000,
+      "line": "[   13.562632] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+    },
+    {
+      "kernel_ns": 13562647000,
+      "line": "[   13.562647] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598"
+    },
+    {
+      "kernel_ns": 13562649000,
+      "line": "[   13.562649] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607"
+    }
+  ],
+  "conclusion": "The same three data failures persist with both firmware controls cleared, native execution and no intermediate frees. The recorded IOVAS lifetime errors appear after all comparisons and explicit frees, during final context/device teardown; they cannot explain the already-observed data corruption. This does not prove the broader driver mapping implementation is correct.",
+  "log_sha256": {
+    "result.log": "06e4f98f20fe0e0ea35e3ed1ea56015b8389914a277b25a30b205212608a0964",
+    "kernel.log": "64bb1d6b45be2fc2169029a833d5c2ae3d40d21d7ec8c62a0cde45956146a18b",
+    "native-d1-gpu-state.json": "ef3b2aeb68ff6fe1e86ec017d77a6e852949721180cb4c5e37775d8e5f361d2d"
+  },
+  "analysis_scope": "Local artifact verification only; no remote actions, firmware writes, or GPU execution by verifier."
+}

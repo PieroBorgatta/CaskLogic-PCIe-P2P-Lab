@@ -1,0 +1,20 @@
+{
+  "kernel": "/boot/vmlinuz-7.0.0-38-generic",
+  "kernel_sha256": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+  "initrd_sha256": "b38488ba825471db005bb2c707232b18bc1115216b5c44f1a8d04eea791d1641",
+  "initrd_bytes": 250884332,
+  "module": "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-dynamic/nvidia.ko",
+  "module_sha256": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+  "native_program": "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/baremetal-probe/peer_vmm_word_native",
+  "native_program_sha256": "612a93dd9f912941ad9870fdd9403265ca4216f0c3ebfbf2917925f24f872dc5",
+  "libcuda_sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+  "init_sha256": "e7a0c3c5490b1c352a4cb4e426b20f6a1df9b47da001fdaaf3e20f36dd5ed555",
+  "trials": 1,
+  "payload_bytes": 4,
+  "pci_configuration_writes": false,
+  "hardware_boot_started": false,
+  "automatic_return_seconds": 180,
+  "esp_partuuid": "3c6ae711-bbc9-4653-bf09-0baac6b3b380",
+  "efi_directory": "\\EFI\\CaskLogicTcssNative",
+  "kernel_args": "initrd=\\EFI\\CaskLogicTcssNative\\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0"
+}

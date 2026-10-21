@@ -1,0 +1,35 @@
+{
+  "scope": "Local static review only; no remote operations",
+  "original_region_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "original_region_crc32": "0x4a14c7b5",
+  "original_region_exact_native_fresh_slice": true,
+  "package_hash_manifest_exact": true,
+  "restore_startup_sha256": "fc7ba176d3b7604544ab79af9b88a1f5cab10cad6a0fd47590d748f1ea39a3d2",
+  "installer_sha256": "e81505c752d72db72272109cb793b4ec948751d6999bb896be1d987d04a673c0",
+  "cleanup_sha256": "8eb55e7f9eb661ed31d68a58f6b0886c2447189130b3b9907f348671296f2ba3",
+  "restore_flow": {
+    "fresh_candidate_dump_before_write": true,
+    "POST_gate_before_original_write": true,
+    "single_write_original_30sectors": true,
+    "fresh_readback_and_RESTORE_gate_before_reset": true,
+    "no_postwrite_abort_reset_branch": true
+  },
+  "cleanup_flow": {
+    "restored_region_hash_required": true,
+    "D1_D7_D7F2_baseline_values_required": [
+      "04008077",
+      "0e009077",
+      "0e009077"
+    ],
+    "stable_ESP_PARTUUID_required": true,
+    "original_boot_file_hashes_checked_before_and_after": true,
+    "only_verified_temporary_entries_0002_0003_0004_deleted": true,
+    "temporary_ESP_artifacts_archived_before_removal": true,
+    "normal_boot_order_0000_0001_required": true
+  },
+  "blocking_static_issues": [],
+  "limitations": [
+    "This does not claim that remote restore or cleanup has completed.",
+    "Cleanup is intentionally single-run and stops if archival output already exists; after partial I/O failure a manual state review is needed before retry."
+  ]
+}

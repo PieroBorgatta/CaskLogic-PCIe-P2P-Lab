@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-20T22:14:42.554222+00:00",
+  "mode": "read-only",
+  "registers": [
+    {
+      "address": "0xfbc600d0",
+      "value": "0xe009077"
+    },
+    {
+      "address": "0xfbc600d8",
+      "value": "0x9320048"
+    },
+    {
+      "address": "0xfbc63e24",
+      "value": "0xffffffff"
+    }
+  ],
+  "note": "3e24 lock interpretation is supported by later-generation header, not proven for CCFG25-27 on this device"
+}

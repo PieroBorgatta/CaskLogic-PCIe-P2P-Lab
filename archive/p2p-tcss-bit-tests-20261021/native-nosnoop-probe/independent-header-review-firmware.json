@@ -1,0 +1,15 @@
+{
+  "status": "PASS_static_header_no_blocking_finding",
+  "reviewer": "audit_firmware",
+  "pci_attrs.h_sha256": "6780c0ceb37cbfd1585406e9e9334697e90145412456216a5eec37bd32520d31",
+  "checks": [
+    "Exact nativeCPUID/nohypervisor/host8086:4641 and expected GPU BDF/UUID/VIDDID",
+    "Capability chain bounds/cycles/duplicate plus endpoint type checked",
+    "Only aligned2-byte sysfsconfig write atPCIe cap+8; noDeviceStatus/rootport/bridge/BAR writes",
+    "Only mask0810 maychange; baseline captured; TP checked before writes",
+    "Immediate readback requires exact wanted; afterfailed/shortwrite caller can restore",
+    "Restore boundedTPreadpoll; original0810bits restored preserving other livebits; mask readback required"
+  ],
+  "integration_dependency": "Controller destructor onlycloses; parent flow must explicitly restore on every postcapture exit. Main integration reviewed separately by storico.",
+  "hardware_access_executed_by_reviewer": false
+}

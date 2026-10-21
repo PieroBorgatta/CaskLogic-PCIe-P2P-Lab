@@ -1,0 +1,175 @@
+{
+  "status": "LOCAL_REPACK_AND_SEMANTIC_COMPARISON_PASSED_NOT_BOOT_OR_FLASH_VALIDATED",
+  "candidate_sha256": "0216b836faf40b4a4336b5ee9ef6b7eca285b81114ab6b5408eaf5a037534d51",
+  "baseline_sha256": "e2caf625b967aa0115c3e4704db4f65640c1a3eaa52098f1a86f13f9f45db5a5",
+  "spi_bytes": 33554432,
+  "extracted_objects_before": 2969,
+  "extracted_objects_after": 2969,
+  "missing": [],
+  "added": [],
+  "changed_objects": [
+    {
+      "path": "flash.fd",
+      "bytes": 33554432,
+      "changed_bytes": 72228,
+      "before_sha256": "e2caf625b967aa0115c3e4704db4f65640c1a3eaa52098f1a86f13f9f45db5a5",
+      "after_sha256": "0216b836faf40b4a4336b5ee9ef6b7eca285b81114ab6b5408eaf5a037534d51"
+    },
+    {
+      "path": "regions/region-bios.fd",
+      "bytes": 16777216,
+      "changed_bytes": 72228,
+      "before_sha256": "0b746563261347d766373b30b18f18b89c36fb46b2416aeb46471529800d7966",
+      "after_sha256": "4a53c69baf42f51d02a36b0d8b1cc21ca64183f7d7f7ebbeda054513fecccb08"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file.obj",
+      "bytes": 368680,
+      "changed_bytes": 72228,
+      "before_sha256": "d4bd998875a3f4693a3177ebafef68f107e2219ec4214ecd7be2c171b0eb3104",
+      "after_sha256": "c0cb603a2c86f91e8f024da90253280a32aed55291ed6de45dbda0c686357f5b"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1.fv",
+      "bytes": 368640,
+      "changed_bytes": 72228,
+      "before_sha256": "05560efaf3e5e77297b4c47d9ea5bc45eb6510b1cb07d42349dc92a1b76f1e90",
+      "after_sha256": "26122d5d27f3a3ec584098022787cc22c9b5d13676aeb41ac94974dc68de95e6"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d.fv",
+      "bytes": 368640,
+      "changed_bytes": 72228,
+      "before_sha256": "05560efaf3e5e77297b4c47d9ea5bc45eb6510b1cb07d42349dc92a1b76f1e90",
+      "after_sha256": "26122d5d27f3a3ec584098022787cc22c9b5d13676aeb41ac94974dc68de95e6"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+      "bytes": 154845,
+      "changed_bytes": 72228,
+      "before_sha256": "fcde1a912de75df1a95fdd9553d141712dd49e7bcc89dbb603839535d4a64abf",
+      "after_sha256": "f22e1ab439f16b7ea2a36d04d293cbef85e66a345e6f16705b02a55d2ca212df"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1.compressed",
+      "bytes": 154741,
+      "changed_bytes": 72228,
+      "before_sha256": "61c9f6df74abd1e40f78674ebd75c14f2d391f1f90104c78a55cf8eaf19ef6be",
+      "after_sha256": "8fb06b2a738d1cd711c7c7d3a61661c64c834ef58aec555dc6a3416eb5af5c9a"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+      "bytes": 254848,
+      "changed_bytes": 1,
+      "before_sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f",
+      "after_sha256": "a5f000b4cda7cfa11167545a33c18783754623012170bab73a419f4128fa05a4"
+    },
+    {
+      "path": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/filesystem.ffs",
+      "bytes": 368568,
+      "changed_bytes": 72228,
+      "before_sha256": "e83a2cf3ff2c4890b10532557b1fbe768daabfa199d9fedda9f42f0f8f8d0e9e",
+      "after_sha256": "77ec57481af721f0c6f1856921894f8ed48cf2a3924b1e6fddfe6feed2da568a"
+    }
+  ],
+  "single_changed_leaf": "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe",
+  "semantic_byte_count": 1,
+  "physical_byte_count": 72228,
+  "physical_first": "0x1b16cfc",
+  "physical_last_inclusive": "0x1b2883b",
+  "all_physical_changes_inside_original_target_ffs": true,
+  "ffs_offset_unchanged": true,
+  "ffs_size_unchanged": true,
+  "ffs_header_exact": true,
+  "all_bytes_outside_target_ffs_exact": true,
+  "all_other_extracted_objects_exact": true,
+  "descriptor_ME_TBT_payload_NVRAM_SMBIOS_and_other_regions_exact_to_baseline": true,
+  "minimal_aligned_region": {
+    "alignment": 4096,
+    "spi_start": "0x1b16000",
+    "spi_end_exclusive": "0x1b29000",
+    "bytes": 77824,
+    "sectors": 19,
+    "original_sha256": "b60186e3126a68a06d2fa18cf6b1ac0bb357cab48c7ee06f48ce54a8d77f31e5",
+    "candidate_sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e",
+    "per_sector_changes": [
+      {
+        "spi_offset": "0x1b16000",
+        "bytes_changed": 769
+      },
+      {
+        "spi_offset": "0x1b17000",
+        "bytes_changed": 4077
+      },
+      {
+        "spi_offset": "0x1b18000",
+        "bytes_changed": 4077
+      },
+      {
+        "spi_offset": "0x1b19000",
+        "bytes_changed": 4084
+      },
+      {
+        "spi_offset": "0x1b1a000",
+        "bytes_changed": 4076
+      },
+      {
+        "spi_offset": "0x1b1b000",
+        "bytes_changed": 4079
+      },
+      {
+        "spi_offset": "0x1b1c000",
+        "bytes_changed": 4086
+      },
+      {
+        "spi_offset": "0x1b1d000",
+        "bytes_changed": 4081
+      },
+      {
+        "spi_offset": "0x1b1e000",
+        "bytes_changed": 4073
+      },
+      {
+        "spi_offset": "0x1b1f000",
+        "bytes_changed": 4074
+      },
+      {
+        "spi_offset": "0x1b20000",
+        "bytes_changed": 4090
+      },
+      {
+        "spi_offset": "0x1b21000",
+        "bytes_changed": 4077
+      },
+      {
+        "spi_offset": "0x1b22000",
+        "bytes_changed": 4081
+      },
+      {
+        "spi_offset": "0x1b23000",
+        "bytes_changed": 4085
+      },
+      {
+        "spi_offset": "0x1b24000",
+        "bytes_changed": 4081
+      },
+      {
+        "spi_offset": "0x1b25000",
+        "bytes_changed": 4086
+      },
+      {
+        "spi_offset": "0x1b26000",
+        "bytes_changed": 4079
+      },
+      {
+        "spi_offset": "0x1b27000",
+        "bytes_changed": 4080
+      },
+      {
+        "spi_offset": "0x1b28000",
+        "bytes_changed": 2093
+      }
+    ]
+  },
+  "next_gate": "Confrontare dump SPI live aggiornati e stato BootGuard. Autorizzazione utente acquisita; verifica tecnica nativa in attesa, nessuna conferma di avviabilita o effetto P2P."
+}

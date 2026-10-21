@@ -1,0 +1,20 @@
+{
+  "status": "source_verified_not_compiled",
+  "complete_archive_sha256": "1174b28565fe8c0dff534a2588f4becd5e12c03465a70f347650a0d0fc9f23bc",
+  "strict_full_archive_patch_application": true,
+  "stock_preimages_verified": 7,
+  "baseline_files_verified": 7,
+  "instrumented_files_verified": 7,
+  "python_syntax": "passed",
+  "patch_behavior": "logging only; existing DMA conversions/PTE values/cleanup calls unchanged",
+  "hardware_or_gpu_operations": false,
+  "build_or_load_performed": false,
+  "package_files": {
+    "prepare_and_build.py": "7a109b51c4a4699ca5c29498d1ae8b08b4f236220d812887e4518710b083d6d3",
+    "strict_patch.py": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948",
+    "source-manifest.json": "196b59dec149196dc197221b664b8ad3e3b155da1f14c6e8cf58751d275491a4",
+    "bar1-minimal.patch": "f32767c21475d1ec39ea0a63c58d2b4b12ba0aa624ac13a797558cb505339fe7",
+    "bar1-dynamic.patch": "6afa9977c1b9a06c9abb4e5d7f4f852e8a089a7039b2ed66238fb3c61a2f3eab",
+    "pte-logging.patch": "9e637f4964b8ae768f80aff4fbe18fe537871e786f7ef0946d978de067e26fe5"
+  }
+}

@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.o
+*.ko
+*.efi
+*.img
+.env
+.env.*
+*.pem
+*.key
+private/
+verification-output/

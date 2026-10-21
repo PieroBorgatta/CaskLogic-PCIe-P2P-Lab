@@ -1,0 +1,31 @@
+{
+  "epoch": 1792535733.1711445,
+  "kernel": "7.0.0-38-generic",
+  "loaded": [
+    "nvidia",
+    "nvidia_drm",
+    "nvidia_modeset",
+    "nvidia_uvm"
+  ],
+  "driver_touched": true,
+  "srcversions": {
+    "nvidia_modeset": "1759C3120ADE7DE8C644859",
+    "nvidia_drm": "A05D983C5AE190C9737F57D",
+    "nvidia": "919309EF6954372EFADD77E",
+    "nvidia_uvm": "5EE6DF4E4D0B746CE87DF19"
+  },
+  "container": "riscrivo-tcss-word-14199",
+  "services": {
+    "n3rdware-gpu-fan.service": "active",
+    "nvidia-persistenced.service": "active",
+    "nvidia-powerd.service": "inactive",
+    "nvidia-cdi-refresh.path": "active",
+    "nvidia-cdi-refresh.service": "inactive"
+  },
+  "cdi_was_masked": false,
+  "module": "/mnt/llm/riscrivo/runtime/reports/gpu-followup-20261020/p2p-driver/compiled-dynamic/nvidia.ko",
+  "module_sha256": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+  "program": "peer_vmm_config_gate",
+  "program_sha256": "2f7f01412a273b32f442be9e523e98a6f4fdc5611ae7338e99ba4031693afae7",
+  "libcuda_sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7"
+}

@@ -1,0 +1,283 @@
+[
+  {
+    "epoch": 1792525876.0701098,
+    "command": [
+      "systemctl",
+      "is-active",
+      "riscrivo-training.service"
+    ],
+    "returncode": 3,
+    "stdout": "inactive\n",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525876.1504655,
+    "command": [
+      "systemctl",
+      "stop",
+      "n3rdware-gpu-fan.service"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525876.1765394,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-persistenced.service"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525876.181146,
+    "command": [
+      "systemctl",
+      "stop",
+      "nvidia-cdi-refresh.path"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525876.2498283,
+    "command": [
+      "fuser",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidiactl",
+      "/dev/nvidia-uvm"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525876.4346154,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.6189463,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.6209834,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.6855767,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.763485,
+    "command": [
+      "modprobe",
+      "nvidia",
+      "NVreg_RegistryDwords=ForceP2P=0x11;RMForceP2PType=1;RMPcieP2PType=1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.8101768,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525877.8122182,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525881.599841,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525881.6278818,
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=uuid,name,driver_version,power.limit",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "uuid, name, driver_version, power.limit [W]\nGPU-00000000-0000-0000-0000-000000000002, NVIDIA RTX A2000 12GB, 595.99.02, 70.00 W\nGPU-00000000-0000-0000-0000-000000000001, NVIDIA RTX 2000 Ada Generation, 595.99.02, 70.00 W\n",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525881.977299,
+    "command": [
+      "python3",
+      "-c",
+      "import ctypes,json\nc=ctypes.CDLL(\"libcuda.so.1\");assert c.cuInit(0)==0\nrows=[]\nfor a,b in [(0,1),(1,0)]:\n v=ctypes.c_int();rc=c.cuDeviceCanAccessPeer(ctypes.byref(v),a,b);rows.append({\"source\":a,\"destination\":b,\"rc\":rc,\"access\":v.value})\nprint(json.dumps(rows))\n"
+    ],
+    "returncode": 0,
+    "stdout": "[{\"source\": 0, \"destination\": 1, \"rc\": 0, \"access\": 0}, {\"source\": 1, \"destination\": 0, \"rc\": 0, \"access\": 0}]\n",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525882.8882656,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_uvm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.6061802,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_drm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.6076527,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia_modeset"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.6846075,
+    "command": [
+      "modprobe",
+      "-r",
+      "nvidia"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.7618995,
+    "command": [
+      "modprobe",
+      "nvidia"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.8027132,
+    "command": [
+      "modprobe",
+      "nvidia_uvm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525883.804322,
+    "command": [
+      "modprobe",
+      "nvidia_modeset"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525888.582424,
+    "command": [
+      "modprobe",
+      "nvidia_drm"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525888.5879407,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-cdi-refresh.path"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525888.5956686,
+    "command": [
+      "systemctl",
+      "start",
+      "nvidia-persistenced.service"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "epoch": 1792525888.6013753,
+    "command": [
+      "systemctl",
+      "start",
+      "n3rdware-gpu-fan.service"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

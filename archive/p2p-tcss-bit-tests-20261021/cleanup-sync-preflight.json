@@ -1,0 +1,222 @@
+{
+  "status": "verified_not_removed",
+  "epoch": 1792545572.580717,
+  "boot_before": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS sync prova\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssSyncTest\\Shell.efi)\nBoot0003* CaskLogic TCSS GPU sync\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssNative\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.N.a.t.i.v.e.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n",
+  "entries": {
+    "CaskLogicTcssSyncTest": "0002",
+    "CaskLogicTcssNative": "0003"
+  },
+  "ccfg": {
+    "0000:00:01.0": 67141751,
+    "0000:00:07.0": 234918007,
+    "0000:00:07.2": 234918007
+  },
+  "original_region_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "region_start": 28356608,
+  "region_bytes": 122880,
+  "tree_manifests": {
+    "CaskLogicTcssSyncTest": {
+      "directories": [],
+      "files": {
+        "CANDIDATE.bin": {
+          "size": 122880,
+          "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4"
+        },
+        "CURRENT.bin": {
+          "size": 122880,
+          "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9"
+        },
+        "Fpt-original-readback.txt": {
+          "size": 15148,
+          "sha256": "a49ac2e151f1bf3c97c12cba80c65646399f0e3078acb756e5ff46933f842a03"
+        },
+        "Fpt-original-write.txt": {
+          "size": 26990,
+          "sha256": "06f04dc3a2dc1dd4a963e8b47e89eb7a4575ebffd596a18cb7d28d03f2ef6d29"
+        },
+        "Fpt-region-after.txt": {
+          "size": 15142,
+          "sha256": "27cbaa31b9d8978e6f405025610e69cc276c887e169ced9e0ed207cbf1e6512a"
+        },
+        "Fpt-region-before.txt": {
+          "size": 15144,
+          "sha256": "cd3b0a9fc309635cd1df886a6f83d313e540163aa0bb0b4ca603157bc6757183"
+        },
+        "Fpt-region-write.txt": {
+          "size": 26990,
+          "sha256": "06f04dc3a2dc1dd4a963e8b47e89eb7a4575ebffd596a18cb7d28d03f2ef6d29"
+        },
+        "Fpt-restore-candidate-before.txt": {
+          "size": 15142,
+          "sha256": "27cbaa31b9d8978e6f405025610e69cc276c887e169ced9e0ed207cbf1e6512a"
+        },
+        "Fpt.efi": {
+          "size": 1886624,
+          "sha256": "d3747b061cf185f9883562a0b2ee890079872541af4f43f2caa074c2fb256a05"
+        },
+        "ORIGINAL.bin": {
+          "size": 122880,
+          "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9"
+        },
+        "READY.flag": {
+          "size": 310,
+          "sha256": "883902563b543708d6cf1dd8e210021c323fb558ffd0ddfef71856bea347590b"
+        },
+        "RESTORED.flag": {
+          "size": 318,
+          "sha256": "ebb41cdca30f3ef3a4252f2c64e9a52b1249a0f3f5d1d8fc8383d2685c8b5892"
+        },
+        "RegionPost.efi": {
+          "size": 57971,
+          "sha256": "d4614153c855c038a7a39eda8f7fcea26168a0d54bdcc5e4afcdb0a1c5ef2ca4"
+        },
+        "RegionPre.efi": {
+          "size": 59495,
+          "sha256": "e796d7f90e10c55f0b916d4372369b5d670f8c3ede77219421ea58ad78b634d5"
+        },
+        "RegionRestore.efi": {
+          "size": 57971,
+          "sha256": "9976cf225cac6ba9312504d62e0313244c6578052b2a6aaf1907719b0f5564dd"
+        },
+        "Shell.efi": {
+          "size": 939648,
+          "sha256": "24dcc034bf6a5158f43b23b71a16acbfdcf1597de55aa309f7f6ac5af90666e6"
+        },
+        "VERIFIED.flag": {
+          "size": 312,
+          "sha256": "2c377c854df82e0725dcdc9f9ba0235859dcd349a480dd4a1983de6f6dcf79e2"
+        },
+        "files.json": {
+          "size": 869,
+          "sha256": "046eb56e742d28d233d0c6ef77a5096d3cf4706267137b8105921c1b7dd79c94"
+        },
+        "region-after.bin": {
+          "size": 122880,
+          "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4"
+        },
+        "region-before.bin": {
+          "size": 122880,
+          "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9"
+        },
+        "region-post-gate.txt": {
+          "size": 584,
+          "sha256": "50a81d265bae9a69dce2c49f32928f1eea111e1d335b8d44a109d19a83439079"
+        },
+        "region-pre-gate.txt": {
+          "size": 1716,
+          "sha256": "b36f3138d58efb3c7dbbaa69e720301fb50f49b5513e3861679d7244d75d6a54"
+        },
+        "region-restore-gate.txt": {
+          "size": 590,
+          "sha256": "c12270bc519569e1c95a90e0dc36e084e0d18e723f6fade5d5e75f21665fd292"
+        },
+        "region-restored.bin": {
+          "size": 122880,
+          "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9"
+        },
+        "restore-status.txt": {
+          "size": 84,
+          "sha256": "3c73913bf9a49067db83c8fab7c972381d3c8a4b8d94a17b4e22f85ff0821306"
+        },
+        "startup-restore.nsh": {
+          "size": 5670,
+          "sha256": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309"
+        },
+        "startup.nsh": {
+          "size": 5670,
+          "sha256": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309"
+        },
+        "trial-status.txt": {
+          "size": 84,
+          "sha256": "c8958924ec10807124ccf46c81f0842fd07f49d7aeb8af5c533db2fcfdf42bb9"
+        }
+      }
+    },
+    "CaskLogicTcssNative": {
+      "directories": [
+        "before-driver"
+      ],
+      "files": {
+        "IDENTITY.txt": {
+          "size": 31,
+          "sha256": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+        },
+        "build-manifest.json": {
+          "size": 7628,
+          "sha256": "f2d53de4de4825b4b4ec5e317d22038608b0ac897d19a0e6c9f1686edd55bbf7"
+        },
+        "files.json": {
+          "size": 269,
+          "sha256": "3b856684e299f8ad5d9445aab2ee317ef8b320263b30d088fce32179d1eac6b8"
+        },
+        "kernel.log": {
+          "size": 170142,
+          "sha256": "5e71c958311705404135094682b2d8eec708b95edeacabb8c3ea385337b06357"
+        },
+        "probe-initrd.img": {
+          "size": 279245127,
+          "sha256": "2f912fcfca5f69616b4f18159e777b28b60023ebe4e24d3e53a9d4ff7193fd72"
+        },
+        "probe-kernel.efi": {
+          "size": 17320328,
+          "sha256": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e"
+        },
+        "result.log": {
+          "size": 406330,
+          "sha256": "b903e87590f3fd769a978838d4e8b2705a1d53893444027b2e84de6f5714f4c4"
+        },
+        "before-driver/0000_00_00.0.config": {
+          "size": 256,
+          "sha256": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd"
+        },
+        "before-driver/0000_00_01.0.config": {
+          "size": 4096,
+          "sha256": "934a3c23ab6b8bebf6170023ef969f6cc7fe06ef77663233049d1fd25a47f8bf"
+        },
+        "before-driver/0000_00_07.0.config": {
+          "size": 4096,
+          "sha256": "cbdacaeb111f4ccba8eff5a0b89194514f478f78eaf12f2bf967b1d696e71876"
+        },
+        "before-driver/0000_00_07.2.config": {
+          "size": 4096,
+          "sha256": "4b0dbbd70c6ad1de50413e84e446a5dc9fdea41f273e52f071ba407d219feee1"
+        },
+        "before-driver/0000_01_00.0.config": {
+          "size": 4096,
+          "sha256": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3"
+        },
+        "before-driver/0000_01_00.1.config": {
+          "size": 4096,
+          "sha256": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42"
+        },
+        "before-driver/0000_04_00.0.config": {
+          "size": 4096,
+          "sha256": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f"
+        },
+        "before-driver/0000_05_00.0.config": {
+          "size": 4096,
+          "sha256": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc"
+        },
+        "before-driver/0000_06_00.0.config": {
+          "size": 4096,
+          "sha256": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25"
+        },
+        "before-driver/0000_06_00.1.config": {
+          "size": 4096,
+          "sha256": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150"
+        },
+        "before-driver/iomem.txt": {
+          "size": 4505,
+          "sha256": "9544eaa2fb1c597d6c9f5883b1a86fd94444cc02246886c97bd817a10c70fb5e"
+        },
+        "before-driver/ioports.txt": {
+          "size": 1043,
+          "sha256": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7"
+        }
+      }
+    }
+  },
+  "all_files_including_images_preserved": false,
+  "script_sha256": "47ef60bdff9802c70864369a61fcdded8cb925ef0020002c9569337b882236f5",
+  "mutations": []
+}

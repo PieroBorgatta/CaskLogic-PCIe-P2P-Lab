@@ -1,0 +1,53 @@
+{
+  "torch": "2.10.0+cu126",
+  "cuda": "12.6",
+  "mode": "memory",
+  "device": 1,
+  "started_epoch": 1792522775.5987136,
+  "cases": [],
+  "gpu": {
+    "name": "NVIDIA RTX A2000 12GB",
+    "uuid": "00000000-0000-0000-0000-000000000002",
+    "total_memory": 12485001216
+  },
+  "vram": {
+    "tested_bytes": 9663676416,
+    "free_at_start": 12372869120,
+    "total": 12485001216,
+    "patterns_per_pass": 5,
+    "passes": [
+      {
+        "pass": 1,
+        "errors": 0
+      },
+      {
+        "pass": 2,
+        "errors": 0
+      },
+      {
+        "pass": 3,
+        "errors": 0
+      }
+    ],
+    "errors": 0,
+    "elapsed_seconds": 2.3725953860000573
+  },
+  "memory_bandwidth": {
+    "median_ms": 8.34549789428711,
+    "min_ms": 8.34488296508789,
+    "max_ms": 9.810022735595703,
+    "samples_ms": [
+      9.810022735595703,
+      9.200332641601562,
+      8.3451904296875,
+      8.34549789428711,
+      8.34488296508789
+    ],
+    "repetitions": 10,
+    "bytes_per_copy": 1073741824,
+    "payload_GBps": 128.66120603002335,
+    "read_plus_write_GBps": 257.3224120600467,
+    "correct": true
+  },
+  "finished_epoch": 1792522778.8794591
+}

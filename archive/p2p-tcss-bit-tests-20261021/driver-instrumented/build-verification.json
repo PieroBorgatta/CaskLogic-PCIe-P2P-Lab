@@ -1,0 +1,65 @@
+{
+  "status": "build_pass_with_warnings",
+  "build_manifest_sha256": "0b02b91fe9ac9e01be8d159695e856351057b9978d01fdf8f1ac7178150a37f4",
+  "build_log_sha256": "e283b6af1d6c719ea17f0840c6ec9260b0b7e7682eac8734b32ab8f7729930e0",
+  "source_and_patch_hashes_match_local_review": true,
+  "return_code": 0,
+  "modules": {
+    "nvidia.ko": {
+      "sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+      "size": 36774960,
+      "modinfo": {
+        "filename": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-instrumented-build-01/modules/nvidia.ko",
+        "import_ns": "DMA_BUF",
+        "alias": "of:N*T*Cnvidia,tegra234-display",
+        "description": "NVIDIA core GPU kernel module",
+        "version": "595.99.02",
+        "supported": "external",
+        "license": "Dual MIT/GPL",
+        "firmware": "nvidia/595.99.02/gsp_ga10x.bin",
+        "softdep": "pre: ecdh_generic,ecdsa_generic",
+        "srcversion": "2730098EFE2103A2A66F912",
+        "depends": "",
+        "name": "nvidia",
+        "retpoline": "Y",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "parm": "rm_firmware_active:charp"
+      }
+    },
+    "nvidia-uvm.ko": {
+      "sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+      "size": 57133360,
+      "modinfo": {
+        "filename": "/mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/driver-instrumented-build-01/modules/nvidia-uvm.ko",
+        "description": "NVIDIA Unified Virtual Memory kernel module",
+        "version": "595.99.02",
+        "supported": "external",
+        "license": "Dual MIT/GPL",
+        "srcversion": "F3146F6C8F3E4E78A72FBC6",
+        "depends": "nvidia",
+        "name": "nvidia_uvm",
+        "retpoline": "Y",
+        "vermagic": "7.0.0-38-generic SMP preempt mod_unload modversions",
+        "parm": "uvm_release_asserts_set_global_error:Set UVM global fatal error on failed release asserts. (int)"
+      }
+    }
+  },
+  "module_binary_hashes_recomputed_locally": false,
+  "reason": "Only build manifest and log were supplied locally; hashes belong to builder results, not a second local binary digest.",
+  "compiler_error_lines": [],
+  "warning_count": 14048,
+  "warnings_grouped": {
+    "stock overloaded virtual": 6,
+    "pahole version differs from kernel": 1,
+    "stock expansion-to-defined": 7,
+    "stock missing prototypes": 6,
+    "objtool: 'naked' return found in MITIGATION_RETHUNK build": 13777,
+    "objtool: call without frame pointer save/setup": 251
+  },
+  "patched_source_format_warnings": [],
+  "limitations": [
+    "Build success is not runtime validation.",
+    "Object-tool warnings report naked returns and stack metadata in OS-agnostic driver objects; no matching clean stock build comparison was performed.",
+    "Missing vmlinux skips BTF metadata generation; it does not alter the requested runtime logging code."
+  ]
+}

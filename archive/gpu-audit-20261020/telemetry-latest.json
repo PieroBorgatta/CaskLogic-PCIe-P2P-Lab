@@ -1,0 +1,35 @@
+{
+  "epoch": 1792524703.5540245,
+  "phase": "nccl_allreduce_host_staged",
+  "gpus": [
+    {
+      "uuid": "GPU-00000000-0000-0000-0000-000000000002",
+      "temperature.gpu": "51",
+      "utilization.gpu": "2",
+      "utilization.memory": "0",
+      "memory.used": "1",
+      "power.draw": "37.73",
+      "clocks.current.sm": "1837",
+      "clocks.current.memory": "6001",
+      "pstate": "P0",
+      "clocks_event_reasons.active": "0x0000000000000000"
+    },
+    {
+      "uuid": "GPU-00000000-0000-0000-0000-000000000001",
+      "temperature.gpu": "68",
+      "utilization.gpu": "3",
+      "utilization.memory": "1",
+      "memory.used": "2",
+      "power.draw": "21.45",
+      "clocks.current.sm": "2400",
+      "clocks.current.memory": "7001",
+      "pstate": "P0",
+      "clocks_event_reasons.active": "0x0000000000000000"
+    }
+  ],
+  "loadavg": [
+    1.12353515625,
+    0.62646484375,
+    0.6015625
+  ]
+}

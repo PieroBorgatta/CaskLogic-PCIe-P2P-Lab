@@ -1,0 +1,20 @@
+{
+  "status": "STATIC_PROFILE_AND_SOURCE_PASS",
+  "files_match_validation_manifest": {
+    "TcssRegionGate.c": true,
+    "TcssRegionProfile.h": true,
+    "TcssRegionGate.host-test.c": true,
+    "ORIGINAL.bin": true,
+    "CURRENT.bin": true,
+    "CANDIDATE.bin": true,
+    "build_region_gates.py": true
+  },
+  "native_gate_logic_identical_except_directory_and_label": true,
+  "CURRENT_equals_true_ORIGINAL": true,
+  "CANDIDATE_identical_to_prior_reviewed_combined": true,
+  "region_start": "0x01B0B000",
+  "region_bytes": 122880,
+  "efi_binaries_present_at_review": false,
+  "hardware_execution": false,
+  "limitation": "No new EFI binaries were present for binary review; build output hashes must be verified after compilation."
+}

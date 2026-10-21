@@ -1,0 +1,35 @@
+{
+  "time": "2026-10-21T00:04:11+02:00",
+  "host": "hypervisor-host",
+  "bios": "1.26",
+  "device": "8086:466e",
+  "bdf": "0000:00:07.0",
+  "operation": "only reads; no writes; no GPU workloads",
+  "mchbar_pci48": "0xfedc0001",
+  "mchbar_regbar_offset": "0x7110",
+  "mchbar_regbar_value": "0xfb000001",
+  "d7f0_ecam_d0": "0x0e009077",
+  "regbar_reads": [
+    {
+      "address": "0xfbc600d0",
+      "portid": "0xc6",
+      "value": "0x0e009077"
+    },
+    {
+      "address": "0xfbc700d0",
+      "portid": "0xc7",
+      "value": "0xffffffff"
+    },
+    {
+      "address": "0xfbce00d0",
+      "portid": "0xce",
+      "value": "0x0e009077"
+    },
+    {
+      "address": "0xfbcf00d0",
+      "portid": "0xcf",
+      "value": "0xffffffff"
+    }
+  ],
+  "interpretation": "Matching D0 values confirm address correspondence for enabled ports, not writable peer-bit semantics."
+}

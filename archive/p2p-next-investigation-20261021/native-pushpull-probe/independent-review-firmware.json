@@ -1,0 +1,44 @@
+{
+  "status": "PASS_STATIC_CUDA_CUPTI_AND_BUILD_REVIEW",
+  "scope": "Local source and CPU fixture output review only; no remote operation or GPU execution",
+  "files_sha256": {
+    "native-pushpull-probe/peer_pushpull_cupti.cu": "47583f96e9f54f4fe06b8729ff6ebb3f6d0866f3b123146d36b07dcdab4bfe61",
+    "native-pushpull-probe/cupti_trace.h": "a59d3f1a132f2ae43b073ffc16cf86cbaf740c9bfae6c0d93c047fbb7c3adca8",
+    "native-pushpull-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-pushpull-probe/peer_pushpull_native": "4f8be7b3544ea1c00178404b16251da081905e768835560a2fffeda7ed9a193e",
+    "native-pushpull-probe/classifier-fixtures.cpp": "9f46e3fff5a64faa32493095da5656488cf4a25c403d3978c9b008380a246d7c",
+    "init-pushpull.sh": "ee0ad9268187e7ca7cda617186fd994116da574d818a9128a66dd6318fcc8f94",
+    "build_package.py": "b12d6203564a1678de57f4f3570938a0815a16cf0f0c46dc3b8a6b6fa5514a75",
+    "verify_package.py": "2c6aef3def13318751c4e7a5766f032ca8e9b2cde8312faf6ddcfae1a72b911a"
+  },
+  "checks": [
+    "PUSH and PULL use separate precreated buffers, eight allocations total, each 8 MiB",
+    "PUSH source owner-only and destination shared give source executor unique access to both buffers",
+    "PULL source shared and destination owner-only give destination executor unique access to both buffers",
+    "Both ends of each allocation and allocation ownership properties are rechecked before and after each case",
+    "Owner initialization and full readback follow owner synchronization; both contexts synchronized before payload",
+    "Current context, current device and stream owner all checked against intended executor",
+    "PULL begins with CE Ada-to-A2000 before any PULL SM peer read; preceding PUSH cases perform writes only",
+    "cuMemcpyDtoDAsync and SM kernel use exactly the same pair of allocations for each mode and direction",
+    "Executor stream synchronized before owner comparison; all allocation frees occur after data_done and CUPTI finish",
+    "CUPTI executor device/context/stream separate from source and destination owner IDs",
+    "Dropped records, metadata conflicts, callback arguments, activity bytes and timestamps are fail-closed",
+    "CUPTI reports direct_route_proven=0; no unsupported assertion of hidden-staging absence",
+    "Package builder verifies prior initrd and pinned prior payloads, contract hashes, native loader and unchanged kernel",
+    "Archive verifier compares every member and restricts changed contents to init and opt/probe/peer_word",
+    "Wrapper requires restored CCFG D1=04008077 and D7F0/F2=0e009077 before and after driver/test"
+  ],
+  "cpu_fixture_output": "PASS 40/40 classifier scenarios; CPU only, CUPTI APIs mocked",
+  "notes": [
+    {
+      "severity": "resolved",
+      "file": "init-pushpull.sh",
+      "issue": "Parent changed watchdog to background sync, two-second delay, sysrq-b with reboot fallback. No blocking sync precedes forced reset. Nominal watchdog delay now 182 seconds."
+    }
+  ],
+  "limitations": [
+    "VMM permissions constrain visible executor; actual CE observed device still must pass CUPTI checks on hardware",
+    "Full initrd comparison is a future build verification, not yet claimed executed in this review",
+    "CPU fixture pass is not a GPU result"
+  ]
+}

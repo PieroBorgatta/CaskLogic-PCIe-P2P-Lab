@@ -1,0 +1,13 @@
+{
+  "epoch": 1792531372.7122593,
+  "stage": "P2P_setting_enabled_and_persisted",
+  "slot_CCFG_before": "0e008077",
+  "slot_CCFG_after": "04008077",
+  "standalone_FPT_verify_option": "-v invalid; default programming verification and independent byte-for-byte readback both passed",
+  "boot_script_now": "read_only",
+  "temporary_ESP_files_removed": true,
+  "temporary_boot_entry_removed": true,
+  "original_boot_files_verified": true,
+  "slot_CCFG": "04008077",
+  "production_training": "stopped_disabled"
+}

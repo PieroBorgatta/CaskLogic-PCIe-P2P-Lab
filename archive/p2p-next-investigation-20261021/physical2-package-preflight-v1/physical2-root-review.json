@@ -1,0 +1,17 @@
+{
+  "status": "PASS_NAMESPACE_AND_BUILD03_REVIEW",
+  "functional_scope": "Identical PHYS1 program and lifetime protocol; separate PHYS2 EFI identity, state and backups; UVM build03 kind/default validation correction",
+  "fixture_tests": 26,
+  "fixture_passed": true,
+  "files_sha256": {
+    "install_native_physical2.py": "c9b8d49e5139e6a95572c51dc9fffdfb376d2f6b7ed9af12aa2d0a3193cd5210",
+    "collect_cleanup_physical2.py": "a35b7f6bf9a0af292adb191043adc6e8fba1e58ff36becee2b54c1973079e27c",
+    "physical_log_validation.py": "20590c2d5eb6340999c1ea9ed15667ef7524cba4ba6a70d14a05b23e90ae5e1b",
+    "init-physical2.sh": "d7b0e985ee0db9b9d6548ce62db209b9f06e5270004a43de4fbecddc56944faf",
+    "build_physical2_package.py": "ae3f6f098e7c0b6164d899c6bf8c40c768ceee7fb69175be668591264899f12b",
+    "verify_physical2_package.py": "5da9fa87dcb4bfe875269ebdde61cafb7115b176aaf1bf660fe3fb989a3215fe"
+  },
+  "UVM_sha256": "83b6342f0ef44c0d97dd6fad0310e99438718a8450bf40a29939c250604e8bce",
+  "program_sha256": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+  "hardware_executed": false
+}

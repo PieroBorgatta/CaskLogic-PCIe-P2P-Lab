@@ -1,0 +1,15 @@
+{
+  "parent_files": {
+    "peer_ce_cupti.cu": "89f1639244b589ef89dfb3231c84b278b5c8caedef5c74e9d76d5a16da3d309c",
+    "cupti_trace.h": "0de1f3097fbe22c775d4c603615cfd9f0a69c328e9e7da55d50389e60ed5b468",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "candidate_files": {
+    "peer_pushpull_cupti.cu": "47583f96e9f54f4fe06b8729ff6ebb3f6d0866f3b123146d36b07dcdab4bfe61",
+    "cupti_trace.h": "a59d3f1a132f2ae43b073ffc16cf86cbaf740c9bfae6c0d93c047fbb7c3adca8",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "candidate_only": true,
+  "hardware_or_remote": false,
+  "changes": "Two disjoint PUSH/PULL buffer sets; destination execution for PULL; CUPTI source device separated from executor; 24 cases, no source file changed."
+}

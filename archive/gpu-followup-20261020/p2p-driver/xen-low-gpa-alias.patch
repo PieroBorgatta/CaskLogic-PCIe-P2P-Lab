@@ -1,0 +1,24 @@
+--- a/kernel-open/nvidia/nv-dma.c
++++ b/kernel-open/nvidia/nv-dma.c
+@@ -809,6 +809,21 @@
+          */
+         NvU64 offset = *va - res->start;
+         *va = pci_bus_address(peer_pci_dev, bar_index) + offset;
++        /* Isolated Xen trial: aliases installed by xc_domain_memory_mapping. */
++        if (bar_index == 1 && peer_pci_dev->vendor == 0x10de)
++        {
++            NvU64 alias = 0;
++            if (peer_pci_dev->device == 0x28b0 && res->start == 0x800000000ULL)
++                alias = 0x780000000ULL;
++            if (peer_pci_dev->device == 0x2571 && res->start == 0xc00000000ULL)
++                alias = 0x7c0000000ULL;
++            if (alias)
++            {
++                if (offset >= 0x2000000ULL || page_count > ((0x2000000ULL-offset) >> PAGE_SHIFT))
++                    return NV_ERR_INVALID_REQUEST;
++                *va = alias + offset;
++            }
++        }
+         status = NV_OK;
+     }
+ 

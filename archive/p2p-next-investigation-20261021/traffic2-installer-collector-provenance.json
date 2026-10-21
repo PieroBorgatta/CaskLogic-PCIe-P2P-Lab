@@ -1,0 +1,25 @@
+{
+  "scope": "Cloni locali per Traffic2; nessuna operazione remota o hardware. Transazioni e log validation invariati.",
+  "source_installer_sha256": "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321",
+  "source_collector_sha256": "3f55762b758225756a89342e1aa3d89abf9d20d3a5327199e50b35eb3b32319b",
+  "installer_sha256": "f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b",
+  "collector_sha256": "0b016c6b11fed086e3723e3b6e4fb0c273e10e6549ce38ebf7d05881e45e94d8",
+  "installer_replacements": {
+    "native-traffic-probe-package": "native-traffic2-probe-package",
+    "CaskLogicTcssTraffic": "CaskLogicTcssTraffic2",
+    "traffic-state.json": "traffic2-state.json",
+    "traffic-stage-metadata": "traffic2-stage-metadata",
+    "CaskLogic-TCSS-traffic-20261021": "CaskLogic-TCSS-traffic2-20261021",
+    "CaskLogic TCSS traffic probe": "CaskLogic TCSS traffic2 probe"
+  },
+  "collector_replacements": {
+    "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321": "f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b",
+    "install_native_traffic.py": "install_native_traffic2.py",
+    "traffic_probe_installer": "traffic2_probe_installer",
+    "native-traffic-esp-backup": "native-traffic2-esp-backup",
+    "native-traffic-results": "native-traffic2-results",
+    "native-traffic-collection.json": "native-traffic2-collection.json",
+    "traffic-state.json": "traffic2-state.json",
+    "CaskLogicTcssTraffic": "CaskLogicTcssTraffic2"
+  }
+}

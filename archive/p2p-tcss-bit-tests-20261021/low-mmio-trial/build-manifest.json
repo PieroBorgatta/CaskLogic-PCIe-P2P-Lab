@@ -1,0 +1,11 @@
+{
+  "files": {
+    "cask_low_mmio.c": "ca3d0d29f2a9a4de86891d210fb61fec8def2040bce596b409bf4032751cea04",
+    "Makefile": "307d2384936758e2429f42144fa4d296550bb2a0d1e244bc6694f9a1da043192",
+    "cask_low_mmio.ko": "f0f1c2bd23d5785c1dcf41bacc824bf8401ab8360835d0375f9198d1f82c1f10",
+    "build.log": "36bc6c519875ac5dfe1bc52a9109979dc3a0d1c0d840d0f1450a5a988ad6cb22"
+  },
+  "modinfo": "filename:       /mnt/llm/riscrivo/runtime/reports/p2p-tcss-bit-tests-20261021/low-mmio-trial/cask_low_mmio.ko\ndescription:    CaskLogic isolated native PCI low-MMIO experiment; local candidate awaiting review\nlicense:        GPL\nsrcversion:     9A654243AB0B942B7A155B9\ndepends:        \nname:           cask_low_mmio\nretpoline:      Y\nvermagic:       7.0.0-38-generic SMP preempt mod_unload modversions \nparm:           base:ullong\nparm:           result:string\nparm:           execute:Default false: validate only. True changes RAM-boot PCI configuration. (bool)\n",
+  "status": "built_not_loaded",
+  "flags": "W=1 KCFLAGS=-Werror"
+}

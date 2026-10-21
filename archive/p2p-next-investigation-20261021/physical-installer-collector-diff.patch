@@ -1,0 +1,228 @@
+--- install_native_traffic2.py
++++ install_native_physical.py
+@@ -20,23 +20,23 @@
+ 
+ R = Path('/root/riscrivo-p2p-next-investigation-20261021')
+ OLD = Path('/root/riscrivo-p2p-tcss-bit-tests-20261021')
+-SRC = R / 'native-traffic2-probe-package'
++SRC = R / 'native-physical-ce-probe-package'
+ ESP = Path('/boot/efi')
+-DST = ESP / 'EFI/CaskLogicTcssTraffic2'
+-STATE = R / 'traffic2-state.json'
+-BACKUP = R / 'traffic2-stage-metadata'
++DST = ESP / 'EFI/CaskLogicTcssPhysical'
++STATE = R / 'physical-state.json'
++BACKUP = R / 'physical-stage-metadata'
+ VM = 'd6338ea9-6820-b365-bd0f-7d3790ba2ea7'
+ PARTUUID = '3c6ae711-bbc9-4653-bf09-0baac6b3b380'
+-IDENTITY = b'CaskLogic-TCSS-traffic2-20261021\n'
+-LABEL = 'CaskLogic TCSS traffic2 probe'
+-LOADER = '\\EFI\\CaskLogicTcssTraffic2\\probe-kernel.efi'
+-ARGS = ('initrd=\\EFI\\CaskLogicTcssTraffic2\\probe-initrd.img rdinit=/init '
++IDENTITY = b'CaskLogic-TCSS-physical-20261021\n'
++LABEL = 'CaskLogic TCSS physical probe'
++LOADER = '\\EFI\\CaskLogicTcssPhysical\\probe-kernel.efi'
++ARGS = ('initrd=\\EFI\\CaskLogicTcssPhysical\\probe-initrd.img rdinit=/init '
+         'intel_iommu=off iommu=off module_blacklist=nouveau,nvidia_drm,nvidia_modeset '
+         'panic=10 loglevel=4 console=tty0')
+ KERNEL_SHA = '9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e'
+ PINNED = {
+     'opt/probe/nvidia-dynamic.ko': 'ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5',
+-    'opt/probe/nvidia-instrumented-uvm.ko': '9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0',
++    'opt/probe/nvidia-instrumented-uvm.ko': 'PENDING_PHYSICAL_UVM_BUILD_SHA256',
+     'usr/lib/x86_64-linux-gnu/libcuda.so.1': '03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7',
+     'usr/lib/x86_64-linux-gnu/libcupti.so.12': '76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d',
+     'usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1': '770e9de75c14b07cce9718b214700b10e6d6866f7383101d6fe530352543b1de',
+@@ -185,8 +185,9 @@
+             if not trailing: break
+             require(not trailing.strip(b'\0'), 'Contenuto inatteso dopo trailer CPIO')
+     require(found == expected and init is not None, 'Payload mancanti')
+-    for token in ['CaskLogic-TCSS-traffic2-20261021', 'EFI/CaskLogicTcssTraffic2',
+-                  'timeout 60 /opt/probe/peer_word', 'sleep 180', 'RM64KBBAR1Mappings=0']:
++    for token in ['CaskLogic-TCSS-physical-20261021', 'EFI/CaskLogicTcssPhysical',
++                  'timeout 60 /opt/probe/peer_word', 'sleep 180', 'RM64KBBAR1Mappings=0',
++                  'uvm_cask_physical_ce=1', 'uvm_enable_builtin_tests=1', 'WATCHDOG_REBOOT']:
+         require(token in init, 'Contratto init mancante: ' + token)
+     for token in ['RMCaskPeerCoherent=1', 'uvm_cask_peer_small_pages=1', 'cask_low_mmio']:
+         require(token not in init, 'Variante init non autorizzata: ' + token)
+@@ -202,6 +203,7 @@
+     for name, digest in files.items(): require(sha(SRC/name) == digest, 'File pacchetto cambiato: ' + name)
+     require(files['probe-kernel.efi'] == KERNEL_SHA and (SRC/'IDENTITY.txt').read_bytes() == IDENTITY, 'Kernel/identita inattesi')
+     require((SRC/'probe-initrd.img').stat().st_size == manifest['initrd_bytes'], 'Dimensione initrd diversa')
++    require(all(digest_valid(x) for x in PINNED.values()), 'Hash payload non ancora congelati')
+     expected = dict(PINNED)
+     for key in ['native_program_sha256', 'init_sha256', 'build_inputs_sha256']:
+         require(digest_valid(manifest[key]), 'Digest mancante/invalido: ' + key)
+@@ -211,9 +213,13 @@
+             manifest['uvm_module_sha256'] == PINNED['opt/probe/nvidia-instrumented-uvm.ko'] and
+             manifest['libcuda_sha256'] == PINNED['usr/lib/x86_64-linux-gnu/libcuda.so.1'], 'Moduli/libcuda diversi')
+     require(manifest['automatic_return_seconds'] == 182 and manifest['program_timeout_seconds'] == 60 and
+-            manifest['comparisons'] == 4 and manifest['sizes'] == [1048576] and
+-            manifest['modes'] == ['PUSH'] and manifest['engines'] == ['SM', 'CUDA_COPY_REQUEST'] and
+-            manifest['CE_observed_in_this_probe'] is False and manifest['direct_route_proven'] is False,
++            manifest['comparisons'] == 4 and manifest['sizes'] == [4] and
++            manifest['modes'] == ['PUSH'] and manifest['engines'] == ['SM', 'PHYSICAL_CE'] and
++            manifest['physical_ce_ioctl'] == 315 and manifest['physical_ce_abi'] == 1 and
++            manifest['physical_ce_bytes'] == 4 and manifest['calibrations'] == 4 and
++            manifest['calibration_sizes'] == [1048576] and
++            manifest['calibration_modes'] == ['HOST_TO_DEVICE', 'DEVICE_TO_HOST'] and
++            manifest['direct_route_proven'] is False,
+             'Contratto prova diverso')
+     require(all(manifest[k] is False for k in ['vm_disks_mounted', 'pci_config_writes', 'firmware_writes']), 'Scope mutazioni inatteso')
+     require(manifest['expected_CCFG'] == {k[5:]: '%08x' % v[1] for k,v in CCFG.items()}, 'Firmware atteso non originale')
+--- collect_cleanup_traffic2.py
++++ collect_cleanup_physical.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Raccoglie e pulisce soltanto CaskLogicTcssTraffic2, dopo il ritorno a XCP.
++"""Raccoglie e pulisce soltanto CaskLogicTcssPhysical, dopo il ritorno a XCP.
+ 
+ Default sola lettura. --collect conserva l'intero albero EFI e tutti i risultati;
+ --cleanup rimuove la sola voce/cartella registrata, dopo nuova verifica integrale.
+@@ -17,18 +17,18 @@
+ import time
+ 
+ HERE = Path(__file__).resolve().parent
+-INSTALLER_SHA = 'f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b'
+-source = HERE/'install_native_traffic2.py'
++INSTALLER_SHA = '0180f8c95180d81a09add16070ee3fcfebaf2265a2200a74d5e93a3ea0b24ecd'
++source = HERE/'install_native_physical.py'
+ if hashlib.sha256(source.read_bytes()).hexdigest() != INSTALLER_SHA:
+     raise RuntimeError('Installer condiviso diverso dalla versione revisionata')
+-spec = importlib.util.spec_from_file_location('traffic2_probe_installer',str(source))
++spec = importlib.util.spec_from_file_location('physical_probe_installer',str(source))
+ i = importlib.util.module_from_spec(spec); spec.loader.exec_module(i)
+ R = i.R
+-BACKUP = R/'native-traffic2-esp-backup'
+-RESULTS = R/'native-traffic2-results'
+-COLLECTION = R/'native-traffic2-collection.json'
++BACKUP = R/'native-physical-ce-esp-backup'
++RESULTS = R/'native-physical-ce-results'
++COLLECTION = R/'native-physical-ce-collection.json'
+ BIG = {'probe-kernel.efi','probe-initrd.img'}
+-STATE_COPY = 'traffic2-state.json'
++STATE_COPY = 'physical-state.json'
+ RAW_MANIFEST = 'collected-sha256.json'
+ EXPECTED_CONFIGS = {'0000_00_00.0.config','0000_00_01.0.config','0000_00_07.0.config',
+                     '0000_00_07.2.config','0000_01_00.0.config','0000_01_00.1.config',
+@@ -70,60 +70,16 @@
+     return dict(re.findall(r'([A-Za-z_][A-Za-z0-9_]*)=([^\s]+)',line))
+ 
+ 
+-def validate_log(raw):
+-    """RC5: dati errati; RC6: campionamento insufficiente, entrambi conservabili."""
+-    lines=raw.splitlines()
+-    end=[fields(x) for x in lines if x.startswith('TRAFFIC_PROGRAM_END ')]
+-    i.require(len(end)==1,'Chiusura programma mancante/duplicata')
+-    end=end[0]
+-    i.require(end.get('protocol_complete')=='1' and end.get('comparisons')=='4','Protocollo non concluso')
+-    rc=end.get('rc');i.require(rc in ('0','5','6'),'RC programma non classificato: '+str(rc))
+-    fail=int(end['failures']);qualified=int(end['qualified_windows'])
+-    i.require(0<=fail<=4 and 0<=qualified<=4,'Conteggio fuori intervallo')
+-    expected_rc='6' if qualified!=4 else ('5' if fail else '0')
+-    i.require(rc==expected_rc,'RC e fallimenti/campionamento incoerenti')
+-    i.require(end.get('nvml_only')=='1' and end.get('ce_observed')=='0' and
+-              end.get('direct_route_proven')=='0','Affermazioni strumentazione inattese')
+-    for marker in ['NATIVE_TEST_RC='+rc,'SCRIPT_RC='+rc,'PROBE_COMPLETED']:
+-        i.require(lines.count(marker)==1,'Marker logger non valido: '+marker)
+-    results=[fields(x) for x in lines if x.startswith('TRAFFIC_DATA_RESULT ')]
+-    windows=[fields(x) for x in lines if x.startswith('TRAFFIC_WINDOW ')]
+-    samplers=[fields(x) for x in lines if x.startswith('NVML_SAMPLER_END ')]
+-    i.require(len(results)==len(windows)==len(samplers)==4,'Fasi incomplete/duplicate')
+-    i.require([x.get('id') for x in results]==['1','2','3','4'] and
+-              [x.get('id') for x in windows]==['1','2','3','4'] and
+-              [x.get('phase') for x in samplers]==['1','2','3','4'],'Identita fasi errata')
+-    order=[('SM','0','1'),('CUDA_COPY_REQUEST','0','1'),('SM','1','0'),('CUDA_COPY_REQUEST','1','0')]
+-    for row,window,sampler,expected in zip(results,windows,samplers,order):
+-        i.require((row.get('engine'),row.get('s'),row.get('d'))==expected and
+-                  (window.get('engine'),window.get('s'),window.get('d'))==expected,'Ordine/direzione inatteso')
+-        i.require(row.get('bytes')=='1048576' and row.get('checked_words')=='262144' and
+-                  row.get('valid') in ('0','1') and row.get('sampling_valid') in ('0','1') and
+-                  row.get('duration_valid') in ('0','1'),'Dati fase non validi')
+-        mismatch=int(row['mismatches'])
+-        i.require(0<=mismatch<=262144 and (row['valid']=='1')==(mismatch==0),'Conteggio mismatch incoerente')
+-        i.require(row.get('ce_observed')=='0' and row.get('direct_route_proven')=='0' and
+-                  window.get('no_host_payload_ops_during_window')=='1','Scope fase inatteso')
+-        i.require(sampler.get('valid')==row['sampling_valid'],'Esito sampler incoerente')
+-        begin=int(window['begin_ns']);finish=int(window['end_ns']);joined=int(window['sampler_joined_ns'])
+-        i.require(begin<finish<=joined and int(window['duration_ns'])==finish-begin,'Ordine temporale finestra invalido')
+-        batches=int(window['batches'])
+-        i.require(1<=batches<=4096 and int(window['submitted_payload_bytes'])==batches*64*1048576,'Payload logico incoerente')
+-        duration_ok=1200000000<=finish-begin<=5000000000 and window.get('budget_exhausted')=='0'
+-        i.require((row['duration_valid']=='1')==duration_ok,'Qualifica durata incoerente')
+-    i.require(sum(x['valid']=='0' for x in results)==fail and
+-              sum(x['sampling_valid']=='1' and x['duration_valid']=='1' for x in results)==qualified,'Totali incoerenti')
+-    owner=[fields(x) for x in lines if x.startswith('FULL_COMPARE ') and
+-           fields(x).get('stage') in ('source_initialized','destination_poisoned')]
+-    i.require(len(owner)==8 and all(x.get('valid')=='1' and x.get('checked_words')=='262144' and x.get('mismatches')=='0' for x in owner),'Controlli proprietari mancanti/falliti')
+-    for uid in ['00000000000000000000000000000001','00000000000000000000000000000002']:
+-        i.require(any(x.startswith('TRAFFIC_GPU ') and 'uuid='+uid in x and 'valid=1' in x for x in lines),'Identita GPU assente')
+-    for bdf,(_,wanted) in i.CCFG.items():
+-        vals=re.findall(r'^(?:PEG_CCFG|TCSS_CCFG) '+re.escape(bdf[5:])+r' ([0-9a-f]+)$',raw,re.M)
+-        i.require(len(vals)==3 and all(int(v,16)==wanted for v in vals),'CCFG nel log non originale')
+-    return {'program_rc':int(rc),'failures':fail,'comparisons':4,'qualified_windows':qualified,
+-            'data_all_comparisons_pass':fail==0,'P2P_solution_claimed':False,'direct_route_proven':False,
+-            'CE_observed_in_this_probe':False,'counters_are_aggregate':True}
++VALIDATOR_SHA = '20590c2d5eb6340999c1ea9ed15667ef7524cba4ba6a70d14a05b23e90ae5e1b'
++validator_source = HERE/'physical_log_validation.py'
++if hashlib.sha256(validator_source.read_bytes()).hexdigest() != VALIDATOR_SHA:
++    raise RuntimeError('Validatore log diverso dalla versione revisionata')
++validator_spec = importlib.util.spec_from_file_location('physical_log_validator', str(validator_source))
++validator = importlib.util.module_from_spec(validator_spec); validator_spec.loader.exec_module(validator)
++
++
++def validate_log(raw, kernel=''):
++    return validator.validate_log(raw, i.CCFG, kernel)
+ 
+ 
+ def observations():
+@@ -137,12 +93,19 @@
+     i.require(state['files']==package['files'] and state['metadata_sha256']==package['metadata_sha256'],'Pacchetto diverso dallo stage')
+     manifest=tree(i.DST)
+     expected=set(i.PACKAGE_NAMES)|{'result.log','kernel.log'}|{'before-driver/'+n for n in EXPECTED_CONFIGS}
+-    i.require(set(manifest['files'])==expected and manifest['directories']==['before-driver'],'Albero EFI inatteso: preservare senza pulire')
++    i.require(set(i.PACKAGE_NAMES)<=set(manifest['files'])<=expected and
++              set(manifest['directories'])<=set(['before-driver']),
++              'Albero EFI inatteso: preservare senza pulire')
+     for n,digest in dict(package['files'],**package['metadata_sha256']).items():
+         i.require(manifest['files'][n]['sha256']==digest,'Payload/metadata EFI cambiato: '+n)
+     i.require((i.DST/'IDENTITY.txt').read_bytes()==i.IDENTITY,'Identita directory diversa')
+-    result=validate_log((i.DST/'result.log').read_text())
+-    i.require((i.DST/'kernel.log').stat().st_size>0,'Log kernel vuoto')
++    raw=(i.DST/'result.log').read_text(errors='replace') if 'result.log' in manifest['files'] else ''
++    kernel=(i.DST/'kernel.log').read_text(errors='replace') if 'kernel.log' in manifest['files'] else ''
++    result=validate_log(raw,kernel)
++    result['missing_expected_files']=sorted(expected-set(manifest['files']))
++    if result['missing_expected_files'] or not kernel:
++        result.update(status='incomplete_preserved',protocol_complete=False,
++                      data_all_comparisons_pass=False,logs_are_partial_evidence=True)
+     return {'baseline':baseline,'ccfg':ccfg,'state':state,'state_sha256':i.sha(i.STATE),
+             'boot':boot,'entries':entries,'tree':manifest,'result':result}
+ 
+@@ -152,7 +115,7 @@
+     i.require(c['status']=='collected_verified','Raccolta non conclusa o cleanup gia avviato')
+     i.require(c['tree']==obs['tree'] and c['state_sha256']==obs['state_sha256'],'ESP/stato cambiati dopo raccolta')
+     i.require(tree(BACKUP)==c['tree'],'Backup completo diverso')
+-    raw=exact_result_names(c['tree']);i.require(len(raw)==17,'Numero raw inatteso')
++    raw=exact_result_names(c['tree']);i.require(3<=len(raw)<=17,'Numero raw inatteso')
+     actual=tree(RESULTS)
+     i.require(set(actual['files'])==set(raw)|{STATE_COPY,RAW_MANIFEST} and actual['directories']==c['tree']['directories'],'Raccolta file inattesa')
+     for n,v in raw.items():i.require(actual['files'][n]==v,'Risultato copiato diverso: '+n)
+@@ -168,7 +131,7 @@
+     c={'status':'collect_pending','epoch':time.time(),'tree':obs['tree'],'state_sha256':obs['state_sha256'],
+        'baseline_sha256':obs['baseline']['sha256'],'original_files':obs['baseline']['baseline']['original_files'],
+        'boot_before':obs['boot'],'ccfg_before':obs['ccfg'],'entry':obs['state']['entry'],'result':obs['result'],
+-       'backup':str(BACKUP),'results':str(RESULTS),'installer_sha256':INSTALLER_SHA,'collector_sha256':i.sha(Path(__file__)),
++       'backup':str(BACKUP),'results':str(RESULTS),'installer_sha256':INSTALLER_SHA,'collector_sha256':i.sha(Path(__file__)),'validator_sha256':VALIDATOR_SHA,
+        'mutations':[]}
+     i.atomic_json(COLLECTION,c)
+     shutil.copytree(str(i.DST),str(BACKUP));fsync_tree(BACKUP)
+@@ -203,7 +166,7 @@
+     i.require(tree(BACKUP)==obs['tree'] and tree(i.DST)==obs['tree'],'Backup/ESP cambiato prima rimozione directory')
+     i.verify_baseline();i.read_ccfg()
+     shutil.rmtree(str(i.DST));i.require(not i.DST.exists(),'Directory non rimossa')
+-    c['mutations'].append({'directory_removed':'CaskLogicTcssTraffic2'})
++    c['mutations'].append({'directory_removed':'CaskLogicTcssPhysical'})
+     final=i.run(['efibootmgr','-v']);i.require(i.parse_boot(final)==obs['state']['original_entries'],'Voci originali diverse dopo cleanup')
+     i.verify_baseline();ccfg=i.read_ccfg();i.require(tree(BACKUP)==obs['tree'],'Backup diverso dopo cleanup')
+     c.update(status='cleanup_verified',epoch_completed=time.time(),boot_after_cleanup=final,ccfg_final=ccfg,

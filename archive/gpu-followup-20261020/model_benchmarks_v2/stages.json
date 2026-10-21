@@ -1,0 +1,40 @@
+[
+  {
+    "name": "smoke_ddp32",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/smoke_ddp32.json",
+      "--recompute",
+      "--global-sequences",
+      "4",
+      "--warmup",
+      "1",
+      "--samples",
+      "1"
+    ],
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN",
+      "NCCL_P2P_DISABLE": "1",
+      "NCCL_CUMEM_HOST_ENABLE": "0"
+    },
+    "timeout": 480,
+    "required": true,
+    "started_epoch": 1792525628.7897792,
+    "seconds": 98.32962942123413,
+    "returncode": 137,
+    "timed_out": false
+  }
+]

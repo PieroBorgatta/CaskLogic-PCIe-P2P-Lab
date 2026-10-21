@@ -1,0 +1,19 @@
+{
+  "epoch": 1792531076.035815,
+  "stage": "UEFI_dry_run_validated",
+  "flash_writes": false,
+  "sector_flash_address": "0x01024000",
+  "target_flash_address": "0x010243F9",
+  "sector_bytes": 4096,
+  "byte_changes": [
+    [
+      1017,
+      0,
+      1
+    ]
+  ],
+  "original_sector_sha256": "ca1aded0358abe9ef109dd95da35aecba8f05b532e293e517fef806f2f4b18e2",
+  "candidate_sector_sha256": "ba646b781d38136787b8f19db448872860befc8223e386a9e56dc9a5b4b2f68b",
+  "fresh_nv_region_sha256": "d0c9e6340a7da447f2ef3e6076fa1cf7de4c3ffd9ed136148a2106882a672c4a",
+  "scripts_reviewed": true
+}

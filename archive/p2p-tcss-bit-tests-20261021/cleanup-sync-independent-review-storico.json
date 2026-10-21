@@ -1,0 +1,28 @@
+{
+  "status": "STATIC_REVIEW_PASS",
+  "reviewer": "storico_prove",
+  "source_sha256": "47ef60bdff9802c70864369a61fcdded8cb925ef0020002c9569337b882236f5",
+  "executed": false,
+  "scope": "Read-only review of final cleanup guards, backup durability and deletion targets",
+  "checks": {
+    "no_mutation_without_execute": true,
+    "host_board_BIOS_ESP_identity_guards": true,
+    "BootNext_absent_current_and_order_original_required": true,
+    "exact_two_temporary_entries_matched_label_PARTUUID_loader": true,
+    "unknown_EFI_entries_abort_before_changes": true,
+    "true_original_30_sector_span_hash_in_package_ESP_and_collected": true,
+    "UEFI_restore_status_flag_zero_mismatch_required": true,
+    "baseline_CCFG_reread_before_and_after": true,
+    "all_temporary_files_and_empty_directories_backed_up": true,
+    "symlinks_special_files_other_devices_rejected": true,
+    "backup_fsync_manifest_hash_os_sync_before_first_deletion": true,
+    "original_boot_files_verified_before_and_after": true,
+    "each_deleted_tree_checked_against_backup_immediately_before": true,
+    "exception_stops_further_cleanup_and_preserves_backup": true
+  },
+  "limitations": [
+    "If EFI deletion succeeds but its follow-up verification fails, the mutations array has not yet recorded that completed operation; boot_before, full backup and failure reason survive. Operator must inspect current EFI state before retrying.",
+    "Hardware restore is assumed to have occurred earlier and is checked using UEFI readback artifacts plus CCFG; this script does not read fresh SPI or reflash firmware.",
+    "Review did not execute hostname checks, EFI commands, PCI reads or deletion."
+  ]
+}

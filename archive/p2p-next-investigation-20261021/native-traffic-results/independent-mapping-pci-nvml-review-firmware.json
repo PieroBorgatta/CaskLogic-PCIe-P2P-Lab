@@ -1,0 +1,2133 @@
+{
+  "status": "PASS_INDEPENDENT_AUDIT_DATA_FAILURE_PERSISTS",
+  "program_rc": 6,
+  "collected_sha256_verified": {
+    "IDENTITY.txt": "636acc84b4d433e5c684aede02928b37883080439ee91549bbaadaaa0ea0a2d1",
+    "files.json": "2022296ae0accb757ba6fa30dbc9d4e5ce179ea28fd5d04a178b02b00b072e7d",
+    "build-manifest.json": "3378cc6da22ca66fe6e3d3381c241e5c1e92de69fd024e7f74f82ef85f48bc99",
+    "result.log": "fba2c012e7364be8ef35002823e05158afa63818c53978e8acab688bf459a6e6",
+    "kernel.log": "d1f8ce2d9b9ff35a09c1260203ee9b3f97626d59bde7f9c7e7020cfd9ae2565d",
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_01.0.config": "daa7147914d45cb4d069a6171cf0ea7b98403cab12c0fe428f8a455e48d1afda",
+    "before-driver/0000_00_07.0.config": "18f24528a02ca91e20ce6e8afae602e4e28c51cff38a262b8a5be7c9df0e30b7",
+    "before-driver/0000_00_07.2.config": "40a0327d87493016d948b7a75bbcbf4bf76e5848535bd8b4dc1908362887cf49",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/iomem.txt": "ff6ba17252f95ee5e03f682a24e0511069dfde80c30921c109db4853338556f5",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7"
+  },
+  "NVML_qualified_windows_recomputed": 0,
+  "NVML_raw_samples_recomputed": 280,
+  "NVML_stats_recomputed": [
+    {
+      "phase": 1,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 414.5,
+      "min_kBps": 341,
+      "max_kBps": 488
+    },
+    {
+      "phase": 1,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 1,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 365.5,
+      "min_kBps": 341,
+      "max_kBps": 390
+    },
+    {
+      "phase": 1,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 1,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "TX",
+      "count": 11,
+      "invalid": 0,
+      "mean_kBps": 1597753.3636363635,
+      "min_kBps": 1359130,
+      "max_kBps": 1739990
+    },
+    {
+      "phase": 1,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "RX",
+      "count": 10,
+      "invalid": 0,
+      "mean_kBps": 575.7,
+      "min_kBps": 439,
+      "max_kBps": 927
+    },
+    {
+      "phase": 1,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "TX",
+      "count": 10,
+      "invalid": 0,
+      "mean_kBps": 414.5,
+      "min_kBps": 390,
+      "max_kBps": 439
+    },
+    {
+      "phase": 1,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "RX",
+      "count": 11,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 1,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "TX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 439,
+      "min_kBps": 439,
+      "max_kBps": 439
+    },
+    {
+      "phase": 1,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 1,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 1,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 2,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 414.5,
+      "min_kBps": 390,
+      "max_kBps": 439
+    },
+    {
+      "phase": 2,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 2,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 365.5,
+      "min_kBps": 341,
+      "max_kBps": 390
+    },
+    {
+      "phase": 2,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 2,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "TX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 1140722.142857143,
+      "min_kBps": 1078515,
+      "max_kBps": 1155126
+    },
+    {
+      "phase": 2,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "RX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 431.7857142857143,
+      "min_kBps": 244,
+      "max_kBps": 683
+    },
+    {
+      "phase": 2,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "TX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 400.5,
+      "min_kBps": 390,
+      "max_kBps": 488
+    },
+    {
+      "phase": 2,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "RX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 2,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "TX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 439,
+      "min_kBps": 439,
+      "max_kBps": 439
+    },
+    {
+      "phase": 2,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 2,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 2,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 316.5,
+      "min_kBps": 292,
+      "max_kBps": 341
+    },
+    {
+      "phase": 3,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 3,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 3,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 414.5,
+      "min_kBps": 390,
+      "max_kBps": 439
+    },
+    {
+      "phase": 3,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 3,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "TX",
+      "count": 13,
+      "invalid": 0,
+      "mean_kBps": 408.84615384615387,
+      "min_kBps": 390,
+      "max_kBps": 439
+    },
+    {
+      "phase": 3,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "RX",
+      "count": 12,
+      "invalid": 0,
+      "mean_kBps": 4107393,
+      "min_kBps": 3981250,
+      "max_kBps": 4320361
+    },
+    {
+      "phase": 3,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "TX",
+      "count": 12,
+      "invalid": 0,
+      "mean_kBps": 4553889.583333333,
+      "min_kBps": 4172412,
+      "max_kBps": 4797900
+    },
+    {
+      "phase": 3,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "RX",
+      "count": 12,
+      "invalid": 0,
+      "mean_kBps": 943.4166666666666,
+      "min_kBps": 830,
+      "max_kBps": 1074
+    },
+    {
+      "phase": 3,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "TX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 439,
+      "min_kBps": 439,
+      "max_kBps": 439
+    },
+    {
+      "phase": 3,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 3,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 365.5,
+      "min_kBps": 341,
+      "max_kBps": 390
+    },
+    {
+      "phase": 3,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 4,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 4,
+      "stage": "BASELINE_QUIET",
+      "device": 0,
+      "counter": "RX",
+      "count": 1,
+      "invalid": 0,
+      "mean_kBps": 292,
+      "min_kBps": 292,
+      "max_kBps": 292
+    },
+    {
+      "phase": 4,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 4,
+      "stage": "BASELINE_QUIET",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 268,
+      "min_kBps": 244,
+      "max_kBps": 292
+    },
+    {
+      "phase": 4,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "TX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 425,
+      "min_kBps": 390,
+      "max_kBps": 439
+    },
+    {
+      "phase": 4,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 0,
+      "counter": "RX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 4133558.4285714286,
+      "min_kBps": 4003125,
+      "max_kBps": 4217675
+    },
+    {
+      "phase": 4,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "TX",
+      "count": 14,
+      "invalid": 0,
+      "mean_kBps": 4085441.6428571427,
+      "min_kBps": 3852441,
+      "max_kBps": 4167919
+    },
+    {
+      "phase": 4,
+      "stage": "ACTIVE_INTERIOR",
+      "device": 1,
+      "counter": "RX",
+      "count": 13,
+      "invalid": 0,
+      "mean_kBps": 975.8461538461538,
+      "min_kBps": 878,
+      "max_kBps": 1171
+    },
+    {
+      "phase": 4,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 390,
+      "min_kBps": 390,
+      "max_kBps": 390
+    },
+    {
+      "phase": 4,
+      "stage": "TAIL",
+      "device": 0,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 316.5,
+      "min_kBps": 292,
+      "max_kBps": 341
+    },
+    {
+      "phase": 4,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "TX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 341,
+      "min_kBps": 341,
+      "max_kBps": 341
+    },
+    {
+      "phase": 4,
+      "stage": "TAIL",
+      "device": 1,
+      "counter": "RX",
+      "count": 2,
+      "invalid": 0,
+      "mean_kBps": 244,
+      "min_kBps": 244,
+      "max_kBps": 244
+    }
+  ],
+  "NVML_every_return_code_success": true,
+  "windows": [
+    {
+      "line": 837,
+      "id": "1",
+      "engine": "SM",
+      "s": "0",
+      "d": "1",
+      "begin_ns": "12775290035",
+      "end_ns": "14019570556",
+      "sampler_joined_ns": "14164955938",
+      "duration_ns": "1244280521",
+      "batches": "22",
+      "submitted_payload_bytes": "1476395008",
+      "budget_exhausted": "0",
+      "no_host_payload_ops_during_window": "1"
+    },
+    {
+      "line": 942,
+      "id": "2",
+      "engine": "CUDA_COPY_REQUEST",
+      "s": "0",
+      "d": "1",
+      "begin_ns": "14382781908",
+      "end_ns": "15640119585",
+      "sampler_joined_ns": "15792620822",
+      "duration_ns": "1257337677",
+      "batches": "19",
+      "submitted_payload_bytes": "1275068416",
+      "budget_exhausted": "0",
+      "no_host_payload_ops_during_window": "1"
+    },
+    {
+      "line": 1063,
+      "id": "3",
+      "engine": "SM",
+      "s": "1",
+      "d": "0",
+      "begin_ns": "16010618788",
+      "end_ns": "17220378974",
+      "sampler_joined_ns": "17361102861",
+      "duration_ns": "1209760186",
+      "batches": "74",
+      "submitted_payload_bytes": "4966055936",
+      "budget_exhausted": "0",
+      "no_host_payload_ops_during_window": "1"
+    },
+    {
+      "line": 1176,
+      "id": "4",
+      "engine": "CUDA_COPY_REQUEST",
+      "s": "1",
+      "d": "0",
+      "begin_ns": "17578642059",
+      "end_ns": "18790716775",
+      "sampler_joined_ns": "18969692655",
+      "duration_ns": "1212074716",
+      "batches": "66",
+      "submitted_payload_bytes": "4429185024",
+      "budget_exhausted": "0",
+      "no_host_payload_ops_during_window": "1"
+    }
+  ],
+  "data_results": [
+    {
+      "line": 919,
+      "id": "1",
+      "engine": "SM",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "sampling_valid": "0",
+      "duration_valid": "1",
+      "ce_observed": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1040,
+      "id": "2",
+      "engine": "CUDA_COPY_REQUEST",
+      "s": "0",
+      "d": "1",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "262144",
+      "valid": "0",
+      "sampling_valid": "0",
+      "duration_valid": "1",
+      "ce_observed": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1153,
+      "id": "3",
+      "engine": "SM",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "sampling_valid": "0",
+      "duration_valid": "1",
+      "ce_observed": "0",
+      "direct_route_proven": "0"
+    },
+    {
+      "line": 1274,
+      "id": "4",
+      "engine": "CUDA_COPY_REQUEST",
+      "s": "1",
+      "d": "0",
+      "bytes": "1048576",
+      "checked_words": "262144",
+      "mismatches": "0",
+      "valid": "1",
+      "sampling_valid": "0",
+      "duration_valid": "1",
+      "ce_observed": "0",
+      "direct_route_proven": "0"
+    }
+  ],
+  "owner_checks_passed": 8,
+  "mapping_chains": [
+    {
+      "allocation": {
+        "line": 806,
+        "nonce": "7b479cfb-dd23-40d4-82e2-3e643b9dcf14",
+        "owner": "0",
+        "role": "receive",
+        "va": "7de7f1600000",
+        "handle": "5e4885d77ed0",
+        "allocation_bytes": "8388608",
+        "granularity": "2097152"
+      },
+      "window": {
+        "index": 334,
+        "line": 1409,
+        "event": "WINDOW_CREATE",
+        "kernel_time": 12.571627,
+        "fields": {
+          "id": "1",
+          "mem": "caf0013d",
+          "subdev": "caf00037",
+          "src": "0",
+          "dst": "1",
+          "src_gpu_id": "600",
+          "dst_gpu_id": "100",
+          "desc": "FFFF89C2AD807008",
+          "iovas": "600",
+          "size": "800000",
+          "bar1": "4000000000",
+          "bar1_size": "400000000",
+          "bar1_off": "400000",
+          "window_phys": "4000400000",
+          "dma": "4000400000",
+          "ranges": "1"
+        },
+        "raw": "[   12.571627] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=1 mem=caf0013d subdev=caf00037 src=0 dst=1 src_gpu_id=600 dst_gpu_id=100 desc=FFFF89C2AD807008 iovas=600 size=800000 bar1=4000000000 bar1_size=400000000 bar1_off=400000 window_phys=4000400000 dma=4000400000 ranges=1",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_pte": {
+        "index": 336,
+        "line": 1411,
+        "event": "RM_PTE",
+        "kernel_time": 12.57163,
+        "fields": {
+          "client": "c1d00001",
+          "src": "0",
+          "dst": "1",
+          "desc": "FFFF89C2AD807008",
+          "offset": "0",
+          "page": "200000",
+          "pte_count": "4",
+          "entry": "16",
+          "fmt": "2",
+          "aperture": "3",
+          "valid": "1",
+          "readonly": "0",
+          "atomic": "1",
+          "volatile": "1",
+          "dynamic": "1",
+          "dma_base": "4000400000",
+          "phys_input": "4000400000",
+          "decoded": "4000400000",
+          "addr_shift": "12",
+          "raw0": "060000040004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   12.571630] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=0 dst=1 desc=FFFF89C2AD807008 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4000400000 phys_input=4000400000 decoded=4000400000 addr_shift=12 raw0=060000040004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_pte": {
+        "index": 338,
+        "line": 1413,
+        "event": "UVM_PTE",
+        "kernel_time": 12.571633,
+        "fields": {
+          "gpu": "ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002",
+          "mem": "caf0013d",
+          "gpu_va": "7de7f1600000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "320d8b0",
+          "last": "1",
+          "raw0": "060000040004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   12.571633] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 9: GPU-00000000-0000-0000-0000-000000000002 GI-00000000-0000-0000-0000-000000000002 mem=caf0013d gpu_va=7de7f1600000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=320d8b0 last=1 raw0=060000040004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "owner_bdf": "0000:01:00.0",
+      "requester_bdf": "0000:06:00.0",
+      "begin_line": 1402,
+      "end_line": 1416
+    },
+    {
+      "allocation": {
+        "line": 816,
+        "nonce": "96b209de-9d66-4708-a8ec-d5ea5a2e42d3",
+        "owner": "1",
+        "role": "receive",
+        "va": "402800000",
+        "handle": "5e4885d7bf30",
+        "allocation_bytes": "8388608",
+        "granularity": "2097152"
+      },
+      "window": {
+        "index": 347,
+        "line": 1426,
+        "event": "WINDOW_CREATE",
+        "kernel_time": 12.571793,
+        "fields": {
+          "id": "2",
+          "mem": "caf0013f",
+          "subdev": "caf00001",
+          "src": "1",
+          "dst": "0",
+          "src_gpu_id": "100",
+          "dst_gpu_id": "600",
+          "desc": "FFFF89C2AD819A08",
+          "iovas": "100",
+          "size": "800000",
+          "bar1": "4600000000",
+          "bar1_size": "10000000",
+          "bar1_off": "400000",
+          "window_phys": "4600400000",
+          "dma": "4600400000",
+          "ranges": "1"
+        },
+        "raw": "[   12.571793] NVRM: _nvGpuOpsDynBar1Create: P2PTRC WINDOW_CREATE id=2 mem=caf0013f subdev=caf00001 src=1 dst=0 src_gpu_id=100 dst_gpu_id=600 desc=FFFF89C2AD819A08 iovas=100 size=800000 bar1=4600000000 bar1_size=10000000 bar1_off=400000 window_phys=4600400000 dma=4600400000 ranges=1",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "rm_pte": {
+        "index": 349,
+        "line": 1428,
+        "event": "RM_PTE",
+        "kernel_time": 12.571796,
+        "fields": {
+          "client": "c1d00001",
+          "src": "1",
+          "dst": "0",
+          "desc": "FFFF89C2AD819A08",
+          "offset": "0",
+          "page": "200000",
+          "pte_count": "4",
+          "entry": "16",
+          "fmt": "2",
+          "aperture": "3",
+          "valid": "1",
+          "readonly": "0",
+          "atomic": "1",
+          "volatile": "1",
+          "dynamic": "1",
+          "dma_base": "4600400000",
+          "phys_input": "4600400000",
+          "decoded": "4600400000",
+          "addr_shift": "12",
+          "raw0": "060000046004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   12.571796] NVRM: nvGpuOpsBuildExternalAllocPtes: P2PTRC RM_PTE client=c1d00001 src=1 dst=0 desc=FFFF89C2AD819A08 offset=0 page=200000 pte_count=4 entry=16 fmt=2 aperture=3 valid=1 readonly=0 atomic=1 volatile=1 dynamic=1 dma_base=4600400000 phys_input=4600400000 decoded=4600400000 addr_shift=12 raw0=060000046004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "uvm_pte": {
+        "index": 351,
+        "line": 1430,
+        "event": "UVM_PTE",
+        "kernel_time": 12.571798,
+        "fields": {
+          "gpu": "ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001",
+          "mem": "caf0013f",
+          "gpu_va": "402800000",
+          "map_offset": "0",
+          "map_size": "800000",
+          "page": "200000",
+          "entry": "16",
+          "count": "4",
+          "table_ap": "UVM_APERTURE_VID",
+          "table_pa": "423c140",
+          "last": "1",
+          "raw0": "060000046004000f",
+          "raw1": "0000000000000000"
+        },
+        "raw": "[   12.571798] nvidia-uvm: P2PTRC UVM_PTE gpu=ID 1: GPU-00000000-0000-0000-0000-000000000001 GI-00000000-0000-0000-0000-000000000001 mem=caf0013f gpu_va=402800000 map_offset=0 map_size=800000 page=200000 entry=16 count=4 table_ap=UVM_APERTURE_VID table_pa=423c140 last=1 raw0=060000046004000f raw1=0000000000000000",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      "owner_bdf": "0000:06:00.0",
+      "requester_bdf": "0000:01:00.0",
+      "begin_line": 1423,
+      "end_line": 1437
+    }
+  ],
+  "mapping_checks": [
+    {
+      "check": "RM_dynamic_path",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411
+      ]
+    },
+    {
+      "check": "RM_valid_PTE",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411
+      ]
+    },
+    {
+      "check": "RM_writable_PTE",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411
+      ]
+    },
+    {
+      "check": "RM_decoded_equals_encoded_input",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411
+      ]
+    },
+    {
+      "check": "RM_input_equals_dma_plus_offset",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411
+      ]
+    },
+    {
+      "check": "window_phys_equals_BAR1_plus_offset",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1409
+      ]
+    },
+    {
+      "check": "RM_dma_equals_window_dma",
+      "actual": 274882101248,
+      "expected": 274882101248,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1409,
+        1411
+      ]
+    },
+    {
+      "check": "DMA_mapping_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1408
+      ]
+    },
+    {
+      "check": "DMA_input_range_within_live_BAR",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1408
+      ]
+    },
+    {
+      "check": "window_alive_at_PTE_build",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1409,
+        1411
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw0",
+      "actual": 432345581407698959,
+      "expected": 432345581407698959,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411,
+        1413
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw1",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411,
+        1413
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_entry",
+      "actual": 16,
+      "expected": 16,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411,
+        1413
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_page_size",
+      "actual": 2097152,
+      "expected": 2097152,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1411,
+        1413
+      ]
+    },
+    {
+      "check": "UVM_submission_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1414
+      ]
+    },
+    {
+      "check": "UVM_mapping_wait_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1415
+      ]
+    },
+    {
+      "check": "RM_matching_return_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1412
+      ]
+    },
+    {
+      "check": "RM_dynamic_path",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428
+      ]
+    },
+    {
+      "check": "RM_valid_PTE",
+      "actual": 1,
+      "expected": 1,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428
+      ]
+    },
+    {
+      "check": "RM_writable_PTE",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428
+      ]
+    },
+    {
+      "check": "RM_decoded_equals_encoded_input",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428
+      ]
+    },
+    {
+      "check": "RM_input_equals_dma_plus_offset",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428
+      ]
+    },
+    {
+      "check": "window_phys_equals_BAR1_plus_offset",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1426
+      ]
+    },
+    {
+      "check": "RM_dma_equals_window_dma",
+      "actual": 300651905024,
+      "expected": 300651905024,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1426,
+        1428
+      ]
+    },
+    {
+      "check": "DMA_mapping_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1425
+      ]
+    },
+    {
+      "check": "DMA_input_range_within_live_BAR",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1425
+      ]
+    },
+    {
+      "check": "window_alive_at_PTE_build",
+      "actual": true,
+      "expected": true,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1426,
+        1428
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw0",
+      "actual": 432345583018311695,
+      "expected": 432345583018311695,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428,
+        1430
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_raw1",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428,
+        1430
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_entry",
+      "actual": 16,
+      "expected": 16,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428,
+        1430
+      ]
+    },
+    {
+      "check": "UVM_equals_RM_page_size",
+      "actual": 2097152,
+      "expected": 2097152,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1428,
+        1430
+      ]
+    },
+    {
+      "check": "UVM_submission_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1431
+      ]
+    },
+    {
+      "check": "UVM_mapping_wait_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1432
+      ]
+    },
+    {
+      "check": "RM_matching_return_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1429
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1074
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1078
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1082
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1086
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1090
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1140
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1144
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1148
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1152
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1156
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1160
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1164
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1168
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1172
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1176
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1180
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1184
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1188
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1192
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1196
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1204
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1208
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1212
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1216
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1220
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1224
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1228
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1232
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1236
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1286
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1290
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1294
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1298
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1302
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1306
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1310
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1314
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1318
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1322
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1326
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1330
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1334
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1338
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1342
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1350
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1354
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1358
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1362
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1366
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1370
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1374
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1378
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1382
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1386
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1390
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1394
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1400
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1406
+      ]
+    },
+    {
+      "check": "RM_request_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1412
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1415
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1421
+      ]
+    },
+    {
+      "check": "RM_request_success",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1429
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1432
+      ]
+    },
+    {
+      "check": "UVM_existing_wait_completed",
+      "actual": 0,
+      "expected": 0,
+      "ok": true,
+      "required": true,
+      "evidence": [
+        1436
+      ]
+    }
+  ],
+  "page_alignment": [
+    {
+      "line": 1411,
+      "event_index": 336,
+      "field": "phys_input",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 1411,
+      "event_index": 336,
+      "field": "decoded",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 1411,
+      "event_index": 336,
+      "field": "dma_base",
+      "address": 274882101248,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 1428,
+      "event_index": 349,
+      "field": "phys_input",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 1428,
+      "event_index": 349,
+      "field": "decoded",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    },
+    {
+      "line": 1428,
+      "event_index": 349,
+      "field": "dma_base",
+      "address": 300651905024,
+      "page_size": 2097152,
+      "remainder": 0,
+      "aligned": true
+    }
+  ],
+  "pci_snapshot_count": 54,
+  "pci_changes": [],
+  "CCFG": {
+    "00:01.0": [
+      "04008077",
+      "04008077",
+      "04008077"
+    ],
+    "00:07.0": [
+      "0e009077",
+      "0e009077",
+      "0e009077"
+    ],
+    "00:07.2": [
+      "0e009077",
+      "0e009077",
+      "0e009077"
+    ]
+  },
+  "lifetime": {
+    "data_done": {
+      "line": 1451,
+      "kernel_time": 18.984774,
+      "phase": "data_done",
+      "monotonic": "18.978413440",
+      "s": "-1",
+      "d": "-1"
+    },
+    "frees": [
+      {
+        "line": 1452,
+        "kernel_time": 18.984775,
+        "phase": "allocation_free_begin",
+        "monotonic": "18.978414716",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 1453,
+        "kernel_time": 18.984856,
+        "phase": "allocation_free_done",
+        "monotonic": "18.978495418",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 1454,
+        "kernel_time": 18.984857,
+        "phase": "allocation_free_begin",
+        "monotonic": "18.978496851",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 1457,
+        "kernel_time": 18.985037,
+        "phase": "allocation_free_done",
+        "monotonic": "18.978675965",
+        "s": "0",
+        "d": "-1"
+      },
+      {
+        "line": 1458,
+        "kernel_time": 18.985048,
+        "phase": "allocation_free_begin",
+        "monotonic": "18.978682692",
+        "s": "1",
+        "d": "-1"
+      },
+      {
+        "line": 1459,
+        "kernel_time": 18.98508,
+        "phase": "allocation_free_done",
+        "monotonic": "18.978719315",
+        "s": "1",
+        "d": "-1"
+      },
+      {
+        "line": 1460,
+        "kernel_time": 18.985081,
+        "phase": "allocation_free_begin",
+        "monotonic": "18.978720574",
+        "s": "1",
+        "d": "-1"
+      },
+      {
+        "line": 1463,
+        "kernel_time": 18.985347,
+        "phase": "allocation_free_done",
+        "monotonic": "18.978986380",
+        "s": "1",
+        "d": "-1"
+      }
+    ],
+    "window_destroy_done": [
+      {
+        "index": 359,
+        "line": 1456,
+        "event": "WINDOW_DESTROY_DONE",
+        "kernel_time": 18.984896,
+        "fields": {
+          "id": "1",
+          "mem": "caf0013d"
+        },
+        "raw": "[   18.984896] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=1 mem=caf0013d",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "index": 361,
+        "line": 1462,
+        "event": "WINDOW_DESTROY_DONE",
+        "kernel_time": 18.985318,
+        "fields": {
+          "id": "2",
+          "mem": "caf0013f"
+        },
+        "raw": "[   18.985318] NVRM: _nvGpuOpsDynBar1Destroy: P2PTRC WINDOW_DESTROY_DONE id=2 mem=caf0013f",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      }
+    ],
+    "context_exit_begin": {
+      "line": 1465,
+      "kernel_time": 18.985352,
+      "phase": "context_exit_begin",
+      "monotonic": "18.978991693",
+      "s": "-1",
+      "d": "-1"
+    },
+    "kernel_errors": [
+      {
+        "line": 1466,
+        "kernel_time": 19.347096,
+        "raw": "[   19.347096] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x600",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1467,
+        "kernel_time": 19.361555,
+        "raw": "[   19.361555] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1468,
+        "kernel_time": 19.361559,
+        "raw": "[   19.361559] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1469,
+        "kernel_time": 19.361604,
+        "raw": "[   19.361604] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1470,
+        "kernel_time": 19.361606,
+        "raw": "[   19.361606] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1471,
+        "kernel_time": 19.362799,
+        "raw": "[   19.362799] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1472,
+        "kernel_time": 19.362801,
+        "raw": "[   19.362801] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1473,
+        "kernel_time": 19.362817,
+        "raw": "[   19.362817] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      },
+      {
+        "line": 1474,
+        "kernel_time": 19.362818,
+        "raw": "[   19.362818] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+        "monotonic_estimate": null,
+        "phase_estimate": null
+      }
+    ]
+  },
+  "limits": [
+    "Qualifica NVML distinta dal confronto dei dati; se zero finestre qualificate non presentare un confronto baseline come validato.",
+    "Log PTE software, nessuna rilettura MMU hardware; contatori PCIe aggregati e non traccia TLP.",
+    "Nessuna certificazione CE in questa variante; nessuna localizzazione TCSS/ASMedia deducibile dalla sola NVML."
+  ],
+  "audit_source_sha256": "080bc5f13dbac6bcd07bd72b09179e9f9297cd241c0877d1835287c67cca4157"
+}

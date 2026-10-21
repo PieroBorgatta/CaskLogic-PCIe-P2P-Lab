@@ -1,0 +1,157 @@
+{
+  "status": "VERIFIED_CPU_BAR_writes_pass_both_P2P_unchanged",
+  "reviewer": "audit_firmware",
+  "hashes_verified": 17,
+  "source_hashes_match_build_manifest": true,
+  "collection_sha256": {
+    "files.json": "4d65376355a47cb96b4b86118a4fac2b3d5d32a080c0b17dcabe4262b3add03a",
+    "native-cpubar-rw-gpu-state.json": "5d202bcb47da040f98ddaba44c9c645e35d1078f88ef7b2bf55c8a8100ee5003",
+    "build-manifest.json": "4746a22972fd98d0bb961fb6144eff3b06c5e650411ac128a6ec89dcd8cb24b8",
+    "result.log": "adb9330979d98e453aac42ebe92be7f80978b9b161ff3c318bf16e47f031b3b4",
+    "kernel.log": "d68e68280f19133934fc3528c3244022b4cc5010b62579490250f971bbddc517",
+    "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+    "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+    "before-driver/0000_00_01.0.config": "daeae46c4e552c2bd8f325631968288cf139287756e5a5e0a78f2bf34bb62526",
+    "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+    "before-driver/0000_00_07.2.config": "4b0dbbd70c6ad1de50413e84e446a5dc9fdea41f273e52f071ba407d219feee1",
+    "before-driver/iomem.txt": "2e9fd1b5b90357891cb42cd2cd7698e03a95dbbe6c267db1c7ca44fa31af9e93",
+    "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7",
+    "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+    "before-driver/0000_00_07.0.config": "f2e1864a31d299550a597dfd07d9cb6db2e295146db8ef82146b4c787612ba5d",
+    "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+    "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+    "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25"
+  },
+  "patterns": [
+    {
+      "owner": "0",
+      "pattern": "1",
+      "expected": "37b95a61",
+      "cpu": "37b95a61",
+      "owner_d2h": "37b95a61",
+      "cpu_valid": "1",
+      "owner_valid": "1",
+      "valid": "1"
+    },
+    {
+      "owner": "0",
+      "pattern": "2",
+      "expected": "c846a59e",
+      "cpu": "c846a59e",
+      "owner_d2h": "c846a59e",
+      "cpu_valid": "1",
+      "owner_valid": "1",
+      "valid": "1"
+    },
+    {
+      "owner": "1",
+      "pattern": "1",
+      "expected": "36b85b60",
+      "cpu": "36b85b60",
+      "owner_d2h": "36b85b60",
+      "cpu_valid": "1",
+      "owner_valid": "1",
+      "valid": "1"
+    },
+    {
+      "owner": "1",
+      "pattern": "2",
+      "expected": "c947a49f",
+      "cpu": "c947a49f",
+      "owner_d2h": "c947a49f",
+      "cpu_valid": "1",
+      "owner_valid": "1",
+      "valid": "1"
+    }
+  ],
+  "restore": [
+    {
+      "owner": "0",
+      "writes_attempted": "1",
+      "attempted": "1",
+      "store_ok": "1",
+      "cpu_read_ok": "1",
+      "owner_read_ok": "1",
+      "previous": "a5a42468",
+      "cpu": "a5a42468",
+      "owner_d2h": "a5a42468",
+      "restored": "1",
+      "reason": "none"
+    },
+    {
+      "owner": "1",
+      "writes_attempted": "1",
+      "attempted": "1",
+      "store_ok": "1",
+      "cpu_read_ok": "1",
+      "owner_read_ok": "1",
+      "previous": "00000000",
+      "cpu": "00000000",
+      "owner_d2h": "00000000",
+      "restored": "1",
+      "reason": "none"
+    }
+  ],
+  "results": [
+    {
+      "owner": "0",
+      "gpu_va": "0x7f1b27400000",
+      "status": "PASS",
+      "writes_attempted": "1",
+      "patterns_completed": "2",
+      "restored": "1",
+      "access_fault": "0",
+      "identity_lost": "0",
+      "reason": "none",
+      "p2p_result_unchanged": "1"
+    },
+    {
+      "owner": "1",
+      "gpu_va": "0x7f1b27800000",
+      "status": "PASS",
+      "writes_attempted": "1",
+      "patterns_completed": "2",
+      "restored": "1",
+      "access_fault": "0",
+      "identity_lost": "0",
+      "reason": "none",
+      "p2p_result_unchanged": "1"
+    }
+  ],
+  "matched_target": [
+    {
+      "owner": "0",
+      "bdf": "0000:01:00.0",
+      "gpu_va": "0x7f1b27400000",
+      "window_id": "1",
+      "bar": "4000000000",
+      "offset": "400000",
+      "physical": "4000400000",
+      "bytes": "4",
+      "mapping": "O_RDWR_PROT_READ_WRITE",
+      "no_pci_configuration_writes": "1"
+    },
+    {
+      "owner": "1",
+      "bdf": "0000:06:00.0",
+      "gpu_va": "0x7f1b27800000",
+      "window_id": "3",
+      "bar": "4600000000",
+      "offset": "600000",
+      "physical": "4600600000",
+      "bytes": "4",
+      "mapping": "O_RDWR_PROT_READ_WRITE",
+      "no_pci_configuration_writes": "1"
+    }
+  ],
+  "sequence": "allP2P -> data_done -> CPU_RWboth -> cleanup",
+  "P2P": {
+    "total_failures": 3,
+    "A2000_to_Ada_write": true,
+    "Ada_to_A2000_write": false,
+    "both_reads": false
+  },
+  "interpretation": "The same live A2000 BAR1 target4600600000 accepts two CPUstore values and exposes them through owner D2H, while the earlier Ada peer write to it was not observed by CPU or owner. A universally unwritable target BAR1 mapping is excluded for this allocation. This does not certify the GPU requester TLP or identify the fabric/drop point.",
+  "cleanup_assertions_after_data": true,
+  "remote_operations": false
+}

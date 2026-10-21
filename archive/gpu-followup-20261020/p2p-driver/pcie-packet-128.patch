@@ -1,0 +1,14 @@
+--- a/src/nvidia/src/kernel/gpu/bif/arch/maxwell/kernel_bif_gm107.c
++++ b/src/nvidia/src/kernel/gpu/bif/arch/maxwell/kernel_bif_gm107.c
+@@ -262,7 +262,11 @@
+     regVal   = FLD_SET_DRF_NUM(_XVE, _DEVICE_CONTROL_STATUS,
+                                _ENABLE_NO_SNOOP, fieldVal, regVal);
+ 
++    // Diagnostic: common safe packet size across PEG and the USB4 tunnel.
++    regVal = FLD_SET_DRF(_XVE, _DEVICE_CONTROL_STATUS, _MAX_PAYLOAD_SIZE, _128B, regVal);
++    regVal = FLD_SET_DRF_NUM(_XVE, _DEVICE_CONTROL_STATUS, _MAX_READ_REQUEST_SIZE, 0, regVal);
+     GPU_REG_WR32(pGpu, DEVICE_BASE(NV_PCFG) + NV_XVE_DEVICE_CONTROL_STATUS, regVal);
++    NV_PRINTF(LEVEL_ERROR, "RISCRIVO_DIAG GPU%u MPS/MRRS clamped to 128B reg=0x%x\n",gpuGetInstance(pGpu),regVal);
+ 
+     return NV_OK;
+ }

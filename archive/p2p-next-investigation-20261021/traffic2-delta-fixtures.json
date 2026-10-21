@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Delta locale; nessun main, comando remoto, GPU o scrittura EFI.",
+  "fixtures": [
+    {
+      "name": "exact_reviewed_replacements_install_native_traffic2.py",
+      "passed": true
+    },
+    {
+      "name": "exact_reviewed_replacements_collect_cleanup_traffic2.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged_firmware_and_payload_guards",
+      "passed": true
+    },
+    {
+      "name": "separate_state_and_result_paths",
+      "passed": true
+    },
+    {
+      "name": "traffic2_exact_entry_accepted",
+      "passed": true
+    },
+    {
+      "name": "old_label_rejected",
+      "passed": true
+    },
+    {
+      "name": "old_loader_rejected",
+      "passed": true
+    },
+    {
+      "name": "old_initrd_rejected",
+      "passed": true
+    },
+    {
+      "name": "additional_kernel_argument_rejected",
+      "passed": true
+    },
+    {
+      "name": "log_validation_byte_semantics_unchanged",
+      "passed": true
+    },
+    {
+      "name": "actual_traffic_rc6_collected_without_solution_claim",
+      "passed": true
+    }
+  ],
+  "installer_sha256": "f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b",
+  "collector_sha256": "0b016c6b11fed086e3723e3b6e4fb0c273e10e6549ce38ebf7d05881e45e94d8"
+}

@@ -1,0 +1,662 @@
+{
+  "status": "ROOT_PHYS3_AUDIT_PASS",
+  "protocol_complete": true,
+  "p2p_solution_proven": false,
+  "p2p_comparisons": 4,
+  "p2p_failures": 2,
+  "physical_completions": 2,
+  "qualified_cpu_calibrations": 4,
+  "program_rc": 5,
+  "positive_counter_controls": [
+    {
+      "owner": 0,
+      "operation": "HOST_TO_DEVICE",
+      "counter": "RX",
+      "baseline_mean_kBps": 287.8695652173913,
+      "active_mean_kBps": 12025735.692307692,
+      "active_min_exceeds_baseline_max": true,
+      "data_valid": true
+    },
+    {
+      "owner": 0,
+      "operation": "DEVICE_TO_HOST",
+      "counter": "TX",
+      "baseline_mean_kBps": 398.5217391304348,
+      "active_mean_kBps": 12768191.42857143,
+      "active_min_exceeds_baseline_max": true,
+      "data_valid": true
+    },
+    {
+      "owner": 1,
+      "operation": "HOST_TO_DEVICE",
+      "counter": "RX",
+      "baseline_mean_kBps": 289.95652173913044,
+      "active_mean_kBps": 3121173.5,
+      "active_min_exceeds_baseline_max": true,
+      "data_valid": true
+    },
+    {
+      "owner": 1,
+      "operation": "DEVICE_TO_HOST",
+      "counter": "TX",
+      "baseline_mean_kBps": 381.8333333333333,
+      "active_mean_kBps": 4069781.785714286,
+      "active_min_exceeds_baseline_max": true,
+      "data_valid": true
+    }
+  ],
+  "protocol": {
+    "status": "INDEPENDENT_PHYSICAL_PROTOCOL_AUDIT_PASS",
+    "protocol_complete": true,
+    "p2p_solution_proven": false,
+    "p2p_failures": 2,
+    "physical_completed": 2,
+    "calibration_failures": 0,
+    "qualified_windows": 4,
+    "program_rc": 5,
+    "p2p": [
+      {
+        "id": 1,
+        "engine": "SM",
+        "source": 0,
+        "destination": 1,
+        "bytes": 4,
+        "data_valid": false
+      },
+      {
+        "id": 2,
+        "engine": "PHYSICAL_CE",
+        "source": 0,
+        "destination": 1,
+        "bytes": 4,
+        "data_valid": false,
+        "ioctl": {
+          "request": "13714589704",
+          "src": "74bafae00000",
+          "dst": "402800000",
+          "bytes": "4",
+          "rv": "0",
+          "errno": "0",
+          "rmStatus": "0",
+          "flags": "77",
+          "source_pa": "a000000",
+          "destination_pa": "4600400000",
+          "source_offset": "0",
+          "destination_offset": "0",
+          "source_handle": "caf0013b",
+          "destination_handle": "caf0013f",
+          "ce_class": "c7b5",
+          "launch": "4003186",
+          "source_mode": "0",
+          "destination_mode": "1",
+          "inputs_unchanged": "1",
+          "line": 871
+        }
+      },
+      {
+        "id": 3,
+        "engine": "SM",
+        "source": 1,
+        "destination": 0,
+        "bytes": 4,
+        "data_valid": true
+      },
+      {
+        "id": 4,
+        "engine": "PHYSICAL_CE",
+        "source": 1,
+        "destination": 0,
+        "bytes": 4,
+        "data_valid": true,
+        "ioctl": {
+          "request": "13714589706",
+          "src": "402000000",
+          "dst": "74bafb600000",
+          "bytes": "4",
+          "rv": "0",
+          "errno": "0",
+          "rmStatus": "0",
+          "flags": "77",
+          "source_pa": "9c00000",
+          "destination_pa": "4000400000",
+          "source_offset": "0",
+          "destination_offset": "0",
+          "source_handle": "caf0013e",
+          "destination_handle": "caf0013d",
+          "ce_class": "c7b5",
+          "launch": "4003186",
+          "source_mode": "0",
+          "destination_mode": "1",
+          "inputs_unchanged": "1",
+          "line": 935
+        }
+      }
+    ],
+    "calibrations": [
+      {
+        "id": 1,
+        "owner": 0,
+        "operation": "HOST_TO_DEVICE",
+        "positive_counter_expected": "RX",
+        "bytes_per_request": 1048576,
+        "submitted_host_payload_bytes": 13086228480,
+        "duration_ns": 1204042697,
+        "duration_qualified": true,
+        "data_valid": true,
+        "qualified": true,
+        "sample_count": 160,
+        "active_sample_count": 55,
+        "baseline_quiet_sample_count": 93,
+        "devices": {
+          "0": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 400.6521739130435,
+                "min_kBps": 341,
+                "max_kBps": 439
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 1328218.7857142857,
+                "min_kBps": 1260498,
+                "max_kBps": 1444726
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 390.0,
+                "min_kBps": 390,
+                "max_kBps": 390
+              },
+              "active_minus_baseline_mean_kBps": 1327818.1335403726
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 287.8695652173913,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 13,
+                "mean_kBps": 12025735.692307692,
+                "min_kBps": 11233544,
+                "max_kBps": 13019238
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 12025447.822742475
+            }
+          },
+          "1": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 24,
+                "mean_kBps": 396.125,
+                "min_kBps": 390,
+                "max_kBps": 439
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 400.5,
+                "min_kBps": 390,
+                "max_kBps": 439
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 414.5,
+                "min_kBps": 390,
+                "max_kBps": 439
+              },
+              "active_minus_baseline_mean_kBps": 4.375
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 292.04347826086956,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 299.0,
+                "min_kBps": 292,
+                "max_kBps": 341
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 6.956521739130437
+            }
+          }
+        }
+      },
+      {
+        "id": 2,
+        "owner": 0,
+        "operation": "DEVICE_TO_HOST",
+        "positive_counter_expected": "TX",
+        "bytes_per_request": 1048576,
+        "submitted_host_payload_bytes": 14025752576,
+        "duration_ns": 1201913716,
+        "duration_qualified": true,
+        "data_valid": true,
+        "qualified": true,
+        "sample_count": 160,
+        "active_sample_count": 55,
+        "baseline_quiet_sample_count": 93,
+        "devices": {
+          "0": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 398.5217391304348,
+                "min_kBps": 390,
+                "max_kBps": 488
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 12768191.42857143,
+                "min_kBps": 11494433,
+                "max_kBps": 13259228
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 390.0,
+                "min_kBps": 390,
+                "max_kBps": 390
+              },
+              "active_minus_baseline_mean_kBps": 12767792.906832298
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 296.2608695652174,
+                "min_kBps": 292,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 13,
+                "mean_kBps": 2305.6923076923076,
+                "min_kBps": 2001,
+                "max_kBps": 2490
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 2009.4314381270901
+            }
+          },
+          "1": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 24,
+                "mean_kBps": 394.0833333333333,
+                "min_kBps": 341,
+                "max_kBps": 439
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 397.0,
+                "min_kBps": 390,
+                "max_kBps": 439
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 390.0,
+                "min_kBps": 390,
+                "max_kBps": 390
+              },
+              "active_minus_baseline_mean_kBps": 2.9166666666666856
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 296.30434782608694,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": -4.304347826086939
+            }
+          }
+        }
+      },
+      {
+        "id": 3,
+        "owner": 1,
+        "operation": "HOST_TO_DEVICE",
+        "positive_counter_expected": "RX",
+        "bytes_per_request": 1048576,
+        "submitted_host_payload_bytes": 3355443200,
+        "duration_ns": 1209402745,
+        "duration_qualified": true,
+        "data_valid": true,
+        "qualified": true,
+        "sample_count": 160,
+        "active_sample_count": 55,
+        "baseline_quiet_sample_count": 93,
+        "devices": {
+          "0": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 411.2608695652174,
+                "min_kBps": 341,
+                "max_kBps": 585
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 421.42857142857144,
+                "min_kBps": 390,
+                "max_kBps": 585
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 439.0,
+                "min_kBps": 439,
+                "max_kBps": 439
+              },
+              "active_minus_baseline_mean_kBps": 10.167701863354068
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 289.95652173913044,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 13,
+                "mean_kBps": 299.61538461538464,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 9.658862876254204
+            }
+          },
+          "1": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 24,
+                "mean_kBps": 412.4583333333333,
+                "min_kBps": 390,
+                "max_kBps": 488
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 344000.5,
+                "min_kBps": 338378,
+                "max_kBps": 352343
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 390.0,
+                "min_kBps": 390,
+                "max_kBps": 390
+              },
+              "active_minus_baseline_mean_kBps": 343588.0416666667
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 289.95652173913044,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 3121173.5,
+                "min_kBps": 3039453,
+                "max_kBps": 3193652
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 3120883.5434782607
+            }
+          }
+        }
+      },
+      {
+        "id": 4,
+        "owner": 1,
+        "operation": "DEVICE_TO_HOST",
+        "positive_counter_expected": "TX",
+        "bytes_per_request": 1048576,
+        "submitted_host_payload_bytes": 4429185024,
+        "duration_ns": 1208433183,
+        "duration_qualified": true,
+        "data_valid": true,
+        "qualified": true,
+        "sample_count": 160,
+        "active_sample_count": 55,
+        "baseline_quiet_sample_count": 94,
+        "devices": {
+          "0": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 394.2608695652174,
+                "min_kBps": 341,
+                "max_kBps": 439
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 404.0,
+                "min_kBps": 390,
+                "max_kBps": 439
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 439.0,
+                "min_kBps": 439,
+                "max_kBps": 439
+              },
+              "active_minus_baseline_mean_kBps": 9.739130434782624
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 23,
+                "mean_kBps": 304.82608695652175,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 13,
+                "mean_kBps": 295.7692307692308,
+                "min_kBps": 292,
+                "max_kBps": 341
+              },
+              "tail": {
+                "count": 1,
+                "mean_kBps": 292.0,
+                "min_kBps": 292,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": -9.056856187290975
+            }
+          },
+          "1": {
+            "TX": {
+              "baseline_quiet": {
+                "count": 24,
+                "mean_kBps": 381.8333333333333,
+                "min_kBps": 341,
+                "max_kBps": 439
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 4069781.785714286,
+                "min_kBps": 3874316,
+                "max_kBps": 4161865
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 390.0,
+                "min_kBps": 390,
+                "max_kBps": 390
+              },
+              "active_minus_baseline_mean_kBps": 4069399.9523809524
+            },
+            "RX": {
+              "baseline_quiet": {
+                "count": 24,
+                "mean_kBps": 282.125,
+                "min_kBps": 244,
+                "max_kBps": 341
+              },
+              "active_interior": {
+                "count": 14,
+                "mean_kBps": 920.1428571428571,
+                "min_kBps": 830,
+                "max_kBps": 1171
+              },
+              "tail": {
+                "count": 2,
+                "mean_kBps": 268.0,
+                "min_kBps": 244,
+                "max_kBps": 292
+              },
+              "active_minus_baseline_mean_kBps": 638.0178571428571
+            }
+          }
+        }
+      }
+    ],
+    "limits": [
+      "Physical addresses and method outputs must also match the independently reviewed kernel log and owned mapping chain.",
+      "Physical COHERENT mode and privileged channel differ from the prior CUDA-copy path; translation is not the only isolated variable.",
+      "H2D/D2H controls are CPU/GPU calibration, not a P2P route or relay.",
+      "NVML aggregates endpoint traffic and cannot locate a TLP or demonstrate payload-specific routing.",
+      "Qualified sampling does not automatically prove counter sensitivity: inspect the positive-control delta."
+    ],
+    "result_sha256": "6c468cfd15e2c510a7c9653583b7331070c9857b05daf2303e8c360940f5e966"
+  },
+  "kernel": {
+    "status": "ROOT_PHYS3_KERNEL_AUDIT_PASS",
+    "collected_hashes_verified": 17,
+    "collected_sha256": {
+      "IDENTITY.txt": "98bd3da5abe7e21924704b907e44ba3f8affa23a999031f96a23858e67d90cc0",
+      "files.json": "64f7f0d8828518975e5da7a1980eb20b843e1173546a6343115691b6a65fff5c",
+      "build-manifest.json": "5e851a1d7781fc3985f8469919fdb38b512b6ab31cb1d00724ab599fbcd2547a",
+      "result.log": "6c468cfd15e2c510a7c9653583b7331070c9857b05daf2303e8c360940f5e966",
+      "kernel.log": "1fbb0bb8217b066c234697aa0f490752c4536221159961b1dbc98427635bed94",
+      "before-driver/0000_00_00.0.config": "72bc2f3d24a55d43a986bff4b852e2e07a4e4ddba27027bd0636661492a4a5fd",
+      "before-driver/0000_00_01.0.config": "d77f2a312317ece98e48e009986cfce17d26662e46b55e2afb49da7cafb6266c",
+      "before-driver/0000_00_07.0.config": "27b4ce120fc13e7949d2915ddb10350cba54fb8b6a65510beef55e65c7e60683",
+      "before-driver/0000_00_07.2.config": "40a0327d87493016d948b7a75bbcbf4bf76e5848535bd8b4dc1908362887cf49",
+      "before-driver/0000_04_00.0.config": "48822787587f68eb88ccb8d044279f8ab6e337eac782b2c030620a65774b614f",
+      "before-driver/0000_05_00.0.config": "4eee5287f7335583bcfd0f63835dc410e5fbf84fc560f5977dfc6f4f957dddcc",
+      "before-driver/0000_01_00.0.config": "de86c2ec60306228f4e0083859ba615dbc1ceb1045b2a45df19250f234b120a3",
+      "before-driver/0000_01_00.1.config": "0516c37d0bfa265adf39eae8404b14f458f7fb7f479a30d0745a99817c603b42",
+      "before-driver/0000_06_00.0.config": "89efa159ab1a05d2f35fe65bda85f186a6ed7baa54d1274c7591857651f8dd25",
+      "before-driver/0000_06_00.1.config": "c4fba28510f5960fd4b65d32a704e6aabedc16de0f782ef3cc82ca1a6b3c0150",
+      "before-driver/iomem.txt": "6e0e61c66a741ba32ef3a043415934ba3ca6d0b20605f3ffb518788201384f23",
+      "before-driver/ioports.txt": "1d10605ae9a024d24a44d194a908d4e3898beba4f65b11355666565bbbb053b7"
+    },
+    "requests": [
+      {
+        "request": "13714589704",
+        "source": 0,
+        "destination": 1,
+        "source_va": "74bafae00000",
+        "destination_va": "402800000",
+        "source_pa": "a000000",
+        "destination_pa": "4600400000",
+        "window_id": "2",
+        "class": "c7b5",
+        "launch": "4003186",
+        "source_mode": 0,
+        "destination_mode": 1,
+        "guards": "ffff",
+        "kind": 6,
+        "mapping_type_recorded": 1,
+        "query_mapping_type": 2,
+        "completed": true,
+        "kernel_methods_line": 1489,
+        "kernel_return_line": 1491
+      },
+      {
+        "request": "13714589706",
+        "source": 1,
+        "destination": 0,
+        "source_va": "402000000",
+        "destination_va": "74bafb600000",
+        "source_pa": "9c00000",
+        "destination_pa": "4000400000",
+        "window_id": "1",
+        "class": "c7b5",
+        "launch": "4003186",
+        "source_mode": 0,
+        "destination_mode": 1,
+        "guards": "ffff",
+        "kind": 6,
+        "mapping_type_recorded": 1,
+        "query_mapping_type": 2,
+        "completed": true,
+        "kernel_methods_line": 1522,
+        "kernel_return_line": 1524
+      }
+    ],
+    "pci_snapshots": 102,
+    "pci_deltas": [],
+    "rma_new": false,
+    "aer_new": false,
+    "kind6_observed": true,
+    "recorded_mapping_type": 1,
+    "data_done_kernel_s": 27.314954,
+    "context_exit_kernel_s": 27.315855,
+    "windows_destroyed": 2,
+    "cleanup_assertions": 8,
+    "xid_count": 0,
+    "first_assert_after_context_exit_ms": 372.2770000000004,
+    "leftovers_after_context_exit_ms": [
+      357.19600000000185
+    ],
+    "raw_inputs_modified": false
+  },
+  "input_sha256": {
+    "result.log": "6c468cfd15e2c510a7c9653583b7331070c9857b05daf2303e8c360940f5e966",
+    "kernel.log": "1fbb0bb8217b066c234697aa0f490752c4536221159961b1dbc98427635bed94",
+    "verified-protocol-root.json": "f110ce47456cfd18b1ac78f11543d3618680d584bd898335678613821959f351",
+    "verified-kernel-root.json": "e1ac7c79e63932198752333fc36affb9504dc4ca9b73bd4dfdf2b7b8041e7e83"
+  },
+  "limits": [
+    "Four-byte physical PUSH diagnostic; not an application workload or bandwidth result.",
+    "Neither physical destination mode1 nor mode2 fixes forward delivery.",
+    "NVML positive controls validate counter sensitivity to host traffic, not packet-level P2P routing.",
+    "No TLP capture; the exact failing component is not established.",
+    "Known IOVAS assertions occur after context exit, not during comparisons."
+  ]
+}

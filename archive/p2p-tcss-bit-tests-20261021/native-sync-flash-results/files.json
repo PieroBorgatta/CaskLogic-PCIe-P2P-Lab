@@ -1,0 +1,12 @@
+{
+  "CANDIDATE.bin": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+  "CURRENT.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "Fpt.efi": "d3747b061cf185f9883562a0b2ee890079872541af4f43f2caa074c2fb256a05",
+  "ORIGINAL.bin": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "RegionPost.efi": "d4614153c855c038a7a39eda8f7fcea26168a0d54bdcc5e4afcdb0a1c5ef2ca4",
+  "RegionPre.efi": "e796d7f90e10c55f0b916d4372369b5d670f8c3ede77219421ea58ad78b634d5",
+  "RegionRestore.efi": "9976cf225cac6ba9312504d62e0313244c6578052b2a6aaf1907719b0f5564dd",
+  "Shell.efi": "24dcc034bf6a5158f43b23b71a16acbfdcf1597de55aa309f7f6ac5af90666e6",
+  "startup-restore.nsh": "e976da9d03cf076eb20e92bde7517a4941f3363370132bfc50bf2d66d2c0f309",
+  "startup.nsh": "31a58663e33e8f2cd5180bbcbb981b5f800e3bcd3976127bada1d23361fa5439"
+}

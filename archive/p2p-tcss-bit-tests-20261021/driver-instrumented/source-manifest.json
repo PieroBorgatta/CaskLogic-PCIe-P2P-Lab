@@ -1,0 +1,39 @@
+{
+  "archive_sha256": "1174b28565fe8c0dff534a2588f4becd5e12c03465a70f347650a0d0fc9f23bc",
+  "stock_subset": {
+    "src/nvidia/generated/g_kern_bus_nvoc.c": "a033f0a047a96a9dc7a1476c22b6c2f5f9c7a45f3adeb6bebf83b478aef9fc26",
+    "src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c": "e34e90e32f01e0b8ea46c5ffd72d8087675f7ff963db1347ba00bfa1585aa844",
+    "src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c": "cb0c82c8a2aa3f7fb186cf078cc542eb7b15a684b27754aef460cb888383c3fb",
+    "src/nvidia/src/kernel/gpu/bus/p2p_api.c": "61ab62fea9b3af9d4e56fdde35d819e46faca8f8e2d89a48d99f6141cbb7d7b1",
+    "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c": "2f20858c33c165820f4bddd72174b4a7a57248a259b413db588f9f8927384512",
+    "kernel-open/nvidia/nv-dma.c": "e1c8a4d470a7c405e3622aad1eae76110da62e900c26768ba583f0b23685f084",
+    "kernel-open/nvidia-uvm/uvm_map_external.c": "90de5bb57f41ce3f4c7d1316b8c8541e87dd3f23457aef81f9241273c86ad409"
+  },
+  "baseline_subset": {
+    "src/nvidia/generated/g_kern_bus_nvoc.c": "457ee64033a8e85c36911293ea03b16051250a0562dc31e73d7a0e5b1abb0918",
+    "src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c": "5ae2f1d25a0a583227a26da74660948727f33640b3644ec580d590cb27b24a8a",
+    "src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c": "fc3919c27e1e34418a46e6792eb62b313ae2e0142018fc71277a8a70c98f456d",
+    "src/nvidia/src/kernel/gpu/bus/p2p_api.c": "a5012095fd4acb995dac10a590ad62e32874f361f3013e7fc048d4e3417325a3",
+    "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c": "b459cc20ea2931f6f621fe96f6fbdd6b2d995d44c5778b4c390dbe56222c35a8",
+    "kernel-open/nvidia/nv-dma.c": "e1c8a4d470a7c405e3622aad1eae76110da62e900c26768ba583f0b23685f084",
+    "kernel-open/nvidia-uvm/uvm_map_external.c": "90de5bb57f41ce3f4c7d1316b8c8541e87dd3f23457aef81f9241273c86ad409"
+  },
+  "instrumented_subset": {
+    "src/nvidia/generated/g_kern_bus_nvoc.c": "457ee64033a8e85c36911293ea03b16051250a0562dc31e73d7a0e5b1abb0918",
+    "src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c": "5ae2f1d25a0a583227a26da74660948727f33640b3644ec580d590cb27b24a8a",
+    "src/nvidia/src/kernel/gpu/bus/arch/hopper/kern_bus_gh100.c": "fc3919c27e1e34418a46e6792eb62b313ae2e0142018fc71277a8a70c98f456d",
+    "src/nvidia/src/kernel/gpu/bus/p2p_api.c": "a5012095fd4acb995dac10a590ad62e32874f361f3013e7fc048d4e3417325a3",
+    "src/nvidia/src/kernel/rmapi/nv_gpu_ops.c": "6b264b23b02fccd94a5c21fda80a66897d043202a695a4c269e89f71137cf141",
+    "kernel-open/nvidia/nv-dma.c": "b72adf8d7460f00eac4b670db45818ef39d1534e58ace865e6043030f84f3e17",
+    "kernel-open/nvidia-uvm/uvm_map_external.c": "05a46857c0c33d402cd9327ef04a174c313ca78d17fb161c7a5cf675a46f65d5"
+  },
+  "patches": {
+    "bar1-minimal.patch": "f32767c21475d1ec39ea0a63c58d2b4b12ba0aa624ac13a797558cb505339fe7",
+    "bar1-dynamic.patch": "6afa9977c1b9a06c9abb4e5d7f4f852e8a089a7039b2ed66238fb3c61a2f3eab",
+    "pte-logging.patch": "9e637f4964b8ae768f80aff4fbe18fe537871e786f7ef0946d978de067e26fe5"
+  },
+  "validation": "Authenticated complete NVIDIA archive SHA verified locally; all seven stock preimages match exactly; minimal + dynamic + logging patches applied without fuzz to a fresh complete-tree extraction and all resulting file hashes matched. CPU compilation is not yet performed.",
+  "historical_binary_sha256": "41a3025b63192242bda4f9eb692d8a000fc85850d009c45f679f9ef46f9bef80",
+  "bit_identical_rebuild_claimed": false,
+  "archive_root": "NVIDIA-open-gpu-kernel-modules-19f3b34"
+}

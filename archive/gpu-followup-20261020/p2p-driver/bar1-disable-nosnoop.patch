@@ -1,0 +1,14 @@
+--- a/src/nvidia/src/kernel/gpu/bif/kernel_bif.c
++++ b/src/nvidia/src/kernel/gpu/bif/kernel_bif.c
+@@ -881,8 +881,9 @@
+     if (!pCl->getProperty(pCl, PDB_PROP_CL_NOSNOOP_NOT_CAPABLE) &&
+         !pCl->getProperty(pCl, PDB_PROP_CL_ROOTPORT_NEEDS_NOSNOOP_WAR))
+     {
+-        // Bug 393398 - Re-enable DEVICE_CONTROL_STATUS_ENABLE_NO_SNOOP
+-        kbifEnableNoSnoop_HAL(pGpu, pKernelBif, NV_TRUE);
++        // Diagnostic for this host: issue PCIe requests without No Snoop.
++        // Avoids non-snooped MMIO cycles on Intel client root complexes.
++        kbifEnableNoSnoop_HAL(pGpu, pKernelBif, NV_FALSE);
+     }
+     else
+     {

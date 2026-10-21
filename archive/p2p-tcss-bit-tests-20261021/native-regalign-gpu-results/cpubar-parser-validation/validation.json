@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "stdout": "CPUBAR_PARSER_TESTS_PASS cases=425 hardware_access=0 real_fragments=4\n",
+  "hardware_access": false,
+  "markers": "synthetic offline fixtures, not runtime evidence",
+  "source_log_sha256": "564d40d8f3bcdefb06d6efdefa6d019569d23e508c8298fff2dc80a850fc4164",
+  "runtime_header_sha256": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+  "runtime_source_sha256": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30"
+}

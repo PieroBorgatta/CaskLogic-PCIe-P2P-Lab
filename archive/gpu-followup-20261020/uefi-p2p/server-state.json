@@ -1,0 +1,8 @@
+{
+  "epoch": 1792529466.699706,
+  "entry": "0002",
+  "boot_order_before": "0000,0001",
+  "path": "/boot/efi/EFI/CaskLogicP2P",
+  "stage": "read_probe",
+  "bios_setting_writes": false
+}

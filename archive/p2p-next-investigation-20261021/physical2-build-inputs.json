@@ -1,0 +1,24 @@
+{
+  "status": "reviewed_for_build",
+  "files": {
+    "init-physical2.sh": "d7b0e985ee0db9b9d6548ce62db209b9f06e5270004a43de4fbecddc56944faf",
+    "build_physical2_package.py": "797dac08976b4e480f028643055d72aeb5ee985a5f58f9e671e603f8972e89bc",
+    "verify_physical2_package.py": "f473598dac854cdfa2956858cd7d2cbaedb50e9c46ae15e127b695b62b1b9eec",
+    "driver-physical-ce-build-03/build-manifest.json": "9746d74f09d74796ed10b25b9678078163fec64d3f4a00d4c7ee755f29bf6935",
+    "driver-physical-ce-build-03/modules/nvidia-uvm.ko": "83b6342f0ef44c0d97dd6fad0310e99438718a8450bf40a29939c250604e8bce",
+    "driver-physical-ce-v3/manifest.json": "f476c85d8e4a6e140ed6e3914ff05541b577a3167648fb083c4b306b4c476c40",
+    "driver-physical-ce-v3/build-contract.json": "e365f57cd3cef9f8babb723bb56511dc7f050ca26e3b0d57f7a1085ab98761f5",
+    "driver-physical-ce-v3/root-source-review.json": "0d9a55136d0ba6983f52e8e0c7f080591e77ec8642401d8137a072e290699631",
+    "driver-physical-ce-v3/independent-kind-permission-review-nvidia.json": "5eeadb0a92baebbccd27588eb364a0cfaff22e4f76f9d8c4fc241ed37a927c45",
+    "native-physical2-ce-probe/peer_physical_ce_native": "bbebb245634bf1780212146cfc60edced4042d0d85562e97ada06d986780a69e",
+    "native-physical2-ce-probe/peer_physical_ce.cu": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+    "native-physical2-ce-probe/phys_ce_client.h": "90a5bdc5695da55a53f3c085239dab3c1705ad962176a1b23227bd13354721ab",
+    "native-physical2-ce-probe/nvml_sampler.h": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+    "native-physical2-ce-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "native-physical2-ce-probe/include/cask_phys_ce_ioctl.h": "af1dbe4e0600f63a2eb9159a2ee7d4218f5f0bf9968a33477c8879a5c1fcb8da",
+    "native-physical2-ce-probe/include/nvml.h": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+    "native-physical2-ce-probe/source-provenance.json": "ba8334a956fcaebf4a2ddb52ec2a1675e88ab594f73d3f4ca2577f2f6d83b6c6",
+    "native-physical2-ce-probe/offline-client-validation.json": "ea5989b836cb1b76730fa72e9199728840c06321e16f4fd9951332d8fe42abd7",
+    "native-physical2-ce-probe/independent-review-firmware.json": "f9fda893534d98dfcba67294ceada290b233060da2019dd1288716e3ec336599"
+  }
+}

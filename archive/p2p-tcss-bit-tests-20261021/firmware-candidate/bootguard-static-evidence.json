@@ -1,0 +1,42 @@
+{
+  "source": "ARCHIVE_ROOT/gpu-followup-20261020/uefi-p2p/spi-backup-a.bin",
+  "sha256": "ad8ab9c0f7c2d09273bf4fe2f3b12be6cb203495f384f18a86e5d023ae5cfe9b",
+  "length": 33554432,
+  "physical_base": "0xfe000000",
+  "fit_pointer": "0xffe90980",
+  "manifest_payloads": [
+    {
+      "label": "BPM",
+      "spi_offset": "0x1f3f080",
+      "physical": "0xfff3f080",
+      "length": 2560,
+      "all_ff": true,
+      "sha256": "2b6e99ee899e1515e0cc44b220424cd9da6906b39490504bdcca2236755db51c"
+    },
+    {
+      "label": "KM",
+      "spi_offset": "0x1f3fb00",
+      "physical": "0xfff3fb00",
+      "length": 1024,
+      "all_ff": true,
+      "sha256": "5f4ecdb7b71c3e403983fe405cddcdc2f2576b655fdb3e80d94a6f7c32e58bc2"
+    }
+  ],
+  "signatures": {
+    "__KEYM__": 0,
+    "__ACBP__": 0,
+    "__IBBS__": 0,
+    "__PMSG__": 0
+  },
+  "siinitfsp": {
+    "spi_file_start": "0x1b02b60",
+    "spi_file_size": "0x25cdd",
+    "physical_file_start": "0xffb02b60",
+    "compressed_section_start": "0x1b02bc4",
+    "inner_fv_start": "0x1b00070",
+    "inner_fv_size": "0x5a000",
+    "outer_fv_start": "0x1b00000",
+    "outer_fv_size": "0xb0000",
+    "sha256_file": "fcde1a912de75df1a95fdd9553d141712dd49e7bcc89dbb603839535d4a64abf"
+  }
+}

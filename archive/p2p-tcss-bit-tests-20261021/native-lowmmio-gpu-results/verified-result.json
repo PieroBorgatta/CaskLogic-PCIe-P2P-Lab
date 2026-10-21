@@ -1,0 +1,512 @@
+{
+  "status": "VERIFIED_LOW_RELOCATION_SUCCEEDED_P2P_3_OF_4_STILL_FAIL",
+  "input_hashes_checked": 54,
+  "input_hashes_all_match": true,
+  "provenance": {
+    "collected_sha256_manifest_sha256": "6297c6dd54082d84aa03b6d3c4e999523b3e9772bc17378f136d2e29e5ca977b",
+    "build_manifest_sha256": "5e45122cbd86e61f200fa6fd1becf0ca60b847f27974cc23b660b16946fc2051",
+    "native_kernel": "7.0.0-38-generic",
+    "cpu_signature": "906a3",
+    "hypervisor": false,
+    "intel_iommu": "off",
+    "registry": "RM64KBBAR1Mappings=0",
+    "firmware": "combinedD1/D7 patches retained;CCFG8077/9077/9077"
+  },
+  "helper_actual": {
+    "source_sha256": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+    "include_sha256": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+    "module_sha256": "2f643a3bffc6f8fe8a7a8c07da4d6ac66145d59eb99b8260f8f87951a0ee4b8d",
+    "resume_audio_indices": [
+      4,
+      6
+    ],
+    "resume_success_usage": 1,
+    "resume_success_status": "RPM_ACTIVE",
+    "all_pm_refs": 7,
+    "commit_kernel_seconds": 7.604977,
+    "result": "relocated_verified_reboot_to_restore",
+    "kernel_evidence_lines": [
+      1063,
+      1064,
+      1065,
+      1066,
+      1067,
+      1099,
+      1100
+    ],
+    "before_NVIDIA_load": true,
+    "transaction_rollback_triggered": false
+  },
+  "resource_inventory_devices": 36,
+  "exact_changed_resources": [
+    {
+      "bdf": "0000:00:07.0",
+      "resource": 15,
+      "before": [
+        "0x4600000000",
+        "0x4801ffffff",
+        "0x102201"
+      ],
+      "after": [
+        "0x80000000",
+        "0x91ffffff",
+        "0x102201"
+      ]
+    },
+    {
+      "bdf": "0000:04:00.0",
+      "resource": 15,
+      "before": [
+        "0x4600000000",
+        "0x4611ffffff",
+        "0x102201"
+      ],
+      "after": [
+        "0x80000000",
+        "0x91ffffff",
+        "0x102201"
+      ]
+    },
+    {
+      "bdf": "0000:05:00.0",
+      "resource": 15,
+      "before": [
+        "0x4600000000",
+        "0x4611ffffff",
+        "0x102201"
+      ],
+      "after": [
+        "0x80000000",
+        "0x91ffffff",
+        "0x102201"
+      ]
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "resource": 1,
+      "before": [
+        "0x4600000000",
+        "0x460fffffff",
+        "0x14220c"
+      ],
+      "after": [
+        "0x80000000",
+        "0x8fffffff",
+        "0x14220c"
+      ]
+    },
+    {
+      "bdf": "0000:06:00.0",
+      "resource": 3,
+      "before": [
+        "0x4610000000",
+        "0x4611ffffff",
+        "0x14220c"
+      ],
+      "after": [
+        "0x90000000",
+        "0x91ffffff",
+        "0x14220c"
+      ]
+    }
+  ],
+  "all_resources_identical_across_three_later_phases": true,
+  "raw_config": {
+    "before-driver": {
+      "0000:00:01.0": {
+        "id": "0x460d8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x8077"
+      },
+      "0000:00:07.0": {
+        "id": "0x466e8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077",
+        "prefetch_registers": [
+          "0x1f10001",
+          "0x46",
+          "0x48"
+        ]
+      },
+      "0000:00:07.2": {
+        "id": "0x462f8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077"
+      },
+      "0000:04:00.0": {
+        "id": "0x24611b21",
+        "command": "0x7",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x11f10001",
+          "0x46",
+          "0x46"
+        ]
+      },
+      "0000:05:00.0": {
+        "id": "0x24611b21",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x11f10001",
+          "0x46",
+          "0x46"
+        ]
+      },
+      "0000:06:00.0": {
+        "id": "0x257110de",
+        "command": "0x0",
+        "pci_status": "0x10",
+        "bar1": "0x4600000000",
+        "bar3": "0x4610000000"
+      },
+      "0000:06:00.1": {
+        "id": "0x228e10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.0": {
+        "id": "0x28b010de",
+        "command": "0x3",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.1": {
+        "id": "0x22be10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      }
+    },
+    "after-relocation": {
+      "0000:00:01.0": {
+        "id": "0x460d8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x8077"
+      },
+      "0000:00:07.0": {
+        "id": "0x466e8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:00:07.2": {
+        "id": "0x462f8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077"
+      },
+      "0000:04:00.0": {
+        "id": "0x24611b21",
+        "command": "0x7",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:05:00.0": {
+        "id": "0x24611b21",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:06:00.0": {
+        "id": "0x257110de",
+        "command": "0x0",
+        "pci_status": "0x10",
+        "bar1": "0x80000000",
+        "bar3": "0x90000000"
+      },
+      "0000:06:00.1": {
+        "id": "0x228e10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.0": {
+        "id": "0x28b010de",
+        "command": "0x3",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.1": {
+        "id": "0x22be10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      }
+    },
+    "after-driver": {
+      "0000:00:01.0": {
+        "id": "0x460d8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x8077"
+      },
+      "0000:00:07.0": {
+        "id": "0x466e8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:00:07.2": {
+        "id": "0x462f8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077"
+      },
+      "0000:04:00.0": {
+        "id": "0x24611b21",
+        "command": "0x7",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:05:00.0": {
+        "id": "0x24611b21",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:06:00.0": {
+        "id": "0x257110de",
+        "command": "0x7",
+        "pci_status": "0x10",
+        "bar1": "0x80000000",
+        "bar3": "0x90000000"
+      },
+      "0000:06:00.1": {
+        "id": "0x228e10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.0": {
+        "id": "0x28b010de",
+        "command": "0x7",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.1": {
+        "id": "0x22be10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      }
+    },
+    "after-test": {
+      "0000:00:01.0": {
+        "id": "0x460d8086",
+        "command": "0x407",
+        "pci_status": "0x2010",
+        "ccfg": "0x8077"
+      },
+      "0000:00:07.0": {
+        "id": "0x466e8086",
+        "command": "0x407",
+        "pci_status": "0x2010",
+        "ccfg": "0x9077",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:00:07.2": {
+        "id": "0x462f8086",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "ccfg": "0x9077"
+      },
+      "0000:04:00.0": {
+        "id": "0x24611b21",
+        "command": "0x7",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:05:00.0": {
+        "id": "0x24611b21",
+        "command": "0x407",
+        "pci_status": "0x10",
+        "prefetch_registers": [
+          "0x91f18001",
+          "0x0",
+          "0x0"
+        ]
+      },
+      "0000:06:00.0": {
+        "id": "0x257110de",
+        "command": "0x7",
+        "pci_status": "0x2010",
+        "bar1": "0x80000000",
+        "bar3": "0x90000000"
+      },
+      "0000:06:00.1": {
+        "id": "0x228e10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      },
+      "0000:01:00.0": {
+        "id": "0x28b010de",
+        "command": "0x7",
+        "pci_status": "0x2010"
+      },
+      "0000:01:00.1": {
+        "id": "0x22be10de",
+        "command": "0x0",
+        "pci_status": "0x10"
+      }
+    }
+  },
+  "command_restored_after_relocation_all_captured_devices": true,
+  "first_256_bytes_only_expected_bar_window_changes": true,
+  "extended_config_note": "Intel rootport extended fields0x328/32c/394 also differ between snapshots; no semantic cause assigned. ASMedia window values are repeated in0x400-spaced mirror regions. No claim all4096bytes are unchanged.",
+  "iomem_tree_and_external_verifier_pass_phases": [
+    "after-relocation",
+    "after-driver",
+    "after-test"
+  ],
+  "gpu_map": {
+    "0": "Ada internal0000:01:00.0",
+    "1": "A2000 external0000:06:00.0"
+  },
+  "peer_operations": [
+    {
+      "operation": "READ",
+      "source_data_gpu": 0,
+      "destination_data_gpu": 1,
+      "initiator_gpu": 1,
+      "valid": false
+    },
+    {
+      "operation": "WRITE",
+      "source_data_gpu": 1,
+      "destination_data_gpu": 0,
+      "initiator_gpu": 1,
+      "valid": true
+    },
+    {
+      "operation": "READ",
+      "source_data_gpu": 1,
+      "destination_data_gpu": 0,
+      "initiator_gpu": 0,
+      "valid": false
+    },
+    {
+      "operation": "WRITE",
+      "source_data_gpu": 0,
+      "destination_data_gpu": 1,
+      "initiator_gpu": 0,
+      "valid": false
+    }
+  ],
+  "owner_checks": {
+    "total": 10,
+    "valid": 10
+  },
+  "cpu_BAR1_control": {
+    "pass": 2,
+    "fail": 0,
+    "skip": 0,
+    "patterns_per_owner": 2,
+    "physical_targets": [
+      "0x4000400000",
+      "0x80600000"
+    ],
+    "meaning": "Read-only CPU access to same allocation; not GPU peer delivery"
+  },
+  "peer_DMA_PTE_software_targets": [
+    "0x4000400000",
+    "0x80400000",
+    "0x80600000",
+    "0x4000600000"
+  ],
+  "peer_page_bytes": 2097152,
+  "pte_evidence": "Four WINDOW\u2192DMA\u2192RM_PTE\u2192UVM chains corroborated independently by ricerca_p2p_nvidia; software logs, not GPU-MMU readback",
+  "pcie_deltas": {
+    "read_0_to_1": [
+      {
+        "bdf": "0000:00:07.0",
+        "fields": {
+          "PCI_STATUS": {
+            "before": "0010",
+            "after": "2010"
+          }
+        }
+      },
+      {
+        "bdf": "0000:06:00.0",
+        "fields": {
+          "PCI_STATUS": {
+            "before": "0010",
+            "after": "2010"
+          }
+        }
+      }
+    ],
+    "write_1_to_0": [],
+    "read_1_to_0": [
+      {
+        "bdf": "0000:00:01.0",
+        "fields": {
+          "PCI_STATUS": {
+            "before": "0010",
+            "after": "2010"
+          }
+        }
+      },
+      {
+        "bdf": "0000:01:00.0",
+        "fields": {
+          "PCI_STATUS": {
+            "before": "0010",
+            "after": "2010"
+          }
+        }
+      }
+    ],
+    "write_0_to_1": []
+  },
+  "new_AER_ues_ces_header_changes_in_operational_pairs": false,
+  "result_log_exit": {
+    "NATIVE_TEST_RC": 5,
+    "SCRIPT_RC": 5,
+    "PROBE_COMPLETED": true
+  },
+  "cleanup_note": "io_vaspace assertions at14.174649s andlater occur after data_done andcontext_exit_begin(13.8689s userspace clock); remain driver teardown defect and do not precede these comparisons.",
+  "reboot": {
+    "high_BAR1_base_restored": "0x4600000000",
+    "high_BAR1_end": "0x47ffffffff",
+    "high_BAR1_size": 8589934592,
+    "high_BAR3_base": "0x4800000000",
+    "D7_high_window_restored": true,
+    "exact_native_geometry_restored": false,
+    "note": "Host/Xen snapshot shows8GiB BAR1 afterreturn, versus256MiB native pretrial. This establishes return to highallocation, not byte-identical geometry. It does not independently capture ASM04/05windows afterreboot.",
+    "firmware_patches_still_applied": true
+  },
+  "conclusion": "The physical highBARaddress alone is not a sufficient explanation: correct lowBARrelocation and CPUaccess retain same directional P2Pfailure. This does not identify final hardware block or prove all possible lowaddressconfigurations unsupported.",
+  "hardware_access_by_reviewer": false
+}

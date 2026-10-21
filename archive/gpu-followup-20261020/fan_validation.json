@@ -1,0 +1,15 @@
+[
+  {
+    "name": "dual_stress_fixed_fan",
+    "command": [
+      "/tools/sources/gpu-burn/gpu_burn",
+      "-m",
+      "80%",
+      "-tc",
+      "300"
+    ],
+    "cwd": "/tools/sources/gpu-burn",
+    "timeout": 370,
+    "required": true
+  }
+]

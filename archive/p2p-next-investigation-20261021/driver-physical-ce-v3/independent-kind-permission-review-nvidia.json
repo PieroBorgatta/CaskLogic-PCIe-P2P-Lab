@@ -1,0 +1,27 @@
+{
+  "status": "PASS_STATIC_SCOPE_LIMITED",
+  "scope": [
+    "kind0_or6",
+    "Default_candidate_with_explicit_RM_ReadWrite_query",
+    "first_word_offset_zero",
+    "query_before_CE_methods",
+    "diagnostic_delta"
+  ],
+  "reviewed_utc": "2026-10-21T02:59:45.903623+00:00",
+  "hashes": {
+    "cask_phys_ce.inc": "35d3cb183d7bbef27aebdb626aea5835458dec0939a0c648e21dae3eea9973e7",
+    "physical-ce.patch": "34acdf3111d112f35358b4b549a4f1c9c55b76cce9ac2f4581354e783bc476af",
+    "overlay/kernel-open/nvidia-uvm/cask_phys_ce.inc": "35d3cb183d7bbef27aebdb626aea5835458dec0939a0c648e21dae3eea9973e7"
+  },
+  "overlay_include_identical": true,
+  "findings": [],
+  "rationale_file": "../physical-kind6-review.md",
+  "limitations": [
+    "Review statica, non esecuzione hardware.",
+    "Il solo KIND6 non certifica il formato di ogni superficie grafica.",
+    "Il log v2 non identifica univocamente il primo ramo della guardia respinto.",
+    "Default non significa RW confermato; EXECUTE deve superare la query RM esplicita ReadWrite."
+  ],
+  "remote_operations": false,
+  "source_mutations": false
+}

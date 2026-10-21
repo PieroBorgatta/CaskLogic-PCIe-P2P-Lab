@@ -1,0 +1,116 @@
+{
+  "pe": {
+    "original": {
+      "size": 254848,
+      "sha256": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f"
+    },
+    "current": {
+      "size": 254848,
+      "sha256": "a5f000b4cda7cfa11167545a33c18783754623012170bab73a419f4128fa05a4"
+    },
+    "combined": {
+      "size": 254848,
+      "sha256": "9ba6fbb44615983060c405fdb3b800906549c4705ab3cba3449c404025090b3b"
+    }
+  },
+  "images": {
+    "original": {
+      "size": 33554432,
+      "sha256": "cfe6c07a4f2113928e13198ab2b8adc52924893aa0c239982c2213feb53c5124"
+    },
+    "current": {
+      "size": 33554432,
+      "sha256": "1ddc33f1e8164e1e0ee888886ebc6b709ba2c266daf69685d27b3e5a3219bdf2"
+    },
+    "combined": {
+      "size": 33554432,
+      "sha256": "a627f6472d3c664635145e09fae020f12515c973c3ab711a846a4805bf07ce91"
+    }
+  },
+  "comparisons": {
+    "original_to_combined_pe": [
+      {
+        "offset": "0xf634",
+        "old": "0x4",
+        "new": "0x0"
+      },
+      {
+        "offset": "0x20304",
+        "old": "0xfe",
+        "new": "0xf0"
+      }
+    ],
+    "original_to_combined_image": {
+      "diff_bytes": 115708,
+      "first": "0x1b0bd24",
+      "last": "0x1b28833",
+      "all_in_flash_region": true
+    },
+    "current_to_combined_pe": [
+      {
+        "offset": "0xf634",
+        "old": "0x4",
+        "new": "0x0"
+      }
+    ],
+    "current_to_combined_image": {
+      "diff_bytes": 114894,
+      "first": "0x1b0bd24",
+      "last": "0x1b2883b",
+      "all_in_flash_region": true
+    }
+  },
+  "original_block": {
+    "sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+    "crc32": "0x4a14c7b5",
+    "slice_verified": true
+  },
+  "current_block": {
+    "sha256": "9ed07429f558302804219c07af3c357afbc46f20127abf65a4cdc24284a9b3f2",
+    "crc32": "0xc98d61f9",
+    "slice_verified": true
+  },
+  "combined_block": {
+    "sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+    "crc32": "0x549d8326",
+    "slice_verified": true
+  },
+  "instructions": {
+    "original": {
+      "f62f": "81 e1 00 00 00 04 81 c1 88 ef 7f f0",
+      "20300": "b9 88 cf ff fe"
+    },
+    "current": {
+      "f62f": "81 e1 00 00 00 04 81 c1 88 ef 7f f0",
+      "20300": "b9 88 cf ff f0"
+    },
+    "combined": {
+      "f62f": "81 e1 00 00 00 00 81 c1 88 ef 7f f0",
+      "20300": "b9 88 cf ff f0"
+    }
+  },
+  "assessment": "Static candidate verified: D1 immediate AND 04000000 -> 00000000 under enabled P2P policy, affects helper-nonzero ports; D7 mask FEFFCF88 -> F0FFCF88 unchanged from current. No hardware execution or P2P success inferred.",
+  "extraction_comparison": {
+    "files_each": 2999,
+    "same_paths": true,
+    "changed": [
+      "flash.fd",
+      "regions/region-bios.fd",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file.obj",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1.fv",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d.fv",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/filesystem.ffs",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/file.obj",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1.compressed",
+      "regions/region-bios/volume-0/file-3417f275-4cf1-42d8-a0c3-b3f60779df4d/section1/volume-3417f275-4cf1-42d8-a0c3-b3f60779df4d/file-80a845ac-210f-43b0-995b-477be41ab4e8/section1/section0.pe"
+    ]
+  },
+  "ffs": {
+    "offset": "0x1b02b60",
+    "bytes": 154845,
+    "header_identical": true,
+    "all_other_fullimage_bytes_identical": true,
+    "original_sha256": "fcde1a912de75df1a95fdd9553d141712dd49e7bcc89dbb603839535d4a64abf",
+    "combined_sha256": "5717b9f36bd758c6fed7496941d8c6b5100889dc93ef898a97e94bda6189abb4"
+  }
+}

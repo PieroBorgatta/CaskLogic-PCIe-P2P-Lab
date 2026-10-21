@@ -1,0 +1,152 @@
+[
+  {
+    "name": "acs-gpa-matrix",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nSTART peer_read src 0 dst 1 bytes 1048576\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=1048576 valid=0\nSTART peer_write src 1 dst 0 bytes 1048576\nREMOTE_WRITE s=1 d=0 bytes=1048576 valid=1\nSTART peer_read src 1 dst 0 bytes 1048576\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=1048576 valid=0\nSTART peer_write src 0 dst 1 bytes 1048576\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=1048576 valid=0\nSTART peer_read src 0 dst 1 bytes 16777216\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=16777216 valid=0\nSTART peer_write src 1 dst 0 bytes 16777216\nREMOTE_WRITE s=1 d=0 bytes=16777216 valid=1\nSTART peer_read src 1 dst 0 bytes 16777216\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=16777216 valid=0\nSTART peer_write src 0 dst 1 bytes 16777216\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=16777216 valid=0\nSTART peer_read src 0 dst 1 bytes 67108864\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=67108864 valid=0\nSTART peer_write src 1 dst 0 bytes 67108864\nREMOTE_WRITE s=1 d=0 bytes=67108864 valid=1\nSTART peer_read src 1 dst 0 bytes 67108864\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=67108864 valid=0\nSTART peer_write src 0 dst 1 bytes 67108864\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=67108864 valid=0\nTOTAL_FAILURES 12\n"
+  },
+  {
+    "name": "acs-hpa-matrix",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "acs-zero-small",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "ccfg-peer-word",
+    "completed_data_probe": true,
+    "rc": 8,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nGATE_TIMEOUT\n"
+  },
+  {
+    "name": "ce-small",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "CE_START source=0 dest=1 caller=1\nCORRUPTION i=0 got=ffffffff expected=00003039\nCE_RESULT source=0 dest=1 caller=1 valid=0\nCE_START source=0 dest=1 caller=0\nCORRUPTION i=0 got=00000000 expected=00003039\nCE_RESULT source=0 dest=1 caller=0 valid=0\nCE_START source=1 dest=0 caller=0\nCORRUPTION i=0 got=ffffffff expected=00003039\nCE_RESULT source=1 dest=0 caller=0 valid=0\nCE_START source=1 dest=0 caller=1\nCE_RESULT source=1 dest=0 caller=1 valid=1\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "coherent-config-gate",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "coherent-config-gate-v2",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=4 valid=0\nSTART peer_write src 1 dst 0 bytes 4\nREMOTE_WRITE s=1 d=0 bytes=4 valid=1\nSTART peer_read src 1 dst 0 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=4 valid=0\nSTART peer_write src 0 dst 1 bytes 4\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=4 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "coherent-small",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "dynamic-cpu-probe",
+    "completed_data_probe": true,
+    "rc": 9,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nCPU_PROBE_TIMEOUT\n"
+  },
+  {
+    "name": "dynamic-cpu-probe-v2",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "dynamic-diagnostic",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\n"
+  },
+  {
+    "name": "dynamic-full-vram",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\n"
+  },
+  {
+    "name": "dynamic-matrix-fenced",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nSTART peer_read src 0 dst 1 bytes 1048576\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=1048576 valid=0\nSTART peer_write src 1 dst 0 bytes 1048576\nREMOTE_WRITE s=1 d=0 bytes=1048576 valid=1\nSTART peer_read src 1 dst 0 bytes 1048576\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=1048576 valid=0\nSTART peer_write src 0 dst 1 bytes 1048576\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=1048576 valid=0\nSTART peer_read src 0 dst 1 bytes 16777216\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=16777216 valid=0\nSTART peer_write src 1 dst 0 bytes 16777216\nREMOTE_WRITE s=1 d=0 bytes=16777216 valid=1\nSTART peer_read src 1 dst 0 bytes 16777216\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=16777216 valid=0\nSTART peer_write src 0 dst 1 bytes 16777216\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=16777216 valid=0\nSTART peer_read src 0 dst 1 bytes 67108864\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=67108864 valid=0\nSTART peer_write src 1 dst 0 bytes 67108864\nREMOTE_WRITE s=1 d=0 bytes=67108864 valid=1\nSTART peer_read src 1 dst 0 bytes 67108864\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=67108864 valid=0\nSTART peer_write src 0 dst 1 bytes 67108864\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=67108864 valid=0\nTOTAL_FAILURES 12\n"
+  },
+  {
+    "name": "dynamic-vmm",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\n"
+  },
+  {
+    "name": "dynamic-writes",
+    "completed_data_probe": true,
+    "rc": 6,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_write src 1 dst 0 bytes 65536\nPASS direct SM remote write 65536 bytes\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\n"
+  },
+  {
+    "name": "mailbox-word-clean",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=4 valid=0\nSTART peer_write src 1 dst 0 bytes 4\nREMOTE_WRITE s=1 d=0 bytes=4 valid=1\nSTART peer_read src 1 dst 0 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=4 valid=0\nSTART peer_write src 0 dst 1 bytes 4\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=4 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "mailbox-word",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "nosnoop-off-small",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "packet128-small",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=65536 valid=0\nSTART peer_write src 1 dst 0 bytes 65536\nREMOTE_WRITE s=1 d=0 bytes=65536 valid=1\nSTART peer_read src 1 dst 0 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=65536 valid=0\nSTART peer_write src 0 dst 1 bytes 65536\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=65536 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "packet128-word",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=4 valid=0\nSTART peer_write src 1 dst 0 bytes 4\nREMOTE_WRITE s=1 d=0 bytes=4 valid=1\nSTART peer_read src 1 dst 0 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=4 valid=0\nSTART peer_write src 0 dst 1 bytes 4\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=4 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "parameter",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "static-capped",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "static-word-v2",
+    "completed_data_probe": false,
+    "rc": null,
+    "output": ""
+  },
+  {
+    "name": "xen-alias-word",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=0 d=1 bytes=4 valid=0\nSTART peer_write src 1 dst 0 bytes 4\nREMOTE_WRITE s=1 d=0 bytes=4 valid=1\nSTART peer_read src 1 dst 0 bytes 4\nCORRUPTION read i 0 got edcba987 expected 12346641\nREMOTE_READ s=1 d=0 bytes=4 valid=0\nSTART peer_write src 0 dst 1 bytes 4\nCORRUPTION write i 0 got 00000000\nREMOTE_WRITE s=0 d=1 bytes=4 valid=0\nTOTAL_FAILURES 3\n"
+  },
+  {
+    "name": "xen-bar-translation",
+    "completed_data_probe": true,
+    "rc": 5,
+    "output": "GPU count 2\nPEER 0 -> 1 can 1\nPEER 1 -> 0 can 1\nSTART peer_read src 0 dst 1 bytes 65536\nCORRUPTION read i 0 got edcba987 expected 12346641\n"
+  }
+]

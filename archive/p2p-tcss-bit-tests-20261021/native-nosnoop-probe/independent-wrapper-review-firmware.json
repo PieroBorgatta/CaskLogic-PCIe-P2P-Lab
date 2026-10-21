@@ -1,0 +1,29 @@
+{
+  "status": "PASS_static_wrapper_builder_no_blocking_finding",
+  "reviewer": "audit_firmware",
+  "hashes": {
+    "pci_attrs.h": "6780c0ceb37cbfd1585406e9e9334697e90145412456216a5eec37bd32520d31",
+    "build_native_repeat.py": "a77e65808aca10da4015235e7409c9ba1ef6d0e1fc83538dee83f965a5d7e186",
+    "init-tcss-native.sh": "2f216a3fe12bb4ba53487edb3a22aec3ac550271c82ff72c6228da9c859d487b",
+    "trial_main.inc": "c330936901293714a696f0aae5a4feadbba982a08ab4093fd50456a3332b8876",
+    "peer_vmm_word_nosnoop.cu": "d7e8cf9af7964ec93206638014586f028346058c045b8a043751a9c35025427b"
+  },
+  "checks": [
+    "RMab41/UVM9b99 fixed withmanifest andfilechecks; registryRM64KBBAR1Mappings0; noRMCaskPeerCoherent andno4Kparam",
+    "Allcandidate source/include/init hashguarded; separateunpacked/package nooverwrite; chrootloaderandshellcheck",
+    "Oneprocess timeout60; returns0/5accepted only withcomplete5phase20comparison6writevalidprotocol",
+    "Awk reads current unbufferedresultlog; phaseindices/names/modes,2read+2writeeach,validsnapshots,successfulprogramrestore required",
+    "CCFG guards beforedriver/afterdriver/aftertest; finalDEVCTLreadonly recorded",
+    "Watchdog180 performsRAMreboot; normalpath logs/sync/umount before reboot"
+  ],
+  "syntax_only_checks": [
+    "PythonAST",
+    "sh-n"
+  ],
+  "limits": [
+    "Runtime restore semantics depend onmain review; headerdestructor onlycloses",
+    "Watchdog hardreset may lose latestlogtail; not used as restorationproof"
+  ],
+  "remote_operations": false,
+  "delta_review": "Strengthenedawk gate:phaseBEGIN/RESULTorder+activephase,valid0/1 peroperation,phasefailurecount,uniquefinalrestoreandreturncodematch. No new runtimewrites; header andCUDA unchanged."
+}

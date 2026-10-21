@@ -1,0 +1,40 @@
+{
+  "status": "PASS_OFFLINE_PINNED_BUILD02",
+  "scope": "Solo fixture CPU locali e review del delta; nessun server, EFI, GPU o hardware.",
+  "tests": 26,
+  "all_passed": true,
+  "command": "python3 -m unittest discover -s runtime/reports/p2p-next-investigation-20261021 -p 'test_*_physical.py' -v",
+  "files_sha256": {
+    "install_native_physical.py": "a7d753df14a078f3c7217e8a841f8dbe99043b81874b92f50f13b535ac4fd3be",
+    "collect_cleanup_physical.py": "8f19f83ad70a5bef393e190df959c87bf0cc4ae13556a40110e272edcacbc8e5",
+    "physical_log_validation.py": "20590c2d5eb6340999c1ea9ed15667ef7524cba4ba6a70d14a05b23e90ae5e1b",
+    "physical_log_fixture.py": "7084a0a109dbf9dffede52557f8c1cf5539e62a56d7bdd808baed2db7ee545f5",
+    "test_install_native_physical.py": "88d3fff341e9afad68edf379eba63a75ea4bce874d8df4b80435be9a9021f19f",
+    "test_collect_cleanup_physical.py": "19e402cd9af70f774aefef78d692eae215e6d3c184dfaad5dac8ec2dbcf20ba3"
+  },
+  "baseline_installer_sha256": "f4473388d58c9828c508fc395ec2ee8ddacd36239a972d3f81a572e4349b8d5b",
+  "baseline_collector_sha256": "0b016c6b11fed086e3723e3b6e4fb0c273e10e6549ce38ebf7d05881e45e94d8",
+  "differences": [
+    "Identita fisica dedicata; UVM diagnostico nuovo obbligatoriamente hashvincolato, RM baseline identico",
+    "Contratto4comparisons4B SM/PHYSICAL_CE, ioctl315ABI1,4calibrazioni1MiB H2D/D2H",
+    "Init deve contenere parametri UVM diagnostici e watchdog marker",
+    "Collector ammette file di risultato previsti assenti, preservando tutti quelli presenti",
+    "Qualifica completa stretta; partial/abort/retained/watchdog e log malformato conservati come incomplete_preserved",
+    "Backup/hash/fsync precedono qualsiasi delete anche in caso incompleto; nessun claim P2P",
+    "Transazioni create-only/BootNext e guardie originale EFI/CCFG restano ereditate"
+  ],
+  "coverage": [
+    "9installer tests incluse streamCPIO/integrita/kernelargs/defaultRO/stage/arm/refusal",
+    "17collector tests incluse fixturelogRC0/5/6 e21mutazioni negative, stati parziali, completeuserlog+kernelwatchdog",
+    "Raccolta reale su directorytemporanee e comandiEFI simulati,19backup/17raw piustato quando completi",
+    "Raccolta ecleanup parziale7backup/5raw piustato preservati",
+    "Corruzioni di backup/source/results ebootanomalo impediscono cancellazioni o conservanoESP",
+    "observations effettive con no_configs/kernel_only/no_logs e rifiuto fileinattesi"
+  ],
+  "limitations": [
+    "Le fixture non provano l\u2019esito GPU n\u00e9 la stabilita hardware",
+    "Il validatore della raccolta non sostituisce l\u2019audit dei lograw/PTE/counter; data_all_comparisons_pass non e una soluzione P2P"
+  ],
+  "uvm_sha256": "9f40cd58362566aae90d5bcd10b3cdda3a2a2a7ac6457fa3228a7049c32a8247",
+  "init_sha256": "23972f8abfc52668383ea36b926c8dc2595b6a3da6281fd3423a886415097ac6"
+}

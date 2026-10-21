@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-21",
+  "scope": "publication-only; no hardware or remote operations",
+  "analyzer_fixture_cases": 36,
+  "analyzer_fixture_status": "PASS",
+  "qualified_log_replay": "PASS: 24 comparisons, 18 data failures, 12 CE, 12 SM",
+  "firmware_reconstruction_byte_equal": true,
+  "wrong_oem_rejected": true,
+  "wrong_region_rejected": true,
+  "existing_output_rejected": true,
+  "gpu_fix_verified": false
+}

@@ -1,0 +1,6 @@
+{
+  "state": "FAILED",
+  "phase": "dual16_default",
+  "error": "RuntimeError('requested stop')",
+  "reason": "requested stop"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "ORIGINAL_RESTORED_AND_READBACK_VERIFIED",
+  "collected_epoch": 1792545564.0588672,
+  "region_start": 28356608,
+  "region_length": 122880,
+  "original_sha256": "b81e705a87c89a668c4bbddd3538a82ccd5ebea4b156ce2d79762147310deba9",
+  "candidate_read_before_restore_sha256": "c37f53eec3a5702d4a3e7b9d55bf382050100e324f2ec1210d9b98439cabedf4",
+  "readback_mismatches": 0,
+  "ccfg": {
+    "0000:00:01.0": {
+      "identity": "0x460d8086",
+      "CCFG": "0x4008077"
+    },
+    "0000:00:07.0": {
+      "identity": "0x466e8086",
+      "CCFG": "0xe009077"
+    },
+    "0000:00:07.2": {
+      "identity": "0x462f8086",
+      "CCFG": "0xe009077"
+    }
+  },
+  "original_boot_files_unchanged": true,
+  "boot": "BootCurrent: 0000\nTimeout: 3 seconds\nBootOrder: 0000,0001\nBoot0000* XCP-ng\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\xenserver\\grubx64.efi)\nBoot0001* UEFI OS\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\BOOT\\BOOTX64.EFI)..BO\nBoot0002* CaskLogic TCSS sync prova\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssSyncTest\\Shell.efi)\nBoot0003* CaskLogic TCSS GPU sync\tHD(4,GPT,3c6ae711-bbc9-4653-bf09-0baac6b3b380,0x5000800,0x100000)/File(\\EFI\\CaskLogicTcssNative\\probe-kernel.efi)i.n.i.t.r.d.=.\\.E.F.I.\\.C.a.s.k.L.o.g.i.c.T.c.s.s.N.a.t.i.v.e.\\.p.r.o.b.e.-.i.n.i.t.r.d...i.m.g. .r.d.i.n.i.t.=./.i.n.i.t. .i.n.t.e.l._.i.o.m.m.u.=.o.f.f. .i.o.m.m.u.=.o.f.f. .m.o.d.u.l.e._.b.l.a.c.k.l.i.s.t.=.n.o.u.v.e.a.u.,.n.v.i.d.i.a._.d.r.m.,.n.v.i.d.i.a._.m.o.d.e.s.e.t. .p.a.n.i.c.=.1.0. .l.o.g.l.e.v.e.l.=.4. .c.o.n.s.o.l.e.=.t.t.y.0.\n",
+  "collected_files": 28,
+  "SaSetup_preservation_basis": "Restore writes only the FSP span; SaSetup lies outside that span and is not independently read by this collector"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "file": "setup_var.efi",
+    "url": "https://github.com/datasone/setup_var.efi/releases/download/0.3.1/setup_var.efi",
+    "bytes": 101376,
+    "sha256": "cbe5777b61276d3f3506a28b34845326e92f6c171bff59177e3912fe20f49840"
+  },
+  {
+    "file": "ShellBinPkg.zip",
+    "url": "https://github.com/tianocore/edk2/releases/download/edk2-stable202002/ShellBinPkg.zip",
+    "bytes": 1642082,
+    "sha256": "d6876ef9b9a48ca612149b888d4f4e923d1b8ccf495b8f6f6c3f83defb40b56a"
+  },
+  {
+    "file": "EFI/CaskLogicP2P/setup_var.efi",
+    "bytes": 101376,
+    "sha256": "cbe5777b61276d3f3506a28b34845326e92f6c171bff59177e3912fe20f49840"
+  },
+  {
+    "file": "EFI/CaskLogicP2P/Shell.efi",
+    "bytes": 939648,
+    "sha256": "24dcc034bf6a5158f43b23b71a16acbfdcf1597de55aa309f7f6ac5af90666e6"
+  }
+]

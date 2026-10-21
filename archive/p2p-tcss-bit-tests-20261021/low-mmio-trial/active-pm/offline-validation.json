@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "hardware_access": false,
+  "network_access": false,
+  "mock_tests": {
+    "status": "PASS",
+    "cases": 163,
+    "source": "audio_pm.inc",
+    "hardware_access": false
+  },
+  "integration_checks": {
+    "diagnostic_baseline_unchanged": true,
+    "unchanged_validate": true,
+    "unchanged_detach_tree": true,
+    "unchanged_attach_tree": true,
+    "unchanged_program_config": true,
+    "unchanged_verify_new_tree": true,
+    "unchanged_rollback": true,
+    "unchanged_write32_verify": true,
+    "unchanged_command_verify": true,
+    "platform_before_pm": true,
+    "references_resume_locks_order": true,
+    "release_refs_only_unpinned": true,
+    "live_guard_before_gate_commands": true,
+    "live_guard_before_restore_commands": true,
+    "no_new_raw_pm_config_writes": true,
+    "post_relocation_live_guard": true,
+    "honest_dry_run_token": true
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "compile_flags": [
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer"
+  ],
+  "sanitizer_stderr": "",
+  "sha256": {
+    "cask_low_mmio.c": "b7c54279eca34237429d55d77e7a58449cf66d5bc1af37cb37008e3bb286bbee",
+    "audio_pm.inc": "5b83b3164b8212011fbc2146226b50aaf109be1143271d0aaf25d9cf84d0a1c9",
+    "test_audio_pm.c": "b14be1f182e3eda3cd213b44f86f3ca3d13824c7d76f5cb84e2dedc42a944034",
+    "run_offline_checks.py": "cd151c9258444cc3e62b927d65f8d042b4fcd365ffcb8ca6cc0b36dd773a143a"
+  },
+  "limits": [
+    "Mocked APIs do not validate real runtime-PM callback behavior.",
+    "Kernel build and hardware relocation are separate checks.",
+    "No hardware test, insmod, or PCI access is performed by this runner."
+  ]
+}

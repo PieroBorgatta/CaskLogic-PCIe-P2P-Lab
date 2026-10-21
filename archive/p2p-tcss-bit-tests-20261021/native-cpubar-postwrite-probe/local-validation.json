@@ -1,0 +1,53 @@
+{
+  "status": "PASS_local_syntax_and_exact_delta",
+  "source_sha256": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+  "baseline_source_sha256": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30",
+  "baseline_reconstructed_byte_exact": true,
+  "headers_unchanged": true,
+  "parser_validation_reused": "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-probe/local-validation.json",
+  "parser_previous_cases": 425,
+  "syntax_results": [
+    {
+      "platform": "host",
+      "command": [
+        "clang++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsyntax-only",
+        "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/postwrite_syntax.cpp"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "platform": "linux_preprocessor_with_klog_declaration_shim",
+      "command": [
+        "clang++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsyntax-only",
+        "-D__linux__",
+        "-Iruntime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-probe/validation-shim",
+        "runtime/reports/p2p-tcss-bit-tests-20261021/native-cpubar-postwrite-probe/postwrite_syntax.cpp"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "files": {
+    "peer_vmm_word_cpubar_postwrite.cu": "c05a9ccd05dfc3488457c0bcf9c2eba8736406a0c6ff1011c020bafa09990006",
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "postwrite_syntax.cpp": "83a7e98ba9f4d41811bdec18277318eb7f8c72e83452b6ae390594b638d1000c"
+  },
+  "nvcc_built": false,
+  "gpu_executed": false,
+  "hardware_access": false,
+  "remote_operations": false
+}

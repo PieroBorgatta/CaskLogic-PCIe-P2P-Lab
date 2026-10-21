@@ -1,0 +1,23 @@
+{
+  "scope": "Osservazione in sola lettura successiva al controllo finale; nessuna installazione o ricarica del driver.",
+  "observed_date_utc": "2026-10-21",
+  "host_alias": "gpu-vm",
+  "path": "/lib/modules/7.0.0-38-generic/updates/dkms/nvidia.ko.zst",
+  "compressed_sha256": "0b3110fde7eb34d578ea50b7da21d2539b1ff228fd017efc03e71a6aeace008d",
+  "decompressed_sha256": "60b95edb72f761ea31ae9fa0ad9bef4b50143bae80a7232d78e379a9f6785f23",
+  "decompressed_bytes": 21086488,
+  "srcversion_disk_and_loaded": "919309EF6954372EFADD77E",
+  "decompressed_marker_counts": {
+    "CaskLogic": 0,
+    "CASKLOGIC": 0,
+    "P2PTRC": 0,
+    "RMCaskPeerCoherent": 0,
+    "n3rdware": 0,
+    "ForceP2P": 3
+  },
+  "limits": [
+    "srcversion può coincidere fra moduli differenti; non è un hash del binario.",
+    "Non è disponibile qui un checksum autorevole della distribuzione stock per confronto.",
+    "Assenza dei marcatori e hash del file non sono una misura indipendente del binario residente in memoria."
+  ]
+}

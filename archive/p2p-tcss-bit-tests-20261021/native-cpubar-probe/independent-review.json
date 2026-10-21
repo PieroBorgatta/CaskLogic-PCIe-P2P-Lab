@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root/audit_firmware",
+  "status": "static_review_no_blocking_finding",
+  "files": {
+    "cpubar_trace.h": "06aa999da4c9c06ebf3d5fb398d30dc79aae964765791fc386e21b2e6fb1d7a4",
+    "peer_vmm_word_cpubar.cu": "ad260612fce858c9c99904f108ca06490c23909a4faaee196de4f2a5ab7b8a30"
+  },
+  "checks": [
+    "Unique nonce and lifetime markers",
+    "UUID/VA to RM handle and descriptor to WINDOW ID to DMA BDF to matching PTE and completed submission",
+    "Reject destroyed windows through current log snapshot",
+    "Allocation remains live until deferred cleanup",
+    "Only resource1 O_RDONLY and PROT_READ, one volatile uint32 load, bounds withinBAR",
+    "Owner synchronization/readback before loads;12345 restored beforeP2P"
+  ],
+  "limitations": [
+    "BAR access is read-only; ownerVRAM initialization and kmsg markers are intentional writes elsewhere",
+    "PASS validates CPU aperture path, not P2P",
+    "No compilation or hardware execution performed by reviewer"
+  ]
+}

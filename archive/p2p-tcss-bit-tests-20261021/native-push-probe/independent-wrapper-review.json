@@ -1,0 +1,28 @@
+{
+  "review": "PASS_STATIC_NO_BLOCKING_ISSUE_FOUND",
+  "scope": "Local read-only review; shell syntax and Python AST only; no server execution",
+  "sha256": {
+    "native-push-probe/init-tcss-native.sh": "fe65f096f4587fbab425dfd0dee594204152fe448008810b0286a42732d44337",
+    "native-push-probe/build_native_repeat.py": "7800fa3e18d9f83aff0b0a6f29fbb4a8ecd0531214c27e4af8734469ad2c9e02",
+    "install_native_push_gpu.py": "5d27a64aba11ffacc0d0776cce1fdd6eb6699984b43c03de438ba45b28771ab2",
+    "native-push-probe/peer_push.cu": "f5b8f8505fd0a17fb4bf11855704de74fba0298139760349b5000c59a83b987e",
+    "native-push-probe/pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae"
+  },
+  "verified": [
+    "No low-MMIO helper invocation in init",
+    "Same NVIDIA/UVM modules, registry RM64KBBAR1Mappings=0",
+    "CCFG gates before/after module and test",
+    "Write-only source matches previously reviewed hash",
+    "One-shot BootNext with unchanged BootOrder and halted/no-running VM guard",
+    "Prior ESP evidence backed up and verified before replacement",
+    "25 second process timeout plus 180 second independent RAM boot watchdog",
+    "No PCI configuration write in wrapper; only setpci reads"
+  ],
+  "limits": [
+    "Static review does not predict successful GPU transfers or guarantee interruption of a wedged GPU.",
+    "Source/build manifest bind source and output hashes; NVCC compilation provenance is parent build evidence, not reproduced locally."
+  ],
+  "nonblocking_notes": [
+    "init header comment still mentions four-byte repetition; actual invocation and manifest are the 30-comparison push probe."
+  ]
+}

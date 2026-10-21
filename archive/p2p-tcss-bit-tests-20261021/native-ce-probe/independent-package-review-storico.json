@@ -1,0 +1,134 @@
+{
+  "status": "PASS_STREAMED_CPIO_AND_INPUT_PROVENANCE",
+  "files_sha256_verified": {
+    "probe-kernel.efi": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+    "probe-initrd.img": "2f912fcfca5f69616b4f18159e777b28b60023ebe4e24d3e53a9d4ff7193fd72",
+    "IDENTITY.txt": "d41645a710d7bd771fd95f197173819e96002259b0d0b303262412ba04f4be8a"
+  },
+  "archive_members": 2295,
+  "archive_targets_verified": {
+    "opt/probe/nvidia-instrumented-uvm.ko": {
+      "sha256": "9b993671ef066c9d3e58fd52b0d70228861769a2e3dcf304bc3d80bca089c4d0",
+      "bytes": 57133360,
+      "mode": "0o100644"
+    },
+    "opt/probe/peer_word": {
+      "sha256": "7184d44dc039f662b21c86b1f20e644b21a3188bb7c028a8a0b12084bcdcfa4d",
+      "bytes": 1059928,
+      "mode": "0o100755"
+    },
+    "opt/probe/nvidia-dynamic.ko": {
+      "sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+      "bytes": 36774960,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libpcsamplingutil.so": {
+      "sha256": "e6fa2783077974fb2765bfa9cbaebf980736df74eebf994c59c7596988aec83b",
+      "bytes": 970064,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libcuda.so.1": {
+      "sha256": "03271500dbda9456e3ba765270bd2609bef2631672809da50b19c67fb1f609a7",
+      "bytes": 91505672,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libcheckpoint.so": {
+      "sha256": "b3d830ed3cdddee9686033e4c185801704770fa82b78e23923d56bc044006ee2",
+      "bytes": 1571144,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libnvperf_target.so": {
+      "sha256": "401c2c8f61bda1a6c8e116e1d20e29ccc7789cd5498f6abc9c1080ca0f954437",
+      "bytes": 4231664,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libnvperf_host.so": {
+      "sha256": "a19ab37d5bea3a778b9c94b4535b6c656c910131fce19be98395827cf686713a",
+      "bytes": 18842864,
+      "mode": "0o100644"
+    },
+    "usr/lib/x86_64-linux-gnu/libcupti.so.12": {
+      "sha256": "76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d",
+      "bytes": 8067920,
+      "mode": "0o100644"
+    },
+    "init": {
+      "sha256": "0c6097f60e242d2cc7c95ba200607a46aa8df0036063b2d9278e5180ce2ab3b9",
+      "bytes": 6488,
+      "mode": "0o100755"
+    }
+  },
+  "required_payload_count": 6,
+  "additional_CUPTI_library_count": 4,
+  "input_file_count": 50,
+  "input_manifest_preserved": true,
+  "build_inputs_sha256": "54d585473c8738687eac7e6eba15867ae862c3d381baa4679f93e5081572ac23",
+  "input_files_rehashed": {
+    "peer_ce_cupti.cu": "89f1639244b589ef89dfb3231c84b278b5c8caedef5c74e9d76d5a16da3d309c",
+    "cupti_trace.h": "0de1f3097fbe22c775d4c603615cfd9f0a69c328e9e7da55d50389e60ed5b468",
+    "pcie_diag.h": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+    "peer_ce_cupti_native": "7184d44dc039f662b21c86b1f20e644b21a3188bb7c028a8a0b12084bcdcfa4d",
+    "init-tcss-native.sh": "0c6097f60e242d2cc7c95ba200607a46aa8df0036063b2d9278e5180ce2ab3b9",
+    "build_native_ce.py": "2b7cc408c2875fc3dbeb1682e1c52a98580d0f113e4855475eba5c54c32eba82",
+    "include/cupti_activity_deprecated.h": "a4144650f00668df2219f79b14f509b2be863a6cefb1dfa7b05760101f9d6679",
+    "include/generated_nvtx_meta.h": "6076ff443f20dece26f0f267ed9d309f1bd41daae5ec13805f9003afe04bdc72",
+    "include/cupti_runtime_cbid.h": "9867b8e2074a24ae84ff38a28d7afb9ec9519dc21692c925d960fb8e4b25a8d8",
+    "include/cupti_range_profiler.h": "b9ee5b500fb7c42c00b501b20dee4ed5de6b02645b55b72b5ca7c84dde313352",
+    "include/nvperf_common.h": "ca479327923a734cfc2aa310875de194968c6878aaa95501eb4a065ce0aeec18",
+    "include/generated_cuda_vdpau_interop_meta.h": "f0e2ea58ddba6846294d6517b5b1c9bc0e4662156fdf26d854e4d6ef22b7ef3f",
+    "include/nvperf_cuda_host.h": "802d095a851d4f200e26cf32e2ea0922189ef57ab8c85e07ce8ba62ec60d5735",
+    "include/cupti_callbacks.h": "1165e4f010a08b383a74a7fec94eee0b379786afe3af335aa354c76b20526afb",
+    "include/nvperf_target.h": "db84a77a83f6c5d91b1ec497527e3a5da0529237e18425a00a64f520e852816c",
+    "include/cupti_metrics.h": "88b00e943adc6c712c20852682ad13a7564e63d3b73addf08f6f9b23c8986d2b",
+    "include/generated_cuda_gl_interop_meta.h": "2d73aabd009e8f4b028004f52d428a619e3ae84171378848c1ff682215ce2c5d",
+    "include/nvperf_host.h": "95d20544c468d6cf33484f566de6baf766ace0c94527bcb4014bbcc2355c527c",
+    "include/cupti_activity.h": "46dd04c7089a1aa21ee91224ef9717f04532faf08bda050ce4b08bdb18daaf1c",
+    "include/cupti_events.h": "7fb94b1a60f67bc173bcc8518279f4fafed4d2f4e95248901c8a50c6001119bd",
+    "include/cupti_pcsampling.h": "c9c2474f7e8398f21a5731ec077c718d792117211f30224e9772db0ac1c58320",
+    "include/generated_cudart_removed_meta.h": "5f72395979a1b6c24d365818edca09e6f838b75d46e45451e97a3b31ba0879c9",
+    "include/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "include/generated_cudaVDPAU_meta.h": "7c079db28431694de12000290160ce2ac6bd92072e430e2d7727fc9252e6fb79",
+    "include/cupti_result.h": "6be0b863b2c06028824f59e039fa03b938b6b2d106d584da7f0c27e947cbf8b5",
+    "include/cupti_profiler_target.h": "31d2eeb4879fc1d31323bc2c71ed0b3b736e0a6dc5460151dc6c4092a69d32ce",
+    "include/cupti_common.h": "f399bbe1bc54817a77b4468f4297b379ace6a6c34cc38d4fb2335262641d4f6d",
+    "include/cuda_stdint.h": "5db14e93d0ad2632aa93b3e960da9b495b03c40b1533c6af038ad6a4f8b40634",
+    "include/cupti_nvtx_cbid.h": "fdaccfb51d60e2a8afbd7eea6ef1d1520d111c2585ee210e2721cc37da997bd1",
+    "include/cupti_target.h": "c78573d54a5bea6f62c6656998668a425743598408dce67ea1c1171b334ad041",
+    "include/cupti_driver_cbid.h": "764fde88971f1f6c999ad2ea545381302779d41f344e7898ee975e1f6741c990",
+    "include/cupti_pcsampling_util.h": "971f0268d5e8c097b966f734e8b13ebbf66bcbf8ce0ecd6633a8fd4395885fd1",
+    "include/cupti_pmsampling.h": "28fd30604ca429117f5e486f7aca0102e2d49a34d0440860120d3c7873ae2769",
+    "include/generated_cuda_meta.h": "00dbbcba234cb6e7cd61231f7718f8cc13213e3e381ab1f3dee354d789183424",
+    "include/cupti_sass_metrics.h": "dd15bdb2726e15074e86b127df00c93abbb4e6ad15ff3b2c5aba83eedbd524ac",
+    "include/cupti_version.h": "2dc516e90731956373e73a6e5ca5d5377a76ed2b176a59a47141aeb5921ab6e2",
+    "include/generated_cudaGL_meta.h": "75f77642e6917448db4ad38abda40b8b531dfeaae945087c3dfc99ce727c6d66",
+    "include/cupti.h": "2645720064c8318cf09bad9d7d5a9ab379cc7082e180ffd6773e9f878fcd103d",
+    "include/generated_cuda_runtime_api_meta.h": "ac39de4dbaaf25b732863007653e23aef10c6c16ee66eead2ce6b356973e0b4b",
+    "include/cupti_profiler_host.h": "32491f5e528146b44be0d7da3c58ae1380f8cff8299b18815964c18b1cb23139",
+    "include/cupti_checkpoint.h": "ad3cfc2685b1a844815f26565216491a6e31798731e0e24eb49ecb775dd3fdbd",
+    "include/Openacc/cupti_openacc.h": "67438ce5efe16ddddcc5d5f29f74821ea04141ac0b83840e467966e7b0abdbe3",
+    "include/__pycache__/__init__.cpython-312.pyc": "7564da7aa754269adb6a60fbc0c6abb7b959d3613648ccae4b607e237ac3e05a",
+    "include/Openmp/cupti_openmp.h": "13558d99e6ffec76944a605e82d50d7b8215d62ee95de371833225c8a9f5ceb3",
+    "include/Openmp/omp-tools.h": "026b82ff13c2ed53eedc1f96e0f997b8236e7c56b0858f0f8cd5de3da40500e8",
+    "lib/libcheckpoint.so": "b3d830ed3cdddee9686033e4c185801704770fa82b78e23923d56bc044006ee2",
+    "lib/libnvperf_host.so": "a19ab37d5bea3a778b9c94b4535b6c656c910131fce19be98395827cf686713a",
+    "lib/libpcsamplingutil.so": "e6fa2783077974fb2765bfa9cbaebf980736df74eebf994c59c7596988aec83b",
+    "lib/libnvperf_target.so": "401c2c8f61bda1a6c8e116e1d20e29ccc7789cd5498f6abc9c1080ca0f954437",
+    "lib/libcupti.so.12": "76dcad94420820ea9aee9094c346cc34c6cb1ff630cef9b14e04db298a86305d"
+  },
+  "RM_baseline_unchanged": true,
+  "UVM_baseline_2MiB_unchanged": true,
+  "patched_libcuda_actual_initrd_verified": true,
+  "CUPTI_actual_initrd_verified": true,
+  "effective_registry": "ForceP2P=0x11;RMForceP2PType=1;RMPcieP2PType=1;RMForceStaticBar1=0;RM64KBBAR1Mappings=0",
+  "no_coherent_smallpage_lowBAR_NoSnoop_in_init": true,
+  "probe_timeout_seconds": 60,
+  "watchdog_seconds": 180,
+  "comparisons_expected": 12,
+  "hardware_operations": false,
+  "direct_route_proven": false,
+  "limits": [
+    "Local streaming verification only; no binary or GPU execution.",
+    "A successful CUDA memcpy or CUPTI activity does not alone prove direct PCIe transport.",
+    "Execution report must distinguish completed comparisons, callback correlation, dropped records and CUPTI timestamps from CLOCK_MONOTONIC."
+  ]
+}

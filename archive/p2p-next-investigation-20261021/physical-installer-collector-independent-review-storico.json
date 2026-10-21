@@ -1,0 +1,28 @@
+{
+  "status": "PASS_static_independent_review",
+  "reviewer": "storico_prove",
+  "sha256": {
+    "install_native_physical.py": "a7d753df14a078f3c7217e8a841f8dbe99043b81874b92f50f13b535ac4fd3be",
+    "collect_cleanup_physical.py": "8f19f83ad70a5bef393e190df959c87bf0cc4ae13556a40110e272edcacbc8e5",
+    "physical_log_validation.py": "20590c2d5eb6340999c1ea9ed15667ef7524cba4ba6a70d14a05b23e90ae5e1b",
+    "init-physical.sh": "23972f8abfc52668383ea36b926c8dc2595b6a3da6281fd3423a886415097ac6"
+  },
+  "scope": [
+    "Installer delta and all new PHYS manifest guards",
+    "Collector partial-file acceptance, exact backup/cleanup invariants and hash-pinned validator",
+    "Validator complete-versus-incomplete treatment",
+    "Init parameters/readback, independent watchdog and append-only kernel evidence"
+  ],
+  "checks": {
+    "python36_parse": true,
+    "shell_syntax": true,
+    "three_partial_classification_cases": true,
+    "watchdog_worker_fixture": "physical-watchdog-offline-validation.json"
+  },
+  "findings": [],
+  "limits": [
+    "No host installer/collector entrypoint executed; no EFI, GPU or remote operation.",
+    "Asynchronous watchdog evidence capture remains best effort if kernel or filesystem I/O stalls; reboot is not chained to sync.",
+    "Collector validates recorded summaries; independent analysis must recompute raw counter samples and join kernel physical-method records."
+  ]
+}

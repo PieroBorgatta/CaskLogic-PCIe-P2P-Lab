@@ -1,0 +1,14 @@
+{
+  "hardware_writes": false,
+  "additional_peer_control_proved": false,
+  "peer_32bit_limit_proved": false,
+  "FPB_enabled_snapshot": false,
+  "files": {
+    "reference/d7-pmbl.html": "0333b9fe6cb0672472cd8f08b99ef57393452c8523bb5e7abe84cfae203f5b63",
+    "reference/d7-pmbu32.html": "d370e0c0d0c0c103cf613b025e0481b8daf9a80f9e4e365e653bb2955f6a83d7",
+    "reference/d7-pmlu32.html": "87d20706a272a098d4157b4c623136df4bb55720ad46c73e8f06ab2e94503eb5",
+    "decode-snapshot-20261021/snapshot.json": "a184f77b75b9ddfb53f0cce5afad4ca278a84c5e78555e5a3589875b5a337191",
+    "decode-snapshot-20261021/decode-analysis.json": "6fde440fccbd2c6462f5198a10e9bac9802a326cf960f5662c7be2331bd0cadf",
+    "firmware-analysis-d1/beyond-CCFG.md": "2fdb34bbbdbb96f04c103ee206f58ed33408c051e319da21f935c4e24d4a796a"
+  }
+}

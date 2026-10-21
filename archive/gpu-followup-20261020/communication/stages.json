@@ -1,0 +1,260 @@
+[
+  {
+    "name": "baseline",
+    "env": {
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525340.8848634,
+    "seconds": 12.002505779266357,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_send",
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525352.888097,
+    "seconds": 10.002107858657837,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_recv",
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "2",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525362.8904169,
+    "seconds": 10.002114534378052,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_both",
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "3",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525372.892766,
+    "seconds": 10.001962423324585,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_both_4ch",
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "3",
+      "NCCL_MIN_NCHANNELS": "4",
+      "NCCL_MAX_NCHANNELS": "4",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525382.8949525,
+    "seconds": 10.001957178115845,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "ce_both_8ch",
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "3",
+      "NCCL_MIN_NCHANNELS": "8",
+      "NCCL_MAX_NCHANNELS": "8",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525392.897133,
+    "seconds": 10.002152681350708,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "direct_4ch",
+    "env": {
+      "NCCL_MIN_NCHANNELS": "4",
+      "NCCL_MAX_NCHANNELS": "4",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525402.8995442,
+    "seconds": 11.00267505645752,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "direct_8ch",
+    "env": {
+      "NCCL_MIN_NCHANNELS": "8",
+      "NCCL_MAX_NCHANNELS": "8",
+      "NCCL_DEBUG": "WARN"
+    },
+    "command": [
+      "/tools/sources/nccl-tests/build/all_reduce_perf",
+      "-b",
+      "16M",
+      "-e",
+      "256M",
+      "-f",
+      "4",
+      "-g",
+      "2",
+      "-w",
+      "3",
+      "-n",
+      "15",
+      "-c",
+      "2",
+      "-T",
+      "25"
+    ],
+    "timeout": 90,
+    "started_epoch": 1792525413.902444,
+    "seconds": 11.002190113067627,
+    "returncode": 0,
+    "timed_out": false
+  }
+]

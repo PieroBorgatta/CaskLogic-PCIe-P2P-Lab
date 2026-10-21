@@ -1,0 +1,46 @@
+{
+  "status": "PASS_STATIC_REVIEW_NO_BLOCKING_FINDING",
+  "scope": "PTE granularity and builder review only; no build, remote access or hardware execution",
+  "files": {
+    "uvm_map_external.c": "e12feb849fdaa884f87117b72006af7ed6d037961662db8900a0ef5c672ae405",
+    "uvm-peer-4k.patch": "3fe976ddeec6a90a258d6cd97df521c442f60b3a60eb85b9a81f41511fe284a5",
+    "build_uvm_only.py": "1effce6a72f7e02ec11f15aeb03153103a2c7df097f3ce757e33f8c00290931b",
+    "manifest.json": "df28028c0d8ced9a68223f68666ad0d9637db6abd6cbdbb1ff396abb838c178e",
+    "strict_patch.py": "e2dfa21a12cf67a97396d87b6c1dc25fa62b404ca8ac6fb0d0ac521660c44948"
+  },
+  "in_memory_strict_patch_forward_reverse": "PASS",
+  "hardware_page_table_path": {
+    "clamp": "uvm_map_external.c:969: only opt-in, non-sysmem, owning_gpu nonnull, mapping_gpu != owner; applies both peer directions",
+    "RM_input": "uvm_map_external.c:122: mapping_info.mappingPageSize = page_size; line193 GetExternalAllocPtes",
+    "table_allocation": "uvm_map_external.c:471 page_table_range_vec_init(mem_info.pageSize); stock uvm_mmu.c:1848 get_ptes_async(page_size)",
+    "HAL": "uvm_hal.c:249 GA100 uses Ampere MMU; AD100 inherits GA100 at259; uvm_ampere_mmu.c:39 gives depth3 for2M, depth4 for4K; uvm_turing_mmu.c:59 selects SMALL half for4K",
+    "RM_level": "nv_gpu_ops.c:4362 pLevelFmt=mmuFmtFindLevelWithPageShift(...,BIT_IDX_64(mappingPageSize))",
+    "RM_address": "nv_gpu_ops.c:4624 physicalAddress[i]=dynBar1DmaBase+offset+i*mappingPageSize; does not change BAR window or IOVA",
+    "submission": "uvm_map_external.c:247 writes PTEs; last copy invalidates TLB; line1079 tracker waits map complete",
+    "expected_grain": "For an 8MiB peer allocation:2048 4KiB PTEs instead of4 2MiB PTEs, subject to successful mapping; local owner mapping remains normal granularity"
+  },
+  "conditions": [
+    "Native Ampere/Ada HAL advertises4K.",
+    "Mapping base,length,offset and physical DMA target must be4K aligned; the requested CUDA allocation is a normal uncompressed allocation.",
+    "RM requires mappingPageSize <= allocation pageSize and allocationPageSize % mappingPageSize ==0.",
+    "RM rejects compressed allocations with changed pageSize.",
+    "The capability check is GPU HAL support, not a blanket guarantee for every virtual-machine vMMU configuration."
+  ],
+  "runtime_evidence_required": [
+    "Module parameter actually1.",
+    "PEER_PAGE_CLAMP old_page=200000,new_page=1000 for expected peer GPU/VA.",
+    "Correlated RM_PTE and UVM_PTE both page=1000, correct expected physical DMA decoded and PTE aperture.",
+    "UVM_SUBMIT status0 and UVM_MAP_COMPLETE status0 after alltable writes; owner checks and write-only data test independently pass/fail."
+  ],
+  "claim_limit": "These logs prove software choice, encoded PTE buffers and completed submission, not physical readback of GPU page tables or actual hardware walker contents.",
+  "builder": {
+    "preimage_patch_hashes": "verified",
+    "only_target": "NV_KERNEL_MODULES=nvidia-uvm",
+    "exports": "KBUILD_EXTRA_SYMBOLS filtered to nvidia RM exports",
+    "RM_binary": "copied original and rehashed ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "install_load_calls": false,
+    "version_checks": "595.99.02 and7.0.0-38-generic; newparameterrequired",
+    "limitation": "Build verifies seven instrumented source hashes and UVM preimage, not an independent fulltree reproducibility proof."
+  },
+  "conclusion": "Meaningful diagnostic perturbation of peer mapping page-table level and granularity. No demonstrated cause/fix follows from static review; BAR1 alignment trial already failed separately."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_STATIC_REVIEW",
+  "source_sha256": "9d078f1dd35a99c186fc7d861151ea1e6cec001118683508f6914c4123321160",
+  "review_scope": "CUDA/VMM main, data ordering, buffer lifetimes; sampler reviewed independently by other agent",
+  "facts": [
+    "Four allocations remain live until all four comparisons are complete.",
+    "Send allocations are accessible only by their owner; receive allocations are shared RW; source GPU executes both SM and CUDA copy requests.",
+    "Both source and poisoned destination are initialized by owner, synchronized and compared fully before sampling.",
+    "Active transfer window has no H2D/D2H payload operations, PCI snapshots or normal logging; one batch has at most 64 x 1 MiB logical payload operations.",
+    "CUDA event completion precedes active_end; sampler stops and joins before owner D2H comparison.",
+    "Volatile remote stores preserve 64 repeated SM passes; fence executes on threads that wrote.",
+    "Device identity, current context, stream context and VMM permissions are verified.",
+    "Four comparisons: two directions by SM and CUDA_COPY_REQUEST; copies are not called CE-observed."
+  ],
+  "limits": [
+    "NVML counters aggregate all PCIe traffic; they cannot prove direct routing by themselves.",
+    "submitted_payload_bytes is logical traffic requested, not measured bytes on wire.",
+    "Host API calls may block; native wrapper and watchdog remain necessary.",
+    "No GPU execution or NVCC compilation performed by this review."
+  ],
+  "blocking_findings": []
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS_STATIC_INSTALLER_READY_FOR_PACKAGE_AUDIT",
+  "installer_sha256": "c617d6fe0ac596efc44333e4e6ba8d22e9ce8bef1fd9ddf48c296be8ff2c648b",
+  "previous_coherent_collected_hashes_checked": 17,
+  "previous_result_sha256": "9d29b131d02b35e709287aef975785754feceb25a91042eec4cff01fb01898f9",
+  "previous_kernel_sha256": "791391a63417ff52ef6f73738f8ea9f3b8e4d1b8ee41fd0bfaf53c82a9ba5767",
+  "coherent_completion_guard_matches_real_logs": true,
+  "checks": {
+    "host_board_ESP_identity_and_original_bootfiles": true,
+    "BootNext_absent_original_BootOrder_required": true,
+    "new_package_exact_three_filenames_and_hashes_required": true,
+    "old_state_armed_matches_previous_package_and_EFIentry0003": true,
+    "old_result_and_kernel_match_collected_before_removal": true,
+    "whole_old_ESPdirectory_backup_and_filehashes_before_any_removal": true,
+    "sync_before_removal": true,
+    "same_kernel_preserved_and_hash_checked": true,
+    "new_files_staged_hashchecked_and_renamed": true,
+    "staging_leaves_EFIvariables_unchanged": true,
+    "arm_requires_Docker_halted_and_no_running_noncontrolVM": true,
+    "suspended_Windows_not_modified_or_rejected": true,
+    "arm_requires_current_combined_CCFG8077_9077_9077": true,
+    "arm_rejects_old_result_and_kernel_files": true,
+    "only_BootNext_changed_on_arm_original_order_retained": true
+  },
+  "limits": [
+    "Installer was not executed. Package contents must be verified separately after successful CPU build.",
+    "Previous raw log acceptance binds installed files to the collected directory, not hardcoded digests; the17collectedhashes were independently checked here.",
+    "Python assertions must remain enabled; do not use -O/PYTHONOPTIMIZE.",
+    "Interrupted staging preserves backup and stops subsequent reruns through STATE/BACKUP guards; it is not an automatic resume workflow."
+  ],
+  "hardware_operations": false,
+  "frozen_files_modified": false
+}

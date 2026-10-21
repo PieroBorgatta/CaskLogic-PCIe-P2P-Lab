@@ -1,0 +1,108 @@
+{
+  "epoch": 1792532586.594455,
+  "status": "BIOS_P2P_enabled_but_full_GPU_P2P_still_fails_even_native",
+  "observed": {
+    "external_to_ada_write": "pass",
+    "ada_to_external_write": "fail",
+    "reads_both_directions": "fail",
+    "minimum_failed_transfer_bytes": 4,
+    "ccfg_runtime_writes": "ignored on both GPU roots even native without Xen"
+  },
+  "firmware_lead": {
+    "board": "MS-01 AHWSA",
+    "installed_bios": "1.26",
+    "verified_official_images": [
+      "1.26",
+      "1.27"
+    ],
+    "form": "PCI Express Root Port 2",
+    "device_label": "PCIE SLOT",
+    "option": "P2P Support",
+    "variable": "SaSetup",
+    "guid": "72C5E28C-7783-43A1-8767-FAD73FCCAFA4",
+    "offset_hex": "0x3E3",
+    "size_bytes": 1,
+    "default_value": 0,
+    "current_value": 1,
+    "candidate_value": 1,
+    "effect_on_USB4_P2P": "Three VM trials and two valid native trials still fail 3/4 numerical operations.",
+    "firmware_modified": false,
+    "uefi_read_confirmed": true,
+    "variable_backup_crc_verified": true,
+    "direct_write_result": "EFI_WRITE_PROTECTED",
+    "variable_bytes_changed": 1,
+    "native_browser_result": "target_form_not_published_in_boot_HII_database",
+    "configuration_flash_modified": true,
+    "persistence_verified": true,
+    "force_method": "Intel vendor FPT, one4KiB sector read/patch/write/independent exact readback; only active SaSetup byte0x3E3 changed"
+  },
+  "next_action": "Identify firmware/hardware root-port restrictions; do not equate capability flags or BIOS setting with working P2P.",
+  "production_checkpoint_sha256": "b570f4a995393788ad9450359e2bdac9399b66e20d5a568621027d258c58e6c0",
+  "training_state": "inactive_disabled",
+  "driver_state": "stock_restored_both_gpus_healthy",
+  "temporary_boot_environment": "removed; original boot order and EFI hashes verified",
+  "physical_root_registers": {
+    "internal_GPU_before": "0x0E008077",
+    "internal_GPU_after": "0x04008077",
+    "Thunderbolt_after": "0x0E009077",
+    "read_disable_bit_runtime_clear": "still ignored"
+  },
+  "post_BIOS_VM_trials": [
+    "bios-slot-enabled-word-events.json",
+    "bios-slot-enabled-acs-off-word-events.json",
+    "bios-slot-enabled-coherent-nosnoop-off-events.json"
+  ],
+  "native_first_trial": "Invalid: only one GPU because USB4 PCIe tunnel not authorized. No inference about native P2P.",
+  "native_valid_trial": {
+    "epoch": 1792532586.5939178,
+    "valid": true,
+    "physical_native_no_Xen": true,
+    "IOMMU_disabled": true,
+    "two_GPUs_detected": true,
+    "drivers": [
+      "compiled-diagnostic",
+      "compiled-coherent"
+    ],
+    "test_bytes": 4,
+    "each_trial": {
+      "external_A2000_to_internal_Ada_write": "pass",
+      "internal_Ada_to_external_A2000_write": "fail",
+      "read_both_directions": "fail",
+      "failures": 3
+    },
+    "native_CCFG_clear_ignored": {
+      "00:01.0": "04008077",
+      "00:07.0": "0e009077"
+    },
+    "inference": "Same failure pattern without Xen/translated IOMMU; virtualization is not needed to reproduce. Exact blocking component within CPU-root/fabric/USB4 path is not yet isolated. Diagnostic driver cleanup assertions also present in kernel log.",
+    "result_sha256": "1ae0f586bec960933ada9095c886217b3c5587fa3daa4b645f385cae7a27a63c",
+    "kernel_log_sha256": "fd89bdd66c4537929e1a01d59fb82b422a2ec3f2e541d1dc103f60f90cd6bb01",
+    "training": "never started",
+    "temporary_boot_entry_and_files": "removed; original boot order and original EFI hashes verified"
+  },
+  "final_health": {
+    "epoch": 1792532626.40743,
+    "XCP": "running",
+    "Ubuntu": "running",
+    "Windows": "halted",
+    "GPU_memory_MiB": {
+      "A2000": 12282,
+      "Ada": 16380
+    },
+    "GPU_temperatures_C": {
+      "A2000": 35,
+      "Ada": 44
+    },
+    "stock_driver_module_sha256": "0b3110fde7eb34d578ea50b7da21d2539b1ff228fd017efc03e71a6aeace008d",
+    "stock_libcuda_sha256": "192d4eedb1b39f0568f2b5423d35227d13b32b9025599e1968a9081982da207d",
+    "fan_service": "active",
+    "training": "inactive_disabled",
+    "checkpoint_sha256": "b570f4a995393788ad9450359e2bdac9399b66e20d5a568621027d258c58e6c0",
+    "checkpoint_unchanged": true,
+    "Ubuntu_autostart": true,
+    "BootOrder": "0000,0001",
+    "BootNext": "absent",
+    "temporary_boot_entry": "removed",
+    "original_EFI_hashes": "verified"
+  }
+}

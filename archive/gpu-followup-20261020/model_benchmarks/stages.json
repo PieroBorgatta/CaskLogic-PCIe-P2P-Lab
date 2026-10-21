@@ -1,0 +1,51 @@
+[
+  {
+    "name": "double_buffered_transfers",
+    "command": [
+      "python",
+      "-u",
+      "/audit/pipeline_copy.py"
+    ],
+    "timeout": 100,
+    "started_epoch": 1792525441.8475718,
+    "seconds": 14.00259518623352,
+    "returncode": 0,
+    "timed_out": false
+  },
+  {
+    "name": "smoke_ddp32",
+    "command": [
+      "python",
+      "-u",
+      "/audit/quick_model.py",
+      "--mode",
+      "train",
+      "--world",
+      "2",
+      "--depth",
+      "32",
+      "--microbatch",
+      "1",
+      "--output",
+      "/audit/smoke_ddp32.json",
+      "--recompute",
+      "--global-sequences",
+      "4",
+      "--warmup",
+      "1",
+      "--samples",
+      "1"
+    ],
+    "env": {
+      "NCCL_SHM_USE_CUDA_MEMCPY": "1",
+      "NCCL_SHM_MEMCPY_MODE": "1",
+      "NCCL_DEBUG": "WARN"
+    },
+    "timeout": 480,
+    "required": true,
+    "started_epoch": 1792525455.8503714,
+    "seconds": 92.3976058959961,
+    "returncode": 137,
+    "timed_out": false
+  }
+]

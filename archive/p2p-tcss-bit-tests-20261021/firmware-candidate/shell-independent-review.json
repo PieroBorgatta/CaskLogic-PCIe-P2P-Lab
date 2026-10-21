@@ -1,0 +1,43 @@
+{
+  "scope": "Static independent review; no execution of generated flash script and no mutation of reviewed sources",
+  "prepare_flash_package_sha256": "5f032a9396dbc6f601b46e8b9635c284226988281ffdeafd310dae9fc6fa95a7",
+  "build_region_gates_sha256": "ee0b39d3a432b8bafef1775496b9eaed2d86537022f20ce483c57a36213278ad",
+  "blocking_defects_found": [],
+  "checked": [
+    "Every readback filename is removed and absence checked before FPT dump.",
+    "Every success flag is removed and absence checked before gate execution.",
+    "FPT and gate exit status is checked immediately before any later command can overwrite lasterror.",
+    "Both successful gate exit and expected flag existence are required.",
+    "Candidate FPT write failure, dump failure, or POST failure go to rollback.",
+    "Abort before any write may reboot the unchanged firmware.",
+    "All flash and readback commands use start 0x01B16000 and size 0x13000.",
+    "if not equality, if not exist, goto labels, and exit /b syntax supported by UEFI shell.",
+    "Rollback first removes stale region-restored.bin, performs fresh dump, and runs Restoregate with exit0 plus fresh marker; when exact original is confirmed, it skips restore write.",
+    "If that initial check fails, rollback writes ORIGINAL and records any nonzero FPT status, then requires another freshly produced dump and exact Restoregate comparison.",
+    "No path reaches restored/reset after restore attempt without successful fresh dump plus successful Restoregate plus fresh RESTORED.flag.",
+    "Abort/reset remains reachable only before the first attempted flash.",
+    "A failed dump, undeletable stale readback/marker or failed Restoregate after restore attempt goes to fatal with no scripted reset."
+  ],
+  "integration_note": "Build script reads TcssRegionGate.c and writes EFI beside itself; package generator reads EFI under firmware-candidate. Operator must stage/copy built outputs accordingly; no assumption that running build script locally would work.",
+  "limits": [
+    "This review does not validate successful boot after patch.",
+    "A stop in fatal avoids a scripted reset, but cannot guarantee recovery after a later loss of power or manual reset.",
+    "Corrected native security gate is reviewed separately by storico_prove."
+  ],
+  "primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/tianocore/edk2/master/ShellPkg/Library/UefiShellLevel1CommandsLib/If.c",
+      "support": "ProcessStatement handles not at397, exist at417, equality at556; TestOperation numeric equality at214."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tianocore/edk2/master/ShellPkg/Library/UefiShellLevel1CommandsLib/Goto.c",
+      "support": "MainCmdGoto prepends colon then searches matching label."
+    },
+    {
+      "url": "https://uefi.org/sites/default/files/resources/UEFI_Shell_2_2.pdf",
+      "support": "UEFI shell scripting and exit /b specification."
+    }
+  ],
+  "generated_startup_sha256": "6d2b6a65c60ed8070c69723fcc60753353b81505976dad8086c53e1271356209",
+  "final_rollback_review": "PASSED_STATIC_REVIEW"
+}

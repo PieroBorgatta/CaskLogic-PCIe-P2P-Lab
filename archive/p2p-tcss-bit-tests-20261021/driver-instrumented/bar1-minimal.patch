@@ -1,0 +1,73 @@
+--- a/src/nvidia/generated/g_kern_bus_nvoc.c
++++ b/src/nvidia/generated/g_kern_bus_nvoc.c
+@@ -1064,7 +1064,7 @@
+     // default
+     else
+     {
+-        pThis->__kbusGetBar1P2PDmaInfo__ = &kbusGetBar1P2PDmaInfo_395e98;
++        pThis->__kbusGetBar1P2PDmaInfo__ = &kbusGetBar1P2PDmaInfo_GH100;
+     }
+ 
+     // kbusIncreaseStaticBar1Refcount -- halified (2 hals) body
+@@ -1112,7 +1112,7 @@
+     // default
+     else
+     {
+-        pThis->__kbusCreateP2PMappingForBar1P2P__ = &kbusCreateP2PMappingForBar1P2P_395e98;
++        pThis->__kbusCreateP2PMappingForBar1P2P__ = &kbusCreateP2PMappingForBar1P2P_GH100;
+     }
+ 
+     // kbusRemoveP2PMappingForBar1P2P -- halified (2 hals) body
+@@ -1124,7 +1124,7 @@
+     // default
+     else
+     {
+-        pThis->__kbusRemoveP2PMappingForBar1P2P__ = &kbusRemoveP2PMappingForBar1P2P_395e98;
++        pThis->__kbusRemoveP2PMappingForBar1P2P__ = &kbusRemoveP2PMappingForBar1P2P_GH100;
+     }
+ 
+     // kbusHasPcieBar1P2PMapping -- halified (2 hals) body
+@@ -1136,7 +1136,7 @@
+     // default
+     else
+     {
+-        pThis->__kbusHasPcieBar1P2PMapping__ = &kbusHasPcieBar1P2PMapping_d69453;
++        pThis->__kbusHasPcieBar1P2PMapping__ = &kbusHasPcieBar1P2PMapping_GH100;
+     }
+ 
+     // kbusIsPcieBar1P2PMappingSupported -- halified (2 hals) body
+@@ -1148,7 +1148,7 @@
+     // default
+     else
+     {
+-        pThis->__kbusIsPcieBar1P2PMappingSupported__ = &kbusIsPcieBar1P2PMappingSupported_d69453;
++        pThis->__kbusIsPcieBar1P2PMappingSupported__ = &kbusIsPcieBar1P2PMappingSupported_GH100;
+     }
+ 
+     // kbusCheckFlaSupportedAndInit -- halified (2 hals) body
+--- a/src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c
++++ b/src/nvidia/src/kernel/gpu/bus/arch/pascal/kern_bus_gp100.c
+@@ -63,6 +63,11 @@
+         FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _NVLINK_INDIRECT, attributes))
+     {
+         return kbusCreateP2PMappingForNvlink_HAL(pGpu0, pKernelBus0, pGpu1, pKernelBus1, peer0, peer1, attributes);
++    }
++
++    if (FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _PCIE_BAR1, attributes))
++    {
++        return kbusCreateP2PMappingForBar1P2P_HAL(pGpu0, pKernelBus0, pGpu1, pKernelBus1, attributes);
+     }
+ 
+     if (FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _PCIE, attributes))
+@@ -641,6 +646,11 @@
+         FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _NVLINK_INDIRECT, attributes))
+     {
+         return kbusRemoveP2PMappingForNvlink_HAL(pGpu0, pKernelBus0, pGpu1, pKernelBus1, peer0, peer1, attributes);
++    }
++
++    if (FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _PCIE_BAR1, attributes))
++    {
++        return kbusRemoveP2PMappingForBar1P2P_HAL(pGpu0, pKernelBus0, pGpu1, pKernelBus1, attributes);
+     }
+ 
+     if (FLD_TEST_DRF(_P2PAPI, _ATTRIBUTES, _CONNECTION_TYPE, _PCIE, attributes))

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "fixture_checks": 154,
+  "compiler": "clang++ C++17 Wall Wextra Werror ASan UBSan",
+  "client_sha256": "4131933670fab1d4e6e0e9cbcb34c651558061e56933e5182bb24cc668dbf2d5",
+  "fixture_source_sha256": "b8b59099014565a897249e6175edea618840c07c3b943f0f2c2483f715f7ea0c",
+  "hardware_calls": 0,
+  "includes_SIGTERM_park_lifetime_check": true,
+  "strict_mode": 1
+}

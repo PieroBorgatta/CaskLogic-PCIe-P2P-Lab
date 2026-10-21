@@ -1,0 +1,16 @@
+{
+  "status": "PASS_LOCAL_CPU_FIXTURES",
+  "installer_tests": 9,
+  "collector_tests": 12,
+  "hardware_commands_executed": false,
+  "all_command_effects_mocked": true,
+  "collector_fixture_log": "SYNTHETIC matching frozen TRAFFIC_* output; RC0,5,6 accepted with complete consistent protocol",
+  "files_sha256": {
+    "install_native_traffic.py": "070147ac67bcca60b75760039479efa1121e404cd96f522a060a916f1e07b321",
+    "collect_cleanup_traffic.py": "3f55762b758225756a89342e1aa3d89abf9d20d3a5327199e50b35eb3b32319b",
+    "test_install_native_traffic.py": "7183cdc7c45753d10149d0ce950d7a9c78e1bc0f810e86ea7738ebf33ed9026b",
+    "test_collect_cleanup_traffic.py": "d0ea375ef0c235bd61c940d873317e71d65c0c44eba26511b16177775ad21727"
+  },
+  "collector_scope": "19 EFI files full backup, 17 raw results plus state and manifest; cleanup only registered traffic entry/directory. Transaction logic identical to reviewed Next collector.",
+  "python36_syntax_parse": true
+}

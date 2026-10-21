@@ -1,0 +1,10 @@
+{
+  "status": "PASS_EXACT_SINGLE_MODE_DELTA_REVIEW",
+  "source_sha256": "484330df9cf0219b25ec6cf03a195db9bdb320a7afa12054f5df9f1cc2208ddb",
+  "patch_sha256": "08994be119c93cb1310a31556d6ce85910dde5866aad7b26db75282ea903ebd6",
+  "only_functional_change": "SET_DST_PHYS_MODE target NONCOHERENT_SYSMEM2 to COHERENT_SYSMEM1",
+  "other_tokens_identical_after_comment_whitespace_removal": true,
+  "other_8_overlay_files_identical": true,
+  "basis": "Stock595.99.02 uvm_hal_ampere_ce_phys_mode ce_aperture UVM_APERTURE_SYS maps to COHERENT_SYSMEM",
+  "hardware_tested": false
+}

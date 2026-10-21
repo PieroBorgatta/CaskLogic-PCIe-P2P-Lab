@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "real_sampler_header_sha256": "777f5e7331b94712163a7039fa62be2f69cb685192b316ffbd4f4bd5ace3f210",
+  "nvml_header_sha256": "2ec2431ac69cf205ecf6cd2bf24d0402997975505d574cee5aec6a85a4c520c9",
+  "cases": [
+    {
+      "scenario": "success",
+      "expected_rc": 0,
+      "rc": 0,
+      "pass": true
+    },
+    {
+      "scenario": "invalid_identity",
+      "expected_rc": 27,
+      "rc": 27,
+      "pass": true
+    },
+    {
+      "scenario": "preflight_unavailable",
+      "expected_rc": 27,
+      "rc": 27,
+      "pass": true
+    },
+    {
+      "scenario": "sampling_unavailable",
+      "expected_rc": 6,
+      "rc": 6,
+      "pass": true
+    }
+  ],
+  "boundary_and_stats_assertions": 16,
+  "asan_ubsan": true,
+  "hardware_calls": false,
+  "scope": "Real sampler/client code against local fake NVML shared library. No CUDA or GPU."
+}

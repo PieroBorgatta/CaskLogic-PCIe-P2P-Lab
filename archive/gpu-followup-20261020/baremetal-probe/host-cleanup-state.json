@@ -1,0 +1,14 @@
+{
+  "epoch": 1792532558.7740242,
+  "entry": "0002",
+  "stage": "completed_cleaned_original_boot_verified",
+  "kernel_args": "initrd=\\EFI\\CaskLogicBaremetal\\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0",
+  "automatic_return_seconds": 180,
+  "disk_filesystems": "only known ESP for logging",
+  "BIOS_P2P_setting": 1,
+  "initrd_sha256": "080660ffa5936529d2f3b102f354108c7c598b340cb7f0d47a5e803c955ffa46",
+  "result": "valid two-GPU native tests: both drivers fail 3/4 operations exactly as in VM",
+  "original_efi_hashes_verified": true,
+  "temporary_entry_removed": true,
+  "temporary_esp_directory_removed": true
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS_STATIC_REVIEW",
+  "hardware_operations": false,
+  "compiled_by_this_review": false,
+  "patch_sha256": "9dfb9c6af93c2e08b10b0d80b0efd08b0ed8daec581cee2f3a32efce9645908e",
+  "source_sha256": "8fcc14e243c89e30bad03a721b82478cf16b5c2a6f5971d6973084059350f49f",
+  "builder_sha256": "432135a9009cbf41c3c1ccaa4eca22767891ccd9131b3208743fe1176bcc60e6",
+  "manifest_sha256": "d74748439932ec6d2a4f4f17d7ac1b3900396533ff7e948fec2f5e4ba9cf7dcb",
+  "overlay_files_verified": 9,
+  "method_definitions_compared": 30,
+  "checks": [
+    "CPU906A3 e UUID/BDF/ID esatti; parametro default off e CAP_SYS_ADMIN",
+    "Global lock: pairing PCIE_BAR1 gia presente e refcount valido, retain pairing+GPU; nessuna init peer",
+    "VA write lock separato dal global; appartenenza corrente, peer-enabled e mapping provenance ricontrollati",
+    "Tre mapping live: fonte locale, destinazione peer e owner; duplicati e offset identici per il target",
+    "Range 4 byte, pagina4KiB, allocazione e DMA/BAR1 controllati senza doppia addizione",
+    "Metadata solo dopo RMdup valida; recorded dopo mapping riuscita; alias split rifiutati",
+    "Tre kref prima di push; rilascio normale dopo wait confermato; peer release dopo VA unlock",
+    "Incertezza mantiene pairing/GPU/duplicate/modulo e blocca submission successive",
+    "Canale CE P2P privilegiato e non proxy; LOCAL_FB verso NONCOHERENT_SYSMEM; source/destination physical",
+    "LAUNCH 0x3186 C6B5 o0x04003186 C7B5, FLUSH SYS e NON_PIPELINED;30 definizioni confrontate",
+    "Nessuna modifica RM, policy PCI/firmware o mapping/cleanup normale"
+  ],
+  "resolved_findings": [
+    "Il precedente helper PCIE rifiutava il link PCIE_BAR1 effettivo: sostituito con retain/release mirati alla coppia BAR1 esistente.",
+    "Decoder client ora controlla LAUNCH intero per classe.",
+    "Warning FORTIFY della buildv1 eliminato con13assegnazioni output; fixture72input invariati/72outputzero ASan/UBSan PASS."
+  ],
+  "limitations": [
+    "La review statica e la build non provano completamento hardware o arrivo del dato.",
+    "Il contatore di completamento CE non certifica dati remoti: resta necessario owner compare.",
+    "Il test cambia anche il canale/attributo fisico: non e isolamento esclusivo della MMU.",
+    "Contratto physAddrBufferSize in byte, implementazione RM lo tratta come count; richiesta immutabile a una sola pagina limita in entrambi i casi la risposta a un NvU64.",
+    "Il fallback su stato incerto richiede watchdog indipendente e processo vivo: client revisionato separatamente."
+  ],
+  "fortify_fix_review": "fortify-fix-independent-review-firmware.json"
+}

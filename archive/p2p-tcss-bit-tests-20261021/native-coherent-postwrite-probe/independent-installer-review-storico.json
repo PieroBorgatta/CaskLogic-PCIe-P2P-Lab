@@ -1,0 +1,42 @@
+{
+  "status": "PASS_STATIC_PINNED_EXCEPTION_AND_OFFLINE_GUARD",
+  "installer_sha256": "cba84802ce2956c2a5970aafcd9f730d48d5df0b6193837b80bfa3884904cc9e",
+  "only_new_acceptance_path": "Exact pinned original NoSnoop result/kernel hashes plus completed/restored program and independently reproduced BusyBox gate failure",
+  "offline_execution": "Executed only isolated new read-only assertions against local collected files; no installer execution",
+  "new_guard_passes_on_current_local_evidence": true,
+  "NoSnoop_result_sha256": "b60182ce923b8a4857c574b8768371b0fc20cd976b508341d66688d0febac4a7",
+  "NoSnoop_kernel_sha256": "e7f47d8c2ef070d923a2c60c018cb6da8deaeebbb48be5684ab5e378ee9f0237",
+  "five_valid_phase_results": [
+    "ATTR_PHASE_RESULT index=0 name=baseline_initial mode=0 failures=3 comparisons=4 cpu_post_pass=1 cpu_post_fail=1 cpu_post_skip=0 valid_protocol=1",
+    "ATTR_PHASE_RESULT index=1 name=ada_off mode=1 failures=3 comparisons=4 cpu_post_pass=1 cpu_post_fail=1 cpu_post_skip=0 valid_protocol=1",
+    "ATTR_PHASE_RESULT index=2 name=baseline_restored mode=0 failures=3 comparisons=4 cpu_post_pass=1 cpu_post_fail=1 cpu_post_skip=0 valid_protocol=1",
+    "ATTR_PHASE_RESULT index=3 name=both_off mode=2 failures=3 comparisons=4 cpu_post_pass=1 cpu_post_fail=1 cpu_post_skip=0 valid_protocol=1",
+    "ATTR_PHASE_RESULT index=4 name=baseline_final mode=0 failures=3 comparisons=4 cpu_post_pass=1 cpu_post_fail=1 cpu_post_skip=0 valid_protocol=1"
+  ],
+  "six_valid_device_control_writes": [
+    "ATTR_WRITE device=0 bdf=0000:01:00.0 offset=80 width=16 mask=0810 before=2930 wanted=2120 after=2120 valid=1",
+    "ATTR_WRITE device=0 bdf=0000:01:00.0 offset=80 width=16 mask=0810 before=2120 wanted=2930 after=2930 valid=1",
+    "ATTR_WRITE device=0 bdf=0000:01:00.0 offset=80 width=16 mask=0810 before=2930 wanted=2120 after=2120 valid=1",
+    "ATTR_WRITE device=1 bdf=0000:06:00.0 offset=80 width=16 mask=0810 before=2910 wanted=2100 after=2100 valid=1",
+    "ATTR_WRITE device=0 bdf=0000:01:00.0 offset=80 width=16 mask=0810 before=2120 wanted=2930 after=2930 valid=1",
+    "ATTR_WRITE device=1 bdf=0000:06:00.0 offset=80 width=16 mask=0810 before=2100 wanted=2910 after=2910 valid=1"
+  ],
+  "verified_program_restore_markers": [
+    "ATTR_FINAL_RESTORE valid=1 reason=none",
+    "ATTR_PROGRAM_END protocol_complete=1 restored=1 rc=5"
+  ],
+  "backup_before_replacement": true,
+  "backup_all_regular_files_hash_compared_then_os_sync": true,
+  "preserves_raw_result_and_kernel_before_any_removal": true,
+  "arm_requires_all_VMs_halted": true,
+  "arm_requires_combined_CCFG_profile": true,
+  "original_ESP_bootfiles_checked": true,
+  "EFI_order_unchanged_before_arm": true,
+  "generic_failed_wrapper_accepted": false,
+  "hardware_operations": false,
+  "limitations": [
+    "This is an exact exception for the collected raw files; it does not make SCRIPT_RC23 a generally successful exit.",
+    "Complete NoSnoop data/PCI audit is a separate report owned by ricerca_p2p_nvidia.",
+    "Existing staging/arming logic was read but not executed; current hardware state remains the operator responsibility."
+  ]
+}

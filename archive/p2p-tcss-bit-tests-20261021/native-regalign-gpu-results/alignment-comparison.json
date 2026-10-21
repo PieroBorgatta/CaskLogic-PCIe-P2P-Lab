@@ -1,0 +1,264 @@
+{
+  "status": "alignment_corrected_without_data_improvement",
+  "registry_override": "RM64KBBAR1Mappings=0",
+  "owner_checks_passed": 4,
+  "software_mapping_checks_all_pass": true,
+  "page_alignment_all_pass": true,
+  "operations_unchanged": true,
+  "data_operations": [
+    {
+      "operation": "REMOTE_READ",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 767
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "1",
+      "line": 785
+    },
+    {
+      "operation": "REMOTE_READ",
+      "s": "1",
+      "d": "0",
+      "bytes": "4",
+      "valid": "0",
+      "line": 807
+    },
+    {
+      "operation": "REMOTE_WRITE",
+      "s": "0",
+      "d": "1",
+      "bytes": "4",
+      "valid": "0",
+      "line": 826
+    }
+  ],
+  "window_comparison": [
+    {
+      "id": "1",
+      "owner_gpu_instance": "0",
+      "before_bar1_offset": "400000",
+      "after_bar1_offset": "400000",
+      "before_dma": "4000400000",
+      "after_dma": "4000400000"
+    },
+    {
+      "id": "2",
+      "owner_gpu_instance": "1",
+      "before_bar1_offset": "2a0000",
+      "after_bar1_offset": "400000",
+      "before_dma": "46002a0000",
+      "after_dma": "4600400000"
+    },
+    {
+      "id": "3",
+      "owner_gpu_instance": "1",
+      "before_bar1_offset": "4a0000",
+      "after_bar1_offset": "600000",
+      "before_dma": "46004a0000",
+      "after_dma": "4600600000"
+    },
+    {
+      "id": "4",
+      "owner_gpu_instance": "0",
+      "before_bar1_offset": "600000",
+      "after_bar1_offset": "600000",
+      "before_dma": "4000600000",
+      "after_dma": "4000600000"
+    }
+  ],
+  "ccfg_three_stages_verified": true,
+  "pcie_changes": [
+    {
+      "operation": "read_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:00:07.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    },
+    {
+      "operation": "read_1_to_0",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": [
+        {
+          "bdf": "0000:01:00.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        },
+        {
+          "bdf": "0000:00:01.0",
+          "field": "PCI_STATUS",
+          "before": "0010",
+          "after": "2010"
+        }
+      ]
+    },
+    {
+      "operation": "write_0_to_1",
+      "snapshots_before": 6,
+      "snapshots_after": 6,
+      "changes": []
+    }
+  ],
+  "cleanup_errors": [
+    {
+      "line": 1463,
+      "kernel_time": 13.594235,
+      "raw": "[   13.594235] NVRM: iovaspaceDestruct_IMPL: 4 left-over mappings in IOVAS 0x100",
+      "monotonic_estimate": 13.587916079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.2769109169999986
+    },
+    {
+      "line": 1464,
+      "kernel_time": 13.618928,
+      "raw": "[   13.618928] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.612609079000002,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.30160391700000133
+    },
+    {
+      "line": 1465,
+      "kernel_time": 13.618933,
+      "raw": "[   13.618933] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.612614079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.30160891699999937
+    },
+    {
+      "line": 1466,
+      "kernel_time": 13.618979,
+      "raw": "[   13.618979] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.612660079000001,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.30165491700000047
+    },
+    {
+      "line": 1467,
+      "kernel_time": 13.618982,
+      "raw": "[   13.618982] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.612663079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.301657917
+    },
+    {
+      "line": 1468,
+      "kernel_time": 13.621242,
+      "raw": "[   13.621242] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.614923079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.3039179169999997
+    },
+    {
+      "line": 1469,
+      "kernel_time": 13.621245,
+      "raw": "[   13.621245] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.614926079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.30392091699999924
+    },
+    {
+      "line": 1470,
+      "kernel_time": 13.621259,
+      "raw": "[   13.621259] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:598",
+      "monotonic_estimate": 13.614940079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.3039349169999994
+    },
+    {
+      "line": 1471,
+      "kernel_time": 13.621262,
+      "raw": "[   13.621262] NVRM: GPU1 nvAssertFailedNoLog: Assertion failed: pIOVAS != NULL @ io_vaspace.c:607",
+      "monotonic_estimate": 13.614943079,
+      "phase_estimate": {
+        "phase": "context_exit_begin",
+        "monotonic": "13.311005162",
+        "s": "-1",
+        "d": "-1",
+        "line": 840
+      },
+      "seconds_after_context_exit": 0.30393791699999895
+    }
+  ],
+  "sources": {
+    "native-regalign-gpu-results/result.log": "ed531097c138a984a33cb9d9e087a1055e508f89055fd08ffe1a0156a46c5eae",
+    "native-regalign-gpu-results/kernel.log": "564d40d8f3bcdefb06d6efdefa6d019569d23e508c8298fff2dc80a850fc4164",
+    "native-regalign-gpu-results/pte-chain-validation.json": "a3dd3d3c587ed29161d299f69b3df7f1227e9a91701745ea5c363a1cef4aca58",
+    "native-instrumented2-gpu-results/pte-chain-validation.json": "b4c8e1b50c28cc106b6654bfa25a4dc6bbd6af8f2ef862f03e7958a8aab57158"
+  },
+  "conclusion": "Misalignment existed in previous dynamic mappings and is corrected by existing driver policy. Identical three data failures show it was not sufficient to explain or repair the observed P2P failure. No inference about actual wire TLP addresses from software PTE trace alone."
+}

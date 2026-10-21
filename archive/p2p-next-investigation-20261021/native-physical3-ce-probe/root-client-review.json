@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXACT_MODE_DELTA",
+  "main_sha256": "7d493bc26a9d40a9091da86dcc52f49cc86d6f8eab113a5f0681a76c8964a6e6",
+  "main_unchanged": true,
+  "client_sha256": "4131933670fab1d4e6e0e9cbcb34c651558061e56933e5182bb24cc668dbf2d5",
+  "only_functional_change": "destination mode2 to1; other tokens identical",
+  "lifetime_policy_unchanged": true,
+  "hardware_tested": false
+}
