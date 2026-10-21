@@ -18,8 +18,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 9761,
-      "sha256": "4cd38e1f986867b3b8ae600e75e287acbe203c6a269eb36a59863a0f6fbbaabf"
+      "bytes": 10294,
+      "sha256": "2dac9437ec183c10095a64da43776b5824fdf2ee6d243f77752bb2c49620d7ac"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3690,8 +3690,8 @@
       "sha256": "f424d12ef2e0c929beab7f62f242afe9d120db38e8bb4ab6648253d495a94df2"
     },
     "docs/assets/topology.svg": {
-      "bytes": 2830,
-      "sha256": "fb5360ba86b7b4dd5d4c89c5296e292d4f924c8d2ccd1581b83448789db1e7b0"
+      "bytes": 2819,
+      "sha256": "3fbf090b1387021df970f834bd7af1f8f462a41fb9c2227f644ec0038d9abc90"
     },
     "docs/indice.md": {
       "bytes": 2121,

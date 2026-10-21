@@ -1,114 +1,117 @@
-<p align="center"><img src="docs/assets/casklogic-logo.png" width="230" alt="CaskLogic — logo originale"></p>
+<p align="center"><img src="docs/assets/casklogic-logo.png" width="230" alt="CaskLogic — original logo"></p>
 <h1 align="center">CaskLogic PCIe P2P Lab</h1>
-<p align="center"><strong>Due GPU. Due rami PCIe. Un trasferimento che funziona in un solo verso.</strong><br>Indagine aperta su Minisforum MS-01, RTX 2000 Ada e RTX A2000 via USB4.</p>
+<p align="center"><strong>Two GPUs. Two PCIe branches. Successful writes in only one direction.</strong><br>An open investigation into the Minisforum MS-01, RTX 2000 Ada and RTX A2000 over USB4.</p>
 <p align="center">
-<img src="https://img.shields.io/badge/stato-NON_RISOLTO-d55b45?style=for-the-badge" alt="Non risolto">
-<img src="https://img.shields.io/badge/NVIDIA-Ampere_%2B_Ada-76b900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA Ampere e Ada">
+<img src="https://img.shields.io/badge/status-UNRESOLVED-d55b45?style=for-the-badge" alt="Unresolved">
+<img src="https://img.shields.io/badge/NVIDIA-Ampere_%2B_Ada-76b900?style=for-the-badge&logo=nvidia&logoColor=white" alt="NVIDIA Ampere and Ada">
 <img src="https://img.shields.io/badge/Intel-Alder_Lake_H-0071c5?style=for-the-badge&logo=intel&logoColor=white" alt="Intel Alder Lake H">
 <img src="https://img.shields.io/badge/USB4-PCIe_tunneling-408d9d?style=for-the-badge&logo=usb&logoColor=white" alt="USB4 PCIe tunneling">
 </p>
-<p align="center"><a href="docs/technical-summary.en.md">English technical summary</a> · <a href="#risultati-che-contano">Risultati</a> · <a href="firmware/README.md">BIOS sperimentali</a> · <a href="docs/indice.md">Archivio</a></p>
+<p align="center"><a href="docs/technical-summary.en.md">Technical summary</a> · <a href="#key-results">Results</a> · <a href="firmware/README.md">Experimental BIOS</a> · <a href="docs/indice.md">Archive index</a></p>
 
-![Topologia e risultato direzionale](docs/assets/topology.svg)
+![Topology and directional results](docs/assets/topology.svg)
 
-## Perché questo repository
+## Why this repository exists
 
-Questo progetto raccoglie l'indagine di **Piero Borgatta / CaskLogic** del 20–21 ottobre 2026: prove CUDA, modifiche sperimentali NVIDIA RM/UVM, analisi BIOS/FSP, misure e risultati negativi. Lo scopo è permettere a chi conosce PCIe, Intel TCSS, USB4 o il driver NVIDIA di esaminare evidenze concrete e proporre il prossimo discriminante utile.
+This repository collects **Piero Borgatta / CaskLogic's** investigation of 20–21 October 2026: CUDA tests, experimental NVIDIA RM/UVM modifications, BIOS/FSP analysis, measurements and negative results. It gives researchers familiar with PCIe, Intel TCSS, USB4 or NVIDIA drivers concrete evidence to review and a basis for proposing the next useful diagnostic step.
 
-**Non è disponibile una correzione del P2P bidirezionale.** Una capability dichiarata, un registro modificato o un comando DMA completato non sono una prova di consegna corretta del payload. Le prove positive in un verso non qualificano la soluzione per produzione, atomiche, NCCL o training.
+**There is no verified fix for bidirectional P2P.** A reported capability, a changed register or a completed DMA command does not prove correct payload delivery. Successful comparisons in one direction do not qualify the experimental implementation for production, atomics, NCCL or training.
 
-## Hardware e ambiente
+## Hardware and environment
 
-| Elemento | Configurazione rilevata |
+| Component | Observed configuration |
 |---|---|
 | Computer | Minisforum MS-01, Intel Core i9-12900H, CPUID `906A3` |
-| BIOS | AHWSA 1.26; confronto statico con 1.27 |
-| GPU interna | NVIDIA RTX 2000 Ada Generation, 16 GB, Ada, compute capability 8.9 |
-| GPU esterna | NVIDIA RTX A2000, 12 GB, Ampere, compute capability 8.6 |
-| Dock | AOOSTAR, alimentatore 800 W; AG02 plausibile, etichetta/revisione PCB non confermate |
-| Bridge | Famiglia ASM2464, bridge PCI `1b21:2461` |
-| Percorso | PEG interno ↔ fabric Intel ↔ TCSS/root USB4 ↔ bridge ↔ GPU esterna |
-| Driver delle prove | NVIDIA 595.99.02, varianti sperimentali documentate separatamente |
-| Ambienti | VM con passthrough su XCP-ng e Linux nativo temporaneo in RAM, senza Xen |
+| BIOS | AHWSA 1.26; static comparison with 1.27 |
+| Internal GPU | NVIDIA RTX 2000 Ada Generation, 16 GB, Ada, compute capability 8.9 |
+| External GPU | NVIDIA RTX A2000, 12 GB, Ampere, compute capability 8.6 |
+| Dock | AOOSTAR, 800 W power supply; AG02 is plausible, but the model label and PCB revision are unconfirmed |
+| Bridge | ASM2464 family, PCI bridges `1b21:2461` |
+| Route | Internal PEG ↔ Intel fabric ↔ TCSS/USB4 root ↔ bridge ↔ external GPU |
+| Test driver | NVIDIA 595.99.02, with separately documented experimental variants |
+| Environments | Passthrough VM on XCP-ng and temporary native Linux in RAM, without Xen |
 
-Il collegamento esterno usa **PCIe tunneling via USB4**, non normali trasferimenti USB. Nei test nativi Ada è `01:00.0`, A2000 `06:00.0`; non generalizzare gli indici CUDA ad altre macchine.
+The external connection uses **PCIe tunneling over USB4**, rather than ordinary USB transfers. In the native tests, Ada is at `01:00.0` and A2000 at `06:00.0`; CUDA indices must not be assumed to match on other machines.
 
-## Risultati che contano
+## Key results
 
-Nella prova nativa qualificata PUSH/PULL si confrontano **tutte le parole** di payload da **4 B, 64 KiB e 1 MiB**, con inizializzazione e sincronizzazione dell'owner verificate.
+The native PUSH/PULL experiment with validated initialization and synchronization checks compares **every word** of **4 B, 64 KiB and 1 MiB** payloads.
 
-| Dati trasferiti | Esecutore | SM: confronti corretti | CE: confronti corretti |
+| Payload direction and operation | Executing GPU | SM passes | CE passes |
 |---|---|---:|---:|
 | PUSH Ada → A2000 | Ada | 0/3 | 0/3 |
 | PUSH A2000 → Ada | A2000 | **3/3** | **3/3** |
 | PULL Ada → A2000 | A2000 | 0/3 | 0/3 |
 | PULL A2000 → Ada | Ada | 0/3 | 0/3 |
 
-**18 errori su 24 confronti.** CUPTI osserva 12 operazioni CE e 12 SM, senza record persi; il primo PULL è CE e precede ogni lettura SM. CUPTI non è una cattura TLP e non prova da solo l'assenza di qualsiasi staging interno non esposto.
+**18 failures in 24 comparisons.** CUPTI observes 12 copy-engine (CE) operations and 12 streaming-multiprocessor (SM) operations, with no dropped records. The first PULL uses a CE and precedes every peer-read SM operation. CUPTI is not a TLP capture and cannot alone rule out unexposed internal staging.
 
-[Analisi completa PUSH/PULL](archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI.md) · [Log pubblico anonimizzato](archive/p2p-next-investigation-20261021/native-pushpull-results/result.log)
+[Full PUSH/PULL analysis — Italian](archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI.md) · [Sanitized public log](archive/p2p-next-investigation-20261021/native-pushpull-results/result.log)
 
-### Cosa è stato provato
+### What has been tested
 
-| Famiglia di prove | Risultato e limite |
+| Experiment family | Outcome and limitation |
 |---|---|
-| Driver originale | CUDA peer non disponibile in entrambi i versi; alcuni report `nvidia-smi` indicano OK senza dimostrare trasferimenti |
-| Patch libcuda e percorso BAR1 dinamico | Consentono esperimenti; non eliminano corruzione/assenza del dato |
-| ACS, coerenza, NoSnoop, Relaxed Ordering, MPS, GPA/HPA | Nessuna matrice completa riuscita; alcuni tentativi incompleti sono etichettati come tali |
-| Linux nativo senza Xen | L'asimmetria persiste; Xen non è una condizione necessaria |
-| Sincronizzazione corretta | Rimedia a un limite dei primi test; l'asimmetria rimane dopo la correzione |
-| BAR sotto 4 GiB, PTE/allineamento, UVM 4 KiB, SYS_COH | Nessuna risoluzione nelle varianti documentate |
-| `SaSetup[0x3E3]`, FSP e CCFG PEG/TCSS | Bit effettivamente modificati e riletti; Ada→A2000 ancora errato; span FSP poi ripristinato |
-| CE fisico, destinazione NONCOHERENT=2 / COHERENT=1 | Entrambi completano il comando, ma conservano lo stesso errore nel verso Ada→A2000 |
-| NVML TX/RX con controlli positivi host↔GPU | Compatibile con mancata consegna lungo il percorso; contatori aggregati, nessuna localizzazione del singolo TLP |
-| Firmware AOOSTAR e architetture GPU | Nessun aggiornamento ufficiale applicabile identificato; non dimostrata una regola «vecchia→nuova sì, nuova→vecchia no» |
+| Stock driver | CUDA peer access unavailable in both directions; some `nvidia-smi` reports show OK without demonstrating working transfers |
+| libcuda patch and dynamic BAR1 path | Enable experiments; do not eliminate corruption or missing payload delivery |
+| ACS, coherency, NoSnoop, Relaxed Ordering, MPS, GPA/HPA | No fully passing matrix; incomplete attempts are explicitly identified |
+| Native Linux without Xen | Asymmetry persists; Xen is not a necessary condition |
+| Corrected synchronization | Addresses a limitation in early tests; asymmetry remains after correction |
+| BAR below 4 GiB, PTE/alignment, UVM 4 KiB, SYS_COH | No resolution in the documented variants |
+| `SaSetup[0x3E3]`, FSP and PEG/TCSS CCFG | Bits actually changed and read back; Ada→A2000 still fails; the FSP span was subsequently restored |
+| Physical CE, destination NONCOHERENT=2 / COHERENT=1 | Both complete the command but retain the same Ada→A2000 payload failure |
+| NVML TX/RX with positive host↔GPU controls | Consistent with failed delivery along the path; aggregate counters cannot locate individual TLPs |
+| AOOSTAR firmware and GPU architectures | No applicable official update identified; no established universal older→newer-only rule |
 
-Lo [storico completo](archive/p2p-tcss-bit-tests-20261021/STORICO-PROVE.md) distingue esecuzioni, timeout, tentativi senza dati e sole preparazioni. Il [rapporto conclusivo](archive/p2p-next-investigation-20261021/ESITO.md) e la [verifica AOOSTAR/architetture](archive/p2p-aoostar-architecture-20261021/ESITO.md) hanno precedenza sulle ipotesi dei documenti più vecchi.
+The [complete experiment history — Italian](archive/p2p-tcss-bit-tests-20261021/STORICO-PROVE.md) distinguishes completed executions, timeouts, attempts without data comparisons and preparation only. The [final transfer report](archive/p2p-next-investigation-20261021/ESITO.md) and [AOOSTAR/architecture review](archive/p2p-aoostar-architecture-20261021/ESITO.md) take precedence over hypotheses in older documents. An [English technical summary](docs/technical-summary.en.md) covers the main findings and limitations.
 
-## BIOS e driver inclusi
+## Included BIOS and driver artifacts
 
-Sono disponibili **due immagini BIOS complete sperimentali** e **due regioni FSP candidate**, con hash, provenienza e stato delle prove. Il BIOS con menu modificato non è stato flashato. L'immagine completa PEG/TCSS è ricostruita offline dal BIOS OEM; la sua regione FSP è stata provata sull'esemplare originale, non l'intera immagine qui distribuita.
+The repository includes **two experimental full BIOS images** and **two candidate FSP regions**, with hashes, provenance and test status. The menu-modified BIOS was never flashed. The full PEG/TCSS image was reconstructed offline from the OEM BIOS; its FSP region was tested on the original machine, but the complete distributed image was not flashed.
 
-**Nessuno di questi BIOS risolve il difetto.** Le immagini non sono universali: un flash non compatibile può impedire l'avvio. Prima di qualsiasi uso occorrono identificazione esatta della scheda, backup proprio e recupero hardware disponibile. Il repository non esegue flash né modifica il server.
+**None of these BIOS variants fixes the problem.** These are not universal images: an incompatible flash can prevent booting. Hardware use requires exact board identification, your own backup and an available hardware recovery method. The repository does not automatically flash firmware or modify a server.
 
-- [BIOS: contenuto, limiti e ricostruzione](firmware/README.md)
-- [Driver RM/BAR1 strumentato](archive/p2p-tcss-bit-tests-20261021/driver-instrumented/)
-- [Driver UVM CE fisico e contratto](archive/p2p-next-investigation-20261021/driver-physical-ce/README.md)
-- [Riproduttori CUDA, analizzatori e prove offline](docs/riproducibilita.md)
+- [BIOS contents, limitations and reconstruction — Italian](firmware/README.md)
+- [Download experimental firmware release — English notes](https://github.com/PieroBorgatta/CaskLogic-PCIe-P2P-Lab/releases/tag/research-2026-10-21)
+- [Instrumented RM/BAR1 driver](archive/p2p-tcss-bit-tests-20261021/driver-instrumented/)
+- [Physical CE UVM driver and contract — Italian](archive/p2p-next-investigation-20261021/driver-physical-ce/README.md)
+- [CUDA reproducers, analyzers and offline checks — Italian](docs/riproducibilita.md)
 
-I sorgenti storici sono un **archivio di ricerca**, non un installer portabile. Gli identificativi della macchina sono sostituiti coerentemente da valori fittizi: i controlli di identità restano presenti. La ricompilazione su un altro sistema richiede revisione esplicita di quei controlli e delle dipendenze, non la loro rimozione indiscriminata.
+The historical sources form a **research archive**, not a portable installer. Machine identifiers have been consistently replaced with fictional values; identity checks remain in place. Building for another system requires explicit review of those checks and dependencies, rather than indiscriminately removing them.
 
-## Che aiuto cerchiamo
+## Help we are looking for
 
-1. Documentazione Intel/OEM sul forwarding di Memory Write e Memory Read **PEG↔TCSS** su Alder Lake-H, inclusi controlli e fase di inizializzazione.
-2. Conferma NVIDIA del supporto della coppia A2000 Ampere / RTX 2000 Ada e revisione dei metodi effettivamente emessi.
-3. Informazioni AOOSTAR/ASMedia su revisione hardware, firmware e accettazione di traffico peer originato da un altro ramo PCIe.
-4. Una proposta che distingua **GPU requester, fabric Intel e bridge USB4**, usando una traccia o un esperimento realmente discriminante.
+1. Intel/OEM documentation on **PEG↔TCSS** peer Memory Write and Memory Read forwarding on Alder Lake-H, including relevant controls and initialization stages.
+2. NVIDIA confirmation of support for the Ampere A2000 / RTX 2000 Ada pair, and review of the methods actually submitted.
+3. AOOSTAR/ASMedia information about hardware revisions, firmware and acceptance of peer traffic originating from another PCIe branch.
+4. A trace or targeted experiment that distinguishes **GPU requester behavior, Intel fabric routing and USB4 bridge acceptance**.
 
-Non è possibile scambiare le due schede o collegarle allo stesso switch PCIe. Un relay del payload attraverso RAM CPU non soddisfa l'obiettivo. Questi vincoli limitano anche ciò che possiamo concludere: architettura GPU e posizione nella topologia restano correlate.
+Swapping the cards or placing them behind the same PCIe switch is not possible in this setup. Relaying payloads through host RAM does not meet the objective. These constraints also limit the conclusions: GPU architecture and position in the topology remain correlated.
 
-[Apri una discussione tecnica tramite issue](https://github.com/PieroBorgatta/CaskLogic-PCIe-P2P-Lab/issues/new) allegando hardware, topologia, versioni e confronto dati, distinguendo chiaramente ipotesi e risultati.
+[Open a technical issue](https://github.com/PieroBorgatta/CaskLogic-PCIe-P2P-Lab/issues/new) with hardware details, topology, versions and payload comparison results. Please distinguish hypotheses from observed results.
 
-## Navigazione e integrità
+## Repository layout and integrity
 
-| Percorso | Contenuto |
+| Path | Contents |
 |---|---|
-| `archive/` | Rapporti, sorgenti, patch, risultati e verifiche storiche anonimizzati |
-| `firmware/` | Immagini OEM modificate, regioni FSP e manifest delle varianti |
-| `docs/` | Sintesi italiana/inglese, indice e riproducibilità |
-| `provenance/` | Hash degli originali e delle copie pubblicate, esclusioni e controlli |
-| `tools/` | Controlli locali di integrità e ricostruzione offline del BIOS |
+| `archive/` | Sanitized historical reports, sources, patches, results and checks |
+| `firmware/` | Modified OEM images, FSP regions and variant manifest |
+| `docs/` | Technical summaries, archive index and reproducibility notes |
+| `provenance/` | Original and published file hashes, exclusions and validation records |
+| `tools/` | Local integrity checks and offline BIOS reconstruction |
 
 ```bash
 python3 tools/verify_publication.py
 python3 tools/replay_evidence.py
 ```
 
-Questi comandi leggono file locali: non avviano GPU, non accedono via SSH e non scrivono firmware. Verificare che un analizzatore ricostruisca 18 errori **non** significa che il P2P funzioni.
+These commands read local files: they do not run GPU workloads, connect through SSH or write firmware. Confirming that an analyzer reconstructs 18 failures **does not** mean P2P works.
 
-Non sono pubblicati dump SPI/NVRAM personali, chiavi, credenziali, dischi delle VM, corpus o checkpoint. I log anonimizzati hanno hash differenti dagli originali; entrambi sono distinti nel manifest. I vecchi manifest interni rimangono documenti storici, non checksum delle copie modificate.
+Personal SPI/NVRAM dumps, keys, credentials, VM disks, training corpora and checkpoints are excluded. Sanitized logs have different hashes from their originals; the manifest distinguishes both. Old internal manifests remain historical records, not checksums for the sanitized copies.
 
-## Fonti e attribuzioni
+Most historical reports remain in their original Italian. Start with the [English technical summary](docs/technical-summary.en.md) for an overview.
+
+## Sources and attribution
 
 - [Linux PCI P2PDMA](https://www.kernel.org/doc/html/latest/driver-api/pci/p2pdma.html)
 - [Linux Thunderbolt/USB4](https://www.kernel.org/doc/html/latest/admin-guide/thunderbolt.html)
@@ -116,4 +119,4 @@ Non sono pubblicati dump SPI/NVRAM personali, chiavi, credenziali, dischi delle 
 - [CUDA Peer Device Memory Access](https://docs.nvidia.com/cuda/cuda-runtime-api/cuda_runtime_api/group__CUDART__PEER.html)
 - [Intel datasheet 710723-003](https://cdrdv2-public.intel.com/710723/710723-003.pdf)
 
-Nessuna affiliazione o approvazione da NVIDIA, Intel, Minisforum o AOOSTAR. Marchio e logo CaskLogic appartengono al progetto dell'autore. Vedere [LICENSE.md](LICENSE.md) per distinguere materiali originali e componenti di terzi.
+This project is not affiliated with or endorsed by NVIDIA, Intel, Minisforum or AOOSTAR. The CaskLogic name and original logo belong to the author's project. See [LICENSE.md](LICENSE.md) for the distinction between original contributions and third-party components.
