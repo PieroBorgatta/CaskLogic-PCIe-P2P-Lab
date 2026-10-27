@@ -1,0 +1,1917 @@
+{
+  "status": "empirical_comparison_not_a_hardware_trace",
+  "cases": [
+    {
+      "id": 1,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1768,
+          "idle_window_ns": 26746103,
+          "transfer_delta": 557,
+          "transfer_window_ns": 8116519,
+          "estimated_idle_delta_during_transfer": 536.5269696299307,
+          "excess_over_idle_estimate": 20.473030370069296,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2616,
+          "idle_window_ns": 29805418,
+          "transfer_delta": 832,
+          "transfer_window_ns": 8191549,
+          "estimated_idle_delta_during_transfer": 718.9663363889075,
+          "excess_over_idle_estimate": 113.03366361109249,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2022,
+          "idle_window_ns": 30725674,
+          "transfer_delta": 565,
+          "transfer_window_ns": 8210757,
+          "estimated_idle_delta_during_transfer": 540.334791484151,
+          "excess_over_idle_estimate": 24.66520851584903,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 30910903,
+          "transfer_delta": 0,
+          "transfer_window_ns": 7647345,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1732,
+          "idle_window_ns": 26531341,
+          "transfer_delta": 1146,
+          "transfer_window_ns": 16890495,
+          "estimated_idle_delta_during_transfer": 1102.6331967162912,
+          "excess_over_idle_estimate": 43.366803283708805,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2730,
+          "idle_window_ns": 33055008,
+          "transfer_delta": 1716,
+          "transfer_window_ns": 16207083,
+          "estimated_idle_delta_during_transfer": 1338.5365566996686,
+          "excess_over_idle_estimate": 377.4634433003314,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2253,
+          "idle_window_ns": 36420303,
+          "transfer_delta": 1069,
+          "transfer_window_ns": 15413042,
+          "estimated_idle_delta_during_transfer": 953.4677299636965,
+          "excess_over_idle_estimate": 115.53227003630354,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36746623,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15625113,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1773,
+          "idle_window_ns": 27170457,
+          "transfer_delta": 1220,
+          "transfer_window_ns": 18116323,
+          "estimated_idle_delta_during_transfer": 1182.1752088674843,
+          "excess_over_idle_estimate": 37.82479113251566,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2804,
+          "idle_window_ns": 33891469,
+          "transfer_delta": 1828,
+          "transfer_window_ns": 18187181,
+          "estimated_idle_delta_during_transfer": 1504.710684685872,
+          "excess_over_idle_estimate": 323.2893153141281,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2358,
+          "idle_window_ns": 37048647,
+          "transfer_delta": 1218,
+          "transfer_window_ns": 18144179,
+          "estimated_idle_delta_during_transfer": 1154.805304549988,
+          "excess_over_idle_estimate": 63.19469545001198,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36812688,
+          "transfer_delta": 0,
+          "transfer_window_ns": 18199619,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1775,
+          "idle_window_ns": 27191674,
+          "transfer_delta": 1197,
+          "transfer_window_ns": 16048647,
+          "estimated_idle_delta_during_transfer": 1047.6128988969197,
+          "excess_over_idle_estimate": 149.38710110308034,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 33431600,
+          "transfer_delta": 1752,
+          "transfer_window_ns": 15779302,
+          "estimated_idle_delta_during_transfer": 1291.3581842328813,
+          "excess_over_idle_estimate": 460.6418157671187,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2227,
+          "idle_window_ns": 36112788,
+          "transfer_delta": 1146,
+          "transfer_window_ns": 15576458,
+          "estimated_idle_delta_during_transfer": 960.5675409497599,
+          "excess_over_idle_estimate": 185.43245905024014,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36404679,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15703458,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1727,
+          "idle_window_ns": 26470120,
+          "transfer_delta": 1138,
+          "transfer_window_ns": 16035461,
+          "estimated_idle_delta_during_transfer": 1046.2076162480564,
+          "excess_over_idle_estimate": 91.79238375194359,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2727,
+          "idle_window_ns": 31511126,
+          "transfer_delta": 1659,
+          "transfer_window_ns": 16948794,
+          "estimated_idle_delta_during_transfer": 1466.7632390540407,
+          "excess_over_idle_estimate": 192.2367609459593,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2141,
+          "idle_window_ns": 34270458,
+          "transfer_delta": 1161,
+          "transfer_window_ns": 16979060,
+          "estimated_idle_delta_during_transfer": 1060.7435552801776,
+          "excess_over_idle_estimate": 100.25644471982241,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35005530,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16914354,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1774,
+          "idle_window_ns": 27163850,
+          "transfer_delta": 1125,
+          "transfer_window_ns": 16018950,
+          "estimated_idle_delta_during_transfer": 1046.1557290295743,
+          "excess_over_idle_estimate": 78.84427097042567,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 33440004,
+          "transfer_delta": 1645,
+          "transfer_window_ns": 15636187,
+          "estimated_idle_delta_during_transfer": 1279.3242378798757,
+          "excess_over_idle_estimate": 365.6757621201243,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2266,
+          "idle_window_ns": 36250724,
+          "transfer_delta": 1068,
+          "transfer_window_ns": 16700417,
+          "estimated_idle_delta_during_transfer": 1043.9279756729825,
+          "excess_over_idle_estimate": 24.072024327017516,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36304759,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16164563,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1779,
+          "idle_window_ns": 26370608,
+          "transfer_delta": 1237,
+          "transfer_window_ns": 11529839,
+          "estimated_idle_delta_during_transfer": 777.8198963406531,
+          "excess_over_idle_estimate": 459.18010365934686,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2699,
+          "idle_window_ns": 32239579,
+          "transfer_delta": 1602,
+          "transfer_window_ns": 7868839,
+          "estimated_idle_delta_during_transfer": 658.7553907264112,
+          "excess_over_idle_estimate": 943.2446092735888,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2149,
+          "idle_window_ns": 34326619,
+          "transfer_delta": 971,
+          "transfer_window_ns": 7742381,
+          "estimated_idle_delta_during_transfer": 484.7077065469221,
+          "excess_over_idle_estimate": 486.2922934530779,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35132700,
+          "transfer_delta": 0,
+          "transfer_window_ns": 7863551,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1776,
+          "idle_window_ns": 26571189,
+          "transfer_delta": 1796,
+          "transfer_window_ns": 15928240,
+          "estimated_idle_delta_during_transfer": 1064.632607897223,
+          "excess_over_idle_estimate": 731.3673921027771,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2743,
+          "idle_window_ns": 32802939,
+          "transfer_delta": 2446,
+          "transfer_window_ns": 15977943,
+          "estimated_idle_delta_during_transfer": 1336.084478558461,
+          "excess_over_idle_estimate": 1109.915521441539,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2223,
+          "idle_window_ns": 35596068,
+          "transfer_delta": 1770,
+          "transfer_window_ns": 16224610,
+          "estimated_idle_delta_during_transfer": 1013.2385416838737,
+          "excess_over_idle_estimate": 756.7614583161263,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36365180,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16528521,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1784,
+          "idle_window_ns": 27148130,
+          "transfer_delta": 1495,
+          "transfer_window_ns": 15647779,
+          "estimated_idle_delta_during_transfer": 1028.2711087651342,
+          "excess_over_idle_estimate": 466.72889123486584,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2815,
+          "idle_window_ns": 33812959,
+          "transfer_delta": 2096,
+          "transfer_window_ns": 14063030,
+          "estimated_idle_delta_during_transfer": 1170.7768447594308,
+          "excess_over_idle_estimate": 925.2231552405692,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2294,
+          "idle_window_ns": 37087073,
+          "transfer_delta": 1407,
+          "transfer_window_ns": 13054960,
+          "estimated_idle_delta_during_transfer": 807.5071936790483,
+          "excess_over_idle_estimate": 599.4928063209517,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36836662,
+          "transfer_delta": 0,
+          "transfer_window_ns": 12848216,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1796,
+          "idle_window_ns": 26478312,
+          "transfer_delta": 1610,
+          "transfer_window_ns": 16891216,
+          "estimated_idle_delta_during_transfer": 1145.7159329492001,
+          "excess_over_idle_estimate": 464.2840670507999,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2819,
+          "idle_window_ns": 32814333,
+          "transfer_delta": 2291,
+          "transfer_window_ns": 16942156,
+          "estimated_idle_delta_during_transfer": 1455.4596542919217,
+          "excess_over_idle_estimate": 835.5403457080783,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2226,
+          "idle_window_ns": 35208392,
+          "transfer_delta": 1606,
+          "transfer_window_ns": 16957716,
+          "estimated_idle_delta_during_transfer": 1072.1272308033836,
+          "excess_over_idle_estimate": 533.8727691966164,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35457467,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16951339,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1772,
+          "idle_window_ns": 26346972,
+          "transfer_delta": 2373,
+          "transfer_window_ns": 16043787,
+          "estimated_idle_delta_during_transfer": 1079.0458411691484,
+          "excess_over_idle_estimate": 1293.9541588308516,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2696,
+          "idle_window_ns": 33459975,
+          "transfer_delta": 3176,
+          "transfer_window_ns": 15639654,
+          "estimated_idle_delta_during_transfer": 1260.1475997516436,
+          "excess_over_idle_estimate": 1915.8524002483564,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2234,
+          "idle_window_ns": 35500769,
+          "transfer_delta": 2320,
+          "transfer_window_ns": 15679084,
+          "estimated_idle_delta_during_transfer": 986.656758224026,
+          "excess_over_idle_estimate": 1333.343241775974,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36364294,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15632510,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1736,
+          "idle_window_ns": 26568997,
+          "transfer_delta": 1165,
+          "transfer_window_ns": 10004708,
+          "estimated_idle_delta_during_transfer": 653.7007433137201,
+          "excess_over_idle_estimate": 511.29925668627993,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2740,
+          "idle_window_ns": 31511379,
+          "transfer_delta": 1550,
+          "transfer_window_ns": 7704138,
+          "estimated_idle_delta_during_transfer": 669.8957262390833,
+          "excess_over_idle_estimate": 880.1042737609167,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2158,
+          "idle_window_ns": 33037081,
+          "transfer_delta": 963,
+          "transfer_window_ns": 7181104,
+          "estimated_idle_delta_during_transfer": 469.07359739197295,
+          "excess_over_idle_estimate": 493.92640260802705,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 33630269,
+          "transfer_delta": 0,
+          "transfer_window_ns": 7767839,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1727,
+          "idle_window_ns": 26376563,
+          "transfer_delta": 7969,
+          "transfer_window_ns": 13242656,
+          "estimated_idle_delta_during_transfer": 867.0601591268733,
+          "excess_over_idle_estimate": 7101.939840873127,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2732,
+          "idle_window_ns": 32796398,
+          "transfer_delta": 9563,
+          "transfer_window_ns": 9978638,
+          "estimated_idle_delta_during_transfer": 831.2388151893998,
+          "excess_over_idle_estimate": 8731.7611848106,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2225,
+          "idle_window_ns": 35554733,
+          "transfer_delta": 7677,
+          "transfer_window_ns": 8311606,
+          "estimated_idle_delta_during_transfer": 520.1367522574279,
+          "excess_over_idle_estimate": 7156.863247742572,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36373222,
+          "transfer_delta": 0,
+          "transfer_window_ns": 8711935,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1775,
+          "idle_window_ns": 27163464,
+          "transfer_delta": 12113,
+          "transfer_window_ns": 14118403,
+          "estimated_idle_delta_during_transfer": 922.5688345565941,
+          "excess_over_idle_estimate": 11190.431165443406,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2741,
+          "idle_window_ns": 33583642,
+          "transfer_delta": 13403,
+          "transfer_window_ns": 10613842,
+          "estimated_idle_delta_during_transfer": 866.2711721974645,
+          "excess_over_idle_estimate": 12536.728827802535,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2277,
+          "idle_window_ns": 35878914,
+          "transfer_delta": 11865,
+          "transfer_window_ns": 10004274,
+          "estimated_idle_delta_during_transfer": 634.9058362803289,
+          "excess_over_idle_estimate": 11230.09416371967,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35597972,
+          "transfer_delta": 0,
+          "transfer_window_ns": 9409427,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1730,
+          "idle_window_ns": 26552206,
+          "transfer_delta": 8097,
+          "transfer_window_ns": 15682261,
+          "estimated_idle_delta_during_transfer": 1021.772410548487,
+          "excess_over_idle_estimate": 7075.227589451513,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 31856533,
+          "transfer_delta": 9751,
+          "transfer_window_ns": 15779336,
+          "estimated_idle_delta_during_transfer": 1355.2090962315328,
+          "excess_over_idle_estimate": 8395.790903768468,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2158,
+          "idle_window_ns": 35206896,
+          "transfer_delta": 8088,
+          "transfer_window_ns": 15219494,
+          "estimated_idle_delta_during_transfer": 932.8759925896335,
+          "excess_over_idle_estimate": 7155.124007410366,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35534274,
+          "transfer_delta": 0,
+          "transfer_window_ns": 14668524,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1734,
+          "idle_window_ns": 26639797,
+          "transfer_delta": 9027,
+          "transfer_window_ns": 16172422,
+          "estimated_idle_delta_during_transfer": 1052.6724264452914,
+          "excess_over_idle_estimate": 7974.327573554709,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2742,
+          "idle_window_ns": 31589147,
+          "transfer_delta": 10727,
+          "transfer_window_ns": 15825071,
+          "estimated_idle_delta_during_transfer": 1373.647242896429,
+          "excess_over_idle_estimate": 9353.35275710357,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2140,
+          "idle_window_ns": 34293377,
+          "transfer_delta": 8977,
+          "transfer_window_ns": 16173709,
+          "estimated_idle_delta_during_transfer": 1009.2834327747892,
+          "excess_over_idle_estimate": 7967.71656722521,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35093658,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16662923,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 1,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1844,
+          "idle_window_ns": 26624870,
+          "transfer_delta": 14367,
+          "transfer_window_ns": 17152414,
+          "estimated_idle_delta_during_transfer": 1187.9513934152542,
+          "excess_over_idle_estimate": 13179.048606584745,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2748,
+          "idle_window_ns": 33800708,
+          "transfer_delta": 16098,
+          "transfer_window_ns": 17192677,
+          "estimated_idle_delta_during_transfer": 1397.7658809987056,
+          "excess_over_idle_estimate": 14700.234119001294,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2256,
+          "idle_window_ns": 36484187,
+          "transfer_delta": 14349,
+          "transfer_window_ns": 15891392,
+          "estimated_idle_delta_during_transfer": 982.6443536209263,
+          "excess_over_idle_estimate": 13366.355646379074,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36822061,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15716972,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 1,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": true,
+      "mismatches": 0,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1779,
+          "idle_window_ns": 27234632,
+          "transfer_delta": 9094,
+          "transfer_window_ns": 17035578,
+          "estimated_idle_delta_during_transfer": 1112.7851208711027,
+          "excess_over_idle_estimate": 7981.214879128897,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2742,
+          "idle_window_ns": 33774466,
+          "transfer_delta": 10848,
+          "transfer_window_ns": 16790987,
+          "estimated_idle_delta_during_transfer": 1363.18621155994,
+          "excess_over_idle_estimate": 9484.81378844006,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2292,
+          "idle_window_ns": 37178497,
+          "transfer_delta": 9065,
+          "transfer_window_ns": 15901421,
+          "estimated_idle_delta_during_transfer": 980.2993631506943,
+          "excess_over_idle_estimate": 8084.700636849306,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36772370,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15890963,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1730,
+          "idle_window_ns": 26534318,
+          "transfer_delta": 1105,
+          "transfer_window_ns": 16060200,
+          "estimated_idle_delta_during_transfer": 1047.1023223585396,
+          "excess_over_idle_estimate": 57.897677641460405,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2729,
+          "idle_window_ns": 33039061,
+          "transfer_delta": 1613,
+          "transfer_window_ns": 15966519,
+          "estimated_idle_delta_during_transfer": 1318.8216926322452,
+          "excess_over_idle_estimate": 294.17830736775477,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2252,
+          "idle_window_ns": 35796639,
+          "transfer_delta": 1069,
+          "transfer_window_ns": 16693698,
+          "estimated_idle_delta_during_transfer": 1050.2161361014928,
+          "excess_over_idle_estimate": 18.783863898507207,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36358990,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16197808,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1774,
+          "idle_window_ns": 26694934,
+          "transfer_delta": 1126,
+          "transfer_window_ns": 16962721,
+          "estimated_idle_delta_during_transfer": 1127.2501012364369,
+          "excess_over_idle_estimate": -1.2501012364368762,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2745,
+          "idle_window_ns": 33233856,
+          "transfer_delta": 1691,
+          "transfer_window_ns": 17019757,
+          "estimated_idle_delta_during_transfer": 1405.7722632306045,
+          "excess_over_idle_estimate": 285.2277367693955,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2254,
+          "idle_window_ns": 36480136,
+          "transfer_delta": 1128,
+          "transfer_window_ns": 16889357,
+          "estimated_idle_delta_during_transfer": 1043.5435514275496,
+          "excess_over_idle_estimate": 84.45644857245043,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36807804,
+          "transfer_delta": 0,
+          "transfer_window_ns": 17019254,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1732,
+          "idle_window_ns": 26582461,
+          "transfer_delta": 922,
+          "transfer_window_ns": 12935058,
+          "estimated_idle_delta_during_transfer": 842.7933160891312,
+          "excess_over_idle_estimate": 79.20668391086883,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2752,
+          "idle_window_ns": 32866602,
+          "transfer_delta": 1221,
+          "transfer_window_ns": 8532899,
+          "estimated_idle_delta_during_transfer": 714.4802510463356,
+          "excess_over_idle_estimate": 506.51974895366436,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2306,
+          "idle_window_ns": 35562277,
+          "transfer_delta": 544,
+          "transfer_window_ns": 6924235,
+          "estimated_idle_delta_during_transfer": 448.99503791616047,
+          "excess_over_idle_estimate": 95.00496208383953,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36365574,
+          "transfer_delta": 0,
+          "transfer_window_ns": 7402070,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1781,
+          "idle_window_ns": 27262878,
+          "transfer_delta": 1178,
+          "transfer_window_ns": 17343759,
+          "estimated_idle_delta_during_transfer": 1133.0144520692204,
+          "excess_over_idle_estimate": 44.9855479307796,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2739,
+          "idle_window_ns": 32911783,
+          "transfer_delta": 1728,
+          "transfer_window_ns": 16036088,
+          "estimated_idle_delta_during_transfer": 1334.5629142000603,
+          "excess_over_idle_estimate": 393.4370857999397,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2211,
+          "idle_window_ns": 34863428,
+          "transfer_delta": 1068,
+          "transfer_window_ns": 16774320,
+          "estimated_idle_delta_during_transfer": 1063.8088004426872,
+          "excess_over_idle_estimate": 4.191199557312757,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35157206,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16196208,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1731,
+          "idle_window_ns": 26523767,
+          "transfer_delta": 1044,
+          "transfer_window_ns": 15668371,
+          "estimated_idle_delta_during_transfer": 1022.5527241662165,
+          "excess_over_idle_estimate": 21.447275833783465,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 32904704,
+          "transfer_delta": 1568,
+          "transfer_window_ns": 16391841,
+          "estimated_idle_delta_during_transfer": 1362.9685584164502,
+          "excess_over_idle_estimate": 205.03144158354985,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2231,
+          "idle_window_ns": 35279493,
+          "transfer_delta": 1108,
+          "transfer_window_ns": 16657965,
+          "estimated_idle_delta_during_transfer": 1053.4142289119632,
+          "excess_over_idle_estimate": 54.585771088036836,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35611065,
+          "transfer_delta": 0,
+          "transfer_window_ns": 17005495,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 4,
+      "data_pass": false,
+      "mismatches": 1,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1776,
+          "idle_window_ns": 27196853,
+          "transfer_delta": 1010,
+          "transfer_window_ns": 14717717,
+          "estimated_idle_delta_during_transfer": 961.091542172177,
+          "excess_over_idle_estimate": 48.908457827822986,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2739,
+          "idle_window_ns": 33537730,
+          "transfer_delta": 1468,
+          "transfer_window_ns": 16489036,
+          "estimated_idle_delta_during_transfer": 1346.6465859197986,
+          "excess_over_idle_estimate": 121.35341408020145,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2270,
+          "idle_window_ns": 36110169,
+          "transfer_delta": 1110,
+          "transfer_window_ns": 17069688,
+          "estimated_idle_delta_during_transfer": 1073.0548439139122,
+          "excess_over_idle_estimate": 36.94515608608776,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36305379,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16958719,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1728,
+          "idle_window_ns": 26510733,
+          "transfer_delta": 1134,
+          "transfer_window_ns": 16997431,
+          "estimated_idle_delta_during_transfer": 1107.912058410456,
+          "excess_over_idle_estimate": 26.087941589544016,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2733,
+          "idle_window_ns": 33162368,
+          "transfer_delta": 1695,
+          "transfer_window_ns": 16688634,
+          "estimated_idle_delta_during_transfer": 1375.3552436906798,
+          "excess_over_idle_estimate": 319.6447563093202,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2250,
+          "idle_window_ns": 36520879,
+          "transfer_delta": 1111,
+          "transfer_window_ns": 16713161,
+          "estimated_idle_delta_during_transfer": 1029.674347378112,
+          "excess_over_idle_estimate": 81.32565262188791,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36862197,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16945924,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1734,
+          "idle_window_ns": 26382570,
+          "transfer_delta": 1096,
+          "transfer_window_ns": 15977851,
+          "estimated_idle_delta_during_transfer": 1050.1476404307843,
+          "excess_over_idle_estimate": 45.85235956921565,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2741,
+          "idle_window_ns": 32870514,
+          "transfer_delta": 1594,
+          "transfer_window_ns": 15634870,
+          "estimated_idle_delta_during_transfer": 1303.7574852039124,
+          "excess_over_idle_estimate": 290.24251479608756,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2254,
+          "idle_window_ns": 35506845,
+          "transfer_delta": 1045,
+          "transfer_window_ns": 16718755,
+          "estimated_idle_delta_during_transfer": 1061.3185646316929,
+          "excess_over_idle_estimate": -16.31856463169288,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36331998,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16125347,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1738,
+          "idle_window_ns": 26637374,
+          "transfer_delta": 881,
+          "transfer_window_ns": 12998287,
+          "estimated_idle_delta_during_transfer": 848.0949663431538,
+          "excess_over_idle_estimate": 32.90503365684617,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2742,
+          "idle_window_ns": 33187329,
+          "transfer_delta": 1236,
+          "transfer_window_ns": 10428542,
+          "estimated_idle_delta_during_transfer": 861.6258983662108,
+          "excess_over_idle_estimate": 374.3741016337892,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2254,
+          "idle_window_ns": 35648402,
+          "transfer_delta": 650,
+          "transfer_window_ns": 9204612,
+          "estimated_idle_delta_during_transfer": 581.9951045210946,
+          "excess_over_idle_estimate": 68.00489547890538,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36315910,
+          "transfer_delta": 0,
+          "transfer_window_ns": 9220427,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1844,
+          "idle_window_ns": 26559228,
+          "transfer_delta": 1042,
+          "transfer_window_ns": 15728043,
+          "estimated_idle_delta_during_transfer": 1091.9937617162668,
+          "excess_over_idle_estimate": -49.99376171626682,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2841,
+          "idle_window_ns": 32845633,
+          "transfer_delta": 1566,
+          "transfer_window_ns": 15529372,
+          "estimated_idle_delta_during_transfer": 1343.2210562664447,
+          "excess_over_idle_estimate": 222.77894373355525,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2316,
+          "idle_window_ns": 36442781,
+          "transfer_delta": 1048,
+          "transfer_window_ns": 16751207,
+          "estimated_idle_delta_during_transfer": 1064.567366908689,
+          "excess_over_idle_estimate": -16.56736690868911,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36748015,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16059653,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1778,
+          "idle_window_ns": 27261627,
+          "transfer_delta": 1047,
+          "transfer_window_ns": 15675307,
+          "estimated_idle_delta_during_transfer": 1022.3416176151188,
+          "excess_over_idle_estimate": 24.65838238488118,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2744,
+          "idle_window_ns": 33841684,
+          "transfer_delta": 1563,
+          "transfer_window_ns": 15247089,
+          "estimated_idle_delta_during_transfer": 1236.2863566718488,
+          "excess_over_idle_estimate": 326.7136433281512,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2254,
+          "idle_window_ns": 36392367,
+          "transfer_delta": 1023,
+          "transfer_window_ns": 14757724,
+          "estimated_idle_delta_during_transfer": 914.0353496654943,
+          "excess_over_idle_estimate": 108.96465033450568,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36746648,
+          "transfer_delta": 0,
+          "transfer_window_ns": 15185263,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 65536,
+      "data_pass": false,
+      "mismatches": 16384,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1841,
+          "idle_window_ns": 27110833,
+          "transfer_delta": 1092,
+          "transfer_window_ns": 16027562,
+          "estimated_idle_delta_during_transfer": 1088.374585981921,
+          "excess_over_idle_estimate": 3.6254140180790273,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2805,
+          "idle_window_ns": 33861609,
+          "transfer_delta": 1599,
+          "transfer_window_ns": 16971941,
+          "estimated_idle_delta_during_transfer": 1405.9076314123172,
+          "excess_over_idle_estimate": 193.0923685876828,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2358,
+          "idle_window_ns": 36372141,
+          "transfer_delta": 1130,
+          "transfer_window_ns": 16674488,
+          "estimated_idle_delta_during_transfer": 1081.0043517647202,
+          "excess_over_idle_estimate": 48.99564823527976,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36298243,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16159552,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1728,
+          "idle_window_ns": 26494528,
+          "transfer_delta": 1026,
+          "transfer_window_ns": 14898010,
+          "estimated_idle_delta_during_transfer": 971.6633291221493,
+          "excess_over_idle_estimate": 54.33667087785068,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2728,
+          "idle_window_ns": 31899118,
+          "transfer_delta": 1501,
+          "transfer_window_ns": 12763590,
+          "estimated_idle_delta_during_transfer": 1091.5371867021527,
+          "excess_over_idle_estimate": 409.46281329784733,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2158,
+          "idle_window_ns": 34290759,
+          "transfer_delta": 828,
+          "transfer_window_ns": 12119355,
+          "estimated_idle_delta_during_transfer": 762.7001808271436,
+          "excess_over_idle_estimate": 65.29981917285636,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35057807,
+          "transfer_delta": 0,
+          "transfer_window_ns": 12025081,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "engine": "CE_REQUEST",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1770,
+          "idle_window_ns": 26491697,
+          "transfer_delta": 1100,
+          "transfer_window_ns": 16028099,
+          "estimated_idle_delta_during_transfer": 1070.8915789728383,
+          "excess_over_idle_estimate": 29.10842102716174,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 32833696,
+          "transfer_delta": 1600,
+          "transfer_window_ns": 15915202,
+          "estimated_idle_delta_during_transfer": 1326.1983260123989,
+          "excess_over_idle_estimate": 273.80167398760113,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2246,
+          "idle_window_ns": 35449598,
+          "transfer_delta": 1062,
+          "transfer_window_ns": 16733380,
+          "estimated_idle_delta_during_transfer": 1060.1861121246002,
+          "excess_over_idle_estimate": 1.8138878753998142,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 36229851,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16098004,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "engine": "CE_REQUEST",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1772,
+          "idle_window_ns": 27134459,
+          "transfer_delta": 982,
+          "transfer_window_ns": 14596232,
+          "estimated_idle_delta_during_transfer": 953.1984073830255,
+          "excess_over_idle_estimate": 28.801592616974517,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2727,
+          "idle_window_ns": 32576655,
+          "transfer_delta": 1467,
+          "transfer_window_ns": 14322943,
+          "estimated_idle_delta_during_transfer": 1198.97716818992,
+          "excess_over_idle_estimate": 268.0228318100801,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2210,
+          "idle_window_ns": 35805478,
+          "transfer_delta": 969,
+          "transfer_window_ns": 13371331,
+          "estimated_idle_delta_during_transfer": 825.3106273291477,
+          "excess_over_idle_estimate": 143.68937267085232,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35360516,
+          "transfer_delta": 0,
+          "transfer_window_ns": 12553741,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1772,
+          "idle_window_ns": 27125179,
+          "transfer_delta": 996,
+          "transfer_window_ns": 14603928,
+          "estimated_idle_delta_during_transfer": 954.0272680228212,
+          "excess_over_idle_estimate": 41.972731977178796,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2746,
+          "idle_window_ns": 32569453,
+          "transfer_delta": 1386,
+          "transfer_window_ns": 10863438,
+          "estimated_idle_delta_during_transfer": 915.9196117908398,
+          "excess_over_idle_estimate": 470.0803882091602,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2166,
+          "idle_window_ns": 35158611,
+          "transfer_delta": 722,
+          "transfer_window_ns": 9613044,
+          "estimated_idle_delta_during_transfer": 592.2262771984933,
+          "excess_over_idle_estimate": 129.77372280150666,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35505942,
+          "transfer_delta": 0,
+          "transfer_window_ns": 9460039,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "engine": "SM",
+      "mode": "PULL",
+      "executor": 0,
+      "source": 1,
+      "destination": 0,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1774,
+          "idle_window_ns": 27165500,
+          "transfer_delta": 1044,
+          "transfer_window_ns": 15705435,
+          "estimated_idle_delta_during_transfer": 1025.6185857061346,
+          "excess_over_idle_estimate": 18.38141429386542,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2736,
+          "idle_window_ns": 33466581,
+          "transfer_delta": 1569,
+          "transfer_window_ns": 16649948,
+          "estimated_idle_delta_during_transfer": 1361.1864841526535,
+          "excess_over_idle_estimate": 207.81351584734648,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2230,
+          "idle_window_ns": 35097723,
+          "transfer_delta": 1104,
+          "transfer_window_ns": 17176094,
+          "estimated_idle_delta_during_transfer": 1091.3155141146906,
+          "excess_over_idle_estimate": 12.684485885309414,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35458177,
+          "transfer_delta": 0,
+          "transfer_window_ns": 16952031,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "engine": "SM",
+      "mode": "PUSH",
+      "executor": 0,
+      "source": 0,
+      "destination": 1,
+      "bytes": 1048576,
+      "data_pass": false,
+      "mismatches": 262144,
+      "metrics": [
+        {
+          "point": "HOST_PCIE",
+          "idle_delta": 1774,
+          "idle_window_ns": 26547269,
+          "transfer_delta": 718,
+          "transfer_window_ns": 10471948,
+          "estimated_idle_delta_during_transfer": 699.7795423702529,
+          "excess_over_idle_estimate": 18.220457629747102,
+          "dropped_delta": 0
+        },
+        {
+          "point": "HOST_LANE",
+          "idle_delta": 2734,
+          "idle_window_ns": 32567802,
+          "transfer_delta": 961,
+          "transfer_window_ns": 7878292,
+          "estimated_idle_delta_during_transfer": 661.3664111566387,
+          "excess_over_idle_estimate": 299.6335888433613,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_LANE",
+          "idle_delta": 2164,
+          "idle_window_ns": 35211767,
+          "transfer_delta": 484,
+          "transfer_window_ns": 7309574,
+          "estimated_idle_delta_during_transfer": 449.22250382947266,
+          "excess_over_idle_estimate": 34.77749617052734,
+          "dropped_delta": 0
+        },
+        {
+          "point": "DOCK_PCIE",
+          "idle_delta": 0,
+          "idle_window_ns": 35551000,
+          "transfer_delta": 0,
+          "transfer_window_ns": 7936730,
+          "estimated_idle_delta_during_transfer": 0.0,
+          "excess_over_idle_estimate": 0.0,
+          "dropped_delta": 0
+        }
+      ]
+    }
+  ],
+  "method": "Per-case idle rate times measured transfer interval. Background may drift; counter snapshots are sequential and include observer/driver traffic. No per-TLP opcode, requester ID or physical trace.",
+  "inference": "Internal Ada-executed 1MiB operations show little excess at the USB4 host PCIe ingress and dock lane. External A2000-executed operations show much larger excess, including failed PULLs. Compatible with a requester/driver/host-fabric failure before host USB4 ingress for Ada operations; does not locate it uniquely.",
+  "dock_pcie_counter_limit": "Zero even for correct CPU MMIO and successful external-GPU PUSH. Must not be treated as absence of packets.",
+  "P2P_solution_claimed": false
+}

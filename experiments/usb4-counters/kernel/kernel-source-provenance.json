@@ -1,0 +1,51 @@
+{
+  "source_package": "linux-source-7.0.0=7.0.0-38.38",
+  "deb_sha256": "997a13a0c7fd0172a93b0c1ae9a4ffc7d3cbbf91d2fdd91d85334193580687de",
+  "source_files": {
+    "sb_regs.h": "4095068409b089077452ab10e1f6df62a715df6e02990f07bf990c23e9f1f475",
+    "nhi_regs.h": "e9b73c4771f8b6815cadae6412e78eb1fb19c2c4bd3f4b1e135a2dbf95b40b12",
+    "tmu.c": "8da50d436f2fddd7ab9cddb8eb288133b0703262cca26a0bb36b0fd4d35c7874",
+    "nvm.c": "dc213632f1112fa8f7e609693e345912a3cc4a6a40c5a11d1f66ef56729ce82f",
+    "nhi_ops.c": "7cee305d96a1f7328d55f064a0af45e2c7d336b0b6374ea6d202f413b77a1643",
+    "debugfs.c": "2498f90234412f056686ce89246ddb1a1101055da478ef4ac746fa370b1b12cd",
+    "cap.c": "306783d0e2744a2d3821e83127872d8ce93e19dccb74802bbaf3654fdbdb6262",
+    "tb.c": "cc5ea4c66f7145ece0eab5294beb7d565ebd2a444e3fb9752f4a8624cdba6504",
+    "switch.c": "1c24acd7af01e35dc103263e6bb2279dc052213af9b98a28e817e39b43d3d29c",
+    "Makefile": "93909a1ffe3ce0b25e04b44e709bf81e4a27e89c5b507bc94605f55cac4e1c46",
+    "tunnel.h": "95cfc240d030198ca5b896b43daa83fd80ebb29687b11f705867360594fbe482",
+    "ctl.h": "eb6155d43113ff27744a7f4f91e984fbfe5227bd073f466e122cc4315b8e33dd",
+    "property.c": "59e8d3898a28c7537bdd9304f6cca510ed1b8afba5628720a983432248c92cf8",
+    "Kconfig": "5e5f073482ae1d5750e6c4468c9269c496ff1c5fd8f391a09b22291e35e4fb07",
+    "nhi.h": "c77007ab80efc2a9e85708ba7423c5401a2a7dbed470410776b31eb77fc0ff14",
+    "dma_port.h": "7b371315f1557b6c1e2019007f10d7f5ffefe4cc8f3d79230d9dc131fc72a3f4",
+    "clx.c": "951d639799ff858669b6592b6f864548290bc67453064882d018d5f168d80b50",
+    "eeprom.c": "4bee791ba87e05afcd03929c65136b9fbd34fc42b3d7f4031a11a0a11a842794",
+    "lc.c": "e73be4c2e792cd6700c99a420b62ac8ba5a00d8c89ae1f7607025de54889a8c2",
+    "trace.h": "6fbfc8cd5d580e8807da0f4f05b6b2276f7f514d6b7729ce0ef25640f201452d",
+    "dma_test.c": "7938b0609ed88519c8bf8da4b5b2bd6e9f563ac05a429be31bc12f86f0401afb",
+    "tb_regs.h": "6179974e382d3846dc38265e389cf09709f5e2c0cc7be51c37180a8aa18ef1e3",
+    "usb4_port.c": "e87f92373ad5ae4c5511de47c183df8b0853c2632018cc4aff0c67f328929ed7",
+    "path.c": "e32b10d3c1f13268bfe51d4140f9204cfd1567750a9c184c93bbde38bab4539d",
+    "icm.c": "0ed7e45744e7c5c8280c913addfa69b8907ec834a058e6ea571beb781f9bccc4",
+    "quirks.c": "d4a0befdcca44700f79b2c9570b7d5fa1cc3970defc31999592b273b3b114ddd",
+    "usb4.c": "8cf4a9194a516e5a28a9ecf530ef66c0bebe59fc3f9917894abade116d75754c",
+    "test.c": "f0c1b11e736043a9159e347ee814451ba632de37762308029ed2303a61cbcb92",
+    "ctl.c": "f797351b2bbf5271ef8a1deb045e45d23ba87f155ee0e4424a3de8b4810e0dd3",
+    "tunnel.c": "69582c6f79f6b022112cbc7ebf4fefbcd5a30042b95bbbc68f58e22d8657a5ae",
+    "tb.h": "f8e70a6c8b8a489ded43b523829fc90c0f8f3ca2641501d34ad5fcf4b5d86068",
+    "tb_msgs.h": "553b546d7945f268c08659863813e897bf12e7ebd89b6da9fb9805fcc067b602",
+    "dma_port.c": "010a25ab1e702b2b08866c74bcd0ff165c9938982182ddc144c7753bab82e004",
+    "retimer.c": "f6a47db9d03c21dc85621284f05a07edb83e2952596f41daa97de46eb7e9617a",
+    "nhi.c": "5daaf2ec5c4be7bf89f664ed93ca9c71a135773a13e27c2042c9a40d1647d0e7",
+    "xdomain.c": "c644d3d63c03244caf4e8d6afbdff8a7601fe6b4521435ac987c7b7ac5287dcb",
+    "domain.c": "dcf73ece8c57c68db03f9ae97a8f24455e4393c194d6dcde3fee39062d4657a0",
+    "acpi.c": "18f62f5ccef2b8a3cc0b9a2b86629e1fa234a44b226d48ff39f660b6f419dd92"
+  },
+  "changed_original_files": [
+    "tunnel.c"
+  ],
+  "added_files": [
+    "cask_pcie_counters.inc"
+  ],
+  "module_installed": false
+}

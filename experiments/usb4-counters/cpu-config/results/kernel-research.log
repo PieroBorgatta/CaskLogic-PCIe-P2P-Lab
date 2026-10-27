@@ -1,0 +1,6 @@
+[    0.000000] Command line: initrd=\EFI\CaskLogicUsb4Counters\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0
+[    0.052957] Kernel command line: initrd=\EFI\CaskLogicUsb4Counters\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0
+[    5.191536] CASKTB_COUNTER_PLAN route=0 port=8 hop=8 index=0 path_inactive=1 standard_activation=1
+[    5.191566] CASKTB_COUNTER_PLAN route=1 port=1 hop=8 index=1 path_inactive=1 standard_activation=1
+[    5.195480] CASKTB_COUNTER_PLAN route=1 port=3 hop=8 index=0 path_inactive=1 standard_activation=1
+[    5.195490] CASKTB_COUNTER_PLAN route=0 port=1 hop=8 index=1 path_inactive=1 standard_activation=1

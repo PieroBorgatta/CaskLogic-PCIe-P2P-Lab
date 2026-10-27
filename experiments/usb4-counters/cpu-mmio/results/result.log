@@ -1,0 +1,55 @@
+USB4_COUNTER_RUN_BEGIN version=1 gpu_program_executed=0
+Linux (none) 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
+initrd=\EFI\CaskLogicUsb4Mmio\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_COUNTER_DATA_DISKS unmounted
+COUNTER_MODULE_LOAD_RC=0
+TB_MMIO_PROBE_BEGIN version=1 gpu_program_executed=0 mmio_writes=0 command_mask=0002
+TB_COUNTER_PATH point=HOST_PCIE enabled=1 index=0 valid=1
+TB_COUNTER_PATH point=HOST_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_PCIE enabled=1 index=0 valid=1
+TB_MMIO_COMMAND_BEGIN original=0000 requested=0002 bus_master_enable=0
+TB_MMIO_COMMAND_ACTIVE observed=0002
+TB_MMIO_SAMPLE group=1 reads=0 point=HOST_PCIE before=96510 after=103654 delta=7144 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6500574368 after_ns=6608528067 elapsed_ns=107953699
+TB_MMIO_SAMPLE group=1 reads=0 point=HOST_LANE before=144260 after=155105 delta=10845 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6504864264 after_ns=6619499542 elapsed_ns=114635278
+TB_MMIO_SAMPLE group=1 reads=0 point=DOCK_LANE before=96870 after=104462 delta=7592 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6507187858 after_ns=6623950173 elapsed_ns=116762315
+TB_MMIO_SAMPLE group=1 reads=0 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6507400124 after_ns=6624421293 elapsed_ns=117021169
+TB_MMIO_DATA group=1 reads=0 expected=b76000a1 checked=0 valid=1
+TB_MMIO_SAMPLE group=2 reads=64 point=HOST_PCIE before=104786 after=105954 delta=1168 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6625560807 after_ns=6641240764 elapsed_ns=15679957
+TB_MMIO_SAMPLE group=2 reads=64 point=HOST_LANE before=156794 after=158541 delta=1747 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6634780463 after_ns=6651714676 elapsed_ns=16934213
+TB_MMIO_SAMPLE group=2 reads=64 point=DOCK_LANE before=105504 after=106762 delta=1258 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6639645850 after_ns=6656552269 elapsed_ns=16906419
+TB_MMIO_SAMPLE group=2 reads=64 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6640138608 after_ns=6657036531 elapsed_ns=16897923
+TB_MMIO_DATA group=2 reads=64 expected=b76000a1 checked=64 valid=1
+TB_MMIO_SAMPLE group=3 reads=16384 point=HOST_PCIE before=107086 after=142761 delta=35675 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6658241011 after_ns=6701960352 elapsed_ns=43719341
+TB_MMIO_SAMPLE group=3 reads=16384 point=HOST_LANE before=160238 after=212704 delta=52466 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6667435212 after_ns=6708208578 elapsed_ns=40773366
+TB_MMIO_SAMPLE group=3 reads=16384 point=DOCK_LANE before=107802 after=143213 delta=35411 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6671148738 after_ns=6709650999 elapsed_ns=38502261
+TB_MMIO_SAMPLE group=3 reads=16384 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6672225438 after_ns=6709776790 elapsed_ns=37551352
+TB_MMIO_DATA group=3 reads=16384 expected=b76000a1 checked=16384 valid=1
+TB_MMIO_SAMPLE group=4 reads=0 point=HOST_PCIE before=143311 after=150399 delta=7088 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6710039528 after_ns=6817305960 elapsed_ns=107266432
+TB_MMIO_SAMPLE group=4 reads=0 point=HOST_LANE before=213570 after=224298 delta=10728 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6714003040 after_ns=6828100758 elapsed_ns=114097718
+TB_MMIO_SAMPLE group=4 reads=0 point=DOCK_LANE before=143641 after=151203 delta=7562 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6715470440 after_ns=6832632216 elapsed_ns=117161776
+TB_MMIO_SAMPLE group=4 reads=0 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0 before_ns=6716171283 after_ns=6833122705 elapsed_ns=116951422
+TB_MMIO_DATA group=4 reads=0 expected=b76000a1 checked=0 valid=1
+TB_MMIO_COMMAND_RESTORED observed=0000 bus_master_enable=0
+TB_COUNTER_PATH point=HOST_PCIE enabled=1 index=0 valid=1
+TB_COUNTER_PATH point=HOST_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_PCIE enabled=1 index=0 valid=1
+TB_MMIO_PROBE_END protocol_complete=1 positive_controls=2 idle_controls=2 points=4 source_reads=16448 command_restored=1
+COUNTER_CONTROL_RC=0
+COUNTER_MODULE_UNLOADED=1
+TB_COUNTER_PATH point=HOST_PCIE enabled=0 index=0 valid=1
+TB_COUNTER_PATH point=HOST_LANE enabled=0 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_LANE enabled=0 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_PCIE enabled=0 index=0 valid=1
+TB_COUNTER_RESTORED original_module=1 four_paths=1 command_original=1
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_COUNTER_RUN_END original_module_restored=1 data_disks_unmounted=1 gpu_program_executed=0
+SCRIPT_RC=0

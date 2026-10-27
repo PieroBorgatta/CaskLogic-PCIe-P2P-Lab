@@ -1,0 +1,30 @@
+{
+  "status": "reviewed_for_native_cpu_mmio_control",
+  "previous_counter_module_unchanged": true,
+  "pci_device": "0000:06:00.0 10de:2571",
+  "bar0": "0x60000000",
+  "read_only_mmio_offset": 0,
+  "read_only_mmio_size": 4,
+  "expected_value": "0xb76000a1",
+  "map_protection": "PROT_READ",
+  "pci_config_owned_mask": 2,
+  "pci_config_write_offset": 4,
+  "pci_config_write_bytes": 2,
+  "bus_master_enable": false,
+  "initial_command_required": 0,
+  "active_command": 2,
+  "restored_command": 0,
+  "power_state_required": "D0; never written",
+  "restore_on_exception": true,
+  "unknown_command_not_overwritten": true,
+  "tests": {
+    "lease_sanitizer_cases_mac": 7,
+    "lease_sanitizer_cases_linux": 7,
+    "valid_log_fixture": 1,
+    "negative_log_fixtures": 19
+  },
+  "nvidia_loaded": false,
+  "gpu_program_executed": false,
+  "firmware_writes": false,
+  "counter_reads_do_not_imply_p2p_success": true
+}

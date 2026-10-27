@@ -81,6 +81,12 @@ The [full-buffer same-allocation experiment](experiments/same-allocation/results
 
 The [complete experiment history — Italian](archive/p2p-tcss-bit-tests-20261021/STORICO-PROVE.md) distinguishes completed executions, timeouts, attempts without data comparisons and preparation only. The [final transfer report](archive/p2p-next-investigation-20261021/ESITO.md) and [AOOSTAR/architecture review](archive/p2p-aoostar-architecture-20261021/ESITO.md) take precedence over hypotheses in older documents. An [English technical summary](docs/technical-summary.en.md) covers the main findings and limitations.
 
+### USB4 counter driver and measurements — 27 October
+
+A new [opt-in Thunderbolt driver patch](experiments/usb4-counters/README.md) enables counters during tunnel creation, with CPU MMIO controls and restoration of the original module. Three points respond to known traffic; the dock PCIe counter remains zero even during successful transfers and cannot establish packet absence. A further **36-case native GPU run retains 12 passes / 24 failures** with complete payload capture and CUPTI observation. Ada-executed 1 MiB cases add little traffic above measured idle at the observed USB4 ingress, while A2000-executed cases add much more, including failed PULLs. This narrows the next investigation but does not uniquely locate the fault or provide a fix. [Raw measurements, source, full synthetic payloads and offline replay](experiments/usb4-counters/README.md).
+
+The newly traced FSP `CpuPcieRpPeerToPeerMode` field feeds the same policy bit already tested, rather than demonstrating another independent firmware control. No SPI/NVM update was performed.
+
 ## Included BIOS and driver artifacts
 
 The repository includes **two experimental full BIOS images** and **two candidate FSP regions**, with hashes, provenance and test status. The menu-modified BIOS was never flashed. The full PEG/TCSS image was reconstructed offline from the OEM BIOS; its FSP region was tested on the original machine, but the complete distributed image was not flashed.

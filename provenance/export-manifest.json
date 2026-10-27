@@ -6956,6 +6956,818 @@
       "published_sha256": "8e55cf2c30b09d197c32b1ae8983c7a1b7fe11664e9de477420739f62593fe88",
       "redacted": true,
       "transformation": "selected research lines plus identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/tb_counter_probe.cpp",
+      "original_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "published_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/test_tb_counter.cpp",
+      "original_sha256": "16a1bb3cc02d2be874d3c598227bc5675b73d2de552d274f6ec542a227f75642",
+      "published_sha256": "16a1bb3cc02d2be874d3c598227bc5675b73d2de552d274f6ec542a227f75642",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/counter-fixtures.h",
+      "original_sha256": "584b123eca1716d1927091e77ac5d13045bb51d0669d273edb6ec405913279a9",
+      "published_sha256": "8f213219d76219c9d8c8fd7d68b334a3078817d81b4c8dc00b3b85f16b08cfd1",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/counter_log_validation.py",
+      "original_sha256": "d4c6ee8ed51ec45788e04333e201135a1ec9a7fc72cde725d224cfb0f5b068af",
+      "published_sha256": "d4c6ee8ed51ec45788e04333e201135a1ec9a7fc72cde725d224cfb0f5b068af",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/test_counter_validation.py",
+      "original_sha256": "24cb01f28e811a5f2b4fc62332914b18d96652fab5cc48fbac784170a54001d7",
+      "published_sha256": "24cb01f28e811a5f2b4fc62332914b18d96652fab5cc48fbac784170a54001d7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/source-review.json",
+      "original_sha256": "3df1a0f95ac955905e3a2851fb917b61e1e499becd563389f48112bf2ccac713",
+      "published_sha256": "3df1a0f95ac955905e3a2851fb917b61e1e499becd563389f48112bf2ccac713",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/package-comparison.json",
+      "original_sha256": "eadeb65f5e620aa39b5c741b206c581f8a5359598c650b7847946b52c6a7f1d9",
+      "published_sha256": "eadeb65f5e620aa39b5c741b206c581f8a5359598c650b7847946b52c6a7f1d9",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/results/qualified.json",
+      "original_sha256": "1b6e0705b14244a27e2ea60a343d8e8c39178d0c033d71eec48576a69e1f2a69",
+      "published_sha256": "1b6e0705b14244a27e2ea60a343d8e8c39178d0c033d71eec48576a69e1f2a69",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/results/result.log",
+      "original_sha256": "4156fa27d038b6419a45d0f21074b45542873fefae97cffec803676a2cb2f6f1",
+      "published_sha256": "4156fa27d038b6419a45d0f21074b45542873fefae97cffec803676a2cb2f6f1",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-config/results/kernel-research.log",
+      "original_sha256": "69bfca3fcbfef583e8498eade90f98eda9b2bba21bb7be836bb110438c798cd0",
+      "published_sha256": "a1c2d0dab7f78303b9e2087224a62ec0626f9dbc4ccd0f994940ce73705614a2",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/tb_counter_probe.cpp",
+      "original_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "published_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/mmio_probe.cpp",
+      "original_sha256": "95dc724a1011e7059e8dbe02350a689f9e1b7e0715ed3737752f31d82178da89",
+      "published_sha256": "95dc724a1011e7059e8dbe02350a689f9e1b7e0715ed3737752f31d82178da89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/test_mmio.cpp",
+      "original_sha256": "05c4b68672638f647ac07ae12cf83082444846eb174f617344aa15692926c119",
+      "published_sha256": "05c4b68672638f647ac07ae12cf83082444846eb174f617344aa15692926c119",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/mmio_log_validation.py",
+      "original_sha256": "1ec1e4c5973d48addf15cbe3862c5bda5cd7438a714ddbee3303f39e2b882218",
+      "published_sha256": "1ec1e4c5973d48addf15cbe3862c5bda5cd7438a714ddbee3303f39e2b882218",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/test_mmio_validation.py",
+      "original_sha256": "b8152a35fb079613a0ad609300bf28aec5153b921ebf133a231a3e132bc7cc34",
+      "published_sha256": "b8152a35fb079613a0ad609300bf28aec5153b921ebf133a231a3e132bc7cc34",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/source-review.json",
+      "original_sha256": "db9cedf12a46b2b59ea5377da694c63925ab277aaec606ebe06c0486e5ab7043",
+      "published_sha256": "db9cedf12a46b2b59ea5377da694c63925ab277aaec606ebe06c0486e5ab7043",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/package-comparison.json",
+      "original_sha256": "8af4914b8132bb4e5b232b8eb3f90812073bcff6c85b600fd4082ffcc81899e6",
+      "published_sha256": "8af4914b8132bb4e5b232b8eb3f90812073bcff6c85b600fd4082ffcc81899e6",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/cpu-mmio-response-analysis.json",
+      "original_sha256": "47ad131c650f40be108ddcf9ceb3946ea8b318ce03e12d48377afeaedf390c0b",
+      "published_sha256": "47ad131c650f40be108ddcf9ceb3946ea8b318ce03e12d48377afeaedf390c0b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/results/qualified.json",
+      "original_sha256": "08c86502f64e342702378c52b07ee48b3acd602d7c753c96fa9e745827198c89",
+      "published_sha256": "08c86502f64e342702378c52b07ee48b3acd602d7c753c96fa9e745827198c89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/results/result.log",
+      "original_sha256": "c7437a009072bad441e794ad785d43a0314fbd3dd4a8e67bce96c55343578f57",
+      "published_sha256": "c7437a009072bad441e794ad785d43a0314fbd3dd4a8e67bce96c55343578f57",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/cpu-mmio/results/kernel-research.log",
+      "original_sha256": "5b943a73b1ffc6c8ae055453214741e9f069e5edd08218823395f95a955221f4",
+      "published_sha256": "7a4794c8d4a15f571bbb7b0dd71658a26ddb0e2d3e8f8dff1e3bb676eab32788",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/tb_counter_probe.cpp",
+      "original_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "published_sha256": "3f790f0bc0d2d35e1991d6d78ab5e0e33caf730645da4a98b98ca3453ba9be63",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/gpu_counter_trace.h",
+      "original_sha256": "50c4ddd7af3dc16dc4e163dcd5d9309e954a5661f9676f033ec4ac6a29f09dd0",
+      "published_sha256": "50c4ddd7af3dc16dc4e163dcd5d9309e954a5661f9676f033ec4ac6a29f09dd0",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/peer_same_allocation.cu",
+      "original_sha256": "b0679b4377c49cc5c47210abb16ea09abd8495169d7d65cf9da4fd782a6d2261",
+      "published_sha256": "b0679b4377c49cc5c47210abb16ea09abd8495169d7d65cf9da4fd782a6d2261",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/cupti_trace.h",
+      "original_sha256": "9c6aec46f7cf0509667d89037091679cf186cb8fac938089337adf5d49cee067",
+      "published_sha256": "9c6aec46f7cf0509667d89037091679cf186cb8fac938089337adf5d49cee067",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/payload_capture.h",
+      "original_sha256": "9cdadf5a5e0bfba55275ca3b5e95190bd691c88d1d567a064bb87197b0086296",
+      "published_sha256": "9cdadf5a5e0bfba55275ca3b5e95190bd691c88d1d567a064bb87197b0086296",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/pcie_diag.h",
+      "original_sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+      "published_sha256": "4820c6c0f296c9af7bb75403885f860a3f8d1837d0aed1e625143258001358ae",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/base_log_validation.py",
+      "original_sha256": "e0c1f7f420facbe943a64e1aa8c6a018d7176a40276b45ec94cb020e9cbfea78",
+      "published_sha256": "f7fc3263877afb093a7ec6fc3be2b0b244e73fdb0674606e5509f42569abd9cc",
+      "redacted": true,
+      "transformation": "identifier/path redaction; whitespace normalization/checksum repin"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/gpu_log_validation.py",
+      "original_sha256": "deafb89eb6fcb2d620785e157a6795943de82c9df1b8a76c051ec10ec1979aab",
+      "published_sha256": "1c9eb5781eff5f52d3bd61f8a8ca602e44713cadd10526de0e62986d33755848",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction; whitespace normalization/checksum repin"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/test_gpu_validation.py",
+      "original_sha256": "0085cccb2a6f24dfa4626cc125cc0a5d7a12072da4317a2d9b65a6c4daa8bacf",
+      "published_sha256": "3fe734e208e9bcfe704c86d09cc7cb60ea09886b955d0305f29ede008f601ba0",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/source-review.json",
+      "original_sha256": "a7aa035ca4b8108873eaa898f2b5349c856d1016437d238911eb53dbbc844b34",
+      "published_sha256": "a7aa035ca4b8108873eaa898f2b5349c856d1016437d238911eb53dbbc844b34",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/package-comparison.json",
+      "original_sha256": "587e091b29bf3a47c5d15b16418a4dab283d0e565995373958bdda473b0cdee9",
+      "published_sha256": "587e091b29bf3a47c5d15b16418a4dab283d0e565995373958bdda473b0cdee9",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/compile-manifest.json",
+      "original_sha256": "ecf3e8bf73c060b671a60cbe1ed2081bdcf39b3473facb0292bcd0cc954f6dd0",
+      "published_sha256": "97cbe36d66cc31349f8086c437048f82caa174d1197085ee06af8ae296ecdd97",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/counter-analysis.json",
+      "original_sha256": "0d4344c33ecc9fb6ffe4d9a193c02ea22d7f1e30f9dafb9f044cb8d72e48097f",
+      "published_sha256": "0d4344c33ecc9fb6ffe4d9a193c02ea22d7f1e30f9dafb9f044cb8d72e48097f",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/payload-analysis.json",
+      "original_sha256": "febfaef0f4083bcd36f93206c5cae8b224f8c052b5374ac10fa18658877bc7dc",
+      "published_sha256": "febfaef0f4083bcd36f93206c5cae8b224f8c052b5374ac10fa18658877bc7dc",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/qualified.json",
+      "original_sha256": "30c5beb7324f16a19500ac30c73b9b8453fc1a43e33a30a41b7da5e8c73e434a",
+      "published_sha256": "30c5beb7324f16a19500ac30c73b9b8453fc1a43e33a30a41b7da5e8c73e434a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/result.log",
+      "original_sha256": "7fe5580ef81e83ed50dbad26d2e1361162bacbf0cb5f4941999cdbb69623b3cf",
+      "published_sha256": "e97abec253325f5216f95d4414701d6b8a597d90357c1caeabddaefa5c4e584d",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/kernel-research.log",
+      "original_sha256": "77ced5bbb0306e895edc774e2dd33734456d6812f487f539930845d5fbae13b0",
+      "published_sha256": "ce3c36d8cf12b9e404eae2ccca629f97deb8e91d1c5345ca30264cdf7becf7a0",
+      "redacted": true,
+      "transformation": "scoped extraction/portable fixtures and identifier redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-001.json",
+      "original_sha256": "ac786e1329ae89e287aa90156bdc1643dc61547c7835dc7d97377ad9da59df51",
+      "published_sha256": "ac786e1329ae89e287aa90156bdc1643dc61547c7835dc7d97377ad9da59df51",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-001.observed.u32le",
+      "original_sha256": "ed8136de7e39a06f14d811e290618a367b8e2b3039296f41dd20fa9b495d3640",
+      "published_sha256": "ed8136de7e39a06f14d811e290618a367b8e2b3039296f41dd20fa9b495d3640",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-002.json",
+      "original_sha256": "229c9055ebf2f8558ad847ff82bca07d1b16b27b9e59f3a909679c33454e6217",
+      "published_sha256": "229c9055ebf2f8558ad847ff82bca07d1b16b27b9e59f3a909679c33454e6217",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-002.observed.u32le",
+      "original_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "published_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-003.json",
+      "original_sha256": "2df3395c094bc74e6ca3408b656e434b449b8046ef5595aae3d218e2f6fabdc9",
+      "published_sha256": "2df3395c094bc74e6ca3408b656e434b449b8046ef5595aae3d218e2f6fabdc9",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-003.observed.u32le",
+      "original_sha256": "98651d743cedc5fb20c7ba9bb655224906028a89f1eca7d2cac96abfbfb1db2f",
+      "published_sha256": "98651d743cedc5fb20c7ba9bb655224906028a89f1eca7d2cac96abfbfb1db2f",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-004.json",
+      "original_sha256": "3592952912041e904c83044a38146a5019ce49c15f12a644d913c4189b4d1bab",
+      "published_sha256": "3592952912041e904c83044a38146a5019ce49c15f12a644d913c4189b4d1bab",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-004.observed.u32le",
+      "original_sha256": "b9624cea6065b85403b555473084ea8417cda83a3d696514ba099a015f386d07",
+      "published_sha256": "b9624cea6065b85403b555473084ea8417cda83a3d696514ba099a015f386d07",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-005.json",
+      "original_sha256": "c04096d4e570042cab49119f7d8716cb75eafa75a082117904c3163b17532406",
+      "published_sha256": "c04096d4e570042cab49119f7d8716cb75eafa75a082117904c3163b17532406",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-005.observed.u32le",
+      "original_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "published_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-006.json",
+      "original_sha256": "dd60e4c3f58b92bd8e51baf676b851920c6382402d13e1d6f2dafe8ebc01f346",
+      "published_sha256": "dd60e4c3f58b92bd8e51baf676b851920c6382402d13e1d6f2dafe8ebc01f346",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-006.observed.u32le",
+      "original_sha256": "db4f01c95c4c501f3fd9711f6a7a763a43ef159a992c0b08d8341b77170bcebb",
+      "published_sha256": "db4f01c95c4c501f3fd9711f6a7a763a43ef159a992c0b08d8341b77170bcebb",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-007.json",
+      "original_sha256": "54932c3a16ea566134a268708d810338acf1b8c991a94dd0659819207ce3e762",
+      "published_sha256": "54932c3a16ea566134a268708d810338acf1b8c991a94dd0659819207ce3e762",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-007.observed.u32le",
+      "original_sha256": "083f5483e9ad07364d9ef6280ed701bbe06a54727cc190e83c21c20c397cf437",
+      "published_sha256": "083f5483e9ad07364d9ef6280ed701bbe06a54727cc190e83c21c20c397cf437",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-008.json",
+      "original_sha256": "ac2f58cdb00b6089dec429e6aa61e0aad49c8fbdc2632fcf2bbba1379f0fae24",
+      "published_sha256": "ac2f58cdb00b6089dec429e6aa61e0aad49c8fbdc2632fcf2bbba1379f0fae24",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-008.observed.u32le",
+      "original_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "published_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-009.json",
+      "original_sha256": "101631280d9172df0510ca192c5c0ddecbe7aefebae5523474b7d4720f2ae439",
+      "published_sha256": "101631280d9172df0510ca192c5c0ddecbe7aefebae5523474b7d4720f2ae439",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-009.observed.u32le",
+      "original_sha256": "f1f58599729f75b9f1b2c16020bac40fa4be2fcceac83b795165d2a453319c85",
+      "published_sha256": "f1f58599729f75b9f1b2c16020bac40fa4be2fcceac83b795165d2a453319c85",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-010.json",
+      "original_sha256": "cb65378373cd58df6096637f6f1fd6bae29be340ead01afdb9a73de8d1f9d137",
+      "published_sha256": "cb65378373cd58df6096637f6f1fd6bae29be340ead01afdb9a73de8d1f9d137",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-010.observed.u32le",
+      "original_sha256": "88db15636b8bcf65d77acd7c5df401ab260dc8aa620a9a3fa664e32cc3eb88f2",
+      "published_sha256": "88db15636b8bcf65d77acd7c5df401ab260dc8aa620a9a3fa664e32cc3eb88f2",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-011.json",
+      "original_sha256": "62cd3f113e06dd3cfa93f090238fa1d64dccd5d8bb8547dcbab456f3490c13b7",
+      "published_sha256": "62cd3f113e06dd3cfa93f090238fa1d64dccd5d8bb8547dcbab456f3490c13b7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-011.observed.u32le",
+      "original_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "published_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-012.json",
+      "original_sha256": "d5e2b14f18b043e84e861dda9a61e87d67d9c3b06b127fba65c47be35b0fc472",
+      "published_sha256": "d5e2b14f18b043e84e861dda9a61e87d67d9c3b06b127fba65c47be35b0fc472",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-012.observed.u32le",
+      "original_sha256": "5056639b7cf501abe5474602fde7d04a3e71e43e6c8e472160c0f471c96105a7",
+      "published_sha256": "5056639b7cf501abe5474602fde7d04a3e71e43e6c8e472160c0f471c96105a7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-013.json",
+      "original_sha256": "1a9bdd231ea7c0f90b098c523941ca1f60ededc911c73cdeccd2cb864b57ea53",
+      "published_sha256": "1a9bdd231ea7c0f90b098c523941ca1f60ededc911c73cdeccd2cb864b57ea53",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-013.observed.u32le",
+      "original_sha256": "aa75fea0a59594131efe7a237ffee3b4d99b8020a27d089413a7e17f08924903",
+      "published_sha256": "aa75fea0a59594131efe7a237ffee3b4d99b8020a27d089413a7e17f08924903",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-014.json",
+      "original_sha256": "b2b1a2904af89b2169ea268267ec57ee411a3e710a94df1d30d27e166153d60e",
+      "published_sha256": "b2b1a2904af89b2169ea268267ec57ee411a3e710a94df1d30d27e166153d60e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-014.observed.u32le",
+      "original_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "published_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-015.json",
+      "original_sha256": "0c11b7fcbe681edddb6737c24f784c1ed90eb91be54761bcac3803360b4b1296",
+      "published_sha256": "0c11b7fcbe681edddb6737c24f784c1ed90eb91be54761bcac3803360b4b1296",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-015.observed.u32le",
+      "original_sha256": "f78a70600973f6e7e350e0016c7809901a2f0cb6fb6ae77defa9f4f024897736",
+      "published_sha256": "f78a70600973f6e7e350e0016c7809901a2f0cb6fb6ae77defa9f4f024897736",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-016.json",
+      "original_sha256": "a35f14223d7f081b045eaa09d216e88b892bd33cc8893c5e8d71a3717c8921df",
+      "published_sha256": "a35f14223d7f081b045eaa09d216e88b892bd33cc8893c5e8d71a3717c8921df",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-016.observed.u32le",
+      "original_sha256": "e225e218ca2ad8567d389fd8647175666f20dc9634ef92b0964ab33ff8c45d90",
+      "published_sha256": "e225e218ca2ad8567d389fd8647175666f20dc9634ef92b0964ab33ff8c45d90",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-017.json",
+      "original_sha256": "f521777e5c355091c7019680f4e5d01c172348546a3fa4f98e80e96b6544747d",
+      "published_sha256": "f521777e5c355091c7019680f4e5d01c172348546a3fa4f98e80e96b6544747d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-017.observed.u32le",
+      "original_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "published_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-018.json",
+      "original_sha256": "baeec4a7ec97fa2313b3fb6b538eecfdf53dcbcadee1811adb93894998c95056",
+      "published_sha256": "baeec4a7ec97fa2313b3fb6b538eecfdf53dcbcadee1811adb93894998c95056",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-018.observed.u32le",
+      "original_sha256": "016b2709f0a57e2869b7aa7518d60f901b42e3bf7dc645246daa43a8a3b1a643",
+      "published_sha256": "016b2709f0a57e2869b7aa7518d60f901b42e3bf7dc645246daa43a8a3b1a643",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-019.json",
+      "original_sha256": "f1b2e88c1559bd2933a0d3f31e36bd8fb859bb58f80ad329b1c8495a4d520772",
+      "published_sha256": "f1b2e88c1559bd2933a0d3f31e36bd8fb859bb58f80ad329b1c8495a4d520772",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-019.observed.u32le",
+      "original_sha256": "b05cbc953f985809e5304f2d3a1d120e05a5a57d06279f4f349a5099548bd76c",
+      "published_sha256": "b05cbc953f985809e5304f2d3a1d120e05a5a57d06279f4f349a5099548bd76c",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-020.json",
+      "original_sha256": "cb07ce2d92803c75050e8bc61c8d25519e5c1fc79c35dc16319564e828184271",
+      "published_sha256": "cb07ce2d92803c75050e8bc61c8d25519e5c1fc79c35dc16319564e828184271",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-020.observed.u32le",
+      "original_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "published_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-021.json",
+      "original_sha256": "8190cf7356b0a7957c82656da5261f5d1b097b268e1df97d3ceba6d9e878ee9d",
+      "published_sha256": "8190cf7356b0a7957c82656da5261f5d1b097b268e1df97d3ceba6d9e878ee9d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-021.observed.u32le",
+      "original_sha256": "b7d0b2e2466e1730ceb8e21f3e0ec52e351597453b5ab2ea09863b1f64994004",
+      "published_sha256": "b7d0b2e2466e1730ceb8e21f3e0ec52e351597453b5ab2ea09863b1f64994004",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-022.json",
+      "original_sha256": "6d446d98dc721388f952ee99cce4fc13df1d52e55498e3cc9ef3c8e996a36890",
+      "published_sha256": "6d446d98dc721388f952ee99cce4fc13df1d52e55498e3cc9ef3c8e996a36890",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-022.observed.u32le",
+      "original_sha256": "39db75c483d5e391f37860b54747017e04b492932d4058cb599a0eba3ff0c961",
+      "published_sha256": "39db75c483d5e391f37860b54747017e04b492932d4058cb599a0eba3ff0c961",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-023.json",
+      "original_sha256": "ee76a15425e4d3160bd21693ecdb5b0f5f45a553bb0754d23996c5d278d7bf36",
+      "published_sha256": "ee76a15425e4d3160bd21693ecdb5b0f5f45a553bb0754d23996c5d278d7bf36",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-023.observed.u32le",
+      "original_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "published_sha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-024.json",
+      "original_sha256": "c004d69faea5d052c6abe905a3b421bbba976e99deea9919b7a983d472f82d31",
+      "published_sha256": "c004d69faea5d052c6abe905a3b421bbba976e99deea9919b7a983d472f82d31",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-024.observed.u32le",
+      "original_sha256": "b02816bb6423c6f4cfacb7ce02e33ef7d25ab4cf63550a8c754e42b9ae4942a6",
+      "published_sha256": "b02816bb6423c6f4cfacb7ce02e33ef7d25ab4cf63550a8c754e42b9ae4942a6",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-025.json",
+      "original_sha256": "67e67b8cd85655848a005b2a3c45551ff8492fdce93114fd00b4a5c5b967696a",
+      "published_sha256": "67e67b8cd85655848a005b2a3c45551ff8492fdce93114fd00b4a5c5b967696a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-025.observed.u32le",
+      "original_sha256": "9fc8202435f39239a11ac25d3cba8d3d18c10c9679877c9fbf557cb6c18db136",
+      "published_sha256": "9fc8202435f39239a11ac25d3cba8d3d18c10c9679877c9fbf557cb6c18db136",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-026.json",
+      "original_sha256": "1ec4a323fa8bffcec9e4af80755316f9696871a46fec1bcc840ec00467f7d7a4",
+      "published_sha256": "1ec4a323fa8bffcec9e4af80755316f9696871a46fec1bcc840ec00467f7d7a4",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-026.observed.u32le",
+      "original_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "published_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-027.json",
+      "original_sha256": "a7994ef0f854d33d0e43d2b6263f052f81b80f9520b62b0f117a1817754053ae",
+      "published_sha256": "a7994ef0f854d33d0e43d2b6263f052f81b80f9520b62b0f117a1817754053ae",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-027.observed.u32le",
+      "original_sha256": "26e82bb865dfdac623318f12304e90013c9f2fc9159772da3537d01534b14483",
+      "published_sha256": "26e82bb865dfdac623318f12304e90013c9f2fc9159772da3537d01534b14483",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-028.json",
+      "original_sha256": "d511921da12b953e1ef0def28438c991d39f42be1f1f81dbfd9ebcfd73ad342d",
+      "published_sha256": "d511921da12b953e1ef0def28438c991d39f42be1f1f81dbfd9ebcfd73ad342d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-028.observed.u32le",
+      "original_sha256": "aef5bc6729628eecd62260557615ad0a55ce312b9ee4d206fd1bc6dafb6cda88",
+      "published_sha256": "aef5bc6729628eecd62260557615ad0a55ce312b9ee4d206fd1bc6dafb6cda88",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-029.json",
+      "original_sha256": "59e9791ecde605abbff8d07bc5db7bb87568eb42fee00cbd5feff9f5cfe689a2",
+      "published_sha256": "59e9791ecde605abbff8d07bc5db7bb87568eb42fee00cbd5feff9f5cfe689a2",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-029.observed.u32le",
+      "original_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "published_sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-030.json",
+      "original_sha256": "88de6025c016dfc71e8c999b145042fb668cecebb5c5f459a932c4ccbdf8ad77",
+      "published_sha256": "88de6025c016dfc71e8c999b145042fb668cecebb5c5f459a932c4ccbdf8ad77",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-030.observed.u32le",
+      "original_sha256": "c676bd9c0b8f9aa5dfae6899703dc8fa8fe5657ebfb81387add02debacee7390",
+      "published_sha256": "c676bd9c0b8f9aa5dfae6899703dc8fa8fe5657ebfb81387add02debacee7390",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-031.json",
+      "original_sha256": "e3fc77fea28c431c108f39a88432c618777ca4a055950e0f92369665ceaf4bf4",
+      "published_sha256": "e3fc77fea28c431c108f39a88432c618777ca4a055950e0f92369665ceaf4bf4",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-031.observed.u32le",
+      "original_sha256": "239e44493c74d5498c4d6674adddff2c15d43c5b05908425ac98d8be576c733a",
+      "published_sha256": "239e44493c74d5498c4d6674adddff2c15d43c5b05908425ac98d8be576c733a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-032.json",
+      "original_sha256": "23f523b71de6785aa31a740f74d7431da72bf7120a347ae1cd0304213041ad9c",
+      "published_sha256": "23f523b71de6785aa31a740f74d7431da72bf7120a347ae1cd0304213041ad9c",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-032.observed.u32le",
+      "original_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "published_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-033.json",
+      "original_sha256": "b81c78bf8ddc6ac23c1ed00032d769f9fd0361de63904966ecf53c3712e2ab05",
+      "published_sha256": "b81c78bf8ddc6ac23c1ed00032d769f9fd0361de63904966ecf53c3712e2ab05",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-033.observed.u32le",
+      "original_sha256": "37a8304b7adebd18e63e10bea3ad6aa02a162bb8078fd2adcc997fbae8fd6683",
+      "published_sha256": "37a8304b7adebd18e63e10bea3ad6aa02a162bb8078fd2adcc997fbae8fd6683",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-034.json",
+      "original_sha256": "f062594e4335bccd4f7fff16a5d893697bd56b456eaeb96d7b3f81fa76f67363",
+      "published_sha256": "f062594e4335bccd4f7fff16a5d893697bd56b456eaeb96d7b3f81fa76f67363",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-034.observed.u32le",
+      "original_sha256": "c1f732e0034ffc9124a918a24a8acba91f11bb6627b067d085d6586b6cec29e7",
+      "published_sha256": "c1f732e0034ffc9124a918a24a8acba91f11bb6627b067d085d6586b6cec29e7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-035.json",
+      "original_sha256": "cd47687a9a9b76f144018cea820fce59161b7d86a5980c3cdfda9c71fc92e4a6",
+      "published_sha256": "cd47687a9a9b76f144018cea820fce59161b7d86a5980c3cdfda9c71fc92e4a6",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-035.observed.u32le",
+      "original_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "published_sha256": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-036.json",
+      "original_sha256": "4a4f477ffe610a3f78fdd1070bb06150474e6d324d68210ba870c2e7bc3ddb37",
+      "published_sha256": "4a4f477ffe610a3f78fdd1070bb06150474e6d324d68210ba870c2e7bc3ddb37",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/results/payload/case-036.observed.u32le",
+      "original_sha256": "6e57df1396a12d20dafb8ec0bad0abc0c2213a92bda4b466ca8691bd5ff253c2",
+      "published_sha256": "6e57df1396a12d20dafb8ec0bad0abc0c2213a92bda4b466ca8691bd5ff253c2",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/synthetic-fixture.log",
+      "original_sha256": "d2e5fbdeedbd0a0a8a12b0a8771da904afa38e2f3fc56673aa1c86c02fb6b65b",
+      "published_sha256": "cd69918a898501580a80b5f48afeaf10581c96210230b386bf87ef4db3597988",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/usb4-counters/gpu/synthetic-kernel.log",
+      "original_sha256": "1a2724966ccc02e2deaefa81b8342c5537ff34e1dc6cbbf5a13f8e8363e27cfa",
+      "published_sha256": "1a2724966ccc02e2deaefa81b8342c5537ff34e1dc6cbbf5a13f8e8363e27cfa",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/kernel/cask_pcie_counters.inc",
+      "original_sha256": "7743b845a64cde6cae75ac5baf87477c9d8f53efe8bd99342e25b1ed8835a40a",
+      "published_sha256": "7743b845a64cde6cae75ac5baf87477c9d8f53efe8bd99342e25b1ed8835a40a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/kernel/thunderbolt-counters.patch",
+      "original_sha256": "ee73512edbf0716a6f68a2b1c8a3fb9b04dfb4c42181928acc44a38fc8c9fcba",
+      "published_sha256": "ee73512edbf0716a6f68a2b1c8a3fb9b04dfb4c42181928acc44a38fc8c9fcba",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/kernel/kernel-source-provenance.json",
+      "original_sha256": "499ef480d82008579aeba39334521001a29f2e1d8fe57a5c329cadb1e138fd17",
+      "published_sha256": "499ef480d82008579aeba39334521001a29f2e1d8fe57a5c329cadb1e138fd17",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/usb4-counters/firmware-policy-trace.json",
+      "original_sha256": "3dbcdc1f90e32d55728b2e78e3cbd0233c7d10f4da5e6995024ae908de221242",
+      "published_sha256": "3dbcdc1f90e32d55728b2e78e3cbd0233c7d10f4da5e6995024ae908de221242",
+      "redacted": false,
+      "transformation": "none"
     }
   ],
   "omitted_remote_orchestration": [],

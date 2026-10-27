@@ -1,0 +1,50 @@
+{
+  "scope": "Static historical BIOS analysis only; no hardware writes",
+  "bios_source": "1.26 historical backup and extracted modules",
+  "cpu_config_guid": "9749a5fb-9130-44f0-8f61-dbff8ef2cac7",
+  "SiInitFsp_cpu_config_guid_rva": "0x36ea0",
+  "FspInit_cpu_config_guid_rva": "0x4540",
+  "previous_candidate_at_36ef0": "VTD_CONFIG_GUID, rejected as CPU config identity",
+  "fsp_image_id": "$RPLFSP$",
+  "fsp_image_revision": "0x0c019320",
+  "upd_signature": "ADLUPD_S",
+  "upd_revision": 2,
+  "upd_bytes": "0x1068",
+  "terminator": "0x55aa",
+  "header_family": "RaptorLakeP Client",
+  "peer_mode_upd_offset": "0xfab",
+  "config_base_offset": "0x40",
+  "peer_mode_config_relative": "0xf6b",
+  "policy_port_stride": "0x1f0",
+  "policy_port_header": "0x1c",
+  "policy_peer_word_offset": "0x2c",
+  "policy_peer_word_offset_in_port": "0x10",
+  "policy_peer_bit": 4,
+  "same_policy_field_as_prior_SaSetup_3e3_test": true,
+  "new_independent_hardware_control_demonstrated": false,
+  "binary_assertions": {
+    "FspInit": {
+      "35b0": "8d7e40",
+      "373f": "69f5f0010000",
+      "3882": "0fb6842f6b0f0000",
+      "388a": "c1e004",
+      "388d": "33441e2c",
+      "3891": "83e010",
+      "3894": "31441e2c"
+    },
+    "SiInitFsp": {
+      "10177": "6880ce0300",
+      "1017c": "baa06e0300",
+      "f47f": "69cdf0010000",
+      "f485": "83c01c",
+      "f61b": "f6401010"
+    }
+  },
+  "reference_dec_url": "https://raw.githubusercontent.com/tianocore/edk2-platforms/master/Silicon/Intel/AlderlakeSiliconPkg/SiPkg.dec",
+  "reference_dec_sha256": "0cb597f0323648b2f572e20181dd68e5daca147d4f6bfba6a0dfe8766738258b",
+  "module_sha256": {
+    "FspInit": "4b1a70334870247fc7100cfeefc0e68d768e9093faea8ea8d9c64eeb0bfd4298",
+    "SiInitFsp": "de17fb9ae71e0cb04fa39102ed1895284640befb719b44ea45b498e29b0c928f"
+  },
+  "limitation": "Static aliases do not establish runtime UPD contents; OEM policy may override defaults. Original FSP policy has already been tested through its resulting register change."
+}

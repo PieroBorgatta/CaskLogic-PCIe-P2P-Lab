@@ -1,0 +1,29 @@
+{
+  "status": "reviewed_for_native_cpu_control",
+  "default_module_parameter": false,
+  "original_source_files_changed": [
+    "tunnel.c"
+  ],
+  "new_source_include": "cask_pcie_counters.inc",
+  "no_arbitrary_debugfs_write_enabled": true,
+  "counter_setup": "Existing tb_path_activate sets counter ID/CE with Valid; selected counter reset is the existing standard activation behavior. No live path edits.",
+  "fixed_topology": [
+    "0-0/port8/counter0",
+    "0-0/port1/counter1",
+    "0-1/port1/counter1",
+    "0-1/port3/counter0"
+  ],
+  "new_path_only": true,
+  "existing_active_path": "skip, then observer rejects disabled counters",
+  "counter_ownership": "All supported ingress hops read before selecting free counter; bounds<=31. Lane control Hop0 also checked.",
+  "restore": "Unload custom module with no GPU driver and no DMA; reload unmodified original module; verify four path words match preceding inspection outside pending flag.",
+  "tests": {
+    "cpp_sanitizer_checks_mac": 38,
+    "cpp_sanitizer_checks_linux": 38,
+    "python_valid_fixture": 1,
+    "python_mutated_fixtures": 18
+  },
+  "firmware_flash": false,
+  "gpu_program_executed": false,
+  "package_all_members_verified": true
+}

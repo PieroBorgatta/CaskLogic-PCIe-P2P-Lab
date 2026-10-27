@@ -1,0 +1,20 @@
+--- a/tunnel.c
++++ b/tunnel.c
+@@ -386,6 +386,8 @@
+ 	hop->initial_credits = credits;
+ 	return 0;
+ }
++
++#include "cask_pcie_counters.inc"
+ 
+ static int tb_pci_init_path(struct tb_path *path)
+ {
+@@ -407,7 +409,7 @@
+ 			return ret;
+ 	}
+ 
+-	return 0;
++	return cask_pci_counter_plan(path);
+ }
+ 
+ /**

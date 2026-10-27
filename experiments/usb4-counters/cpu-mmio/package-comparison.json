@@ -1,0 +1,14 @@
+{
+  "status": "all_archive_members_verified",
+  "baseline_members": 2291,
+  "new_members": 2291,
+  "unchanged_members": 2289,
+  "added": [],
+  "removed": [],
+  "changed": [
+    "init",
+    "opt/probe/tb_counter_probe"
+  ],
+  "custom_thunderbolt_module_unchanged": true,
+  "initrd_sha256": "bcecf66c73ec60f074adc78201e42212b9b10da9638400337fd7a845acac17ae"
+}

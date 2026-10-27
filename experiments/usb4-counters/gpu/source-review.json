@@ -1,0 +1,19 @@
+{
+  "status": "reviewed_for_native_gpu_measurement",
+  "GPU_operations_unchanged": true,
+  "NVIDIA_modules_unchanged": true,
+  "counter_observer": "Reads only. Before/after counters bracket GPU operation and stream synchronization, before CUPTI flush/post PCI snapshot and owner verification. 20ms idle per case; immutable path verification before/after.",
+  "counter_sample_rows": 288,
+  "comparisons": 36,
+  "same_two_allocations": true,
+  "CPU_MMIO_control_before_NVIDIA_driver_load": true,
+  "nvidia_unload_required_before_tunnel_teardown": true,
+  "uncertain_DMA_or_busy_unload": "No tunnel teardown; return/reboot with independent watchdog. Preserve incomplete evidence.",
+  "CPU_only_build": true,
+  "unit_valid_synthetic_fixture": 1,
+  "unit_negative_fixtures": 18,
+  "unit_fixture_is_not_hardware_evidence": true,
+  "firmware_flash": false,
+  "no_user_data_disks_mounted": true,
+  "P2P_solution_claimed": false
+}

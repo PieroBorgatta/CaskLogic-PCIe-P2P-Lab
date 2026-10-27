@@ -1,0 +1,19 @@
+{
+  "status": "all_archive_members_verified",
+  "baseline_members": 2295,
+  "new_members": 2298,
+  "unchanged_members": 2293,
+  "added": [
+    "opt/probe/tb_counter_probe",
+    "opt/probe/tb_restore_probe",
+    "opt/probe/thunderbolt-counters.ko"
+  ],
+  "removed": [],
+  "changed": [
+    "init",
+    "opt/probe/peer_word"
+  ],
+  "NVIDIA_modules_unchanged": true,
+  "original_GPU_operations_byte_exact_after_removing_observer": true,
+  "initrd_sha256": "e0d1501d73ef20dcc1b78c835f74efca5c8139e7c25c11b1ae0eec8a36f4fb64"
+}

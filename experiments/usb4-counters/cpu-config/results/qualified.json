@@ -1,0 +1,9 @@
+{
+  "status": "incomplete_preserved",
+  "protocol_complete": false,
+  "counter_error": "Missing/duplicate marker: TB_COUNTER_PROBE_END protocol_complete=1 positive_controls=2 idle_controls=1 points=4",
+  "P2P_solution_claimed": false,
+  "peer_traffic_measured": false,
+  "comparisons": 0,
+  "logs_are_partial_evidence": true
+}

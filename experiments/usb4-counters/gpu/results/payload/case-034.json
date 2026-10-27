@@ -1,0 +1,10 @@
+{
+  "schema_version":1,"case_id":34,"engine":"SM","mode":"PUSH",
+  "source":0,"destination":1,"executor":0,"bytes":1048576,"seed":"5ffa58ca",
+  "observed_file":"case-034.observed.u32le","pattern":"mix32-index-xor-seed-v1",
+  "sentinel":"bitwise-not-expected","byte_order":"little","word_bytes":4,
+  "source_va":"7c9b5ae00000","destination_va":"7c9b5b600000",
+  "first_mismatch_word":0,"last_mismatch_word":262143,
+  "correct_words":0,"sentinel_match_words":262144,"other_words":0,
+  "direct_route_proven":false,"same_allocations_across_modes":true
+}

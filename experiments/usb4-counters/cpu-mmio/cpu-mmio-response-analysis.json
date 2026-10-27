@@ -1,0 +1,51 @@
+{
+  "status": "empirical_idle_comparison",
+  "method": "Maximum of the two measured idle rates; not proof of stationary background or exact PCIe packet counts.",
+  "results": [
+    {
+      "point": "HOST_PCIE",
+      "idle_max_counts_per_second": 66176.51887963561,
+      "mmio_reads": 16384,
+      "measured_delta": 35675,
+      "measured_window_ns": 43719341,
+      "estimated_idle_delta": 2893.193795091727,
+      "observed_above_idle_estimate": 32781.80620490827,
+      "estimated_counts_per_read_above_idle": 2.000842663873796,
+      "interpretation": "empirical response above measured idle; not a PCIe TLP decode"
+    },
+    {
+      "point": "HOST_LANE",
+      "idle_max_counts_per_second": 94604.38522249668,
+      "mmio_reads": 16384,
+      "measured_delta": 52466,
+      "measured_window_ns": 40773366,
+      "estimated_idle_delta": 3857.3392238818487,
+      "observed_above_idle_estimate": 48608.66077611815,
+      "estimated_counts_per_read_above_idle": 2.9668372055736176,
+      "interpretation": "empirical response above measured idle; not a PCIe TLP decode"
+    },
+    {
+      "point": "DOCK_LANE",
+      "idle_max_counts_per_second": 65020.97872931005,
+      "mmio_reads": 16384,
+      "measured_delta": 35411,
+      "measured_window_ns": 38502261,
+      "estimated_idle_delta": 2503.454693511344,
+      "observed_above_idle_estimate": 32907.54530648865,
+      "estimated_counts_per_read_above_idle": 2.008517169585489,
+      "interpretation": "empirical response above measured idle; not a PCIe TLP decode"
+    },
+    {
+      "point": "DOCK_PCIE",
+      "idle_max_counts_per_second": 0.0,
+      "mmio_reads": 16384,
+      "measured_delta": 0,
+      "measured_window_ns": 37551352,
+      "estimated_idle_delta": 0.0,
+      "observed_above_idle_estimate": 0.0,
+      "estimated_counts_per_read_above_idle": 0.0,
+      "interpretation": "no calibrated response to CPU completions"
+    }
+  ],
+  "P2P_solution_claimed": false
+}

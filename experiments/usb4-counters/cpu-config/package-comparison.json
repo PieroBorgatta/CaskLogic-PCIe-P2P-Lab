@@ -1,0 +1,16 @@
+{
+  "status": "all_archive_members_verified",
+  "baseline_members": 2289,
+  "new_members": 2291,
+  "unchanged_members": 2288,
+  "added": [
+    "opt/probe/tb_counter_probe",
+    "opt/probe/thunderbolt-counters.ko"
+  ],
+  "removed": [],
+  "changed": [
+    "init"
+  ],
+  "kernel_sha256": "9f55ef7253055a9cf68f8a04323c93dead2fca617386d842fbde9ca7b178b27e",
+  "initrd_sha256": "e764d955e4355ce1310baf7af80cfdb6339b52b3b4a371f88178a51f23a88957"
+}

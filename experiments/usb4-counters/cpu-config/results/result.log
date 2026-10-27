@@ -1,0 +1,36 @@
+USB4_COUNTER_RUN_BEGIN version=1 gpu_program_executed=0
+Linux (none) 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
+initrd=\EFI\CaskLogicUsb4Counters\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_COUNTER_DATA_DISKS unmounted
+COUNTER_MODULE_LOAD_RC=0
+TB_COUNTER_PROBE_BEGIN version=1 gpu_program_executed=0 userspace_register_writes=0
+TB_COUNTER_PATH point=HOST_PCIE enabled=1 index=0 valid=1
+TB_COUNTER_PATH point=HOST_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_LANE enabled=1 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_PCIE enabled=1 index=0 valid=1
+TB_COUNTER_SAMPLE stage=IDLE reads=0 point=HOST_PCIE before=94776 after=101886 delta=7110 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=IDLE reads=0 point=HOST_LANE before=141682 after=152491 delta=10809 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=IDLE reads=0 point=DOCK_LANE before=95074 after=102694 delta=7620 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=IDLE reads=0 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=CPU_CONFIG_POSITIVE reads=64 point=HOST_PCIE before=103016 after=104270 delta=1254 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=CPU_CONFIG_POSITIVE reads=64 point=HOST_LANE before=154174 after=156045 delta=1871 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=CPU_CONFIG_POSITIVE reads=64 point=DOCK_LANE before=103796 after=105074 delta=1278 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_SAMPLE stage=CPU_CONFIG_POSITIVE reads=64 point=DOCK_PCIE before=0 after=0 delta=0 dropped_before=0 dropped_after=0 dropped_delta=0
+TB_COUNTER_ABORT reason=positive_control_no_count protocol_complete=0
+COUNTER_CONTROL_RC=27
+COUNTER_MODULE_UNLOADED=1
+TB_COUNTER_PATH point=HOST_PCIE enabled=0 index=0 valid=1
+TB_COUNTER_PATH point=HOST_LANE enabled=0 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_LANE enabled=0 index=1 valid=1
+TB_COUNTER_PATH point=DOCK_PCIE enabled=0 index=0 valid=1
+TB_COUNTER_RESTORED original_module=1 four_paths=1
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_COUNTER_RUN_END original_module_restored=1 data_disks_unmounted=1 gpu_program_executed=0
+SCRIPT_RC=27

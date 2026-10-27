@@ -63,3 +63,11 @@ Start with the [qualified log](../archive/p2p-next-investigation-20261021/native
 ## Native physical-route follow-up — 27 October 2026
 
 [Five qualified runs](../experiments/physical-route-controls/README.md) retain the 3-pass/9-fail peer matrix. Ordinary host-RAM raw-source controls pass; peer reads also fail against a read-only remote BAR0 register. Direct posted writes through a private VRAM page’s BAR0 PRAMIN alias succeed A2000→Ada and fail Ada→A2000 with intact guards. Standard error reporting was enabled and restored, but no new AER UES or TLP header was captured. These four-byte tests do not use CUPTI or identify the failing component. The tested BIOS profile remains restored; production services are intentionally held stopped at the owner’s request.
+
+## Native USB4 counter follow-up — 27 October 2026
+
+The [USB4 counter experiment](../experiments/usb4-counters/README.md) adds a default-off, topology-guarded Thunderbolt patch that configures counters at path creation. The first calibration stopped on an unresponsive dock PCIe counter. A subsequent CPU MMIO control completed 16,448 correct measured reads with Bus Master Enable off and PCI Command restored. Three counters respond distinctly above measured idle; the dock PCIe counter remains uncalibrated, including for correct transfers.
+
+The GPU measurement repeats the unchanged 36-case same-allocation protocol: 12 passes, 24 failures, 18 CE and 18 SM observations, 288 counter rows and complete payload captures. Ada-executed 1 MiB operations show little excess at host USB4 PCIe ingress and dock lane compared with A2000-executed operations, including failed PULLs. This is compatible with failure before the observed ingress for Ada operations, without distinguishing GPU, driver and host fabric. Aggregate counters and idle estimates are not a physical TLP trace. No dropped-packet increment was observed. NVIDIA was unloaded normally before tunnel teardown, and the original Thunderbolt module and four paths were verified after restoration.
+
+Static BIOS analysis links RPL client UPD `CpuPcieRpPeerToPeerMode[4]` at `0xFAB` through the CPU policy GUID to the same EnablePeerMemoryWrite bit already tested. It is not a newly demonstrated independent control. There is still no verified bidirectional P2P fix.
