@@ -1,0 +1,24 @@
+{
+  "status": "reviewed_for_native_trial",
+  "custom_uvm_sha256": "61adc1d751f8f21812b96b35e57024dad3191425f91cb4edb62429a526f3ad9b",
+  "peer_register_read_only": "NV_PMC_BOOT_0 at BAR0+0, four bytes",
+  "dma_mapping": "Linux dma_map_resource PAGE_SIZE DMA_TO_DEVICE in requester DMA domain; IOVA-to-physical checked",
+  "known_positive_controls": "four host reads per GPU, two around each peer read; whole-page sentinel/guard verification",
+  "ordinary_peer_gpu_mappings": false,
+  "input_physical_addresses": false,
+  "pci_or_firmware_writes": false,
+  "uncertain_completion": "retain DMA mapping, private buffers, GPU objects and module until independent watchdog",
+  "native_only": true,
+  "services_restore_requires_user": true,
+  "limitations": [
+    "Different SYS address translation and internal CPU_TO_GPU channel; cannot ascribe differences to IOMMU alone.",
+    "Success of a BOOT_0 read is not a general VRAM P2P solution.",
+    "NVIDIA standard GPUDirect RDMA requires identity DMA addressing; this isolated raw CE test uses an explicitly mapped IOVA."
+  ],
+  "archive_members": 2296,
+  "fixture_variants": 31,
+  "source_primary_urls": [
+    "https://docs.kernel.org/core-api/dma-api.html",
+    "https://docs.nvidia.com/cuda/gpudirect-rdma/"
+  ]
+}

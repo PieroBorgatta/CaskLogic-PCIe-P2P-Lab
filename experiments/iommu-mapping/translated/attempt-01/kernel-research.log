@@ -1,0 +1,17 @@
+[    0.052764] DMAR: IOMMU enabled
+[    0.113696] DMAR: Host address width 39
+[    0.113697] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.113702] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da
+[    0.623116] DMAR: No RMRR found
+[    0.623117] DMAR: No ATSR found
+[    0.623117] DMAR: No SATC found
+[    0.623122] DMAR: dmar0: Using Queued invalidation
+[    0.624891] DMAR: Intel(R) Virtualization Technology for Directed I/O
+[    7.674576] CASKDMAR_BEGIN version=1 units=1 table_bytes=80 table_flags=05 register_writes=0
+[    7.674578] CASKDMAR_CAP base=fed91000 ver=00000050 cap=00d2008c40660462 ecap=0000000000f050da
+[    7.674582] CASKDMAR_SAMPLE index=0 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.676404] CASKDMAR_SAMPLE index=1 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.676412] CASKDMAR_END protocol_complete=1 register_writes=0
+[    7.688795] CASKDMAR_UNLOADED register_writes=0
+[    7.719467] Module nvidia is blacklisted
+[    7.736175] Module nvidia is blacklisted

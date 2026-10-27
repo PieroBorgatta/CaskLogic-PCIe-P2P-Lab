@@ -1,0 +1,10 @@
+{
+  "reason": "Initramfs /proc/mounts includes rootfs mounted at /; the initial offline fixture omitted it. Accept exactly source=rootfs,type=rootfs,target=/ while rejecting block filesystems at /.",
+  "old_validator_sha256": "d88a67ec783a82e32f9ae6383dcac07bcf2e4896b4650ce1fc4f95b25cc0fc3a",
+  "new_validator_sha256": "a4e9d0d0a493b6673988176df0711595aa601b7d2a3ea85018cb682f7f27ee66",
+  "hardware_payload_unchanged": true,
+  "additional_rejection_cases": [
+    "block-backed / mount",
+    "wrong filesystem at /proc"
+  ]
+}

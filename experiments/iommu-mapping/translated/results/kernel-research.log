@@ -1,0 +1,43 @@
+[    0.053176] DMAR: IOMMU enabled
+[    0.114028] DMAR: Host address width 39
+[    0.114029] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.114036] DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da
+[    0.623179] DMAR: No RMRR found
+[    0.623180] DMAR: No ATSR found
+[    0.623181] DMAR: No SATC found
+[    0.623181] DMAR: dmar0: Using Queued invalidation
+[    0.624934] DMAR: Intel(R) Virtualization Technology for Directed I/O
+[    7.602892] CASKDMAR_BEGIN version=1 units=1 table_bytes=80 table_flags=05 register_writes=0
+[    7.602894] CASKDMAR_CAP base=fed91000 ver=00000050 cap=00d2008c40660462 ecap=0000000000f050da
+[    7.602896] CASKDMAR_SAMPLE index=0 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.604457] CASKDMAR_SAMPLE index=1 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.604462] CASKDMAR_END protocol_complete=1 register_writes=0
+[    7.614766] CASKDMAR_UNLOADED register_writes=0
+[    7.784766] NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.99.02  Release Build  (root@lab-vm)  Tue Oct 20 23:26:55 UTC 2026
+[   13.681731] nvidia-uvm: CASKIOVA request=100 index=0 stage=return operation=0 status=0 flags=1 host_mask=0 peer_mask=0 completed_mask=0 pending=0 dma_unmapped=0 last_phase=domain
+[   13.681750] nvidia-uvm: CASKIOVA request=101 index=0 stage=mapping executor=0000:01:00.0 peer=0000:06:00.0 domain_type=3 iova=ed5ff000 physical=60000000 translated=60000000 bytes=4096 direction=DMA_TO_DEVICE source_register=NV_PMC_BOOT_0 offset=0 expected=b76000a1
+[   13.681770] nvidia-uvm: CASKIOVA request=101 index=0 stage=host_mapping iova=ed5fe000 physical=170baf000 translated=170baf000 valid=1
+[   13.681790] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=0 mode=1 kind=host_ram source_iova=ed5fe000 bytes=4 expected=6975c23a actual=6975c23a sentinel=968a3dc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681808] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=1 mode=1 kind=peer_bar0 source_iova=ed5ff000 bytes=4 expected=b76000a1 actual=ffffffff sentinel=489fff5e match=0 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681826] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=2 mode=1 kind=host_ram source_iova=ed5fe000 bytes=4 expected=6975c23a actual=6975c23a sentinel=968a3dc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681844] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=3 mode=2 kind=host_ram source_iova=ed5fe000 bytes=4 expected=6975c23a actual=6975c23a sentinel=968a3dc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681863] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=4 mode=2 kind=peer_bar0 source_iova=ed5ff000 bytes=4 expected=b76000a1 actual=ffffffff sentinel=489fff5e match=0 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681881] nvidia-uvm: CASKIOVA request=101 index=0 stage=result seq=5 mode=2 kind=host_ram source_iova=ed5fe000 bytes=4 expected=6975c23a actual=6975c23a sentinel=968a3dc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.681884] nvidia-uvm: CASKIOVA request=101 index=0 stage=source_after cpu_after=b76000a1 source_stable=1 host_source_changed=0
+[   13.681906] nvidia-uvm: CASKIOVA request=101 index=0 stage=return operation=1 status=0 flags=7 host_mask=2d peer_mask=0 completed_mask=3f pending=0 dma_unmapped=1 last_phase=reads
+[   13.681915] nvidia-uvm: CASKIOVA request=102 index=1 stage=mapping executor=0000:06:00.0 peer=0000:01:00.0 domain_type=3 iova=f11ff000 physical=6d000000 translated=6d000000 bytes=4096 direction=DMA_TO_DEVICE source_register=NV_PMC_BOOT_0 offset=0 expected=197000a1
+[   13.681946] nvidia-uvm: CASKIOVA request=102 index=1 stage=host_mapping iova=f11fe000 physical=170baf000 translated=170baf000 valid=1
+[   13.681981] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=0 mode=1 kind=host_ram source_iova=f11fe000 bytes=4 expected=6975c33a actual=6975c33a sentinel=968a3cc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682014] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=1 mode=1 kind=peer_bar0 source_iova=f11ff000 bytes=4 expected=197000a1 actual=ffffffff sentinel=e68fff5e match=0 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682047] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=2 mode=1 kind=host_ram source_iova=f11fe000 bytes=4 expected=6975c33a actual=6975c33a sentinel=968a3cc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682080] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=3 mode=2 kind=host_ram source_iova=f11fe000 bytes=4 expected=6975c33a actual=6975c33a sentinel=968a3cc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682113] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=4 mode=2 kind=peer_bar0 source_iova=f11ff000 bytes=4 expected=197000a1 actual=ffffffff sentinel=e68fff5e match=0 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682146] nvidia-uvm: CASKIOVA request=102 index=1 stage=result seq=5 mode=2 kind=host_ram source_iova=f11fe000 bytes=4 expected=6975c33a actual=6975c33a sentinel=968a3cc5 match=1 guard_changed=0 baseline_valid=1 checked_words=1024 class=c7b5 launch=4003186 p2p_channel=0 privileged=1
+[   13.682149] nvidia-uvm: CASKIOVA request=102 index=1 stage=source_after cpu_after=197000a1 source_stable=1 host_source_changed=0
+[   13.682181] nvidia-uvm: CASKIOVA request=102 index=1 stage=return operation=1 status=0 flags=7 host_mask=2d peer_mask=0 completed_mask=3f pending=0 dma_unmapped=1 last_phase=reads
+[   14.273487] CASKDMAR_BEGIN version=1 units=1 table_bytes=80 table_flags=05 register_writes=0
+[   14.273491] CASKDMAR_CAP base=fed91000 ver=00000050 cap=00d2008c40660462 ecap=0000000000f050da
+[   14.273493] CASKDMAR_SAMPLE index=0 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[   14.275349] CASKDMAR_SAMPLE index=1 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[   14.275365] CASKDMAR_END protocol_complete=1 register_writes=0
+[   14.290735] CASKDMAR_UNLOADED register_writes=0

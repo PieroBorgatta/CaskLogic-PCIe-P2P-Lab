@@ -1,0 +1,14 @@
+{
+  "epoch_recorded": 1793117795.7139966,
+  "image": "sha256:2d75121aa511dcaa527ae12d36ee4a81145a5493dc20b5818bc4dbe973e6048c",
+  "compiler": "g++ -O2 -std=c++17 -Wall -Wextra -Werror",
+  "runtime": "runc",
+  "network": "none",
+  "cpus": 2,
+  "memory": "2g",
+  "source_sha256": "ae5553316c35222fa943b7920a08aa06fbb5e69ee7b98fcdd483643e7032b3cf",
+  "header_sha256": "e95d8092beb7827555f63dabd2cdb9def67ed0c4d1275725ed4fb608f258e166",
+  "binary_sha256": "1eebdad75991605eb59cefe34ece7ce44cfd366c98dee3cacdf4d6e445d54665",
+  "gpu_binary_executed": false,
+  "exit_code": 0
+}

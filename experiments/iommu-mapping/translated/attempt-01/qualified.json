@@ -1,0 +1,8 @@
+{
+  "status": "incomplete_preserved",
+  "protocol_complete": false,
+  "error": "Missing/duplicate marker: IOVA_BEGIN abi=1 peer_register_offset=0 peer_reads_only=1 ordinary_peer_access=0 host_staging_for_peer=0",
+  "P2P_solution_claimed": false,
+  "logs_are_partial_evidence": true,
+  "missing_expected_files": []
+}

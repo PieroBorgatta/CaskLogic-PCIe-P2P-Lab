@@ -1,0 +1,72 @@
+{
+  "status": "complete_native_dmar_read_only",
+  "protocol_complete": true,
+  "devices": [
+    "0-0",
+    "0-0:1.1",
+    "0-1",
+    "1-0",
+    "domain0",
+    "domain1"
+  ],
+  "debugfs_present": true,
+  "debug_files": 64,
+  "counter_files": [
+    "/sys/kernel/debug/thunderbolt/0-0/port1/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port12/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port13/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port2/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port3/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port4/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port5/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port6/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port7/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port8/counters",
+    "/sys/kernel/debug/thunderbolt/0-0/port9/counters",
+    "/sys/kernel/debug/thunderbolt/0-1/port1/counters",
+    "/sys/kernel/debug/thunderbolt/0-1/port2/counters",
+    "/sys/kernel/debug/thunderbolt/0-1/port3/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port1/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port12/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port13/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port2/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port3/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port4/counters",
+    "/sys/kernel/debug/thunderbolt/1-0/port5/counters"
+  ],
+  "read_errors": [],
+  "read_limit_reached": true,
+  "inaccessible_register_text": false,
+  "gpu_program_executed": false,
+  "nvidia_modules_loaded": false,
+  "vm_data_disks_mounted": false,
+  "P2P_solution_claimed": false,
+  "traffic_path_proven": false,
+  "comparisons": 0,
+  "dmar_register_writes": false,
+  "dmar_base": "fed91000",
+  "dmar_samples": [
+    {
+      "index": "0",
+      "gsts": "47000000",
+      "pmen": "00000000",
+      "translation_enabled": "0",
+      "interrupt_remapping_enabled": "1",
+      "protected_region_enabled": "0",
+      "protected_region_status": "0"
+    },
+    {
+      "index": "1",
+      "gsts": "47000000",
+      "pmen": "00000000",
+      "translation_enabled": "0",
+      "interrupt_remapping_enabled": "1",
+      "protected_region_enabled": "0",
+      "protected_region_status": "0"
+    }
+  ],
+  "translation_inactive_in_all_samples": true,
+  "protected_regions_inactive_in_all_samples": true,
+  "measurement_scope": "Before NVIDIA load, after native USB4 authorization, with identical IOMMU-off arguments. Not an in-transfer hardware trace.",
+  "missing_expected_files": []
+}

@@ -1,0 +1,16 @@
+{
+  "status": "reviewed_for_build",
+  "hardware_operations": false,
+  "files": {
+    "build_package.py": "96e0a18ac2900df716d611e6e41feb9ce11e846c05d0f6fa8ff24c8917d049c6",
+    "init-iova-mmio.sh": "27014c9efbf1b3ebc7df7ee311d9c7096fdc6a7b611b8b374d1af06bea36e5e9",
+    "iova_mmio_client.cpp": "ae5553316c35222fa943b7920a08aa06fbb5e69ee7b98fcdd483643e7032b3cf",
+    "iova_mmio_client": "1eebdad75991605eb59cefe34ece7ce44cfd366c98dee3cacdf4d6e445d54665",
+    "driver/cask_iova_mmio_ioctl.h": "e95d8092beb7827555f63dabd2cdb9def67ed0c4d1275725ed4fb608f258e166",
+    "driver/cask_iova_mmio.inc": "32568fbd7cf5d0b58429d21ff6a7da68c1e5ca9c3a8813467c38160365161f41",
+    "driver/build-contract.json": "8e7f0735a42735354647c00ca5ab2be6e6a579580853b45021a2533a534c26b5",
+    "driver-build-02/build-manifest.json": "9183c7bfc57bddd2f49d735a7f06d6fb8ddceac6a18a93e99c725245af864e89",
+    "driver-build-02/modules/nvidia-uvm.ko": "61adc1d751f8f21812b96b35e57024dad3191425f91cb4edb62429a526f3ad9b",
+    "compile-manifest.json": "2218038dfa929071e3a9315a1da4fd7e70a5aaaea3c8ace9b6dd3b3f3d6d2217"
+  }
+}

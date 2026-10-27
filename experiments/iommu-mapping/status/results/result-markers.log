@@ -1,0 +1,161 @@
+USB4_INSPECTION_BEGIN version=1 gpu_program_executed=0 explicit_register_writes=0
+initrd=\EFI\CaskLogicDmarRead\probe-initrd.img rdinit=/init intel_iommu=off iommu=off module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset panic=10 loglevel=4 console=tty0
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_INSPECTION_DATA_DISKS unmounted
+DMAR_READ_BEGIN register_writes=0
+DMAR_READ_MODULE_LOADED=1
+DMAR_READ_MODULE_UNLOADED=1
+DMAR_READ_END register_writes=0
+TB_DEVICE_BEGIN name=0-0
+TB_DEVICE_END name=0-0
+TB_DEVICE_BEGIN name=0-0:1.1
+TB_DEVICE_END name=0-0:1.1
+TB_DEVICE_BEGIN name=0-1
+TB_DEVICE_END name=0-1
+TB_DEVICE_BEGIN name=1-0
+TB_DEVICE_END name=1-0
+TB_DEVICE_BEGIN name=domain0
+TB_DEVICE_END name=domain0
+TB_DEVICE_BEGIN name=domain1
+TB_DEVICE_END name=domain1
+TB_DEVICE_COUNT=6
+TB_DEBUGFS present
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port1/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port1/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port1/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port1/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port1/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port1/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port12/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port12/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port12/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port12/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port12/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port12/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port13/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port13/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port13/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port13/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port13/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port13/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port2/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port2/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port2/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port2/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port2/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port2/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port3/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port3/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port3/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port3/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port3/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port3/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port4/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port4/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port4/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port4/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port4/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port4/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port5/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port5/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port5/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port5/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port5/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port5/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port6/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port6/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port6/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port6/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port6/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port6/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port7/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port7/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port7/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port7/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port7/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port7/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port8/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port8/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port8/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port8/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port8/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port8/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port9/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port9/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port9/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port9/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/port9/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/port9/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-0/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-0/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port1/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port1/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port1/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port1/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port1/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port1/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port2/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port2/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port2/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port2/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port2/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port2/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port3/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port3/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port3/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port3/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/port3/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/port3/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/0-1/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/0-1/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port1/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port1/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port1/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port1/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port1/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port1/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port12/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port12/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port12/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port12/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port12/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port12/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port13/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port13/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port13/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port13/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port13/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port13/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port2/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port2/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port2/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port2/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port2/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port2/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port3/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port3/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port3/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port3/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port3/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port3/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port4/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port4/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port4/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port4/path rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port4/regs
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port4/regs rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port5/counters
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port5/counters rc=0
+TB_FILE_BEGIN path=/sys/kernel/debug/thunderbolt/1-0/port5/path
+TB_FILE_END path=/sys/kernel/debug/thunderbolt/1-0/port5/path rc=0
+TB_FILE_LIMIT_REACHED=64
+TB_FILE_COUNT=65
+USB4_INSPECTION_GPU_MODULES absent
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+USB4_INSPECTION_END protocol_complete=1 gpu_program_executed=0 explicit_register_writes=0
+SCRIPT_RC=0

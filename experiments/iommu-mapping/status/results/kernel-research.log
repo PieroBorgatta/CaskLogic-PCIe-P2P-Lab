@@ -1,0 +1,6 @@
+[    6.477553] CASKDMAR_BEGIN version=1 units=1 table_bytes=80 table_flags=05 register_writes=0
+[    6.477555] CASKDMAR_CAP base=fed91000 ver=00000050 cap=00d2008c40660462 ecap=0000000000f050da
+[    6.477559] CASKDMAR_SAMPLE index=0 gsts=47000000 pmen=00000000 translation_enabled=0 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    6.479672] CASKDMAR_SAMPLE index=1 gsts=47000000 pmen=00000000 translation_enabled=0 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    6.479681] CASKDMAR_END protocol_complete=1 register_writes=0
+[    6.487681] CASKDMAR_UNLOADED register_writes=0

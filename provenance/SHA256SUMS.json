@@ -10,8 +10,8 @@
       "sha256": "f20730e20e51392b46add61904d4430ca466dd7aafb6b3f721c4c8f6452e24ee"
     },
     "LICENSE.md": {
-      "bytes": 1124,
-      "sha256": "80e3001bfb02d2dff17adb65438d8183755367aa5096778df9d2a891ab71dca5"
+      "bytes": 1365,
+      "sha256": "cf929e995f78991299aeb03488e74360677e27482b5c5c47d817ff454c339204"
     },
     "LICENSES/GPL-2.0-only.txt": {
       "bytes": 18600,
@@ -26,8 +26,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 14042,
-      "sha256": "c0b950b35b24186c1899e2551b795cd66c291cc7468fa6feafa2b1f1c5bbf041"
+      "bytes": 14890,
+      "sha256": "d67c818de69464c3b3ce1ff812b5e39b306260d6e1499d9b466fd0bf064d3b18"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3710,8 +3710,124 @@
       "sha256": "b9878deae8ffb549d3ad82a9d17e0ed6353eaa87a37143e0279ea30b9a4ea476"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 8249,
-      "sha256": "a3d9448b60b68cbba48730d03559b56f6f208807461add149491064ddf972cb8"
+      "bytes": 9803,
+      "sha256": "3f2df819bcf255512b30616d1d0885088654ded7a0d72301ba7577fc042aa0c4"
+    },
+    "experiments/iommu-mapping/README.md": {
+      "bytes": 7855,
+      "sha256": "c64bab9f4a82e70d883c7b266ead8716476115f5652a488e73ad7bbd5e033fe9"
+    },
+    "experiments/iommu-mapping/export-records.json": {
+      "bytes": 9161,
+      "sha256": "fff1c6d4bc9088cf22e4c3b4a70c17edcbf7be42b35fce7fcf3a4f4891c075d8"
+    },
+    "experiments/iommu-mapping/replay.py": {
+      "bytes": 1768,
+      "sha256": "26ebe8997046483b325c165771459b996dfa19af18a9802f0ca6b2dff50386ce"
+    },
+    "experiments/iommu-mapping/status/Makefile": {
+      "bytes": 23,
+      "sha256": "b48f61b842a24d67af84863d07e82ebc7354dc441666d16c8acc0c69b6ff9698"
+    },
+    "experiments/iommu-mapping/status/dmar_decode.h": {
+      "bytes": 1318,
+      "sha256": "473896cb7d1937975c2ea2b687f368ac9d57c33c63cb647ea21125243b4ea3b4"
+    },
+    "experiments/iommu-mapping/status/dmar_log_validation.py": {
+      "bytes": 3416,
+      "sha256": "ec9ac3675b5dc08b5ae72c171d785d141c12168c31fba0c88c25bb2ee08c5d49"
+    },
+    "experiments/iommu-mapping/status/dmar_status.c": {
+      "bytes": 1986,
+      "sha256": "5d43868474ba98c6354a83d50bac6b224094b64c147814a10a6ca815af6d9228"
+    },
+    "experiments/iommu-mapping/status/inspection_base_validation.py": {
+      "bytes": 3988,
+      "sha256": "f3f656a94bf1ffc9ac722c8e213c5ffb1a03568128dba16ac1d26ca316aad6f5"
+    },
+    "experiments/iommu-mapping/status/results/kernel-research.log": {
+      "bytes": 655,
+      "sha256": "23529f84a787c96eee690f178c63f9e07369be283f7cdd396cca66596c3ad5b7"
+    },
+    "experiments/iommu-mapping/status/results/qualified.json": {
+      "bytes": 2544,
+      "sha256": "97652536f84387bd535d692a7e1c62359b05f660fa285842e5a0b5bfa4383762"
+    },
+    "experiments/iommu-mapping/status/results/result-markers.log": {
+      "bytes": 9702,
+      "sha256": "8c4a560faa74b4c5f989c32ed015d8280b762f657b49cc0d730de59a82c685f1"
+    },
+    "experiments/iommu-mapping/status/test_dmar_decode.c": {
+      "bytes": 964,
+      "sha256": "1404efa8b13235966d4f781c71b1ce1c9d24a5143426fb7664d90c63156080b2"
+    },
+    "experiments/iommu-mapping/status/test_dmar_validation.py": {
+      "bytes": 2508,
+      "sha256": "c8d495f2cc6de60ee8a33821fab56c42ddb56d5d8204303139ad2b3e34083efc"
+    },
+    "experiments/iommu-mapping/translated/attempt-01/kernel-research.log": {
+      "bytes": 1203,
+      "sha256": "5a9b101160c1ee2efefc4593ec6d37824ce1c3ca22fb5e07b780e839f3f5346f"
+    },
+    "experiments/iommu-mapping/translated/attempt-01/qualified.json": {
+      "bytes": 316,
+      "sha256": "9cffd92ad570f19d36240f3d203ea83c58dfd7581f815ac6cc2f7a1d2d32659f"
+    },
+    "experiments/iommu-mapping/translated/attempt-01/result-markers.log": {
+      "bytes": 349,
+      "sha256": "c11576059fcaad804170d7867e74bba04e3dfabb10b10c0efd24094495bf1689"
+    },
+    "experiments/iommu-mapping/translated/build-inputs.json": {
+      "bytes": 1088,
+      "sha256": "576d6b9593050cbff03e0d89c2dbbd317b17af3f8b84434fd884445a020abc3a"
+    },
+    "experiments/iommu-mapping/translated/compile-manifest.json": {
+      "bytes": 571,
+      "sha256": "2218038dfa929071e3a9315a1da4fd7e70a5aaaea3c8ace9b6dd3b3f3d6d2217"
+    },
+    "experiments/iommu-mapping/translated/driver/cask_iova_mmio.inc": {
+      "bytes": 14053,
+      "sha256": "0da8869a5d226b16fd61ac8f53ff6e3fac41df61cae50855b530b237e6b1343b"
+    },
+    "experiments/iommu-mapping/translated/driver/cask_iova_mmio_ioctl.h": {
+      "bytes": 956,
+      "sha256": "e95d8092beb7827555f63dabd2cdb9def67ed0c4d1275725ed4fb608f258e166"
+    },
+    "experiments/iommu-mapping/translated/driver/iova-mmio.patch": {
+      "bytes": 17548,
+      "sha256": "18e6ab14433aca38f75ac0b17bc6944c199ce75cc80cbbe8c1122923636af32e"
+    },
+    "experiments/iommu-mapping/translated/iova_log_validation.py": {
+      "bytes": 7698,
+      "sha256": "a4e9d0d0a493b6673988176df0711595aa601b7d2a3ea85018cb682f7f27ee66"
+    },
+    "experiments/iommu-mapping/translated/iova_mmio_client.cpp": {
+      "bytes": 6430,
+      "sha256": "ae5553316c35222fa943b7920a08aa06fbb5e69ee7b98fcdd483643e7032b3cf"
+    },
+    "experiments/iommu-mapping/translated/results/kernel-research.log": {
+      "bytes": 7018,
+      "sha256": "a416cf3d1c1370b2121e31358fb6a6ef3643d8f093e1a1106c0e5e05d7e70c74"
+    },
+    "experiments/iommu-mapping/translated/results/qualified.json": {
+      "bytes": 7951,
+      "sha256": "cf6d103ed9e826db924615df5d436e5bf47a4b7c9401224d795cdb309bc73458"
+    },
+    "experiments/iommu-mapping/translated/results/result-markers.log": {
+      "bytes": 1802,
+      "sha256": "e8820cb3b16db58fec8a84bc10770f78dd8fd391aa40c11108fe152d3b9b157e"
+    },
+    "experiments/iommu-mapping/translated/source-review.json": {
+      "bytes": 1262,
+      "sha256": "8845747fd44b090ab9074b64be4d6ae35c0ef3bf499da786d7ad154817403f6a"
+    },
+    "experiments/iommu-mapping/translated/test_iova_validation.py": {
+      "bytes": 5297,
+      "sha256": "d15dcf8100f6d9c7b1a8280aa8b51fe57b73c3dde05e0bfe161b0d7ca4fed477"
+    },
+    "experiments/iommu-mapping/translated/validator-revision.json": {
+      "bytes": 526,
+      "sha256": "8476ee27ed8d9ed725e7660a1ea9105270a06890ebb315dd8909b1386a6af80f"
     },
     "experiments/payload-diagnostics/README.md": {
       "bytes": 8827,
@@ -5234,8 +5350,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 407959,
-      "sha256": "543a95d302df40e017895a9bca411e7229178eec53851c9809db3aeb3513b229"
+      "bytes": 416963,
+      "sha256": "4ed42e5d3930209ad3210b6d74e7025417bd53c0b03bcd2f1f9e4df59f736649"
     },
     "provenance/payload-diagnostics-validation.json": {
       "bytes": 1115,

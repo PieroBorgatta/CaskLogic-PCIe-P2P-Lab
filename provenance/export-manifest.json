@@ -7768,6 +7768,188 @@
       "published_sha256": "3dbcdc1f90e32d55728b2e78e3cbd0233c7d10f4da5e6995024ae908de221242",
       "redacted": false,
       "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/dmar_status.c",
+      "original_sha256": "5d43868474ba98c6354a83d50bac6b224094b64c147814a10a6ca815af6d9228",
+      "published_sha256": "5d43868474ba98c6354a83d50bac6b224094b64c147814a10a6ca815af6d9228",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/dmar_decode.h",
+      "original_sha256": "473896cb7d1937975c2ea2b687f368ac9d57c33c63cb647ea21125243b4ea3b4",
+      "published_sha256": "473896cb7d1937975c2ea2b687f368ac9d57c33c63cb647ea21125243b4ea3b4",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/test_dmar_decode.c",
+      "original_sha256": "1404efa8b13235966d4f781c71b1ce1c9d24a5143426fb7664d90c63156080b2",
+      "published_sha256": "1404efa8b13235966d4f781c71b1ce1c9d24a5143426fb7664d90c63156080b2",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/Makefile",
+      "original_sha256": "b48f61b842a24d67af84863d07e82ebc7354dc441666d16c8acc0c69b6ff9698",
+      "published_sha256": "b48f61b842a24d67af84863d07e82ebc7354dc441666d16c8acc0c69b6ff9698",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/dmar_log_validation.py",
+      "original_sha256": "ec9ac3675b5dc08b5ae72c171d785d141c12168c31fba0c88c25bb2ee08c5d49",
+      "published_sha256": "ec9ac3675b5dc08b5ae72c171d785d141c12168c31fba0c88c25bb2ee08c5d49",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/inspection_base_validation.py",
+      "original_sha256": "f3f656a94bf1ffc9ac722c8e213c5ffb1a03568128dba16ac1d26ca316aad6f5",
+      "published_sha256": "f3f656a94bf1ffc9ac722c8e213c5ffb1a03568128dba16ac1d26ca316aad6f5",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/results/qualified.json",
+      "original_sha256": "97652536f84387bd535d692a7e1c62359b05f660fa285842e5a0b5bfa4383762",
+      "published_sha256": "97652536f84387bd535d692a7e1c62359b05f660fa285842e5a0b5bfa4383762",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/results/result-markers.log",
+      "original_sha256": "28a90dc1c51765d163dbf6a4e30816968fafad6623261226eb799ea7522041fc",
+      "published_sha256": "8c4a560faa74b4c5f989c32ed015d8280b762f657b49cc0d730de59a82c685f1",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/results/kernel-research.log",
+      "original_sha256": "377e446bd107c11b798b658efb4a55277f265ace460dcab7cc05e0f5d612e5b2",
+      "published_sha256": "23529f84a787c96eee690f178c63f9e07369be283f7cdd396cca66596c3ad5b7",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/status/test_dmar_validation.py",
+      "original_sha256": "cd34a2914ee3d9a8ab07c68f8fa8ce163461c97e5b184cb358a4294069862824",
+      "published_sha256": "c8d495f2cc6de60ee8a33821fab56c42ddb56d5d8204303139ad2b3e34083efc",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/driver/cask_iova_mmio.inc",
+      "original_sha256": "32568fbd7cf5d0b58429d21ff6a7da68c1e5ca9c3a8813467c38160365161f41",
+      "published_sha256": "0da8869a5d226b16fd61ac8f53ff6e3fac41df61cae50855b530b237e6b1343b",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/driver/cask_iova_mmio_ioctl.h",
+      "original_sha256": "e95d8092beb7827555f63dabd2cdb9def67ed0c4d1275725ed4fb608f258e166",
+      "published_sha256": "e95d8092beb7827555f63dabd2cdb9def67ed0c4d1275725ed4fb608f258e166",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/driver/iova-mmio.patch",
+      "original_sha256": "e9ddf42da1a3b070f77f039cda5efa60a7cee6e7b3a50ca9bf77165adca10e29",
+      "published_sha256": "18e6ab14433aca38f75ac0b17bc6944c199ce75cc80cbbe8c1122923636af32e",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/iova_mmio_client.cpp",
+      "original_sha256": "ae5553316c35222fa943b7920a08aa06fbb5e69ee7b98fcdd483643e7032b3cf",
+      "published_sha256": "ae5553316c35222fa943b7920a08aa06fbb5e69ee7b98fcdd483643e7032b3cf",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/source-review.json",
+      "original_sha256": "8845747fd44b090ab9074b64be4d6ae35c0ef3bf499da786d7ad154817403f6a",
+      "published_sha256": "8845747fd44b090ab9074b64be4d6ae35c0ef3bf499da786d7ad154817403f6a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/compile-manifest.json",
+      "original_sha256": "2218038dfa929071e3a9315a1da4fd7e70a5aaaea3c8ace9b6dd3b3f3d6d2217",
+      "published_sha256": "2218038dfa929071e3a9315a1da4fd7e70a5aaaea3c8ace9b6dd3b3f3d6d2217",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/build-inputs.json",
+      "original_sha256": "576d6b9593050cbff03e0d89c2dbbd317b17af3f8b84434fd884445a020abc3a",
+      "published_sha256": "576d6b9593050cbff03e0d89c2dbbd317b17af3f8b84434fd884445a020abc3a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/iova_log_validation.py",
+      "original_sha256": "a4e9d0d0a493b6673988176df0711595aa601b7d2a3ea85018cb682f7f27ee66",
+      "published_sha256": "a4e9d0d0a493b6673988176df0711595aa601b7d2a3ea85018cb682f7f27ee66",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/test_iova_validation.py",
+      "original_sha256": "d15dcf8100f6d9c7b1a8280aa8b51fe57b73c3dde05e0bfe161b0d7ca4fed477",
+      "published_sha256": "d15dcf8100f6d9c7b1a8280aa8b51fe57b73c3dde05e0bfe161b0d7ca4fed477",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/validator-revision.json",
+      "original_sha256": "8476ee27ed8d9ed725e7660a1ea9105270a06890ebb315dd8909b1386a6af80f",
+      "published_sha256": "8476ee27ed8d9ed725e7660a1ea9105270a06890ebb315dd8909b1386a6af80f",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/results/qualified.json",
+      "original_sha256": "cf6d103ed9e826db924615df5d436e5bf47a4b7c9401224d795cdb309bc73458",
+      "published_sha256": "cf6d103ed9e826db924615df5d436e5bf47a4b7c9401224d795cdb309bc73458",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/results/result-markers.log",
+      "original_sha256": "3663fb3d0379d513dca069fc2303cd9e40c82a57ecea033fd7d5726ea880e623",
+      "published_sha256": "e8820cb3b16db58fec8a84bc10770f78dd8fd391aa40c11108fe152d3b9b157e",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/results/kernel-research.log",
+      "original_sha256": "9a19983087c2797ac3b881abc9b0849184c01550fb12089b3b2f61dcc22d07dc",
+      "published_sha256": "a416cf3d1c1370b2121e31358fb6a6ef3643d8f093e1a1106c0e5e05d7e70c74",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/attempt-01/qualified.json",
+      "original_sha256": "9cffd92ad570f19d36240f3d203ea83c58dfd7581f815ac6cc2f7a1d2d32659f",
+      "published_sha256": "9cffd92ad570f19d36240f3d203ea83c58dfd7581f815ac6cc2f7a1d2d32659f",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/attempt-01/result-markers.log",
+      "original_sha256": "5090a79a044582efac667a23f29495deee0f7b3561c0d111c9ad78855fe15621",
+      "published_sha256": "c11576059fcaad804170d7867e74bba04e3dfabb10b10c0efd24094495bf1689",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated/attempt-01/kernel-research.log",
+      "original_sha256": "2d731412ecedb8717bafb98d55ea5d9d57161ff0680a158c8feef4f87064ad02",
+      "published_sha256": "5a9b101160c1ee2efefc4593ec6d37824ce1c3ca22fb5e07b780e839f3f5346f",
+      "redacted": true,
+      "transformation": "scoped research extraction/identifier redaction"
     }
   ],
   "omitted_remote_orchestration": [],
