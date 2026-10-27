@@ -155,3 +155,26 @@ print(
     "pass, 0/4 self writes pass, and the clean gate covers zero cross-GPU "
     "transfers; self-hairpin is not a peer-route diagnosis."
 )
+
+
+vtd_validator = load_validator(
+    "vtd-emission/vtd_emission_validation.py",
+    "vtd_emission_validation",
+)
+vtd_directory = ROOT / "vtd-emission/results"
+vtd_result = vtd_validator.validate_log(
+    (vtd_directory / "result-markers.log").read_text(),
+    (vtd_directory / "kernel-research.log").read_text(),
+)
+vtd_expected = json.loads((vtd_directory / "qualified.json").read_text())
+assert vtd_result == vtd_expected, (vtd_result, vtd_expected)
+assert vtd_result["protocol_complete"]
+assert vtd_result["status"] == "complete_bar1_exact_returned"
+assert vtd_result["bar1_write_reached_vtd"]
+assert not vtd_result["remote_delivery_proven"]
+assert not vtd_result["P2P_solution_claimed"]
+print(
+    "VT-d emission ABI 4: one Ada DMA Write NO_PASID reached VT-d and "
+    "faulted on the intentional read-only BAR1 mapping; downstream remote "
+    "delivery remains unproven."
+)

@@ -18,16 +18,17 @@ python3 archive/p2p-next-investigation-20261021/native-pushpull-probe/test_analy
 
 Gli altri test storici sono conservati come provenienza. Alcuni richiedono fixture, intestazioni SDK o percorsi locali non distribuiti; non si dichiara che l'intero archivio sia una suite portabile. I test di pubblicazione e replay sono quelli verificati in questa versione.
 
-La famiglia IOMMU dispone di un replay separato che ricostruisce dai log pubblici delimitati lo stato DMAR, le letture BAR0 tradotte e le tre ABI di scrittura private-BAR1:
+La famiglia IOMMU dispone di un replay separato che ricostruisce dai log pubblici delimitati lo stato DMAR, le letture BAR0 tradotte, le tre ABI di scrittura private-BAR1 e il discriminatore di emissione VT-d ABI 4:
 
 ```bash
 python3 experiments/iommu-mapping/replay.py
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/write-only -p 'test_*.py'
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/cpu-control -p 'test_*.py'
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/self-loop -p 'test_*.py'
+python3 -m unittest discover -s experiments/iommu-mapping/vtd-emission -p 'test_*.py'
 ```
 
-Il replay qualifica 8/8 controlli RAM e 2/4 scritture cross-GPU per ABI 1 e 2; i due controlli CPU ABI 2 sono separati e non P2P. ABI 3 contiene zero trasferimenti cross-GPU: ricostruisce 0/4 self-BAR1, 8/8 RAM, 2/2 controlli CPU e il gate asincrono pulito, senza usare il risultato self-hairpin per diagnosticare la rotta peer.
+Il replay qualifica 8/8 controlli RAM e 2/4 scritture cross-GPU per ABI 1 e 2; i due controlli CPU ABI 2 sono separati e non P2P. ABI 3 contiene zero trasferimenti cross-GPU: ricostruisce 0/4 self-BAR1, 8/8 RAM, 2/2 controlli CPU e il gate asincrono pulito, senza usare il risultato self-hairpin per diagnosticare la rotta peer. ABI 4 ricostruisce il fault esatto `DMA Write NO_PASID` reason `0x05` su `<BAR1_IOVA>` e lo qualifica soltanto come arrivo della scrittura Ada a VT-d, non come consegna remota.
 
 ## 3. Firmware offline
 

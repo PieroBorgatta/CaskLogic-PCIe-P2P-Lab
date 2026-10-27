@@ -113,12 +113,27 @@ The self run is not a cross-branch test: requester and owner are the same GPU in
 
 All three write ABIs issue only four-byte raw C7B5 SYS1/SYS2 operations. They have no CUPTI or physical TLP trace and do not qualify larger transfers, ordering, atomics, NCCL or production use. Private tested module/client/validator hashes are recorded separately from the redacted public-source hashes in each experiment's metadata; a rebuild of the placeholder-UUID source is not expected to reproduce the private module hash.
 
+## ABI 4 VT-d emission discriminator
+
+The [ABI 4 package](vtd-emission/README.md) answers the emission question left open by the unchanged Ada→A2000 sentinel. It installs an intentionally read-only `DMA_TO_DEVICE` mapping for one private A2000 BAR1 page in the internal Ada's strict translated domain and issues exactly one four-byte SYS1 write. Before the trap, two private-source checks, the A2000 BAR1 alias handshake, a CPU write to the same page with owner-GPU readback, and an Ada write through writable translated RAM all pass.
+
+VT-d reports exactly:
+
+```text
+DMAR: [DMA Write NO_PASID] Request device [01:00.0] fault addr <BAR1_IOVA> [fault reason 0x05] PTE Write access is not set
+```
+
+The address is symbolized consistently in the public record. Requester, access, PASID state, reason and explanation are preserved. This proves that the tested Ada write reached VT-d. It does not prove downstream delivery: the deliberate read-only permission stops the request at VT-d, and the RAM read-only fallback is not launched after the exact BAR1 fault.
+
+Combined with the earlier writable translation result, the prudent classification is an **asymmetric cross-hierarchy peer-forwarding failure for PEG→TCSS/TBT posted writes, after VT-d ingress**, most likely a platform/root-complex routing policy or limitation. It remains unknown whether the exact downstream failure is at VT-d egress/peer decode, the PEG-to-TCSS path, USB4 routing/tunnelling, transaction attributes or endpoint acceptance. This is a root-cause class, not a component diagnosis or a bidirectional P2P fix.
+
 Write-experiment parser tests:
 
 ```sh
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/write-only -p 'test_*.py'
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/cpu-control -p 'test_*.py'
 python3 -m unittest discover -s experiments/iommu-mapping/translated-write/self-loop -p 'test_*.py'
+python3 -m unittest discover -s experiments/iommu-mapping/vtd-emission -p 'test_*.py'
 ```
 
 These are synthetic parser and invariant tests. They do not access GPU hardware.

@@ -484,6 +484,62 @@
       "published_sha256": "c9b29c0a7398795fe3fa0a03c7f67f414b01636bfb191729a16e06865fc9e791",
       "redacted": false,
       "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/README.md",
+      "original_sha256": "6d3be835aa9e272fe9eeb8954c47310311ee6ecabd83a5144476f10f1f1abe93",
+      "published_sha256": "6d3be835aa9e272fe9eeb8954c47310311ee6ecabd83a5144476f10f1f1abe93",
+      "redacted": false,
+      "transformation": "new public scientific summary"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/vtd_emission_validation.py",
+      "original_sha256": "914375cc11023779f3505987c2cb3b28ad808b05198007685fa77207c4509454",
+      "published_sha256": "58a9671a3d290603a4738579bc7a544258e731db14095a1bc54ac52961cd39d0",
+      "redacted": true,
+      "transformation": "narrow fail-closed replay for scoped logs with symbolic addresses; private complete-collection validator retained by hash"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/test_vtd_emission_validation.py",
+      "original_sha256": "8bf25239a1b68255e4f18205ae9957beb2bd4c06b326f443e3166d946f6f6da9",
+      "published_sha256": "7bf77adb4b61aa7fe45624338e9f6a82199abe3e97cfe4c1f916b9ceda3e734a",
+      "redacted": true,
+      "transformation": "public scoped-record fixture and mutation tests; private complete-collection tests retained by hash"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/results/result-markers.log",
+      "original_sha256": "e9a619c92fe6af0a26a5cd0eab3d48d3036668bea6fe1e0950b6d88bb2b90263",
+      "published_sha256": "50c198bbfafe09993a5e28631fb574c47360a9e06713cb91285c7f38e4f6c4e5",
+      "redacted": true,
+      "transformation": "scoped research extraction; UUIDs, paths and inventories removed; addresses and payload values symbolized"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/results/kernel-research.log",
+      "original_sha256": "a408577a60e0a33e1527b78601ccd4d56a8a188f3f8d129c26d2bde3b8a84089",
+      "published_sha256": "152fbcec935e21ebf4ae2f4d5da8f81fcecaf7f85e011bada9c304d998cc566c",
+      "redacted": true,
+      "transformation": "scoped research extraction; timestamps and run-specific address/payload values symbolized consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/results/qualified.json",
+      "original_sha256": "44cc5ee28f1509607699a40b9111312e69b5e22e8859fc7b268203512b01c0c8",
+      "published_sha256": "44cc5ee28f1509607699a40b9111312e69b5e22e8859fc7b268203512b01c0c8",
+      "redacted": false,
+      "transformation": "derived public qualification of the sanitized scoped record"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/source-review.json",
+      "original_sha256": "751ed1a0b90d180555116ded34e6af7aa1c2142b97374342ef38f6d7a7041eae",
+      "published_sha256": "751ed1a0b90d180555116ded34e6af7aa1c2142b97374342ef38f6d7a7041eae",
+      "redacted": false,
+      "transformation": "new publication review record"
+    },
+    {
+      "path": "experiments/iommu-mapping/vtd-emission/validator-revision.json",
+      "original_sha256": "e46e62b57be72a3a6a0942f275d415df2c34b4775d59e4323836ccd4728a756a",
+      "published_sha256": "e46e62b57be72a3a6a0942f275d415df2c34b4775d59e4323836ccd4728a756a",
+      "redacted": false,
+      "transformation": "new private/public validator identity record"
     }
   ]
 }

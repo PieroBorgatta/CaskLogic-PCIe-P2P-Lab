@@ -1,0 +1,26 @@
+{
+  "P2P_solution_claimed": false,
+  "bar1_write_observed_at_vtd": true,
+  "bar1_write_reached_vtd": true,
+  "controls": {
+    "bar1_alias_mask": "f",
+    "cpu_bar1_control_mask": "f",
+    "mapping_retained_until_reboot": true,
+    "private_source_checks": "2/2",
+    "ram_readonly_fallback_launched": false,
+    "writable_ram_control_mask": "f"
+  },
+  "errors": [],
+  "fault": {
+    "access": "DMA Write",
+    "address": "<BAR1_IOVA>",
+    "explanation": "PTE Write access is not set",
+    "pasid": "NO_PASID",
+    "reason": "0x05",
+    "requester": "01:00.0"
+  },
+  "protocol_complete": true,
+  "remote_delivery_proven": false,
+  "scope": "The exact reason-0x05 record proves arrival at VT-d only; it does not prove downstream peer delivery.",
+  "status": "complete_bar1_exact_returned"
+}

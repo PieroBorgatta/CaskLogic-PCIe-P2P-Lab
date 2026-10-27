@@ -1,0 +1,56 @@
+{
+  "status": "reviewed_for_publication",
+  "date": "2026-10-27",
+  "abi": 4,
+  "scope": "One four-byte Ada-originated write to an intentionally read-only translated private A2000 BAR1 page.",
+  "qualified_result": {
+    "status": "complete_bar1_exact_returned",
+    "exact_fault": "DMA Write NO_PASID, requester 01:00.0, <BAR1_IOVA>, reason 0x05, PTE Write access is not set",
+    "private_source_checks": "2/2",
+    "bar1_alias_handshake_mask": "f",
+    "cpu_bar1_control_mask": "f (not P2P)",
+    "writable_ram_control_mask": "f",
+    "bar1_write_reached_vtd": true,
+    "remote_delivery_proven": false,
+    "P2P_solution_claimed": false
+  },
+  "executed_private_artifacts": {
+    "nvidia_rm_module_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "nvidia_uvm_module_sha256": "5b59750daf0887fd34a314e129d72a195251dffcf174854d9f0ad393522b1664",
+    "client_binary_sha256": "7f9e495426077019ba8a25b54b594cd2dc606336e2fee208ffb1880194740b94",
+    "private_validator_sha256": "914375cc11023779f3505987c2cb3b28ad808b05198007685fa77207c4509454",
+    "complete_result_log_sha256": "e9a619c92fe6af0a26a5cd0eab3d48d3036668bea6fe1e0950b6d88bb2b90263",
+    "complete_kernel_log_sha256": "a408577a60e0a33e1527b78601ccd4d56a8a188f3f8d129c26d2bde3b8a84089"
+  },
+  "publication": {
+    "addresses": "Run-specific IOVA, physical, BAR and payload values are replaced by stable symbolic tokens.",
+    "scoped_logs": true,
+    "omitted": [
+      "complete boot and kernel logs",
+      "GPU UUIDs and full hardware inventories",
+      "private filesystem and storage paths",
+      "binaries, kernel modules, initrd and deployment scripts",
+      "full private driver/client source"
+    ],
+    "reproducibility_scope": "Offline replay of the sanitized scientific record, not reproduction of the private deployment image."
+  },
+  "root_cause_classification": {
+    "class": "asymmetric cross-hierarchy peer-forwarding failure for PEG→TCSS/TBT posted writes, after VT-d ingress",
+    "confidence": "strong for the class, insufficient for a component-level drop point",
+    "most_likely": "platform/root-complex peer-routing policy or limitation",
+    "not_distinguished": [
+      "VT-d egress or peer decode",
+      "Intel PEG-to-TCSS forwarding",
+      "USB4 host-router, tunnel or dock forwarding",
+      "GPU-originated transaction attributes",
+      "A2000 endpoint acceptance"
+    ]
+  },
+  "limitations": [
+    "The intentional read-only translation proves arrival at VT-d but prevents downstream delivery.",
+    "The result covers one four-byte raw C7B5 SYS1 operation and is not a throughput or production transport test.",
+    "A CPU write to the same BAR1 page is a host-route control, not P2P.",
+    "No physical TLP trace identifies the downstream drop point.",
+    "The experiment does not provide a bidirectional P2P fix."
+  ]
+}

@@ -1,0 +1,14 @@
+PUBLIC_REDACTION addresses_symbolized=1 timestamps_removed=1
+CASKLOGIC_VTD_GATE_START kind=bar1 request=401
+nvidia-uvm: CASKVTDEMISSION request=401 stage=preflight requester=0000:01:00.0 owner=0000:06:00.0 domain_type=3 cpu_model=9a stepping=3 translation_required=1 requester_fixed=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=ram_positive_mapping requester=0000:01:00.0 iova=<RAM_IOVA> physical=<RAM_PHYS> translated=<RAM_PHYS> direction=DMA_BIDIRECTIONAL valid=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=source_preflight executor=0000:01:00.0 expected=<SOURCE_A> mismatches=0 private_vidmem=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=alias owner=0000:06:00.0 owner_a_mismatches=0 cpu_a_mismatches=0 owner_b_mismatches=0 cpu_b_mismatches=0 owner_reset_mismatches=0 cpu_reset_mismatches=0 alias_mask=f private_target=1 rm_cpu_map=1 alias_words=16
+nvidia-uvm: CASKVTDEMISSION request=401 stage=cpu_target_control executor=0000:01:00.0 owner=0000:06:00.0 pattern=<CPU_PATTERN> cpu_actual=<CPU_PATTERN> owner_actual=<CPU_PATTERN> owner_guard_changed=0 source_changed=0 owner_reset_mismatches=0 cpu_reset=<CPU_RESET> cpu_reset_mismatches=0 cpu_control_mask=f ordering=iowrite32_ioread32_flush owner_gpu_readback_primary=1 control_only=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=ram_writable_control executor=0000:01:00.0 destination_iova=<RAM_IOVA> expected=<SOURCE_A> actual=<SOURCE_A> guard_changed=0 source_changed=0 ram_writable_mask=f direction=DMA_BIDIRECTIONAL mode=SYS1 positive_control=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=source_preflight executor=0000:01:00.0 expected=<SOURCE_B> mismatches=0 private_vidmem=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=readonly_mapping kind=bar1 requester=0000:01:00.0 owner=0000:06:00.0 domain_type=3 bar_index=1 bar_start=<BAR1_START> bar_length=<BAR1_LENGTH> resource_flags=<RESOURCE_FLAGS> cpu_pte_level=1 physical=<BAR1_PHYS> iova=<BAR1_IOVA> translated_first=<BAR1_PHYS> translated_last=<BAR1_LAST_PHYS> bytes=4096 direction=DMA_TO_DEVICE private_target=1 rm_cpu_map=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=fault_arm kind=bar1 requester=0000:01:00.0 iova=<BAR1_IOVA> bytes=4 mode=SYS1 direction=DMA_TO_DEVICE expected_type=DMA_Write_NO_PASID expected_reason=05 single_experimental_target_write=1 no_later_push=1 tracking_semaphore_release_expected=1 tracking_release_after_target_same_push=1 tracking_release_normally_writable=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=retained kind=bar1 pending=0 armed=1 mapping_live=1 all_backing_objects_retained_until_reboot=1 watchdog_required=1
+nvidia-uvm: CASKVTDEMISSION request=401 stage=return operation=1 status=0 flags=3ff domain_type=3 fault_kind=1 alias_mask=f cpu_control_mask=f ram_writable_mask=f pending=0 retained=1 direction=DMA_TO_DEVICE last_phase=fault_arm
+DMAR: [DMA Write NO_PASID] Request device [01:00.0] fault addr <BAR1_IOVA> [fault reason 0x05] PTE Write access is not set

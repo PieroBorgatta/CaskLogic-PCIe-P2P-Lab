@@ -93,6 +93,8 @@ Two later private-VRAM controls mapped a live RM-managed BAR1 page into the requ
 
 A third ABI issued only same-GPU self-BAR1 writes in isolated processes, separated by a clean asynchronous-fault gate. It passed 8/8 RAM and 2/2 CPU controls but 0/4 self writes. It contains **zero cross-GPU transfers**, so this self-hairpin result is not a diagnosis of the PEG↔TCSS/USB4 peer route. The problem remains unresolved. Sources, scoped logs, private executed-artifact hashes and offline replay are [published here](experiments/iommu-mapping/README.md).
 
+ABI 4 then armed an intentionally read-only `DMA_TO_DEVICE` translation for one private A2000 BAR1 page and issued one Ada-originated four-byte write. After the private-source, alias, same-page CPU and writable-RAM controls all passed, VT-d emitted the exact record `DMA Write NO_PASID`, requester `01:00.0`, matching `<BAR1_IOVA>`, reason `0x05`, `PTE Write access is not set`. This proves that the tested Ada write reached VT-d; it **does not prove remote delivery**, because the deliberate permission fault terminates the request there. Combined with the writable 0/2 Ada→A2000 result, the prudent root-cause class is an **asymmetric cross-hierarchy peer-forwarding failure for PEG→TCSS/TBT posted writes, after VT-d ingress**, most likely a platform/root-complex routing policy or limitation. The exact downstream drop point remains unproven; the [sanitized ABI 4 record and fail-closed replay](experiments/iommu-mapping/vtd-emission/README.md) make no single-block attribution and no P2P-solution claim.
+
 The newly traced FSP `CpuPcieRpPeerToPeerMode` field feeds the same policy bit already tested, rather than demonstrating another independent firmware control. No SPI/NVM update was performed.
 
 ## Included BIOS and driver artifacts
@@ -146,6 +148,7 @@ Most historical reports remain in their original Italian. Start with the [Englis
 
 - [Linux PCI P2PDMA](https://www.kernel.org/doc/html/latest/driver-api/pci/p2pdma.html)
 - [Linux Thunderbolt/USB4](https://www.kernel.org/doc/html/latest/admin-guide/thunderbolt.html)
+- [Intel VT-d Architecture Specification](https://cdrdv2-public.intel.com/831418/vt-directed-io-spec.pdf)
 - [NVIDIA open GPU kernel modules 595.99.02](https://github.com/NVIDIA/open-gpu-kernel-modules/tree/595.99.02)
 - [CUDA Peer Device Memory Access](https://docs.nvidia.com/cuda/cuda-runtime-api/cuda_runtime_api/group__CUDART__PEER.html)
 - [Intel datasheet 710723-003](https://cdrdv2-public.intel.com/710723/710723-003.pdf)

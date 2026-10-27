@@ -1,0 +1,21 @@
+PUBLIC_REDACTION addresses_symbolized=1 identifiers_removed=1
+intel_iommu=on iommu.passthrough=0 iommu.strict=1
+External GPU tunnel established: 1
+VTD_EMISSION_PARAMETER=Y BUILTIN_TESTS_PARAMETER=1
+CCFG single complete pre-test check:
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+IOVA_DATA_DISKS_UNMOUNTED
+VTD_STAGE kind=bar1 request=401 launched=1
+VTD_EMISSION_BEGIN abi=4 mode=bar1 one_mode_per_process=1 requester=0000:01:00.0 dma_direction=DMA_TO_DEVICE expected_fault_type=DMA_Write_NO_PASID expected_reason=05 single_experimental_target_write=1 no_later_push=1 tracking_semaphore_release_expected=1 ordinary_peer_access=0 host_staging_for_peer=0 process_retention=original no_fork=1
+VTD_EMISSION_FD_SELECTED mode=bar1 matches=1 candidate_count=2
+VTD_EMISSION_IOCTL mode=bar1 request=401 rv=0 errno=0 status=0 flags=3ff domain=3 fault_kind=1 alias_mask=f cpu_control_mask=f ram_writable_mask=f target_phys=<BAR1_PHYS> target_iova=<BAR1_IOVA> target_start=<BAR1_START> target_pte_level=1 ram_phys=0 ram_iova=0 inputs_unchanged=1
+VTD_EMISSION_END mode=bar1 process_returned=0 ioctl_returned=1 trap_armed=1 mapping_retained=1 protocol_complete=1 p2p_solution_claimed=0
+VTD_EMISSION_READY mode=bar1 request=401 ioctl_returned=1 process_parked=1 cuda_calls_after_trap=0 refs_held_until_reboot=1
+VTD_PROCESS_STATE kind=bar1 request=401 ioctl_returned=1 parked=1
+VTD_PROCESS_HEALTH kind=bar1 request=401 phase=after_observation alive=1 identity=1
+VTD_PROCESS_HEALTH kind=bar1 request=401 phase=before_final alive=1 identity=1
+VTD_CLASSIFICATION status=bar1_exact_vtd_permission_fault requester=0000:01:00.0 iova=<BAR1_IOVA> reason=05 side_effects=0 bar1_write_observed_at_vtd=1 bar1_write_reached_vtd=1 remote_delivery_proven=0 ram_control_launched=0 p2p_solution_claimed=0
+PROBE_COMPLETED
+SCRIPT_RC=0

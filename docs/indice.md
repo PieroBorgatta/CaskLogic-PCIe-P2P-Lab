@@ -11,6 +11,7 @@ Leggere prima il [README](../README.md) e la [sintesi inglese](technical-summary
 | [tcss-bit-tests](../archive/p2p-tcss-bit-tests-20261021/) | Trial FSP, sincronizzazione corretta, varianti mapping, BAR, attributi e CE |
 | [next-investigation](../archive/p2p-next-investigation-20261021/) | PUSH/PULL qualificato, NVML con baseline, CE fisico modes 2 e 1 |
 | [aoostar-architecture](../archive/p2p-aoostar-architecture-20261021/) | Firmware dock e ipotesi Ampere/Ada, senza nuovi interventi hardware |
+| [iommu-mapping](../experiments/iommu-mapping/) | Stato VT-d, IOVA tradotti, BAR1 privato e discriminatore di emissione ABI 4 |
 
 ## Letture prioritarie
 

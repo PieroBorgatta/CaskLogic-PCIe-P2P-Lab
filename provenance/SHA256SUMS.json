@@ -26,8 +26,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 15712,
-      "sha256": "692c3fc38da461834c8fc81711639a8dc14d7e8ca12ca055b5f078f5c3928def"
+      "bytes": 16832,
+      "sha256": "e20de2926b017f0b7471e163422db26fcac71254d4dacb3442a2ded45e6abe97"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3702,28 +3702,28 @@
       "sha256": "3fbf090b1387021df970f834bd7af1f8f462a41fb9c2227f644ec0038d9abc90"
     },
     "docs/indice.md": {
-      "bytes": 2121,
-      "sha256": "71ec08323af4ab04e03680eabd0109cda5b94ffa89303fa296a2bcc37df977a6"
+      "bytes": 2250,
+      "sha256": "d778e4aaac51e1d28ed3adf574ffe3930bc52f0f4b5b553907d7fac1a447e695"
     },
     "docs/riproducibilita.md": {
-      "bytes": 3929,
-      "sha256": "850388f84f770f6ed55ef90d1db6f77b0b2ab9dbd1fa7c5eed67308345676f4f"
+      "bytes": 4235,
+      "sha256": "b46ec032c6f6cd6b4d56f0ae3fe61284ebf997b364073547e4713c002b0e7de2"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 11553,
-      "sha256": "730136f9e14a681fa94d4bec2c6fbe32e1b5ede31d7180f2bf093ff3a57ee71f"
+      "bytes": 12777,
+      "sha256": "b219de86ecc3d0bcb2538de71c39efde0eb5b34cbf96dd441a61e74904d57198"
     },
     "experiments/iommu-mapping/README.md": {
-      "bytes": 12866,
-      "sha256": "068849c91f6cbfd5b5e16a577cab411058e31b29880d73553264470ec4edacc0"
+      "bytes": 14537,
+      "sha256": "0b56a72fd648951e70c527243de7545bb6360c1eb329651f6a37f6f8257910b2"
     },
     "experiments/iommu-mapping/export-records.json": {
-      "bytes": 25221,
-      "sha256": "ec66c21c6db0da54731b8602ece3879d84e73a0860f38d08f84312a36c189970"
+      "bytes": 28459,
+      "sha256": "6c5390c81f55cc22f4a5033bc06e739a65ec7b7d59b992bae742f3d8472326be"
     },
     "experiments/iommu-mapping/replay.py": {
-      "bytes": 5734,
-      "sha256": "709a81cf93ca59415173983d997abfe879c7d4e2bd8c0e6a8a5361fb93413dc8"
+      "bytes": 6615,
+      "sha256": "7a42cd1403fe8984a67e3cfb2b709e9cd5f457d75bd28de96e2deae3b6e1c9bd"
     },
     "experiments/iommu-mapping/status/Makefile": {
       "bytes": 23,
@@ -4004,6 +4004,38 @@
     "experiments/iommu-mapping/translated/validator-revision.json": {
       "bytes": 526,
       "sha256": "8476ee27ed8d9ed725e7660a1ea9105270a06890ebb315dd8909b1386a6af80f"
+    },
+    "experiments/iommu-mapping/vtd-emission/README.md": {
+      "bytes": 4294,
+      "sha256": "6d3be835aa9e272fe9eeb8954c47310311ee6ecabd83a5144476f10f1f1abe93"
+    },
+    "experiments/iommu-mapping/vtd-emission/results/kernel-research.log": {
+      "bytes": 2931,
+      "sha256": "152fbcec935e21ebf4ae2f4d5da8f81fcecaf7f85e011bada9c304d998cc566c"
+    },
+    "experiments/iommu-mapping/vtd-emission/results/qualified.json": {
+      "bytes": 791,
+      "sha256": "44cc5ee28f1509607699a40b9111312e69b5e22e8859fc7b268203512b01c0c8"
+    },
+    "experiments/iommu-mapping/vtd-emission/results/result-markers.log": {
+      "bytes": 1835,
+      "sha256": "50c198bbfafe09993a5e28631fb574c47360a9e06713cb91285c7f38e4f6c4e5"
+    },
+    "experiments/iommu-mapping/vtd-emission/source-review.json": {
+      "bytes": 2854,
+      "sha256": "751ed1a0b90d180555116ded34e6af7aa1c2142b97374342ef38f6d7a7041eae"
+    },
+    "experiments/iommu-mapping/vtd-emission/test_vtd_emission_validation.py": {
+      "bytes": 5149,
+      "sha256": "7bf77adb4b61aa7fe45624338e9f6a82199abe3e97cfe4c1f916b9ceda3e734a"
+    },
+    "experiments/iommu-mapping/vtd-emission/validator-revision.json": {
+      "bytes": 1489,
+      "sha256": "e46e62b57be72a3a6a0942f275d415df2c34b4775d59e4323836ccd4728a756a"
+    },
+    "experiments/iommu-mapping/vtd-emission/vtd_emission_validation.py": {
+      "bytes": 12650,
+      "sha256": "58a9671a3d290603a4738579bc7a544258e731db14095a1bc54ac52961cd39d0"
     },
     "experiments/payload-diagnostics/README.md": {
       "bytes": 8827,
@@ -5526,8 +5558,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 432977,
-      "sha256": "1d8ae4be2c43e93e9d5facc9b5ca29850e162703eced685e33e7de1e7ee67199"
+      "bytes": 436215,
+      "sha256": "882111ec154f6db87a7e7d4bd36eb961aa242f487f97410480212b5bb451c7e1"
     },
     "provenance/payload-diagnostics-validation.json": {
       "bytes": 1115,

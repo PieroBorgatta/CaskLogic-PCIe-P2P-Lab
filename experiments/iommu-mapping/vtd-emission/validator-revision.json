@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "status": "qualified_private_record_and_replayed_sanitized_export",
+  "private_qualification": {
+    "validator_sha256": "914375cc11023779f3505987c2cb3b28ad808b05198007685fa77207c4509454",
+    "test_source_sha256": "8bf25239a1b68255e4f18205ae9957beb2bd4c06b326f443e3166d946f6f6da9",
+    "synthetic_tests": 16,
+    "status": "PASS",
+    "complete_result_log_sha256": "e9a619c92fe6af0a26a5cd0eab3d48d3036668bea6fe1e0950b6d88bb2b90263",
+    "complete_kernel_log_sha256": "a408577a60e0a33e1527b78601ccd4d56a8a188f3f8d129c26d2bde3b8a84089"
+  },
+  "published_replay": {
+    "validator_sha256": "58a9671a3d290603a4738579bc7a544258e731db14095a1bc54ac52961cd39d0",
+    "test_source_sha256": "7bf77adb4b61aa7fe45624338e9f6a82199abe3e97cfe4c1f916b9ceda3e734a",
+    "synthetic_tests": 20,
+    "status": "PASS",
+    "hardware_operations": false
+  },
+  "transformation": "The complete private collector and validator qualified the unsanitized collection. The public validator is a narrower fail-closed replay over scoped logs with run-specific addresses, payloads, timestamps and identifiers replaced by stable symbolic tokens. It does not claim byte identity with the private validator or reproduce the deployment image.",
+  "required_claims": {
+    "exact_fault": "DMA Write NO_PASID, requester 01:00.0, <BAR1_IOVA>, reason 0x05, PTE Write access is not set",
+    "bar1_write_reached_vtd": true,
+    "remote_delivery_proven": false,
+    "P2P_solution_claimed": false
+  }
+}
