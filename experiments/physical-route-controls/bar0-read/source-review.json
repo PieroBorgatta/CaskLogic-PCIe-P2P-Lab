@@ -1,0 +1,20 @@
+{
+  "scope": "Root source review, no independent subagent review",
+  "core_peer_driver_include_identical_to_host_control_build": true,
+  "bar0_offset": 0,
+  "bar0_register": "NV_PMC_BOOT_0",
+  "bar0_register_access": "read-only R--4R",
+  "primary_references": [
+    "NVIDIA source 19f3b34/src/common/inc/swref/published/nv_ref.h:108",
+    "NVIDIA source 19f3b34/src/nvidia/src/kernel/gpu/gpu_access.c:gpuVerifyExistence_IMPL"
+  ],
+  "remote_mmio_writes": false,
+  "private_buffers_only": true,
+  "completion_lifetime_uses_prior_verified_host_control_and_peer_holds": true,
+  "python_validation_tests": 12,
+  "firmware_writes": false,
+  "pci_config_writes": false,
+  "host_controls": 4,
+  "bar0_controls": 4,
+  "main_peer_cases": 12
+}

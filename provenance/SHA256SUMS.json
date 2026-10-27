@@ -18,8 +18,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 12291,
-      "sha256": "2d0a5931815a7c9057fa1767c24ae974068a83d92def4fd43e413019b9c7a6a4"
+      "bytes": 12982,
+      "sha256": "2889f673e1ecefd087edc24680e0a712a4216a8294b1d0e8601e5b874785ea5d"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3702,8 +3702,8 @@
       "sha256": "b9878deae8ffb549d3ad82a9d17e0ed6353eaa87a37143e0279ea30b9a4ea476"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 6027,
-      "sha256": "c5b55d99f5b7e1551faf5fc0b7f4ec727b1a8bddc6aaaa5498a2f21c9013fabb"
+      "bytes": 6724,
+      "sha256": "3d9e0290dcd219bb2c201eec8fcf4bc599286a9cb2d142cd71542869553a6729"
     },
     "firmware/README.md": {
       "bytes": 3762,
@@ -3730,8 +3730,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 335280,
-      "sha256": "55d8ef593b20394e2053f05d3b5e1cc01bd8dbdedcfea4118d809f95a664a19a"
+      "bytes": 368695,
+      "sha256": "dcfed7069261b6e98d1d1e4fa22f7151cdfec070f6b3f7fc707602db2f8e81d9"
     },
     "provenance/publication-validation.json": {
       "bytes": 417,
@@ -4384,6 +4384,402 @@
     "provenance/same-allocation-validation.json": {
       "bytes": 1782,
       "sha256": "f5a37e49e2ff2f71cbb1f9d90d7a7e6b086013cff08bfd4b4ab8d18f453eceab"
+    },
+    "experiments/physical-route-controls/README.md": {
+      "bytes": 7365,
+      "sha256": "b9a5fc2812b4fe5ac197752edd3d4483a27d30e15024d8ddac9a1b899514bebd"
+    },
+    "experiments/physical-route-controls/aer-report/aer_log_validation.py": {
+      "bytes": 6317,
+      "sha256": "64df69f1fef935eef371f900884f292322103d2fd7bd16438699738f1a0872a7"
+    },
+    "experiments/physical-route-controls/aer-report/aer_report.h": {
+      "bytes": 5708,
+      "sha256": "58219c55e1cc593157dda4ef1a7075ac662f997203fb2e1e73d9521074842d17"
+    },
+    "experiments/physical-route-controls/aer-report/bar0_log_validation.py": {
+      "bytes": 6001,
+      "sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee"
+    },
+    "experiments/physical-route-controls/aer-report/base_fixture.py": {
+      "bytes": 8624,
+      "sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564"
+    },
+    "experiments/physical-route-controls/aer-report/base_log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/aer-report/driver/cask_bar0_read_control.inc": {
+      "bytes": 5831,
+      "sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed"
+    },
+    "experiments/physical-route-controls/aer-report/driver/cask_phys_ce.inc": {
+      "bytes": 24625,
+      "sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf"
+    },
+    "experiments/physical-route-controls/aer-report/driver/cask_phys_ce_ioctl.h": {
+      "bytes": 3157,
+      "sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38"
+    },
+    "experiments/physical-route-controls/aer-report/driver/cask_sys_source_control.inc": {
+      "bytes": 8938,
+      "sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63"
+    },
+    "experiments/physical-route-controls/aer-report/driver/physical-ce.patch": {
+      "bytes": 50735,
+      "sha256": "d9c049c0334e03484cacabf2ef0bdac78084925691decfc0fb4bd3f36b047c41"
+    },
+    "experiments/physical-route-controls/aer-report/host_fixture.py": {
+      "bytes": 4569,
+      "sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89"
+    },
+    "experiments/physical-route-controls/aer-report/host_log_validation.py": {
+      "bytes": 5828,
+      "sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d"
+    },
+    "experiments/physical-route-controls/aer-report/pcie_diag.h": {
+      "bytes": 9908,
+      "sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d"
+    },
+    "experiments/physical-route-controls/aer-report/peer_physical_pull.cu": {
+      "bytes": 15928,
+      "sha256": "365dcab07dcc04ac5764b148f4d1a6cce64e9f92631d314f64343216e1621939"
+    },
+    "experiments/physical-route-controls/aer-report/phys_pull_client.h": {
+      "bytes": 10365,
+      "sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47"
+    },
+    "experiments/physical-route-controls/aer-report/protocol.h": {
+      "bytes": 1531,
+      "sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566"
+    },
+    "experiments/physical-route-controls/aer-report/results/kernel-research.log": {
+      "bytes": 134871,
+      "sha256": "8e55cf2c30b09d197c32b1ae8983c7a1b7fe11664e9de477420739f62593fe88"
+    },
+    "experiments/physical-route-controls/aer-report/results/qualified.json": {
+      "bytes": 5542,
+      "sha256": "3df2f3457c43f38858940e9f7d1064f7c422aa7bcaf6f5baec8b87fc03c1852e"
+    },
+    "experiments/physical-route-controls/aer-report/results/result.log": {
+      "bytes": 166872,
+      "sha256": "43daeb196f9006a0da08dacdee1f51eb541e2870c478f1b1a812daf8fe896a3a"
+    },
+    "experiments/physical-route-controls/aer-report/source-review.json": {
+      "bytes": 717,
+      "sha256": "edb8058b9a034468c60628d510529fc44f147f65df9899c64914a9f2c327c59a"
+    },
+    "experiments/physical-route-controls/aer-report/test_aer_masks.cpp": {
+      "bytes": 1032,
+      "sha256": "ce5512dada11cf5cfe8d4ddf1211b27153171cdc8d2aa817c207b133e15b29e7"
+    },
+    "experiments/physical-route-controls/aer-report/test_aer_validation.py": {
+      "bytes": 3921,
+      "sha256": "17b5ac9fa2d51f6045664bfd6a5d44fbd1cb3474a3f07fd6a4fb139f9c938c3f"
+    },
+    "experiments/physical-route-controls/aer-report/test_bar0_validation.py": {
+      "bytes": 4336,
+      "sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09"
+    },
+    "experiments/physical-route-controls/bar0-read/bar0_log_validation.py": {
+      "bytes": 6001,
+      "sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee"
+    },
+    "experiments/physical-route-controls/bar0-read/base_fixture.py": {
+      "bytes": 8624,
+      "sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564"
+    },
+    "experiments/physical-route-controls/bar0-read/base_log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/bar0-read/driver/cask_bar0_read_control.inc": {
+      "bytes": 5831,
+      "sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed"
+    },
+    "experiments/physical-route-controls/bar0-read/driver/cask_phys_ce.inc": {
+      "bytes": 24625,
+      "sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf"
+    },
+    "experiments/physical-route-controls/bar0-read/driver/cask_phys_ce_ioctl.h": {
+      "bytes": 3157,
+      "sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38"
+    },
+    "experiments/physical-route-controls/bar0-read/driver/cask_sys_source_control.inc": {
+      "bytes": 8938,
+      "sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63"
+    },
+    "experiments/physical-route-controls/bar0-read/driver/physical-ce.patch": {
+      "bytes": 50735,
+      "sha256": "d9c049c0334e03484cacabf2ef0bdac78084925691decfc0fb4bd3f36b047c41"
+    },
+    "experiments/physical-route-controls/bar0-read/host_fixture.py": {
+      "bytes": 4569,
+      "sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89"
+    },
+    "experiments/physical-route-controls/bar0-read/host_log_validation.py": {
+      "bytes": 5828,
+      "sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d"
+    },
+    "experiments/physical-route-controls/bar0-read/pcie_diag.h": {
+      "bytes": 9908,
+      "sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d"
+    },
+    "experiments/physical-route-controls/bar0-read/peer_physical_pull.cu": {
+      "bytes": 15747,
+      "sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319"
+    },
+    "experiments/physical-route-controls/bar0-read/phys_pull_client.h": {
+      "bytes": 10365,
+      "sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47"
+    },
+    "experiments/physical-route-controls/bar0-read/protocol.h": {
+      "bytes": 1531,
+      "sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566"
+    },
+    "experiments/physical-route-controls/bar0-read/results/kernel-research.log": {
+      "bytes": 134365,
+      "sha256": "66b3cf777cd8212be3396b09a11d6d5681026718f94106053355dbfcc9fb6380"
+    },
+    "experiments/physical-route-controls/bar0-read/results/qualified.json": {
+      "bytes": 3165,
+      "sha256": "896917608298f85642a864662e6c92bfbaa685b956371288a121783e2de0bc5e"
+    },
+    "experiments/physical-route-controls/bar0-read/results/result.log": {
+      "bytes": 159479,
+      "sha256": "e8569c43961a5d0b1c4125f205273ecece4feeec4d64f319888d40749dc263c6"
+    },
+    "experiments/physical-route-controls/bar0-read/source-review.json": {
+      "bytes": 734,
+      "sha256": "ff21084177c40245c975d1239663e274787a2c748324b652dfcd61e8d0eb1694"
+    },
+    "experiments/physical-route-controls/bar0-read/test_bar0_validation.py": {
+      "bytes": 4336,
+      "sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09"
+    },
+    "experiments/physical-route-controls/export-records.json": {
+      "bytes": 33540,
+      "sha256": "a904982af0df8fabfba5b0145b879f7f64948263e15394f1adde71f3c8dbf413"
+    },
+    "experiments/physical-route-controls/host-source/base_fixture.py": {
+      "bytes": 8624,
+      "sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564"
+    },
+    "experiments/physical-route-controls/host-source/base_log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/host-source/driver/cask_phys_ce.inc": {
+      "bytes": 24625,
+      "sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf"
+    },
+    "experiments/physical-route-controls/host-source/driver/cask_phys_ce_ioctl.h": {
+      "bytes": 3157,
+      "sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38"
+    },
+    "experiments/physical-route-controls/host-source/driver/cask_sys_source_control.inc": {
+      "bytes": 8605,
+      "sha256": "8dc4da54365b76c6395d9ad3402e3e47893c016c82977118b8ca24a1871e8366"
+    },
+    "experiments/physical-route-controls/host-source/driver/physical-ce.patch": {
+      "bytes": 44364,
+      "sha256": "bb3353be06e02d28f6257d57b27e68e9ad9086b9af08d9c80d6e12bea986be31"
+    },
+    "experiments/physical-route-controls/host-source/host_log_validation.py": {
+      "bytes": 5828,
+      "sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d"
+    },
+    "experiments/physical-route-controls/host-source/log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/host-source/pcie_diag.h": {
+      "bytes": 9908,
+      "sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d"
+    },
+    "experiments/physical-route-controls/host-source/peer_physical_pull.cu": {
+      "bytes": 15747,
+      "sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319"
+    },
+    "experiments/physical-route-controls/host-source/phys_pull_client.h": {
+      "bytes": 10365,
+      "sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47"
+    },
+    "experiments/physical-route-controls/host-source/protocol.h": {
+      "bytes": 1531,
+      "sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566"
+    },
+    "experiments/physical-route-controls/host-source/results/kernel-research.log": {
+      "bytes": 129171,
+      "sha256": "c826bda16533fc8ec7c137ce831b2e7e124feb643bc95088a57181566b6e38d9"
+    },
+    "experiments/physical-route-controls/host-source/results/qualified.json": {
+      "bytes": 1846,
+      "sha256": "4e2ee3dba5640e13cf69799de855c0e9bb03bb32f29cf2b4d62befc64afc6ccd"
+    },
+    "experiments/physical-route-controls/host-source/results/result.log": {
+      "bytes": 159448,
+      "sha256": "55621e19fe9bbd405519274d2017866de01a642130c61b49a9cd9489b2f2695e"
+    },
+    "experiments/physical-route-controls/host-source/source-review.json": {
+      "bytes": 987,
+      "sha256": "8590e8746eefaa8554493cbdac224150cdc80ed068fab41eb1e7b727f6de3660"
+    },
+    "experiments/physical-route-controls/host-source/test_host_validation.py": {
+      "bytes": 4569,
+      "sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89"
+    },
+    "experiments/physical-route-controls/physical-pull/driver/cask_phys_ce.inc": {
+      "bytes": 23605,
+      "sha256": "fbd2c084edc4b34d427bfd933462ce4a0a88cc54ab96fba1e54179c147716a17"
+    },
+    "experiments/physical-route-controls/physical-pull/driver/cask_phys_ce_ioctl.h": {
+      "bytes": 3157,
+      "sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38"
+    },
+    "experiments/physical-route-controls/physical-pull/driver/physical-ce.patch": {
+      "bytes": 34444,
+      "sha256": "918f3ecf53430b70f14e0e5694bff2effded47e509ea0e4f071de719cf323356"
+    },
+    "experiments/physical-route-controls/physical-pull/log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/physical-pull/pcie_diag.h": {
+      "bytes": 9908,
+      "sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d"
+    },
+    "experiments/physical-route-controls/physical-pull/peer_physical_pull.cu": {
+      "bytes": 15747,
+      "sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319"
+    },
+    "experiments/physical-route-controls/physical-pull/phys_pull_client.h": {
+      "bytes": 10365,
+      "sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47"
+    },
+    "experiments/physical-route-controls/physical-pull/protocol.h": {
+      "bytes": 1531,
+      "sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566"
+    },
+    "experiments/physical-route-controls/physical-pull/results/kernel-research.log": {
+      "bytes": 124131,
+      "sha256": "c04984b5dd89964f548cf02ea9b917310b3f571055f10d21f9be3273f4a19315"
+    },
+    "experiments/physical-route-controls/physical-pull/results/qualified.json": {
+      "bytes": 773,
+      "sha256": "27cf8f4d9918008cd6a7bf6bc8024219fc931b2691a4e3d9c583cd21ce0e61ac"
+    },
+    "experiments/physical-route-controls/physical-pull/results/result.log": {
+      "bytes": 159417,
+      "sha256": "fcf8ec9fe3b166bb88b20cd5988f4857aeacb20c7cc410aa61db1bb8288b819a"
+    },
+    "experiments/physical-route-controls/physical-pull/test_client.cpp": {
+      "bytes": 3901,
+      "sha256": "663cc929f208deccd8b4caef1e64c05145dcf0252316fe08d20d24b7ad175536"
+    },
+    "experiments/physical-route-controls/physical-pull/test_log_validation.py": {
+      "bytes": 14133,
+      "sha256": "bbbbb8ecf35b811873043963f28e6610db885430c06699672492a0bf0e7f5901"
+    },
+    "experiments/physical-route-controls/physical-pull/test_pcie_diag.cpp": {
+      "bytes": 6096,
+      "sha256": "18b7dc33dcadc912057b66ccde9c0ec79d6a7b65adc19ae29f6d6945063aa3b7"
+    },
+    "experiments/physical-route-controls/physical-pull/test_protocol.cpp": {
+      "bytes": 1383,
+      "sha256": "ed99a5b60287a8caa77c1c847ad46521f31143087cfebd4b31a17ebf97c2e761"
+    },
+    "experiments/physical-route-controls/pramin-push/bar0_log_validation.py": {
+      "bytes": 6001,
+      "sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee"
+    },
+    "experiments/physical-route-controls/pramin-push/base_fixture.py": {
+      "bytes": 8624,
+      "sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564"
+    },
+    "experiments/physical-route-controls/pramin-push/base_log_validation.py": {
+      "bytes": 22085,
+      "sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/cask_bar0_read_control.inc": {
+      "bytes": 5831,
+      "sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/cask_phys_ce.inc": {
+      "bytes": 24625,
+      "sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/cask_phys_ce_ioctl.h": {
+      "bytes": 3157,
+      "sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/cask_pramin_push_control.inc": {
+      "bytes": 11904,
+      "sha256": "62893b8425367fddbfc5353d9ee49c035a990eba00bd4e7a0fdb8cbc1abb53fa"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/cask_sys_source_control.inc": {
+      "bytes": 9215,
+      "sha256": "3947cf4cc2013662b337d0bbed3ccd3d60d048a42a2a9d67204ebe62e2e00dd7"
+    },
+    "experiments/physical-route-controls/pramin-push/driver/physical-ce.patch": {
+      "bytes": 63229,
+      "sha256": "e75857836db73db6db64300f2f65460854af65d04071d33c93a92df898dc2aa2"
+    },
+    "experiments/physical-route-controls/pramin-push/host_fixture.py": {
+      "bytes": 4569,
+      "sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89"
+    },
+    "experiments/physical-route-controls/pramin-push/host_log_validation.py": {
+      "bytes": 5828,
+      "sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d"
+    },
+    "experiments/physical-route-controls/pramin-push/pcie_diag.h": {
+      "bytes": 9908,
+      "sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d"
+    },
+    "experiments/physical-route-controls/pramin-push/peer_physical_pull.cu": {
+      "bytes": 15747,
+      "sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319"
+    },
+    "experiments/physical-route-controls/pramin-push/phys_pull_client.h": {
+      "bytes": 10365,
+      "sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47"
+    },
+    "experiments/physical-route-controls/pramin-push/pramin_log_validation.py": {
+      "bytes": 7027,
+      "sha256": "6e9e86ae0eb5635fbe759564e21ef71812f74cfa821bbf849d0b7cd1b57b40ae"
+    },
+    "experiments/physical-route-controls/pramin-push/protocol.h": {
+      "bytes": 1531,
+      "sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566"
+    },
+    "experiments/physical-route-controls/pramin-push/results/kernel-research.log": {
+      "bytes": 141767,
+      "sha256": "8091831027ac5ced8790aedd84c5c00c645d6dc02b6046948630893e91bf392d"
+    },
+    "experiments/physical-route-controls/pramin-push/results/qualified.json": {
+      "bytes": 4501,
+      "sha256": "372fb91037790b295ec3bfe97b12c94ebe21231c4bb5ba69b13d8ccf88a5e403"
+    },
+    "experiments/physical-route-controls/pramin-push/results/result.log": {
+      "bytes": 159513,
+      "sha256": "dc58c2f366a8a46531098b0a314062fc08aff14222d80952460ad8bce2be1eb0"
+    },
+    "experiments/physical-route-controls/pramin-push/source-review.json": {
+      "bytes": 1715,
+      "sha256": "3007c4e8b65ec845b8423ac6d508d31789531adad0eadedc1b01a626fc71b456"
+    },
+    "experiments/physical-route-controls/pramin-push/test_bar0_validation.py": {
+      "bytes": 4336,
+      "sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09"
+    },
+    "experiments/physical-route-controls/pramin-push/test_pramin_validation.py": {
+      "bytes": 5313,
+      "sha256": "83fcc0e0e887ed651288b068164ad210e73b27b42adf50797e4203b968ceaa39"
+    },
+    "experiments/physical-route-controls/replay.py": {
+      "bytes": 1107,
+      "sha256": "d70c54c112c7cfe618d27c9b2f0210627c7a9d8636c5855e870255508227b560"
     }
   }
 }

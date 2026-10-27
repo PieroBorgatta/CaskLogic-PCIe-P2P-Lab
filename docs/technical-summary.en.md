@@ -59,3 +59,7 @@ NVML counters respond to positive host-to-GPU controls. In the failed direction,
 GPU generation and physical placement are confounded: the older GPU is always external. We cannot swap cards or move them behind one switch. Host-RAM payload relay is not the target. No universal older→newer-only rule has been established.
 
 Start with the [qualified log](../archive/p2p-next-investigation-20261021/native-pushpull-results/result.log), [analysis](../archive/p2p-next-investigation-20261021/native-pushpull-results/ANALISI.md), [firmware notes](../firmware/README.md), and [offline replay](riproducibilita.md). Most historical documents are in Italian; code and diagnostic fields retain their original technical names.
+
+## Native physical-route follow-up — 27 October 2026
+
+[Five qualified runs](../experiments/physical-route-controls/README.md) retain the 3-pass/9-fail peer matrix. Ordinary host-RAM raw-source controls pass; peer reads also fail against a read-only remote BAR0 register. Direct posted writes through a private VRAM page’s BAR0 PRAMIN alias succeed A2000→Ada and fail Ada→A2000 with intact guards. Standard error reporting was enabled and restored, but no new AER UES or TLP header was captured. These four-byte tests do not use CUPTI or identify the failing component. The tested BIOS profile remains restored; production services are intentionally held stopped at the owner’s request.

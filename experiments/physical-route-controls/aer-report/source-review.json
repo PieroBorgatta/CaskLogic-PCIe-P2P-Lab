@@ -1,0 +1,20 @@
+{
+  "scope": "Root review; CPU-only new helper, prior GPU methods and UVM unchanged",
+  "probe_unchanged_after_removing_aer_calls": true,
+  "pci_config_writes": true,
+  "devctl_owned_bits": "0x000a NFERE/URRE",
+  "peg_uem_owned_bits": "0x00010000 Unexpected Completion mask",
+  "root_interrupts_and_serr_guards": true,
+  "dpc_untouched_guarded_disabled": true,
+  "status_register_writes": false,
+  "restore_before_allocation_release": true,
+  "readback_each_write": true,
+  "transfer_snapshot_validation": 144,
+  "numeric_data_comparisons_unchanged": 12,
+  "bar0_controls": 4,
+  "host_controls": 4,
+  "tests": 25,
+  "mask_exhaustive_inputs": 65536,
+  "asan_ubsan_mask_test_passed": true,
+  "firmware_writes": false
+}

@@ -1,0 +1,678 @@
+{
+  "client_date": "2026-10-27",
+  "files": [
+    {
+      "path": "experiments/physical-route-controls/physical-pull/peer_physical_pull.cu",
+      "original_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "published_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/protocol.h",
+      "original_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "published_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/phys_pull_client.h",
+      "original_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "published_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/pcie_diag.h",
+      "original_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "published_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/test_log_validation.py",
+      "original_sha256": "bbbbb8ecf35b811873043963f28e6610db885430c06699672492a0bf0e7f5901",
+      "published_sha256": "bbbbb8ecf35b811873043963f28e6610db885430c06699672492a0bf0e7f5901",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/test_client.cpp",
+      "original_sha256": "663cc929f208deccd8b4caef1e64c05145dcf0252316fe08d20d24b7ad175536",
+      "published_sha256": "663cc929f208deccd8b4caef1e64c05145dcf0252316fe08d20d24b7ad175536",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/test_protocol.cpp",
+      "original_sha256": "ed99a5b60287a8caa77c1c847ad46521f31143087cfebd4b31a17ebf97c2e761",
+      "published_sha256": "ed99a5b60287a8caa77c1c847ad46521f31143087cfebd4b31a17ebf97c2e761",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/test_pcie_diag.cpp",
+      "original_sha256": "18b7dc33dcadc912057b66ccde9c0ec79d6a7b65adc19ae29f6d6945063aa3b7",
+      "published_sha256": "18b7dc33dcadc912057b66ccde9c0ec79d6a7b65adc19ae29f6d6945063aa3b7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/driver/cask_phys_ce.inc",
+      "original_sha256": "c4bbc0bffa64a70ab7d024b1d613bc8a575485212b454a5a8e0cbb74075b8156",
+      "published_sha256": "fbd2c084edc4b34d427bfd933462ce4a0a88cc54ab96fba1e54179c147716a17",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/driver/physical-ce.patch",
+      "original_sha256": "32edc76e50976b1efc7a925a3884b49f368878ed1dd781be359a6e8145a4af1e",
+      "published_sha256": "918f3ecf53430b70f14e0e5694bff2effded47e509ea0e4f071de719cf323356",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/driver/cask_phys_ce_ioctl.h",
+      "original_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "published_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/results/qualified.json",
+      "original_sha256": "27cf8f4d9918008cd6a7bf6bc8024219fc931b2691a4e3d9c583cd21ce0e61ac",
+      "published_sha256": "27cf8f4d9918008cd6a7bf6bc8024219fc931b2691a4e3d9c583cd21ce0e61ac",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/results/result.log",
+      "original_sha256": "64f217d73be8f13e91e9c1eb60adbdba6907af1483f41906163e1829e39499c1",
+      "published_sha256": "fcf8ec9fe3b166bb88b20cd5988f4857aeacb20c7cc410aa61db1bb8288b819a",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/physical-pull/results/kernel-research.log",
+      "original_sha256": "3357eef0dda22e2977e17b043d5255047b2f4055f993486542f7b5dbeddb187d",
+      "published_sha256": "c04984b5dd89964f548cf02ea9b917310b3f571055f10d21f9be3273f4a19315",
+      "redacted": true,
+      "transformation": "selected research lines plus identifier redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/peer_physical_pull.cu",
+      "original_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "published_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/protocol.h",
+      "original_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "published_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/phys_pull_client.h",
+      "original_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "published_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/pcie_diag.h",
+      "original_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "published_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/base_log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/host_log_validation.py",
+      "original_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "published_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/source-review.json",
+      "original_sha256": "8590e8746eefaa8554493cbdac224150cdc80ed068fab41eb1e7b727f6de3660",
+      "published_sha256": "8590e8746eefaa8554493cbdac224150cdc80ed068fab41eb1e7b727f6de3660",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/test_host_validation.py",
+      "original_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "published_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/base_fixture.py",
+      "original_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "published_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/driver/cask_phys_ce.inc",
+      "original_sha256": "87baa4841793469e438546ef5fed0de5312c3ec3a969a5259afc1d88a82a0b0c",
+      "published_sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/driver/physical-ce.patch",
+      "original_sha256": "544293b07718a8dcf3403006e39dd68e55323475695c0933b4ab30005a9ccb8e",
+      "published_sha256": "bb3353be06e02d28f6257d57b27e68e9ad9086b9af08d9c80d6e12bea986be31",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/driver/cask_phys_ce_ioctl.h",
+      "original_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "published_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/driver/cask_sys_source_control.inc",
+      "original_sha256": "8dc4da54365b76c6395d9ad3402e3e47893c016c82977118b8ca24a1871e8366",
+      "published_sha256": "8dc4da54365b76c6395d9ad3402e3e47893c016c82977118b8ca24a1871e8366",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/results/qualified.json",
+      "original_sha256": "4e2ee3dba5640e13cf69799de855c0e9bb03bb32f29cf2b4d62befc64afc6ccd",
+      "published_sha256": "4e2ee3dba5640e13cf69799de855c0e9bb03bb32f29cf2b4d62befc64afc6ccd",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/results/result.log",
+      "original_sha256": "9cb461eeae84ec66af6f9b0130adc3fd274362982e48086c7e5c21d964bb0ed6",
+      "published_sha256": "55621e19fe9bbd405519274d2017866de01a642130c61b49a9cd9489b2f2695e",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/host-source/results/kernel-research.log",
+      "original_sha256": "78b038f8e4f3d5e75289ab01b9d38643f6fa9f67077704d0db808e6459240fc8",
+      "published_sha256": "c826bda16533fc8ec7c137ce831b2e7e124feb643bc95088a57181566b6e38d9",
+      "redacted": true,
+      "transformation": "selected research lines plus identifier redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/peer_physical_pull.cu",
+      "original_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "published_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/protocol.h",
+      "original_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "published_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/phys_pull_client.h",
+      "original_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "published_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/pcie_diag.h",
+      "original_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "published_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/base_log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/host_log_validation.py",
+      "original_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "published_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/bar0_log_validation.py",
+      "original_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "published_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/source-review.json",
+      "original_sha256": "ff21084177c40245c975d1239663e274787a2c748324b652dfcd61e8d0eb1694",
+      "published_sha256": "ff21084177c40245c975d1239663e274787a2c748324b652dfcd61e8d0eb1694",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/test_bar0_validation.py",
+      "original_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "published_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/host_fixture.py",
+      "original_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "published_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/base_fixture.py",
+      "original_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "published_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/driver/cask_bar0_read_control.inc",
+      "original_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "published_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/driver/cask_phys_ce.inc",
+      "original_sha256": "87baa4841793469e438546ef5fed0de5312c3ec3a969a5259afc1d88a82a0b0c",
+      "published_sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/driver/physical-ce.patch",
+      "original_sha256": "24880609dfa9cfd7ac811fd5ad5ec6ddfc4d5488bfa325525b80f699228490e0",
+      "published_sha256": "d9c049c0334e03484cacabf2ef0bdac78084925691decfc0fb4bd3f36b047c41",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/driver/cask_phys_ce_ioctl.h",
+      "original_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "published_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/driver/cask_sys_source_control.inc",
+      "original_sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63",
+      "published_sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/results/qualified.json",
+      "original_sha256": "896917608298f85642a864662e6c92bfbaa685b956371288a121783e2de0bc5e",
+      "published_sha256": "896917608298f85642a864662e6c92bfbaa685b956371288a121783e2de0bc5e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/results/result.log",
+      "original_sha256": "a142715e836c9e3fccedd6548c985985e08f5296823f2c0e37d2373cb0f7d503",
+      "published_sha256": "e8569c43961a5d0b1c4125f205273ecece4feeec4d64f319888d40749dc263c6",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/bar0-read/results/kernel-research.log",
+      "original_sha256": "5e4f29b134216be2f4165856ffea0adde38d62432b380edca85a989ea85c2d8c",
+      "published_sha256": "66b3cf777cd8212be3396b09a11d6d5681026718f94106053355dbfcc9fb6380",
+      "redacted": true,
+      "transformation": "selected research lines plus identifier redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/peer_physical_pull.cu",
+      "original_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "published_sha256": "cd570b5cd35815f484f2e074b1027ec7c06cae02d34cb4bbf5bf0bd104335319",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/protocol.h",
+      "original_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "published_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/phys_pull_client.h",
+      "original_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "published_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/pcie_diag.h",
+      "original_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "published_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/base_log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/host_log_validation.py",
+      "original_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "published_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/bar0_log_validation.py",
+      "original_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "published_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/pramin_log_validation.py",
+      "original_sha256": "6e9e86ae0eb5635fbe759564e21ef71812f74cfa821bbf849d0b7cd1b57b40ae",
+      "published_sha256": "6e9e86ae0eb5635fbe759564e21ef71812f74cfa821bbf849d0b7cd1b57b40ae",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/source-review.json",
+      "original_sha256": "3007c4e8b65ec845b8423ac6d508d31789531adad0eadedc1b01a626fc71b456",
+      "published_sha256": "3007c4e8b65ec845b8423ac6d508d31789531adad0eadedc1b01a626fc71b456",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/test_pramin_validation.py",
+      "original_sha256": "83fcc0e0e887ed651288b068164ad210e73b27b42adf50797e4203b968ceaa39",
+      "published_sha256": "83fcc0e0e887ed651288b068164ad210e73b27b42adf50797e4203b968ceaa39",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/test_bar0_validation.py",
+      "original_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "published_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/host_fixture.py",
+      "original_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "published_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/base_fixture.py",
+      "original_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "published_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/cask_bar0_read_control.inc",
+      "original_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "published_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/cask_pramin_push_control.inc",
+      "original_sha256": "62893b8425367fddbfc5353d9ee49c035a990eba00bd4e7a0fdb8cbc1abb53fa",
+      "published_sha256": "62893b8425367fddbfc5353d9ee49c035a990eba00bd4e7a0fdb8cbc1abb53fa",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/cask_phys_ce.inc",
+      "original_sha256": "87baa4841793469e438546ef5fed0de5312c3ec3a969a5259afc1d88a82a0b0c",
+      "published_sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/physical-ce.patch",
+      "original_sha256": "70f37bf68f2d6f4a2642bd83a1303c74d461dfa05be0490d528158c004fb6811",
+      "published_sha256": "e75857836db73db6db64300f2f65460854af65d04071d33c93a92df898dc2aa2",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/cask_phys_ce_ioctl.h",
+      "original_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "published_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/driver/cask_sys_source_control.inc",
+      "original_sha256": "3947cf4cc2013662b337d0bbed3ccd3d60d048a42a2a9d67204ebe62e2e00dd7",
+      "published_sha256": "3947cf4cc2013662b337d0bbed3ccd3d60d048a42a2a9d67204ebe62e2e00dd7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/results/qualified.json",
+      "original_sha256": "372fb91037790b295ec3bfe97b12c94ebe21231c4bb5ba69b13d8ccf88a5e403",
+      "published_sha256": "372fb91037790b295ec3bfe97b12c94ebe21231c4bb5ba69b13d8ccf88a5e403",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/results/result.log",
+      "original_sha256": "bc1fcd8f7e7932eb1ee2a4513bce724d42414b75f11f51e127617f8cc276d3e1",
+      "published_sha256": "dc58c2f366a8a46531098b0a314062fc08aff14222d80952460ad8bce2be1eb0",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/pramin-push/results/kernel-research.log",
+      "original_sha256": "9987d5800ea075d49ca744a09aef792faff2b9ab71e45ac67df3f070b697ec2f",
+      "published_sha256": "8091831027ac5ced8790aedd84c5c00c645d6dc02b6046948630893e91bf392d",
+      "redacted": true,
+      "transformation": "selected research lines plus identifier redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/peer_physical_pull.cu",
+      "original_sha256": "365dcab07dcc04ac5764b148f4d1a6cce64e9f92631d314f64343216e1621939",
+      "published_sha256": "365dcab07dcc04ac5764b148f4d1a6cce64e9f92631d314f64343216e1621939",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/protocol.h",
+      "original_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "published_sha256": "80dda16081bc32fc7289170327cfca31d780c1d398bea207c4b9a61d9ac71566",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/phys_pull_client.h",
+      "original_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "published_sha256": "5f6fecca5e572ea4ed46fc81df889a8c554a48cddad02d32deba412de0d74e47",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/pcie_diag.h",
+      "original_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "published_sha256": "3101ffd749d042a6515075dd5826c2c6c8eebdc395608411dcf1b283b179ce0d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/aer_report.h",
+      "original_sha256": "58219c55e1cc593157dda4ef1a7075ac662f997203fb2e1e73d9521074842d17",
+      "published_sha256": "58219c55e1cc593157dda4ef1a7075ac662f997203fb2e1e73d9521074842d17",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/base_log_validation.py",
+      "original_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "published_sha256": "29a7aa02bd2bb3b53a56a4b214d148b52984291d4408976ff9712c1d920d1d9b",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/host_log_validation.py",
+      "original_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "published_sha256": "31ed723be7650909e2332a7f1099df36c99712b17aafc647830d2e66cdcb897d",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/bar0_log_validation.py",
+      "original_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "published_sha256": "c8c5f97b4b189d3b3530020e644eeae6b3ac22d4a2edfb4ccad40d32acffceee",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/aer_log_validation.py",
+      "original_sha256": "64df69f1fef935eef371f900884f292322103d2fd7bd16438699738f1a0872a7",
+      "published_sha256": "64df69f1fef935eef371f900884f292322103d2fd7bd16438699738f1a0872a7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/source-review.json",
+      "original_sha256": "edb8058b9a034468c60628d510529fc44f147f65df9899c64914a9f2c327c59a",
+      "published_sha256": "edb8058b9a034468c60628d510529fc44f147f65df9899c64914a9f2c327c59a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/test_aer_validation.py",
+      "original_sha256": "17b5ac9fa2d51f6045664bfd6a5d44fbd1cb3474a3f07fd6a4fb139f9c938c3f",
+      "published_sha256": "17b5ac9fa2d51f6045664bfd6a5d44fbd1cb3474a3f07fd6a4fb139f9c938c3f",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/test_bar0_validation.py",
+      "original_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "published_sha256": "5d5e1b997e70183d27921e851d9d19db7833567f2042f0b6f5c06d766f910f09",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/test_aer_masks.cpp",
+      "original_sha256": "ce5512dada11cf5cfe8d4ddf1211b27153171cdc8d2aa817c207b133e15b29e7",
+      "published_sha256": "ce5512dada11cf5cfe8d4ddf1211b27153171cdc8d2aa817c207b133e15b29e7",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/host_fixture.py",
+      "original_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "published_sha256": "c4becd2bffad0a741e1171133f98b7b1b8bb59482d52aea92f2a596a34819f89",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/base_fixture.py",
+      "original_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "published_sha256": "a07f6b5a0ac2ab93ceb7132f8f39479e536d4b8a8b44c1a17b1064d3a5f55564",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/driver/cask_bar0_read_control.inc",
+      "original_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "published_sha256": "7e00e328fba3dbec2d867c2ab7df3e68a842721d6644edc06b3ce26c3f9315ed",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/driver/cask_phys_ce.inc",
+      "original_sha256": "87baa4841793469e438546ef5fed0de5312c3ec3a969a5259afc1d88a82a0b0c",
+      "published_sha256": "8f5b946c0a07704e0961e80cead7c830c296fd7fbd1cd0cf753593027e0e6dcf",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/driver/physical-ce.patch",
+      "original_sha256": "24880609dfa9cfd7ac811fd5ad5ec6ddfc4d5488bfa325525b80f699228490e0",
+      "published_sha256": "d9c049c0334e03484cacabf2ef0bdac78084925691decfc0fb4bd3f36b047c41",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/driver/cask_phys_ce_ioctl.h",
+      "original_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "published_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/driver/cask_sys_source_control.inc",
+      "original_sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63",
+      "published_sha256": "0785aaaca4efdc028d054434d16bfca3dcaa5ee24e5aa1fe041dc4baca757d63",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/results/qualified.json",
+      "original_sha256": "3df2f3457c43f38858940e9f7d1064f7c422aa7bcaf6f5baec8b87fc03c1852e",
+      "published_sha256": "3df2f3457c43f38858940e9f7d1064f7c422aa7bcaf6f5baec8b87fc03c1852e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/results/result.log",
+      "original_sha256": "0e0c7332f03ccb967cb35ac94757a1c3a3902c5ba5090d978d942585a324c126",
+      "published_sha256": "43daeb196f9006a0da08dacdee1f51eb541e2870c478f1b1a812daf8fe896a3a",
+      "redacted": true,
+      "transformation": "identifier/path redaction"
+    },
+    {
+      "path": "experiments/physical-route-controls/aer-report/results/kernel-research.log",
+      "original_sha256": "3edf34bd851ab23d13dbd1158a0c55eaae32375f8be90020bde8576af6a75130",
+      "published_sha256": "8e55cf2c30b09d197c32b1ae8983c7a1b7fe11664e9de477420739f62593fe88",
+      "redacted": true,
+      "transformation": "selected research lines plus identifier redaction"
+    }
+  ],
+  "scope": "Qualified sources and diagnostic logs; no deployment bundle"
+}

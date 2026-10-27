@@ -13,7 +13,7 @@
 
 ## Why this repository exists
 
-This repository collects **Piero Borgatta / CaskLogic's** investigation of 20–21 October 2026: CUDA tests, experimental NVIDIA RM/UVM modifications, BIOS/FSP analysis, measurements and negative results. It gives researchers familiar with PCIe, Intel TCSS, USB4 or NVIDIA drivers concrete evidence to review and a basis for proposing the next useful diagnostic step.
+This repository collects **Piero Borgatta / CaskLogic's** investigation of 20–27 October 2026: CUDA tests, experimental NVIDIA RM/UVM modifications, BIOS/FSP analysis, measurements and negative results. It gives researchers familiar with PCIe, Intel TCSS, USB4 or NVIDIA drivers concrete evidence to review and a basis for proposing the next useful diagnostic step.
 
 **There is no verified fix for bidirectional P2P.** A reported capability, a changed register or a completed DMA command does not prove correct payload delivery. Successful comparisons in one direction do not qualify the experimental implementation for production, atomics, NCCL or training.
 
@@ -56,9 +56,13 @@ This establishes the complete value distribution, extending the earlier first-mi
 
 ### Same-allocation follow-up
 
-The [latest native experiment](experiments/same-allocation/results/native-20261021/README.md) retains **two persistent allocations and peer windows**, both RW on both GPUs, for 12 **PUSH → PULL → PUSH** brackets. All 12 A2000→Ada PUSH cases succeed, including the writes immediately after failed reads. All 12 Ada→A2000 PUSH cases retain their complete sentinel; all 12 PULL cases return only `ffffffff`. Fresh source patterns distinguish each case from previous contents.
+The [full-buffer same-allocation experiment](experiments/same-allocation/results/native-20261021/README.md) retains **two persistent allocations and peer windows**, both RW on both GPUs, for 12 **PUSH → PULL → PUSH** brackets. All 12 A2000→Ada PUSH cases succeed, including the writes immediately after failed reads. All 12 Ada→A2000 PUSH cases retain their complete sentinel; all 12 PULL cases return only `ffffffff`. Fresh source patterns distinguish each case from previous contents.
 
 **12 passes and 24 failures in 36 comparisons**, with 18 CE and 18 SM operations independently qualified by CUPTI. CUDA identities and instrumented BAR1/DMA/RM/UVM mappings remain stable. Thus the different PUSH/PULL allocations in the earlier experiment do not explain this asymmetry: the same Ada window accepts correct A2000 writes and fails A2000 reads. Software logs still do not identify the failing component or replace a hardware transaction trace. [Protocol, source and offline checks](experiments/same-allocation/README.md).
+
+### Physical-route controls — 27 October
+
+[Five further native runs](experiments/physical-route-controls/README.md) reproduce **3 passes and 9 failures in each 12-case peer suite**. Raw physical reads from ordinary host RAM pass on both GPUs, while four remote reads of a read-only BAR0 register return `ffffffff`. A separate private-VRAM PRAMIN/BAR0 alias preserves the write asymmetry: A2000→Ada succeeds, Ada→A2000 retains the sentinel. Enabling PCIe error reporting, with readback and restoration, captures no new AER error header. **No fix is verified.** These are four-byte raw-command/SM diagnostics without CUPTI, distinct from the earlier full-buffer captures.
 
 ### What has been tested
 

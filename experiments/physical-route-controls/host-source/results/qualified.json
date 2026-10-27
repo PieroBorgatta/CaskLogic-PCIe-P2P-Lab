@@ -1,0 +1,76 @@
+{
+  "status": "complete_verified",
+  "protocol_complete": true,
+  "program_rc": 5,
+  "comparisons": 12,
+  "failures": 9,
+  "physical_completed": 6,
+  "sm_completed": 6,
+  "initializations": 24,
+  "source_preserved": 12,
+  "data_all_comparisons_pass": false,
+  "classifications": [
+    "expected",
+    "expected",
+    "all_ones",
+    "all_ones",
+    "all_ones",
+    "expected",
+    "unchanged_sentinel",
+    "unchanged_sentinel",
+    "all_ones",
+    "all_ones",
+    "all_ones",
+    "unchanged_sentinel"
+  ],
+  "unexpected_payload_words": 0,
+  "known_synthetic_payload_only": true,
+  "P2P_solution_claimed": false,
+  "direct_route_proven": false,
+  "CE_method_submission_reported": true,
+  "vendor_supported_peer_read": false,
+  "physical_mapping_hardware_readback": false,
+  "core_peer_protocol_complete": true,
+  "host_controls_qualified": true,
+  "host_controls": [
+    {
+      "executor": 1,
+      "mode": 1,
+      "expected": "d404d4b1",
+      "actual": "d404d4b1",
+      "checked_gpu_words": 1024,
+      "source_words_preserved": 1024,
+      "pci_status_unchanged": true
+    },
+    {
+      "executor": 1,
+      "mode": 2,
+      "expected": "765d5e7a",
+      "actual": "765d5e7a",
+      "checked_gpu_words": 1024,
+      "source_words_preserved": 1024,
+      "pci_status_unchanged": true
+    },
+    {
+      "executor": 0,
+      "mode": 1,
+      "expected": "e6e18c1a",
+      "actual": "e6e18c1a",
+      "checked_gpu_words": 1024,
+      "source_words_preserved": 1024,
+      "pci_status_unchanged": true
+    },
+    {
+      "executor": 0,
+      "mode": 2,
+      "expected": "44b806d1",
+      "actual": "44b806d1",
+      "checked_gpu_words": 1024,
+      "source_words_preserved": 1024,
+      "pci_status_unchanged": true
+    }
+  ],
+  "host_control_comparisons": 4,
+  "host_control_failures": 0,
+  "total_comparisons_including_host_controls": 16
+}

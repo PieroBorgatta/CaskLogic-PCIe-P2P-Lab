@@ -1,0 +1,24 @@
+{
+  "scope": "local source review and CPU checks, no independent agent review of this extension",
+  "peer_emitter_identical": true,
+  "peer_launch_identical": true,
+  "other_eight_overlay_files_identical": [
+    "kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h",
+    "kernel-open/nvidia-uvm/uvm_gpu.c",
+    "kernel-open/nvidia-uvm/uvm_gpu.h",
+    "kernel-open/nvidia-uvm/uvm_map_external.c",
+    "kernel-open/nvidia-uvm/uvm_test.c",
+    "kernel-open/nvidia-uvm/uvm_test.h",
+    "kernel-open/nvidia-uvm/uvm_test_ioctl.h",
+    "kernel-open/nvidia-uvm/uvm_va_range.h"
+  ],
+  "abi_header_sha256": "48590ebca74b949525d6f6139aa189477c0f8e7d09641c7cd1bb1fddbff1fc38",
+  "host_controls": 4,
+  "positive_control_checked_words": 1024,
+  "pending_completion_preserves_private_buffers_and_existing_map_peer_module_refs": true,
+  "private_source_cache_flushed": true,
+  "physical_queries_after_host_control": true,
+  "gpu_probe_binary_unchanged": true,
+  "tests_python": 15,
+  "firmware_writes": false
+}

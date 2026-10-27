@@ -1,0 +1,37 @@
+{
+  "scope": "Root source review; no independent subagent review",
+  "unchanged_prior_overlay_files": [
+    "kernel-open/nvidia-uvm/cask_phys_ce.inc",
+    "kernel-open/nvidia-uvm/cask_phys_ce_ioctl.h",
+    "kernel-open/nvidia-uvm/uvm_gpu.c",
+    "kernel-open/nvidia-uvm/uvm_gpu.h",
+    "kernel-open/nvidia-uvm/uvm_map_external.c",
+    "kernel-open/nvidia-uvm/uvm_test.c",
+    "kernel-open/nvidia-uvm/uvm_test.h",
+    "kernel-open/nvidia-uvm/uvm_test_ioctl.h",
+    "kernel-open/nvidia-uvm/uvm_va_range.h",
+    "kernel-open/nvidia-uvm/cask_bar0_read_control.inc"
+  ],
+  "changed_prior_files": [
+    "kernel-open/nvidia-uvm/cask_sys_source_control.inc"
+  ],
+  "new_helper": "cask_pramin_push_control.inc",
+  "volatile_gpu_mmio_register": "NV_PBUS_BAR0_WINDOW=0x1700",
+  "gpu_register_mask": "BASE=23:0 TARGET=25:24, reserved bits preserved",
+  "alias_offset": "0x700000+(owned target physical & 0xffff)",
+  "pramin_window_cpu_baseline_words": 16,
+  "source_and_destination_baseline_words": 1024,
+  "source_words_rechecked": 1024,
+  "target_guard_words_rechecked": 1023,
+  "window_readback_before_and_after": true,
+  "window_restore_before_rm_calls": true,
+  "unconfirmed_completion_holds_private_buffers_and_outer_peer_refs": true,
+  "pci_config_writes": false,
+  "firmware_writes": false,
+  "vm_data_disks_mounted": false,
+  "host_data_relay": false,
+  "limitation": "Controlled native diagnostic only; lacks global RM/GSP/VBIOS window exclusion. No production transport claim.",
+  "primary_reference": "NVIDIA 19f3b34 kern_bus_gm107.c kbusSetBAR0WindowVidOffset_GM107 and kbusMemAccessBar0Window_GM107",
+  "test_count": 28,
+  "uvm_module_sha256": "4bb2899531774ab417df0b00566fe425d1cf2c48489449708b3dab1f376772e4"
+}
