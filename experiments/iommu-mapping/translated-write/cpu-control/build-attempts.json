@@ -1,0 +1,19 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "compile_failed",
+      "return_code": 2,
+      "reason": "mmiowb was unavailable in the inspected build interface",
+      "module_produced": false,
+      "installed": false,
+      "hardware_attempt": false
+    },
+    {
+      "attempt": 2,
+      "status": "built_and_later_executed",
+      "posted_write_flush": "iowrite32 followed by ioread32",
+      "private_uvm_module_sha256": "cfb2408f38d82dc72aa65f972b7c8836f3e6adc2d519cdde8747c36af6d3987c"
+    }
+  ]
+}

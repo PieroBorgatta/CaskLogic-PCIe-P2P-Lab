@@ -1,0 +1,21 @@
+{
+  "status": "reviewed_for_publication",
+  "abi": 1,
+  "scope": "Four-byte raw C7B5 writes from requester-private VIDMEM to an RM-managed owner-private BAR1 page through an explicitly translated DMA IOVA.",
+  "owner_gpu_readback_primary": true,
+  "ordinary_peer_mappings": 0,
+  "host_staging_for_peer": false,
+  "dma_direction": "DMA_FROM_DEVICE",
+  "private_executed_artifacts": {
+    "uvm_module_sha256": "11a5522bfd267b59d2f378028cb5d975fb7ca72f2672ae6c3b6d9c52681eb008",
+    "client_sha256": "fc531e0710603db1abb6af56400342367effe62435a0f9cc1f2b25991bbee4fd",
+    "validator_sha256": "5eb51d2d6bfc28728e7b7dced996770f13bb163fab9d65ed4c30726882c88c2e"
+  },
+  "redaction": "The published driver uses the repository's two fictional GPU UUIDs. The private executed module was built from the original guarded source and therefore has a different hash.",
+  "limitations": [
+    "Two successful words qualify only this allocation, mapping, direction and raw-command protocol.",
+    "An unchanged sentinel does not establish whether a PCIe write TLP was emitted.",
+    "The run contains no CUPTI record or physical TLP capture and does not identify a unique failing component."
+  ],
+  "P2P_solution_claimed": false
+}

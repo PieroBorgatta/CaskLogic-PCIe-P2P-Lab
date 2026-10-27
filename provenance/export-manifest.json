@@ -7950,6 +7950,307 @@
       "published_sha256": "5a9b101160c1ee2efefc4593ec6d37824ce1c3ca22fb5e07b780e839f3f5346f",
       "redacted": true,
       "transformation": "scoped research extraction/identifier redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/attempt-01/kernel-research.log",
+      "original_sha256": "6d887cb94c753058f9e0258052bc0f0716e27b9bbce1d86c879491a45de1abf6",
+      "published_sha256": "11667cdc1058e389007c8c44c5aeb42f3d62a0c30d5fa1d31500ad3ceaeb422d",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/attempt-01/qualified.json",
+      "original_sha256": "f4ad8bb407d16f972920382e9c0fddd33fdcb1e87565c17fdd25679c6d3ef319",
+      "published_sha256": "f4ad8bb407d16f972920382e9c0fddd33fdcb1e87565c17fdd25679c6d3ef319",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/attempt-01/result-markers.log",
+      "original_sha256": "d9a8ca738a8db3cc4c57b98c538bd73a81a2e41ef95140abdf6f45ccc5ad9d6f",
+      "published_sha256": "637784b29948b9a08c1e562ebb9dd5aa66d48bca1a8e1f342810b5fca5d7dca7",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/build-inputs.json",
+      "original_sha256": "6666a5f09f79155f2f8130aee8d7711c2dbb678c30fd9df0c0352ac58f66d341",
+      "published_sha256": "6666a5f09f79155f2f8130aee8d7711c2dbb678c30fd9df0c0352ac58f66d341",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/compile-manifest.json",
+      "original_sha256": "e2939c4ef5a74b7fe5fbb487d37c6e301b47c6e1a6ef7014b0e892a9f25e68cb",
+      "published_sha256": "e2939c4ef5a74b7fe5fbb487d37c6e301b47c6e1a6ef7014b0e892a9f25e68cb",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/driver/cask_iova_write.inc",
+      "original_sha256": "34549178eaabc0af846bfa16efdcedffde3dc3333f1ad2d8cde43a36fb282f63",
+      "published_sha256": "515364fa0bbaf58edc56d8ffe2c49a6951f5f08697fe8e616d28a527c0329b2d",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/driver/cask_iova_write_ioctl.h",
+      "original_sha256": "7b6f0ce737123a4fee78eab705d8fbbe46aeafe27d9b656c020e0e7f06b60d4a",
+      "published_sha256": "7b6f0ce737123a4fee78eab705d8fbbe46aeafe27d9b656c020e0e7f06b60d4a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/driver/iova-write.patch",
+      "original_sha256": "5887c4e1e480b72cc7dbcc0abf145989efd89c87b4e22b9b2d380dbfcf7c4b04",
+      "published_sha256": "b57bb0b09b7e67edf9b5d59e6c43badf4482f59446475b0a8f5df0f53af1dee2",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/iova_write_client.cpp",
+      "original_sha256": "1c38f1c59f5ded5de067826889bd476cf5776092da4bcc211031185efe3a2201",
+      "published_sha256": "1c38f1c59f5ded5de067826889bd476cf5776092da4bcc211031185efe3a2201",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/iova_write_validation.py",
+      "original_sha256": "5eb51d2d6bfc28728e7b7dced996770f13bb163fab9d65ed4c30726882c88c2e",
+      "published_sha256": "5eb51d2d6bfc28728e7b7dced996770f13bb163fab9d65ed4c30726882c88c2e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/results/kernel-research.log",
+      "original_sha256": "844d0c4eff8f4806bcf83528ea0049b0ea35d9749398afaf311d660f0c050c9d",
+      "published_sha256": "b5a0b4d3b4683d1bf856098401e047d135c27df862fda3e68f5591cb5947f0f4",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/results/qualified.json",
+      "original_sha256": "1fb5a2db39c451e08263ce62e242459bf721cb6a2e1fdca5c7dc89f9113e3f15",
+      "published_sha256": "1fb5a2db39c451e08263ce62e242459bf721cb6a2e1fdca5c7dc89f9113e3f15",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/results/result-markers.log",
+      "original_sha256": "fd6c0c1c6ca9ac1daf5518b508e12af727e2444aa8da501cc7395c23eebd581f",
+      "published_sha256": "8154a671db350c582c4ae50fc6c7d5252ce35c4be7038718bd838f927e5f8467",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/source-review.json",
+      "original_sha256": "0ba76c7c956be4d3191edddb3ae77368b65f66e1c191256c00244fa36cfa138e",
+      "published_sha256": "0ba76c7c956be4d3191edddb3ae77368b65f66e1c191256c00244fa36cfa138e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/test_iova_write_validation.py",
+      "original_sha256": "58225aedaa6c8a663a30de409033ba16bdd8f0dc98b4e68e5712417305ac2a20",
+      "published_sha256": "4aaafaf4a0dfb32309c0f57c1fb005d4e20045d376b4c1af19656ed1a125228d",
+      "redacted": true,
+      "transformation": "synthetic storage device/path literal generalization"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/write-only/validator-revision.json",
+      "original_sha256": "3d4f8f6b18dad13d1f1844a0edeffce2cc08b9085437941dfd080c85b8541f1a",
+      "published_sha256": "3d4f8f6b18dad13d1f1844a0edeffce2cc08b9085437941dfd080c85b8541f1a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/build-attempts.json",
+      "original_sha256": "db289f74d66a42dc459a108739c316b0fd3046a954a2d0d09fa910b9893cae20",
+      "published_sha256": "db289f74d66a42dc459a108739c316b0fd3046a954a2d0d09fa910b9893cae20",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/build-inputs.json",
+      "original_sha256": "f39d567f7a42ed513c83c394a293f1484426a1c850bc5784d2c06a58d9a65460",
+      "published_sha256": "f39d567f7a42ed513c83c394a293f1484426a1c850bc5784d2c06a58d9a65460",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/compile-manifest.json",
+      "original_sha256": "13504249487ad5cf759468f3993f049e37dc1a9c05855d61133035eb2849270a",
+      "published_sha256": "13504249487ad5cf759468f3993f049e37dc1a9c05855d61133035eb2849270a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/driver/cask_iova_write.inc",
+      "original_sha256": "10ee5f2ce2e81203247c649368a96956c497fc96c990c3f5650f2754f9466bd3",
+      "published_sha256": "58326a1a0a3641885e8fd2b1a7f0d6dde6b81eb780e3012dada3d73c7014772c",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/driver/cask_iova_write_ioctl.h",
+      "original_sha256": "aa0d1fb60a1b57eb31c930b1aff2961f477cc92bdaa964a6c9026a912d77ef41",
+      "published_sha256": "aa0d1fb60a1b57eb31c930b1aff2961f477cc92bdaa964a6c9026a912d77ef41",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/driver/iova-write.patch",
+      "original_sha256": "caeb5d01172c40c0e1f238506df397848c5575afc6b0f639cf7673635384122b",
+      "published_sha256": "c10f4f775c7efe681145629aa9fb41659d02a762cfe45ff14bc0bc2ad754c3e7",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/iova_write_client.cpp",
+      "original_sha256": "ee456269b2fb9a866f1a96b639bf41528a93a9759b89153526f26030c8aaa709",
+      "published_sha256": "ee456269b2fb9a866f1a96b639bf41528a93a9759b89153526f26030c8aaa709",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/iova_write_validation.py",
+      "original_sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef",
+      "published_sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/results/kernel-research.log",
+      "original_sha256": "6511ae85c486a2e63bdf949f50925e39cfe5fa5ddbb409142c9a5d16e4661183",
+      "published_sha256": "a32412097b7e3def0f19a13839135db1b523717496be6f1deb15e7c1056e39d3",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/results/qualified.json",
+      "original_sha256": "97faf6490756f93e89cc7ab190d6e83a2bee501a5a2e1c24abd3001e55a278f4",
+      "published_sha256": "97faf6490756f93e89cc7ab190d6e83a2bee501a5a2e1c24abd3001e55a278f4",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/results/result-markers.log",
+      "original_sha256": "6dae8ea12be131b61879f0760c64a8bb9b5e3f8a77d7f33ed1a1f2ee69b23652",
+      "published_sha256": "7871b915c2a4da2cc96350b1d41c26019b0d422b245e3217863c273e7fe9a9a0",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/source-review.json",
+      "original_sha256": "0744c18d4fd62862561986b449c73ae8c53fe72a7855e4e4e83855898fba8a44",
+      "published_sha256": "0744c18d4fd62862561986b449c73ae8c53fe72a7855e4e4e83855898fba8a44",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/test_iova_write_validation.py",
+      "original_sha256": "8fd473a275351cb8765ef7a2737dfcb80ac7e7804a79ceaf581256e3535fd3f2",
+      "published_sha256": "91f3c51d0e455ac69bb1e8c89b0f944dbc6316e2269fcf3480b7acc61604a83e",
+      "redacted": true,
+      "transformation": "synthetic storage device/path literal generalization"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/cpu-control/validator-revision.json",
+      "original_sha256": "a2874d72d59795c3d0a96c7b30fb739e0b97a81c57dcaba1a582c791c3a8d757",
+      "published_sha256": "a2874d72d59795c3d0a96c7b30fb739e0b97a81c57dcaba1a582c791c3a8d757",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/build-inputs.json",
+      "original_sha256": "d761d14d39e011a95aea7b1b02f08a038ae66f7ef670b34dcb9427a06be4df97",
+      "published_sha256": "d761d14d39e011a95aea7b1b02f08a038ae66f7ef670b34dcb9427a06be4df97",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/compile-manifest.json",
+      "original_sha256": "01733bbaff6f495df8e207c6253a40717e16f380d10ae5b9fea821bf3aa5c317",
+      "published_sha256": "01733bbaff6f495df8e207c6253a40717e16f380d10ae5b9fea821bf3aa5c317",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/driver/cask_iova_write.inc",
+      "original_sha256": "de8d7c0fc36379d2fa290fa63b4ad8121641fd0501675df89487bd0ae3f7d3dd",
+      "published_sha256": "f8514f56dbe0a9284c721f52e6e0af48c531511e5bf1ddc32e9284ee5c7d57ee",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/driver/cask_iova_write_ioctl.h",
+      "original_sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22",
+      "published_sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/driver/iova-write.patch",
+      "original_sha256": "ec1b70748a5eb137e771b19b2d4e4ca419e4e1e5974a3662eddb6882d8277a4f",
+      "published_sha256": "73ed366f887b0f2200db09c77be23e9e2f4dc1d0999fc1e88adfd91825232c0d",
+      "redacted": true,
+      "transformation": "GPU UUID identifier redaction; patch regenerated consistently"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/iova_write_client.cpp",
+      "original_sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1",
+      "published_sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/iova_write_validation.py",
+      "original_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+      "published_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/results/kernel-research.log",
+      "original_sha256": "31f857e88bae19026211e7424a5dd01200289bb0436811f33a449528530e8b10",
+      "published_sha256": "484a6c2cc28bf9b12c027b5dd1a2f64a8944179008d016b7032ba0b98a922895",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/results/qualified.json",
+      "original_sha256": "9351ce800e3f071bbbb293169cc393f37b317441ac7c2d53687e8deba836030a",
+      "published_sha256": "9351ce800e3f071bbbb293169cc393f37b317441ac7c2d53687e8deba836030a",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/results/result-markers.log",
+      "original_sha256": "0f28ae6c1e7019ac95d1df3810dcd49420e878aaf574f5a36147db5b87938a49",
+      "published_sha256": "0e0bb5c35e032c41189be2759ad7ceda16b576c5a284602bd05e4f0b9ff8c665",
+      "redacted": true,
+      "transformation": "scoped research extraction and identifier/path redaction"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/source-review.json",
+      "original_sha256": "9044b117b5a04b262e008f08cdd69bfb8bf337868a29cc285a463444170f383e",
+      "published_sha256": "9044b117b5a04b262e008f08cdd69bfb8bf337868a29cc285a463444170f383e",
+      "redacted": false,
+      "transformation": "none"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/test_iova_write_validation.py",
+      "original_sha256": "8de446e552b21c41d9a6357e2feb4a8b6ec433ab0fab5d3b07aad6e6df4b8f2e",
+      "published_sha256": "53e8c74c41e278dbfeab64510a543e3ef7ea5219dc61bc968fb6d7b92a379e19",
+      "redacted": true,
+      "transformation": "synthetic storage device/path literal generalization"
+    },
+    {
+      "path": "experiments/iommu-mapping/translated-write/self-loop/validator-revision.json",
+      "original_sha256": "c9b29c0a7398795fe3fa0a03c7f67f414b01636bfb191729a16e06865fc9e791",
+      "published_sha256": "c9b29c0a7398795fe3fa0a03c7f67f414b01636bfb191729a16e06865fc9e791",
+      "redacted": false,
+      "transformation": "none"
     }
   ],
   "omitted_remote_orchestration": [],

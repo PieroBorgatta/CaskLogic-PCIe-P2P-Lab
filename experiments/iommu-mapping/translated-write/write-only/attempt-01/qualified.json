@@ -1,0 +1,8 @@
+{
+  "P2P_solution_claimed": false,
+  "error": "Missing/duplicate marker: IOVA_WRITE_BEGIN abi=1 private_rm_vidmem_target=1 dma_direction=DMA_FROM_DEVICE peer_writes_only=1 ordinary_peer_access=0 host_staging_for_peer=0 owner_gpu_readback_primary=1",
+  "general_P2P_proven": false,
+  "logs_are_partial_evidence": true,
+  "protocol_complete": false,
+  "status": "incomplete_preserved"
+}

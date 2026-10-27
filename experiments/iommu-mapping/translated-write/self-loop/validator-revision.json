@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27",
+  "status": "qualified_and_replayed",
+  "private_validator_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+  "published_validator_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+  "private_test_source_sha256": "8de446e552b21c41d9a6357e2feb4a8b6ec433ab0fab5d3b07aad6e6df4b8f2e",
+  "published_test_source_sha256": "53e8c74c41e278dbfeab64510a543e3ef7ea5219dc61bc968fb6d7b92a379e19",
+  "test_transformation": "Only synthetic storage device and rejected data-mount fixture names were generalized.",
+  "synthetic_tests": 12,
+  "synthetic_status": "PASS",
+  "published_record_replay": "PASS",
+  "required_claims": {
+    "self_bar1_writes": "0/4",
+    "host_ram_controls": "8/8",
+    "cpu_bar1_controls": "2/2 non-P2P",
+    "cross_gpu_peer_transfers": 0,
+    "inter_gpu_async_fault_gate_passed": true,
+    "general_P2P_proven": false
+  }
+}

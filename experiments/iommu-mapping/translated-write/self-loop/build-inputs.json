@@ -1,0 +1,33 @@
+{
+  "status": "reviewed_for_publication",
+  "scope": "CPU-built native RAM-boot diagnostic; publication metadata only.",
+  "hardware_operations_during_publication": false,
+  "driver_version": "595.99.02",
+  "kernel_version": "7.0.0-38-generic",
+  "private_build_contract_sha256": "3ec3b7071669db008088b4c9cbe72eef82d527d5920f4d210c05c954b02788f9",
+  "private_inputs": {
+    "driver_source_sha256": "de8d7c0fc36379d2fa290fa63b4ad8121641fd0501675df89487bd0ae3f7d3dd",
+    "abi_header_sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22",
+    "patch_sha256": "ec1b70748a5eb137e771b19b2d4e4ca419e4e1e5974a3662eddb6882d8277a4f",
+    "client_source_sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1"
+  },
+  "executed_private_outputs": {
+    "nvidia_uvm_module_sha256": "016939022d06b5b5c2c50493db40029c306317af8baaba8f6c24b99b5e5918f8",
+    "client_binary_sha256": "26d5d0b44cdf58fa677120cd738eab3c300c36f029dce4a16cb47c06d9fdb0c9"
+  },
+  "publication": {
+    "binaries_included": false,
+    "boot_images_included": false,
+    "installers_included": false,
+    "complete_logs_included": false,
+    "machine_identifiers_included": false,
+    "scoped_records_only": true
+  },
+  "ordinary_peer_mappings": 0,
+  "dma_direction": "DMA_FROM_DEVICE",
+  "self_bar1_loopback": true,
+  "cross_gpu_peer_transfer": false,
+  "inter_gpu_fault_gate_fail_closed": true,
+  "cpu_write_control_is_p2p": false,
+  "P2P_solution_claimed": false
+}

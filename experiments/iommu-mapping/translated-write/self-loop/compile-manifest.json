@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "status": "private_build_succeeded_public_binaries_omitted",
+  "compiler": "g++ -O2 -std=c++17 -Wall -Wextra -Werror",
+  "build_container_image_sha256": "2d75121aa511dcaa527ae12d36ee4a81145a5493dc20b5818bc4dbe973e6048c",
+  "runtime": "runc",
+  "network": "none",
+  "cpus": 2,
+  "memory": "2g",
+  "client_source_private_sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1",
+  "header_private_sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22",
+  "client_binary_private_sha256": "26d5d0b44cdf58fa677120cd738eab3c300c36f029dce4a16cb47c06d9fdb0c9",
+  "nvidia_uvm_module_private_sha256": "016939022d06b5b5c2c50493db40029c306317af8baaba8f6c24b99b5e5918f8",
+  "build_exit_code": 0,
+  "build_stage_gpu_execution": false,
+  "binary_executed_in_qualified_native_run": true,
+  "public_sources_identifier_redacted": true
+}

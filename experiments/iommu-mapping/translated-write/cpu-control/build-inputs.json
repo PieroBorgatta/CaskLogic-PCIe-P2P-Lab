@@ -1,0 +1,20 @@
+{
+  "status": "reviewed_for_publication",
+  "hardware_operations": false,
+  "private_original_sources": {
+    "driver/cask_iova_write.inc": "10ee5f2ce2e81203247c649368a96956c497fc96c990c3f5650f2754f9466bd3",
+    "driver/cask_iova_write_ioctl.h": "aa0d1fb60a1b57eb31c930b1aff2961f477cc92bdaa964a6c9026a912d77ef41",
+    "driver/iova-write.patch": "caeb5d01172c40c0e1f238506df397848c5575afc6b0f639cf7673635384122b",
+    "iova_write_client.cpp": "ee456269b2fb9a866f1a96b639bf41528a93a9759b89153526f26030c8aaa709"
+  },
+  "private_executed_binaries": {
+    "nvidia-uvm.ko": "cfb2408f38d82dc72aa65f972b7c8836f3e6adc2d519cdde8747c36af6d3987c",
+    "iova_write_client": "8a331b4d139c10763fc183b92712ebc4c138fcc890f54256e2ee23b262f11642"
+  },
+  "binaries_published": false,
+  "ordinary_peer_mappings": 0,
+  "dma_direction": "DMA_FROM_DEVICE",
+  "cpu_write_control_after_peer_results": true,
+  "cpu_write_control_is_p2p": false,
+  "P2P_solution_claimed": false
+}

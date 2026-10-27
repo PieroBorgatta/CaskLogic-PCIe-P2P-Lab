@@ -1,0 +1,8 @@
+[    7.582932] CASKDMAR_BEGIN version=1 units=1 table_bytes=80 table_flags=05 register_writes=0
+[    7.582933] CASKDMAR_CAP base=fed91000 ver=00000050 cap=00d2008c40660462 ecap=0000000000f050da
+[    7.582936] CASKDMAR_SAMPLE index=0 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.584435] CASKDMAR_SAMPLE index=1 gsts=c7000000 pmen=00000000 translation_enabled=1 interrupt_remapping_enabled=1 protected_region_enabled=0 protected_region_status=0
+[    7.584441] CASKDMAR_END protocol_complete=1 register_writes=0
+[    7.599126] CASKDMAR_UNLOADED register_writes=0
+[    7.623573] Module nvidia is blacklisted
+[    7.643479] Module nvidia is blacklisted

@@ -1,0 +1,34 @@
+intel_iommu=on iommu.passthrough=0 iommu.strict=1 module_blacklist=nouveau
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+IOVA_DMAR_BEFORE_BEGIN
+IOVA_DMAR_BEFORE_END
+IOVA_WRITE_PARAMETER=Y BUILTIN_TESTS_PARAMETER=1
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+IOVA_WRITE_BEGIN abi=1 private_rm_vidmem_target=1 dma_direction=DMA_FROM_DEVICE peer_writes_only=1 ordinary_peer_access=0 host_staging_for_peer=0 owner_gpu_readback_primary=1
+IOVA_WRITE_GPU index=0 bdf=0000:01:00.0 local_registration_bytes=2097152 peer_mapping=0
+IOVA_WRITE_GPU index=1 bdf=0000:06:00.0 local_registration_bytes=2097152 peer_mapping=0
+IOVA_WRITE_FD fd=9 rv=0 status=0 flags=1 domain=3 valid=1
+IOVA_WRITE_FD fd=10 rv=0 status=16 flags=0 domain=0 valid=0
+IOVA_WRITE_FD_SELECTED matches=1 candidate_count=2
+IOVA_WRITE_IOCTL index=1 request=201 rv=0 errno=0 status=0 flags=5f domain=3 alias_mask=f host_mask=2d peer_mask=3 completed_mask=3f bar1_phys=4000120000 bar1_iova=f0dfc000 bar1_start=4000000000 pte_level=1 inputs_unchanged=1
+IOVA_WRITE_IOCTL index=0 request=202 rv=0 errno=0 status=0 flags=5f domain=3 alias_mask=f host_mask=2d peer_mask=0 completed_mask=3f bar1_phys=4600320000 bar1_iova=ed5fc000 bar1_start=4600000000 pte_level=1 inputs_unchanged=1
+IOVA_WRITE_END protocol_complete=1 p2p_solution_claimed=0
+NATIVE_TEST_RC=0
+IOVA_DMAR_AFTER_BEGIN
+IOVA_DMAR_AFTER_END
+IOVA_DATA_DISKS_UNMOUNTED
+rootfs / rootfs rw,size=16006744k,nr_inodes=4001686,inode64 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=16006744k,nr_inodes=4001686,mode=755,inode64 0 0
+tmpfs /run tmpfs rw,relatime,inode64 0 0
+probe-esp /mnt/esp vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 0
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+PROBE_COMPLETED
+SCRIPT_RC=0

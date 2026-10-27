@@ -1,0 +1,7 @@
+intel_iommu=on iommu.passthrough=0 iommu.strict=1 module_blacklist=nouveau,nvidia,nvidia_uvm,nvidia_drm,nvidia_modeset
+PEG_CCFG 00:01.0 04008077
+TCSS_CCFG 00:07.0 0e009077
+TCSS_CCFG 00:07.2 0e009077
+IOVA_DMAR_BEFORE_BEGIN
+IOVA_DMAR_BEFORE_END
+SCRIPT_RC=13

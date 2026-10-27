@@ -1,0 +1,22 @@
+{
+  "status": "reviewed_for_publication",
+  "abi": 2,
+  "scope": "ABI 1 translated private-BAR1 writes followed, only after all peer results, by one CPU write to each same RM-managed BAR1 allocation.",
+  "owner_gpu_readback_primary": true,
+  "cpu_control_after_peer_results": true,
+  "cpu_control_is_p2p": false,
+  "ordinary_peer_mappings": 0,
+  "host_staging_for_peer": false,
+  "private_executed_artifacts": {
+    "uvm_module_sha256": "cfb2408f38d82dc72aa65f972b7c8836f3e6adc2d519cdde8747c36af6d3987c",
+    "client_sha256": "8a331b4d139c10763fc183b92712ebc4c138fcc890f54256e2ee23b262f11642",
+    "validator_sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef"
+  },
+  "redaction": "The published driver uses fictional GPU UUIDs; the private executed module hash is preserved separately and is not expected from the redacted source.",
+  "limitations": [
+    "CPU BAR1 controls are host-route controls and are not P2P transfers.",
+    "A writable host BAR1 opening does not prove correct GPU-originated routing.",
+    "The four-byte raw-command run has no CUPTI or physical TLP trace."
+  ],
+  "P2P_solution_claimed": false
+}

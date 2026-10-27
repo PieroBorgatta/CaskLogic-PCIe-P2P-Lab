@@ -10,8 +10,8 @@
       "sha256": "f20730e20e51392b46add61904d4430ca466dd7aafb6b3f721c4c8f6452e24ee"
     },
     "LICENSE.md": {
-      "bytes": 1365,
-      "sha256": "cf929e995f78991299aeb03488e74360677e27482b5c5c47d817ff454c339204"
+      "bytes": 1424,
+      "sha256": "aac8d2593042a6e3753833fc54763ec249eb349bf940d13a156ea5b37dca00b5"
     },
     "LICENSES/GPL-2.0-only.txt": {
       "bytes": 18600,
@@ -26,8 +26,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 14890,
-      "sha256": "d67c818de69464c3b3ce1ff812b5e39b306260d6e1499d9b466fd0bf064d3b18"
+      "bytes": 15712,
+      "sha256": "692c3fc38da461834c8fc81711639a8dc14d7e8ca12ca055b5f078f5c3928def"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3706,24 +3706,24 @@
       "sha256": "71ec08323af4ab04e03680eabd0109cda5b94ffa89303fa296a2bcc37df977a6"
     },
     "docs/riproducibilita.md": {
-      "bytes": 3065,
-      "sha256": "b9878deae8ffb549d3ad82a9d17e0ed6353eaa87a37143e0279ea30b9a4ea476"
+      "bytes": 3929,
+      "sha256": "850388f84f770f6ed55ef90d1db6f77b0b2ab9dbd1fa7c5eed67308345676f4f"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 9803,
-      "sha256": "3f2df819bcf255512b30616d1d0885088654ded7a0d72301ba7577fc042aa0c4"
+      "bytes": 11553,
+      "sha256": "730136f9e14a681fa94d4bec2c6fbe32e1b5ede31d7180f2bf093ff3a57ee71f"
     },
     "experiments/iommu-mapping/README.md": {
-      "bytes": 7855,
-      "sha256": "c64bab9f4a82e70d883c7b266ead8716476115f5652a488e73ad7bbd5e033fe9"
+      "bytes": 12866,
+      "sha256": "068849c91f6cbfd5b5e16a577cab411058e31b29880d73553264470ec4edacc0"
     },
     "experiments/iommu-mapping/export-records.json": {
-      "bytes": 9161,
-      "sha256": "fff1c6d4bc9088cf22e4c3b4a70c17edcbf7be42b35fce7fcf3a4f4891c075d8"
+      "bytes": 25221,
+      "sha256": "ec66c21c6db0da54731b8602ece3879d84e73a0860f38d08f84312a36c189970"
     },
     "experiments/iommu-mapping/replay.py": {
-      "bytes": 1768,
-      "sha256": "26ebe8997046483b325c165771459b996dfa19af18a9802f0ca6b2dff50386ce"
+      "bytes": 5734,
+      "sha256": "709a81cf93ca59415173983d997abfe879c7d4e2bd8c0e6a8a5361fb93413dc8"
     },
     "experiments/iommu-mapping/status/Makefile": {
       "bytes": 23,
@@ -3764,6 +3764,182 @@
     "experiments/iommu-mapping/status/test_dmar_validation.py": {
       "bytes": 2508,
       "sha256": "c8d495f2cc6de60ee8a33821fab56c42ddb56d5d8204303139ad2b3e34083efc"
+    },
+    "experiments/iommu-mapping/translated-write/README.md": {
+      "bytes": 5458,
+      "sha256": "ed31f3d1fb05eb0378f1357bcd7a3791301492a705498af03371e07e763062f1"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/build-attempts.json": {
+      "bytes": 520,
+      "sha256": "db289f74d66a42dc459a108739c316b0fd3046a954a2d0d09fa910b9893cae20"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/build-inputs.json": {
+      "bytes": 952,
+      "sha256": "f39d567f7a42ed513c83c394a293f1484426a1c850bc5784d2c06a58d9a65460"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/compile-manifest.json": {
+      "bytes": 506,
+      "sha256": "13504249487ad5cf759468f3993f049e37dc1a9c05855d61133035eb2849270a"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/driver/cask_iova_write.inc": {
+      "bytes": 38346,
+      "sha256": "58326a1a0a3641885e8fd2b1a7f0d6dde6b81eb780e3012dada3d73c7014772c"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/driver/cask_iova_write_ioctl.h": {
+      "bytes": 1845,
+      "sha256": "aa0d1fb60a1b57eb31c930b1aff2961f477cc92bdaa964a6c9026a912d77ef41"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/driver/iova-write.patch": {
+      "bytes": 43475,
+      "sha256": "c10f4f775c7efe681145629aa9fb41659d02a762cfe45ff14bc0bc2ad754c3e7"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/iova_write_client.cpp": {
+      "bytes": 10993,
+      "sha256": "ee456269b2fb9a866f1a96b639bf41528a93a9759b89153526f26030c8aaa709"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/iova_write_validation.py": {
+      "bytes": 22237,
+      "sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/results/kernel-research.log": {
+      "bytes": 9926,
+      "sha256": "a32412097b7e3def0f19a13839135db1b523717496be6f1deb15e7c1056e39d3"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/results/qualified.json": {
+      "bytes": 11958,
+      "sha256": "97faf6490756f93e89cc7ab190d6e83a2bee501a5a2e1c24abd3001e55a278f4"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/results/result-markers.log": {
+      "bytes": 2029,
+      "sha256": "7871b915c2a4da2cc96350b1d41c26019b0d422b245e3217863c273e7fe9a9a0"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/source-review.json": {
+      "bytes": 1147,
+      "sha256": "0744c18d4fd62862561986b449c73ae8c53fe72a7855e4e4e83855898fba8a44"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/test_iova_write_validation.py": {
+      "bytes": 20394,
+      "sha256": "91f3c51d0e455ac69bb1e8c89b0f944dbc6316e2269fcf3480b7acc61604a83e"
+    },
+    "experiments/iommu-mapping/translated-write/cpu-control/validator-revision.json": {
+      "bytes": 489,
+      "sha256": "a2874d72d59795c3d0a96c7b30fb739e0b97a81c57dcaba1a582c791c3a8d757"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/build-inputs.json": {
+      "bytes": 1466,
+      "sha256": "d761d14d39e011a95aea7b1b02f08a038ae66f7ef670b34dcb9427a06be4df97"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/compile-manifest.json": {
+      "bytes": 887,
+      "sha256": "01733bbaff6f495df8e207c6253a40717e16f380d10ae5b9fea821bf3aa5c317"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/driver/cask_iova_write.inc": {
+      "bytes": 38582,
+      "sha256": "f8514f56dbe0a9284c721f52e6e0af48c531511e5bf1ddc32e9284ee5c7d57ee"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/driver/cask_iova_write_ioctl.h": {
+      "bytes": 1862,
+      "sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/driver/iova-write.patch": {
+      "bytes": 43731,
+      "sha256": "73ed366f887b0f2200db09c77be23e9e2f4dc1d0999fc1e88adfd91825232c0d"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/iova_write_client.cpp": {
+      "bytes": 11099,
+      "sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/iova_write_validation.py": {
+      "bytes": 26742,
+      "sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/results/kernel-research.log": {
+      "bytes": 10788,
+      "sha256": "484a6c2cc28bf9b12c027b5dd1a2f64a8944179008d016b7032ba0b98a922895"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/results/qualified.json": {
+      "bytes": 12915,
+      "sha256": "9351ce800e3f071bbbb293169cc393f37b317441ac7c2d53687e8deba836030a"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/results/result-markers.log": {
+      "bytes": 2980,
+      "sha256": "0e0bb5c35e032c41189be2759ad7ceda16b576c5a284602bd05e4f0b9ff8c665"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/source-review.json": {
+      "bytes": 3073,
+      "sha256": "9044b117b5a04b262e008f08cdd69bfb8bf337868a29cc285a463444170f383e"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/test_iova_write_validation.py": {
+      "bytes": 23773,
+      "sha256": "53e8c74c41e278dbfeab64510a543e3ef7ea5219dc61bc968fb6d7b92a379e19"
+    },
+    "experiments/iommu-mapping/translated-write/self-loop/validator-revision.json": {
+      "bytes": 916,
+      "sha256": "c9b29c0a7398795fe3fa0a03c7f67f414b01636bfb191729a16e06865fc9e791"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/attempt-01/kernel-research.log": {
+      "bytes": 743,
+      "sha256": "11667cdc1058e389007c8c44c5aeb42f3d62a0c30d5fa1d31500ad3ceaeb422d"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/attempt-01/qualified.json": {
+      "bytes": 385,
+      "sha256": "f4ad8bb407d16f972920382e9c0fddd33fdcb1e87565c17fdd25679c6d3ef319"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/attempt-01/result-markers.log": {
+      "bytes": 256,
+      "sha256": "637784b29948b9a08c1e562ebb9dd5aa66d48bca1a8e1f342810b5fca5d7dca7"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/build-inputs.json": {
+      "bytes": 867,
+      "sha256": "6666a5f09f79155f2f8130aee8d7711c2dbb678c30fd9df0c0352ac58f66d341"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/compile-manifest.json": {
+      "bytes": 506,
+      "sha256": "e2939c4ef5a74b7fe5fbb487d37c6e301b47c6e1a6ef7014b0e892a9f25e68cb"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/driver/cask_iova_write.inc": {
+      "bytes": 32312,
+      "sha256": "515364fa0bbaf58edc56d8ffe2c49a6951f5f08697fe8e616d28a527c0329b2d"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/driver/cask_iova_write_ioctl.h": {
+      "bytes": 1415,
+      "sha256": "7b6f0ce737123a4fee78eab705d8fbbe46aeafe27d9b656c020e0e7f06b60d4a"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/driver/iova-write.patch": {
+      "bytes": 36871,
+      "sha256": "b57bb0b09b7e67edf9b5d59e6c43badf4482f59446475b0a8f5df0f53af1dee2"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/iova_write_client.cpp": {
+      "bytes": 10599,
+      "sha256": "1c38f1c59f5ded5de067826889bd476cf5776092da4bcc211031185efe3a2201"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/iova_write_validation.py": {
+      "bytes": 18045,
+      "sha256": "5eb51d2d6bfc28728e7b7dced996770f13bb163fab9d65ed4c30726882c88c2e"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/results/kernel-research.log": {
+      "bytes": 8877,
+      "sha256": "b5a0b4d3b4683d1bf856098401e047d135c27df862fda3e68f5591cb5947f0f4"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/results/qualified.json": {
+      "bytes": 11095,
+      "sha256": "1fb5a2db39c451e08263ce62e242459bf721cb6a2e1fdca5c7dc89f9113e3f15"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/results/result-markers.log": {
+      "bytes": 1939,
+      "sha256": "8154a671db350c582c4ae50fc6c7d5252ce35c4be7038718bd838f927e5f8467"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/source-review.json": {
+      "bytes": 1214,
+      "sha256": "0ba76c7c956be4d3191edddb3ae77368b65f66e1c191256c00244fa36cfa138e"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/test_iova_write_validation.py": {
+      "bytes": 15698,
+      "sha256": "4aaafaf4a0dfb32309c0f57c1fb005d4e20045d376b4c1af19656ed1a125228d"
+    },
+    "experiments/iommu-mapping/translated-write/write-only/validator-revision.json": {
+      "bytes": 488,
+      "sha256": "3d4f8f6b18dad13d1f1844a0edeffce2cc08b9085437941dfd080c85b8541f1a"
     },
     "experiments/iommu-mapping/translated/attempt-01/kernel-research.log": {
       "bytes": 1203,
@@ -5350,8 +5526,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 416963,
-      "sha256": "4ed42e5d3930209ad3210b6d74e7025417bd53c0b03bcd2f1f9e4df59f736649"
+      "bytes": 432977,
+      "sha256": "1d8ae4be2c43e93e9d5facc9b5ca29850e162703eced685e33e7de1e7ee67199"
     },
     "provenance/payload-diagnostics-validation.json": {
       "bytes": 1115,

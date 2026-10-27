@@ -1,0 +1,8 @@
+{
+  "private_validator_sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef",
+  "published_validator_sha256": "228f363d555156ea61d24c53a9f2e2d510db966e2a67206efcb48091379a2aef",
+  "private_test_sha256": "8fd473a275351cb8765ef7a2737dfcb80ac7e7804a79ceaf581256e3535fd3f2",
+  "test_transformation": "Only synthetic mount-device/path literals were generalized; validation logic and case coverage are unchanged.",
+  "synthetic_tests": 11,
+  "hardware_operations": false
+}

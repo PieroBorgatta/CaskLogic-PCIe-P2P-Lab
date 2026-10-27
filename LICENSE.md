@@ -8,4 +8,4 @@ Il materiale è sperimentale, senza garanzia di funzionamento o idoneità. I nom
 
 The Linux Thunderbolt patch and include under `experiments/usb4-counters/kernel/` are GPL-2.0-only; the upstream driver copyright notices and SPDX identifiers apply. Other original diagnostic code follows the repository MIT license.
 
-The standalone status module `experiments/iommu-mapping/status/dmar_status.c` declares GPL-2.0. NVIDIA UVM-derived modifications under `experiments/iommu-mapping/translated/driver/` retain the upstream NVIDIA MIT/GPL terms described above.
+The standalone status module `experiments/iommu-mapping/status/dmar_status.c` declares GPL-2.0. NVIDIA UVM-derived modifications under `experiments/iommu-mapping/translated/driver/` and `experiments/iommu-mapping/translated-write/*/driver/` retain the upstream NVIDIA MIT/GPL terms described above.

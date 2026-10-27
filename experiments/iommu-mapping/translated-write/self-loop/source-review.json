@@ -1,0 +1,52 @@
+{
+  "status": "reviewed_for_publication",
+  "date": "2026-10-27",
+  "abi": 3,
+  "scope": "Isolated four-byte private-VRAM self-BAR1 writes through each GPU's own strict translated DMA domain.",
+  "protocol": {
+    "dma_direction": "DMA_FROM_DEVICE",
+    "private_rm_vidmem_target": true,
+    "self_bar1_loopback": true,
+    "cross_gpu_peer_transfer": false,
+    "ordinary_peer_mappings": 0,
+    "host_staging_for_self": false,
+    "isolated_client_processes": 2,
+    "inter_gpu_async_fault_gate_fail_closed": true,
+    "owner_gpu_readback_primary": true,
+    "cpu_write_control_after_self_results": true,
+    "cpu_write_control_is_p2p": false
+  },
+  "qualified_result": {
+    "host_ram_controls": "8/8",
+    "self_bar1_writes": "0/4",
+    "cpu_bar1_controls": "2/2",
+    "inter_gpu_async_fault_gate_passed": true,
+    "general_P2P_proven": false
+  },
+  "executed_private_artifacts": {
+    "nvidia_rm_module_sha256": "ab41b0a38e7ab92c0d1468b33c456c5c5c57501c67dfe5a666f49aed9fb6b1b5",
+    "nvidia_uvm_module_sha256": "016939022d06b5b5c2c50493db40029c306317af8baaba8f6c24b99b5e5918f8",
+    "client_binary_sha256": "26d5d0b44cdf58fa677120cd738eab3c300c36f029dce4a16cb47c06d9fdb0c9",
+    "validator_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+    "fault_gate_script_sha256": "ee0a592fd54a9274196fea65efc44700a6482a9cdcaf484ae0c74ebf48b82728",
+    "result_log_sha256": "0f28ae6c1e7019ac95d1df3810dcd49420e878aaf574f5a36147db5b87938a49",
+    "kernel_log_sha256": "31f857e88bae19026211e7424a5dd01200289bb0436811f33a449528530e8b10",
+    "collection_sha256": "6e26172278ce3a4937e3d49e2c20ede5932c6722ec43afa0aa6cdf8c81ce9d5b"
+  },
+  "source_identity": {
+    "driver_private_sha256": "de8d7c0fc36379d2fa290fa63b4ad8121641fd0501675df89487bd0ae3f7d3dd",
+    "driver_published_sha256": "f8514f56dbe0a9284c721f52e6e0af48c531511e5bf1ddc32e9284ee5c7d57ee",
+    "header_private_and_published_sha256": "8565834d76346956031265b6b7fedbea80b4b9fd07a8002e6702f249431a5c22",
+    "patch_private_sha256": "ec1b70748a5eb137e771b19b2d4e4ca419e4e1e5974a3662eddb6882d8277a4f",
+    "patch_published_sha256": "73ed366f887b0f2200db09c77be23e9e2f4dc1d0999fc1e88adfd91825232c0d",
+    "client_private_and_published_sha256": "03ac7f8740aa29a03da894af639ed448bf9532213bdbdaf548d2122c9c7aacc1",
+    "validator_private_and_published_sha256": "383ccecd7a68e323b39f1b04a9f9933cb1a092bb55d760b52ea3e1d948a7335e",
+    "redaction": "Only the two machine GPU UUID constants were replaced by the established public 00..01 and 00..02 placeholders; the patch was transformed identically."
+  },
+  "limitations": [
+    "Self-loopback is not a cross-GPU P2P transfer and cannot by itself diagnose the inter-branch route.",
+    "The result is limited to four-byte raw C7B5 SYS1/SYS2 writes and contains no physical TLP trace.",
+    "A preserved sentinel proves that the qualified target did not expose the expected word; it does not prove whether a write request was emitted.",
+    "The two CPU controls qualify the host route to the same private BAR1 pages and are not P2P transfers."
+  ]
+}
