@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "files": [
     {
       "path": "archive/gpu-audit-20261020/build_tools.py",
@@ -8307,6 +8307,34 @@
       "published_sha256": "e46e62b57be72a3a6a0942f275d415df2c34b4775d59e4323836ccd4728a756a",
       "redacted": false,
       "transformation": "new private/public validator identity record"
+    },
+    {
+      "path": "experiments/cpu-mmio-relay/README.md",
+      "original_sha256": "e464f708011da7067dcc95a825645a9eda46a73deb4f9a0d183b54e04476d98e",
+      "published_sha256": "e464f708011da7067dcc95a825645a9eda46a73deb4f9a0d183b54e04476d98e",
+      "redacted": false,
+      "transformation": "new sanitized public summary; private identifiers and artifacts omitted"
+    },
+    {
+      "path": "experiments/cpu-mmio-relay/qualified-result.json",
+      "original_sha256": "b96f933029ce2067ad92c099074c6e6660cdb4cfb0394cb3b8e1a7f9cb108e6a",
+      "published_sha256": "b96f933029ce2067ad92c099074c6e6660cdb4cfb0394cb3b8e1a7f9cb108e6a",
+      "redacted": false,
+      "transformation": "new derived public qualification; private evidence hashes and identifiers omitted"
+    },
+    {
+      "path": "experiments/cpu-mmio-relay/test_validate.py",
+      "original_sha256": "38b4f42ea46f0bd5083fdac72dfe6279d08136453ef43da5820d36850a97ae31",
+      "published_sha256": "38b4f42ea46f0bd5083fdac72dfe6279d08136453ef43da5820d36850a97ae31",
+      "redacted": false,
+      "transformation": "new public mutation tests over sanitized JSON only"
+    },
+    {
+      "path": "experiments/cpu-mmio-relay/validate.py",
+      "original_sha256": "a50edc6747a62d2234b79ee43b68d4918ecb6d524a28ae6af022bae9197e3127",
+      "published_sha256": "a50edc6747a62d2234b79ee43b68d4918ecb6d524a28ae6af022bae9197e3127",
+      "redacted": false,
+      "transformation": "new public fail-closed validator over sanitized JSON only"
     }
   ],
   "omitted_remote_orchestration": [],

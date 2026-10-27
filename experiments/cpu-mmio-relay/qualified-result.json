@@ -1,0 +1,56 @@
+{
+  "schema": "casklogic.cpu-mmio-relay.qualified-result.v1",
+  "experiment": "ABI5 CPU-MMIO BAR1 relay",
+  "date": "2026-10-28",
+  "status": "qualified_host_mediated_workaround",
+  "protocol_complete": true,
+  "errors": [],
+  "transfer": {
+    "correct": true,
+    "bytes": 4096,
+    "words": 1024,
+    "source": "private internal-GPU VRAM exposed through a driver-managed BAR1 mapping",
+    "destination": "private external-GPU VRAM exposed through a driver-managed BAR1 mapping",
+    "path": "CPU MMIO load -> general-purpose register -> CPU MMIO store",
+    "source_mismatches": 0,
+    "destination_mismatches": 0,
+    "guard_mismatches": 0
+  },
+  "memory": {
+    "host_payload_buffer_during_relay": false,
+    "validation_buffer_allocated_after_relay": true,
+    "ram_staging": false
+  },
+  "classification": {
+    "host_initiated": true,
+    "pcie_p2p": false,
+    "p2p_solution_claimed": false,
+    "performance_claimed": false
+  },
+  "single_diagnostic_timing": {
+    "elapsed_ns": 697839,
+    "approx_MB_s": 5.869548706793402,
+    "benchmark": false
+  },
+  "controls": {
+    "private_allocations": true,
+    "owner_gpu_readback": true,
+    "cpu_secondary_readback": true,
+    "guards_intact": true,
+    "runtime_restored": true,
+    "new_xid_dmar_aer_in_scope": false
+  },
+  "limitations": [
+    "The payload was moved by CPU MMIO load/store operations, not by a GPU peer transaction.",
+    "The result does not repair or qualify bidirectional PCIe P2P.",
+    "One 4 KiB diagnostic timing is not a performance benchmark.",
+    "The unsupported PEG-to-TCSS route is identified; the exact internal silicon block is not exposed."
+  ],
+  "privacy": {
+    "gpu_uuids_included": false,
+    "bus_or_physical_addresses_included": false,
+    "private_paths_included": false,
+    "binaries_or_kernel_modules_included": false,
+    "nvidia_derived_source_included": false
+  }
+}

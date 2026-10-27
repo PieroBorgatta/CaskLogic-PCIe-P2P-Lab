@@ -26,8 +26,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 16832,
-      "sha256": "e20de2926b017f0b7471e163422db26fcac71254d4dacb3442a2ded45e6abe97"
+      "bytes": 18106,
+      "sha256": "7cb4180d7d6e9c22fa755ab5dfa45c69d7b02cf84221770d0d8bb673cc59302e"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3710,8 +3710,24 @@
       "sha256": "b46ec032c6f6cd6b4d56f0ae3fe61284ebf997b364073547e4713c002b0e7de2"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 12777,
-      "sha256": "b219de86ecc3d0bcb2538de71c39efde0eb5b34cbf96dd441a61e74904d57198"
+      "bytes": 14502,
+      "sha256": "ae10705ff2ed8f0b121d64f132bd0f668547b0d9c72aaf02a3af01501147446e"
+    },
+    "experiments/cpu-mmio-relay/README.md": {
+      "bytes": 4047,
+      "sha256": "e464f708011da7067dcc95a825645a9eda46a73deb4f9a0d183b54e04476d98e"
+    },
+    "experiments/cpu-mmio-relay/qualified-result.json": {
+      "bytes": 1875,
+      "sha256": "b96f933029ce2067ad92c099074c6e6660cdb4cfb0394cb3b8e1a7f9cb108e6a"
+    },
+    "experiments/cpu-mmio-relay/test_validate.py": {
+      "bytes": 2098,
+      "sha256": "38b4f42ea46f0bd5083fdac72dfe6279d08136453ef43da5820d36850a97ae31"
+    },
+    "experiments/cpu-mmio-relay/validate.py": {
+      "bytes": 4277,
+      "sha256": "a50edc6747a62d2234b79ee43b68d4918ecb6d524a28ae6af022bae9197e3127"
     },
     "experiments/iommu-mapping/README.md": {
       "bytes": 14537,
@@ -5558,8 +5574,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 436215,
-      "sha256": "882111ec154f6db87a7e7d4bd36eb961aa242f487f97410480212b5bb451c7e1"
+      "bytes": 437719,
+      "sha256": "29c72142650a8f5dfebca1bcecd50647a59fa8a92644991430ba114aff148a8e"
     },
     "provenance/payload-diagnostics-validation.json": {
       "bytes": 1115,

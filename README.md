@@ -13,7 +13,7 @@
 
 ## Why this repository exists
 
-This repository collects **Piero Borgatta / CaskLogic's** investigation of 20–27 October 2026: CUDA tests, experimental NVIDIA RM/UVM modifications, BIOS/FSP analysis, measurements and negative results. It gives researchers familiar with PCIe, Intel TCSS, USB4 or NVIDIA drivers concrete evidence to review and a basis for proposing the next useful diagnostic step.
+This repository collects **Piero Borgatta / CaskLogic's** investigation of 20–28 October 2026: CUDA tests, experimental NVIDIA RM/UVM modifications, BIOS/FSP analysis, measurements and negative results. It gives researchers familiar with PCIe, Intel TCSS, USB4 or NVIDIA drivers concrete evidence to review and a basis for proposing the next useful diagnostic step.
 
 **There is no verified fix for bidirectional P2P.** A reported capability, a changed register or a completed DMA command does not prove correct payload delivery. Successful comparisons in one direction do not qualify the experimental implementation for production, atomics, NCCL or training.
 
@@ -93,7 +93,13 @@ Two later private-VRAM controls mapped a live RM-managed BAR1 page into the requ
 
 A third ABI issued only same-GPU self-BAR1 writes in isolated processes, separated by a clean asynchronous-fault gate. It passed 8/8 RAM and 2/2 CPU controls but 0/4 self writes. It contains **zero cross-GPU transfers**, so this self-hairpin result is not a diagnosis of the PEG↔TCSS/USB4 peer route. The problem remains unresolved. Sources, scoped logs, private executed-artifact hashes and offline replay are [published here](experiments/iommu-mapping/README.md).
 
-ABI 4 then armed an intentionally read-only `DMA_TO_DEVICE` translation for one private A2000 BAR1 page and issued one Ada-originated four-byte write. After the private-source, alias, same-page CPU and writable-RAM controls all passed, VT-d emitted the exact record `DMA Write NO_PASID`, requester `01:00.0`, matching `<BAR1_IOVA>`, reason `0x05`, `PTE Write access is not set`. This proves that the tested Ada write reached VT-d; it **does not prove remote delivery**, because the deliberate permission fault terminates the request there. Combined with the writable 0/2 Ada→A2000 result, the prudent root-cause class is an **asymmetric cross-hierarchy peer-forwarding failure for PEG→TCSS/TBT posted writes, after VT-d ingress**, most likely a platform/root-complex routing policy or limitation. The exact downstream drop point remains unproven; the [sanitized ABI 4 record and fail-closed replay](experiments/iommu-mapping/vtd-emission/README.md) make no single-block attribution and no P2P-solution claim.
+ABI 4 then armed an intentionally read-only `DMA_TO_DEVICE` translation for one private A2000 BAR1 page and issued one Ada-originated four-byte write. After the private-source, alias, same-page CPU and writable-RAM controls all passed, VT-d emitted the exact record `DMA Write NO_PASID`, requester `01:00.0`, matching `<BAR1_IOVA>`, reason `0x05`, `PTE Write access is not set`. This proves that the tested Ada write reached VT-d; it **does not prove remote delivery**, because the deliberate permission fault terminates the request there. Combined with the writable 0/2 Ada→A2000 result, the prudent root-cause class is an **asymmetric cross-hierarchy peer-forwarding failure for PEG→TCSS/TBT posted writes, after VT-d ingress**, most likely a platform/root-complex routing policy or limitation. ABI 4 alone does not prove the exact downstream drop point; the [sanitized ABI 4 record and fail-closed replay](experiments/iommu-mapping/vtd-emission/README.md) make no single-block attribution and no P2P-solution claim.
+
+### Host-mediated CPU-MMIO relay — 28 October
+
+[ABI 5](experiments/cpu-mmio-relay/README.md) correctly relayed **4 KiB / 1,024 words** from private Ada VRAM to private A2000 VRAM using CPU MMIO loads and stores through driver-managed BAR1 mappings. Owner-GPU and secondary CPU validation found zero payload or guard mismatches. No host payload buffer or RAM staging was used during the relay; validation memory was allocated afterward. This is a host-initiated workaround, **not PCIe P2P**, and the single diagnostic timing is not a performance result.
+
+Together with ABI 4, the writable translated controls and the USB4 counters, the result localizes the blocked peer direction to the Alder Lake root-complex/fabric route from PEG toward TCSS/Thunderbolt, after VT-d ingress and before observed USB4 tunnel ingress. Intel's [12th Generation Core datasheet, Volume 2, section 2.15.1](https://cdrdv2-public.intel.com/710723/710723-003.pdf) documents peer writes as supported only between PEG ports; the external GPU here is below TCSS, not another PEG port. This supports a platform hardware routing-limit diagnosis, while the exact internal silicon block remains unexposed. The bidirectional P2P requirement is still unresolved.
 
 The newly traced FSP `CpuPcieRpPeerToPeerMode` field feeds the same policy bit already tested, rather than demonstrating another independent firmware control. No SPI/NVM update was performed.
 
@@ -113,7 +119,7 @@ The historical sources form a **research archive**, not a portable installer. Ma
 
 ## Help we are looking for
 
-1. Intel/OEM documentation on **PEG↔TCSS** peer Memory Write and Memory Read forwarding on Alder Lake-H, including relevant controls and initialization stages.
+1. Intel/OEM clarification of any platform-specific exception to the public datasheet's PEG-only peer-write support, including exact **PEG↔TCSS** behavior, controls and initialization stages.
 2. NVIDIA confirmation of support for the Ampere A2000 / RTX 2000 Ada pair, and review of the methods actually submitted.
 3. AOOSTAR/ASMedia information about hardware revisions, firmware and acceptance of peer traffic originating from another PCIe branch.
 4. A trace or targeted experiment that distinguishes **GPU requester behavior, Intel fabric routing and USB4 bridge acceptance**.
