@@ -101,6 +101,10 @@ ABI 4 then armed an intentionally read-only `DMA_TO_DEVICE` translation for one 
 
 Together with ABI 4, the writable translated controls and the USB4 counters, the result localizes the blocked peer direction to the Alder Lake root-complex/fabric route from PEG toward TCSS/Thunderbolt, after VT-d ingress and before observed USB4 tunnel ingress. Intel's [12th Generation Core datasheet, Volume 2, section 2.15.1](https://cdrdv2-public.intel.com/710723/710723-003.pdf) documents peer writes as supported only between PEG ports; the external GPU here is below TCSS, not another PEG port. This supports a platform hardware routing-limit diagnosis, while the exact internal silicon block remains unexposed. The bidirectional P2P requirement is still unresolved.
 
+### Directional bypass and benchmark — 28 October
+
+The [directional transport policy](experiments/directional-transport/README.md) uses the qualified A2000→Ada CUDA D2D PUSH for bulk and limits the reverse CPU-MMIO path to a 64-byte control ACK. Reverse bulk fails closed unless host RAM is explicitly allowed. At 1 MiB, the two qualified forward PUSH samples have a 3.959 GB/s median, versus 0.655 GB/s for serial RAM staging and 0.0309 GB/s for the best CPU-MMIO relay: about 6.05× and 128.23× respectively. These are cross-run logical-throughput comparisons, not a TLP trace; bidirectional P2P remains unresolved.
+
 The newly traced FSP `CpuPcieRpPeerToPeerMode` field feeds the same policy bit already tested, rather than demonstrating another independent firmware control. No SPI/NVM update was performed.
 
 ## Included BIOS and driver artifacts

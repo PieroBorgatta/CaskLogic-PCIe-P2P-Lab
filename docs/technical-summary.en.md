@@ -94,6 +94,12 @@ Together with the earlier writable 0/2 Ada→A2000 outcome, this supports a prud
 
 The result is a correct **host-mediated workaround**, not a GPU requester-to-peer transaction and not a P2P solution. Its one 4 KiB timing sample is retained only as diagnostic metadata and supports no bandwidth, latency or production claim.
 
+## Directional bypass and performance — 28 October 2026
+
+The [directional policy and ABI](../experiments/directional-transport/README.md) use the already-qualified A2000→Ada CUDA D2D PUSH for bulk data and reserve CPU-MMIO for a 64-byte reverse control record. Reverse bulk is rejected unless the caller explicitly opts into RAM staging. At 1 MiB, two fully correct CUPTI-observed forward PUSH samples have a median 3.959 GB/s. A separate qualified run measured 0.655 GB/s for serial RAM staging and 0.0309 GB/s for the best one-worker AVX2 CPU-MMIO relay. The cross-run ratios are 6.05× and 128.23×. The relay is 21.20× slower than RAM and is therefore control-only, not a bulk optimization.
+
+This is a useful asymmetric pipeline, not a bidirectional P2P repair. CUPTI identifies CUDA D2D activity but is not a physical TLP trace; `direct_route_proven` remains false.
+
 The combined ABI 4, writable-mapping and USB4-counter evidence places the functional block in the Alder Lake root-complex/fabric path from PEG toward TCSS/Thunderbolt, after VT-d ingress and before observed USB4 tunnel ingress. Intel's official [12th Generation Core datasheet, Volume 2, section 2.15.1](https://cdrdv2-public.intel.com/710723/710723-003.pdf) documents peer writes as supported only between PEG ports; this external branch is TCSS, not another PEG port. That documentation and the measurements support a **platform hardware peer-routing limitation** as the root-cause class. They do not expose which internal silicon unit drops the request, and they do not turn the CPU relay into P2P.
 
 Original EFI/CCFG state and the user's maintenance hold were verified after return. Public sources retain topology checks but replace private GPU UUIDs; metadata records the private executed module, client and validator hashes separately from the redacted-source hashes.

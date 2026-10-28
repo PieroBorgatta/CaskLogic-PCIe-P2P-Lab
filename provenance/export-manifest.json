@@ -8335,6 +8335,55 @@
       "published_sha256": "a50edc6747a62d2234b79ee43b68d4918ecb6d524a28ae6af022bae9197e3127",
       "redacted": false,
       "transformation": "new public fail-closed validator over sanitized JSON only"
+    },
+    {
+      "path": "experiments/directional-transport/README.md",
+      "original_sha256": "4d9f12fbd1ae54ff033a537f494a3d3eaba93b10e8c7a0edee191fb4a8c98998",
+      "published_sha256": "4d9f12fbd1ae54ff033a537f494a3d3eaba93b10e8c7a0edee191fb4a8c98998",
+      "redacted": false,
+      "transformation": "new public directional bypass documentation derived from qualified sanitized evidence"
+    },
+    {
+      "path": "experiments/directional-transport/policy.py",
+      "original_sha256": "b4e39a2485ecbd336df266c1f47d35a1d15989b3d63f6fcbd57c7b5ed096951a",
+      "published_sha256": "b4e39a2485ecbd336df266c1f47d35a1d15989b3d63f6fcbd57c7b5ed096951a",
+      "redacted": false,
+      "transformation": "new public fail-closed route policy"
+    },
+    {
+      "path": "experiments/directional-transport/protocol.h",
+      "original_sha256": "145e311950b8345a59fd0d5d22aa4b0aa304a44e448ef89b5a0cc155deaab36b",
+      "published_sha256": "145e311950b8345a59fd0d5d22aa4b0aa304a44e448ef89b5a0cc155deaab36b",
+      "redacted": false,
+      "transformation": "new public control-record ABI"
+    },
+    {
+      "path": "experiments/directional-transport/qualified-result.json",
+      "original_sha256": "2719bd26c431eeddafdaebd01f86cba0711b7226ab72e43cb33693de9916d352",
+      "published_sha256": "2719bd26c431eeddafdaebd01f86cba0711b7226ab72e43cb33693de9916d352",
+      "redacted": false,
+      "transformation": "new derived public benchmark summary; private identifiers and raw logs omitted"
+    },
+    {
+      "path": "experiments/directional-transport/test_policy.py",
+      "original_sha256": "5cd01f25a2db0503a1ca5cf92de7c61a95f03e7688f9d26620ef5cd2c4890bf6",
+      "published_sha256": "5cd01f25a2db0503a1ca5cf92de7c61a95f03e7688f9d26620ef5cd2c4890bf6",
+      "redacted": false,
+      "transformation": "new public fail-closed policy tests"
+    },
+    {
+      "path": "experiments/directional-transport/test_protocol.cpp",
+      "original_sha256": "6d885ff87396ab7f73f45768a503afd2cfd005e5095d3a5fc4a66c21303033be",
+      "published_sha256": "6d885ff87396ab7f73f45768a503afd2cfd005e5095d3a5fc4a66c21303033be",
+      "redacted": false,
+      "transformation": "new public ABI layout test"
+    },
+    {
+      "path": "experiments/directional-transport/test_result.py",
+      "original_sha256": "9c8576010a0584472a7267966245388293db2705e060c89b0703bdbce0d587cf",
+      "published_sha256": "9c8576010a0584472a7267966245388293db2705e060c89b0703bdbce0d587cf",
+      "redacted": false,
+      "transformation": "new public benchmark consistency tests"
     }
   ],
   "omitted_remote_orchestration": [],

@@ -45,3 +45,13 @@ I moduli kernel sperimentali possono lasciare riferimenti trattenuti quando il c
 ## Esclusioni
 
 Non vengono distribuiti corpus/checkpoint, storage VM, dump SPI/NVRAM personali, chiavi, credenziali, pacchetti di boot, tool FPT e duplicati integrali di SDK/sorgenti vendor. Alcune copie storiche di script dipendono dall'orchestrazione locale: sono conservate per lettura e provenienza, non come istruzioni operative da eseguire alla cieca.
+La policy direzionale e il risultato sanificato si verificano senza GPU:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
+  -s experiments/directional-transport -p 'test_*.py'
+c++ -std=c++17 -Wall -Wextra -Werror -pedantic \
+  -c experiments/directional-transport/test_protocol.cpp -o /tmp/cask-protocol.o
+```
+
+Il confronto pubblicato è cross-run: il PUSH CUDA D2D qualificato proviene dalla campagna nativa con CUPTI, mentre relay MMIO e staging RAM provengono dal benchmark ABI 6. Il validatore ricostruisce i rapporti ma non trasforma CUPTI in una cattura TLP.

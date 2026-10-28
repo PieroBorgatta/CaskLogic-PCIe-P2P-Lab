@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "status": "QUALIFIED_DIRECTIONAL_BYPASS_EVIDENCE",
+  "bidirectional_p2p_fixed": false,
+  "direct_route_proven": false,
+  "comparison_scope": "cross-run logical throughput at 1 MiB",
+  "forward": {
+    "direction": "A2000_to_Ada",
+    "path": "CUDA_D2D_PUSH_with_CUPTI",
+    "bytes": 1048576,
+    "qualified_samples": 2,
+    "duration_ns": [264946, 264721],
+    "logical_GB_s": [3.957697040152, 3.961060890522],
+    "median_logical_GB_s": 3.959378965337,
+    "payloads_correct": 2,
+    "host_payload_buffer": false
+  },
+  "reverse_ram_staging": {
+    "direction": "Ada_to_A2000",
+    "bytes": 1048576,
+    "qualified_samples": 7,
+    "median_ns": 1601801,
+    "median_logical_GB_s": 0.6546231398282308,
+    "all_correct": true
+  },
+  "reverse_cpu_mmio": {
+    "direction": "Ada_to_A2000",
+    "method": "AVX2_1_worker",
+    "bytes": 1048576,
+    "qualified_samples": 7,
+    "median_ns": 33959193,
+    "median_logical_GB_s": 0.030877529981351442,
+    "all_correct": true,
+    "host_payload_buffer": false,
+    "pcie_p2p": false
+  },
+  "ratios": {
+    "forward_over_ram_staging": 6.048333345466,
+    "forward_over_cpu_mmio": 128.22848743822,
+    "ram_staging_over_cpu_mmio": 21.200631663983
+  },
+  "decision": "Use forward D2D for bulk, CPU-MMIO only for bounded control records, and reject reverse bulk without explicit RAM opt-in."
+}

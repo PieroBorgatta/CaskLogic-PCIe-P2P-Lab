@@ -1,5 +1,4 @@
 {
-  "scope": "Public files only; this manifest is excluded from its own hashes.",
   "files": {
     ".gitattributes": {
       "bytes": 15,
@@ -26,8 +25,8 @@
       "sha256": "d8e96d29bc323000e7ba56102d77c88226a7a3d0d94e2081cb4b071ae9de4a06"
     },
     "README.md": {
-      "bytes": 18106,
-      "sha256": "7cb4180d7d6e9c22fa755ab5dfa45c69d7b02cf84221770d0d8bb673cc59302e"
+      "bytes": 18730,
+      "sha256": "770b00e5e6c38c5ea74d796f5755371a41b8ca6a810231de18f61f62cd2d9c4a"
     },
     "archive/gpu-audit-20261020/build_tools.py": {
       "bytes": 1166,
@@ -3702,16 +3701,16 @@
       "sha256": "3fbf090b1387021df970f834bd7af1f8f462a41fb9c2227f644ec0038d9abc90"
     },
     "docs/indice.md": {
-      "bytes": 2250,
-      "sha256": "d778e4aaac51e1d28ed3adf574ffe3930bc52f0f4b5b553907d7fac1a447e695"
+      "bytes": 2511,
+      "sha256": "cffef1a85fd7d3b9b35016c9d3eff95bd3362eaad3d614b8d25f918d3c873bc9"
     },
     "docs/riproducibilita.md": {
-      "bytes": 4235,
-      "sha256": "b46ec032c6f6cd6b4d56f0ae3fe61284ebf997b364073547e4713c002b0e7de2"
+      "bytes": 4817,
+      "sha256": "2b51e221ad3c7bd722be70c1f1723fa9be937c675019dc7171aaef010b631503"
     },
     "docs/technical-summary.en.md": {
-      "bytes": 14502,
-      "sha256": "ae10705ff2ed8f0b121d64f132bd0f668547b0d9c72aaf02a3af01501147446e"
+      "bytes": 15379,
+      "sha256": "1a519beabc9b0f449a09ec4970dfe7aca259894f6c6fcbf8117bb1303f3c1ba9"
     },
     "experiments/cpu-mmio-relay/README.md": {
       "bytes": 4047,
@@ -3728,6 +3727,34 @@
     "experiments/cpu-mmio-relay/validate.py": {
       "bytes": 4277,
       "sha256": "a50edc6747a62d2234b79ee43b68d4918ecb6d524a28ae6af022bae9197e3127"
+    },
+    "experiments/directional-transport/README.md": {
+      "bytes": 2433,
+      "sha256": "4d9f12fbd1ae54ff033a537f494a3d3eaba93b10e8c7a0edee191fb4a8c98998"
+    },
+    "experiments/directional-transport/policy.py": {
+      "bytes": 3488,
+      "sha256": "b4e39a2485ecbd336df266c1f47d35a1d15989b3d63f6fcbd57c7b5ed096951a"
+    },
+    "experiments/directional-transport/protocol.h": {
+      "bytes": 2324,
+      "sha256": "145e311950b8345a59fd0d5d22aa4b0aa304a44e448ef89b5a0cc155deaab36b"
+    },
+    "experiments/directional-transport/qualified-result.json": {
+      "bytes": 1352,
+      "sha256": "2719bd26c431eeddafdaebd01f86cba0711b7226ab72e43cb33693de9916d352"
+    },
+    "experiments/directional-transport/test_policy.py": {
+      "bytes": 4913,
+      "sha256": "5cd01f25a2db0503a1ca5cf92de7c61a95f03e7688f9d26620ef5cd2c4890bf6"
+    },
+    "experiments/directional-transport/test_protocol.cpp": {
+      "bytes": 819,
+      "sha256": "6d885ff87396ab7f73f45768a503afd2cfd005e5095d3a5fc4a66c21303033be"
+    },
+    "experiments/directional-transport/test_result.py": {
+      "bytes": 1324,
+      "sha256": "9c8576010a0584472a7267966245388293db2705e060c89b0703bdbce0d587cf"
     },
     "experiments/iommu-mapping/README.md": {
       "bytes": 14537,
@@ -5574,8 +5601,8 @@
       "sha256": "8c9cd7ecaf9ea50689bd70891eab0e36d66b8b36bf45e55b42f7e1c032ce574e"
     },
     "provenance/export-manifest.json": {
-      "bytes": 437719,
-      "sha256": "29c72142650a8f5dfebca1bcecd50647a59fa8a92644991430ba114aff148a8e"
+      "bytes": 440267,
+      "sha256": "618f70357d1ccedadd1a4a86a2dd36b573f09ea89012f6b632e7fdca073d7e4f"
     },
     "provenance/payload-diagnostics-validation.json": {
       "bytes": 1115,
@@ -5601,5 +5628,6 @@
       "bytes": 803,
       "sha256": "240bf5aa17edc3a50e8f6672bc6d3b964e93c87cc613a1daa48d580c537d3c81"
     }
-  }
+  },
+  "scope": "Public files only; this manifest is excluded from its own hashes."
 }
